@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <UContainer class="text-6xl pt-8">
     <h1>Welcome to OMA KNOWLEDGE BASE</h1>
-  </div>
+  </UContainer>
 </template>
