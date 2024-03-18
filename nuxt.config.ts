@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/ui", "@nuxtjs/google-fonts"],
+  modules: ["@nuxt/ui", "@nuxtjs/google-fonts", "@nuxt/content"],
+  content: {},
   googleFonts: {
     families: {
       "DM Sans": [400, 500, 600, 700],
