@@ -8,5 +8,12 @@ export default defineNuxtConfig({
       "DM Mono": [400, 500],
     },
   },
+  app: {
+    head: {
+      link: [
+        { rel: "shortcut icon", href: "favicon-1.png", type: "image/x-icon" },
+      ],
+    },
+  },
   devtools: { enabled: true },
 });
