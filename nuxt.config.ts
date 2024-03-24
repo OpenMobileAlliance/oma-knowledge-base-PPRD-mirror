@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxtjs/google-fonts", "@nuxt/content"],
   content: {},
+  ui: {
+    icons: ["heroicons-solid", "fa6-brands", "devicon"],
+  },
   googleFonts: {
     families: {
       "DM Sans": [400, 500, 600, 700],

@@ -10,7 +10,6 @@
           </NuxtLink>
         </slot>
       </div>
-      This is a header
       <div :class="ui.right">
         <slot name="right" />
       </div>
