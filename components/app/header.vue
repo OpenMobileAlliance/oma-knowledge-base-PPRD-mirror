@@ -10,8 +10,17 @@
           </NuxtLink>
         </slot>
       </div>
+      <div :class="ui.center">
+        <ul class="flex justify-between items-start">
+          <li v-for="link of topLinks" :key="link.path" class="ml-4">
+            <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
+          </li>
+        </ul>
+      </div>
       <div :class="ui.right">
-        <slot name="right" />
+        <slot name="right">
+          <AppSocialLinks />
+        </slot>
       </div>
     </UContainer>
   </header>
@@ -52,4 +61,15 @@ const { ui, attrs } = useUI(
 );
 
 const ariaLabel = computed(() => (props.title || "Logo").trim());
+
+const { data: navigation } = await useAsyncData("navigation", () =>
+  fetchContentNavigation(),
+);
+
+const topLinks = navigation.value.reduce((previous, current) => {
+  if (current.children) {
+    previous.push(current);
+  }
+  return previous;
+}, []);
 </script>
