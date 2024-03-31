@@ -1,13 +1,17 @@
 <template>
   <main>
-    <article class="prose">
-      <ContentDoc />
+    <article class="prose w-full max-w-full">
+      <ContentDoc>
+        <template #not-found>
+          <UAlert title="File not found!" description="The requested resource cannot be found."
+            icon="i-heroicons-exclamation-triangle" />
+        </template>
+      </ContentDoc>
     </article>
   </main>
 </template>
 
 <script setup lang="ts">
-const { data: navigation } = await useAsyncData("navigation", () =>
-  fetchContentNavigation(),
-);
+const route = useRoute()
+const { data } = await useAsyncData(route.params.slug[0], () => queryContent(route.params.slug[0]).findOne());
 </script>
