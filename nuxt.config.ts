@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/ui", "@nuxtjs/google-fonts", "@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts"],
   content: {},
   ui: {
     icons: ["heroicons-solid", "fa6-brands", "devicon"],
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: "shortcut icon", href: "favicon-1.png", type: "image/x-icon" },
+        { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
       ],
     },
   },

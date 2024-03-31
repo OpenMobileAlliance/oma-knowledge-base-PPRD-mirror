@@ -10,8 +10,27 @@
           </NuxtLink>
         </slot>
       </div>
-      <div :class="ui.right">
-        <slot name="right" />
+      <div :class="ui.center">
+        <div class="flex justify-between items-start mb-2">
+          <div :class="ui.right">
+            <span class="mr-2 text-sm">
+              <ULink to="signin" active-class="text-primary" class="hover:text-primary">Sign In</ULink>
+            </span>
+            <span class="mr-2 text-sm">
+              <ULink to="contactus" class="hover:text-primary">Contact us</ULink>
+            </span>
+            <slot name="right">
+              <AppSocialLinks />
+            </slot>
+          </div>
+        </div>
+        <div class="">
+          <ul class="flex justify-between items-start">
+            <li v-for="link of topLinks" :key="link.path" class="ml-4">
+              <ULink :to="link._path" class="hover:text-primary">{{ link.title }}</ULink>
+            </li>
+          </ul>
+        </div>
       </div>
     </UContainer>
   </header>
@@ -23,7 +42,7 @@ const config = {
     "bg-background/75 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
   left: "lg:flex-1 flex items-center gap-1.5",
-  center: "hidden lg:flex",
+  center: "hidden lg:flex flex flex-col grow",
   right: "flex items-center justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
 };
@@ -52,4 +71,15 @@ const { ui, attrs } = useUI(
 );
 
 const ariaLabel = computed(() => (props.title || "Logo").trim());
+
+const { data: navigation } = await useAsyncData("navigation", () =>
+  fetchContentNavigation(),
+);
+
+const topLinks = navigation.value.reduce((previous, current) => {
+  if (current.children) {
+    previous.push(current);
+  }
+  return previous;
+}, []);
 </script>

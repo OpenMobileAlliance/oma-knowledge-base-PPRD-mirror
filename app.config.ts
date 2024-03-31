@@ -31,4 +31,7 @@ export default defineAppConfig({
       url: "http://openmobilealliance.org/rss/",
     },
   },
+  ui: {
+    primary: "oma"
+  }
 });
