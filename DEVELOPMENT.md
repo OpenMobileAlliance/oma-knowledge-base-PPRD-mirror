@@ -42,3 +42,23 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment)
 for more information.
+
+## Docker support
+
+[Docker](https://www.docker.com/) is an open platform for developing, shipping,
+and running applications.
+
+This project provides a [Docker](https://www.docker.com/get-started/)
+container that can be used for development and deployment to the production.
+
+First build the Docker image.
+
+```bash
+docker build -t oma-knowledge-base .
+```
+
+Afterwards, run the container based on the created image.
+
+```bash
+docker run -it --rm -p 3000:3000 oma-knowledge-base:latest
+```
