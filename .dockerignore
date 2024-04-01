@@ -1,0 +1,16 @@
+/.nuxt
+/.output
+/node_modules
+
+.gitignore
+README.md
+DEVELOPMENT.md
+
+npm-debug.log
+Dockerfile*
+docker-compose*
+.dockerignore
+.git
+.gitignore
+LICENSE
+.vscode
