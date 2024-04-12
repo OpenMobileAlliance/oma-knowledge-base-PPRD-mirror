@@ -5,7 +5,7 @@
         <img src="/public/logo-tagline2-1.png" alt="logo" />
       </template>
     </AppHeader>
-    <UContainer class="py-10">
+    <UContainer class="pt-10 pb-20">
       <slot />
     </UContainer>
     <AppFooter />
