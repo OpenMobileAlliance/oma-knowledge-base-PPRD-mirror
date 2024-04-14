@@ -6,7 +6,7 @@ description: Page dedicated to Frequent Asked Questions
 ## Frequent Asked Questions
 This section is updated based on the questions received by the Working Groups.
 
-::ShSegment{:ui='{"wrapper":"max-h-60 align-middle overflow-hidden"}'}
+::ShSegment{:ui='{"wrapper":"max-h-30 align-middle overflow-hidden"}'}
 ![priscilla-du-preez-lIpubE3_DEQ-unsplash.jpeg](/images/lwm2m/priscilla-du-preez-lIpubE3_DEQ-unsplash.jpeg){style="margin-top: -460px"  }
 ::
 ### What is OMASpecWorks?
@@ -29,11 +29,11 @@ sensor networks and the demands of a machine-to-machine (M2M) environment.
 
 #### Collaborate
 
-> *There are naive questions, tedious questions, ill-phrased questions,
+>>> There are naive questions, tedious questions, ill-phrased questions,
 questions put after inadequate self-criticism. But every question is a cry to
-understand the world. There is no such thing as a dumb question.* - Carl Sagen
+understand the world. There is no such thing as a dumb question. - Carl Sagen
 
 We invite all to collaborate with us in improving or knowledge base. 
 
-> Please share your questions and suggestions with us
+>>> Please share your questions and suggestions with us
 <a href="https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues" target="_blank"><strong>HERE</strong></a>
