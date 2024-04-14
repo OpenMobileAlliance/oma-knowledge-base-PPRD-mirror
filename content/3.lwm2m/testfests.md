@@ -6,8 +6,7 @@ description: information about applying to attend and participating in an OMA Te
 ::ShSegment
 ---
 ui:
-  wrapper: "bg-[#413C58] p-4 text-slate-300"
-
+  wrapper: "bg-[#413C58] p-4 m-40 text-slate-300 shadow-2xl"
 ---
 
 ## OPEN REGISTRATION
@@ -21,7 +20,7 @@ ui:
   **Location:**  |Raleigh, North Carolina, USA
   :::
 
-[ [Register Here](http://21247113.hs-sites.com/lwm2m-test-event-sve-41){target="_blank"} ]{ class="border-slate-50 border rounded bg-slate-50 p-2 mb-4 " }
+[ [Register Here](http://21247113.hs-sites.com/lwm2m-test-event-sve-41){target="_blank"} ]{ class="border-slate-50 border rounded bg-slate-50 p-2 mb-4" }
 
 ::
 
@@ -40,7 +39,7 @@ Over the years, OMA has organized several LwM2M TestFest and Workshop Events.
 A full list of Events can be seen [TestFest Events](https://guidelines.openmobilealliance.org/testfests){target="_blank"}
 
 ::ShSegment
-![events](/images/lwm2m/events.jpeg)
+![events](/images/lwm2m/events.jpeg){ class="border rounded bg-slate-50 shadow-2xl" }
 ::
 
 TestFests are held in a confidential and secure testing environment where
