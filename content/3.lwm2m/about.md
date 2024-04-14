@@ -1,5 +1,5 @@
 ---
-title: About page
+title: About Page #title of the window browser
 description: Page dedicated to LwM2M and IPSO
 ---
 
