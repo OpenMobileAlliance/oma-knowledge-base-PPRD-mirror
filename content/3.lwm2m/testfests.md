@@ -14,12 +14,12 @@ ui:
 
 ### OMA LwM2M Specification Validation Event (SVE) #41
 
-::ShSegment{:ui='{"wrapper": "w-1/2"}'}
-Information            | Details
-----------------|--------------
-**Date:** | 10-13 June, 2024
-**Location:**  |Raleigh, North Carolina, USA
-::
+  :::ShSegment{:ui='{"wrapper": "w-1/2"}'}
+  Information            | Details
+  ----------------|--------------
+  **Date:** | 10-13 June, 2024
+  **Location:**  |Raleigh, North Carolina, USA
+  :::
 
 [ [Register Here](http://21247113.hs-sites.com/lwm2m-test-event-sve-41){target="_blank"} ]{ class="border-slate-50 border rounded bg-slate-50 p-2 mb-4 " }
 
