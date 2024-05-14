@@ -1,0 +1,1 @@
+- [Micro Card](/guidelines/components/sh-micro-card)
