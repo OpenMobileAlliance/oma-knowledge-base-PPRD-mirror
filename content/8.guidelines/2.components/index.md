@@ -2,3 +2,4 @@
 - [Action Card](/guidelines/components/sh-action-card)
 - [Card](/guidelines/components/sh-card)
 - [Avatar](/guidelines/components/sh-avatar)
+- [Badge](/guidelines/components/sh-badge)
