@@ -1,2 +1,3 @@
 - [Micro Card](/guidelines/components/sh-micro-card)
 - [Action Card](/guidelines/components/sh-action-card)
+- [Card](/guidelines/components/sh-card)
