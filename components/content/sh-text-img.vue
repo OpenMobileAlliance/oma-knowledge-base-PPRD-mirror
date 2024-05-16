@@ -1,0 +1,140 @@
+<template>
+    <div :class="[ui.container, statusClass]">
+        <div v-if="src" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
+            <div :class="[textPositionClass, textSpanClass, textAlignClass]">
+                <p :class="ui.title">{{ title }}</p>
+                <p :class="ui.text">{{ text }}</p>
+            </div>
+            <img :src="src" :class="[imgPositionClass, imgSpanClass, 'mx-auto rounded-xl']" />
+        </div>
+        <div v-else class="grid grid-cols-1 grid-rows-1">
+            <div :class="[textAlignClass]">
+                <p :class="ui.title">{{ title }}</p>
+                <p :class="[ui.text, 'items-center']">{{ text }}</p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+import { defineProps, toRef, computed } from 'vue'
+import config from '../../components/ui.config/sh-text-img' // Import the config file
+
+const props = withDefaults(
+    defineProps<{
+        textPosition?: string;
+        textSpan?: string;
+        textAlign?: string;
+        title?: string;
+        text?: string;
+        src?: string;
+        status?: string;
+        ui?: Partial<typeof config>;
+    }>(),
+    {
+        ui: () => ({}),
+        textPosition: "right",
+        textSpan: "l",
+        textAlign: "center",
+        title: "",
+        text: "",
+        src: "",
+        status: "",
+    }
+);
+
+const { ui } = useUI(
+    "sh-text-img",
+    toRef(props, "ui"),
+    config
+);
+
+const textPosition = toRef(props, 'textPosition');
+const textSpan = toRef(props, 'textSpan');
+const textAlign = toRef(props, 'textAlign');
+const status = toRef(props, 'status');
+
+const textPositionClass = computed(() => {
+    if (textPosition.value === 'right' && textSpan.value === 'xl') {
+        return 'col-start-2'
+    } else if (textPosition.value === 'left') {
+        return 'col-start-1'
+    } else {
+        return 'col-start-3'
+    }
+});
+
+const textSpanClass = computed(() => {
+    switch (textSpan.value) {
+        case 'm':
+            if (textPosition.value === 'left') {
+                return 'col-start-1 col-span-1'
+            } else {
+                return 'col-start-4 col-span-1'
+            }
+        case 'l':
+            return 'col-span-2'
+        case 'xl':
+            if (textPosition.value === 'left') {
+                return 'col-start-1 col-span-3'
+            } else {
+                return 'col-start-2 col-span-3'
+            }
+        default:
+            return 'col-span-2'
+    }
+});
+
+const textAlignClass = computed(() => {
+    switch (textAlign.value) {
+        case 'left':
+            return 'text-left'
+        case 'center':
+            return 'text-center'
+        case 'right':
+            return 'text-right'
+        default:
+            return 'text-center'
+    }
+});
+
+//depending on the textPosition, the image will be placed on the opposite side
+const imgPositionClass = computed(() => { 
+    if (textPosition.value === 'left' && textSpan.value === 'm') {
+        return 'col-start-2'
+    } else if (textPosition.value === 'right') {
+        return 'col-start-1'
+    }
+});
+
+//depending on the textSpan and textPosition, the image will take the remaining space
+const imgSpanClass = computed(() => { 
+    if (textSpan.value === 'xl' && textPosition.value === 'left') {
+        return 'col-start-4 col-span-1'
+    } else if (textSpan.value === 'xl' && textPosition.value === 'right') {
+        return 'col-start-1 col-span-1'
+    } else if (textSpan.value === 'm' && textPosition.value === 'left') {
+        return 'col-start-2 col-span-3'
+    } else if (textSpan.value === 'm' && textPosition.value === 'right') {
+        return 'col-start-1 col-span-3'
+    } else {
+        return 'col-span-2'
+    }
+});
+
+//classes for styling the container background depending on the status
+const statusClass = computed(()=>{ 
+    switch (status.value) {
+        case 'on':
+            return 'bg-green-200 border-green-200 dark:border-green-300 dark:bg-green-300 dark:text-black'
+        case 'off':
+            return 'bg-red-200 border-red-200 dark:border-red-200 dark:bg-red-200 dark:text-black'
+        case 'pending':
+            return 'bg-yellow-100 border-yellow-100 dark:border-yellow-100 dark:bg-yellow-100 dark:text-black'
+        case 'highlight':
+            return 'bg-sky-100 border-sky-100 dark:border-sky-300 dark:bg-sky-300 dark:text-black'
+        default:
+            return 'bg-neutral-200 dark:bg-slate-800 dark:border-gray-700 text-white'
+    }
+});
+</script>

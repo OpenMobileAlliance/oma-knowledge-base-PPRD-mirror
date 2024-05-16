@@ -4,3 +4,4 @@
 - [Avatar](/guidelines/components/sh-avatar)
 - [Badge](/guidelines/components/sh-badge)
 - [Video](/guidelines/components/sh-video)
+- [TextImage](/guidelines/components/sh-text-img)
