@@ -122,7 +122,7 @@ const imgSpanClass = computed(() => {
     }
 });
 
-//classes for styling the container background depending on the status
+//classes for styling the container background depending on the status --- HELP NEEDED HERE
 const statusClass = computed(()=>{ 
     switch (status.value) {
         case 'on':
