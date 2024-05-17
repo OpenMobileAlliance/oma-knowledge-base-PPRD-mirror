@@ -5,3 +5,4 @@
 - [Badge](/guidelines/components/sh-badge)
 - [Video](/guidelines/components/sh-video)
 - [TextImage](/guidelines/components/sh-text-img)
+- [Social](/guidelines/components/sh-social)
