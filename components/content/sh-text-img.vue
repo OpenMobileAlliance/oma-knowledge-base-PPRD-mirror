@@ -54,13 +54,21 @@ const textSpan = toRef(props, 'textSpan');
 const textAlign = toRef(props, 'textAlign');
 const status = toRef(props, 'status');
 
+const COL_START_VALUES = [
+'',
+'col-start-1',
+'col-start-2',
+'col-start-3',
+'col-start-4'
+]
+
 const textPositionClass = computed(() => {
     if (textPosition.value === 'right' && textSpan.value === 'xl') {
-        return 'col-start-2'
+        return COL_START_VALUES[2]
     } else if (textPosition.value === 'left') {
-        return 'col-start-1'
+        return COL_START_VALUES[1]
     } else {
-        return 'col-start-3'
+        return COL_START_VALUES[3]
     }
 });
 
@@ -126,15 +134,15 @@ const imgSpanClass = computed(() => {
 const statusClass = computed(()=>{ 
     switch (status.value) {
         case 'on':
-            return 'bg-green-200 border-green-200 dark:border-green-300 dark:bg-green-300 dark:text-black'
+            return config.status.on
         case 'off':
-            return 'bg-red-200 border-red-200 dark:border-red-200 dark:bg-red-200 dark:text-black'
+            return config.status.off
         case 'pending':
-            return 'bg-yellow-100 border-yellow-100 dark:border-yellow-100 dark:bg-yellow-100 dark:text-black'
+            return config.status.pending
         case 'highlight':
-            return 'bg-sky-100 border-sky-100 dark:border-sky-300 dark:bg-sky-300 dark:text-black'
+            return config.status.highlight
         default:
-            return 'bg-neutral-200 dark:bg-slate-800 dark:border-gray-700 text-white'
+            return config.status.base
     }
 });
 </script>
