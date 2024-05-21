@@ -6,3 +6,4 @@
 - [Video](/guidelines/components/sh-video)
 - [TextImage](/guidelines/components/sh-text-img)
 - [Social](/guidelines/components/sh-social)
+- [Alert](/guidelines/components/sh-alert)
