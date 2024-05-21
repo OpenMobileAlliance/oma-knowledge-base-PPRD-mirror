@@ -4,5 +4,7 @@
 - [Avatar](/guidelines/components/sh-avatar)
 - [Badge](/guidelines/components/sh-badge)
 - [Video](/guidelines/components/sh-video)
+- [Segment](/guidelines/components/sh-segment)
 - [TextImage](/guidelines/components/sh-text-img)
+- [TowColumns](/guidelines/components/sh-two-columns)
 - [Social](/guidelines/components/sh-social)

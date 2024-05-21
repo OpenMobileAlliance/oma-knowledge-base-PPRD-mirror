@@ -1,16 +1,16 @@
 <template>
-    <UBadge :color="color" :variant="variant" :ui="{ rounded: 'rounded-full' }" size="2xl">
-      {{ description }}
+    <UBadge :color="color" :variant="variant" :ui="{ rounded: 'rounded-full' }" size="lg">
+      {{ text }}
     </UBadge>
   </template>
   
   <script setup lang="ts">
   import { defineProps, toRef } from 'vue'
-  import config from '../../components/ui.config/sh-badge' // Importing the config file
+  import { badge as config } from '@/ui.config' // Importing the config file
 
   const props = withDefaults(
   defineProps<{
-    description: String;
+    text: String;
     color?: String;
     variant?: String;
     ui?: Partial<typeof config>;
