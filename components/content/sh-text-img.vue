@@ -1,8 +1,9 @@
 <template>
-    <div :class="[ui.container, statusClass]">
+    <div :class="[ui.wrapper, Status]">
         <div v-if="src" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
             <div :class="[textPositionClass, textSpanClass, textAlignClass]">
                 <p :class="ui.title">{{ title }}</p>
+                <p v-if="subtitle" :class="ui.subtitle">{{ subtitle }}</p>
                 <p :class="ui.text">{{ text }}</p>
             </div>
             <img :src="src" :class="[imgPositionClass, imgSpanClass, 'mx-auto rounded-xl']" />
@@ -10,6 +11,7 @@
         <div v-else class="grid grid-cols-1 grid-rows-1">
             <div :class="[textAlignClass]">
                 <p :class="ui.title">{{ title }}</p>
+                <p v-if="subtitle" :class="ui.subtitle">{{ subtitle }}</p>
                 <p :class="[ui.text, 'items-center']">{{ text }}</p>
             </div>
         </div>
@@ -26,6 +28,7 @@ const props = withDefaults(
         textSpan?: string;
         textAlign?: string;
         title?: string;
+        subtitle?: string;
         text?: string;
         src?: string;
         status?: string;
@@ -37,6 +40,7 @@ const props = withDefaults(
         textSpan: "l",
         textAlign: "center",
         title: "",
+        subtitle: "",
         text: "",
         src: "",
         status: "",
@@ -130,8 +134,8 @@ const imgSpanClass = computed(() => {
     }
 });
 
-//classes for styling the container background depending on the status --- HELP NEEDED HERE
-const statusClass = computed(()=>{ 
+//classes for styling the container background depending on the status
+const Status = computed(()=>{ 
     switch (status.value) {
         case 'on':
             return config.status.on
@@ -142,7 +146,7 @@ const statusClass = computed(()=>{
         case 'highlight':
             return config.status.highlight
         default:
-            return config.status.base
+            return config.status.default
     }
 });
 </script>
