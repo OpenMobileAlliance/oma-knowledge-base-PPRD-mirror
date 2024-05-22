@@ -32,7 +32,7 @@
 
 <script setup lang="ts">
 import { defineProps, toRef } from 'vue'
-import config from '../../components/ui.config/sh-avatar' // Importing the config file
+import { avatar as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
   defineProps<{

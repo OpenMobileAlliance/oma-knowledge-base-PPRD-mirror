@@ -2,6 +2,9 @@ import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
+  content: [
+    'ui.config/*.ts'
+  ],
   theme: {
     extend: {
       colors: {
@@ -20,6 +23,11 @@ export default <Partial<Config>>{
         }
       }
     }
-  }
+  },
+  safelist: [
+    {
+      pattern: /gap-.*/
+    }
+  ]
 }
 
