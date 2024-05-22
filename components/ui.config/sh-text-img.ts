@@ -1,9 +1,12 @@
+import status from './status';
+
 export default {
-    container: "px-8 border dark:border-gray-700 rounded-2xl",
-    title: "p-1 font-semibold text-lg",
-    text: "p-1",
-    // Default Tailwind CSS values
-    default: {
-    }
+  wrapper: "px-8 border dark:border-gray-700 rounded-2xl",
+  title: "font-bold text-2xl",
+  subtitle: "font-semibold text-xl -mt-6",
+  text: "",
+  status,
+  // Default Tailwind CSS values
+  default: {
   }
-  
+}

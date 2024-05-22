@@ -1,16 +1,18 @@
 <template>
-    <div :class="[ui.container, statusClass]">
+    <div :class="[ui.wrapper, Status]">
         <div v-if="src" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
-            <div :class="[textPositionClass, textSpanClass, textAlignClass]">
-                <p :class="ui.title">{{ title }}</p>
-                <p :class="ui.text">{{ text }}</p>
-            </div>
             <img :src="src" :class="[imgPositionClass, imgSpanClass, 'mx-auto rounded-xl']" />
+            <div :class="[textPositionClass, textSpanClass, textAlignClass]">
+                <MDC :class="ui.title" :value="title" />
+                <MDC :class="ui.subtitle" :value="subtitle" />
+                <MDC :class="ui.text" :value="text" />
+            </div>
         </div>
         <div v-else class="grid grid-cols-1 grid-rows-1">
             <div :class="[textAlignClass]">
-                <p :class="ui.title">{{ title }}</p>
-                <p :class="[ui.text, 'items-center']">{{ text }}</p>
+                <MDC :class="ui.title" :value="title" />
+                <MDC :class="ui.subtitle" :value="subtitle" />
+                <MDC :class="[ui.text, 'items-center']" :value="text" />
             </div>
         </div>
     </div>
@@ -26,6 +28,7 @@ const props = withDefaults(
         textSpan?: string;
         textAlign?: string;
         title?: string;
+        subtitle?: string;
         text?: string;
         src?: string;
         status?: string;
@@ -37,6 +40,7 @@ const props = withDefaults(
         textSpan: "l",
         textAlign: "center",
         title: "",
+        subtitle: "",
         text: "",
         src: "",
         status: "",
@@ -54,13 +58,21 @@ const textSpan = toRef(props, 'textSpan');
 const textAlign = toRef(props, 'textAlign');
 const status = toRef(props, 'status');
 
+const COL_START_VALUES = [
+    '',
+    'col-start-1',
+    'col-start-2',
+    'col-start-3',
+    'col-start-4'
+]
+
 const textPositionClass = computed(() => {
     if (textPosition.value === 'right' && textSpan.value === 'xl') {
-        return 'col-start-2'
+        return COL_START_VALUES[2]
     } else if (textPosition.value === 'left') {
-        return 'col-start-1'
+        return COL_START_VALUES[1]
     } else {
-        return 'col-start-3'
+        return COL_START_VALUES[3]
     }
 });
 
@@ -99,7 +111,7 @@ const textAlignClass = computed(() => {
 });
 
 //depending on the textPosition, the image will be placed on the opposite side
-const imgPositionClass = computed(() => { 
+const imgPositionClass = computed(() => {
     if (textPosition.value === 'left' && textSpan.value === 'm') {
         return 'col-start-2'
     } else if (textPosition.value === 'right') {
@@ -108,7 +120,7 @@ const imgPositionClass = computed(() => {
 });
 
 //depending on the textSpan and textPosition, the image will take the remaining space
-const imgSpanClass = computed(() => { 
+const imgSpanClass = computed(() => {
     if (textSpan.value === 'xl' && textPosition.value === 'left') {
         return 'col-start-4 col-span-1'
     } else if (textSpan.value === 'xl' && textPosition.value === 'right') {
@@ -123,18 +135,18 @@ const imgSpanClass = computed(() => {
 });
 
 //classes for styling the container background depending on the status
-const statusClass = computed(()=>{ 
+const Status = computed(() => {
     switch (status.value) {
         case 'on':
-            return 'bg-green-200 border-green-200 dark:border-green-300 dark:bg-green-300 dark:text-black'
+            return config.status.on
         case 'off':
-            return 'bg-red-200 border-red-200 dark:border-red-200 dark:bg-red-200 dark:text-black'
+            return config.status.off
         case 'pending':
-            return 'bg-yellow-100 border-yellow-100 dark:border-yellow-100 dark:bg-yellow-100 dark:text-black'
+            return config.status.pending
         case 'highlight':
-            return 'bg-sky-100 border-sky-100 dark:border-sky-300 dark:bg-sky-300 dark:text-black'
+            return config.status.highlight
         default:
-            return 'bg-neutral-200 dark:bg-slate-800 dark:border-gray-700 text-white'
+            return config.status.default
     }
 });
 </script>
