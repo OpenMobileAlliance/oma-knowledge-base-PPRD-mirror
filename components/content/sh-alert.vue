@@ -1,10 +1,9 @@
 <template>
     <div id="alert" :class="[ui.wrapper, alert]">
-        <!-- if this div needs to be of a size as text lenght, add w-fit class -->
         <div :class="ui.base">
             <i :class="['size-7', icon]"></i>
         </div>
-        <MDC :value="text" />
+        <MDC :value="text" :class="ui.text" />
     </div>
 </template>
 
