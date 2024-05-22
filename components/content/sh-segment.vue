@@ -1,13 +1,11 @@
 <template>
   <div :class="ui.wrapper">
-    <ContentSlot :use="$slots.default" unwrap="p" />
+    <ContentSlot :use="$slots.default" unwrap="" />
   </div>
 </template>
 
 <script setup lang="ts">
-const config = {
-  wrapper: ""
-}
+import {segment as config } from "@/ui.config"
 
 const props = withDefaults(
   defineProps<{
@@ -19,7 +17,8 @@ const props = withDefaults(
 
 const { ui, attrs } = useUI(
   "shsection",
-  toRef(props, "ui")
+  toRef(props, "ui"),
+  config
 )
 
 </script>

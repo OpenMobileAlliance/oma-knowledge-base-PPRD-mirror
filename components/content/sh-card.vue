@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
 import { defineProps, toRef, computed } from 'vue'
-import config from '../../components/ui.config/sh-card' // Import the config file
+import config from '@/ui.config/sh-card' // Import the config file
 
 const props = withDefaults(
     defineProps<{

@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { defineProps, toRef } from 'vue'
-import config from '../../components/ui.config/sh-micro-card' // Importing the config file
+import config from '@/ui.config/sh-micro-card' // Importing the config file
 
 const props = withDefaults(
   defineProps<{

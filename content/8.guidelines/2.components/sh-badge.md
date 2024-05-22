@@ -1,5 +1,20 @@
+---
+title: ShBadge component
+description: Display a short text to represent a status or a category.
+---
+
+## Usage
+
+
 ::ShBadge
 ---
-description: v1.2+
+text: v1.2+
 ---
 ::
+
+## Props
+
+
+## Config
+
+
