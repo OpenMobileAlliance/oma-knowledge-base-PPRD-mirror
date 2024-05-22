@@ -3,8 +3,8 @@
         <div class="grid grid-cols-5 gap-4">
             <img v-if="imageLink" :class="ui.image" :src="imageLink" :alt="alt" />
             <div class="col-start-2 col-span-3 flex-col">
-                <p :class="ui.title">{{ title }}</p>
-                <p v-if="subtitle" :class="ui.subtitle">{{ subtitle }}</p>
+                <MDC :class="ui.title" :value="title" />
+                <MDC v-if="subtitle" :class="ui.subtitle" :value="subtitle" />
                 <UFormGroup class="pb-4" error size="xl">
                     <UInput placeholder="you@example.com" icon="i-heroicons-envelope" />
                 </UFormGroup>

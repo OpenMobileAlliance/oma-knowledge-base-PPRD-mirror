@@ -1,10 +1,11 @@
 <template>
   <div :class="ui.wrapper">
-    <NuxtLink :to="src" target="_blank">
+    <NuxtLink :to="src" target="_blank" class="not-prose">
       <div>
         <img :src="imageLink" :class="ui.image" />
-        <p :class="ui.title">{{ title }}</p>
-        <p :class="ui.subtitle">{{ subtitle }}</p>
+        <MDC :class="ui.title" :value="title" />
+        <MDC :class="ui.subtitle" :value="subtitle" />
+        <MDC :class="ui.text" :value="text" />
       </div>
     </NuxtLink>
   </div>
@@ -20,6 +21,7 @@ const props = withDefaults(
     imageLink?: String;
     title?: String;
     subtitle?: String;
+    text?: String;
     ui?: Partial<typeof config>;
   }>(),
   {
@@ -28,6 +30,7 @@ const props = withDefaults(
     imageLink: "",
     title: "",
     subtitle: "",
+    text: "",
   });
 
 const { ui } = useUI(
