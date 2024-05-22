@@ -1,4 +1,5 @@
 export { default as avatar } from "@/ui.config/sh-avatar"
+export { default as alert } from "@/ui.config/sh-alert"
 
 export { default as card } from "@/ui.config/sh-card"
 export { default as badge } from "@/ui.config/sh-badge"

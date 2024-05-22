@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import { defineProps, toRef, computed } from 'vue'
-import config from '@/ui.config/sh-social' // Import the config file
+import { social as config } from '@/ui.config' // Import the config file
 
 // Define props
 const props = withDefaults(
