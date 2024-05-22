@@ -8,5 +8,5 @@
 - [TextImage](/guidelines/components/sh-text-img)
 - [TowColumns](/guidelines/components/sh-two-columns)
 - [Social](/guidelines/components/sh-social)
-
 - [Alert](/guidelines/components/sh-alert)
+

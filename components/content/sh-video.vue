@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { defineProps, ref, computed } from "vue";
-import config from '@/ui.config/sh-video' // Importing the config file
+import { video as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
     defineProps < {

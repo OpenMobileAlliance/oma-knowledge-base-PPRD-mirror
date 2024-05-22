@@ -1,26 +1,34 @@
-::sh-alert
+
+## Usage
+
+::ShAlert
 ---
-description: "Testing alert component"
+text: "Testing alert component"
 ---
 ::
 
-::sh-alert
+::ShAlert
 ---
-description: "Testing alert component"
+text: "Testing alert component"
 type: success
 ---
 ::
 
-::sh-alert
+::ShAlert
 ---
-description: "Testing alert component"
+text: "Testing alert component"
 type: warning
 ---
 ::
 
-::sh-alert
+::ShAlert
 ---
-description: "Testing alert component"
+text: "Testing alert component"
 type: danger
 ---
 ::
+
+
+## Props
+
+## Config

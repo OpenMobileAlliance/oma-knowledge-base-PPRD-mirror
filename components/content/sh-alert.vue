@@ -4,24 +4,23 @@
         <div :class="ui.base">
             <i :class="['size-7', icon]"></i>
         </div>
-        {{ description }}
+        <MDC :value="text" />
     </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps, toRef, computed } from 'vue'
-import config from '../../components/ui.config/sh-alert' // Import the config file
+import { alert as config } from "@/ui.config" // Import the config file
 
 // Define props
 const props = withDefaults(
     defineProps<{
-        description: string;
-        type: string;
+        text: String;
+        type?: String;
         ui?: Partial<typeof config>;
     }>(),
     {
         ui: () => ({}),
-        description: "",
+        text: "",
         type: "info",
     }
 );

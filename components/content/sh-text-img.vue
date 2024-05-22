@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import { defineProps, toRef, computed } from 'vue'
-import config from '@/ui.config/sh-text-img' // Import the config file
+import { textImg as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
     defineProps<{
