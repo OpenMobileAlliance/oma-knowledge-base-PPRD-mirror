@@ -1,18 +1,18 @@
 <template>
     <div :class="[ui.wrapper, Status]">
         <div v-if="src" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
-            <div :class="[textPositionClass, textSpanClass, textAlignClass]">
-                <p :class="ui.title">{{ title }}</p>
-                <p v-if="subtitle" :class="ui.subtitle">{{ subtitle }}</p>
-                <p :class="ui.text">{{ text }}</p>
-            </div>
             <img :src="src" :class="[imgPositionClass, imgSpanClass, 'mx-auto rounded-xl']" />
+            <div :class="[textPositionClass, textSpanClass, textAlignClass]">
+                <MDC :class="ui.title" :value="title" />
+                <MDC :class="ui.subtitle" :value="subtitle" />
+                <MDC :class="ui.text" :value="text" />
+            </div>
         </div>
         <div v-else class="grid grid-cols-1 grid-rows-1">
             <div :class="[textAlignClass]">
-                <p :class="ui.title">{{ title }}</p>
-                <p v-if="subtitle" :class="ui.subtitle">{{ subtitle }}</p>
-                <p :class="[ui.text, 'items-center']">{{ text }}</p>
+                <MDC :class="ui.title" :value="title" />
+                <MDC :class="ui.subtitle" :value="subtitle" />
+                <MDC :class="[ui.text, 'items-center']" :value="text" />
             </div>
         </div>
     </div>
@@ -59,11 +59,11 @@ const textAlign = toRef(props, 'textAlign');
 const status = toRef(props, 'status');
 
 const COL_START_VALUES = [
-'',
-'col-start-1',
-'col-start-2',
-'col-start-3',
-'col-start-4'
+    '',
+    'col-start-1',
+    'col-start-2',
+    'col-start-3',
+    'col-start-4'
 ]
 
 const textPositionClass = computed(() => {
@@ -111,7 +111,7 @@ const textAlignClass = computed(() => {
 });
 
 //depending on the textPosition, the image will be placed on the opposite side
-const imgPositionClass = computed(() => { 
+const imgPositionClass = computed(() => {
     if (textPosition.value === 'left' && textSpan.value === 'm') {
         return 'col-start-2'
     } else if (textPosition.value === 'right') {
@@ -120,7 +120,7 @@ const imgPositionClass = computed(() => {
 });
 
 //depending on the textSpan and textPosition, the image will take the remaining space
-const imgSpanClass = computed(() => { 
+const imgSpanClass = computed(() => {
     if (textSpan.value === 'xl' && textPosition.value === 'left') {
         return 'col-start-4 col-span-1'
     } else if (textSpan.value === 'xl' && textPosition.value === 'right') {
@@ -135,7 +135,7 @@ const imgSpanClass = computed(() => {
 });
 
 //classes for styling the container background depending on the status
-const Status = computed(()=>{ 
+const Status = computed(() => {
     switch (status.value) {
         case 'on':
             return config.status.on

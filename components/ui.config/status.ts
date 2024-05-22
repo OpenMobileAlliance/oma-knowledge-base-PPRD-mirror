@@ -1,5 +1,4 @@
-
-const status = {
+const status: { [key: string]: string } = {
   on: '       bg-green-200    border-green-200    dark:border-green-800   dark:bg-green-800   dark:text-white',
   off: '      bg-red-200      border-red-200      dark:border-red-800     dark:bg-red-800     dark:text-white',
   pending: '  bg-yellow-100   border-yellow-100   dark:border-yellow-800  dark:bg-yellow-600  dark:text-white',
