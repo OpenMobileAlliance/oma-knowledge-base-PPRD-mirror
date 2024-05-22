@@ -3,13 +3,13 @@
         <img :src="avatarSrc" :alt="avatarAlt" :class="ui.image" />
         <div :class="ui.base">
             <div>
-                <p :class="ui.name">{{ name }}</p>
+                <MDC :class="ui.name" :value="name" />
             </div>
             <div>
-                <p :class="ui.role">{{ role }}</p>
+                <MDC :class="ui.role" :value="role" />
             </div>
             <div>
-                <p :class="ui.company">{{ '@' + company }}</p>
+                <MDC :class="ui.company" :value="'@' + company"/>
             </div>
             <div :class="ui.socials">
                 <NuxtLink v-if="twitter" :to="twitter">

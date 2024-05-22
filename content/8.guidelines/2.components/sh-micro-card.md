@@ -7,11 +7,15 @@ This is how Micro Card looks like
 ---
 ui:
     wrapper: "shadow-xl"
-    title: "text-red-500 "
+    title: "text-red-500"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
-link: 'https://www.axios.com/'
-title: Microsoft sets non-profit to cut software related carbon emissions 
-subtitle: Axios gets you smarter, faster on what matters.
+src: 'https://www.axios.com/'
+title: |
+    Microsoft sets non-profit to cut software related carbon emissions 
+subtitle: |
+    Axios gets you smarter, faster on what matters.
+text: |
+    This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
 ---
 ::
 
@@ -20,9 +24,11 @@ This is how to use Micro Card
 ::ShMicroCard
 ---
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
-link: 'https://www.axios.com/'
-title: Microsoft sets non-profit to cut software related carbon emissions
-subtitle: Axios gets you smarter, faster on what matters.
+src: 'https://www.axios.com/'
+title: |
+    Microsoft sets non-profit to cut software related carbon emissions
+subtitle: |
+    Axios gets you smarter, faster on what matters.
 ---
 ::
 ```
@@ -36,9 +42,11 @@ ui:
     wrapper: "shadow-xl"
     title: "text-red-500"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
-link: 'https://www.axios.com/'
-title: Microsoft sets non-profit to cut software related carbon emissions
-subtitle: Axios gets you smarter, faster on what matters.
+src: 'https://www.axios.com/'
+title: |
+    Microsoft sets non-profit to cut software related carbon emissions
+subtitle: |
+    Axios gets you smarter, faster on what matters.
 ---
 ::
 ```

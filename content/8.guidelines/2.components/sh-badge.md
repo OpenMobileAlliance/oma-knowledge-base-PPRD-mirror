@@ -8,7 +8,8 @@ description: Display a short text to represent a status or a category.
 
 ::ShBadge
 ---
-text: v1.2+
+text: |
+    v1.2+
 ---
 ::
 

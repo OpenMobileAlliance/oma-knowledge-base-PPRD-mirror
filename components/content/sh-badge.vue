@@ -1,6 +1,6 @@
 <template>
     <UBadge :color="color" :variant="variant" :ui="{ rounded: 'rounded-full' }" size="lg">
-      {{ text }}
+      <MDC :value="text" />
     </UBadge>
   </template>
   
