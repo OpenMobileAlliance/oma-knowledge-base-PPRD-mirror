@@ -6,7 +6,7 @@
 - [Video](/guidelines/components/sh-video)
 - [Segment](/guidelines/components/sh-segment)
 - [TextImage](/guidelines/components/sh-text-img)
-- [TowColumns](/guidelines/components/sh-two-columns)
+- [TwoColumns](/guidelines/components/sh-two-columns)
 - [Social](/guidelines/components/sh-social)
 - [Alert](/guidelines/components/sh-alert)
 
