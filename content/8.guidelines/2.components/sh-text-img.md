@@ -18,7 +18,7 @@ ui:
 textPosition: "left" #this is an inline comment example that is not displayed
 textSpan: "m"
 textAlign: "left"
-status: "on"
+status: "on" #options: "on", "off", "pending", and "highlight"
 src: "https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119"
 title: |
   Hello component
@@ -44,7 +44,7 @@ ui:
 textPosition: "left" #this is an inline comment example that is not displayed
 textSpan: "m"
 textAlign: "left"
-status: "on"
+status: "on" #options: "on", "off", "pending", and "highlight"
 src: "https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119"
 title: |
   Hello component
