@@ -8,6 +8,7 @@ This is how Micro Card looks like
 ui:
     wrapper: "shadow-xl"
     title: "text-red-500"
+    text: "text-oma-400"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
 src: 'https://www.axios.com/'
 title: |
@@ -41,6 +42,7 @@ You can also tackle the styling of elements in Micro Card by inserting a ui prop
 ui:
     wrapper: "shadow-xl"
     title: "text-red-500"
+    text: "text-oma-400"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
 src: 'https://www.axios.com/'
 title: |
