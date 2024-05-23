@@ -10,6 +10,7 @@ export { default as social } from "@/ui.config/sh-social"
 export { default as textImg } from "@/ui.config/sh-text-img"
 export { default as segment } from "@/ui.config/sh-segment"
 export { default as twoColumns } from "@/ui.config/sh-two-columns"
+export { default as column } from "@/ui.config/sh-column"
 
 export { default as video } from "@/ui.config/sh-video"
 export { default as actionCard } from "@/ui.config/sh-action-card"

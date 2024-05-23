@@ -1,5 +1,5 @@
 ---
-titile: Segment component
+titile: ShSegment component
 discription: 
 ---
 
@@ -17,7 +17,7 @@ This is a specific block of *Markdown* content that can be styled as a whole.
 
 ::
 
-```md
+```mdc
 ::ShSegment
 ---
 ui:
@@ -73,7 +73,7 @@ That is making this used to show this component flexibility.
 
 ::
 
-```md
+```mdc
 :::ShSegment
 ---
 ui:
@@ -95,7 +95,7 @@ That is making this used to show this component flexibility.
 This component have no properties defined.
 ## Config
 
-```javascript
+```json
 {
   wrapper: ""
 }

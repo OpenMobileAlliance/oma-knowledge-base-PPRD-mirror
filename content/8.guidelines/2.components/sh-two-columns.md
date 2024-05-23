@@ -16,7 +16,7 @@ Text here should be in the right column.
 ::
 
 The above example is done with the following code:
-```md 
+```mdc 
 ::ShTwoColumns
 This text should be in the left column.
 
@@ -32,7 +32,7 @@ This text should be in the left column.
 ![image](https://free-images.com/sm/3b8f/dalmatiner_schw_braun.jpg){.not-prose .w-full .rounded-2xl}
 ::
 
-```md
+```mdc
 ::ShTwoColumns
 This text should be in the left column. 
 
@@ -48,7 +48,7 @@ The order of elements determine the left and right column content.
 This text should be in the right column. 
 ::
 
-```md
+```mdc
 ::ShTwoColumns
 ![image](https://free-images.com/sm/3b8f/dalmatiner_schw_braun.jpg){.not-prose .w-full .rounded-2xl}
 
@@ -87,7 +87,7 @@ size: 2XL
 
 ::
 
-```md 
+```mdc
 ::ShTwoColumns
 ![laptop](https://free-images.com/tn/f4f3/coffee_apple_iphone_laptop.jpg){.not-prose .w-full .rounded-2xl}
 
@@ -338,7 +338,7 @@ Values for this property and its basic usage can be find in
 
 ## Config
 
-```javascript
+```json
 {
   wrapper: "",
   default: {

@@ -7,6 +7,7 @@
 - [Segment](/guidelines/components/sh-segment)
 - [TextImage](/guidelines/components/sh-text-img)
 - [TwoColumns](/guidelines/components/sh-two-columns)
+- [Column](/guidelines/components/sh-column)
 - [Social](/guidelines/components/sh-social)
 - [Alert](/guidelines/components/sh-alert)
 
