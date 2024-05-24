@@ -3,7 +3,7 @@
         <div :class="ui.upperBase" :style="backgroundClass">
             <div class="h-80 w-full flex justify-center items-center">
                 <!-- Set a fixed height for the row containing the image -->
-                <img :src="imageLink" :class="ui.image" />
+                <img :src="imageLink" :class="ui.image" :alt="altImage" />
                 <!-- Allow the image to expand within the row height -->
             </div>
         </div>
@@ -39,25 +39,27 @@ import { card as config } from '@/ui.config' // Import the config file
 const props = withDefaults(
     defineProps<{
         imageLink?: string;
+        altImage?: string;
         title?: string;
         subtitle?: string;
         text?: string;
         leftLabel?: string;
         centerLabel?: string;
         rightLabel?: string;
-        background?: string;
+        backgroundImage?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
         ui: () => ({}),
         imageLink: "",
+        altImage: "",
         title: "",
         subtitle: "",
         text: "",
         leftLabel: "",
         centerLabel: "",
         rightLabel: "",
-        background: "",
+        backgroundImage: "",
     }
 );
 
@@ -67,8 +69,8 @@ const { ui } = useUI(
     config
 );
 const backgroundClass = computed(() => {
-    if (props.background) {
-        return "background-image: url(" + props.background + ")";
+    if (props.backgroundImage) {
+        return "background-image: url(" + props.backgroundImage + ")";
     }
 });
 </script>

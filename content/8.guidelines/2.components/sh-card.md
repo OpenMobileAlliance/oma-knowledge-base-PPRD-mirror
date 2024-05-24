@@ -11,6 +11,7 @@ ui:
     centerLabel: "text-oma-500"
     rightLabel: "text-oma-500"
     upperBase: "bg-red-300" # in order for this bg color to be displayed, we need to remove background prop
+    lowerBase: "bg-red-100"
     image: "hover:saturate-200 hover:scale-125 duration-300" # Options to style image
 text: |
     NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
@@ -24,7 +25,7 @@ centerLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">center</a> label
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-background: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+backgroundImage: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
 imageLink: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
 ---
 ::
@@ -55,7 +56,7 @@ centerLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">center</a> label
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-background: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+backgroundImage: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
 imageLink: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
 ---
 ::
