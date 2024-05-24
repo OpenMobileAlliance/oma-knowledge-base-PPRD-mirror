@@ -1,6 +1,6 @@
 <template>
     <div :class="ui.wrapper">
-        <img :src="avatarSrc" :alt="avatarAlt" :class="ui.image" />
+        <img :src="srcAvatar" :alt="altAvatar" :class="ui.avatar" />
         <div :class="ui.base">
             <div>
                 <MDC :class="ui.name" :value="name" />
@@ -36,21 +36,21 @@ import { avatar as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
   defineProps<{
-    avatarSrc?: String;
-    avatarAlt?: String;
-    name?: String;
-    role?: String;
-    company?: String;
-    twitter?: String;
-    linkedin?: String;
-    facebook?: String;
-    instagram?: String;
+    srcAvatar?: string;
+    altAvatar?: string;
+    name?: string;
+    role?: string;
+    company?: string;
+    twitter?: string;
+    linkedin?: string;
+    facebook?: string;
+    instagram?: string;
     ui?: Partial<typeof config>;
   }>(),
   {
     ui: () => ({}),
-    avatarSrc: "",
-    avatarAlt: "",
+    srcAvatar: "",
+    altAvatar: "",
     name: "",
     role: "",
     company: "",

@@ -1,7 +1,7 @@
 ::ShAvatar
 ---
-avatarSrc: 'https://avatars.githubusercontent.com/u/3258579?v=4'
-avatarAlt: JPC
+srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+altAvatar: JPC
 name: |
     Joaquin Prado
 role: |
