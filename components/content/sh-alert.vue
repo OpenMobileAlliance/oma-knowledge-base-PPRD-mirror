@@ -13,8 +13,8 @@ import { alert as config } from "@/ui.config" // Import the config file
 // Define props
 const props = withDefaults(
     defineProps<{
-        text: String;
-        type?: String;
+        text: string;
+        type?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
