@@ -2,7 +2,7 @@
   <div :class="ui.wrapper">
     <NuxtLink :to="url" target="_blank" class="not-prose">
       <div>
-        <img :src="imageLink" :class="ui.image" />
+        <img :src="imageLink" :class="ui.image" :alt="altImage"/>
         <MDC :class="ui.title" :value="title" />
         <MDC :class="ui.subtitle" :value="subtitle" />
         <MDC :class="ui.text" :value="text" />
@@ -17,17 +17,19 @@ import { microCard as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
   defineProps<{
-    url?: String;
-    imageLink?: String;
-    title?: String;
-    subtitle?: String;
-    text?: String;
+    url?: string;
+    imageLink?: string;
+    altImage?: string;
+    title?: string;
+    subtitle?: string;
+    text?: string;
     ui?: Partial<typeof config>;
   }>(),
   {
     ui: () => ({}),
     url: "",
     imageLink: "",
+    altImage: "",
     title: "",
     subtitle: "",
     text: "",
