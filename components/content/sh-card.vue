@@ -14,7 +14,7 @@
             <p :class="ui.subtitle">
                 <MDC :value="subtitle" />
             </p>
-            <p>
+            <p :class="ui.text">
                 <MDC :value="text" />
             </p>
             <div class="grid grid-cols-3">
@@ -69,8 +69,6 @@ const { ui } = useUI(
 const backgroundClass = computed(() => {
     if (props.background) {
         return "background-image: url(" + props.background + ")";
-    } else {
-        return "background-color: rgb(255, 255, 255)";
     }
 });
 </script>
