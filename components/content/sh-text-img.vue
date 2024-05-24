@@ -1,7 +1,7 @@
 <template>
     <div :class="[ui.wrapper, Status]">
-        <div v-if="src" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
-            <img :src="src" :class="[imgPositionClass, imgSpanClass, 'mx-auto rounded-xl']" />
+        <div v-if="imageLink" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
+            <img :src="imageLink" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image]" />
             <div :class="[textPositionClass, textSpanClass, textAlignClass]">
                 <MDC :class="ui.title" :value="title" />
                 <MDC :class="ui.subtitle" :value="subtitle" />
@@ -30,7 +30,8 @@ const props = withDefaults(
         title?: string;
         subtitle?: string;
         text?: string;
-        src?: string;
+        imageLink?: string;
+        altImage?: string;
         status?: string;
         ui?: Partial<typeof config>;
     }>(),
@@ -42,7 +43,8 @@ const props = withDefaults(
         title: "",
         subtitle: "",
         text: "",
-        src: "",
+        imageLink: "",
+        altImage: "",
         status: "",
     }
 );
