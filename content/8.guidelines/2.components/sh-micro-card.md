@@ -10,7 +10,7 @@ ui:
     title: "text-red-500"
     text: "text-oma-400"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
-src: 'https://www.axios.com/'
+url: 'https://www.axios.com/'
 title: |
     Microsoft sets non-profit to cut software related carbon emissions 
 subtitle: |
@@ -25,7 +25,7 @@ This is how to use Micro Card
 ::ShMicroCard
 ---
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
-src: 'https://www.axios.com/'
+url: 'https://www.axios.com/'
 title: |
     Microsoft sets non-profit to cut software related carbon emissions
 subtitle: |
@@ -44,7 +44,7 @@ ui:
     title: "text-red-500"
     text: "text-oma-400"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
-src: 'https://www.axios.com/'
+url: 'https://www.axios.com/'
 title: |
     Microsoft sets non-profit to cut software related carbon emissions
 subtitle: |

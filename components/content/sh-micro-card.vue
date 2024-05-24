@@ -1,6 +1,6 @@
 <template>
   <div :class="ui.wrapper">
-    <NuxtLink :to="src" target="_blank" class="not-prose">
+    <NuxtLink :to="url" target="_blank" class="not-prose">
       <div>
         <img :src="imageLink" :class="ui.image" />
         <MDC :class="ui.title" :value="title" />
@@ -17,7 +17,7 @@ import { microCard as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
   defineProps<{
-    src?: String;
+    url?: String;
     imageLink?: String;
     title?: String;
     subtitle?: String;
@@ -26,7 +26,7 @@ const props = withDefaults(
   }>(),
   {
     ui: () => ({}),
-    src: "",
+    url: "",
     imageLink: "",
     title: "",
     subtitle: "",
