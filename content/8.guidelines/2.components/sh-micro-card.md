@@ -6,17 +6,17 @@ This is how Micro Card looks like
 ::ShMicroCard
 ---
 ui:
-    wrapper: "shadow-xl"
+    wrapper: "shadow-xl bg-slate-200" #comments are allowed inline
     title: "text-red-500"
     text: "text-oma-400"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
 url: 'https://www.axios.com/'
 title: |
-    Microsoft sets non-profit to cut software related carbon emissions 
+    Microsoft sets non-profit to cut software related carbon emissions. 
 subtitle: |
     Axios gets you smarter, faster on what matters.
 text: |
-    This is a representation of additional field for text, if it is needed. It also has a *full Markdown capability*.
+    This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
 ---
 ::
 
@@ -24,12 +24,18 @@ This is how to use Micro Card
 ```md
 ::ShMicroCard
 ---
+ui:
+    wrapper: "shadow-xl bg-slate-200" #comments are allowed inline
+    title: "text-red-500"
+    text: "text-oma-400"
 imageLink: 'https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png'
 url: 'https://www.axios.com/'
 title: |
-    Microsoft sets non-profit to cut software related carbon emissions
+    Microsoft sets non-profit to cut software related carbon emissions. 
 subtitle: |
     Axios gets you smarter, faster on what matters.
+text: |
+    This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*.
 ---
 ::
 ```

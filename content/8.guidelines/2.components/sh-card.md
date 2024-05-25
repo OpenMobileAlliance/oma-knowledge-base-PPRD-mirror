@@ -3,7 +3,7 @@
 ::ShCard
 ---
 ui:
-    wrapper: "shadow-xl"
+    wrapper: "shadow-xl  bg-red-500" 
     title: "text-4xl text-pink-800"
     subtitle: "font-mono text-cyan-700"
     text: "text-oma-500" # Add text-color
@@ -36,14 +36,16 @@ This is how ShCard is represented:
 ::ShCard
 ---
 ui:
-    wrapper: "shadow-xl"
+    wrapper: "shadow-xl  bg-red-500"
     title: "text-4xl text-pink-800"
     subtitle: "font-mono text-cyan-700"
     text: "text-oma-500" # Add text-color
-    leftLabel: "text-oma-500" # Add text-color
+    leftLabel: "text-oma-500"  # Add text-color
     centerLabel: "text-oma-500"
     rightLabel: "text-oma-500"
-    background: "bg-red-300" # Note: background color is not working
+    upperBase: "bg-red-500" # in order for this bg color to be displayed, we need to remove background prop
+    lowerBase: "bg-red-100"
+    image: "hover:saturate-200 hover:scale-125 duration-300" # Options to style image
 text: |
     NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
 title: |
@@ -51,7 +53,7 @@ title: |
 subtitle: |
     Per aspera ad astra
 leftLabel: | #Comment can be added on the first line
-    Hello left [label](https://www.nasa.gov) 
+    Hello left [label](https://www.nasa.gov)
 centerLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">center</a> label
 rightLabel: |
