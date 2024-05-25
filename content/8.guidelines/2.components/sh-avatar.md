@@ -62,7 +62,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 These are the properties use in the `Avatar` constructor:
 
 * `srcAvatar`:
-* `altAvata`:
+* `altAvatar`:
 * `name`:
 * `role`:
 * `company`:
