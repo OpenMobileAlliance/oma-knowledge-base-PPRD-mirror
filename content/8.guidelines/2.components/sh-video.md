@@ -7,7 +7,7 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 
 ### Props
 These are the properties available to `ShVideo` constructor:
-
+> Note: (*), these properties can also accept changes to the style.
 * `ui`:
 * `wrapper`: (*)
 * `src`: 
