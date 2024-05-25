@@ -5,8 +5,8 @@ This is how it is displayed.
 ::ShAvatar
 ---
 ui:
-    wrapper: "shadow-xl"
-    name: "text-3xl"
+    wrapper: "shadow-xl" # provide a shadow around the wrapper
+    name: "text-3xl" # controls text font, size and color
     role: "text-2xl"
     company: "text-1xl"
     linkedin: ""
@@ -21,7 +21,7 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
 facebook: 'https://www.linkedin.com/in/jpradocueva/'
 instagram: 'https://www.linkedin.com/in/jpradocueva/'
 twitter: 'https://www.linkedin.com/in/jpradocueva/'
@@ -34,8 +34,8 @@ This is how it is constructed.
 ::ShAvatar
 ---
 ui:
-    wrapper: "shadow-xl"
-    name: "text-3xl"
+    wrapper: "shadow-xl" # provide a shadow around the wrapper
+    name: "text-3xl" # controls text font, size and color
     role: "text-2xl"
     company: "text-1xl"
     linkedin: ""
@@ -50,7 +50,7 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
 facebook: 'https://www.linkedin.com/in/jpradocueva/'
 instagram: 'https://www.linkedin.com/in/jpradocueva/'
 twitter: 'https://www.linkedin.com/in/jpradocueva/'
