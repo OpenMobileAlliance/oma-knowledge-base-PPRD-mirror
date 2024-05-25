@@ -1,9 +1,25 @@
 ### Usage
+This is how `ShVideo` is displayed:
+
 ::ShVideo
 ---
+ui:
+    wrapper: "shadow-2xl"
 src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 ---
 ::
+
+This is how `ShVideo` is written:
+
+```md
+::ShVideo
+---
+ui:
+    wrapper: "shadow-2xl"
+src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
+---
+::
+```
 
 ### Props
 These are the properties available to `ShVideo` constructor:
