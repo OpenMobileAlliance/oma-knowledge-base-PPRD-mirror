@@ -1,5 +1,25 @@
+### Usage
 ::ShVideo
 ---
 src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 ---
 ::
+
+### Props
+These are the properties available to `ShVideo` constructor:
+
+* `ui`:
+* `wrapper`: (*)
+* `src`: 
+
+### Config
+This is the content in the `sh-video.ts` file. It contains the properties that can be used to configure the style.
+
+```ts
+export default {
+    wrapper: "mx-5 ring-4",
+    // Default Tailwind CSS values
+    default: {
+    }
+  }
+```
