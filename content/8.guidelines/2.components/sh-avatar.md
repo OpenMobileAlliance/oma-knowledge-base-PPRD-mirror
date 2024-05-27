@@ -238,6 +238,8 @@ export default {
 ```
 
 #### Attribute Descriptions
+The following attributes values are used to style the `ShAvatar` constructor by default. 
+These attributes are also exposed via the `ShAvatar` constructor to add additional values.
 
 **wrapper**
 
