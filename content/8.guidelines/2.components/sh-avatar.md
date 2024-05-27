@@ -8,11 +8,8 @@ ui:
     wrapper: "shadow-xl" # provide a shadow around the wrapper
     name: "text-3xl" # controls text font, size and color
     role: "text-2xl"
-    company: "text-1xl"
-    linkedin: ""
-    facebook: ""
-    instagram: ""
-    twitter: ""
+    company: "text-xl"
+    #twitter, faccebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
 altAvatar: JPC
 name: |
@@ -37,11 +34,8 @@ ui:
     wrapper: "shadow-xl" # provide a shadow around the wrapper
     name: "text-3xl" # controls text font, size and color
     role: "text-2xl"
-    company: "text-1xl"
-    linkedin: ""
-    facebook: ""
-    instagram: ""
-    twitter: ""
+    company: "text-xl"
+    #twitter, faccebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
 altAvatar: JPC
 name: |
@@ -59,7 +53,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ```
 
 ### Avatar Props
-These are the properties use in the `Avatar` constructor:
+These are the properties used in the `Avatar` constructor:
 
 * `srcAvatar`:
 * `altAvatar`:
@@ -79,7 +73,7 @@ These are the ShAvatar style properties that can be modified via `ui`. These pro
 export default {
     wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto",
     avatar: "grayscale justify-self-end tracking-widest rounded-full size-48",
-    base: "flex-col -mt-4",
+    base: "",
     name: "text-3xl font-bold grow text-pink-500 bottom-0",
     role: "text-lg font-semibold text-black dark:text-white -mt-4",
     company: "text-lg text-gray-500 tracking-widest -mt-5",
@@ -90,4 +84,3 @@ export default {
     }
   }
 ```
-What does the `base` property?
