@@ -3,6 +3,7 @@
 #### Presentation
 This is the display format for the `ShAvatar` constructor, designed to showcase an avatar representing a project member and provide a direct link to their social media profiles.
  
+##### Example Basic Avatar
 
 ::ShAvatar
 ---
@@ -45,7 +46,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 These are the properties and attributes associated to the `ShAvatar` constructor:
 
 #### ShAvatar Properties and Attributes Description
-The ShAvatar constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the ShAvatar constructor.
+The `ShAvatar` constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the `ShAvatar` constructor.
 
 <table>
   <thead>
@@ -59,11 +60,11 @@ The ShAvatar constructor creates a display format showcasing an avatar that repr
     <tr>
       <td rowspan="9">ui</td>
       <td>n/a</td>
-      <td>The <code>ui</code> property in the ShAvatar constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the avatar component. Each attribute within the <code>ui</code> property targets a specific part of the avatar display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
+      <td>The <code>ui</code> property in the <code>ShAvatar</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the avatar component. Each attribute within the <code>ui</code> property targets a specific part of the avatar display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td>Defines the overall styling for the container that holds all the elements of the avatar. The attribute "shadow-xl" is used to provide a shadow effect around the wrapper.</td>
+      <td>Defines the overall styling for the container that holds all the elements of the avatar. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <tr>
       <td><code>base</code></td>
@@ -195,7 +196,6 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ---
 ::
 ```
-
 
 ### Avatar Config
 These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
