@@ -75,7 +75,7 @@ The `ShAvatar` constructor creates a display format showcasing an avatar that re
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td>Defines the overall styling for the container that holds all the elements of the avatar. The attribute </code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
+      <td>Defines the overall styling for the container that holds all the elements of the avatar. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <tr>
       <td><code>base</code></td>
