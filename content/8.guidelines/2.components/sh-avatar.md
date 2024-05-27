@@ -3,15 +3,10 @@
 #### Presentation
 This is the display format for the `ShAvatar` constructor, designed to showcase an avatar representing a project member and provide a direct link to their social media profiles.
  
+##### Example Basic Avatar
 
 ::ShAvatar
 ---
-ui:
-    wrapper: "shadow-xl" # provide a shadow around the wrapper
-    name: "text-3xl" # controls text font, size and color
-    role: "text-2xl"
-    company: "text-xl"
-    #twitter, faccebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
 altAvatar: JPC
 name: |
@@ -32,12 +27,6 @@ This is how it is constructed.
 ```md
 ::ShAvatar
 ---
-ui:
-    wrapper: "shadow-xl" # provide a shadow around the wrapper
-    name: "text-3xl" # controls text font, size and color
-    role: "text-2xl"
-    company: "text-xl"
-    #twitter, faccebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
 altAvatar: JPC
 name: |
@@ -156,7 +145,7 @@ The `ShAvatar` constructor creates a display format showcasing an avatar that re
 
 #### Example Usage
 ##### Simple Settings
-A basic example without custom ui attributes:
+A basic example without custom `ui` attributes:
 
 ```md
 ::ShAvatar
@@ -177,7 +166,8 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ::
 ```
 ##### Advanced Settings
-An example with customized ui attributes for enhanced display:
+An example with customized `ui` attributes for enhanced display. This is how it is written:
+
 ```md
 ::ShAvatar
 ---
@@ -202,7 +192,30 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ---
 ::
 ```
+This is how it is rendered:
 
+::ShAvatar
+---
+ui:
+    wrapper: "shadow-xl" # provide a shadow around the wrapper
+    name: "text-3xl" # controls text font, size and color
+    role: "text-2xl"
+    company: "text-xl"
+    # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
+srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+altAvatar: JPC
+name: |
+    Joaquin Prado
+role: |
+    Co-Founder
+company: |
+    Standards-Hub
+linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
+facebook: 'https://www.linkedin.com/in/jpradocueva/'
+instagram: 'https://www.linkedin.com/in/jpradocueva/'
+twitter: 'https://www.linkedin.com/in/jpradocueva/'
+---
+::
 
 ### Avatar Config
 These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
@@ -233,7 +246,7 @@ export default {
 
 **avatar**
 
-**Value**: "grayscale justify-self-end tracking-widest rounded-full size-48"
+**Value**: <code>"grayscale justify-self-end tracking-widest rounded-full size-48"</code>
 **Description**: This specifies styles for the avatar image. The value <code>"grayscale justify-self-end tracking-widest rounded-full size-48"</code> includes a grayscale effect, right-aligned positioning within the grid (justify-self-end), widest possible letter spacing (tracking-widest), a rounded shape (rounded-full), and a size of 48 units.
 
 **base**
