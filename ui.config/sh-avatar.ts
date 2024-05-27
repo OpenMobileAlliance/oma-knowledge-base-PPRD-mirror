@@ -1,5 +1,5 @@
 export default {
-    wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto",
+    wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit",
     avatar: "grayscale justify-self-end tracking-widest rounded-full size-48",
     base: "flex-col -mt-4",
     name: "text-3xl font-bold grow text-pink-500 bottom-0",
