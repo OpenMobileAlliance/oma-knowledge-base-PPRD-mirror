@@ -74,42 +74,34 @@ The `ShAvatar` constructor creates a display format showcasing an avatar that re
       <td>The <code>ui</code> property in the <code>ShAvatar</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the avatar component. Each attribute within the <code>ui</code> property targets a specific part of the avatar display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the avatar. The attribute </code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>base</code></td>
       <td>A placeholder for additional base styles that can be applied to the avatar component.</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>avatar</code></td>
       <td>Styles applied to the avatar image itself, including properties like grayscale effect, rounded shape, and size.</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>socials</code></td>
       <td>Contains the styles for the social media icons, including their alignment and spacing.</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>icon</code></td>
       <td>Defines the styling for individual social media icons, including hover effects and transition animations.</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>name</code></td>
       <td>Styles applied to the text displaying the name of the person, such as font size and color.</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>role</code></td>
       <td>Styles applied to the text displaying the role or position of the person.</td>
     </tr>
     <tr>
-      <td></td>
       <td><code>company</code></td>
       <td>Styles applied to the text displaying the company name of the person.</td>
     </tr>
