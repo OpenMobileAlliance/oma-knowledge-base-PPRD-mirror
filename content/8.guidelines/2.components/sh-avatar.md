@@ -217,7 +217,7 @@ export default {
   }
 ```
 
-#### Attribute Descriptions
+#### Class Descriptions
 
 _**wrapper**_
 
