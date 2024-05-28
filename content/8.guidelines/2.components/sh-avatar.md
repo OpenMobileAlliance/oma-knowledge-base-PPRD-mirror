@@ -171,6 +171,9 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ---
 ::
 
+This is an example with customized `ui` attributes for enhanced display:
+
+
 ```md
 ::ShAvatar
 ---
