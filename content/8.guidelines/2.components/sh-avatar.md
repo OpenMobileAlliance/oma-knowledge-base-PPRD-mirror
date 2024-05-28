@@ -224,39 +224,39 @@ export default {
 These represent the class values utilized in the `ShAvatar` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-*  **Value**: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit"
+*  **Value**: <code>"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"</code>
 *  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the wrapper uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
 
 _**avatar**_
-*  **Value**: "grayscale justify-self-end tracking-widest rounded-full size-48"
+*  **Value**: <code>"grayscale justify-self-end tracking-widest rounded-full size-48"</code>
 *  **Description**: This specifies styles for the avatar image. The value "grayscale justify-self-end tracking-widest rounded-full size-48" includes a grayscale effect, right-aligned positioning within the grid (justify-self-end), widest possible letter spacing (tracking-widest), a rounded shape (rounded-full), and a size of 48 units.
 
 _**base**_
-*  **Value**: ""
+*  **Value**: <code>""</code>
 *  **Description**: This is an empty placeholder for additional base styles that can be customized if needed.
 
 _**name**_
-*  **Value**: "text-3xl font-bold grow text-oma-500 bottom-0"
+*  **Value**: <code>"text-3xl font-bold grow text-oma-500 bottom-0"</code>
 *  **Description**: This defines the styling for the text displaying the person's name. The value "text-3xl font-bold grow text-oma-500 bottom-0" indicates a large font size (text-3xl), bold font weight (font-bold), flexible growth within the container (grow), oma color (text-oma-500), and positioning at the bottom of its container (bottom-0).
 
 _**role**_
-*  **Value**: "text-lg font-semibold text-black dark:text-white -mt-4"
+*  **Value**: <code>"text-lg font-semibold text-black dark:text-white -mt-4"</code>
 *  **Description**: This specifies the styling for the text displaying the role or position of the person. The value "text-lg font-semibold text-black dark:text-white -mt-4" includes a medium-large font size (text-lg), semi-bold font-weight (font-semibold), black text color (text-black) that switches to white in dark mode (dark:text-white), and a top margin of -4 units (-mt-4).
 
 _**company**_
-*  **Value**: "text-lg text-gray-500 tracking-widest -mt-5"
+*  **Value**: <code>"text-lg text-gray-500 tracking-widest -mt-5"</code>
 *  **Description**: This defines the styling for the text displaying the company name. The value "text-lg text-gray-500 tracking-widest -mt-5" includes a medium-large font size (text-lg), gray color (text-gray-500), widest possible letter spacing (tracking-widest), and a top margin of -5 units (-mt-5).
 
 _**socials**_
-*  **Value**: "flex text-5xl -mx-1 -mt-2"
+*  **Value**: <code>"flex text-5xl -mx-1 -mt-2"</code>
 *  **Description**: This specifies the styling for the container holding social media icons. The value "flex text-5xl -mx-1 -mt-2" indicates a flexible box layout (flex), large icon size (text-5xl), horizontal margin of -1 unit (-mx-1), and top margin of -2 units (-mt-2).
 
 _**icon**_
-*  **Value**: "transition-transform transform hover:-translate-y-1 dark:text-white duration-400"
+*  **Value**: <code>"transition-transform transform hover:-translate-y-1 dark:text-white duration-400"</code>
 *  **Description**: This defines the styling for individual social media icons. The value "transition-transform transform hover:-translate-y-1 dark:text-white duration-400" includes a smooth transformation transition (transition-transform), translation transformation (transform), upward translation on hover (hover:-translate-y-1), white color in dark mode (dark:text-white), and a transition duration of 400ms (duration-400).
 
 _**default**_
-*  **Value**: {}
+*  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
 These style properties ensure that the `ShAvatar` component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
