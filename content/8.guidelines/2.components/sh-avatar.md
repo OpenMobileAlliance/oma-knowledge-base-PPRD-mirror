@@ -280,3 +280,4 @@ These attributes are also exposed via the `ShAvatar` constructor to add addition
 * **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
 These style properties ensure that the <code>ShAvatar</code> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+
