@@ -221,7 +221,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the ShAvatar constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the `ShAvatar` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit"
