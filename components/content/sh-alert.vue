@@ -34,24 +34,32 @@ const alert = computed(() => {
     switch (props.type) {
         case "success":
             return config.alert.success;
+            break;
         case "warning":
             return config.alert.warning;
+            break;
         case "danger":
             return config.alert.danger;
+            break; 
         default: // info
             return config.alert.info;
+            break;
     }
 });
 const icon = computed(() => {
     switch (props.type) {
         case "success":
             return config.icon.success;
+            break;
         case "warning":
             return config.icon.warning;
+            break;
         case "danger":
             return config.icon.danger;
+            break;
         default: // info
             return config.icon.info;
+            break;
     }
 });
 </script>
