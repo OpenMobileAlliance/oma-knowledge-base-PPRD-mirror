@@ -21,11 +21,11 @@ import {column as config } from "@/ui.config"
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
-    title?: String;
-    subTitle?: String;
-    footerText?: String;
-    size?: String;
-    class?: Any;
+    title?: string;
+    subTitle?: string;
+    footerText?: string;
+    size?: string;
+    class?: any;
   }>(),
   {
     ui: () => ({}),
