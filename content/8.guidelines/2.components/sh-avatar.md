@@ -145,7 +145,7 @@ The `ShAvatar` constructor creates a display format showcasing an avatar that re
 
 #### Example Usage
 ##### Advanced Settings
-An example with customized ui attributes for enhanced display:
+An example with customized `ui` attributes for enhanced display:
 
 ::ShAvatar
 ---
