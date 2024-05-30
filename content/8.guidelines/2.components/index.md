@@ -1,13 +1,16 @@
-- [Micro Card](/guidelines/components/sh-micro-card)
 - [Action Card](/guidelines/components/sh-action-card)
-- [Card](/guidelines/components/sh-card)
+- [Alert](/guidelines/components/sh-alert)
 - [Avatar](/guidelines/components/sh-avatar)
 - [Badge](/guidelines/components/sh-badge)
-- [Video](/guidelines/components/sh-video)
+- [Card](/guidelines/components/sh-card)
+- [Card (Micro)](/guidelines/components/sh-micro-card)
+- [Column](/guidelines/components/sh-column)
 - [Segment](/guidelines/components/sh-segment)
+- [Social](/guidelines/components/sh-social)
 - [TextImage](/guidelines/components/sh-text-img)
 - [TwoColumns](/guidelines/components/sh-two-columns)
-- [Column](/guidelines/components/sh-column)
-- [Social](/guidelines/components/sh-social)
-- [Alert](/guidelines/components/sh-alert)
+- [Video](/guidelines/components/sh-video)
+
+
+
 
