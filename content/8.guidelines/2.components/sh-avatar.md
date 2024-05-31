@@ -42,7 +42,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ---
 ::
 ```
-## Avatar Props
+## ShAvatar Props
 These are the properties and attributes associated to the `ShAvatar` constructor:
 
 #### ShAvatar Properties and Attributes Description
@@ -200,7 +200,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ::
 ```
 
-## Avatar Config
+## ShAvatar Config
 These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
 
 
