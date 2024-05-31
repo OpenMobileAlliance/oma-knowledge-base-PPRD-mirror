@@ -1,9 +1,9 @@
-### Usage
+## Usage
 
-#### Presentation
+### Presentation
 This is the display format for the `ShAvatar` constructor, designed to showcase an avatar representing a project member and provide a direct link to their social media profiles.
  
-##### Example Basic Avatar
+#### Example Basic Avatar
 
 ::ShAvatar
 ---
@@ -42,7 +42,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ---
 ::
 ```
-### Avatar Props
+## Avatar Props
 These are the properties and attributes associated to the `ShAvatar` constructor:
 
 #### ShAvatar Properties and Attributes Description
@@ -143,8 +143,8 @@ The `ShAvatar` constructor creates a display format showcasing an avatar that re
 </table>
 
 
-#### Example Usage
-##### Advanced Settings
+### Example Usage
+#### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
 ::ShAvatar
@@ -200,7 +200,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ::
 ```
 
-### Avatar Config
+## Avatar Config
 These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
 
 
@@ -220,7 +220,7 @@ export default {
   }
 ```
 
-#### Class Descriptions
+### Class Descriptions
 These represent the class values utilized in the `ShAvatar` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
