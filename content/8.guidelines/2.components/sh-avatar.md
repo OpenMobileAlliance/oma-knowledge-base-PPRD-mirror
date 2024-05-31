@@ -225,7 +225,7 @@ These represent the class values utilized in the `ShAvatar` constructor. These v
 
 _**wrapper**_
 *  **Value**: <code>"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"</code>
-*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the wrapper uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
+*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the `wrapper` uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
 
 _**avatar**_
 *  **Value**: <code>"grayscale justify-self-end tracking-widest rounded-full size-48"</code>
