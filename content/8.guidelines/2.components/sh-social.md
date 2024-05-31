@@ -1,8 +1,11 @@
 ## Usage ShSocial
 ### Presentation
-This is the display format for the `ShSocial` constructor, designed to showcase Social Media posts.
+This is the display format for the `ShSocial` constructor, designed to showcase Social Media posts:
+* Facebook,
+* LinkedIn,
+* X (formally Twitter)
 
-#### X (Twitter) embeded post
+#### X (Twitter) Embeded Post
 
 ::ShSocial
 ---
@@ -20,7 +23,7 @@ src: "1757162766115176926"
 ::
 ```
 
-#### Facebook embeded post
+#### Facebook Embeded Post
 
 ::ShSocial
 ---
@@ -38,7 +41,7 @@ src: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.
 ::
 ```
 
-#### LinkedIn embeded post
+#### LinkedIn Embeded Post
 
 ::ShSocial
 ---
@@ -71,7 +74,7 @@ The `ShSocial` constructor creates a display format showcasing a Social Media po
   </thead>
   <tbody>
     <tr>
-      <td rowspan="9">ui</td>
+      <td rowspan="2">ui</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShSocial</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the Social Media component. Each attribute within the <code>ui</code> property targets a specific part of the Social Media display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
@@ -88,7 +91,7 @@ The `ShSocial` constructor creates a display format showcasing a Social Media po
 </table>
 
 ### ShSocial Config
-These style properties can be modified via ui and are stored in the sh-social.ts file:
+These style properties can be modified via `ui` and are stored in the `sh-social.ts` file:
 
 
 ```ts
