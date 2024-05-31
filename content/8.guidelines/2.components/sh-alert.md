@@ -137,7 +137,7 @@ The `ShAlert` constructor creates a notification field with different background
 ::ShAlert
 ---
 ui:
-    wrapper: "shadow-xl w-fit" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside
+    wrapper: "shadow-xl w-fit mx-auto" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside and center the alert wrapper
     text: "text-2xl font-mono p-3 m-3.5" #styles text font, size, padding
 text: |
     Testing alert component with shorten width
