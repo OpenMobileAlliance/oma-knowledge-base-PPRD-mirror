@@ -224,7 +224,7 @@ export default {
 These represent the class values utilized in the `ShAvatar` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-*  **Value**: <code>"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"</code>
+*  **Value**: `"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"`
 *  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the `wrapper` uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
 
 _**avatar**_
