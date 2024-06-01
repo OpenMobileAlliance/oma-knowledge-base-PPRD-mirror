@@ -5,6 +5,7 @@
         <img src="/public/logo-tagline2-1.png" alt="logo" />
       </template>
     </AppHeader>
+    <AppShBreadcrumb class="fixed z-20"/>
     <UContainer class="pt-10 pb-20">
       <slot />
     </UContainer>
