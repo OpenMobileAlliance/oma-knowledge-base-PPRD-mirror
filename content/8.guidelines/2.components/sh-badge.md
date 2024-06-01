@@ -9,8 +9,12 @@ constructorName: ShBadge
 
 ::ShBadge
 ---
-text: |
+ui:
+    wrapper: "shadow-2xl"
+text: | #modify description on the vue component to text
     v1.2+
+color: "gray" #color
+variant: "outline"
 ---
 ::
 

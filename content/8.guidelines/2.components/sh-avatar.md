@@ -9,7 +9,7 @@ constructorName: ShAvatar
 #### Presentation
 This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
  
-##### Example Basic Avatar
+#### Example Basic Avatar
 
 ::ShAvatar
 ---
@@ -149,8 +149,8 @@ The constructor creates a display format showcasing an avatar that represents a 
 </table>
 
 
-#### Example Usage
-##### Advanced Settings
+### Example Usage
+#### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
 ::ShAvatar
@@ -230,8 +230,8 @@ export default {
 These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-*  **Value**: <code>"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"</code>
-*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the wrapper uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
+*  **Value**: `"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"`
+*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the `wrapper` uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
 
 _**avatar**_
 *  **Value**: <code>"grayscale justify-self-end tracking-widest rounded-full size-48"</code>
