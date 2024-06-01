@@ -1,3 +1,9 @@
+---
+title: Card (Micro)
+description:
+constructorName: ShMicroCard
+---
+
 # Micro Card
 Display logos and quotes 
 ____

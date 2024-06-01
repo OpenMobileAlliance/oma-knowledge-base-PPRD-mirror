@@ -1,6 +1,12 @@
-### Usage ShSocial
+---
+title: Social
+description:
+constructorName: ShSocial
+---
+
+### Usage
 #### Presentation
-This is the display format for the `ShSocial` constructor, designed to showcase Social Media posts.
+This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase Social Media posts.
 ##### X (Twitter) embeded post
 
 ::ShSocial

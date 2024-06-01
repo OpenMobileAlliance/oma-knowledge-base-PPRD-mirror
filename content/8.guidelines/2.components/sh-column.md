@@ -1,9 +1,10 @@
 ---
 title: ShColumn
 description: Component representing the column with header and footer
+constructorName: ShColumn
 ---
 
-The `ShColumn` component is used to organise content of one column in
+The {{ $doc.constructorName }} component is used to organise content of one column in
 multi-column layout. The column has `header`, that can render `title` and
 `subTitle` in the header accompanied with an image.
 Beside the main content the column also can have the `footer` content as well.
@@ -17,7 +18,7 @@ title: This is *Colum*
 subTitle: "*a component for your vertical content*"
 footerText: "*use with care*"
 ---
-This is `ShColumn` component design to show content of one column.
+This is {{ $doc.constructorName }} component design to show content of one column.
 
 ![columns](https://free-images.com/tn/7dbb/columns_arches_patio_de.jpg){.w-full .rounded}
 ::
@@ -40,7 +41,7 @@ footerText: |
   a great responsibility
   ::
 ---
-The `ShColumn` component can contain any typical *Markdown* content, including:
+The {{ $doc.constructorName }} component can contain any typical *Markdown* content, including:
 * images 
 * lists
 * links
@@ -51,7 +52,7 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
 :::
 ::
 
-The fist colum code:
+The first column code:
 ```mdc 
 ::ShColumn
 ---
@@ -64,7 +65,7 @@ This is `ShColumn` component design to show content of one column.
 ![columns](https://free-images.com/tn/7dbb/columns_arches_patio_de.jpg){.w-full .rounded}
 ::
 ```
-The code of second colum is a bit more elabprated:
+The code of second column is a bit more elaborated:
 ```mdc
 :::ShColumn
 ---
@@ -107,7 +108,7 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
 
 ## Config
 
-```json
+```ts
 {
   wrapper: "",
   header: {

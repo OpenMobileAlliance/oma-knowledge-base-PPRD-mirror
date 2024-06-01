@@ -1,9 +1,15 @@
+---
+title: Video
+description:
+constructorName: ShVideo
+---
+
 ### ShVideo Documentation Guidelines
 
 ### Usage
 
 #### Presentation
-This section explains how the `ShVideo` constructor is displayed, enabling the embedding of videos with custom styles.
+This section explains how the {{ $doc.constructorName }} constructor is displayed, enabling the embedding of videos with custom styles.
 
 ##### Example Basic Video
 
@@ -24,10 +30,10 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 ```
 
 ### Props
-These are the properties and attributes associated with the `ShVideo` constructor:
+These are the properties and attributes associated with the {{ $doc.constructorName }} constructor:
 
 #### ShVideo Properties and Attributes Description
-The `ShVideo` constructor creates a display format for embedding a video with customizable styles. Below is a detailed description of the properties and attributes used in the `ShVideo` constructor.
+The {{ $doc.constructorName }} constructor creates a display format for embedding a video with customizable styles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 
 <table>
   <thead>
@@ -92,7 +98,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the `ShVideo` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"mx-5 ring-4"</code>
@@ -102,4 +108,4 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the `ShVideo` component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

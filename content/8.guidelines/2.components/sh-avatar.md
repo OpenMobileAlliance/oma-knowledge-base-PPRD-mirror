@@ -1,7 +1,13 @@
+---
+title: Avatar
+description: This constructor is designed to showcase an Avatar representing a project member and provide a direct link to their social media profiles. 
+constructorName: ShAvatar
+---
+
 ### Usage
 
 #### Presentation
-This is the display format for the `ShAvatar` constructor, designed to showcase an avatar representing a project member and provide a direct link to their social media profiles.
+This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
  
 ##### Example Basic Avatar
 
@@ -24,7 +30,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 
 This is how it is constructed. 
 
-```md
+```mdc
 ::ShAvatar
 ---
 srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
@@ -42,11 +48,11 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ---
 ::
 ```
-### Avatar Props
-These are the properties and attributes associated to the `ShAvatar` constructor:
+### Props
+These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
 
-#### ShAvatar Properties and Attributes Description
-The `ShAvatar` constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the `ShAvatar` constructor.
+#### Properties and Attributes Description
+The constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 
 <table>
   <thead>
@@ -174,7 +180,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 This is an example with customized `ui` attributes for enhanced display:
 
 
-```md
+```mdc
 ::ShAvatar
 ---
 ui:
@@ -200,7 +206,7 @@ twitter: 'https://www.linkedin.com/in/jpradocueva/'
 ::
 ```
 
-### Avatar Config
+### Config
 These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
 
 
@@ -221,7 +227,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the `ShAvatar` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"</code>
@@ -259,4 +265,4 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the `ShAvatar` component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

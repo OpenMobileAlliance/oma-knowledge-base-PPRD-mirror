@@ -1,11 +1,12 @@
 ---
-title: About Page #title of the window browser
+title: Text&Image #title of the window browser
 description: Page dedicated to LwM2M and IPSO
+constructorName: ShTextImg
 ---
 
-### Text-Image Usage
+### Usage
 
-With the component you can have text and image in the same row like shown in the
+With the {{ $doc.constructorName }} constructor you can have text and image in the same row like shown in the
 following example. <!-- comment example -->
 
 ::ShTextImg
@@ -58,7 +59,7 @@ text: |
 
 ### Props
 
-These are the properties used on the `ShTexImg` constructor:
+These are the properties used on the {{ $doc.constructorName }} constructor:
 > Note: (*) It means that these properties also accept styles:
 
 * `ui`:

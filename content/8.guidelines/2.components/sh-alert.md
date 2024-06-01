@@ -1,8 +1,13 @@
+---
+title: Alert
+description:
+constructorName: ShAlert
+---
 
 ### Usage
 
 #### Presentation
-This is the display format for the `ShAlert` constructor, designed to showcase an alerts with different types for different impact on subject.
+This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase an alerts with different types for different impact on subject.
 
 ##### Example Basic Alerts
 
@@ -15,7 +20,7 @@ text: |
 ::
 
 This is how it is constructed
-```md
+```mdc
 ::ShAlert
 ---
 text: |
@@ -35,7 +40,7 @@ text: |
 ::
 
 This is how it is constructed
-```md
+```mdc
 ::ShAlert
 ---
 type: success
@@ -56,7 +61,7 @@ text: |
 ::
 
 This is how it is constructed
-```md
+```mdc
 ::ShAlert
 ---
 type: warning
@@ -77,7 +82,7 @@ text: |
 ::
 
 This is how it is constructed
-```md
+```mdc
 ::ShAlert
 ---
 type: danger
@@ -89,9 +94,9 @@ text: |
 ___
 
 ### Alert Props
-These are the properties and attributes associated to the `ShAlert` constructor:
+These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
 #### ShAlert Properties and Attributes Description
-The `ShAlert` constructor creates a notification field with different background color to showcase the importance of notification. Below is a detailed description of the properties and attributes used in the `ShAlert` constructor.
+The {{ $doc.constructorName }} constructor creates a notification field with different background color to showcase the importance of notification. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 <table>
   <thead>
     <tr>
@@ -144,7 +149,7 @@ text: |
 ---
 ::
 
-```md
+```mdc
 ::ShAlert
 ---
 ui:

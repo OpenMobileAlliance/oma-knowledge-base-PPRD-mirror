@@ -1,4 +1,10 @@
-### ShCard Usage
+---
+title: Card
+description:
+constructorName: ShCard
+---
+
+### Usage
 
 ::ShCard
 ---

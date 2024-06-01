@@ -1,9 +1,10 @@
 ---
-titile: ShSegment component
+titile: Segment
 discription: 
+constructorName: ShSegment
 ---
 
-The `ShSegment` component represent the most flexible component as it's 
+The {{ $doc.constructorName }} component represent the most flexible component as it 
 encapsulates one block of markdown content that can be styled.
 
 ## Usage
@@ -38,7 +39,7 @@ ui:
   wrapper: border p-4
 ---
 
-Content inside of the `ShSegment` can be of any length or structure.
+Content inside of the {{ $doc.constructorName }} can be of any length or structure.
 
 It can have any general *Markdown* formatting structure: lists, order lists, or 
 tables.
@@ -56,7 +57,7 @@ tables.
 | left   | center    | right |
 | one   | two    | three |
 
-It can also include other components. For example another `ShSegment`.
+It can also include other components. For example another {{ $doc.constructorName }}.
 
 :::ShSegment
 ---
@@ -95,7 +96,7 @@ That is making this used to show this component flexibility.
 This component have no properties defined.
 ## Config
 
-```json
+```ts
 {
   wrapper: ""
 }
