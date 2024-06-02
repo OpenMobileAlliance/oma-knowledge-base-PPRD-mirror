@@ -79,7 +79,7 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
 ::
 
 This is how the above advance `ShColumn` is written: 
-
+> Note: the body of the text is written between the end of the front-matter (`---`) and the end of the `ShColumn` constructor (`::`)
 ```mdc
 ::ShColumn
 ---
