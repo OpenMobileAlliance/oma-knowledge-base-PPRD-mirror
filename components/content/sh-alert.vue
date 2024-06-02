@@ -3,7 +3,9 @@
         <div :class="ui.base">
             <i :class="['size-7', icon]"></i>
         </div>
-        <MDC :value="text" :class="ui.text" />
+        <div :class="ui.text">
+        <ContentSlot :use="$slots.default" unwrap="p" />
+        </div>
     </div>
 </template>
 
@@ -13,13 +15,11 @@ import { alert as config } from "@/ui.config" // Import the config file
 // Define props
 const props = withDefaults(
     defineProps<{
-        text: string;
         type?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
         ui: () => ({}),
-        text: "",
         type: "info",
     }
 );

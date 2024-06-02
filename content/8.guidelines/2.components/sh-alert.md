@@ -8,19 +8,13 @@ This is the display format for the `ShAlert` constructor, designed to showcase a
 
 This is `info` type of alert
 ::ShAlert
----
-text: |
-    Testing alert component related to info. This is the default alert type.
----
+Testing alert component related to info. This is the default alert type.
 ::
 
 This is how it is constructed
 ```md
 ::ShAlert
----
-text: |
-    Testing alert component related to info. This is the default alert type.
----
+Testing alert component related to info. This is the default alert type.
 ::
 ```
 ___
@@ -29,9 +23,8 @@ This is `success` type of alert
 ::ShAlert
 ---
 type: success
-text: |
-  Testing alert component related to success
 ---
+Testing alert component related to success
 ::
 
 This is how it is constructed
@@ -39,9 +32,8 @@ This is how it is constructed
 ::ShAlert
 ---
 type: success
-text: |
-  Testing alert component related to success
 ---
+Testing alert component related to success
 ::
 ```
 ___
@@ -50,9 +42,8 @@ This is `warning` type of alert
 ::ShAlert
 ---
 type: warning
-text: |
-  Testing alert component related to warning
 ---
+Testing alert component related to warning
 ::
 
 This is how it is constructed
@@ -60,9 +51,8 @@ This is how it is constructed
 ::ShAlert
 ---
 type: warning
-text: |
-  Testing alert component related to warning
 ---
+Testing alert component related to warning
 ::
 ```
 ___
@@ -71,9 +61,8 @@ This is `danger` type of alert
 ::ShAlert
 ---
 type: danger
-text: |
-  Testing alert component related to danger
 ---
+Testing alert component related to danger
 ::
 
 This is how it is constructed
@@ -81,9 +70,8 @@ This is how it is constructed
 ::ShAlert
 ---
 type: danger
-text: |
-  Testing alert component related to danger
 ---
+Testing alert component related to danger
 ::
 ```
 ___
@@ -139,9 +127,8 @@ The `ShAlert` constructor creates a notification field with different background
 ui:
     wrapper: "shadow-xl w-fit" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside
     text: "text-2xl font-mono p-3 m-3.5" #styles text font, size, padding
-text: |
-    Testing alert component with shorten width
 ---
+Testing alert component with shorten width
 ::
 
 ```md
@@ -150,9 +137,8 @@ text: |
 ui:
     wrapper: "shadow-xl w-fit" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside
     text: "text-2xl font-mono p-3 m-3.5" #styles text font, size, padding
-text: |
-    Testing alert component with shorten width
 ---
+    Testing alert component with shorten width
 ::
 ```
 
