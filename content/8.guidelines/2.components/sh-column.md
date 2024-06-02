@@ -148,7 +148,7 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
     </tr>
     <tr>
       <td><code>size</code></td>
-      <td></td>
+      <td>?</td>
     </tr>
     <tr>
       <td><code>title</code></td>
@@ -164,6 +164,11 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
       <td><code>footerText</code></td>
       <td>n/a</td>
       <td>Text at the footer of the column</td>
+    </tr>
+    <tr>
+      <td><code>main</code></td>
+      <td>?</td>
+      <td>?</td>
     </tr>
   </tbody>
 </table>
