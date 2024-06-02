@@ -1,3 +1,8 @@
+---
+title: Components
+description:
+---
+
 - [Micro Card](/guidelines/components/sh-micro-card)
 - [Action Card](/guidelines/components/sh-action-card)
 - [Card](/guidelines/components/sh-card)
@@ -7,6 +12,7 @@
 - [Segment](/guidelines/components/sh-segment)
 - [TextImage](/guidelines/components/sh-text-img)
 - [TwoColumns](/guidelines/components/sh-two-columns)
+- [MultiColumn](/guidelines/components/sh-multi-column)
 - [Column](/guidelines/components/sh-column)
 - [Social](/guidelines/components/sh-social)
 - [Alert](/guidelines/components/sh-alert)
