@@ -13,7 +13,7 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 
 ::ShAvatar
 ---
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -21,10 +21,10 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 
@@ -33,7 +33,7 @@ This is how it is constructed.
 ```mdc
 ::ShAvatar
 ---
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -41,10 +41,10 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 ```
@@ -156,13 +156,13 @@ An example with customized `ui` attributes for enhanced display:
 ::ShAvatar
 ---
 ui:
-  wrapper: "shadow-xl" # provide a shadow around the wrapper
-  name: "text-3xl" # controls text font, size and color
-  role: "text-2xl"
-  company: "text-xl"
-  icon: "hover:text-oma-500 dark:hover:text-oma-500"
+  wrapper: shadow-xl # provide a shadow around the wrapper
+  name: text-3xl # controls text font, size and color
+  role: text-2xl
+  company: text-xl
+  icon: hover:text-oma-500 dark:hover:text-oma-500
   # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -170,10 +170,10 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/ #link to social media source
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 
@@ -184,13 +184,13 @@ This is an example with customized `ui` attributes for enhanced display:
 ::ShAvatar
 ---
 ui:
-    wrapper: "shadow-xl" # provide a shadow around the wrapper
-    name: "text-3xl" # controls text font, size and color
-    role: "text-2xl"
-    company: "text-xl"
-    icon: "hover:text-oma-500 dark:hover:text-oma-500"
-    # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+  wrapper: shadow-xl # provide a shadow around the wrapper
+  name: text-3xl # controls text font, size and color
+  role: text-2xl
+  company: text-xl
+  icon: hover:text-oma-500 dark:hover:text-oma-500
+  # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -198,10 +198,10 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/ #link to social media source
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 ```
