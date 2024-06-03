@@ -1,3 +1,8 @@
+---
+title: Components
+description:
+---
+
 - [Action Card](/guidelines/components/sh-action-card)
 - [Alert](/guidelines/components/sh-alert)
 - [Avatar](/guidelines/components/sh-avatar)
@@ -10,7 +15,3 @@
 - [TextImage](/guidelines/components/sh-text-img)
 - [TwoColumns](/guidelines/components/sh-two-columns)
 - [Video](/guidelines/components/sh-video)
-
-
-
-
