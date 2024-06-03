@@ -12,73 +12,69 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 ##### Example Basic
 
 This is `info` type of alert
+
 ::ShAlert
----
-text: |
-    Testing alert component related to info. This is the default alert type.
----
+Testing alert component related to info. This is the default alert type.
 ::
 
 This is how it is constructed
+
 ```mdc
 ::ShAlert
----
-text: |
-    Testing alert component related to info. This is the default alert type.
----
+Testing alert component related to info. This is the default alert type.
 ::
 ```
 ___
 
 This is `success` type of alert
+
 ::ShAlert
 ---
 typeAlert: success
-text: |
-  Testing alert component related to success
 ---
+Testing alert component related to success
 ::
 
 This is how it is constructed
+
 ```mdc
 ::ShAlert
 ---
 typeAlert: success
-text: |
-  Testing alert component related to success
 ---
+Testing alert component related to success
 ::
 ```
 ___
 
 This is `warning` type of alert
+
 ::ShAlert
 ---
 typeAlert: warning
-text: |
-  Testing alert component related to warning
 ---
+Testing alert component related to warning
 ::
 
 This is how it is constructed
+
 ```mdc
 ::ShAlert
 ---
 typeAlert: warning
-text: |
-  Testing alert component related to warning
 ---
+Testing alert component related to warning
 ::
 ```
 ___
 
 This is `danger` type of alert
+
 ::ShAlert
 ---
 typeAlert: danger
-text: |
-  Testing alert component related to danger
 ---
+Testing alert component related to danger
 ::
 
 This is how it is constructed
@@ -86,9 +82,8 @@ This is how it is constructed
 ::ShAlert
 ---
 typeAlert: danger
-text: |
-  Testing alert component related to danger
 ---
+Testing alert component related to danger
 ::
 ```
 ___
@@ -107,7 +102,7 @@ The {{ $doc.constructorName }} constructor creates a notification field with dif
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">ui</td>
+      <td rowspan="4">ui</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShAlert</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the alert component. Each attribute within the <code>ui</code> property targets a specific part of the alert display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
@@ -119,18 +114,9 @@ The {{ $doc.constructorName }} constructor creates a notification field with dif
         <td><code>base</code></td>
         <td>A placeholder for additional base styles that can be applied to the alert component. In this specific case, it will target the section around icon.</td>
       </tr>
-      <tr>
-        <td><code>text</code></td>
-        <td>This class targets all the information about styling the text such as text font, size, etc.</td>
-      </tr>
     <tr>
       <td><code>icon</code></td>
       <td>Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc.</td>
-    </tr>
-    <tr>
-      <td><code>text</code></td>
-      <td><code>n/a</code></td>
-      <td>The main text content to be displayed.</td>
     </tr>
     <tr>
       <td><code>typeAlert</code></td>
@@ -146,22 +132,18 @@ The {{ $doc.constructorName }} constructor creates a notification field with dif
 ::ShAlert
 ---
 ui:
-    wrapper: "shadow-xl w-fit mx-auto" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside and center the alert wrapper
-    text: "text-2xl font-mono p-3 m-3.5" #styles text font, size, padding
-text: |
-    Testing alert component with shorten width
+    wrapper: "shadow-xl w-fit mx-auto text-2xl" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside, center the alert wrapper and enlarge text
 ---
+Testing alert component with shorten width
 ::
 
 ```mdc
 ::ShAlert
 ---
 ui:
-    wrapper: "shadow-xl w-fit mx-auto" # adds a shadow to the wrapper, makie the wrapper width fit the lenght of content inside and center the alert wrapper
-    text: "text-2xl font-mono p-3 m-3.5" #styles text font, size, padding
-text: |
-    Testing alert component with shorten width
+    wrapper: "shadow-xl w-fit mx-auto text-2xl" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside, center the alert wrapper and enlarge text
 ---
+Testing alert component with shorten width
 ::
 ```
 
@@ -172,7 +154,6 @@ These style properties can be modified via `ui` and are stored in the `sh-alert.
 export default {
   wrapper: "flex items-center space-x-1 mt-4 mb-4",
   base: "flex mx-2 p-1",
-  text: "not-prose",
   alert: {
     success: 'bg-[#F0FFF4] dark:bg-[#22543D] text-[#2F855A] dark:text-[#9AE6B4] px-2 py-3 relative border-l-4 border-[#68D391] dark:border-[#2F855A]',
     warning: 'bg-[#FFFAF0] dark:bg-[#744210] text-[#C05621] dark:text-[#FBD38D] px-2 py-3 relative border-l-4 border-[#F6AD55] dark:border-[#B7791F]',
@@ -189,6 +170,7 @@ export default {
   default: {
   }
 }
+
 ```
 
 #### Class Descriptions
@@ -201,10 +183,6 @@ _**wrapper**_
 _**base**_
 *  **Value**: `"flex mx-2 p-1"`
 *  **Description**: This specifies the base styles for the component. The value `"flex mx-2 p-1"` includes a flexbox layout (`flex`), horizontal margin of 2 units (`mx-2`), and padding of 1 unit (`p-1`).
-
-_**text**_
-*  **Value**: `"not-prose"`
-*  **Description**: This applies a style to text elements, ensuring they do not inherit prose styles. The value `"not-prose"` is used to exclude the element from any typography styles applied to prose content.
 
 _**alert**_
 *  **Description**: This object contains styles for different types of alert messages, tailored for both light and dark modes.<br>
