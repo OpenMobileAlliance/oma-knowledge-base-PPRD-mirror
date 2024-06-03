@@ -1,7 +1,7 @@
 <template>
     <div :class="[ui.wrapper, Status]">
-        <div v-if="imageLink" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
-            <img :src="imageLink" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image]" />
+        <div v-if="urlImage" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
+            <img :src="urlImage" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image]" />
             <div :class="[textPositionClass, textSpanClass, textAlignClass]">
                 <MDC :class="ui.title" :value="title" />
                 <MDC :class="ui.subtitle" :value="subtitle" />
@@ -30,7 +30,7 @@ const props = withDefaults(
         title?: string;
         subtitle?: string;
         text?: string;
-        imageLink?: string;
+        urlImage?: string;
         altImage?: string;
         status?: string;
         ui?: Partial<typeof config>;
@@ -43,7 +43,7 @@ const props = withDefaults(
         title: "",
         subtitle: "",
         text: "",
-        imageLink: "",
+        urlImage: "",
         altImage: "",
         status: "",
     }
@@ -139,14 +139,14 @@ const imgSpanClass = computed(() => {
 //classes for styling the container background depending on the status
 const Status = computed(() => {
     switch (status.value) {
-        case 'on':
-            return config.status.on
-        case 'off':
-            return config.status.off
-        case 'pending':
-            return config.status.pending
-        case 'highlight':
-            return config.status.highlight
+        case 'a':
+            return config.status.a
+        case 'b':
+            return config.status.b
+        case 'c':
+            return config.status.c
+        case 'd':
+            return config.status.d
         default:
             return config.status.default
     }
