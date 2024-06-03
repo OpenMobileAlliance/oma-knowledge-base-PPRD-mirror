@@ -9,7 +9,7 @@ constructorName: ShCard
 #### Presentation
 This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
 
-##### Example Basic Avatar
+##### Example Basic
 
 ::ShCard
 ---
