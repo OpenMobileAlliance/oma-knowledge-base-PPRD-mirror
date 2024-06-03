@@ -1,9 +1,9 @@
 <template>
   <header class="h-8 p-4 w-full bg-zinc-200 dark:bg-slate-800 text-xs italic flex items-center">
-    <div class="mx-auto hover:text-[#044ea1]">
+    <div class="mx-auto">
       <nuxt-link to="/" class="text-[#dda20d] dark:text-[#87cefa] hover:text-[#044ea1]">HOME</nuxt-link>
       <span v-for="(crumb, index) in breadcrumbs" :key="index">
-        &nbsp; / &nbsp;
+        &nbsp; > &nbsp;
         <nuxt-link
           v-if="crumb.to"
           :to="crumb.to"
@@ -47,5 +47,11 @@ export default {
 }
 .dark .active {
   color: #87cefa; /* change the color of active breadcrumb in dark mode */
+}
+a:hover {
+  color: #044ea1;
+}
+.dark a:hover {
+  color: #dda20d;
 }
 </style>
