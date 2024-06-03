@@ -17,13 +17,15 @@ src: "1757162766115176926"
 
 This is how it is constructed:
 
-```md
+```mdc
 ::ShSocial
 ---
 src: "1757162766115176926"
 ---
 ::
 ```
+
+___
 
 #### Facebook Embeded Post
 
@@ -35,13 +37,15 @@ src: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.
 
 This is how it is constructed:
 
-```md
+```mdc
 ::ShSocial
 ---
 src: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FNASA%2Fposts%2Fpfbid0KzFf9KDNS8zh4Cngx22ec2aeRHBYcQk4KkescRzoW2hUMpH6Yuc13smPmLww95qNl&show_text=true&width=500"
 ---
 ::
 ```
+
+___
 
 #### LinkedIn Embeded Post
 
@@ -53,18 +57,18 @@ src: "https://www.linkedin.com/embed/feed/update/urn:li:share:716126327786642227
 
 This is how it is constructed:
 
-```md
+```mdc
 ::ShSocial
 ---
 src: "https://www.linkedin.com/embed/feed/update/urn:li:share:7161263277866422272"
 ---
 ::
 ```
-### ShSocial Props
-These are the properties and attributes associated to the `ShSocial` constructor:
+### Props
+These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
 
-#### ShSocial Properties and Attributes Description
-The `ShSocial` constructor creates a display format showcasing a Social Media post.  Below is a detailed description of the properties and attributes used in the `ShSocial` constructor.
+#### Properties and Attributes Description
+The {{ $doc.constructorName }} constructor creates a display format showcasing a Social Media post.  Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 
 <table>
   <thead>
@@ -92,9 +96,8 @@ The `ShSocial` constructor creates a display format showcasing a Social Media po
   </tbody>
 </table>
 
-### ShSocial Config
+### Config
 These style properties can be modified via `ui` and are stored in the `sh-social.ts` file:
-
 
 ```ts
 export default {
@@ -107,8 +110,10 @@ export default {
     }
   }
 ```
+
 #### Class Descriptions
-These style properties represent the class values utilized in the `ShSocial` constructor. These values are customizable and can be strengthened or override through the `ui` properties' attribute. 
+
+These style properties represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or override through the `ui` properties' attribute. 
 
 
 _**wrapper**_
@@ -137,4 +142,5 @@ _**default**_
 
 * **Value**: `{}`
 * **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
-These style properties ensure that the `ShSocial` component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+
+These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

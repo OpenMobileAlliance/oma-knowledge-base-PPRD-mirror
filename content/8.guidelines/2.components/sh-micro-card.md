@@ -159,7 +159,7 @@ text: |
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-card.ts` file:
+These style properties can be modified via `ui` and are stored in the `sh-micro-card.ts` file:
 
 ```ts
 export default {

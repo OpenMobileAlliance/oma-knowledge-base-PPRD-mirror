@@ -89,22 +89,22 @@ The {{ $doc.constructorName }} constructor gives you an option to hold both imag
     <tr>
       <td>textPosition</td>
       <td>n/a</td>
-      <td>Defines position of text in regard of image. Options: left, right</td>
+      <td>Defines position of text in regard of image. <b>Options:</b> <code>left</code>, <code>right</code></td>
     </tr>
     <tr>
       <td>textSpan</td>
       <td>n/a</td>
-      <td>Defines amount of space that will text occupy. Options: m, l, xl</td>
+      <td>Defines amount of space that will text occupy. <b>Options:</b> <code>m</code>, <code>l</code>, <code>xl</code></td>
     </tr>
     <tr>
       <td>textAlign</td>
       <td>n/a</td>
-      <td>defines alignement of the text. Options: left, center, right</td>
+      <td>defines alignement of the text. <b>Options:</b> <code>left, <code>center</code>, <code>right</code></td>
     </tr>
     <tr>
       <td>status</td>
       <td>n/a</td>
-      <td>Styles for the container background depending on the status value. Options: a, b, c, d & default</td>
+      <td>Styles for the container background depending on the status value. <b>Options:</b> <code>a</code>, <code>b</code>, <code>c</code>, <code>d</code> & <code>default</code></td>
     </tr>
     <tr>
       <td>urlImage</td>

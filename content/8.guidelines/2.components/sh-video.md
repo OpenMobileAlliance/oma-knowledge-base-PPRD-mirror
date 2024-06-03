@@ -11,7 +11,7 @@ constructorName: ShVideo
 #### Presentation
 This section explains how the {{ $doc.constructorName }} constructor is displayed, enabling the embedding of videos with custom styles.
 
-##### Example Basic Video
+##### Example Basic
 
 ::ShVideo
 ---
@@ -32,7 +32,7 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 ### Props
 These are the properties and attributes associated with the {{ $doc.constructorName }} constructor:
 
-#### ShVideo Properties and Attributes Description
+#### Properties and Attributes Description
 The {{ $doc.constructorName }} constructor creates a display format for embedding a video with customizable styles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 
 <table>
@@ -85,7 +85,7 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 ::
 ```
 
-### Video Config
+### Config
 These style properties can be modified via `ui` and are stored in the `sh-video.ts` file:
 
 ```ts

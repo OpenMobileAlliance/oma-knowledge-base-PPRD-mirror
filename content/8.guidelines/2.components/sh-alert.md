@@ -9,7 +9,7 @@ constructorName: ShAlert
 #### Presentation
 This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase an alerts with different types for different impact on subject.
 
-##### Example Basic Alerts
+##### Example Basic
 
 This is `info` type of alert
 ::ShAlert
@@ -93,9 +93,9 @@ text: |
 ```
 ___
 
-### Alert Props
+### Props
 These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
-#### ShAlert Properties and Attributes Description
+#### Properties and Attributes Description
 The {{ $doc.constructorName }} constructor creates a notification field with different background color to showcase the importance of notification. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 <table>
   <thead>
@@ -126,7 +126,7 @@ The {{ $doc.constructorName }} constructor creates a notification field with dif
     <tr>
       <td><code>alert</code></td>
       <td><code>alert</code></td>
-      <td>This represents type of alert. There are: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
+      <td>This represents type of alert. <b>Options</b>: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
     </tr>
     <tr>
       <td><code>icon</code></td>
@@ -163,7 +163,6 @@ text: |
 
 ### Config
 These style properties can be modified via `ui` and are stored in the `sh-alert.ts` file:
-> Note: We need to replace this pasted content to a pointer that extracts the information from the repository.
 
 ```ts
 export default {
