@@ -325,9 +325,6 @@ ui:
 
 ::
 
-The `gap` property controls gutters between columns.
-Values for this property and its basic usage can be find in
-[tailwindcss](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
 
 ## Props
 
@@ -336,6 +333,10 @@ Values for this property and its basic usage can be find in
 | ui |  config | | optional |
 | size | String | "L" | optional |
 | gap| String | "gap-4" | optional |
+
+The `gap` property controls gutters between columns.
+Values for this property and its basic usage can be find in
+[tailwindcss](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
 
 ## Config
 
