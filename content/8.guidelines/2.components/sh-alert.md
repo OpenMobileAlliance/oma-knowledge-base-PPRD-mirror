@@ -33,7 +33,7 @@ ___
 This is `success` type of alert
 ::ShAlert
 ---
-type: success
+typeAlert: success
 text: |
   Testing alert component related to success
 ---
@@ -43,7 +43,7 @@ This is how it is constructed
 ```mdc
 ::ShAlert
 ---
-type: success
+typeAlert: success
 text: |
   Testing alert component related to success
 ---
@@ -54,7 +54,7 @@ ___
 This is `warning` type of alert
 ::ShAlert
 ---
-type: warning
+typeAlert: warning
 text: |
   Testing alert component related to warning
 ---
@@ -64,7 +64,7 @@ This is how it is constructed
 ```mdc
 ::ShAlert
 ---
-type: warning
+typeAlert: warning
 text: |
   Testing alert component related to warning
 ---
@@ -75,7 +75,7 @@ ___
 This is `danger` type of alert
 ::ShAlert
 ---
-type: danger
+typeAlert: danger
 text: |
   Testing alert component related to danger
 ---
@@ -85,7 +85,7 @@ This is how it is constructed
 ```mdc
 ::ShAlert
 ---
-type: danger
+typeAlert: danger
 text: |
   Testing alert component related to danger
 ---
@@ -107,7 +107,7 @@ The {{ $doc.constructorName }} constructor creates a notification field with dif
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4">ui</td>
+      <td rowspan="5">ui</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShAlert</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the alert component. Each attribute within the <code>ui</code> property targets a specific part of the alert display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
@@ -124,14 +124,18 @@ The {{ $doc.constructorName }} constructor creates a notification field with dif
         <td>This class targets all the information about styling the text such as text font, size, etc.</td>
       </tr>
     <tr>
-      <td><code>alert</code></td>
-      <td><code>alert</code></td>
-      <td>This represents type of alert. <b>Options</b>: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
-    </tr>
-    <tr>
-      <td><code>icon</code></td>
       <td><code>icon</code></td>
       <td>Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc.</td>
+    </tr>
+    <tr>
+      <td><code>text</code></td>
+      <td><code>n/a</code></td>
+      <td>The main text content to be displayed.</td>
+    </tr>
+    <tr>
+      <td><code>typeAlert</code></td>
+      <td><code>n/a</code></td>
+      <td>This represents type of alert. <b>Options</b>: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
     </tr>
   </tbody>
 </table>

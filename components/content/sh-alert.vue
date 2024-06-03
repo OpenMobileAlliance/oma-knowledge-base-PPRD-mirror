@@ -14,13 +14,13 @@ import { alert as config } from "@/ui.config" // Import the config file
 const props = withDefaults(
     defineProps<{
         text: string;
-        type?: string;
+        typeAlert?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
         ui: () => ({}),
         text: "",
-        type: "info",
+        typeAlert: "info",
     }
 );
 
@@ -31,7 +31,7 @@ const { ui } = useUI(
 );
 
 const alert = computed(() => {
-    switch (props.type) {
+    switch (props.typeAlert) {
         case "success":
             return config.alert.success;
             break;
@@ -47,7 +47,7 @@ const alert = computed(() => {
     }
 });
 const icon = computed(() => {
-    switch (props.type) {
+    switch (props.typeAlert) {
         case "success":
             return config.icon.success;
             break;
