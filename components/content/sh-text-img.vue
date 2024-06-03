@@ -2,14 +2,14 @@
     <div :class="[ui.wrapper, Status]">
         <div v-if="urlImage" class="grid grid-cols-4 grid-rows-1 grid-flow-col gap-8 items-center">
             <img :src="urlImage" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image]" />
-            <div :class="[textPositionClass, textSpanClass, textAlignClass]">
+            <div :class="[positionTextClass, spanTextClass, alignTextClass]">
                 <MDC :class="ui.title" :value="title" />
                 <MDC :class="ui.subtitle" :value="subtitle" />
                 <MDC :class="ui.text" :value="text" />
             </div>
         </div>
         <div v-else class="grid grid-cols-1 grid-rows-1">
-            <div :class="[textAlignClass]">
+            <div :class="[alignTextClass]">
                 <MDC :class="ui.title" :value="title" />
                 <MDC :class="ui.subtitle" :value="subtitle" />
                 <MDC :class="[ui.text, 'items-center']" :value="text" />
@@ -24,9 +24,9 @@ import { textImg as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
     defineProps<{
-        textPosition?: string;
-        textSpan?: string;
-        textAlign?: string;
+        positionText?: string;
+        spanText?: string;
+        alignText?: string;
         title?: string;
         subtitle?: string;
         text?: string;
@@ -37,9 +37,9 @@ const props = withDefaults(
     }>(),
     {
         ui: () => ({}),
-        textPosition: "right",
-        textSpan: "l",
-        textAlign: "center",
+        positionText: "right",
+        spanText: "l",
+        alignText: "center",
         title: "",
         subtitle: "",
         text: "",
@@ -55,9 +55,9 @@ const { ui } = useUI(
     config
 );
 
-const textPosition = toRef(props, 'textPosition');
-const textSpan = toRef(props, 'textSpan');
-const textAlign = toRef(props, 'textAlign');
+const positionText = toRef(props, 'positionText');
+const spanText = toRef(props, 'spanText');
+const alignText = toRef(props, 'alignText');
 const status = toRef(props, 'status');
 
 const COL_START_VALUES = [
@@ -68,20 +68,20 @@ const COL_START_VALUES = [
     'col-start-4'
 ]
 
-const textPositionClass = computed(() => {
-    if (textPosition.value === 'right' && textSpan.value === 'xl') {
+const positionTextClass = computed(() => {
+    if (positionText.value === 'right' && spanText.value === 'xl') {
         return COL_START_VALUES[2]
-    } else if (textPosition.value === 'left') {
+    } else if (positionText.value === 'left') {
         return COL_START_VALUES[1]
     } else {
         return COL_START_VALUES[3]
     }
 });
 
-const textSpanClass = computed(() => {
-    switch (textSpan.value) {
+const spanTextClass = computed(() => {
+    switch (spanText.value) {
         case 'm':
-            if (textPosition.value === 'left') {
+            if (positionText.value === 'left') {
                 return 'col-start-1 col-span-1'
             } else {
                 return 'col-start-4 col-span-1'
@@ -89,7 +89,7 @@ const textSpanClass = computed(() => {
         case 'l':
             return 'col-span-2'
         case 'xl':
-            if (textPosition.value === 'left') {
+            if (positionText.value === 'left') {
                 return 'col-start-1 col-span-3'
             } else {
                 return 'col-start-2 col-span-3'
@@ -99,8 +99,8 @@ const textSpanClass = computed(() => {
     }
 });
 
-const textAlignClass = computed(() => {
-    switch (textAlign.value) {
+const alignTextClass = computed(() => {
+    switch (alignText.value) {
         case 'left':
             return 'text-left'
         case 'center':
@@ -114,22 +114,22 @@ const textAlignClass = computed(() => {
 
 //depending on the textPosition, the image will be placed on the opposite side
 const imgPositionClass = computed(() => {
-    if (textPosition.value === 'left' && textSpan.value === 'm') {
+    if (positionText.value === 'left' && spanText.value === 'm') {
         return 'col-start-2'
-    } else if (textPosition.value === 'right') {
+    } else if (positionText.value === 'right') {
         return 'col-start-1'
     }
 });
 
-//depending on the textSpan and textPosition, the image will take the remaining space
+//depending on the spanText and textPosition, the image will take the remaining space
 const imgSpanClass = computed(() => {
-    if (textSpan.value === 'xl' && textPosition.value === 'left') {
+    if (spanText.value === 'xl' && positionText.value === 'left') {
         return 'col-start-4 col-span-1'
-    } else if (textSpan.value === 'xl' && textPosition.value === 'right') {
+    } else if (spanText.value === 'xl' && positionText.value === 'right') {
         return 'col-start-1 col-span-1'
-    } else if (textSpan.value === 'm' && textPosition.value === 'left') {
+    } else if (spanText.value === 'm' && positionText.value === 'left') {
         return 'col-start-2 col-span-3'
-    } else if (textSpan.value === 'm' && textPosition.value === 'right') {
+    } else if (spanText.value === 'm' && positionText.value === 'right') {
         return 'col-start-1 col-span-3'
     } else {
         return 'col-span-2'

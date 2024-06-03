@@ -13,9 +13,9 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 
 ::ShTextImg
 ---
-textPosition: left
-textSpan: m
-textAlign: left
+positionText: left
+spanText: m
+alignText: left
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
 title: |
   Hello component
@@ -31,9 +31,9 @@ This is how it is constructed
 ```mdc
 ::ShTextImg
 ---
-textPosition: left
-textSpan: m
-textAlign: left
+positionText: left
+spanText: m
+alignText: left
 status: d
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
 title: |
@@ -87,19 +87,19 @@ The {{ $doc.constructorName }} constructor gives you an option to hold both imag
       <td>Styles applied to the text content, such as font size and color.</td>
     </tr>
     <tr>
-      <td>textPosition</td>
+      <td>positionText</td>
       <td>n/a</td>
       <td>Defines position of text in regard of image. <b>Options:</b> <code>left</code>, <code>right</code></td>
     </tr>
     <tr>
-      <td>textSpan</td>
+      <td>spanText</td>
       <td>n/a</td>
       <td>Defines amount of space that will text occupy. <b>Options:</b> <code>m</code>, <code>l</code>, <code>xl</code></td>
     </tr>
     <tr>
-      <td>textAlign</td>
+      <td>alignText</td>
       <td>n/a</td>
-      <td>defines alignement of the text. <b>Options:</b> <code>left, <code>center</code>, <code>right</code></td>
+      <td>Defines alignement of the text. <b>Options:</b> <code>left, <code>center</code>, <code>right</code></td>
     </tr>
     <tr>
       <td>status</td>
@@ -145,9 +145,9 @@ ui:
   title: text-4xl
   subtitle: font-mono
   text:  # no style has been applied, added as a reference only.
-textPosition: left #this is an inline comment example that is not displayed
-textSpan: m
-textAlign: left
+positionText: left #this is an inline comment example that is not displayed
+spanText: m
+alignText: left
 status: d #options: "a", "b", "c", "d" & default
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
 title: |
@@ -169,9 +169,9 @@ ui:
   title: text-4xl
   subtitle: font-mono
   text: "" # no style has been applied, added as a reference only.
-textPosition: left #this is an inline comment example that is not displayed
-textSpan: m
-textAlign: left
+positionText: left #this is an inline comment example that is not displayed
+spanText: m
+alignText: left
 status: d #options: a, b, c, d and default
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
 title: |
