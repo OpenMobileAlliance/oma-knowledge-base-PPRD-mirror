@@ -1,6 +1,6 @@
 ---
 title: Action Card
-description: This constructor allows clients to input their emails for newsletter and subsriptions
+description: This constructor allows clients to input their emails for newsletter and subscriptions
 constructorName: ShActionCard
 ---
 
@@ -9,7 +9,7 @@ constructorName: ShActionCard
 #### Presentation
 This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
 
-##### Example Basic Avatar
+##### Example Basic 
 
 ::ShActionCard
 ---
@@ -53,11 +53,11 @@ text: |
 ::
 ```
 
-### Avatar Props
+### Props
 These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
 
-#### ShAvatar Properties and Attributes Description
-The {{ $doc.constructorName }} constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+#### Properties and Attributes Description
+The {{ $doc.constructorName }} constructor allows for clients and customers to subscribe to a newsletter or any other subscription-type format. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 
 <table>
   <thead>
