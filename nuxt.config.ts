@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts"],
-  content: {},
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial"],
+  content: {
+    highlight: {
+      theme: 'github-dark'
+    }
+  },
   ui: {
     icons: ["heroicons-solid", "fa6-brands", "devicon"],
   },

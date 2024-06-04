@@ -4,4 +4,8 @@ title: OMASpecWorks
 
 ## Welcome to OMASpecWorks
 
-This page is preserved for OMASpecWorks content.
+This page provides the following content:
+
+- [About](/omaspecworks/about/)
+- [Membership](/omaspecworks/membership/)
+- [Collaborate](/omaspecworks/collaborate/)
