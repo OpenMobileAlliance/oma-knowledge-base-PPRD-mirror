@@ -7,9 +7,8 @@ export default {
     subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8",
     text: "",
     leftLabel: "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    centerLabel: "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    rightLabel: "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    icon: "",
+    centerLabel: "col-start-2 text-lg justify-self-center text-gray-600 dark:text-gray-400",
+    rightLabel: "col-start-3 text-lg justify-self-end text-gray-600 dark:text-gray-400",
     // Default Tailwind CSS values
     default: {
     }

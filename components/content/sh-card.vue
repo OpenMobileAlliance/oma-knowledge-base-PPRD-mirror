@@ -1,11 +1,13 @@
 <template>
     <div :class="ui.wrapper">
         <div :class="ui.upperBase" :style="backgroundClass">
-            <div class="h-80 w-full flex justify-center items-center">
-                <!-- Set a fixed height for the row containing the image -->
-                <img :src="imageLink" :class="ui.image" :alt="altImage" />
-                <!-- Allow the image to expand within the row height -->
-            </div>
+            <NuxtLink :to="urlWrapper" target="_blank" class="not-prose">
+                <div class="h-80 w-full flex justify-center items-center">
+                    <!-- Set a fixed height for the row containing the image -->
+                    <img :src="urlImage" :class="ui.image" :alt="altImage" />
+                    <!-- Allow the image to expand within the row height -->
+                </div>
+            </NuxtLink>
         </div>
         <div :class="ui.lowerBase">
             <p :class="ui.title">
@@ -38,7 +40,8 @@ import { card as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
     defineProps<{
-        imageLink?: string;
+        urlWrapper?: string;
+        urlImage?: string;
         altImage?: string;
         title?: string;
         subtitle?: string;
@@ -46,12 +49,13 @@ const props = withDefaults(
         leftLabel?: string;
         centerLabel?: string;
         rightLabel?: string;
-        backgroundImage?: string;
+        imageBackground?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
         ui: () => ({}),
-        imageLink: "",
+        urlWrapper: "",
+        urlImage: "",
         altImage: "",
         title: "",
         subtitle: "",
@@ -59,7 +63,7 @@ const props = withDefaults(
         leftLabel: "",
         centerLabel: "",
         rightLabel: "",
-        backgroundImage: "",
+        imageBackground: "",
     }
 );
 
@@ -69,8 +73,8 @@ const { ui } = useUI(
     config
 );
 const backgroundClass = computed(() => {
-    if (props.backgroundImage) {
-        return "background-image: url(" + props.backgroundImage + ")";
+    if (props.imageBackground) {
+        return "background-image: url(" + props.imageBackground + ")";
     }
 });
 </script>

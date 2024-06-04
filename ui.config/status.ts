@@ -1,9 +1,9 @@
 const status: { [key: string]: string } = {
-  on: '       bg-green-200    border-green-200    dark:border-green-800   dark:bg-green-800   dark:text-white',
-  off: '      bg-red-200      border-red-200      dark:border-red-800     dark:bg-red-800     dark:text-white',
-  pending: '  bg-yellow-100   border-yellow-100   dark:border-yellow-800  dark:bg-yellow-600  dark:text-white',
-  highlight: 'bg-sky-100      border-sky-100      dark:border-sky-800     dark:bg-sky-800     dark:text-white',
-  default: '  bg-neutral-200  border-neutral-200  dark:border-gray-700    dark:bg-slate-800   dark:text-gray-300 text-gray-700',
+  a: 'bg-[#FFFFFF] border-[#E3E3E3] text-[#FF0000]',
+  b: 'bg-[#000000] border-[#000000] text-[#00FF00]',
+  c: 'bg-[#FFFF00] border-[#FFFF00] text-[#000000]',
+  d: 'bg-[#ADD8E6] border-[#ADD8E6] text-[#0000FF]',
+  default: 'bg-neutral-200 border-neutral-200 dark:border-gray-700 dark:bg-slate-800 dark:text-gray-300 text-gray-700',
 };
 
 export default status;

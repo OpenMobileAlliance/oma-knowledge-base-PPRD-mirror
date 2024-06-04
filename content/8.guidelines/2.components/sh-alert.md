@@ -1,18 +1,25 @@
+---
+title: Alert
+description:
+constructorName: ShAlert
+---
 
 ### Usage
 
 #### Presentation
-This is the display format for the `ShAlert` constructor, designed to showcase an alerts with different types for different impact on subject.
+This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase an alerts with different types for different impact on subject.
 
-##### Example Basic Alerts
+##### Example Basic
 
 This is `info` type of alert
+
 ::ShAlert
 Testing alert component related to info. This is the default alert type.
 ::
 
 This is how it is constructed
-```md
+
+```mdc
 ::ShAlert
 Testing alert component related to info. This is the default alert type.
 ::
@@ -20,18 +27,20 @@ Testing alert component related to info. This is the default alert type.
 ___
 
 This is `success` type of alert
+
 ::ShAlert
 ---
-type: success
+typeAlert: success
 ---
 Testing alert component related to success
 ::
 
 This is how it is constructed
-```md
+
+```mdc
 ::ShAlert
 ---
-type: success
+typeAlert: success
 ---
 Testing alert component related to success
 ::
@@ -39,18 +48,20 @@ Testing alert component related to success
 ___
 
 This is `warning` type of alert
+
 ::ShAlert
 ---
-type: warning
+typeAlert: warning
 ---
 Testing alert component related to warning
 ::
 
 This is how it is constructed
-```md
+
+```mdc
 ::ShAlert
 ---
-type: warning
+typeAlert: warning
 ---
 Testing alert component related to warning
 ::
@@ -58,28 +69,29 @@ Testing alert component related to warning
 ___
 
 This is `danger` type of alert
+
 ::ShAlert
 ---
-type: danger
+typeAlert: danger
 ---
 Testing alert component related to danger
 ::
 
 This is how it is constructed
-```md
+```mdc
 ::ShAlert
 ---
-type: danger
+typeAlert: danger
 ---
 Testing alert component related to danger
 ::
 ```
 ___
 
-### Alert Props
-These are the properties and attributes associated to the `ShAlert` constructor:
-#### ShAlert Properties and Attributes Description
-The `ShAlert` constructor creates a notification field with different background color to showcase the importance of notification. Below is a detailed description of the properties and attributes used in the `ShAlert` constructor.
+### Props
+These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+#### Properties and Attributes Description
+The {{ $doc.constructorName }} constructor creates a notification field with different background color to showcase the importance of notification. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 <table>
   <thead>
     <tr>
@@ -102,19 +114,14 @@ The `ShAlert` constructor creates a notification field with different background
         <td><code>base</code></td>
         <td>A placeholder for additional base styles that can be applied to the alert component. In this specific case, it will target the section around icon.</td>
       </tr>
-      <tr>
-        <td><code>text</code></td>
-        <td>This class targets all the information about styling the text such as text font, size, etc.</td>
-      </tr>
     <tr>
-      <td><code>alert</code></td>
-      <td><code>alert</code></td>
-      <td>This represents type of alert. There are: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
-    </tr>
-    <tr>
-      <td><code>icon</code></td>
       <td><code>icon</code></td>
       <td>Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc.</td>
+    </tr>
+    <tr>
+      <td><code>typeAlert</code></td>
+      <td><code>n/a</code></td>
+      <td>This represents type of alert. <b>Options</b>: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
     </tr>
   </tbody>
 </table>
@@ -125,32 +132,28 @@ The `ShAlert` constructor creates a notification field with different background
 ::ShAlert
 ---
 ui:
-    wrapper: "shadow-xl w-fit" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside
-    text: "text-2xl font-mono p-3 m-3.5" #styles text font, size, padding
+    wrapper: "shadow-xl w-fit mx-auto text-2xl" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside, center the alert wrapper and enlarge text
 ---
 Testing alert component with shorten width
 ::
 
-```md
+```mdc
 ::ShAlert
 ---
 ui:
-    wrapper: "shadow-xl w-fit" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside
-    text: "text-2xl font-mono p-3 m-3.5" #styles text font, size, padding
+    wrapper: "shadow-xl w-fit mx-auto text-2xl" # adds a shadow to the wrapper as well as making the wrapper width fit the lenght of content inside, center the alert wrapper and enlarge text
 ---
-    Testing alert component with shorten width
+Testing alert component with shorten width
 ::
 ```
 
 ### Config
 These style properties can be modified via `ui` and are stored in the `sh-alert.ts` file:
-> Note: We need to replace this pasted content to a pointer that extracts the information from the repository.
 
 ```ts
 export default {
   wrapper: "flex items-center space-x-1 mt-4 mb-4",
   base: "flex mx-2 p-1",
-  text: "not-prose",
   alert: {
     success: 'bg-[#F0FFF4] dark:bg-[#22543D] text-[#2F855A] dark:text-[#9AE6B4] px-2 py-3 relative border-l-4 border-[#68D391] dark:border-[#2F855A]',
     warning: 'bg-[#FFFAF0] dark:bg-[#744210] text-[#C05621] dark:text-[#FBD38D] px-2 py-3 relative border-l-4 border-[#F6AD55] dark:border-[#B7791F]',
@@ -167,6 +170,7 @@ export default {
   default: {
   }
 }
+
 ```
 
 #### Class Descriptions
@@ -179,10 +183,6 @@ _**wrapper**_
 _**base**_
 *  **Value**: `"flex mx-2 p-1"`
 *  **Description**: This specifies the base styles for the component. The value `"flex mx-2 p-1"` includes a flexbox layout (`flex`), horizontal margin of 2 units (`mx-2`), and padding of 1 unit (`p-1`).
-
-_**text**_
-*  **Value**: `"not-prose"`
-*  **Description**: This applies a style to text elements, ensuring they do not inherit prose styles. The value `"not-prose"` is used to exclude the element from any typography styles applied to prose content.
 
 _**alert**_
 *  **Description**: This object contains styles for different types of alert messages, tailored for both light and dark modes.<br>
