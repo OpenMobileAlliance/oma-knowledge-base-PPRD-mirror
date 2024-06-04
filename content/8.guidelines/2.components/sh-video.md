@@ -4,8 +4,6 @@ description:
 constructorName: ShVideo
 ---
 
-### ShVideo Documentation Guidelines
-
 ### Usage
 
 #### Presentation
