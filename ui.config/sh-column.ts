@@ -3,7 +3,7 @@ export default {
   header: {
     wrapper: "",
     title: "text-xl not-prose",
-    subTitle: "text-slate-400 py-0 not-prose"
+    subtitle: "text-slate-400 py-0 not-prose"
   },
   main: "",
   footer: "text-slate-300 py-0 not-prose",

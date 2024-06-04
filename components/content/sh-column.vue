@@ -1,8 +1,8 @@
 <template>
   <div :class="[ui.wrapper, sizeClass]" v-bind="attrs">
-    <div v-if="title || subTitle" :class="ui.header.wrapper">
+    <div v-if="title || subtitle" :class="ui.header.wrapper">
       <MDC v-if="title" :value="title" :class="ui.header.title" />
-      <MDC v-if="subTitle" :value="subTitle" :class="ui.header.subTitle" />
+      <MDC v-if="subtitle" :value="subtitle" :class="ui.header.subtitle" />
     </div>
 
     <div :class="ui.main">
@@ -21,16 +21,16 @@ import {column as config, gridSizes } from "@/ui.config"
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
-    title?: String;
-    subTitle?: String;
-    footerText?: String;
-    size?: Number;
-    class?: Any;
+    title?: string;
+    subtitle?: string;
+    footerText?: string;
+    size?: number;
+    class?: any;
   }>(),
   {
     ui: () => ({}),
     title: "",
-    subTitle: "",
+    subtitle: "",
     footerText: "",
     size: () => config.default.size,
     class: () => undefined
