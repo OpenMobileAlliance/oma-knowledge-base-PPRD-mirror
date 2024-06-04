@@ -5,7 +5,7 @@ export default {
     subtitle: "text-lg text-center font-semibold text-gray-600 -mt-8",
     text: "text-md text-center font-light text-gray-600",
     button: "hover:drop-shadow-xl hover:saturate-200 col-start-3 col-span-1 mx-auto mb-4 not-prose",
-    buttonColor: "black",
+    colorButton: "black",
     icon: "self-center place-self-center row-start-1 row-span-2 col-start-5 col-span-1",
     // Default Tailwind CSS values
     default: {

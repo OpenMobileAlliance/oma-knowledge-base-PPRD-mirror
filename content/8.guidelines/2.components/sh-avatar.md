@@ -1,13 +1,19 @@
+---
+title: Avatar
+description: This constructor is designed to showcase an Avatar representing a project member and provide a direct link to their social media profiles. 
+constructorName: ShAvatar
+---
+
 ### Usage
 
 #### Presentation
-This is the display format for the `ShAvatar` constructor, designed to showcase an avatar representing a project member and provide a direct link to their social media profiles.
+This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
  
-##### Example Basic Avatar
+#### Example Basic
 
 ::ShAvatar
 ---
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -15,19 +21,19 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 
 This is how it is constructed. 
 
-```md
+```mdc
 ::ShAvatar
 ---
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -35,18 +41,18 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 ```
-### Avatar Props
-These are the properties and attributes associated to the `ShAvatar` constructor:
+### Props
+These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
 
-#### ShAvatar Properties and Attributes Description
-The `ShAvatar` constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the `ShAvatar` constructor.
+#### Properties and Attributes Description
+The constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
 
 <table>
   <thead>
@@ -143,20 +149,20 @@ The `ShAvatar` constructor creates a display format showcasing an avatar that re
 </table>
 
 
-#### Example Usage
-##### Advanced Settings
+### Example Usage
+#### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
 ::ShAvatar
 ---
 ui:
-  wrapper: "shadow-xl" # provide a shadow around the wrapper
-  name: "text-3xl" # controls text font, size and color
-  role: "text-2xl"
-  company: "text-xl"
-  icon: "hover:text-oma-500 dark:hover:text-oma-500"
+  wrapper: shadow-xl # provide a shadow around the wrapper
+  name: text-3xl # controls text font, size and color
+  role: text-2xl
+  company: text-xl
+  icon: hover:text-oma-500 dark:hover:text-oma-500
   # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -164,27 +170,27 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/ #link to social media source
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 
 This is an example with customized `ui` attributes for enhanced display:
 
 
-```md
+```mdc
 ::ShAvatar
 ---
 ui:
-    wrapper: "shadow-xl" # provide a shadow around the wrapper
-    name: "text-3xl" # controls text font, size and color
-    role: "text-2xl"
-    company: "text-xl"
-    icon: "hover:text-oma-500 dark:hover:text-oma-500"
-    # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
-srcAvatar: 'https://avatars.githubusercontent.com/u/3258579?v=4'
+  wrapper: shadow-xl # provide a shadow around the wrapper
+  name: text-3xl # controls text font, size and color
+  role: text-2xl
+  company: text-xl
+  icon: hover:text-oma-500 dark:hover:text-oma-500
+  # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
+srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
 name: |
     Joaquin Prado
@@ -192,15 +198,15 @@ role: |
     Co-Founder
 company: |
     Standards-Hub
-linkedin: 'https://www.linkedin.com/in/jpradocueva/' #link to social media source
-facebook: 'https://www.linkedin.com/in/jpradocueva/'
-instagram: 'https://www.linkedin.com/in/jpradocueva/'
-twitter: 'https://www.linkedin.com/in/jpradocueva/'
+linkedin: https://www.linkedin.com/in/jpradocueva/ #link to social media source
+facebook: https://www.linkedin.com/in/jpradocueva/
+instagram: https://www.linkedin.com/in/jpradocueva/
+twitter: https://www.linkedin.com/in/jpradocueva/
 ---
 ::
 ```
 
-### Avatar Config
+### Config
 These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
 
 
@@ -221,11 +227,11 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the `ShAvatar` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-*  **Value**: <code>"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"</code>
-*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the wrapper uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
+*  **Value**: `"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"`
+*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the `wrapper` uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
 
 _**avatar**_
 *  **Value**: <code>"grayscale justify-self-end tracking-widest rounded-full size-48"</code>
@@ -259,4 +265,4 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the `ShAvatar` component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

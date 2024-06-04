@@ -1,71 +1,310 @@
-### ShCard Usage
+---
+title: Card
+description: This constructor allows you to have image on one half of the card, and text with labels on the other one. Text and labels have full Markdown support.
+constructorName: ShCard
+---
+
+### Usage
+
+#### Presentation
+This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+
+##### Example Basic
 
 ::ShCard
 ---
-ui:
-    wrapper: "shadow-xl  bg-red-500" 
-    title: "text-4xl text-pink-800"
-    subtitle: "font-mono text-cyan-700"
-    text: "text-oma-500" # Add text-color
-    leftLabel: "text-oma-500"  # Add text-color
-    centerLabel: "text-oma-500"
-    rightLabel: "text-oma-500"
-    upperBase: "bg-red-300" # in order for this bg color to be displayed, we need to remove background prop
-    lowerBase: "bg-red-100"
-    image: "hover:saturate-200 hover:scale-125 duration-300" # Options to style image
 text: |
     NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
 title: |
     NASA Space Program
 subtitle: |
     Per aspera ad astra
-leftLabel: | #Comment can be added on the first line
+leftLabel: |
     Hello left [label](https://www.nasa.gov)
 centerLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">center</a> label
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-backgroundImage: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-imageLink: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlWrapper: https://www.nasa.gov
 ---
 ::
 
-This is how ShCard is represented:
+This is how it is constructed
 
-```md
+```mdc
 ::ShCard
 ---
-ui:
-    wrapper: "shadow-xl  bg-red-500"
-    title: "text-4xl text-pink-800"
-    subtitle: "font-mono text-cyan-700"
-    text: "text-oma-500" # Add text-color
-    leftLabel: "text-oma-500"  # Add text-color
-    centerLabel: "text-oma-500"
-    rightLabel: "text-oma-500"
-    upperBase: "bg-red-500" # in order for this bg color to be displayed, we need to remove background prop
-    lowerBase: "bg-red-100"
-    image: "hover:saturate-200 hover:scale-125 duration-300" # Options to style image
 text: |
     NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
 title: |
     NASA Space Program
 subtitle: |
     Per aspera ad astra
-leftLabel: | #Comment can be added on the first line
+leftLabel: |
     Hello left [label](https://www.nasa.gov)
 centerLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">center</a> label
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-backgroundImage: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-imageLink: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlWrapper: https://www.nasa.gov
 ---
 ::
 ```
 
-### ShCard Props
-Text
+### Props
+These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
 
-### ShCard Config
-Text
+#### Properties and Attributes Description
+The {{ $doc.constructorName }} constructor represents a card divided in two halfs, with upper half containing image, and lower half containing text with additional options for inserting labels. Text & labels both fully support Markdown syntax. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="11">ui</td>
+      <td>n/a</td>
+      <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
+    </tr>
+    <tr>
+      <td><code>wrapper</code></td>
+      <td>Defines the overall styling for the container that holds all the elements of the component.</td>
+    </tr>
+    <tr>
+      <td><code>upperBase</code></td>
+      <td>Defines the styling for the upper section of the component, typically where the image is displayed.</td>
+    </tr>
+    <tr>
+      <td><code>image</code></td>
+      <td>Styles applied to the image element, including properties like size and border radius.</td>
+    </tr>
+    <tr>
+      <td><code>lowerBase</code></td>
+      <td>Defines the styling for the lower section of the component, typically where the text content is displayed.</td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>Styles applied to the title text, such as font size and color.</td>
+    </tr>
+    <tr>
+      <td><code>subtitle</code></td>
+      <td>Styles applied to the subtitle text, such as font size and color.</td>
+    </tr>
+    <tr>
+      <td><code>text</code></td>
+      <td>Styles applied to the text content, such as font size and color.</td>
+    </tr>
+    <tr>
+      <td><code>leftLabel</code></td>
+      <td>Defines the overall styling for the leftLabel that holds the text.</td>
+    </tr>
+    <tr>
+      <td><code>centerLabel</code></td>
+      <td>Defines the overall styling for the centerLabel that holds the text.</td>
+    </tr>
+    <tr>
+      <td><code>rightLabel</code></td>
+      <td>Defines the overall styling for the rightLabel that holds the text.</td>
+    </tr>
+    <tr>
+      <td>urlWrapper</td>
+      <td>n/a</td>
+      <td>The URL that wraps the upper section of the component, typically for navigation purposes.</td>
+    </tr>
+    <tr>
+      <td>urlImage</td>
+      <td>n/a</td>
+      <td>The source URL of the image to be displayed.</td>
+    </tr>
+    <tr>
+      <td>altImage</td>
+      <td>n/a</td>
+      <td>Alternative text for the image, used for accessibility and in case the image fails to load.</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>n/a</td>
+      <td>The title text to be displayed.</td>
+    </tr>
+    <tr>
+      <td>subtitle</td>
+      <td>n/a</td>
+      <td>The subtitle text to be displayed, if any.</td>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>n/a</td>
+      <td>The main text content to be displayed.</td>
+    </tr>
+    <tr>
+      <td>leftLabel</td>
+      <td>n/a</td>
+      <td>The text to be displayed in the left label.</td>
+    </tr>
+    <tr>
+      <td>centerLabel</td>
+      <td>n/a</td>
+      <td>The text to be displayed in the center label.</td>
+    </tr>
+    <tr>
+      <td>rightLabel</td>
+      <td>n/a</td>
+      <td>The text to be displayed in the right label.</td>
+    </tr>
+    <tr>
+      <td>imageBackground</td>
+      <td>n/a</td>
+      <td>The background image for the component's image section.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example Usage
+##### Advanced Settings
+An example with customized `ui` attributes for enhanced display:
+
+::ShCard
+---
+ui:
+    wrapper: shadow-xl bg-red-500 
+    title: text-4xl text-pink-800
+    subtitle: font-mono text-cyan-700
+    text: text-oma-500 # Add text-color
+    leftLabel: text-oma-500  # Add text-color
+    centerLabel: text-oma-500
+    rightLabel: text-oma-500
+    upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
+    lowerBase: bg-red-100
+    image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
+text: |
+    NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+title: |
+    NASA Space Program
+subtitle: |
+    Per aspera ad astra
+leftLabel: | #Comment can be added on the first line
+    Hello left [label](https://www.nasa.gov)
+centerLabel: |
+    Hello <a href="https://earth.google.com/" target="_blank">center</a> label
+rightLabel: |
+    Hello <a href="https://earth.google.com/" target="_blank">right</a> label
+imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlWrapper: https://www.nasa.gov
+---
+::
+
+This is an example with customized `ui` attributes for enhanced display:
+
+```mdc
+::ShCard
+---
+ui:
+    wrapper: shadow-xl bg-red-500 
+    title: text-4xl text-pink-800
+    subtitle: font-mono text-cyan-700
+    text: text-oma-500 # Add text-color
+    leftLabel: text-oma-500  # Add text-color
+    centerLabel: text-oma-500
+    rightLabel: text-oma-500
+    upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
+    lowerBase: bg-red-100
+    image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
+text: |
+    NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+title: |
+    NASA Space Program
+subtitle: |
+    Per aspera ad astra
+leftLabel: | #Comment can be added on the first line
+    Hello left [label](https://www.nasa.gov)
+centerLabel: |
+    Hello <a href="https://earth.google.com/" target="_blank">center</a> label
+rightLabel: |
+    Hello <a href="https://earth.google.com/" target="_blank">right</a> label
+imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlWrapper: https://www.nasa.gov
+---
+::
+```
+
+### Config
+These style properties can be modified via `ui` and are stored in the `sh-card.ts` file:
+
+```ts
+export default {
+    wrapper: "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min",
+    upperBase: "row-start-1 flex items-center justify-center rounded-t-xl",
+    image: "h-full w-auto p-8",
+    lowerBase: "row-start-2 p-6 rounded-b-xl",
+    title: "text-3xl font-extrabold",
+    subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8",
+    text: "",
+    leftLabel: "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400",
+    centerLabel: "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400",
+    rightLabel: "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400",
+    icon: "",
+    // Default Tailwind CSS values
+    default: {
+    }
+  }
+```
+
+#### Class Descriptions
+These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+
+_**wrapper**_
+*  **Value**: <code>"grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min"</code>
+*  **Description**: This defines the overall styling for the container holding the elements. The value "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min" indicates a grid layout with 2 rows (grid grid-rows-2), a 2-unit border (border-2), rounded corners (rounded-xl), top and bottom margins of 4 units each (mt-4 mb-4), centered horizontally (mx-auto), and size constraints with maximum width and height set (max-w-lg max-h-min).
+
+_**upperBase**_
+*  **Value**: <code>"row-start-1 flex items-center justify-center rounded-t-xl"</code>
+*  **Description**: This specifies the styles for the upper base. The value "row-start-1 flex items-center justify-center rounded-t-xl" includes starting at row 1 (row-start-1), a flex container (flex), centering items both horizontally and vertically (items-center justify-center), and rounded top corners (rounded-t-xl).
+
+_**image**_
+*  **Value**: <code>"h-full w-auto p-8"</code>
+*  **Description**: This specifies styles for an image. The value "h-full w-auto p-8" includes full height (h-full), automatic width (w-auto), and padding of 8 units (p-8).
+
+_**lowerBase**_
+*  **Value**: <code>"row-start-2 p-6 rounded-b-xl"</code>
+*  **Description**: This specifies the styles for the lower base. The value "row-start-2 p-6 rounded-b-xl" includes starting at row 2 (row-start-2), padding of 6 units (p-6), and rounded bottom corners (rounded-b-xl).
+
+_**title**_
+*  **Value**: <code>"text-3xl font-extrabold"</code>
+*  **Description**: This defines the styling for the title text. The value "text-3xl font-extrabold" includes an extra-large font size (text-3xl) and extra-bold font weight (font-extrabold).
+
+_**subtitle**_
+*  **Value**: <code>"text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8"</code>
+*  **Description**: This specifies the styling for the subtitle text. The value "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8" includes a large font size (text-xl), semi-bold font weight (font-semibold), gray text color (text-gray-600), gray text color in dark mode (dark:text-gray-400), and a top margin of -8 units (-mt-8).
+
+_**text**_
+*  **Value**: <code>""</code>
+*  **Description**: This defines the styling for general text. As it is empty, it implies no specific styles have been set.
+
+_**leftLabel**_
+*  **Value**: <code>"col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
+*  **Description**: This specifies the styling for the left label. The value "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 1 (col-start-1), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+
+_**centerLabel**_
+*  **Value**: <code>"col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
+*  **Description**: This specifies the styling for the center label. The value "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 2 (col-start-2), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+
+_**rightLabel**_
+*  **Value**: <code>"col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
+*  **Description**: This specifies the styling for the right label. The value "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 3 (col-start-3), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+
+_**default**_
+*  **Value**: <code>{}</code>
+*  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
+
+These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

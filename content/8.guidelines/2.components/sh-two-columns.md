@@ -1,10 +1,11 @@
 ---
-titile: TwoColumens component
+titile: TwoColumns
 discription: 
+constructorName: ShTwoColumns
 ---
 
 
-The TwoColumns component enable you to provide any content presented in two
+The {{ $doc.constructorName }} constructor enables you to provide any content presented in two
 columns in one row.
 
 ## Usage
@@ -72,7 +73,7 @@ can contain all available contractors as other parts of the *Markdown* document:
 * lists, images, tables, links
 * other components
 
-It can contain nested `ShTwoColumns` component as well if that is needed for achieving
+It can contain nested {{ $doc.constructorName }} component as well, if that is needed for achieving
 desired effect.
 ::ShTwoColumns
 ---
@@ -102,7 +103,7 @@ can contain all available contractors as other parts of the *Markdown* document:
 * lists, images, tables, links
 * other components
 
-It can contain nested `ShTwoColumns` component as well if that is needed for achieving
+It can contain nested {{ $doc.constructorName }} component as well if that is needed for achieving
 desired effect.
 
 ::ShTwoColumns
@@ -120,7 +121,7 @@ size: 3XL
 ```
 
 You can notice that in the right column, encoupsulated with `ShSegment`
-component there is a `ShTwoColumns` component with different withs of the
+component there is a {{ $doc.constructorName }} component with different withs of the
 columns.
 
 The relationship between sizes of two columns can be controled using the property `size`.

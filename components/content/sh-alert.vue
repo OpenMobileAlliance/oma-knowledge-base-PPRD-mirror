@@ -3,9 +3,7 @@
         <div :class="ui.base">
             <i :class="['size-7', icon]"></i>
         </div>
-        <div :class="ui.text">
         <ContentSlot :use="$slots.default" unwrap="p" />
-        </div>
     </div>
 </template>
 
@@ -15,12 +13,12 @@ import { alert as config } from "@/ui.config" // Import the config file
 // Define props
 const props = withDefaults(
     defineProps<{
-        type?: string;
+        typeAlert?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
         ui: () => ({}),
-        type: "info",
+        typeAlert: "info",
     }
 );
 
@@ -31,7 +29,7 @@ const { ui } = useUI(
 );
 
 const alert = computed(() => {
-    switch (props.type) {
+    switch (props.typeAlert) {
         case "success":
             return config.alert.success;
             break;
@@ -47,7 +45,7 @@ const alert = computed(() => {
     }
 });
 const icon = computed(() => {
-    switch (props.type) {
+    switch (props.typeAlert) {
         case "success":
             return config.icon.success;
             break;

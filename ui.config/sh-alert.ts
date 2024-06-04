@@ -1,7 +1,6 @@
 export default {
   wrapper: "flex items-center space-x-1 mt-4 mb-4",
   base: "flex mx-2 p-1",
-  text: "not-prose",
   alert: {
     success: 'bg-[#F0FFF4] dark:bg-[#22543D] text-[#2F855A] dark:text-[#9AE6B4] px-2 py-3 relative border-l-4 border-[#68D391] dark:border-[#2F855A]',
     warning: 'bg-[#FFFAF0] dark:bg-[#744210] text-[#C05621] dark:text-[#FBD38D] px-2 py-3 relative border-l-4 border-[#F6AD55] dark:border-[#B7791F]',

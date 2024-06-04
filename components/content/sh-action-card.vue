@@ -1,7 +1,7 @@
 <template>
     <div :class="ui.wrapper" :style="backgroundClass">
         <div class="grid grid-cols-5 gap-4">
-            <img v-if="imageLink" :class="ui.image" :src="imageLink" :alt="altImage" />
+            <img v-if="urlImage" :class="ui.image" :src="urlImage" :alt="altImage" />
             <div class="col-start-2 col-span-3 flex-col">
                 <MDC :class="ui.title" :value="title" />
                 <MDC v-if="subtitle" :class="ui.subtitle" :value="subtitle" />
@@ -10,7 +10,7 @@
                     <UInput placeholder="you@example.com" icon="i-heroicons-envelope" />
                 </UFormGroup>
             </div>
-            <UButton :to="buttonLink" target="_blank" :label="buttonLabel" :color="buttonColor" size="xl" :class="ui.button" variant="solid" />
+            <UButton :to="urlButton" target="_blank" :label="labelButton" :color="colorButton" size="xl" :class="ui.button" :variant="variant" />
             <UIcon :name="icon" dynamic size="lg" :class="ui.icon" :alt="altIcon" />
         </div>
     </div>
@@ -25,14 +25,15 @@ const props = withDefaults(
         title: string;
         subtitle?: string;
         text?: string;
-        imageLink?: string;
+        urlImage?: string;
         altImage?: string;
-        buttonLink?: string;
-        buttonLabel?: string;
-        buttonColor?: string;
+        urlButton?: string;
+        labelButton?: string;
+        colorButton?: string;
+        variant?: string;
         icon?: string;
         altIcon?: string;
-        backgroundImage?: string;
+        imageBackground?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
@@ -40,14 +41,15 @@ const props = withDefaults(
         title: "",
         subtitle: "",
         text: "",
-        imageLink: "",
+        urlImage: "",
         altImage: "",
-        buttonLink: "",
-        buttonLabel: "",
-        buttonColor: "",
+        urlButton: "",
+        labelButton: "",
+        colorButton: "",
+        variant: "solid",
         icon: "",
         altIcon: "",
-        backgroundImage: "",
+        imageBackground: "",
     }
 );
 
@@ -58,8 +60,8 @@ const { ui } = useUI(
 );
 
 const backgroundClass = computed(() => {
-    if (props.backgroundImage) {
-        return "background-image: url(" + props.backgroundImage + ")";
+    if (props.imageBackground) {
+        return "background-image: url(" + props.imageBackground + ")";
     }
 });
 </script>
