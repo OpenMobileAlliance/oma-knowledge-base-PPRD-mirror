@@ -22,4 +22,4 @@ OMA maintains the following lists of IPR declarations:
 * [OMA Member IPR Declarations]()
 * [Non-OMA Member IPR Declarations]()
 
-For questions regarding the OMA IPR Policy please contact the OMA Membership [mailto:helpdesk@omaorg.org]().
+For questions regarding the OMA IPR Policy please contact the OMA Membership [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).
