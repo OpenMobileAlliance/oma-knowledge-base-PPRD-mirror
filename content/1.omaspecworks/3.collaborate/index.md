@@ -6,5 +6,5 @@ title: Collaborate
 
 This page provides the following content:
 
-- [Affiliates](affiliates/)
-- [Liaison-Agreements](liaison-agreements/)
+- [Affiliates](/omaspecworks/collaborate/affiliates/)
+- [Liaison-Agreements](/omaspecworks/collaborate/liaison-agreements/)
