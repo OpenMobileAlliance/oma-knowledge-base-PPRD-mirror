@@ -1,7 +1,7 @@
 <template>
-  <ULink :class="buttonClass" :type="props.type" :disabled="props.disabled" :to="props.url" :target="props.target" v-bind="{...attrs}">
+  <ULink :class="buttonClass" :type="props.type" :disabled="props.disabled" :to="props.urlButton" :target="props.target" v-bind="{...attrs}">
   <div :class="ui.inner">
-    <span v-if="label"><MDC :value="label" /></span>
+    <span v-if="labelButton"><MDC :value="labelButton" /></span>
     <ContentSlot v-else :use="$slots.default" unwrap="" />
   </div>
   </ULink>
@@ -14,28 +14,28 @@ import {button as config } from "@/ui.config"
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
-    url: String;
-    target?: String;
-    color?: String;
-    size?: String;
-    disabled?: Boolean;
-    variant?: String;
-    type?: String;
-    block?: Boolean;
-    label?: String
+    urlButton: string;
+    target?: string;
+    colorButton?: string;
+    size?: string;
+    disabled?: boolean;
+    variant?: string;
+    type?: string;
+    block?: boolean;
+    labelButton?: string
     class?: any;
   }>(),
   {
     ui: () => ({}),
-    url: () => "",
+    urlButton: () => "",
     target: () => "",
-    color: () => config.default.color,
+    colorButton: () => config.default.colorButton,
     size: () => config.default.size,
     disabled: () => false,
     variant: () => config.default.variant,
     type: () => "button",
     block: false,
-    label: "",
+    labelButton: "",
     class: () => "",
   });
 
@@ -48,7 +48,7 @@ const { ui, attrs } = useUI(
 const buttonClass = computed(() => {
   const textSize = ui.value.size[props.size]
   const padding = ui.value.padding[props.size]
-  const variant = ui.value.color?.[props.color as string]?.[props.variant as string] || ui.value.variant[props.variant]
+  const variant = ui.value.colorButton?.[props.colorButton as string]?.[props.variant as string] || ui.value.variant[props.variant]
 
   return twMerge(twJoin(
     ui.value.wrapper,
@@ -56,7 +56,7 @@ const buttonClass = computed(() => {
     padding, 
     props.block ? ui.value.block : ui.value.inline,
     textSize,
-    variant.replaceAll( "{color}",props.color)),
+    variant.replaceAll( "{colorButton}",props.colorButton)),
     props.class)
 })
 </script>

@@ -7,6 +7,7 @@ description:
 - [Alert](/guidelines/components/sh-alert)
 - [Avatar](/guidelines/components/sh-avatar)
 - [Badge](/guidelines/components/sh-badge)
+- [Button](/guidelines/components/sh-button)
 - [Card](/guidelines/components/sh-card)
 - [Card (Micro)](/guidelines/components/sh-micro-card)
 - [Column](/guidelines/components/sh-column)

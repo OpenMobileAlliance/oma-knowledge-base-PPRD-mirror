@@ -1,14 +1,15 @@
 ---
-title: ShButton component
+title: Button
 description: Component do render a button in the document
+constructorName: ShButton
 ---
 
 ## Usage
-The most simplest example of uage of the `ShButton` is with just an `url` and the text to show.
+The most simplest example of usage of the <b>{{ $doc.constructorName }}</b> is with just an `urlButton` and the text to show.
 
 ::ShButton
 ---
-url: '#'
+urlButton: '#'
 ---
 ClickMe!!!  
 ::
@@ -16,13 +17,13 @@ ClickMe!!!
 ```mdc
 ::ShButton
 ---
-url: '#'
+urlButton: '#'
 ---
 ClickMe!!!  
 ::
 ```
 
-The `ShButton` can be presented in `solid` and `outine` *variants*:
+The <b>{{ $doc.constructorName }}</b> can be presented in `solid`, `outine` and `link` *variants*:
 
 ::ShMultiColumn
 ---
@@ -31,7 +32,7 @@ cols: 3
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 variant: solid
 ---
 ClickMe!!!  
@@ -39,7 +40,7 @@ ClickMe!!!
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 variant: outline
 ---
 ClickMe!!!  
@@ -47,7 +48,7 @@ ClickMe!!!
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 variant: link
 ---
 ClickMe!!!  
@@ -56,7 +57,7 @@ ClickMe!!!
 ```mdc
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 variant: solid
 ---
 ClickMe!!!  
@@ -66,7 +67,7 @@ ClickMe!!!
 ```mdc
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 variant: outline
 ---
 ClickMe!!!  
@@ -76,7 +77,7 @@ ClickMe!!!
 ```mdc
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 variant: link
 ---
 ClickMe!!!  
@@ -89,7 +90,7 @@ The property `size` define the size of the `ShButton`
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: 2xs
 ---
 2xs  
@@ -97,7 +98,7 @@ size: 2xs
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: xs
 ---
 xs 
@@ -105,7 +106,7 @@ xs
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: sm
 ---
 sm
@@ -113,7 +114,7 @@ sm
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: md
 ---
 md
@@ -121,7 +122,7 @@ md
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: base
 ---
 base
@@ -129,7 +130,7 @@ base
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: lg
 ---
 lg
@@ -137,7 +138,7 @@ lg
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: xl
 ---
 xl
@@ -145,7 +146,7 @@ xl
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: 2xl
 ---
 2xl
@@ -153,7 +154,7 @@ size: 2xl
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: 3xl
 ---
 3xl
@@ -161,7 +162,7 @@ size: 3xl
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: 4xl
 ---
 4xl
@@ -169,39 +170,129 @@ size: 4xl
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 size: 5xl
 ---
 5xl
 ::
 
-Turning the parameter `block` to true you can instruct button to take the full length. And with `color` 
+```mdc
+::ShButton
+---
+urlButton: "#"
+size: 2xs
+---
+2xs  
+::
+
+::ShButton
+---
+urlButton: "#"
+size: xs
+---
+xs 
+::
+
+::ShButton
+---
+urlButton: "#"
+size: sm
+---
+sm
+::
+
+::ShButton
+---
+urlButton: "#"
+size: md
+---
+md
+::
+
+::ShButton
+---
+urlButton: "#"
+size: base
+---
+base
+::
+
+::ShButton
+---
+urlButton: "#"
+size: lg
+---
+lg
+::
+
+::ShButton
+---
+urlButton: "#"
+size: xl
+---
+xl
+::
+
+::ShButton
+---
+urlButton: "#"
+size: 2xl
+---
+2xl
+::
+
+::ShButton
+---
+urlButton: "#"
+size: 3xl
+---
+3xl
+::
+
+::ShButton
+---
+urlButton: "#"
+size: 4xl
+---
+4xl
+::
+
+::ShButton
+---
+urlButton: "#"
+size: 5xl
+---
+5xl
+::
+```
+
+Turning the parameter `block` to true you can instruct button to take the full length. And with `colorButton` 
 you can change the color of the button.
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 block: true
-color: cyan
+colorButton: cyan
 ---
-This button takes the whole witdh
+This button takes the whole width
 ::
 
 ```mdc
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 block: true
-color: cyan
+colorButton: cyan
 ---
-This button takes the whole witdh
+This button takes the whole width
 ::
 ```
-The `ShButton` content can be any valid Markdown.
+The <b>{{ $doc.constructorName }}</b> content can be any valid Markdown.
 
 ::ShButton
 ---
-url: "#"
+urlButton: "#"
 ---
 ClickMe!!!  
 
@@ -212,9 +303,9 @@ The other components are supported as well.
 
 ::ShButton
 ---
-url: "https://opensource.org/"
+urlButton: "https://opensource.org/"
 variant: outline
-color: blue
+colorButton: blue
 block: true
 ---
 :::ShMultiColumn
@@ -245,9 +336,9 @@ In this repository all the content is Open Sounce and it's can be used accordigl
 ```mdc
 ::ShButton
 ---
-url: "https://opensource.org/"
+urlButton: "https://opensource.org/"
 variant: outline
-color: blue
+colorButton: blue
 block: true
 ---
 :::ShMultiColumn
@@ -277,15 +368,15 @@ In this repository all the content is Open Sounce and it's can be used accordigl
 ```
 
 There is a special way where the button can be part of the
-:ShButton{url ="/" label="text" color="blue"} using a inline notation for the
-components. This notation supports `ShButton` :ShButton{url ="/" label="all" variant="outline" color="green"}
-variants and all other parameters, color for example.
+:ShButton{urlButton ="/" labelButton="text" colorButton="blue"} using a inline notation for the
+components. This notation supports <b><b>{{ $doc.constructorName }}</b></b> :ShButton{urlButton ="/" labelButton="all" variant="outline" colorButton="green"}
+variants and all other parameters, colorButton for example.
 
 ```mdc
 There is a special way where the button can be part of the
-:ShButton{url ="/" label="text" color="blue"} using a inline notation for the
-components. This notation supports `ShButton` :ShButton{url ="/" label="all" variant="outline" color="green"}
-variants and all other parameters, color for example.
+:ShButton{urlButton ="/" labelButton="text" colorButton="blue"} using a inline notation for the
+components. This notation supports `ShButton` :ShButton{urlButton ="/" labelButton="all" variant="outline" colorButton="green"}
+variants and all other parameters, colorButton for example.
 ```
 
 ## Properties
@@ -293,25 +384,25 @@ variants and all other parameters, color for example.
 | name | type | default | note |
 | --- | :---: | :---: | --- |
 | ui |  config | | optional |
-| url| String |  | mandatory |
+| urlButton| String |  | mandatory |
 | target | String |  | optional |
-| color | String | primary | optional |
+| colorButton | String | primary | optional |
 | size | String | base | optional |
 | disabled | Boolean | false | optional |
 | variant | String | solid | optional |
 | type | String | button | optional |
 | block | Boolean | false | optional |
-| label | String |  | optional |
+| labelButton | String |  | optional |
 ## Config
 
-```json
+```ts
 {
   wrapper: "align-middle m-1",
   inner: "text-center not-prose mx-auto",
   variant: {
-    solid: 'bg-{color}-500 dark:bg-{color}-400 text-white dark:text-gray-900 no-underline',
-    outline: 'text-{color}-500 dark:text-{color}-400 ring-1 ring-inset ring-{color}-500 dark:ring-{color}-400 no-underline',
-    link: 'text-{color}-500 hover:text-{color}-600 disabled:text-{color}-500 dark:text-{color}-400 dark:hover:text-{color}-500 dark:disabled:text-{color}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{color}-500 dark:focus-visible:ring-{color}-400'
+    solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white dark:text-gray-900 no-underline',
+    outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
+    link: 'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'
   },
   block: 'w-full flex justify-center items-center',
   inline: 'inline-flex items-center',
@@ -345,7 +436,7 @@ variants and all other parameters, color for example.
   default: {
     size: 'base',
     variant: 'solid',
-    color: 'primary',
+    colorButton: 'primary',
   }
 }
 ```

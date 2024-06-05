@@ -2,9 +2,9 @@ export default {
   wrapper: "align-middle m-1",
   inner: "text-center not-prose mx-auto",
   variant: {
-    solid: 'bg-{color}-500 dark:bg-{color}-400 text-white dark:text-gray-900 no-underline',
-    outline: 'text-{color}-500 dark:text-{color}-400 ring-1 ring-inset ring-{color}-500 dark:ring-{color}-400 no-underline',
-    link: 'text-{color}-500 hover:text-{color}-600 disabled:text-{color}-500 dark:text-{color}-400 dark:hover:text-{color}-500 dark:disabled:text-{color}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{color}-500 dark:focus-visible:ring-{color}-400'
+    solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white dark:text-gray-900 no-underline',
+    outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
+    link: 'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'
   },
   block: 'w-full flex justify-center items-center',
   inline: 'inline-flex items-center',
@@ -38,7 +38,7 @@ export default {
   default: {
     size: 'base',
     variant: 'solid',
-    color: 'primary',
+    colorButton: 'primary',
   }
 }
 
