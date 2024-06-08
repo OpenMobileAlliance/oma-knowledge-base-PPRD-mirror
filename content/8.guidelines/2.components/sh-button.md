@@ -6,28 +6,67 @@ constructorName: ShButton
 
 ## Usage
 The most simplest example of usage of the <b>{{ $doc.constructorName }}</b> is with just an `urlButton` and the text to show.
-
 ::ShButton
 ---
-ui: 
-  wrapper: shadow-2xl
-urlButton: '#' # this is a comment to the link to the button.
-rounded: rounded-full
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
 ---
 ClickMe!!!  
 ::
 
+This is how it is written:
+
 ```mdc
 ::ShButton
 ---
-urlButton: '#' # this is a comment to the link to the button.
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
 ---
 
 ClickMe!!!  
 ::
 ```
 
-The <b>{{ $doc.constructorName }}</b> can be presented in `solid`, `outine` and `link` *variants*:
+
+This is a more advance example of usage the <b>{{ $doc.constructorName }}</b> when some of the style is being modified:
+::ShButton
+---
+ui: 
+  wrapper: shadow-2xl
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
+target: "" # open in the same window
+rounded: rounded-3xl
+colorButton: green
+disabled: "" # on, off, TRUE, FALSE
+variant: solid
+block: "" #changes the button width
+size: 3xl # modifies the size of the button
+type: "" # possible values button, submit or reset
+---
+[]{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
+::
+
+This is how it is written:
+
+```mdc
+::ShButton
+---
+ui: 
+  wrapper: shadow-2xl
+urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
+target: "" # open in the same window
+rounded: rounded-3xl
+colorButton: green
+disabled: "" # on, off, TRUE, FALSE
+variant: solid
+block: "" #changes the button width
+size: 3xl # modifies the size of the button
+type: "" # possible values button, submit or reset
+---
+
+[]{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
+::
+```
+
+The <b>{{ $doc.constructorName }}</b> can be presented in `solid`, `outline` and `link` *variants*:
 
 ::ShMultiColumn
 ---
@@ -303,7 +342,8 @@ ClickMe!!!
 *it will take you to desirable destination*
 ::
 
-The other components are supported as well.
+### Combine Button with Other Constructors
+It is possible to insert other constructors inside of the <b>{{ $doc.constructorName }}</b> constructor. The other components are supported as well.
 
 ::ShButton
 ---
@@ -312,29 +352,29 @@ variant: outline
 colorButton: blue
 block: true
 ---
-:::ShMultiColumn
----
-ui:
-  wrapper: w-full
-cols: 8
----
-[]{.i-fa6-brands-square-github .text-4xl}
+  :::ShMultiColumn
+  ---
+  ui:
+    wrapper: w-full
+  cols: 8
+  ---
+    []{.i-fa6-brands-square-github .text-4xl}
 
-::ShColumn
----
-title: GitHub repository
-subTitle: "*public*"
-size: 2
----
-::
+    ::ShColumn
+    ---
+    title: GitHub repository
+    subTitle: "*public*"
+    size: 2
+    ---
+    ::
 
-::ShColumn
----
-size: 5
----
-In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
-::
-:::
+    ::ShColumn
+    ---
+    size: 5
+    ---
+    In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
+    ::
+  :::
 ::
 
 ```mdc
@@ -345,29 +385,29 @@ variant: outline
 colorButton: blue
 block: true
 ---
-:::ShMultiColumn
----
-ui:
-  wrapper: w-full
-cols: 8
----
-[]{.i-fa6-brands-square-github .text-4xl}
+  :::ShMultiColumn
+  ---
+  ui:
+    wrapper: w-full
+  cols: 8
+  ---
+    []{.i-fa6-brands-square-github .text-4xl}
 
-::ShColumn
----
-title: GitHub repository
-subTitle: "*public*"
-size: 2
----
-::
+    ::ShColumn
+    ---
+    title: GitHub repository
+    subTitle: "*public*"
+    size: 2
+    ---
+    ::
 
-::ShColumn
----
-size: 5
----
-In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
-::
-:::
+    ::ShColumn
+    ---
+    size: 5
+    ---
+    In this repository all the content is Open Sounce and it's can be used accordigly to it's LICENSE.
+    ::
+  :::
 ::
 ```
 
@@ -383,20 +423,114 @@ components. This notation supports `ShButton` :ShButton{urlButton ="/" labelButt
 variants and all other parameters, colorButton for example.
 ```
 
-## Properties
+## Properties and Attributes
 
-| name | type | default | note |
-| --- | :---: | :---: | --- |
-| ui |  config | | optional |
-| urlButton| String |  | mandatory |
-| target | String |  | optional |
-| colorButton | String | primary | optional |
-| size | String | base | optional |
-| disabled | Boolean | false | optional |
-| variant | String | solid | optional |
-| type | String | button | optional |
-| block | Boolean | false | optional |
-| labelButton | String |  | optional |
+These are the properties and attributes to define and style <b>{{ $doc.constructorName }}</b> constructor
+
+<table>
+    <caption>Properties & Attributes</caption>
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Attribute</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3"><code>ui</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>The <code>ui</code> property is a comprehensive configuration object that allows for the customization of various styling aspects of the button component. Each attribute within the <code>ui</code> property targets a specific part of the button's appearance and layout, providing detailed control over its design.</td>
+        </tr>
+        <tr>
+            <td><code>wrapper</code></td>
+            <td>n/a</td>
+            <td>Defines the overall styling for the container that holds all the elements of the button. The <code>wrapper</code> attribute is used to ensure the button is aligned properly within its container, with appropriate margins, e.g., <code>align-middle m-1</code></td>
+        </tr>
+        <tr>
+            <td><code>inner</code></td>
+            <td>n/a</td>
+            <td>Specifies the styling for the inner content of the button, ensuring it is centered and does not inherit any prose-related styles, making it suitable for standalone button components, e.g., <code>text-center not-prose mx-auto</code></td>
+        </tr>
+        <tr>
+            <td><code>urlButton</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Represents the URL to which the button will navigate when clicked. It can be used to define external or internal links for the button's action.</td>
+        </tr>
+        <tr>
+            <td><code>labelButton</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Defines the text label displayed on the button. This attribute ensures the button conveys its intended action clearly to the user.</td>
+        </tr>
+        <tr>
+            <td><code>target</code></td>
+            <td>n/a</td>
+            <td>??</td>
+            <td>Specifies where to open the linked document. Common values include <code>_self</code> for the same frame, <code>_blank</code> for a new window or tab, <code>_parent</code> for the parent frame, and <code>_top</code> for the full body of the window.</td>
+        </tr>
+        <tr>
+            <td><code>colorButton</code></td>
+            <td>n/a</td>
+            <td><code>primary</code></td>
+            <td>Determines the primary color scheme for the button. The value <code>primary</code> sets a default color, which can be customized by replacing <code>{colorButton}</code> in the variant styles with the desired color name.</td>
+        </tr>
+        <tr>
+            <td><code>rounded</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Defines the border-radius of the button, making the edges rounded. The default class <code>rounded-md</code> provides medium-rounded corners.</td>
+        </tr>
+        <tr>
+            <td><code>disabled</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>A boolean attribute (<code>True</code>, <code>False</code>) that indicates whether the button is disabled. When true, the button is not interactive and is usually styled to look inactive.</td>
+        </tr>
+        <tr>
+            <td><code>variant</code></td>
+            <td>n/a</td>
+            <td><code>solid</code></td>
+            <td>Specifies the style variant of the button, which can be <code>solid</code>, <code>outline</code>, or <code>link</code>. Each variant applies different styling rules, such as background colors, border styles, and text decorations.</td>
+        </tr>
+        <tr>
+            <td><code>block</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>A boolean attribute (<code>True</code>, <code>False</code>) defines whether the button should be displayed as a block element, taking the full width of its container.</td>
+        </tr>
+        <tr>
+            <td><code>size</code></td>
+            <td>n/a</td>
+            <td><code>base</code></td>
+            <td>Sets the size of the button, ranging from <code>2xs</code>, <code>xs</code>, <code>sm</code>, <code>md</code>, <code>base</code>, <code>lg</code>, <code>xl</code>, <code>2xl</code>, <code>3xl</code>, <code>4xl</code>, to <code>5xl</code>. Each size corresponds to predefined text and padding sizes, ensuring consistency across different button sizes.</td>
+        </tr>
+        <tr>
+            <td><code>inline</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Defines whether the button should be displayed inline with other elements. The class <code>inline-flex items-center</code> ensures the button aligns properly with the surrounding content.</td>
+        </tr>
+        <tr>
+            <td><code>padding</code></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Sets the padding for the button, with options ranging from <code>2xs</code>, <code>xs</code>, <code>sm</code>, <code>md</code>, <code>base</code>, <code>lg</code>, <code>xl</code>, <code>2xl</code>, <code>3xl</code>, <code>4xl</code>, to <code>5xl</code>. Each padding size corresponds to predefined padding values, ensuring the button's content is appropriately spaced. It is recommended do not modiffied this value as it is synced with the <code>size</code> property.</td>
+        </tr>
+        <tr>
+            <td><code>type</code></td>
+            <td>n/a</td>
+            <td><code>button</code></td>
+            <td>Specifies the type attribute for the button element, which can be a <code>button</code>, <code>submit</code>, or <code>reset</code>. The default type is the <code>button</code>, indicating a clickable button that performs an action without submitting a form. It is recommended do not modified this value.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
 ## Config
 
 ```ts
