@@ -9,7 +9,10 @@ The most simplest example of usage of the <b>{{ $doc.constructorName }}</b> is w
 
 ::ShButton
 ---
-urlButton: '#'
+ui: 
+  wrapper: shadow-2xl
+urlButton: '#' # this is a comment to the link to the button.
+rounded: rounded-full
 ---
 ClickMe!!!  
 ::
@@ -17,8 +20,9 @@ ClickMe!!!
 ```mdc
 ::ShButton
 ---
-urlButton: '#'
+urlButton: '#' # this is a comment to the link to the button.
 ---
+
 ClickMe!!!  
 ::
 ```
