@@ -38,7 +38,7 @@ const props = withDefaults(
     {
         ui: () => ({}),
         positionText: "right",
-        spanText: "l",
+        spanText: "m",
         alignText: "center",
         title: "",
         subtitle: "",
@@ -69,7 +69,7 @@ const COL_START_VALUES = [
 ]
 
 const positionTextClass = computed(() => {
-    if (positionText.value === 'right' && spanText.value === 'xl') {
+    if (positionText.value === 'right' && spanText.value === 'l') {
         return COL_START_VALUES[2]
     } else if (positionText.value === 'left') {
         return COL_START_VALUES[1]
@@ -80,15 +80,15 @@ const positionTextClass = computed(() => {
 
 const spanTextClass = computed(() => {
     switch (spanText.value) {
-        case 'm':
+        case 's':
             if (positionText.value === 'left') {
                 return 'col-start-1 col-span-1'
             } else {
                 return 'col-start-4 col-span-1'
             }
-        case 'l':
+        case 'm':
             return 'col-span-2'
-        case 'xl':
+        case 'l':
             if (positionText.value === 'left') {
                 return 'col-start-1 col-span-3'
             } else {
@@ -114,7 +114,7 @@ const alignTextClass = computed(() => {
 
 //depending on the textPosition, the image will be placed on the opposite side
 const imgPositionClass = computed(() => {
-    if (positionText.value === 'left' && spanText.value === 'm') {
+    if (positionText.value === 'left' && spanText.value === 's') {
         return 'col-start-2'
     } else if (positionText.value === 'right') {
         return 'col-start-1'
@@ -123,13 +123,13 @@ const imgPositionClass = computed(() => {
 
 //depending on the spanText and textPosition, the image will take the remaining space
 const imgSpanClass = computed(() => {
-    if (spanText.value === 'xl' && positionText.value === 'left') {
+    if (spanText.value === 'l' && positionText.value === 'left') {
         return 'col-start-4 col-span-1'
-    } else if (spanText.value === 'xl' && positionText.value === 'right') {
+    } else if (spanText.value === 'l' && positionText.value === 'right') {
         return 'col-start-1 col-span-1'
-    } else if (spanText.value === 'm' && positionText.value === 'left') {
+    } else if (spanText.value === 's' && positionText.value === 'left') {
         return 'col-start-2 col-span-3'
-    } else if (spanText.value === 'm' && positionText.value === 'right') {
+    } else if (spanText.value === 's' && positionText.value === 'right') {
         return 'col-start-1 col-span-3'
     } else {
         return 'col-span-2'
