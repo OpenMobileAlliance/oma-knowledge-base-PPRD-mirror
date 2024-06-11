@@ -2,8 +2,8 @@
   <header class="h-8 p-4 w-full bg-zinc-200 dark:bg-slate-800 text-xs italic flex items-center">
     <div class="mx-auto">
       <nuxt-link to="/" class="text-[#dda20d] dark:text-[#87cefa] hover:text-[#044ea1]">HOME</nuxt-link>
-      <span v-for="(crumb, index) in breadcrumbs" :key="index">
-        &nbsp; > &nbsp;
+      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="text-[#dda20d] dark:text-[#87cefa]">
+        &nbsp; <b> > </b> &nbsp;
         <nuxt-link
           v-if="crumb.to"
           :to="crumb.to"

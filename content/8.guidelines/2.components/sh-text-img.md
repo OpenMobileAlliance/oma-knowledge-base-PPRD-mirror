@@ -14,7 +14,7 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 ::ShTextImg
 ---
 positionText: left
-spanText: m
+spanText: s
 alignText: left
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
 title: |
@@ -32,9 +32,8 @@ This is how it is constructed
 ::ShTextImg
 ---
 positionText: left
-spanText: m
+spanText: s
 alignText: left
-status: d
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
 title: |
   Hello component
@@ -94,7 +93,7 @@ The {{ $doc.constructorName }} constructor gives you an option to hold both imag
     <tr>
       <td>spanText</td>
       <td>n/a</td>
-      <td>Defines amount of space that will text occupy. <b>Options:</b> <code>m</code>, <code>l</code>, <code>xl</code></td>
+      <td>Defines amount of space that will text occupy. <b>Options:</b> <code>s</code>, <code>m</code>, <code>l</code></td>
     </tr>
     <tr>
       <td>alignText</td>
@@ -147,7 +146,7 @@ ui:
   text:  # no style has been applied, added as a reference only.
   image: hover:skew-y-3
 positionText: left #this is an inline comment example that is not displayed
-spanText: m
+spanText: s
 alignText: left
 status: d #options: "a", "b", "c", "d" & default
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
@@ -172,7 +171,7 @@ ui:
   text:  # no style has been applied, added as a reference only.
   image: hover:skew-y-3 # when hovered over image, it skews
 positionText: left #this is an inline comment example that is not displayed
-spanText: m
+spanText: s
 alignText: left
 status: d #options: "a", "b", "c", "d" & default
 urlImage: https://www.nasa.gov/wp-content/uploads/2023/01/draco-4-darpa-nasa-ussf-caption.jpg?resize=2000,1119
