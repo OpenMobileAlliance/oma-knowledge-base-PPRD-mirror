@@ -1,11 +1,12 @@
 ---
-title: SHMultiColumn Component
+title: Multi Column 
 description:
+constructorName: ShMultiColumn
 ---
 
 ## Usage
 
-The following example show using `SHMultiColumn` component to organise
+The following example show using {{ $doc.constructorName }} component to organise
 content in three columns per a row.
 
 ::SHMultiColumn
@@ -44,7 +45,7 @@ Last colum 2nd row
 ::
 ```
 
-The `ShMultiColumn` can be styled using `ui.wparrer` and `class` property.
+The {{ $doc.constructorName }} can be styled using `ui.wparrer` and `class` property.
 Typical usage is in combination with `ShColumn` that can have different
 column width.
 
@@ -94,7 +95,7 @@ Second column with double width
 ::
 ```
 
-The `ShMultiColumn` can have multiple *rows* and each row can organise its 
+The {{ $doc.constructorName }} can have multiple *rows* and each row can organise its 
 columns in a need way. Columns can spread in multiple rows like in the following
 example.
 
@@ -302,7 +303,7 @@ Values for this property and its basic usage can be find in
 
 ## Config
 
-```json
+```ts
 {
   wrapper: "",
   default: {
