@@ -31,13 +31,14 @@ This is a more advance example of usage the <b>{{ $doc.constructorName }}</b> wh
 ---
 ui: 
   wrapper: shadow-2xl
-urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
+  rounded: rounded-full # options: rounded, rounded-md, rounded-lg & rounded-full
+urlButton: https://www.nasa.gov/ # this is a comment to the link to the button.
 target: "" # open in the same window
 rounded: rounded-3xl
 colorButton: green
-disabled: "" # on, off, TRUE, FALSE
+disabled: true # true, false
 variant: solid
-block: "" #changes the button width
+block: "" # changes the button width
 size: 3xl # modifies the size of the button
 type: "" # possible values button, submit or reset
 ---
@@ -51,17 +52,17 @@ This is how it is written:
 ---
 ui: 
   wrapper: shadow-2xl
-urlButton: 'https://www.nasa.gov/' # this is a comment to the link to the button.
+  rounded: rounded-full # options: rounded, rounded-md, rounded-lg & rounded-full
+urlButton: https://www.nasa.gov/ # this is a comment to the link to the button.
 target: "" # open in the same window
 rounded: rounded-3xl
 colorButton: green
-disabled: "" # on, off, TRUE, FALSE
+disabled: true # true, false
 variant: solid
-block: "" #changes the button width
+block: "" # changes the button width
 size: 3xl # modifies the size of the button
 type: "" # possible values button, submit or reset
 ---
-
 []{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
 ::
 ```
@@ -413,7 +414,7 @@ block: true
 
 There is a special way where the button can be part of the
 :ShButton{urlButton ="/" labelButton="text" colorButton="blue"} using a inline notation for the
-components. This notation supports <b><b>{{ $doc.constructorName }}</b></b> :ShButton{urlButton ="/" labelButton="all" variant="outline" colorButton="green"}
+components. This notation supports <b>{{ $doc.constructorName }}</b> :ShButton{urlButton ="/" labelButton="all" variant="outline" colorButton="green"}
 variants and all other parameters, colorButton for example.
 
 ```mdc
