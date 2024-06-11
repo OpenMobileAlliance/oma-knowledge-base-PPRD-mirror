@@ -5,6 +5,8 @@ export { default as gridSizes } from "@/ui.config/sh-grid-sizes"
 export { default as card } from "@/ui.config/sh-card"
 export { default as microCard } from "@/ui.config/sh-micro-card"
 export { default as actionCard } from "@/ui.config/sh-action-card"
+export { default as button } from "@/ui.config/sh-button"
+
 
 export { default as avatar } from "@/ui.config/sh-avatar"
 export { default as alert } from "@/ui.config/sh-alert"
