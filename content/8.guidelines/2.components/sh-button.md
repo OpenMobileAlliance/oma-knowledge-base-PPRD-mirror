@@ -40,7 +40,6 @@ disabled: true # true, false
 variant: solid
 block: "" # changes the button width
 size: 3xl # modifies the size of the button
-type: "" # possible values button, submit or reset
 ---
 []{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
 ::
@@ -61,7 +60,6 @@ disabled: true # true, false
 variant: solid
 block: "" # changes the button width
 size: 3xl # modifies the size of the button
-type: "" # possible values button, submit or reset
 ---
 []{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
 ::
@@ -520,12 +518,6 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
             <td>n/a</td>
             <td>n/a</td>
             <td>Sets the padding for the button, with options ranging from <code>2xs</code>, <code>xs</code>, <code>sm</code>, <code>md</code>, <code>base</code>, <code>lg</code>, <code>xl</code>, <code>2xl</code>, <code>3xl</code>, <code>4xl</code>, to <code>5xl</code>. Each padding size corresponds to predefined padding values, ensuring the button's content is appropriately spaced. It is recommended do not modiffied this value as it is synced with the <code>size</code> property.</td>
-        </tr>
-        <tr>
-            <td><code>type</code></td>
-            <td>n/a</td>
-            <td><code>button</code></td>
-            <td>Specifies the type attribute for the button element, which can be a <code>button</code>, <code>submit</code>, or <code>reset</code>. The default type is the <code>button</code>, indicating a clickable button that performs an action without submitting a form. It is recommended do not modified this value.</td>
         </tr>
     </tbody>
 </table>

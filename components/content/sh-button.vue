@@ -1,5 +1,5 @@
 <template>
-  <ULink :class="buttonClass" :type="props.type" :disabled="props.disabled" :to="props.urlButton" :target="props.target" v-bind="{...attrs}">
+  <ULink :class="buttonClass" type="button" :disabled="props.disabled" :to="props.urlButton" :target="props.target" v-bind="{...attrs}">
   <div :class="ui.inner">
     <span v-if="labelButton"><MDC :value="labelButton" /></span>
     <ContentSlot v-else :use="$slots.default" unwrap="" />
@@ -20,7 +20,6 @@ const props = withDefaults(
     size?: string;
     disabled?: boolean;
     variant?: string;
-    type?: string;
     block?: boolean;
     labelButton?: string
     class?: any;
@@ -33,7 +32,6 @@ const props = withDefaults(
     size: () => config.default.size,
     disabled: () => false,
     variant: () => config.default.variant,
-    type: () => "button",
     block: false,
     labelButton: "",
     class: () => "",
@@ -51,12 +49,12 @@ const buttonClass = computed(() => {
   const variant = ui.value.colorButton?.[props.colorButton as string]?.[props.variant as string] || ui.value.variant[props.variant]
 
   return twMerge(twJoin(
-    ui.value.wrapper,
     ui.value.rounded,
     padding, 
     props.block ? ui.value.block : ui.value.inline,
     textSize,
-    variant.replaceAll( "{colorButton}",props.colorButton)),
+    variant.replaceAll( "{colorButton}",props.colorButton),
+    ui.value.wrapper),
     props.class)
 })
 </script>
