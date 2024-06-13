@@ -5,7 +5,6 @@
         ref="carousel"
         indicators
         arrows>
-        <div>{{ items.length }}</div>
         <slot />
     </UCarousel>
 </template>
