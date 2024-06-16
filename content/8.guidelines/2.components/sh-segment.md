@@ -178,6 +178,7 @@ The `ShSegment` consturctor supports only one property: `ui`.
 </table>    
 
 ## ShSegment Config
+The {{ $doc.constructorName }} component or constructor contains a single property `ui` with a single attribute `wrapper` which doesn't contains any default value.
 
 ```ts
 {
@@ -185,8 +186,8 @@ The `ShSegment` consturctor supports only one property: `ui`.
 }
 ```
 
-### Class Descriptions
-These represent the class values utilized in the `ShSegment` constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+### Attributes Descriptions
+This section indicates the class values utilized in the `ShSegment` constructor. These values are customizable and can be strengthened or overridden through the `wrapper` attributes.
 
 _**wrapper**_
 *  **Value**: <code>bg-gradient-to-r from-blue-500 text-3xl p-4 rounded shadow-2xl</code> (these are the values used by the embedded `ShSegment` of the above example. 
