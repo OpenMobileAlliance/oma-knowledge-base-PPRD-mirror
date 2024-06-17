@@ -150,7 +150,7 @@ That is making this used to show this component flexibility.
 ::
 ```
 
-## Props
+## ShSegment Properties
 The `ShSegment` consturctor supports only one property: `ui`.
 
 <table>
