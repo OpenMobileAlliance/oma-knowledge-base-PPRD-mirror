@@ -375,19 +375,11 @@ ui:
 
 
 ## Two-Columns Props
-
-| name | type | default | note |
-| --- | :---: | :---: | --- |
-| ui |  config | | optional |
-| size | String | "L" | optional |
-| gap| String | "gap-4" | optional |
+The ShTwoColumns constructor supports the following properties:
 
 The `gap` property controls gutters between columns.
 Values for this property and its basic usage can be find in
 [tailwindcss](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
-
-Two-Columns Properties
-The ShTwoColumns constructor supports the following properties:
 
 <table>
   <thead>
