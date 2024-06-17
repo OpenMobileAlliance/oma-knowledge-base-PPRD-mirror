@@ -16,4 +16,5 @@ description:
 - [Social](/guidelines/components/sh-social)
 - [TextImage](/guidelines/components/sh-text-img)
 - [TwoColumns](/guidelines/components/sh-two-columns)
+- [DynamicTable](/guidelines/components/sh-dynamic-table)
 - [Video](/guidelines/components/sh-video)
