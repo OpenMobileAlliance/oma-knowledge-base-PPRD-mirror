@@ -5,11 +5,11 @@ constructorName: ShMultiColumn
 ---
 
 ## Usage
-### Basic MultiColumn
-The following example shows a basic example of the {{ $doc.constructorName }} component. It is used  to organise the content in three columns with two rows.
->Note: The `border` around the `MultiColum` is just to highlight the area covered by the component. It is not displayed in the written example below.
+### Basic Usage
+The following example shows a basic example of the <b>{{ $doc.constructorName }}</b> component. It is used  to organise the content in three columns with two rows.
+>Note: The `border` around the <b>{{ $doc.constructorName }}</b> is just to highlight the area covered by the component. It is not displayed in the written example below.
 
-::SHMultiColumn
+::ShMultiColumn
 ---
 ui:
   wrapper: border #this border is to clearly state the area covered by the multicolumn
@@ -31,7 +31,7 @@ Last colum 2nd row
 This is how the above example is written in markdown:
 
 ```mdc
-::SHMultiColumn
+::ShMultiColumn
 ---
 cols: 3
 ---
@@ -48,18 +48,18 @@ Second column 2nd row
 Last colum 2nd row
 ::
 ```
-### Advance MultiColumn
-In the following example the {{ $doc.constructorName }} component is styled using the attribute `ui.wrapper` and `class` property. The `ShColumn` component is usually used with the `MultiColumn` component to present each column content. It is possible to use different width for each column.
+### Advance Usage
+In the following example the <b>{{ $doc.constructorName }}</b> component is styled using the attribute `ui.wrapper` and `class` property. The [ShColumn](/guidelines/components/sh-column) component is usually used with the <b>{{ $doc.constructorName }}</b> component to present each column content. It is possible to use different width for each column.
 
-This `MultiColumn` contains the following content:
+This <b>{{ $doc.constructorName }}</b> contains the following content:
 * The width is divided in four columns. The two middle columns have been combined into a single column. This is the reason why in the image below appears only three columns.
-* The `MultiColumn` space or `wrapper` has been styled as `wrapper: "bg-stone-200 text-emerald-800 shadow-lg"`. This provides a specific background color, text color and shadow effect, creating a disting and appeling container:
+* The <b>{{ $doc.constructorName }}</b> space or `wrapper` has been styled as `wrapper: "bg-stone-200 text-emerald-800 shadow-lg"`. This provides a specific background color, text color and shadow effect, creating a disting and appeling container:
   * `bg-stone-200`: Sets the background color to a light shade of stone (grayish-beige).
   * `text-emerald-800`: Sets the text color to a dark shade of emerald green.
   * `shadow-lg`: Applies a large shadow effect to the element, providing a pronounced shadow for a more elevated appearance.
 * *Text Centered*: Using the `class` property, the text is displayed in the middle of the columns.
 * *First Column*: The text is written in markdown with inline style.
-* *Second Column*: The `ShColumn` constructor or module is used to represent the content on the second column.
+* *Second Column*: The [ShColumn](/guidelines/components/sh-column) constructor or module is used to represent the content on the second column.
   * In this column the `wrapper` attribute is used to provide a different background color and text color.  `wrapper: "bg-emerald-800 text-stone-200"`
     * `bg-emerald-800`: Sets the background color to a dark (greenish) color.
     * `text-stone-200`: Sets the text color to a lighter shade of emerald beige.
@@ -68,7 +68,7 @@ This `MultiColumn` contains the following content:
 * *Third Column*: The text is written in markdown with inline style.
 
 
-This is how `MultiColumn` example is displayed:
+This is how <b>{{ $doc.constructorName }}</b> example is displayed:
 
 ::ShMultiColumn
 ---
@@ -149,11 +149,11 @@ Second column second row with double width
 
 ### Advance Multicolumn
 
-The {{ $doc.constructorName }} can have multiple *rows* and each row can organise its 
+The <b>{{ $doc.constructorName }}</b> can have multiple *rows* and each row can organise its 
 columns with different column sizes. Columns can spread in multiple rows like in the following
 example.
 
-This is how `MultiColumn` component can be used to construct multiple rows with different column width:
+This is how <b>{{ $doc.constructorName }}</b> component can be used to construct multiple rows with different column width:
 
 ::ShMultiColumn
 ---
@@ -346,9 +346,9 @@ This colum now is 2 column wide.
 ::
 ```
 
-## MultiColumn Properties
+## Properties
 
-The constructor  {{ $doc.constructorName }} allows to organize content inside a multi-column layout. Below is a detailed description of the properties and attributes used in the `ShMultiColumn` constructor:
+The constructor  <b>{{ $doc.constructorName }}</b> allows to organize content inside a multi-column layout. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor:
 
 <table>
   <thead>
@@ -402,8 +402,9 @@ The constructor  {{ $doc.constructorName }} allows to organize content inside a 
   </tbody>
 </table>
 
-## MultiColumn Configuration
+## Config
 Content of the `sh-multi-column.ts` file:
+
 ```ts
 {
   wrapper: "",
@@ -414,7 +415,7 @@ Content of the `sh-multi-column.ts` file:
 }
 ```
 
-## Multi-Column Configuration
+## Configuration
 The style attributes for the MultiColumn configuration can be modified via the property `ui` and are stored in the `sh-multi-column.ts` file:
 
 ### Attributes Description
@@ -440,4 +441,4 @@ _**gap**_:
 * **Value**: "gap-4"
 * **Description**: This defines the default gutter size between columns. The value "gap-4" applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the gap property can be found in the Tailwind CSS documentation. This value can only be modified in the sh-multi-column.ts file; it cannot be modified via markdown.
 
-These style properties ensure that the `ShMultiColum`n component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements. 
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements. 

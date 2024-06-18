@@ -1,18 +1,20 @@
 ---
-titile: TwoColumns
+title: TwoColumns
 discription: 
 constructorName: ShTwoColumns
 ---
 
-The {{ $doc.constructorName }} constructor enables you to provide any content presented in two
-columns in one row.
-
 ## Usage
-### Basic Two-Columns (text)
+The <b>{{ $doc.constructorName }}</b> constructor enables you to provide any content presented in two
+columns and one row.
+> Note: The `border` in `wrapper` is only for visual understanding of the <b>{{ $doc.constructorName }}</b> boundry. Component itself does not have that predefined
+
+### Basic Usage (text)
+
 ::ShTwoColumns
 ---
 ui: 
-  wrapper: shadow-2xl
+  wrapper: border
 ---
 This text is displayed in the left column first row.
 
@@ -27,7 +29,10 @@ The above example is written as:
 
 ```mdc 
 ::ShTwoColumns
-
+---
+ui: 
+  wrapper: border
+---
 This text is displayed in the left column first row.
 
 Text is displayed in the right column first row.
@@ -37,7 +42,8 @@ This text is displayed in the left column second row.
 Text text is displayed in the right column second row.
 ::
 ```
-### Basic Two-Columns (text/image)
+
+### Basic Usage (text/image)
 It is possible to add text or an image to one or to both columns. For example, text and image:
 
 ::ShTwoColumns
@@ -59,7 +65,7 @@ This text should be in the left column.
 ![image](https://free-images.com/sm/3b8f/dalmatiner_schw_braun.jpg){.not-prose .w-full .rounded-2xl}
 ::
 ```
-### Basic Two-Columns (image/text)
+### Basic Usage (image/text)
 The order of the elements determine the left and right column content.
 
 ::ShTwoColumns
@@ -81,14 +87,14 @@ This is how the above example is written:
 This text should be in the right column. 
 ::
 ```
-### Advance Two-Columns 
-It is possible to nest other components inside of the `ShTwoColumns` component as e.g., an `ShSegment` and nest a `ShTwoColumns` component to provide special effects. For instance the following example contains:
+### Advanced Usage 
+It is possible to nest other components inside of the <b>{{ $doc.constructorName }}</b> component as e.g., an `ShSegment` and nest a <b>{{ $doc.constructorName }}</b> component to provide special effects. For instance the following example contains:
 * Two columns
   * **Column 1**: Contains an image with inline style.
   * **Cloumn 2**: It is a `ShSegment` with background color, shadow and other special styles which in turn contains:
     * Markdown text,
     * Bullet list,
-    * `ShTwoColumns`: A nested `SHTwoColumns` module at the bottom of the second column which contains:
+    * <b>{{ $doc.constructorName }}</b> : A nested <b>{{ $doc.constructorName }}</b> module at the bottom of the second column which contains:
       * *Sub-Column 1*: A markdown text styled inline,
       * *Sub-Column 2*: An image that has been styled by rounding the corners.
 
@@ -113,7 +119,7 @@ can contain all available contractors as other parts of the *Markdown* document:
 * lists, images, tables, links
 * other components
 
-It can contain nested {{ $doc.constructorName }} component as well, if that is needed for achieving
+It can contain nested <b>{{ $doc.constructorName }}</b> component as well, if that is needed for achieving
 desired effect.
 ::ShTwoColumns
 ---
@@ -148,7 +154,7 @@ can contain all available contractors as other parts of the *Markdown* document:
 * lists, images, tables, links
 * other components
 
-It can contain nested {{ $doc.constructorName }} component as well, if that is needed for achieving
+It can contain nested <b>{{ $doc.constructorName }}</b> component as well, if that is needed for achieving
 desired effect.
 ::ShTwoColumns
 ---
@@ -165,14 +171,14 @@ size: 2XL
 ```
 
 You can notice that in the right column, encoupsulated with `ShSegment`
-component there is a {{ $doc.constructorName }} component with different withs of the
+component there is a <b>{{ $doc.constructorName }}</b> component with different withs of the
 columns.
 
 The relationship between sizes of two columns can be controled using the property `size`.
 The values of this property are define in [T-shirt]{} sizes starting from '2XS' all the
 way up to '4XL', see below. Default value of the `size` property is 'L'.
 
-### Two-Columns and size
+### Two-Columns and Size
 The image displayed below is composed of the following components:
 
 * An `ShSegment` component that nests several `ShTwoColumns` components, with one for each row. The `ShTwoColumns` component uses the `size` attribute to define the width of the left column.
@@ -374,7 +380,7 @@ ui:
 ::
 
 
-## Two-Columns Props
+## Properties
 The ShTwoColumns constructor supports the following properties:
 
 The `gap` property controls gutters between columns.
@@ -417,10 +423,10 @@ Values for this property and its basic usage can be find in
   </tbody>
 </table>
 
-## Two-Columns Config
+## Config
 The style attributes can be modified via the property `ui` and are stored in the `sh-two-columns.ts` file: `sh-two-columns.ts`
 
-```json
+```ts
 {
   wrapper: "",
   default: {
@@ -452,4 +458,4 @@ _**gap**_:
 
 * **Value**: `"gap-4"`
 * **Description**: This defines the default gutter size between columns. The value "gap-4" applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the gap property can be found in the Tailwind CSS documentation.
-These style properties ensure that the `ShTwoColumns` component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements. This value only can be modified in the `sh-two-columns.ts` file, it cannot be modified via markdown.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements. This value only can be modified in the `sh-two-columns.ts` file, it cannot be modified via markdown.

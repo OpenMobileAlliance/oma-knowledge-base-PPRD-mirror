@@ -1,20 +1,20 @@
 ---
-titile: Segment
+title: Segment
 discription: 
 constructorName: ShSegment
 ---
 
-The {{ $doc.constructorName }} component represent the most flexible component as it 
+The <b>{{ $doc.constructorName }}</b> component represent the most flexible component as it 
 encapsulates one block or container of markdown and HTML content that can be styled.
 
 ## Usage
-### Basic ShSegment
-This is and example of how a basic `ShSegment` component is displayed:
+### Basic Usage
+This is and example of how a basic <b>{{ $doc.constructorName }}</b> component is displayed:
 
 ::ShSegment
 ---
 ui:
-  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 transition duration-300 ease-in-out # Comment
+  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 # Comment
 ---
 
 This is a specific block of *Markdown* content that can be styled.
@@ -24,14 +24,13 @@ This is a HTML <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank
 
 ::
 
-This is how the above `ShSegment` is written in markdown:
+This is how the above <b>{{ $doc.constructorName }}</b> is written in markdown:
 
 ```mdc
 ::ShSegment
 ---
 ui:
-  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 transition duration-300 ease-in-out # Comment
-
+  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 # Comment
 ---
 
 This is a specific block of *Markdown* content that can be styled.
@@ -44,19 +43,19 @@ This is a HTML <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank
 The content can be markdown or HTML text of any length. All elements are supported as in
 the *normal* text.
 
-### Complex ShSegment
-This is how a complex example of the `ShSegment` is displayed. When hovering over the content is zoom in/out and contains different type of content:
+### Advanced Usage
+This is how a complex example of the <b>{{ $doc.constructorName }}</b> is displayed. When hovering over the content is zoom in/out and contains different type of content:
 * Markdown content
 * HTML Table
-* An embedded `ShSegment`that contains an image.
+* An embedded <b>{{ $doc.constructorName }}</b> that contains an image.
 
 ::ShSegment
 ---
 ui:
-  wrapper: bg-gradient-to-r from-blue-500 text-3xl p-4 rounded-xl shadow-2xl transition duration-300 ease-in-out hover:scale-110 # Comment
+  wrapper: bg-gradient-to-r from-blue-500 text-3xl p-4 m-12 rounded-xl shadow-2xl transition duration-300 ease-in-out hover:scale-105 # Comment
 ---
 
-Content inside of the {{ $doc.constructorName }} can be of any length or structure.
+Content inside of the <b>{{ $doc.constructorName }}</b> can be of any length or structure.
 
 It can have any general *Markdown* formatting structure: lists, order lists, or 
 tables.
@@ -81,7 +80,7 @@ This is a table written in HTML:
   </tr>
 </table>
 
-It can also include other components. For example another {{ $doc.constructorName }}.
+It can also include other components. For example another <b>{{ $doc.constructorName }}</b>.
 
 :::ShSegment
 ---
@@ -98,16 +97,16 @@ That is making this used to show this component flexibility.
 
 ::
 
-This is how the above `ShSegment` is written:
+This is how the above <b>{{ $doc.constructorName }}</b> is written:
 
 ```mdc
 ::ShSegment
 ---
 ui:
-  wrapper: bg-gradient-to-r from-blue-500 text-3xl p-4 rounded-xl shadow-2xl transition duration-300 ease-in-out hover:scale-110 # Comment
+  wrapper: bg-gradient-to-r from-blue-500 text-3xl p-4 m-12 rounded-xl shadow-2xl transition duration-300 ease-in-out hover:scale-110 # Comment
 ---
 
-Content inside of the {{ $doc.constructorName }} can be of any length or structure.
+Content inside of the <b>{{ $doc.constructorName }}</b> can be of any length or structure.
 
 It can have any general *Markdown* formatting structure: lists, order lists, or 
 tables.
@@ -132,7 +131,7 @@ This is a table written in HTML:
   </tr>
 </table>
 
-It can also include other components. For example another {{ $doc.constructorName }}.
+It can also include other components. For example another `ShSegment`.
 
 :::ShSegment
 ---
@@ -150,8 +149,8 @@ That is making this used to show this component flexibility.
 ::
 ```
 
-## ShSegment Properties
-The `ShSegment` consturctor supports only one property: `ui`.
+## Properties
+The <b>{{ $doc.constructorName }}</b> consturctor supports only one property: `ui`.
 
 <table>
   <thead>
@@ -172,13 +171,13 @@ The `ShSegment` consturctor supports only one property: `ui`.
     <tr>
       <td><code>wrapper</code></td>
       <td>n/a</td>
-      <td>Defines the overall styling for the container that holds all the elements inside of the `ShSegment`. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
+      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShSegment</code>. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
   </tbody>
 </table>    
 
-## ShSegment Config
-The {{ $doc.constructorName }} component or constructor contains a single property `ui` with a single attribute `wrapper` which doesn't contains any default value.
+## Config
+The <b>{{ $doc.constructorName }}</b> component or constructor contains a single property `ui` with a single attribute `wrapper` which doesn't contains any default value.
 
 ```ts
 {
@@ -187,10 +186,10 @@ The {{ $doc.constructorName }} component or constructor contains a single proper
 ```
 
 ### Attributes Descriptions
-This section indicates the class values utilized in the `ShSegment` constructor. These values are customizable and can be strengthened or overridden through the `wrapper` attributes.
+This section indicates the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `wrapper` attributes.
 
 _**wrapper**_
-*  **Value**: <code>bg-gradient-to-r from-blue-500 text-3xl p-4 rounded shadow-2xl</code> (these are the values used by the embedded `ShSegment` of the above example. 
+*  **Value**: <code>bg-gradient-to-r from-blue-500 text-3xl p-4 rounded shadow-2xl</code> these are the values used by the embedded <b>{{ $doc.constructorName }}</b> of the above example. 
 *  **Description**: This defines the overall styling for the container holding the segment elements:
 
     * `bg-gradient-to-r`: Applies a background gradient that transitions to the right.
@@ -215,9 +214,3 @@ rounded: Adds rounded corners to the element.
 * `hover:scale-110`: Scales the element to 110% of its original size when hovered over.
 
 This combination of styles creates a visually appealing, interactive container with smooth transitions and a subtle shadow effect, enhancing the user experience.
-
-
-
-
-
-

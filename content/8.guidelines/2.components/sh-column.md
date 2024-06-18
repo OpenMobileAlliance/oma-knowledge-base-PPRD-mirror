@@ -6,14 +6,14 @@ constructorName: ShColumn
 
 ## Usage
 
-The {{ $doc.constructorName }} component is used to organise content of one column in
+The <b>{{ $doc.constructorName }}</b> component is used to organise content of one column in
 multi-column layout. The column has `header`, that can render `title` and
 `subtitle` in the header accompanied with an image.
 Beside the main content the column also can have the `footer` content as well.
 
-### Basic Column (no style)
+### Basic Usage (no style)
 
-This is how a basic {{ $doc.constructorName }} without style is displayed:
+This is how a basic <b>{{ $doc.constructorName }}</b> without style is displayed:
 
 ::ShColumn
 ---
@@ -21,12 +21,12 @@ title: Column Title
 subtitle: "*Column Subtitle *"
 footerText: "*Footer Text*"
 ---
-This is `ShColumn` component design to show content of the first column.
+This is <b>{{ $doc.constructorName }}</b> component design to show content of the first column.
 
 ![columns](https://free-images.com/tn/7dbb/columns_arches_patio_de.jpg){.w-full .rounded}
 ::
 
-This is how the above {{ $doc.constructorName }} constructor is written:
+This is how the above <b>{{ $doc.constructorName }}</b> constructor is written:
 
 ```mdc
 ::ShColumn
@@ -41,9 +41,9 @@ This is `ShColumn` component design to show content of the first column.
 ::
 ```
 
-### Basic Column (with style)
+### Basic Usage (with style)
 
-This is how a basic {{ $doc.constructorName }} with style is displayed:
+This is how a basic <b>{{ $doc.constructorName }}</b> with style is displayed:
 
 ::ShColumn
 ---
@@ -58,7 +58,7 @@ This is `ShColumn` component design to show content of the first column.
 ![columns](https://free-images.com/tn/7dbb/columns_arches_patio_de.jpg){.w-full .rounded}
 ::
 
-This is how the above {{ $doc.constructorName }} constructor is written:
+This is how the above <b>{{ $doc.constructorName }}</b> constructor is written:
 
 ```mdc
 ::ShColumn
@@ -76,8 +76,8 @@ This is `ShColumn` component design to show content of the first column.
 ```
 
 
-### Advanced Column
-This is an advance example of a {{ $doc.constructorName }} constructor which contains:
+### Advanced Usage
+This is an advance example of a <b>{{ $doc.constructorName }}</b> constructor which contains:
 * Column Title and Subtitle is centered,
 * Markdown text,
 * Bullet points,
@@ -107,7 +107,7 @@ footerText: | #footer text contains two columns
   a great responsibility
   :::
 ---
-The `ShColumn` component can contain any typical *Markdown* content, including:
+The <b>{{ $doc.constructorName }}</b> component can contain any typical *Markdown* content, including:
 * images 
 * lists
 * links
@@ -117,8 +117,8 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
 [ ![coffee](https://free-images.com/sm/86a4/aroma_aromatic_beverage_bio.jpg){.w-1/2 .rounded-xl .not-prose .mb-2 .shadow-2xl} ]{.w-full .flex .justify-center}
 ::
 
-This is how the above advance {{ $doc.constructorName }} is written: 
-> Note: the body of the text is written between the end of the front-matter (`---`) and the end of the {{ $doc.constructorName }} constructor (`::`)
+This is how the above advance <b>{{ $doc.constructorName }}</b> is written: 
+> Note: the body of the text is written between the end of the front-matter (`---`) and the end of the <b>{{ $doc.constructorName }}</b> constructor (`::`)
 
 ```mdc
 ::ShColumn
@@ -155,11 +155,11 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
 ::
 ```
 
-## Column Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+## Properties
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The constructor allows you to organize content inside one column and then nest it easily in multi columns. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The constructor allows you to organize content inside one column and then nest it easily in multi columns. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -228,8 +228,7 @@ The constructor allows you to organize content inside one column and then nest i
   </tbody>
 </table>
 
-
-## Column Config
+## Config
 The style attributes can be modified via `ui` and are stored in the `sh-column.ts` and `sh-grid-sizes.ts` file:
 
 `sh-column.ts`
@@ -320,7 +319,7 @@ export default {
 ```
 
 ### Attributes Description
-This section describes the attributes values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+This section describes the attributes values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: `""`
@@ -350,4 +349,4 @@ _**default**_
 *  **Value**: `{ size: 1 }`
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles. In this case, it sets a default size value of 1.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
