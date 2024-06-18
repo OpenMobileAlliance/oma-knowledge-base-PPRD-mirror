@@ -27,7 +27,7 @@ rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
 urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-urlWrapper: https://www.nasa.gov
+urlUpperBase: https://www.nasa.gov
 ---
 ::
 
@@ -50,7 +50,7 @@ rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
 urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-urlWrapper: https://www.nasa.gov
+urlUpperBase: https://www.nasa.gov
 ---
 ::
 ```
@@ -116,7 +116,7 @@ The {{ $doc.constructorName }} constructor represents a card divided in two half
       <td>Defines the overall styling for the rightLabel that holds the text.</td>
     </tr>
     <tr>
-      <td>urlWrapper</td>
+      <td>urlUpperBase</td>
       <td>n/a</td>
       <td>The URL that wraps the upper section of the component, typically for navigation purposes.</td>
     </tr>
@@ -199,7 +199,7 @@ rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
 urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-urlWrapper: https://www.nasa.gov
+urlUpperBase: https://www.nasa.gov
 ---
 ::
 
@@ -233,7 +233,7 @@ rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
 urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-urlWrapper: https://www.nasa.gov
+urlUpperBase: https://www.nasa.gov
 ---
 ::
 ```
