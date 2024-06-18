@@ -4,38 +4,33 @@ description: Component representing the column with header and footer
 constructorName: ShColumn
 ---
 
-### Usage
+## Usage
 
-The {{ $doc.constructorName }} component is used to organise content of one column in
+The <b>{{ $doc.constructorName }}</b> component is used to organise content of one column in
 multi-column layout. The column has `header`, that can render `title` and
 `subtitle` in the header accompanied with an image.
 Beside the main content the column also can have the `footer` content as well.
 
-#### Presentation
-#### Example Basic
+### Basic Usage (no style)
 
-This is how a basic {{ $doc.constructorName }} is displayed:
+This is how a basic <b>{{ $doc.constructorName }}</b> without style is displayed:
 
 ::ShColumn
 ---
-ui:
-  wrapper: border-8
-title: Column 
+title: Column Title
 subtitle: "*Column Subtitle *"
 footerText: "*Footer Text*"
 ---
-This is `ShColumn` component design to show content of the first column.
+This is <b>{{ $doc.constructorName }}</b> component design to show content of the first column.
 
 ![columns](https://free-images.com/tn/7dbb/columns_arches_patio_de.jpg){.w-full .rounded}
 ::
 
-This is how the above {{ $doc.constructorName }} constructor is written:
+This is how the above <b>{{ $doc.constructorName }}</b> constructor is written:
 
 ```mdc
 ::ShColumn
 ---
-ui:
-  wrapper: border-8 #shows the contour of the column with a border.
 title: Column Title #title
 subtitle: "*Column Subtitle *" #use quotations
 footerText: "*Footer Text*" # use quotations
@@ -46,75 +41,53 @@ This is `ShColumn` component design to show content of the first column.
 ::
 ```
 
-### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+### Basic Usage (with style)
 
-#### Properties and Attributes Description
-The constructor allows you to organize content inside one column and then nest it easily in multi columns. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Class</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="7">ui</td>
-      <td>n/a</td>
-      <td>The <code>ui</code> property in the <code>ShColumn</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the column component. Each attribute within the <code>ui</code> property targets a specific part of the column display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
-    </tr>
-    <tr>
-      <td><code>wrapper</code></td>
-      <td>Defines the overall styling for the container that holds all the elements of the column. The attribute <code>border-8</code> is used to highlight the contur of the wrapper.</td>
-    </tr>
-    <tr>
-      <td><code>title</code></td>
-      <td>Styles applied to the text displaying the title of the column, such as font, size, color, etc.</td>
-    </tr>
-    <tr>
-      <td><code>subtitle</code></td>
-      <td>Styles applied to the text displaying the subtitle of the column, such as font, size, color, etc.</td>
-    </tr>
-    <tr>
-      <td><code>footer</code></td>
-      <td>Styles applied to the text displaying the footer text of the column, such as font, size, color, etc.</td>
-    </tr>
-    <tr>
-      <td><code>size</code></td>
-      <td>Used to determine the size of a column in a grid system</td>
-    </tr>
-    <tr>
-      <td><code>main</code></td>
-      <td>Styles applied to the main content (text, image, list, etc.)</td>
-    </tr>
-    <tr>
-      <td><code>title</code></td>
-      <td>n/a</td>
-      <td>Title of the column</td>
-    </tr>
-    <tr>
-      <td><code>subtitle</code></td>
-      <td>n/a</td>
-      <td>Subtitle of the column</td>
-    </tr>
-    <tr>
-      <td><code>footerText</code></td>
-      <td>n/a</td>
-      <td>Text at the footer of the column</td>
-    </tr>
-  </tbody>
-</table>
-
-#### Example Advanced
-This is an advance example of a {{ $doc.constructorName }} constructor which contains two inner columns to display the footer content. 
+This is how a basic <b>{{ $doc.constructorName }}</b> with style is displayed:
 
 ::ShColumn
 ---
 ui:
-  wrapper: border-8 #border to highlight the column contourn
+  wrapper: border-8 text-center # added border around the column and center the text
+title: Column Title
+subtitle: "*Column Subtitle *"
+footerText: "*Footer Text*"
+---
+This is `ShColumn` component design to show content of the first column.
+
+![columns](https://free-images.com/tn/7dbb/columns_arches_patio_de.jpg){.w-full .rounded}
+::
+
+This is how the above <b>{{ $doc.constructorName }}</b> constructor is written:
+
+```mdc
+::ShColumn
+---
+ui:
+  wrapper: border-8 text-center # added border around the column and center the text
+title: Column Title #title
+subtitle: "*Column Subtitle *" #use quotations
+footerText: "*Footer Text*" # use quotations
+---
+This is `ShColumn` component design to show content of the first column.
+
+![columns](https://free-images.com/tn/7dbb/columns_arches_patio_de.jpg){.w-full .rounded}
+::
+```
+
+
+### Advanced Usage
+This is an advance example of a <b>{{ $doc.constructorName }}</b> constructor which contains:
+* Column Title and Subtitle is centered,
+* Markdown text,
+* Bullet points,
+* An image, and
+* The footer contais two inner columns. 
+
+::ShColumn
+---
+ui:
+  wrapper: "border-8" #border to highlight the column contourn 
   header: #header styling
     title: "tracking-wider text-primary text-center" #title styling
     subtitle: "text-center" #subtitle styling
@@ -125,7 +98,7 @@ footerText: | #footer text contains two columns
   :::ShTwoColumns
   ---
   ui:
-    wrapper: border-8 # show the border for the two columns
+    wrapper: border-8 bg-yellow-100 # show the border for the two columns with background color
   ---
   The footer can have  
   a complex content
@@ -134,7 +107,7 @@ footerText: | #footer text contains two columns
   a great responsibility
   :::
 ---
-The `ShColumn` component can contain any typical *Markdown* content, including:
+The <b>{{ $doc.constructorName }}</b> component can contain any typical *Markdown* content, including:
 * images 
 * lists
 * links
@@ -144,8 +117,8 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
 [ ![coffee](https://free-images.com/sm/86a4/aroma_aromatic_beverage_bio.jpg){.w-1/2 .rounded-xl .not-prose .mb-2 .shadow-2xl} ]{.w-full .flex .justify-center}
 ::
 
-This is how the above advance {{ $doc.constructorName }} is written: 
-> Note: the body of the text is written between the end of the front-matter (`---`) and the end of the {{ $doc.constructorName }} constructor (`::`)
+This is how the above advance <b>{{ $doc.constructorName }}</b> is written: 
+> Note: the body of the text is written between the end of the front-matter (`---`) and the end of the <b>{{ $doc.constructorName }}</b> constructor (`::`)
 
 ```mdc
 ::ShColumn
@@ -162,7 +135,7 @@ footerText: | #footer text contains two columns
   :::ShTwoColumns
   ---
   ui:
-    wrapper: border-8 # show the border for the two columns
+    wrapper: border-8 bg-yellow-100 # show the border for the two columns with background color
   ---
   The footer can have  
   a complex content 
@@ -182,8 +155,81 @@ The `ShColumn` component can contain any typical *Markdown* content, including:
 ::
 ```
 
-### Config
-These style properties can be modified via `ui` and are stored in the `sh-column.ts` and `sh-grid-sizes.ts` file:
+## Properties
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
+
+#### Properties and Attributes Description
+The constructor allows you to organize content inside one column and then nest it easily in multi columns. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Attribute</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7"><code>ui</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>The <code>ui</code> property in the <code>ShColumn</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the column component. Each attribute within the <code>ui</code> property targets a specific part of the column display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
+    </tr>
+    <tr>
+      <td><code>wrapper</code></td>
+      <td>n/a</td>      
+      <td>Defines the overall styling for the container that holds all the elements of the column. The attribute <code>border-8</code> is used to highlight the contur of the wrapper.</td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>n/a</td>
+      <td>This attribute is part of the <code>header</code> property. Styles applied to the text displaying the title of the column, such as font, size, color, etc.</td>
+    </tr>
+    <tr>
+      <td><code>subtitle</code></td>
+      <td>n/a</td>
+      <td>This attribute is part of the <code>header</code> property. Styles applied to the text displaying the subtitle of the column, such as font, size, color, etc.</td>
+    </tr>
+    <tr>
+      <td><code>footer</code></td>
+      <td>n/a</td>
+      <td>Styles applied to the text displaying the footer text of the column, such as font, size, color, etc.</td>
+    </tr>
+    <tr>
+      <td><code>size</code></td>
+      <td>"1"</td>
+      <td>As the component <code>ShColumn</code> represents a single column its value is not exposed or modified; the default value is "1". Used to determine the size of a column in a grid system</td>
+    </tr>
+    <tr>
+      <td><code>main</code></td>
+      <td>n/a</td>
+      <td>Styles applied to the main content (text, image, list, etc.). This attribute only can be modified by modifying the logic on `sh-column.vue` file. It cannot be modified via the markdown document.</td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Title of the column</td>
+    </tr>
+    <tr>
+      <td><code>subtitle</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Subtitle of the column</td>
+    </tr>
+    <tr>
+      <td><code>footerText</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Text at the footer of the column</td>
+    </tr>
+  </tbody>
+</table>
+
+## Config
+The style attributes can be modified via `ui` and are stored in the `sh-column.ts` and `sh-grid-sizes.ts` file:
 
 `sh-column.ts`
 
@@ -272,8 +318,8 @@ export default {
 }
 ```
 
-#### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+### Attributes Description
+This section describes the attributes values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: `""`
@@ -303,4 +349,4 @@ _**default**_
 *  **Value**: `{ size: 1 }`
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles. In this case, it sets a default size value of 1.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

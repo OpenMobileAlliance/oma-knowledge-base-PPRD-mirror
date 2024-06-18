@@ -77,7 +77,7 @@ ui:
 ### Config
 These style properties can be modified via `ui` and are stored in the `sh-card.ts` and `status.ts` files:
 
-`sh-card.ts`
+`sh-badge.ts`
 
 ```ts
 import status from './status';

@@ -1,37 +1,62 @@
 ---
-titile: TwoColumns
+title: TwoColumns
 discription: 
 constructorName: ShTwoColumns
 ---
 
-
-The {{ $doc.constructorName }} constructor enables you to provide any content presented in two
-columns in one row.
-
 ## Usage
+The <b>{{ $doc.constructorName }}</b> constructor enables you to provide any content presented in two
+columns and one row.
+> Note: The `border` in `wrapper` is only for visual understanding of the <b>{{ $doc.constructorName }}</b> boundry. Component itself does not have that predefined
+
+### Basic Usage (text)
 
 ::ShTwoColumns
-This text should be in the left column.
+---
+ui: 
+  wrapper: border
+---
+This text is displayed in the left column first row.
 
-Text here should be in the right column.
+Text is displayed in the right column first row.
+
+This text is displayed in the left column second row.
+
+Text text is displayed in the right column second row.
 ::
 
-The above example is done with the following code:
+The above example is written as:
+
 ```mdc 
 ::ShTwoColumns
-This text should be in the left column.
+---
+ui: 
+  wrapper: border
+---
+This text is displayed in the left column first row.
 
-Text here should be in the right column.
+Text is displayed in the right column first row.
+
+This text is displayed in the left column second row.
+
+Text text is displayed in the right column second row.
 ::
 ```
 
-You can use not only for text but for other objects as well. Images for example
+### Basic Usage (text/image)
+It is possible to add text or an image to one or to both columns. For example, text and image:
 
 ::ShTwoColumns
+---
+ui: 
+  wrapper: shadow-2xl
+---
 This text should be in the left column. 
 
 ![image](https://free-images.com/sm/3b8f/dalmatiner_schw_braun.jpg){.not-prose .w-full .rounded-2xl}
 ::
+
+This is how the above example is written:
 
 ```mdc
 ::ShTwoColumns
@@ -40,14 +65,20 @@ This text should be in the left column.
 ![image](https://free-images.com/sm/3b8f/dalmatiner_schw_braun.jpg){.not-prose .w-full .rounded-2xl}
 ::
 ```
-
-The order of elements determine the left and right column content.
+### Basic Usage (image/text)
+The order of the elements determine the left and right column content.
 
 ::ShTwoColumns
+---
+ui: 
+  wrapper: shadow-2xl
+---
 ![image](https://free-images.com/sm/3b8f/dalmatiner_schw_braun.jpg){.not-prose .w-full .rounded-2xl}
 
 This text should be in the right column. 
 ::
+
+This is how the above example is written:
 
 ```mdc
 ::ShTwoColumns
@@ -56,14 +87,29 @@ This text should be in the right column.
 This text should be in the right column. 
 ::
 ```
-Combining with `ShSegment` the more elaborated effects can be achieved.
-
+### Advanced Usage 
+It is possible to nest other components inside of the <b>{{ $doc.constructorName }}</b> component as e.g., an `ShSegment` and nest a <b>{{ $doc.constructorName }}</b> component to provide special effects. For instance the following example contains:
+* Two columns
+  * **Column 1**: Contains an image with inline style.
+  * **Cloumn 2**: It is a `ShSegment` with background color, shadow and other special styles which in turn contains:
+    * Markdown text,
+    * Bullet list,
+    * <b>{{ $doc.constructorName }}</b> : A nested <b>{{ $doc.constructorName }}</b> module at the bottom of the second column which contains:
+      * *Sub-Column 1*: A markdown text styled inline,
+      * *Sub-Column 2*: An image that has been styled by rounding the corners.
 
 ::ShTwoColumns
-![laptop](https://free-images.com/tn/f4f3/coffee_apple_iphone_laptop.jpg){.not-prose .w-full .rounded-2xl}
+---
+ui: 
+  wrapper: shadow-2xl
+---
+![laptop](https://free-images.com/tn/f4f3/coffee_apple_iphone_laptop.jpg){.not-prose .w-full .rounded-2xl .shadow-2xl}
 
 :::ShSegment
-
+---
+ui:
+  wrapper: bg-cyan-300 rounded-2xl border shadow-md p-1 # Comment
+---
 For more elaborated content in one of the columns it's better to utilize the `ShSegment` 
 component.
 
@@ -73,7 +119,7 @@ can contain all available contractors as other parts of the *Markdown* document:
 * lists, images, tables, links
 * other components
 
-It can contain nested {{ $doc.constructorName }} component as well, if that is needed for achieving
+It can contain nested <b>{{ $doc.constructorName }}</b> component as well, if that is needed for achieving
 desired effect.
 ::ShTwoColumns
 ---
@@ -88,12 +134,17 @@ size: 2XL
 
 ::
 
+This is how the above example is written in markdown:
+
 ```mdc
 ::ShTwoColumns
-![laptop](https://free-images.com/tn/f4f3/coffee_apple_iphone_laptop.jpg){.not-prose .w-full .rounded-2xl}
+![laptop](https://free-images.com/tn/f4f3/coffee_apple_iphone_laptop.jpg){.not-prose .w-full .rounded-2xl .shadow-2xl}
 
 :::ShSegment
-
+---
+ui:
+  wrapper: bg-cyan-300 rounded-2xl border shadow-md p-1 # Comment
+---
 For more elaborated content in one of the columns it's better to utilize the `ShSegment` 
 component.
 
@@ -103,12 +154,11 @@ can contain all available contractors as other parts of the *Markdown* document:
 * lists, images, tables, links
 * other components
 
-It can contain nested {{ $doc.constructorName }} component as well if that is needed for achieving
+It can contain nested <b>{{ $doc.constructorName }}</b> component as well, if that is needed for achieving
 desired effect.
-
 ::ShTwoColumns
 ---
-size: 3XL
+size: 2XL
 ---
 [Let your creativity blosom]{.text-4xl .bg-gradient-to-r .from-blue-600 .to-orange-400 .bg-clip-text .text-transparent .inline-block}
 
@@ -121,226 +171,262 @@ size: 3XL
 ```
 
 You can notice that in the right column, encoupsulated with `ShSegment`
-component there is a {{ $doc.constructorName }} component with different withs of the
+component there is a <b>{{ $doc.constructorName }}</b> component with different withs of the
 columns.
 
 The relationship between sizes of two columns can be controled using the property `size`.
 The values of this property are define in [T-shirt]{} sizes starting from '2XS' all the
-way up to '4XL'. Default value of the `size` property is 'L'.
+way up to '4XL', see below. Default value of the `size` property is 'L'.
 
+### Two-Columns and Size
+The image displayed below is composed of the following components:
+
+* An `ShSegment` component that nests several `ShTwoColumns` components, with one for each row. The `ShTwoColumns` component uses the `size` attribute to define the width of the left column.
+* Inside each `ShTwoColumns` component, two `ShSegment` components are nested. These `ShSegment` components use the `wrapper` attribute to provide background color and text to define the size (left column) and proportion (right column). 
 
 ::ShSegment
 ---
 ui:
   wrapper: grid grid-rows-1 gap-4
 ---
-::ShTwoColumns
----
-size: 2XS
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-2XS
-:::
+  ::ShTwoColumns
+  ---
+  size: 2XS
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    2XS
+    :::
 
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-9/10
-:::
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    9/10
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: XS
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    XS
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    4/5
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: S
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    S
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    3/4
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: M
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    M
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    2/3
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: L
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    L
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    1/2
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: XL
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    XL
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    1/3
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: 2XL
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    2XL
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    1/4
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: 3XL
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    3XL
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    1/5
+    :::
+  ::
+
+  ::ShTwoColumns
+  ---
+  size: 4XL
+  ---
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-200 text-center
+    ---
+    4XL
+    :::
+
+    :::ShSegment
+    ---
+    ui:
+      wrapper: bg-slate-300 text-center
+    ---
+    1/10
+    :::
+  ::
 ::
 
-::ShTwoColumns
----
-size: XS
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-XS
-:::
 
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-4/5
-:::
-::
-
-::ShTwoColumns
----
-size: S
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-S
-:::
-
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-3/4
-:::
-::
-
-::ShTwoColumns
----
-size: M
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-M
-:::
-
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-2/3
-:::
-::
-
-::ShTwoColumns
----
-size: L
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-L
-:::
-
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-1/2
-:::
-::
-
-::ShTwoColumns
----
-size: XL
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-XL
-:::
-
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-1/3
-:::
-::
-
-::ShTwoColumns
----
-size: 2XL
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-2XL
-:::
-
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-1/4
-:::
-::
-
-::ShTwoColumns
----
-size: 3XL
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-3XL
-:::
-
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-1/5
-:::
-::
-
-::ShTwoColumns
----
-size: 4XL
----
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-200 text-center
----
-4XL
-:::
-
-:::ShSegment
----
-ui:
-  wrapper: bg-slate-300 text-center
----
-1/10
-:::
-::
-
-::
-
-
-## Props
-
-| name | type | default | note |
-| --- | :---: | :---: | --- |
-| ui |  config | | optional |
-| size | String | "L" | optional |
-| gap| String | "gap-4" | optional |
+## Properties
+The ShTwoColumns constructor supports the following properties:
 
 The `gap` property controls gutters between columns.
 Values for this property and its basic usage can be find in
 [tailwindcss](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
 
-## Config
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Attribute</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><code>ui</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Optional configuration object for customizing various styling aspects of the `ShTwoColumns` component.</td>
+    </tr>
+    <tr>
+      <td><code>wrapper</code></td>
+      <td>n/a</td>
+      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShTwoColumns</code>. The attribute <code>shadow-2xl</code> is used to provide a shadow effect around the wrapper.</td>
+    </tr>
+    <tr>
+      <td><code>size</code></td>
+      <td>n/a</td>
+      <td>"L"</td>
+      <td>Optional. Specifies the width of the left column.</td>
+    </tr>
+    <tr>
+      <td><code>gap</code></td>
+      <td>n/a</td>
+      <td>"gap-4"</td>
+      <td>Optional. Controls the gutters between columns. Refer to the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a> for values and usage.</td>
+    </tr>
+  </tbody>
+</table>
 
-```json
+## Config
+The style attributes can be modified via the property `ui` and are stored in the `sh-two-columns.ts` file: `sh-two-columns.ts`
+
+```ts
 {
   wrapper: "",
   default: {
@@ -349,3 +435,27 @@ Values for this property and its basic usage can be find in
   }
 }
 ```
+
+### Attributes Description
+This section describes the attributes values utilized in the ShTwoColumns constructor. These values are customizable and can be strengthened or overridden through the ui properties' attributes.
+
+_**wrapper**_:
+
+* **Value**: `""`
+* **Description**: This defines the overall styling for the container. Currently, there are no styles applied to the wrapper.
+
+_**default**_:
+
+* **Value**: `{ size: "L", gap: "gap-4" }`
+* **Description**: This object holds the default Tailwind CSS values that might be used as fallback or initial styles. In this case, it sets a default size value of "L" and a default gap value of "gap-4".
+
+_**size**_:
+
+* *Value*: `"L"`
+* **Description**: This defines the default width of the left column. The value "L" indicates a large size.
+
+_**gap**_:
+
+* **Value**: `"gap-4"`
+* **Description**: This defines the default gutter size between columns. The value "gap-4" applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the gap property can be found in the Tailwind CSS documentation.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements. This value only can be modified in the `sh-two-columns.ts` file, it cannot be modified via markdown.
