@@ -19,7 +19,7 @@ const props = withDefaults(
     colorButton?: string;
     size?: string;
     disabled?: boolean;
-    variant?: string;
+    styleButton?: string;
     fullWidth?: boolean;
     labelButton?: string
     class?: any;
@@ -31,7 +31,7 @@ const props = withDefaults(
     colorButton: () => config.default.colorButton,
     size: () => config.default.size,
     disabled: () => false,
-    variant: () => config.default.variant,
+    styleButton: () => config.default.styleButton,
     fullWidth: false,
     labelButton: "",
     class: () => "",
@@ -46,14 +46,14 @@ const { ui, attrs } = useUI(
 const buttonClass = computed(() => {
   const textSize = ui.value.size[props.size]
   const padding = ui.value.padding[props.size]
-  const variant = ui.value.colorButton?.[props.colorButton as string]?.[props.variant as string] || ui.value.variant[props.variant]
+  const styleButton = ui.value.colorButton?.[props.colorButton as string]?.[props.styleButton as string] || ui.value.styleButton[props.styleButton]
 
   return twMerge(twJoin(
     ui.value.rounded,
     padding, 
     props.fullWidth ? ui.value.fullWidth : ui.value.inline,
     textSize,
-    variant.replaceAll( "{colorButton}",props.colorButton),
+    styleButton.replaceAll( "{colorButton}",props.colorButton),
     ui.value.wrapper),
     props.class)
 })
