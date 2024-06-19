@@ -39,6 +39,7 @@ export default {
     size: 'base',
     variant: 'solid',
     colorButton: 'primary',
+    target: '_blank',
   }
 }
 

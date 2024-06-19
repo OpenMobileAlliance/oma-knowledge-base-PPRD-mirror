@@ -468,7 +468,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>target</code></td>
             <td>n/a</td>
-            <td>??</td>
+            <td>_blank</td>
             <td>Specifies where to open the linked document. Common values include <code>_self</code> for the same frame, <code>_blank</code> for a new window or tab, <code>_parent</code> for the parent frame, and <code>_top</code> for the full body of the window.</td>
         </tr>
         <tr>
@@ -568,6 +568,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
     size: 'base',
     variant: 'solid',
     colorButton: 'primary',
+    target: '_blank',
   }
 }
 ```

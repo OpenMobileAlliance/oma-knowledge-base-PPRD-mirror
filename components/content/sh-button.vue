@@ -27,7 +27,7 @@ const props = withDefaults(
   {
     ui: () => ({}),
     urlButton: () => "",
-    target: () => "",
+    target: () => config.default.target,
     colorButton: () => config.default.colorButton,
     size: () => config.default.size,
     disabled: () => false,
