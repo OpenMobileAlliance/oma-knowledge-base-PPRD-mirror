@@ -20,7 +20,7 @@ const props = withDefaults(
     size?: string;
     disabled?: boolean;
     variant?: string;
-    block?: boolean;
+    fullWidth?: boolean;
     labelButton?: string
     class?: any;
   }>(),
@@ -32,7 +32,7 @@ const props = withDefaults(
     size: () => config.default.size,
     disabled: () => false,
     variant: () => config.default.variant,
-    block: false,
+    fullWidth: false,
     labelButton: "",
     class: () => "",
   });
@@ -51,7 +51,7 @@ const buttonClass = computed(() => {
   return twMerge(twJoin(
     ui.value.rounded,
     padding, 
-    props.block ? ui.value.block : ui.value.inline,
+    props.fullWidth ? ui.value.fullWidth : ui.value.inline,
     textSize,
     variant.replaceAll( "{colorButton}",props.colorButton),
     ui.value.wrapper),

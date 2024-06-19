@@ -38,7 +38,7 @@ rounded: rounded-3xl
 colorButton: green
 disabled: true # true, false
 variant: solid
-block: "" # changes the button width
+fullWidth: "" # changes the button width
 size: 3xl # modifies the size of the button
 ---
 []{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
@@ -58,7 +58,7 @@ rounded: rounded-3xl
 colorButton: green
 disabled: true # true, false
 variant: solid
-block: "" # changes the button width
+fullWidth: "" # changes the button width
 size: 3xl # modifies the size of the button
 ---
 []{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
@@ -308,13 +308,13 @@ size: 5xl
 ::
 ```
 
-Turning the parameter `block` to true you can instruct button to take the full length. And with `colorButton` 
+Turning the parameter `fullWidth` to true you can instruct button to take the full width of available screen. And with `colorButton` 
 you can change the color of the button.
 
 ::ShButton
 ---
 urlButton: "#"
-block: true
+fullWidth: true
 colorButton: cyan
 ---
 This button takes the whole width
@@ -324,12 +324,13 @@ This button takes the whole width
 ::ShButton
 ---
 urlButton: "#"
-block: true
+fullWidth: true
 colorButton: cyan
 ---
 This button takes the whole width
 ::
 ```
+
 The <b>{{ $doc.constructorName }}</b> content can be any valid Markdown.
 
 ::ShButton
@@ -349,7 +350,7 @@ It is possible to insert other constructors inside of the <b>{{ $doc.constructor
 urlButton: "https://opensource.org/"
 variant: outline
 colorButton: blue
-block: true
+fullWidth: true
 ---
   :::ShMultiColumn
   ---
@@ -382,7 +383,7 @@ block: true
 urlButton: "https://opensource.org/"
 variant: outline
 colorButton: blue
-block: true
+fullWidth: true
 ---
   :::ShMultiColumn
   ---
@@ -468,7 +469,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>target</code></td>
             <td>n/a</td>
-            <td>_blank</td>
+            <td>`_blank`</td>
             <td>Specifies where to open the linked document. Common values include <code>_self</code> for the same frame, <code>_blank</code> for a new window or tab, <code>_parent</code> for the parent frame, and <code>_top</code> for the full body of the window.</td>
         </tr>
         <tr>
@@ -496,10 +497,10 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
             <td>Specifies the style variant of the button, which can be <code>solid</code>, <code>outline</code>, or <code>link</code>. Each variant applies different styling rules, such as background colors, border styles, and text decorations.</td>
         </tr>
         <tr>
-            <td><code>block</code></td>
+            <td><code>fullWidth</code></td>
             <td>n/a</td>
-            <td>n/a</td>
-            <td>A boolean attribute (<code>True</code>, <code>False</code>) defines whether the button should be displayed as a block element, taking the full width of its container.</td>
+            <td>false</td>
+            <td>A boolean attribute (<code>true</code>, <code>false</code>) defines whether the button should be displayed as a fullWidth element, taking the full width of its container.</td>
         </tr>
         <tr>
             <td><code>size</code></td>
@@ -535,7 +536,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
     outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
     link: 'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'
   },
-  block: 'w-full flex justify-center items-center',
+  fullWidth: 'w-full flex justify-center items-center',
   inline: 'inline-flex items-center',
   rounded: 'rounded-md',
   size: {
