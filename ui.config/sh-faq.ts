@@ -1,11 +1,13 @@
 export default {
-  wrapper: "border p-4",
-  icon:
-    { 
-      collapsed: "i-octicon:feed-plus-16", 
-      expanded: "i-jam:minus-circle-f",
-    },
-  inner: "flex-col",
+  title: "text-2xl font-bold mt-10",
+  wrapper: "border rounded-xl",
+  inner: "mx-3 cursor-pointer",
+  question: "grid grid-cols-2 flex-row font-bold",
+  q: "hover:scale-105 duration-300 hover:text-primary-500 mx-4",
+  answer: "ml-1",
+  a: "mx-6",
+  divider: "border-b",
+  icon:"place-self-end self-center i-icons8:chevron-right-round",
   // Default Tailwind CSS values
   default: {
   }

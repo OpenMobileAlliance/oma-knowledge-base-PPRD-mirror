@@ -1,27 +1,40 @@
 <template>
+  <p :class="ui.title">
+    <MDC :class="ui.a" :value="title" />
+  </p>
   <div :class="ui.wrapper">
-    <div :class="ui.inner">
-      <i :class="['size-7', currentIcon]" @click="toggle"></i>
-      <div v-if="isExpanded">
-        <ContentSlot :use="$slots.default" unwrap="" />
-      </div>
+    <div v-for="(faq, index) in faqs" :key="index" :class="ui.inner">
+      <p :class="ui.question" @click="toggleAnswer(index)">
+        <MDC :class="ui.q" :value="'Q: ' + faq.q" />
+        <i :class="[ui.icon, visibleAnswers[index] ? 'rotate-90' : 'rotate-0', 'transition-transform duration-300']"></i>
+      </p>
+      <p :class="[ui.answer, 'transition-max-height duration-500 ease-in-out overflow-hidden']" :style="{ maxHeight: visibleAnswers[index] ? '1000px' : '0' }">
+        <MDC :class="ui.a" :value="faq.a" />
+      </p>
+      <div v-if="index < faqs.length - 1" :class="ui.divider"></div>
     </div>
   </div>
 </template>
 
-
 <script setup lang="ts">
-import { defineProps, toRef, ref, computed } from 'vue'
-import { faq as config } from "@/ui.config"
+import { defineProps, computed, ref, toRef } from 'vue';
+import { faq as config } from '@/ui.config'; // Importing the config file
 
+interface Faq {
+  q: string;
+  a: string;
+}
+
+// Define the props to accept a dynamic number of Q&A pairs
 const props = withDefaults(
   defineProps<{
+    qas: Faq[];
+    title?: string;
     ui?: Partial<typeof config>;
-    initiallyExpanded?: boolean;
   }>(),
   {
     ui: () => ({}),
-    initiallyExpanded: false,
+    title: "FAQs",
   }
 );
 
@@ -31,13 +44,30 @@ const { ui } = useUI(
   config
 );
 
-const isExpanded = ref(props.initiallyExpanded);
-
-const toggle = () => {
-  isExpanded.value = !isExpanded.value;
-};
-
-const currentIcon = computed(() => {
-  return isExpanded.value ? config.icon.expanded : config.icon.collapsed;
+// Convert the incoming Q&A props to a structured format
+const faqs = computed(() => {
+  return props.qas.map((item) => ({
+    q: item.q,
+    a: item.a,
+  }));
 });
+
+const icon = computed(() => {
+  return config.icon;
+});
+
+// State to track which answers are visible
+const visibleAnswers = ref<boolean[]>(faqs.value.map(() => false));
+
+// Function to toggle visibility of answers
+const toggleAnswer = (index: number) => {
+  visibleAnswers.value[index] = !visibleAnswers.value[index];
+};
 </script>
+
+<style>
+/* Transition for max-height */
+.transition-max-height {
+  transition: max-height 0.5s ease-in-out;
+}
+</style>

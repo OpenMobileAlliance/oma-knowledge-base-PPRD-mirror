@@ -266,3 +266,13 @@ _**default**_
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
 These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+
+::ShFaq
+---
+qas:
+  - q: What is Vue?
+    a: It is a JS framework
+  - q: What is Nuxt?
+    a: It is a progressive Vue framework
+---
+::
