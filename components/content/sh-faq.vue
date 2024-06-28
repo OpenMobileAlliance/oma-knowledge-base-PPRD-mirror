@@ -8,7 +8,7 @@
         <MDC :class="ui.q" :value="'Q: ' + faq.q" />
         <i :class="[ui.icon, visibleAnswers[index] ? 'rotate-90' : 'rotate-0', 'transition-transform duration-300']"></i>
       </p>
-      <p :class="[ui.answer, 'transition-max-height duration-500 ease-in-out overflow-hidden']" :style="{ maxHeight: visibleAnswers[index] ? '1000px' : '0' }">
+      <p :class="[ui.answer, 'transition-max-height duration-500 ease-in-out overflow-hidden']" :style="{ maxHeight: visibleAnswers[index] ? answerHeights[index] : '0' }" ref="answerRefs">
         <MDC :class="ui.a" :value="faq.a" />
       </p>
       <div v-if="index < faqs.length - 1" :class="ui.divider"></div>
@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, computed, ref, toRef } from 'vue';
+import { defineProps, computed, ref, toRef, onMounted, nextTick } from 'vue';
 import { faq as config } from '@/ui.config'; // Importing the config file
 
 interface Faq {
@@ -58,11 +58,24 @@ const icon = computed(() => {
 
 // State to track which answers are visible
 const visibleAnswers = ref<boolean[]>(faqs.value.map(() => false));
+const answerHeights = ref<string[]>(faqs.value.map(() => '0'));
+const answerRefs = ref<HTMLParagraphElement[]>([]);
 
 // Function to toggle visibility of answers
 const toggleAnswer = (index: number) => {
   visibleAnswers.value[index] = !visibleAnswers.value[index];
+  nextTick(() => {
+    const element = answerRefs.value[index];
+    answerHeights.value[index] = visibleAnswers.value[index] ? `${element.scrollHeight}px` : '0';
+  });
 };
+
+onMounted(() => {
+  faqs.value.forEach((_, index) => {
+    const element = answerRefs.value[index];
+    answerHeights.value[index] = `${element.scrollHeight}px`;
+  });
+});
 </script>
 
 <style>

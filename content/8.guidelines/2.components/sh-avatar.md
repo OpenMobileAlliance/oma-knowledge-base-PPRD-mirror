@@ -270,8 +270,38 @@ These style properties ensure that the {{ $doc.constructorName }} component is v
 ::ShFaq
 ---
 qas:
-  - q: What is Vue?
-    a: It is a JS framework
+  - q: |
+      What are these style properties and how can we manipulate them?
+      - base
+      - socials
+      - icon
+      - avatar
+    a: |
+      We can manipulate all four of these through the **ui** styling (**ui.base**, **ui.socials**, **ui.icon** & **ui.avatar**). These are some examples of how some effects will be displayed targeting different class:
+
+      1. **ui.base**
+
+      Here and in the next class, **ui.socials**, we will just color the background of what is wrapped by them, so you will have a visual representation that may give you some ideas on how you can manipulate these classes further
+
+      > Note: The values for styling of the base have no default style since they have a minor impact on the overall looks. However, it is a good option to have if we want to add some padding, margins, translate or anything else to the colored section on the picture below.
+
+      ![ui.base](/images/faq/ui.base.png)
+
+      2. **ui.socials**
+
+      Here is the visual representation of what is wrapped by ui.socials
+      ![ui.socials](/images/faq/ui.socials.png)
+
+      3. **ui.icon**
+
+      Here we can add a certain color (we have added `hover:text-oma-500`) to the icons that will take place, in this case when we hover over them (see Facebook icon)
+      ![ui.icon](/images/faq/ui.icon.png)
+
+      4. **ui.avatar**
+
+      Here we can also apply some styles, but since we used grayscale for color of avatar, we are limited with colors. So here, we have added some shadow below avatar (drop-shadow-2xl)
+      ![ui.avatar](/images/faq/ui.avatar.png)
+
   - q: What is Nuxt?
     a: It is a progressive Vue framework
 ---

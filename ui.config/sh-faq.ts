@@ -7,7 +7,7 @@ export default {
   answer: "ml-1",
   a: "mx-6",
   divider: "border-b",
-  icon:"place-self-end self-center i-icons8:chevron-right-round",
+  icon:"w-fit place-self-end self-center i-icons8:chevron-right-round",
   // Default Tailwind CSS values
   default: {
   }
