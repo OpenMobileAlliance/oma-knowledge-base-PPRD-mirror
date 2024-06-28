@@ -271,11 +271,7 @@ These style properties ensure that the {{ $doc.constructorName }} component is v
 ---
 qas:
   - q: |
-      What are these style properties and how can we manipulate them?
-      - base
-      - socials
-      - icon
-      - avatar
+      What are these style properties (base, socials, icon, avatar) and how can we manipulate them?
     a: |
       We can manipulate all four of these through the **ui** styling (**ui.base**, **ui.socials**, **ui.icon** & **ui.avatar**). These are some examples of how some effects will be displayed targeting different class:
 
