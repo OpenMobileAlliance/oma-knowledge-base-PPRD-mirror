@@ -350,3 +350,25 @@ _**default**_
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles. In this case, it sets a default size value of 1.
 
 These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+
+::ShFaq
+---
+qas:
+  - q: |
+       Is `header` an attribute and can we configure its style?
+    a: |
+      `Header` is an object that contains `wrapper`, `title`, and `subtitle`. It is there so we can differentiate e.g. `wrapper` for the whole constructor and `wrapper` only for the `header` section. So basically, we cannot style `header` with classes but only objects inside of it. What could we do if we wanted to add class to `header` is either target the `header.wrapper` or we can concatenate classes like in the picture below on the line 3
+
+      ![ui.header](/images/faq/sh-column.ui.header.png)
+
+  - q: |
+       Is `size` a property or an attribute? Can we style it?
+    a: |
+        `Size` is a property with values of a whole number. This number represents an element in an array from `sh-grid-sizes.ts`. In this case, it takes the value of an element from `colSpan` array. So if we wanted to style it, we would have to change something in `sh-grid-sizes.ts`, but since the value of size is a number and it is used specially for grid, adding some other style in array would not make much sense.
+
+  - q: |
+       Is `main` an attribute or property? Can we style it? (it is defined in the `sh-column.ts` property)
+    a: |
+       `Main` is an attribute with values of classes. It can be styled and it is to be found in `sh-column.ts` but it is currently without any values. We could add background to the `main` and only that section of constructor will have that background.
+---
+::
