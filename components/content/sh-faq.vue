@@ -5,8 +5,8 @@
   <div :class="ui.wrapper">
     <div v-for="(faq, index) in faqs" :key="index" :class="ui.inner">
       <p :class="ui.question" @click="toggleAnswer(index)">
-        <MDC :class="ui.q" :value="'Q: ' + faq.q" />
-        <i :class="[ui.icon, visibleAnswers[index] ? 'rotate-90' : 'rotate-0', 'transition-transform duration-300']"></i>
+        <MDC :class="['not-prose', ui.q]" :value="'Q: ' + faq.q" />
+        <span :class="[ui.icon, visibleAnswers[index] ? 'rotate-90' : 'rotate-0', 'transition-transform duration-300']"></span>
       </p>
       <p :class="[ui.answer, 'transition-max-height duration-500 ease-in-out overflow-hidden']" :style="{ maxHeight: visibleAnswers[index] ? answerHeights[index] : '0' }" ref="answerRefs">
         <MDC :class="ui.a" :value="faq.a" />
