@@ -1,6 +1,6 @@
 <template>
-  <p :class="ui.title">
-    <MDC :class="ui.a" :value="title" />
+  <p :class="ui.header.wrapper">
+    <MDC :class="ui.header.title" :value="title" />
   </p>
   <div :class="ui.wrapper">
     <div v-for="(faq, index) in faqs" :key="index" :class="ui.inner">
