@@ -22,7 +22,8 @@ ui: # First Column
 ::ShTextImg
 ---
 ui:
-    text: 
+    title: text-blue-700
+    subtitle: text-blue-500
 positionText: right # First Column
 spanText: l
 alignText: middle
@@ -31,11 +32,14 @@ title: LwM2M
 subtitle: |
           *Protocol*
 text: ""
+status: a
 ---
 ::
 
     :::ShMicroCard
     ---
+    ui:
+        wrapper: bg-indigo-200
     title: Version 1.2.1 - CORE # First Column
     subtitle: PDF Format
     urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
@@ -122,4 +126,7 @@ size: 1
 Fith column
 :::
 
-::
+:: 
+
+> (*) _Note - The Open Mobile Alliance is not responsible for the content of any particular implementation and does not endorse any particular implementation._
+
