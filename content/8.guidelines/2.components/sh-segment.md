@@ -214,3 +214,14 @@ rounded: Adds rounded corners to the element.
 * `hover:scale-110`: Scales the element to 110% of its original size when hovered over.
 
 This combination of styles creates a visually appealing, interactive container with smooth transitions and a subtle shadow effect, enhancing the user experience.
+
+::ShFaq
+---
+qas:
+  - q: |
+       There are no props inside of the front-matter in this constructor. Why does this constructor needs to work differently and how it works?
+    a: |
+       Since this constructor for its content has only one input (and that input could be anything), we opted out for slot element, which allows it to have a placeholder for anything that we want to populate with, including text with full MD support. Because of that, of that flexibility, this constructor`s use is a little bit different (no props at all).
+       To use it, you would simply start adding text/link/img or whatever is you wish inside of --- divider.
+---
+::
