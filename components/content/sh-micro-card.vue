@@ -3,7 +3,7 @@
     <NuxtLink :to="urlWrapper" target="_blank" class="not-prose">
       <div>
         <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage"/>
-        <UIcon v-if="iconName" :name="iconName" dynamic :class="ui.icon" />
+        <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="ui.icon" />
         <MDC :class="ui.title" :value="title" />
         <MDC :class="ui.subtitle" :value="subtitle" />
         <MDC :class="ui.text" :value="text" />
@@ -21,7 +21,8 @@ const props = withDefaults(
     urlWrapper?: string;
     urlImage?: string;
     altImage?: string;
-    iconName?: string
+    icon?: string
+    altIcon?: string
     title?: string;
     subtitle?: string;
     text?: string;
@@ -32,6 +33,8 @@ const props = withDefaults(
     urlWrapper: "",
     urlImage: "",
     altImage: "",
+    icon: "",
+    altIcon: "",
     title: "",
     subtitle: "",
     text: "",

@@ -40,7 +40,7 @@ cols: 5
         ui:
             wrapper: bg-indigo-200 mt-3
             icon: text-blue-700
-        iconName: i-eos-icons:rotating-gear
+        icon: i-eos-icons:rotating-gear
         title: Version 1.2.1 - CORE # First Column
         subtitle: PDF Format
         urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
