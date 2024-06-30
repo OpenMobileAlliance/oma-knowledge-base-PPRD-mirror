@@ -2,7 +2,8 @@
   <div :class="ui.wrapper">
     <NuxtLink :to="urlWrapper" target="_blank" class="not-prose">
       <div>
-        <img :src="urlImage" :class="ui.image" :alt="altImage"/>
+        <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage"/>
+        <UIcon v-if="iconName" :name="iconName" dynamic :class="ui.icon" />
         <MDC :class="ui.title" :value="title" />
         <MDC :class="ui.subtitle" :value="subtitle" />
         <MDC :class="ui.text" :value="text" />
@@ -20,6 +21,7 @@ const props = withDefaults(
     urlWrapper?: string;
     urlImage?: string;
     altImage?: string;
+    iconName?: string
     title?: string;
     subtitle?: string;
     text?: string;
