@@ -39,7 +39,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 mt-3
-            icon: text-blue-700
+            icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Version 1.2.1 - CORE # First Column
         subtitle: PDF Format

@@ -6,7 +6,7 @@
         <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="ui.icon" />
         <MDC :class="ui.title" :value="title" />
         <MDC :class="ui.subtitle" :value="subtitle" />
-        <MDC :class="ui.text" :value="text" />
+        <MDC v-if="text" :class="ui.text" :value="text" />
       </div>
     </NuxtLink>
   </div>
