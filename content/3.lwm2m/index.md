@@ -60,8 +60,8 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Version 1.2.1 - CORE # First Column
+            wrapper: mt-3 hover:bg-red-200
+        title: Version 1.2.1 - COREs # First Column
         subtitle: HTML Format
         urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/HTML-Version/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.html
         ---
