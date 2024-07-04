@@ -21,12 +21,12 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/2
+            icon: text-blue-700 w-1/3
         icon: i-eos-icons:rotating-gear
         title: LwM2M # First Column
         subtitle: |
                 *Protocol*
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
+         urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
         ---
         ::::
 
@@ -116,11 +116,12 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/2
+            icon: text-blue-700 w-1/3
         icon: eos-icons:bubble-loading
         title: LwM2M # Second Column
-        subtitle: _Enablers_
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
+        subtitle: |
+                *Enablers*
+         urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
         ---
         ::::
 
@@ -151,7 +152,8 @@ cols: 5
         ui:
             wrapper: mt-3
         title: Device Capability Management # Second Column
-        subtitle: _Enabler_
+        subtitle: |
+                *Enabler*
         urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-device-capabilities-management
         ---
         ::::
@@ -235,7 +237,7 @@ cols: 5
         title: Resources # Third Column
         subtitle: |
                 *Information*
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
+         urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
         ---
         ::::
 
@@ -298,10 +300,115 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Fourth Column
-        wrapper: "bg-emerald-800 text-stone-200"
-    size: 1
     ---
-    Fourth column
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-indigo-200 mb-3
+            icon: text-blue-700 w-1/3
+        icon: eos-icons:software
+        title: Implementations # Fourth Column
+        subtitle: |
+                *Code*
+         urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Leshan # Fourth Column
+        subtitle: |
+                  *Eclipse*
+        urlWrapper: https://github.com/eclipse-leshan/leshan
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Connectivity Management # Fourth Column
+        subtitle: |
+                  *Enabler*
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-connectivity-management
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Device Capability Management # Fourth Column
+        subtitle: _Enabler_
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-device-capabilities-management
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3 hover:bg-red-200
+        title: Event Log # Fourth Column
+        subtitle: |
+                *Enabler*
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-event-log
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Gateway # Fourth Column
+        subtitle: |
+            *Enabler*
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-gateway
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Lock & Wipe # Fourth Column
+        subtitle: |
+                *Enabler*
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-lock--wipe
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Portfolio Object # Fourth Column
+        subtitle: |
+                *Enabler*
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-portfolio-object
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Software Management # Fourth Column
+        subtitle: |
+                *Enabler*
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-software-management
+        ---
+        ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: LwM2M Virtual Observation # Fourth Column
+        subtitle: |
+                *Enabler*
+        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-virtual-observation
+        ---
+        ::::
     :::
 
     :::ShColumn 
