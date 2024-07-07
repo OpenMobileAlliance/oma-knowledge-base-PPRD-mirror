@@ -75,9 +75,40 @@ ui:
   :::
 
   :::ShSegment
-  ![working_together_2.jpg](/images/lwm2m/working_together_2.jpg)
+  ![working_together_2.jpg](/working_together_2.jpg)
   :::
 
+::
+
+::ShTextImg
+---
+positionText: right
+spanText: s
+alignText: left
+urlImage:
+title: |
+       ### Device Management & Service Enablement Working Group
+subtitle: |
+         DMSO
+text: |
+  The Device Management & Service Enablement Working Group (DMSE WG) designed and
+  maintains the Lightweight M2M (LwM2M) protocol that is used to manage mobile
+  devices, service access and software on connected devices across Internet of
+  Things (IoT) networks.
+
+  Since 2002, the DMSE WG has released a suite of specifications which includes
+  20+ mobile service enabler specifications and more than 60 Management Objects
+  providing simple, reliable and cost-effective ways to deploy new applications
+  and services while minimizing the risk. The most market diffused of the
+  Management Objects is certainly the Firmware Update Management Object (FUMO)
+  with **deployments in the billions of devices**. An additional 20+ Management
+  Objects have been defined by other standards organizations, which cooperate
+  with OMA SpecWorks to avoid fragmentation and duplication. DMSE technologies
+  easily manage converged and multi-mode devices on any network, including
+  devices that do not have a SIM card, as well as resource-constrained devices.
+  Explore the OMA [DMSE](https://technical.openmobilealliance.org/index.html){target="_blank"}
+  and [LwM2M](https://openmobilealliance.github.io/dmse-documentation/){target="_blank"} specifications.
+---
 ::
 
 ### About OMA SpecWorks
