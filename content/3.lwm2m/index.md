@@ -135,7 +135,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Developer's Kit # Third Column
+        title: LwM2M Editor / Validator # Third Column
         subtitle: |
             **
         urlWrapper: https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/wiki
