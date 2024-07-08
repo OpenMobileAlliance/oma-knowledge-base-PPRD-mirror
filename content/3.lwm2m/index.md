@@ -13,7 +13,7 @@ The Lightweight Machine-to-Machine (LwM2M) protocol is a specialized Internet of
 
 ::ShMultiColumn
 ---
-cols: 4 
+cols: 5 
 ---
     :::ShColumn 
     --- 
@@ -174,13 +174,62 @@ cols: 4
         ---
         ui:
             wrapper: mt-3
-        title: Developer's Kit # Third Column
+        title: Press Release # Fourth Column
         subtitle: |
             **
-        urlWrapper: https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/wiki
+        urlWrapper: 
         ---
         ::::
-    :::     
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3 mb-10
+        title: Newsletter Signup # Fourth Column
+        subtitle: |
+            **
+        urlWrapper: 
+        ---
+        ::::
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Fourth Column
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-indigo-200 
+            icon: text-blue-700 w-1/3
+        icon: eos-icons:background-tasks
+        title: Get Involved # Fourth Column
+        subtitle: 
+        urlWrapper: ""
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Membership Info # Fourth Column
+        subtitle: |
+            **
+        urlWrapper: 
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Contact us # Fourth Column
+        subtitle: |
+            **
+        urlWrapper: 
+        ---
+        ::::
+    :::       
 ::
 
 ::ShMultiColumn
@@ -452,7 +501,7 @@ cols: 5
 
     :::ShColumn 
     --- 
-    ui: # Third Column
+    ui: # Fourth Column
     ---
         ::::ShMicroCard
         ---
