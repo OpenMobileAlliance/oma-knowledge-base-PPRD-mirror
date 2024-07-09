@@ -1,4 +1,13 @@
 export default defineAppConfig({
+  ui: {
+    primary: "oma",
+  },
+  header: {
+    menuFonts: {
+      type: 'Arial, sans-serif',
+      size: '16px',
+    }
+  },
   socialLinks: {
     linkedIn: {
       title: "LinkedIn",
@@ -31,7 +40,4 @@ export default defineAppConfig({
       url: "http://openmobilealliance.org/rss/",
     },
   },
-  ui: {
-    primary: "oma"
-  }
 });
