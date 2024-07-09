@@ -8,6 +8,12 @@ export default defineAppConfig({
       size: '16px',
     }
   },
+  main: {
+    font: {
+      type: 'DM Mono',
+      size: '16px',
+    },
+  },
   socialLinks: {
     linkedIn: {
       title: "LinkedIn",
