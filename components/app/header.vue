@@ -26,7 +26,7 @@
         </div>
         <div>
           <ul class="flex justify-between items-start">
-            <li v-for="link in topLinks" :key="link.path" class="ml-4" :style="{ fontFamily: header.menuFonts.type, fontSize: header.menuFonts.size }">
+            <li v-for="link in topLinks" :key="link.path" class="ml-4" :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
               <ULink :to="link._path" class="hover:text-primary">{{ link.title }}</ULink>
             </li>
           </ul>

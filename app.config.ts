@@ -3,9 +3,11 @@ export default defineAppConfig({
     primary: "oma",
   },
   header: {
-    menuFonts: {
-      type: 'Arial, sans-serif',
-      size: '16px',
+    menu: {
+      font: {
+        type: 'Arial, sans-serif',
+        size: '16px',
+      }
     }
   },
   main: {
