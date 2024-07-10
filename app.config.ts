@@ -15,6 +15,48 @@ export default defineAppConfig({
       type: 'DM Sans',
       size: '16px',
     },
+    h1: {
+      font: {
+        type: 'DM Sans',
+        size: '2em',
+      },
+    },
+    h2: {
+      font: {
+        type: 'DM Sans',
+        size: '1.5em',
+      },
+    },
+    h3: {
+      font: {
+        type: 'DM Sans',
+        size: '1.17em',
+      },
+    },
+    h4: {
+      font: {
+        type: 'DM Sans',
+        size: '1em',
+      },
+    },
+    h5: {
+      font: {
+        type: 'DM Sans',
+        size: '0.83em',
+      },
+    },
+    h6: {
+      font: {
+        type: 'DM Sans',
+        size: '0.67em',
+      },
+    },
+    h7: {
+      font: {
+        type: 'DM Sans',
+        size: '0.44em',
+      },
+    },
   },
   socialLinks: {
     linkedIn: {
