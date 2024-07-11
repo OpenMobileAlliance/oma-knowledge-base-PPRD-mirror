@@ -7,7 +7,7 @@
                 <MDC v-if="subtitle" :class="ui.subtitle" :value="subtitle" />
                 <MDC v-if="text" :class="ui.text" :value="text" />
                 <UFormGroup class="pb-4" error size="xl">
-                    <UInput placeholder="you@example.com" icon="i-heroicons-envelope" />
+                    <UInput placeholder="you@example.com" icon="i-heroicons-envelope" class="dark:invert"/>
                 </UFormGroup>
             </div>
             <UButton :to="urlButton" target="_blank" :label="labelButton" :color="colorButton" size="xl" :class="ui.button" :variant="variant" />
