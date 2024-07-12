@@ -35,7 +35,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: What is LwM2M # Second Column
+        title: What is LwM2M # First Column
         subtitle: |
             **
         urlWrapper: ""
@@ -46,7 +46,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Key Features # Third Column
+        title: Key Features # First Column
         subtitle: |
             **
         urlWrapper: ""
@@ -57,7 +57,17 @@ cols: 5
         ---
         ui:
             wrapper: mt-3 mb-10
-        title: Benefits # Third Column
+        title: Benefits # First Column
+        subtitle: |
+            **
+        urlWrapper: ""
+        ---
+        ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3 mb-10
+        title: F.A.Q # First Column
         subtitle: |
             **
         urlWrapper: ""
