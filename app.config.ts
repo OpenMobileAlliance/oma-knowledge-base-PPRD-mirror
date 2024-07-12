@@ -6,14 +6,14 @@ export default defineAppConfig({
     menu: {
       font: {
         type: 'Arial, sans-serif',
-        size: '16px',
+        size: '22px',
       }
     }
   },
   main: {
     font: {
       type: 'DM Sans',
-      size: '16px',
+      size: '23px',
     },
     h1: {
       font: {
