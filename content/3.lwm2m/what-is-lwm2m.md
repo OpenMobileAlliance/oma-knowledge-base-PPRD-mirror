@@ -1,5 +1,42 @@
 ## What is LwM2M
 
+The Open Mobile Alliance Lightweight M2M (OMA LwM2M) protocol is a communication protocol designed for managing devices in the Internet of Things (IoT). It provides a standard way to remotely manage and communicate with constrained devices, such as sensors and actuators, which often have limited processing power and memory.
+
+### Key Features of OMA LwM2M
+1. **Device Management**: LwM2M facilitates remote management of devices, including firmware updates, configuration changes, and diagnostics.
+
+2. **Interoperability**: It ensures interoperability between devices from different manufacturers by providing a standardized framework for device management and communication.
+
+3. **Efficient Data Transmission**: LwM2M is optimized for low-power devices and networks with limited bandwidth, using efficient data encoding and transport protocols.
+
+4. **Security**: It incorporates security features such as authentication and encryption to protect data and devices from unauthorized access.
+
+5. **Resource Model**: LwM2M uses a resource model where each device can expose a set of resources (e.g., temperature sensor reading, battery level) that can be accessed or manipulated by the server.
+
+### Components of LwM2M
+1. **LwM2M Client**: This runs on the device and is responsible for managing local resources and communicating with the LwM2M server.
+2. **LwM2M Server**: This is the remote entity that manages the LwM2M clients. It handles tasks such as device registration, reading and writing resources, and executing commands.
+3.**Bootstrap Server**: This server helps devices to connect to the LwM2M server by providing initial configuration and credentials.
+
+### Communication Model
+LwM2M typically uses the Constrained Application Protocol (CoAP) as its transport layer. CoAP is a lightweight protocol designed for simple, constrained devices and low-bandwidth networks. It supports methods similar to HTTP, such as GET, POST, PUT, and DELETE, enabling RESTful interactions.
+
+### Use Cases
+* **Utilities**: 
+* **Smart City**: Managing streetlights, traffic sensors, and environmental monitoring devices.
+* **Industrial IoT**: Monitoring and managing machinery, sensors, and actuators in a factory setting.
+* **Smart Agriculture**: Remote management of soil sensors, weather stations, and irrigation systems.
+* **Healthcare**: Managing wearable health monitors and medical devices.
+
+### Advantages
+* **Scalability**: Capable of managing a large number of devices.
+* **Efficiency**: Designed for low power and low bandwidth environments.
+* **Flexibility**: Supports a wide range of devices and use cases.
+
+Overall, the OMA LwM2M protocol provides a robust framework for the efficient and secure management of IoT devices, enabling a wide range of applications in various domains.
+
+## LwM2M Resources
+
 <table>
     <caption>What is LwM2M</caption>
     <tr>
@@ -69,7 +106,7 @@
 </table>
 
 
-## What is LwM2M
+### LwM2M Tools
 
 <table>
     <caption>LwM2M Tools</caption>
@@ -101,39 +138,39 @@ This content provides guidance on how to define new LwM2M Objects and/or Resourc
 >A more detailed explanation can be found in this document: [Guidelines for the Creation and Registration of LwM2M Objects & Resources](http://www.openmobilealliance.org/documents/whitepapers/OMA-ORG-Guidelines_Creation_Registration_LwM2M_Objects_Resources-V1_0_1-20190115-A.pdf)
 
 
-# LwM2M Objects
+### LwM2M Objects
 
-## `Object License`
+#### `Object License`
  * Software license inside of the Object.
    * Each Object in the OMNA LwM2M Registry MUST have a license. Currently, the tool provides only three different type of licenses:
      * `BSD-3 Clause license`. This is the only license that is accepted by One Data Model Registry, (ODM). ODM has created a language that can represent any object/model defined by Standards Development Organizations. For more information see [One Data Model](https://github.com/one-data-model).
      * `OMA BSD-3 license`. To be used by OMA Working Groups only.
      * `Your own license`. Please note that licenses that are not popular, e.g. (MIT, Apache, etc) are strongly discouraged; your Object won't be registered with One Data Model and more than probably won't be used by other members of the community.
 
-## `Name`
+#### `Name`
  * Name of the Object.
    * For details see ['Name'](https://github.com/OpenMobileAlliance/lwm2m-registry/wiki/Guidelines#name-1) below.
  * The `Name` value is duplicated in the title of the tool and in the definition of the Object. There is only one single `Name` value.
 
-## `Description`
+#### `Description`
  * The object description element should contain a precise and short definition of the purpose of the object. 
  * This value is used to populate the description field in the [OMNA LwM2M Registry](http://www.openmobilealliance.org/wp/OMNA/LwM2M/LwM2MRegistry.html). 
  * The length of the description is limited to **134** characters.
 
-## Object Definition
+### Object Definition
 
-###  Operations
+####  Operations
 * These are operations related to the [LwM2M Editor](https://devtoolkit.openmobilealliance.org/OEditor/):
   * `Edit`
   * `Save`
 
-### `Name`
+#### `Name`
  * `Name` of the Object, is the value that will appear inside the Object file.
  * If the `Name` has more than one word, first letter of each word should be capitalized. 
  * **NOTE:** The **IPSO Working Group**, pay special attention to the meaning of the name. The names should be very specific rather than general. 
 >To request support and direction, please contact the **IPSO Working Group** via [GitHub Issues](https://github.com/OpenMobileAlliance/lwm2m-registry/issues).
 
-### [Object ID](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html)
+#### [Object ID](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html)
  
  >**Note:**
  >`Object ID` is formally allocated by OMA staff. 
@@ -141,17 +178,17 @@ This content provides guidance on how to define new LwM2M Objects and/or Resourc
  >If you would like to reserve an ID please get in contact via
  >[GitHub Issues](https://github.com/OpenMobileAlliance/lwm2m-registry/issues) or via email: helpdesk@omaorg.org.
 
-### `ObjectVersion`
+#### `ObjectVersion`
  * This is related to the version of the Object.
  >Please ensure that the version is aligned with the definition of the ['URN'](https://github.com/OpenMobileAlliance/lwm2m-registry/wiki/Guidelines#object-urn).
 
-### `LWM2MVersion`
+#### `LWM2MVersion`
  * The value of this element indicates the version of the **LwM2M protocol**.
  >Please ensure that this value matches the schema defined in the attribute, e.g.: ```xsi:noNamespaceSchemaLocation="http://.../LWM2M-v1_1"```.
  >
  >**NOTE:** OMA may introduce new schemas, e.g.: ```LWM2M.xsd```, ```LWM2M-v1_1.xsd```, in the future.
 
-### `Object URN`
+#### `Object URN`
  * The composition of this element is: ```urn:oma:lwm2m:<oma|ext|x>:<ObjectID>:<version>```
    * The category: indicates different ranges and stakeholders as described in the `Object ID`.
 
@@ -166,18 +203,18 @@ This content provides guidance on how to define new LwM2M Objects and/or Resourc
    * for `1.0` is omitted from the urn,e.g.: `urn:oma:lwm2m:x:10241`
    * for version increments the urn is updated, e.g.`1.1` **must** be included: `urn:oma:lwm2m:x:10241:1.1`
  
-### `Instances`
+#### `Instances`
  * Two possible values:
     * `multiple` - Indicates that it is possible to have more than one instantiation of the Object.
     * `single` - Indicates that is only one instantiation of the Object.
 
-### `Mandatory`
+#### `Mandatory`
  * `Optional` - It is the default value. 
  * `Mandatory` - Value is restricted to some Objects defined by **OMA DMSE Working Group**.
 
-# Resource Definition
+### Resource Definition
 
-## Editing Operations
+#### Editing Operations
  * These are operations related to the [LwM2M Editor](https://devtoolkit.openmobilealliance.org/OEditor/):
   * `Edit`
   * `Save`
@@ -185,7 +222,7 @@ This content provides guidance on how to define new LwM2M Objects and/or Resourc
   * `Delete`
   * `Move` (only available under Resources Definitions)
 
-## `Resource ID`
+#### `Resource ID`
  * There are three types of Resources ID's:
    * `Common`
      * It doesn't need to be registered with [OMNA LwM2M Registry](http://www.openmobilealliance.org/wp/OMNA/LwM2M/LwM2MRegistry.html).
@@ -217,19 +254,19 @@ This content provides guidance on how to define new LwM2M Objects and/or Resourc
      * It is open to re-use.
 
 
-## `Resource Name`
+#### `Resource Name`
  * If the Resource is composed by more than one name, then please capitalize and separate each word.
 
-## `Resource Operations`
+#### `Resource Operations`
  * The [LwM2M Editor](https://devtoolkit.openmobilealliance.org/OEditor/) restricts the possible values.
  >Please note that if you select the option `E`-`Execute` then, the `Type` **must** be empty.
 
-## `Resource Instances`
+#### `Resource Instances`
  * The [LwM2M Editor](https://devtoolkit.openmobilealliance.org/OEditor/) provides two possible options:
    * `Multiple`
    * `Single`
 
-## `Resource Mandatory`
+#### `Resource Mandatory`
  * This element has two possible values:
    * `Mandatory`
      * It implies that the `Resource` **must** be present as soon as the Object is instantiated.
@@ -237,15 +274,15 @@ This content provides guidance on how to define new LwM2M Objects and/or Resourc
    * `Optional`
      * It indicates that this `Resource` in that particular Objects is **optional**.
 
-## `Resource Type`
+#### `Resource Type`
   * The [LwM2M Technical Specifications](http://www.openmobilealliance.org/release/LightweightM2M/) define several  `Type`'s.
 
-## `Resource Range or Enumeration`
+#### `Resource Range or Enumeration`
  * Machine-readable definition of valid values for the resource. 
  * Ranges of values are expressed with **two** dots, e.g.: '0..250'. List of valid values can be given as comma separated list. See [Appendix D of LwM2M TS 1.1.1](http://www.openmobilealliance.org/release/LightweightM2M/V1_1_1-20190617-A/OMA-TS-LightweightM2M_Core-V1_1_1-20190617-A.pdf) for details. 
 * Explanation of values (if not obvious from the context) should be given in the resource description. 
 
-## `Resource Units`
+#### `Resource Units`
  * The `Units` defined in OMA LwM2M Objects are defined by [SenML - Sensor Measurement Lists](https://www.iana.org/assignments/senml/senml.xhtml).
  * In addition to [SenML](https://www.iana.org/assignments/senml/senml.xhtml `Units` two extra values have been added to this list:
    * `TBD` - *To Be Defined*
@@ -265,6 +302,6 @@ The following guidelines should be followed to maximize interoperability across 
   * units that are specific to a single use case or user should not be registered; for such use the unit field can be left empty and semantics of the value can be explained in the description of the resource.  
 
 
-## `Resource Description`
+#### `Resource Description`
  * Be precise and short.
  >Note: Reusable Resources `Description` is fixed during initial definition and must not be changed when used in new objects. If context-specific description of a resource is needed, the object description can be used for this purpose.
