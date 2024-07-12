@@ -243,17 +243,16 @@ These style properties can be modified via `ui` and are stored in the `sh-card.t
 
 ```ts
 export default {
-    wrapper: "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min",
+    wrapper: "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min dark:bg-white",
     upperBase: "row-start-1 flex items-center justify-center rounded-t-xl",
     image: "h-full w-auto p-8",
     lowerBase: "row-start-2 p-6 rounded-b-xl",
-    title: "text-3xl font-extrabold",
-    subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8",
-    text: "",
-    leftLabel: "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    centerLabel: "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    rightLabel: "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    icon: "",
+    title: "text-3xl font-extrabold dark:invert",
+    subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8 dark:invert",
+    text: "dark:invert",
+    leftLabel: "col-start-1 text-lg justify-self-start text-gray-600 dark:invert",
+    centerLabel: "col-start-2 text-lg justify-self-center text-gray-600 dark:invert",
+    rightLabel: "col-start-3 text-lg justify-self-end text-gray-600 dark:invert",
     // Default Tailwind CSS values
     default: {
     }
@@ -264,8 +263,8 @@ export default {
 These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-*  **Value**: <code>"grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min"</code>
-*  **Description**: This defines the overall styling for the container holding the elements. The value "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min" indicates a grid layout with 2 rows (grid grid-rows-2), a 2-unit border (border-2), rounded corners (rounded-xl), top and bottom margins of 4 units each (mt-4 mb-4), centered horizontally (mx-auto), and size constraints with maximum width and height set (max-w-lg max-h-min).
+*  **Value**: <code>"grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min dark:bg-white"</code>
+*  **Description**: This defines the overall styling for the container holding the elements. The value "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min" indicates a grid layout with 2 rows (grid grid-rows-2), a 2-unit border (border-2), rounded corners (rounded-xl), top and bottom margins of 4 units each (mt-4 mb-4), centered horizontally (mx-auto), and size constraints with maximum width and height set (max-w-lg max-h-min). When daek mode a activated, background is set to whote color (dark:bg-white).
 
 _**upperBase**_
 *  **Value**: <code>"row-start-1 flex items-center justify-center rounded-t-xl"</code>
@@ -280,28 +279,28 @@ _**lowerBase**_
 *  **Description**: This specifies the styles for the lower base. The value "row-start-2 p-6 rounded-b-xl" includes starting at row 2 (row-start-2), padding of 6 units (p-6), and rounded bottom corners (rounded-b-xl).
 
 _**title**_
-*  **Value**: <code>"text-3xl font-extrabold"</code>
-*  **Description**: This defines the styling for the title text. The value "text-3xl font-extrabold" includes an extra-large font size (text-3xl) and extra-bold font weight (font-extrabold).
+*  **Value**: <code>"text-3xl font-extrabold dark:invert"</code>
+*  **Description**: This defines the styling for the title text. The value "text-3xl font-extrabold" includes an extra-large font size (text-3xl) and extra-bold font weight (font-extrabold). When dark mode is activated set the color of text to be inverted from background (dark:bg-inverted).
 
 _**subtitle**_
 *  **Value**: <code>"text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8"</code>
-*  **Description**: This specifies the styling for the subtitle text. The value "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8" includes a large font size (text-xl), semi-bold font weight (font-semibold), gray text color (text-gray-600), gray text color in dark mode (dark:text-gray-400), and a top margin of -8 units (-mt-8).
+*  **Description**: This specifies the styling for the subtitle text. The value "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8" includes a large font size (text-xl), semi-bold font weight (font-semibold), gray text color (text-gray-600), gray text color in dark mode (dark:text-gray-400), and a top margin of -8 units (-mt-8). When dark mode is activated set the color of text to be inverted from background (dark:bg-inverted).
 
 _**text**_
 *  **Value**: <code>""</code>
-*  **Description**: This defines the styling for general text. As it is empty, it implies no specific styles have been set.
+*  **Description**: This defines the styling for general text. As it is empty, it implies no specific styles have been set. When dark mode is activated set the color of text to be inverted from background (dark:bg-inverted).
 
 _**leftLabel**_
 *  **Value**: <code>"col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
-*  **Description**: This specifies the styling for the left label. The value "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 1 (col-start-1), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+*  **Description**: This specifies the styling for the left label. The value "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 1 (col-start-1), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400). When dark mode is activated set the color of text to be inverted from background (dark:bg-inverted).
 
 _**centerLabel**_
 *  **Value**: <code>"col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
-*  **Description**: This specifies the styling for the center label. The value "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 2 (col-start-2), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+*  **Description**: This specifies the styling for the center label. The value "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 2 (col-start-2), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400). When dark mode is activated set the color of text to be inverted from background (dark:bg-inverted).
 
 _**rightLabel**_
 *  **Value**: <code>"col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
-*  **Description**: This specifies the styling for the right label. The value "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 3 (col-start-3), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+*  **Description**: This specifies the styling for the right label. The value "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 3 (col-start-3), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400). When dark mode is activated set the color of text to be inverted from background (dark:bg-inverted).
 
 _**default**_
 *  **Value**: <code>{}</code>
