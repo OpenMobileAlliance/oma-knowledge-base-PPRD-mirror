@@ -1,5 +1,5 @@
 ---
-title: OMASpecWorks
+title: OMASPECWORKS
 ---
 
 ## Welcome to OMASpecWorks
