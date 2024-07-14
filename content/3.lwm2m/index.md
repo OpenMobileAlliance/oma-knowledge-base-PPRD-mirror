@@ -658,7 +658,7 @@ cols: 5
 
 :: 
 
-> (*) _Note - The Open Mobile Alliance is not responsible for the content of any particular implementation and does not endorse any particular implementation._
+> (*) _Note - The Open Mobile Alliance is not responsible for the content of any particular implementation and does not endorse any particular implementation._{style="background-color: coral"}
 
 
 ## Latest News
