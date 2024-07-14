@@ -46,6 +46,17 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
+        title: LwM2M Components # First Column
+        subtitle: |
+            **
+        urlWrapper: ""
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
         title: Key Features # First Column
         subtitle: |
             **
@@ -63,16 +74,6 @@ cols: 5
         urlWrapper: ""
         ---
         ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3 mb-10
-        title: F.A.Q # First Column
-        subtitle: |
-            **
-        urlWrapper: ""
-        ---
-        ::::
     :::
 
     :::ShColumn 
@@ -83,7 +84,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/5
+            icon: text-blue-700 w-1/4
         icon: i-eos-icons:rotating-gear
         title: Applications & Use Cases # Second Row
         subtitle: 
@@ -122,9 +123,9 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 
-            icon: text-blue-700 w-1/2
+            icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
-        title: Resources # Third Column
+        title: LwM2M Framework # Third Column
         subtitle: 
         urlWrapper: ""
         ---
@@ -134,7 +135,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: LwM2M Registry # Third Column
+        title: Resources # Third Column
         subtitle: |
             **
         urlWrapper: https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html
@@ -145,12 +146,23 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: LwM2M Editor / Validator # Third Column
+        title: Tools # Third Column
         subtitle: |
             **
         urlWrapper: https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/wiki
         ---
         :::: 
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: LwM2M Guidelines # Third Column
+        subtitle: |
+            **
+        urlWrapper: ""
+        ---
+        ::::        
     :::
 
     :::ShColumn 
@@ -161,9 +173,9 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 
-            icon: text-blue-700 w-1/3
+            icon: text-blue-700
         icon: eos-icons:background-tasks
-        title: News & Updates # Fourth Column
+        title: News # Fourth Column
         subtitle: 
         urlWrapper: ""
         ---
@@ -212,7 +224,7 @@ cols: 5
             wrapper: bg-indigo-200 
             icon: text-blue-700 w-1/3
         icon: eos-icons:background-tasks
-        title: Get Involved # Fourth Column
+        title: Get Involved # Fith Column
         subtitle: 
         urlWrapper: ""
         ---
@@ -222,7 +234,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Membership Info # Fourth Column
+        title: Membership Info # Fith Column
         subtitle: |
             **
         urlWrapper: 
@@ -233,10 +245,20 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Contact us # Fourth Column
+        title: Contact us # Fith Column
         subtitle: |
             **
         urlWrapper: 
+        ---
+        ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3 mb-10
+        title: F.A.Q # Fith Column
+        subtitle: |
+            **
+        urlWrapper: ""
         ---
         ::::
     :::       
