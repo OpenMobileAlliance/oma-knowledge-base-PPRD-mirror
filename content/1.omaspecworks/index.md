@@ -163,16 +163,6 @@ cols: 5
         urlWrapper: 
         ---
         ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3 mb-10
-        title: F.A.Q # Fourth Column
-        subtitle: |
-            **
-        urlWrapper: ""
-        ---
-        ::::
     ::: 
 
     :::ShColumn 
