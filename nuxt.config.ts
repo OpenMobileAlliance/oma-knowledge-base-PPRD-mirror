@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
+      "Roboto": [300, 400, 600, 700],
       "DM Sans": [400, 500, 600, 700],
       "DM Mono": [400, 500],
     },

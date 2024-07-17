@@ -12,7 +12,7 @@ export default defineAppConfig({
   },
   main: {
     font: {
-      type: 'DM Sans',
+      type: 'Roboto',
       size: '23px',
     },
     h1: {
