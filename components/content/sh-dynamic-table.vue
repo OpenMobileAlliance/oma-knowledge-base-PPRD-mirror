@@ -1,37 +1,97 @@
 <template>
-  <div :class="[ui.wrapper, props.class]"  v-bind="attrs" >
-    
+  <div :class="[ui.wrapper, props.class]" v-bind="attrs">
+    <div v-if="props.header" :class="ui.header">
+      <MDC :value="props.header" />
+    </div>
+    <div :class="ui.base">
+      <div :class="ui.search">
+        <UInput v-model="q" type="text" @keyup="onSearch" placeholder="type a token to search for" />
+      </div>
+      <div :class="ui.filter">
+        <UAccordion :items="accordionItems" color="gray" class="not-prose">
+          <template #quick-filters>
+            <div class="grid gap-4 grid-cols-2">
+              <template v-for="column in props.data.columns">
+                <div class="rounded-lg border" v-if="column.filter">
+                  <UDivider :label="column.title" class="py-4" />
+                  <ul class="max-h-36 overflow-auto">
+                    <li v-for="label in Object.keys(stats[column.name])" :data-filter-key="column.name"
+                      :data-filter-value="label" @click="onFilterChange"
+                      class="list-none flex justify-between p-2 hover:invert hover:cursor-pointer"
+                      :class="isSelectedFilter(column.name, label) ? 'invert' : ''">
+                      <span>{{ label }}</span>
+                      <UBadge>
+                        {{ stats[column.name][label] }}
+                      </UBadge>
+                    </li>
+                  </ul>
+                </div>
+              </template>
+            </div>
+          </template>
+        </UAccordion>
+      </div>
+      <table :class="ui.table">
+        <thead :calss="ui.thead">
+          <tr :ui.tr.base>
+            <MDC v-for="column in props.data?.columns" :value="getColumTitle(column)" tag="th" class="not-prose"
+              :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]" />
+          </tr>
+        </thead>
+        <tbody :calss="ui.tbody">
+          <tr v-for="(row, index) in displayItems" :index="index" :calss="ui.tr.base">
+            <MDC v-for="column in props.data?.columns" :value="getItemColumValue(row, column)" tag="td"
+              class="not-prose" :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" />
+          </tr>
+        </tbody>
+      </table>
+      <div :class="ui.pagination">
+        <UPagination v-model="page" :page-count="perPage" :total="items.length" :max="7" @click="onPageChange" show-last
+          show-first />
+      </div>
+    </div>
+    <div v-if="props.footer" :class="ui.footer">
+      <MDC :value="props.footer" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {dynamicTable as config } from "@/ui.config"
+import { dynamicTable as config } from "@/ui.config"
 
-static PER_PAGE_LIST = config.perPage
+const PER_PAGE_LIST = config.perPage
+
+type itemsElement = {
+  name: String;
+  title?: String;
+  filter?: Boolean;
+  order?: Boolean;
+  type?: String;
+
+}
+
+type DataType = {
+  base: String;
+  columns: itmesElement[];
+}
 
 const props = withDefaults(
   defineProps<{
-    ui?: Partial<typeof config>;
-    caption?: String;
     dataUrl: String;
-    columns?: Array;
-    filters?: Array;
-    page?: Number'
+    data: DataType;
+    ui?: Partial<typeof config>;
+    header?: String;
+    footer?: String;
     perPage?: Number;
-    q?: String;
-    selectedFilters?: Array;
     class?: Any;
   }>(),
   {
+    dataUrl: '',
+    data: () => ({}),
     ui: () => ({}),
-    caption: '',
-    dataUrl: ''
-    columns: [],
-    filters: [],
-    page: 1,
+    header: '',
+    footer: '',
     perPage: config.default.perPage,
-    q: '',
-    selectedFilters: []
     class: () => undefined
   });
 
@@ -42,4 +102,154 @@ const { ui, attrs } = useUI(
   toRef(props, "class")
 )
 
+const fetchData = async () => {
+  const data = await $fetch(props.dataUrl)
+  if (props.data?.base) {
+    return data[props.data.base]
+  } else {
+    return data
+  }
+}
+
+const updateData = async () => {
+  items.value = await fetchData()
+  updateDisplayData()
+
+}
+
+const updateDisplayData = async () => {
+  displayItems.value = []
+
+  let filteredData = filterDataByQuery(items.value)
+  filteredData = filterDataByQuickFilter(filteredData)
+
+  stats.value = getStats(filteredData)
+
+  numberOfItems.value = filteredData?.length > 0 ? filteredData.length : 0
+
+  let startIndex = page.value * perPage.value - perPage.value
+  let endIndex = startIndex + perPage.value > numberOfItems.value ? numberOfItems.value : startIndex + perPage.value
+
+  for (let index = startIndex; index < endIndex; index++) {
+    displayItems.value.push(filteredData[index])
+  }
+}
+
+const items = toRef([])
+const displayItems = toRef([])
+const page = defineModel('page', { type: Number, default: 1 })
+const q = defineModel('q', { type: String, default: '' })
+const perPage = toRef(props.perPage)
+const numberOfItems = toRef(0)
+const selectedFilters = toRef([])
+const stats = toRef([])
+const accordionItems = toRef([
+  {
+    label: "Quick Filters",
+    icon: "i-heroicons-eye-dropper",
+    slot: "quick-filters"
+  }
+])
+
+const filterDataByQuery = (data) => {
+  const fields2Search = props.data.columns.filter(item => item.query).map(item => item.name)
+
+  if (q.value.length > 0) {
+    return data.filter(item => {
+      let finded = false
+      for (name of fields2Search) {
+        if (item[name]?.toString().toLowerCase().includes(q.value.toLowerCase())) {
+          finded = true
+          break
+        }
+      }
+      return finded
+    })
+  } else {
+    return data
+  }
+}
+
+const filterDataByQuickFilter = (data) => {
+  if (selectedFilters.value.length > 0) {
+    let finded = false
+    return data.filter(item => {
+      finded = false
+      for (let i = 0; i < selectedFilters.value.length; i++) {
+        const el = selectedFilters.value[i]
+        finded = item[el.name].toString() === el.value.toString()
+        if (finded) {
+          console.log('YES')
+          break
+        }
+      }
+      return finded
+    })
+  } else {
+    return data
+  }
+}
+
+const isSelectedFilter = (key, value) => {
+  const res = selectedFilters.value.filter(item => item.name === key && item.value === value)
+  return res.length > 0
+}
+
+const getColumTitle = (column) => {
+  return column?.title ? column.title : ""
+}
+
+const getItemColumValue = (item, column) => {
+  return item[column?.name] ? `${item[column?.name]}` : ""
+}
+
+const getStats = (data) => {
+  const stats = {}
+  props.data.columns.forEach(el => {
+    stats[el.name] = {}
+  })
+
+  data.forEach(el => {
+    props.data.columns.forEach(column => {
+      if (Object.keys(el).includes(column.name)) {
+        const label = el[column.name]
+        stats[column.name][label] = stats[column.name][label] ? stats[column.name][label] + 1 : 1
+      }
+    })
+  })
+
+  return stats
+
+}
+
+// Event handlers
+
+const onPageChange = (e) => {
+  updateDisplayData()
+}
+
+const onSearch = (e) => {
+  page.value = 1
+  q.value = q.value.trim()
+  updateDisplayData()
+}
+
+const onFilterChange = (e) => {
+  const key = e.currentTarget.getAttribute('data-filter-key')
+  const value = e.currentTarget.getAttribute('data-filter-value')
+
+  const selected = selectedFilters.value.filter(el => el.name === key && el.value === value)
+
+  if (selected.length > 0) {
+    selectedFilters.value = selectedFilters.value.filter(el => el != selected[0])
+  } else {
+    selectedFilters.value.push({ name: key, value: value });
+  }
+
+  page.value = 1
+  q.value = ""
+  updateDisplayData()
+}
+
+await updateData()
 </script>
