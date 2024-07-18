@@ -19,7 +19,7 @@ cols: 5
         icon: i-eos-icons:rotating-gear
         title: Specifications # First Row
         subtitle: OMA
-        urlWrapper: ""
+        urlWrapper: "/specifications/#exploring-oma-specifications"
         ---
         ::::
 
@@ -29,7 +29,7 @@ cols: 5
             wrapper: mt-3
         title: Tech Specs # First Column
         subtitle: Documents
-        urlWrapper: ""
+        urlWrapper: "/specifications/#search-by-specific-document"
         ---
         ::::
 
@@ -39,7 +39,7 @@ cols: 5
             wrapper: mt-3
         title: Releases # First Column
         subtitle: Enablers
-        urlWrapper: ""
+        urlWrapper: "/specifications/#search-by-project-or-enabler"
         ---
         ::::
 
@@ -49,7 +49,7 @@ cols: 5
             wrapper: mt-3
         title: Public Documents # First Column
         subtitle: OMA
-        urlWrapper: ""
+        urlWrapper: "/specifications/#oma-public-documents"
         ---
         ::::
     :::
@@ -66,7 +66,7 @@ cols: 5
         icon: i-eos-icons:rotating-gear
         title: Registries # Second Row
         subtitle: OMNA
-        urlWrapper: ""
+        urlWrapper: "/specifications/#oma-registries-overview"
         ---
         ::::
 
@@ -76,7 +76,7 @@ cols: 5
             wrapper: mt-3
         title: LwM2M Registry # Second Column
         subtitle: OMNA
-        urlWrapper: ""
+        urlWrapper: "/specifications/#oma-lwm2m-registry"
         ---
         ::::
 
@@ -86,7 +86,17 @@ cols: 5
             wrapper: mt-3
         title: Enabler Registries # Second Column
         subtitle: OMNA
-        urlWrapper: ""
+        urlWrapper: "/specifications/#omna-enabler-registries"
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Registry API # Third Column
+        subtitle: LwM2M
+        urlWrapper: "/specifications/#oma-lwm2m-registry-api"
         ---
         ::::
     :::
@@ -103,7 +113,7 @@ cols: 5
         icon: eos-icons:background-tasks
         title: API # Third Column
         subtitle: OMA
-        urlWrapper: ""
+        urlWrapper: "/specifications/#oma-api-inventory"
         ---
         ::::
 
@@ -111,19 +121,9 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: LwM2M # Third Column
+        title: OMA API's # Third Column
         subtitle: OMA
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Other API's # Third Column
-        subtitle: OMA
-        urlWrapper: 
+        urlWrapper: "/specifications/#oma-api-table"
         ---
         ::::      
     :::      
@@ -172,6 +172,11 @@ By following these steps, you can efficiently locate the OMA documentation you n
 
 {RESOURCE TABLES PER ENABLER}
 
+## OMA Public Documents
+This section offers publicly available documents that are important resources beyond our technical specifications. These include contributions from various working groups such as Architecture, Content Delivery, and Device Management & Service Enablement, each providing valuable insights into their areas. We also have white papers on topics like managing non-IP devices in cellular IoT networks and preparing for 5G, along with guidelines for creating and registering LwM2M objects and logging reusable resources. Additionally, our repository includes Birds of Feathers sessions, an extensive OMA dictionary, and key external references, supporting comprehensive industry knowledge and sharing.
+
+{TABLE OF PUBLIC DOCUMENTS}
+https://technical.openmobilealliance.org/public_documents.html
 
 ## OMA Registries Overview
 The Open Mobile Naming Authority (OMNA) ensures seamless integration and interoperability by managing names and numbers for OMA technologies, including the Lightweight M2M (LwM2M) Registry and other active registries. OMNA simplifies the process and provides clear instructions, making it easy for users to navigate and find necessary information.
@@ -184,7 +189,7 @@ By simplifying the process and providing clear instructions, we aim to make it e
 
 The Open Mobile Naming Authority (OMNA) is responsible for managing names and numbers to ensure interoperability and compatibility among implementations using OMA technology. OMNA handles names and numbers not managed by other bodies like IANA.
 
-## Other OMNA Registries
+## OMNA Enabler Registries
 In addition to the LwM2M Registry, OMNA manages several other active registries. These registries ensure consistent use of names and numbers across various OMA technologies, supporting interoperability and compatibility among different implementations.
 
 ### How the OMNA Process Works
@@ -212,3 +217,59 @@ OMNA maintains several name and number registries. These registries help ensure 
 The following name and number registries are currently maintained by OMNA.
 
 {OMNA REGISTRY TABLE}
+
+### OMA LwM2M Registry API
+The OMA LwM2M Registry API, also known as the OMNA (OMA Naming Authority), provides essential tools and information for interacting with the OMA Registry. This documentation outlines the available functionalities of the LwM2M Registry API version 1, offering comprehensive details on how to access and retrieve metadata about various objects within the registry.
+
+**Base URL for the Registry API**:
+http://www.openmobilealliance.org/api/
+
+#### API Functions and Endpoints
+##### Objects Discovery:
+
+* **Endpoint**: lwm2m/v1/Object
+    * **Description**: Retrieve a JSON file containing metadata information on all object versions.
+* **Endpoint**: lwm2m/v1/Object?ObjectVersion=latest
+    * **Description**: Retrieve a JSON file containing metadata information with the latest object versions.
+
+##### Get an Object:
+
+* **Endpoint**: lwm2m/v1/Object?ObjectID=12
+    * **Description**: Retrieve a JSON file with metadata information on Object 12.
+* **Endpoint**: lwm2m/v1/Object?ObjectID=12&ObjectVersion=latest
+    * **Description**: Retrieve a JSON file with metadata information on the latest version of Object 12.
+* **Endpoint**: lwm2m/v1/Object?ObjectID=12&ObjectVersion=1.0
+    * Description: Retrieve a JSON file with metadata information on version 1.0 of Object 12.
+    * >Note: When specifying an ObjectVersion other than "latest", the ObjectID must be included.
+#### Error Codes
+* **HTTP 400**: ObjectID must be included when ObjectVersion is set to "latest".
+* **HTTP 404**: The specified ObjectID and/or ObjectVersion is not found in the registry.
+
+### Metadata Information
+The metadata provided by the API defines and classifies objects within the OMA system. This includes descriptions, object names, unique URNs, links to XML descriptions, and more. Key metadata elements include:
+
+* **Description**: Description of the object.
+* **Label**: Identifier for who has defined the object (OMA, external SDO, private registration).
+* **Name**: Object name.
+* **ObjectID**: Unique identifier for the object.
+* **ObjectLink**: URL to the XML file describing the object, with visibility settings.
+* **SpecLink**: URL to the Technical Specifications, with visibility settings.
+* **URN**: Unique URN for the object.
+* **Owner**: Organization name that registered the object.
+* **Version**: Object version.
+* **VortoLink**: DEPRECATED. URL to this object in Vorto.
+
+This comprehensive API documentation ensures users can effectively interact with and retrieve vital information from the OMA LwM2M Registry.
+
+
+## OMA API Inventory
+This section showcases the API specifications managed by the Open Mobile Alliance (OMA), organized by protocol bindings such as RESTful, SOAP Web Services, and LDAP. You'll find a comprehensive list of APIs under each protocol binding, with detailed descriptions to help you navigate and understand their functions. This inventory serves as a resource for easily accessing and comprehending the available APIs and their uses.
+
+* **RESTful APIs**: These APIs use the REST architectural style with an HTTP protocol binding. API operations are mapped to HTTP verbs (GET, POST, PUT, DELETE), allowing clients to query or modify the current state of a resource.
+
+* **SOAP Web Services APIs**: These APIs utilize a SOAP binding, where API operations and their input parameters are encapsulated within an XML document sent via an HTTP POST method.
+
+* **LDAP APIs**: These APIs bind operations to specific LDAP messages, such as AddRequest, SearchRequest, ModifyRequest, and DelRequest, to perform directory services tasks.
+
+{OMA API TABLE}
+### OMA API Table
