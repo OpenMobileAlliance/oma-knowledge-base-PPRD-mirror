@@ -74,8 +74,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: LwM2M # Second Column
-        subtitle: Registry
+        title: LwM2M Registry # Second Column
+        subtitle: OMNA
         urlWrapper: ""
         ---
         ::::
@@ -84,7 +84,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Supporting Data # Second Column
+        title: Enabler Registries # Second Column
         subtitle: OMNA
         urlWrapper: ""
         ---
