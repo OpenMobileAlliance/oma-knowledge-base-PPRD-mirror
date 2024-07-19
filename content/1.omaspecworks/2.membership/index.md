@@ -120,7 +120,44 @@ We would like to thank all our member companies for their support. For a complet
 
 * Denotes 2023 Board of Directors seat
 
-THIS IS A PLACEHOLDER for the Current Members TABLE
+### Full
+
+- [Aetheros Inc.*](http://www.aetheros.com)
+- [Verizon](http://www.verizonwireless.com)
+- [Ericsson* (10+)](http://www.ericsson.com/se/)
+- [Intel Corporation (10+)](http://www.intel.com/content/www/us/en/homepage.html)
+- [Rohde & Schwarz (10+)](http://www.rohde-schwarz.com/)
+- [T-Mobile USA, Inc.* (5+)](http://www.t-mobile.com/)
+- [Itron* (5+)](https://www.itron.com/)
+- [IoTerop* (5+)](http://www.ioterop.com/)
+
+### Supporter
+
+- [Landis+Gyr Technology, Inc.](http://www.landisgyr.com)
+- [Polaris Wireless](http://www.polariswireless.com)
+- [Swift Navigation Inc.](http://www.swiftnav.com)
+- [Nokia (10+)](http://www.nokia.com/)
+- [Friendly Technologies (5+)](http://www.friendly-tech.com/)
+- [Smith Micro Software, Inc. (10+)](http://www.smithmicro.com/)
+- [IOTECC](http://www.iotecc.com)
+- [Cumulocity IoT](http://www.softwareag.com)
+- [Bulk Tainer Telematics Ltd](http://www.bulktainertelematics.com)
+- [Weihai Ploumeter Co., LTD](http://www.plou.cn/)
+- [Hydro-Québec](http://www.hydroquebec.com)
+- [HMD Global Oy](http://www.hmdglobal.com)
+- [Motive Software Solutions Inc](http://www.motive.com)
+- [Six Dee Telecom Solutions Private Limited](http://www.6dtech.co.in)
+
+### Associate
+
+- [AVSystem (5+)](https://www.avsystem.com/)
+- [Red Bend Software, acquired by HARMAN (10+)](https://services.harman.com/solutions/ota-software-management)
+- [Spirent Communications Ltd. (10+)](http://www.spirent.com/)
+- [Synapse Mobile Networks s.a. (10+)](http://www.synap.se/)
+- [Vuzix (5+)](http://www.vuzix.com/)
+- [Aclara Technologies](http://www.hubbell.com)
+
+
 
 ### Membership Benefits
 
