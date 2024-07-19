@@ -40,6 +40,7 @@ import { card as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
     defineProps<{
+        cardID?: number;
         urlUpperBase?: string;
         urlImage?: string;
         altImage?: string;
@@ -50,6 +51,7 @@ const props = withDefaults(
         centerLabel?: string;
         rightLabel?: string;
         imageBackground?: string;
+        description?: string;
         ui?: Partial<typeof config>;
     }>(),
     {
