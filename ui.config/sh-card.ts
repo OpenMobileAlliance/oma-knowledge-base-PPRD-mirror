@@ -1,15 +1,15 @@
 export default {
-    wrapper: "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min",
-    upperBase: "row-start-1 flex items-center justify-center rounded-t-xl",
-    image: "h-full w-auto p-8",
-    lowerBase: "row-start-2 p-6 rounded-b-xl",
-    title: "text-3xl font-extrabold",
-    subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8",
-    text: "",
-    leftLabel: "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    centerLabel: "col-start-2 text-lg justify-self-center text-gray-600 dark:text-gray-400",
-    rightLabel: "col-start-3 text-lg justify-self-end text-gray-600 dark:text-gray-400",
-    // Default Tailwind CSS values
-    default: {
-    }
+  wrapper: "flex flex-col justify-between border-2 rounded-xl mx-auto max-w-lg h-screen",
+  upperBase: "flex items-center justify-center rounded-t-xl",
+  image: "h-full w-auto p-8",
+  lowerBase: "p-6 -my-6 rounded-b-xl",
+  title: "text-3xl font-extrabold",
+  subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8",
+  text: "",
+  leftLabel: "text-lg justify-self-start text-gray-600 dark:text-gray-400",
+  centerLabel: "text-lg justify-self-center text-gray-600 dark:text-gray-400",
+  rightLabel: "text-lg justify-self-end text-gray-600 dark:text-gray-400",
+  // Default Tailwind CSS values
+  default: {
   }
+}
