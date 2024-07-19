@@ -21,5 +21,6 @@ export { default as twoColumns } from "@/ui.config/sh-two-columns"
 export { default as multiColumn } from "@/ui.config/sh-multi-column"
 export { default as column } from "@/ui.config/sh-column"
 export { default as faq } from "@/ui.config/sh-faq"
+export { default as listCards } from "@/ui.config/sh-list-cards"
 
 export { default as video } from "@/ui.config/sh-video"
