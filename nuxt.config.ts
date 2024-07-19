@@ -4,10 +4,13 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: 'github-dark'
-    }
+    },
+    markdown: {
+      anchorLinks: false 
+    },
   },
   ui: {
-    icons: ["heroicons-solid", "fa6-brands", "devicon"],
+    icons: ["heroicons-solid", "fa6-brands", "devicon", "icons8"],
   },
   googleFonts: {
     families: {

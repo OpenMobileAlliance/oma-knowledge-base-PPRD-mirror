@@ -37,8 +37,8 @@ target: "" # open in the same window
 rounded: rounded-3xl
 colorButton: green
 disabled: true # true, false
-variant: solid
-block: "" # changes the button width
+styleButton: solid
+fullWidth: "" # changes the button width
 size: 3xl # modifies the size of the button
 ---
 []{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
@@ -57,15 +57,15 @@ target: "" # open in the same window
 rounded: rounded-3xl
 colorButton: green
 disabled: true # true, false
-variant: solid
-block: "" # changes the button width
+styleButton: solid
+fullWidth: "" # changes the button width
 size: 3xl # modifies the size of the button
 ---
 []{.i-fa6-brands-square-github .text-4xl} ClickMe!!!  
 ::
 ```
 
-The <b>{{ $doc.constructorName }}</b> can be presented in `solid`, `outline` and `link` *variants*:
+The <b>{{ $doc.constructorName }}</b> can be presented in `solid`, `outline` and `link` *styleButton*:
 
 ::ShMultiColumn
 ---
@@ -75,7 +75,7 @@ cols: 3
 ::ShButton
 ---
 urlButton: "#"
-variant: solid
+styleButton: solid
 ---
 ClickMe!!!  
 ::
@@ -83,7 +83,7 @@ ClickMe!!!
 ::ShButton
 ---
 urlButton: "#"
-variant: outline
+styleButton: outline
 ---
 ClickMe!!!  
 ::
@@ -91,7 +91,7 @@ ClickMe!!!
 ::ShButton
 ---
 urlButton: "#"
-variant: link
+styleButton: link
 ---
 ClickMe!!!  
 ::
@@ -100,7 +100,7 @@ ClickMe!!!
 ::ShButton
 ---
 urlButton: "#"
-variant: solid
+styleButton: solid
 ---
 ClickMe!!!  
 ::
@@ -110,7 +110,7 @@ ClickMe!!!
 ::ShButton
 ---
 urlButton: "#"
-variant: outline
+styleButton: outline
 ---
 ClickMe!!!  
 ::
@@ -120,7 +120,7 @@ ClickMe!!!
 ::ShButton
 ---
 urlButton: "#"
-variant: link
+styleButton: link
 ---
 ClickMe!!!  
 ::
@@ -128,7 +128,7 @@ ClickMe!!!
 
 ::
 
-The property `size` define the size of the `ShButton`
+The property `size` defines the size of the `ShButton`
 
 ::ShButton
 ---
@@ -308,13 +308,13 @@ size: 5xl
 ::
 ```
 
-Turning the parameter `block` to true you can instruct button to take the full length. And with `colorButton` 
+Turning the parameter `fullWidth` to true you can instruct button to take the full width of available screen. And with `colorButton` 
 you can change the color of the button.
 
 ::ShButton
 ---
 urlButton: "#"
-block: true
+fullWidth: true
 colorButton: cyan
 ---
 This button takes the whole width
@@ -324,12 +324,13 @@ This button takes the whole width
 ::ShButton
 ---
 urlButton: "#"
-block: true
+fullWidth: true
 colorButton: cyan
 ---
 This button takes the whole width
 ::
 ```
+
 The <b>{{ $doc.constructorName }}</b> content can be any valid Markdown.
 
 ::ShButton
@@ -347,9 +348,9 @@ It is possible to insert other constructors inside of the <b>{{ $doc.constructor
 ::ShButton
 ---
 urlButton: "https://opensource.org/"
-variant: outline
+styleButton: outline
 colorButton: blue
-block: true
+fullWidth: true
 ---
   :::ShMultiColumn
   ---
@@ -380,9 +381,9 @@ block: true
 ::ShButton
 ---
 urlButton: "https://opensource.org/"
-variant: outline
+styleButton: outline
 colorButton: blue
-block: true
+fullWidth: true
 ---
   :::ShMultiColumn
   ---
@@ -412,14 +413,14 @@ block: true
 
 There is a special way where the button can be part of the
 :ShButton{urlButton ="/" labelButton="text" colorButton="blue"} using a inline notation for the
-components. This notation supports <b>{{ $doc.constructorName }}</b> :ShButton{urlButton ="/" labelButton="all" variant="outline" colorButton="green"}
-variants and all other parameters, colorButton for example.
+components. This notation supports <b>{{ $doc.constructorName }}</b> :ShButton{urlButton ="/" labelButton="all" styleButton="outline" colorButton="green"}
+styleButtons and all other parameters, colorButton for example.
 
 ```mdc
 There is a special way where the button can be part of the
 :ShButton{urlButton ="/" labelButton="text" colorButton="blue"} using a inline notation for the
-components. This notation supports `ShButton` :ShButton{urlButton ="/" labelButton="all" variant="outline" colorButton="green"}
-variants and all other parameters, colorButton for example.
+components. This notation supports `ShButton` :ShButton{urlButton ="/" labelButton="all" styleButton="outline" colorButton="green"}
+styleButtons and all other parameters, colorButton for example.
 ```
 
 ## Properties and Attributes
@@ -445,12 +446,12 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         </tr>
         <tr>
             <td><code>wrapper</code></td>
-            <td>n/a</td>
+            <td>`config.wrapper`</td>
             <td>Defines the overall styling for the container that holds all the elements of the button. The <code>wrapper</code> attribute is used to ensure the button is aligned properly within its container, with appropriate margins, e.g., <code>align-middle m-1</code></td>
         </tr>
         <tr>
             <td><code>inner</code></td>
-            <td>n/a</td>
+            <td>`config.inner`</td>
             <td>Specifies the styling for the inner content of the button, ensuring it is centered and does not inherit any prose-related styles, making it suitable for standalone button components, e.g., <code>text-center not-prose mx-auto</code></td>
         </tr>
         <tr>
@@ -468,38 +469,38 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>target</code></td>
             <td>n/a</td>
-            <td>??</td>
+            <td>`_blank`</td>
             <td>Specifies where to open the linked document. Common values include <code>_self</code> for the same frame, <code>_blank</code> for a new window or tab, <code>_parent</code> for the parent frame, and <code>_top</code> for the full body of the window.</td>
         </tr>
         <tr>
             <td><code>colorButton</code></td>
             <td>n/a</td>
             <td><code>primary</code></td>
-            <td>Determines the primary color scheme for the button. The value <code>primary</code> sets a default color, which can be customized by replacing <code>{colorButton}</code> in the variant styles with the desired color name.</td>
+            <td>Determines the primary color scheme for the button. The value <code>primary</code> sets a default color, which can be customized by replacing <code>{colorButton}</code> in the styleButton styles with the desired color name.</td>
         </tr>
         <tr>
             <td><code>rounded</code></td>
             <td>n/a</td>
-            <td>n/a</td>
+            <td>`config.rounded`</td>
             <td>Defines the border-radius of the button, making the edges rounded. The default class <code>rounded-md</code> provides medium-rounded corners.</td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
             <td>n/a</td>
-            <td>n/a</td>
-            <td>A boolean attribute (<code>True</code>, <code>False</code>) that indicates whether the button is disabled. When true, the button is not interactive and is usually styled to look inactive.</td>
+            <td>`false`</td>
+            <td>A boolean attribute (<code>true</code>, <code>false</code>) that indicates whether the button is disabled. When true, the button is not interactive and is usually styled to look inactive.</td>
         </tr>
         <tr>
-            <td><code>variant</code></td>
+            <td><code>styleButton</code></td>
             <td>n/a</td>
             <td><code>solid</code></td>
-            <td>Specifies the style variant of the button, which can be <code>solid</code>, <code>outline</code>, or <code>link</code>. Each variant applies different styling rules, such as background colors, border styles, and text decorations.</td>
+            <td>Specifies the style styleButton of the button, which can be <code>solid</code>, <code>outline</code>, or <code>link</code>. Each styleButton applies different styling rules, such as background colors, border styles, and text decorations.</td>
         </tr>
         <tr>
-            <td><code>block</code></td>
+            <td><code>fullWidth</code></td>
             <td>n/a</td>
-            <td>n/a</td>
-            <td>A boolean attribute (<code>True</code>, <code>False</code>) defines whether the button should be displayed as a block element, taking the full width of its container.</td>
+            <td>`false`</td>
+            <td>A boolean attribute (<code>true</code>, <code>false</code>) defines whether the button should be displayed as a fullWidth element, taking the full width of its container.</td>
         </tr>
         <tr>
             <td><code>size</code></td>
@@ -510,14 +511,14 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>inline</code></td>
             <td>n/a</td>
-            <td>n/a</td>
-            <td>Defines whether the button should be displayed inline with other elements. The class <code>inline-flex items-center</code> ensures the button aligns properly with the surrounding content.</td>
+            <td>`config.inline`</td>
+            <td>Defines whether the button should be displayed inline with other elements. The class <code>inline-flex items-center</code> ensures the button aligns properly with the surrounding content. It is advised <b>NOT</b> to change these values.</td>
         </tr>
         <tr>
             <td><code>padding</code></td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Sets the padding for the button, with options ranging from <code>2xs</code>, <code>xs</code>, <code>sm</code>, <code>md</code>, <code>base</code>, <code>lg</code>, <code>xl</code>, <code>2xl</code>, <code>3xl</code>, <code>4xl</code>, to <code>5xl</code>. Each padding size corresponds to predefined padding values, ensuring the button's content is appropriately spaced. It is recommended do not modiffied this value as it is synced with the <code>size</code> property.</td>
+            <td>Sets the padding for the button, with options ranging from <code>2xs</code>, <code>xs</code>, <code>sm</code>, <code>md</code>, <code>base</code>, <code>lg</code>, <code>xl</code>, <code>2xl</code>, <code>3xl</code>, <code>4xl</code>, to <code>5xl</code>. Each padding size corresponds to predefined padding values, ensuring the button's content is appropriately spaced. It is recommended to <b>NOT</b> modify these values as it is synced with the <code>size</code> property.</td>
         </tr>
     </tbody>
 </table>
@@ -530,12 +531,12 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
 {
   wrapper: "align-middle m-1",
   inner: "text-center not-prose mx-auto",
-  variant: {
+  styleButton: {
     solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white dark:text-gray-900 no-underline',
     outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
     link: 'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'
   },
-  block: 'w-full flex justify-center items-center',
+  fullWidth: 'w-full flex justify-center items-center',
   inline: 'inline-flex items-center',
   rounded: 'rounded-md',
   size: {
@@ -566,8 +567,9 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
   },
   default: {
     size: 'base',
-    variant: 'solid',
+    styleButton: 'solid',
     colorButton: 'primary',
+    target: '_blank',
   }
 }
 ```

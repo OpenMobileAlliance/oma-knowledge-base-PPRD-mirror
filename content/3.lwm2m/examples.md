@@ -1,13 +1,4 @@
----
-title: About Page #title of the window browser
-description: Page dedicated to LwM2M and IPSO
----
-
-## Open Mobile Alliance - Lightweight Machine to Machine (LwM2M)
-
-These GitHub pages are dedicated to DMSE/IPSO Working Groups
-[Specifications](https://technical.openmobilealliance.org/Overviews/lightweightm2m_overview.html){target="_blank"}
-and [OMNA LwM2M Registry](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html){target="_blank"}
+### Examples to Keep
 
 ::ShTwoColumns{size="L"}  
 ---
@@ -79,16 +70,3 @@ ui:
   :::
 
 ::
-
-### About OMA SpecWorks
-
->>>OMA SpecWorks is an innovative kind of Standards Development Organization
-(SDO) where the needs for wireless industry consensus versus the quick and
-accurate creation of specifications and other technical documentation are
-balanced via a working group-driven, efficient and
-[agile process](https://omaspecworks.org/what-is-oma-specworks/agile-process-for-standardization-in-todays-market-landscape/).
-As a non-profit organization with a long history in mobile and Internet of
-Things (IoT) technology development, OMA SpecWorks is a specifications factory
-where industry-leading companies bring their ideas and talent to build
-market-accelerating standards that allow products and services to interoperate
-seamlessly across fixed and mobile wireless data networks.

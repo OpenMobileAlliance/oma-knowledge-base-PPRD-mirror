@@ -20,6 +20,7 @@ export { default as segment } from "@/ui.config/sh-segment"
 export { default as twoColumns } from "@/ui.config/sh-two-columns"
 export { default as multiColumn } from "@/ui.config/sh-multi-column"
 export { default as column } from "@/ui.config/sh-column"
+export { default as faq } from "@/ui.config/sh-faq"
 
 export { default as dynamicTable } from "@/ui.config/sh-dynamic-table"
 export { default as video } from "@/ui.config/sh-video"
