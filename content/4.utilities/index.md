@@ -176,14 +176,13 @@ In the following sections, we delve into the multitude of benefits that LwM2M br
 
 Moreover, real-world use cases highlight the transformative impact of LwM2M across various utilities, including electricity, water, and gas. These examples, coupled with a comprehensive technical overview, underscore the protocol's scalability, security, and broad market potential. As we explore these aspects, we also present a structured call to action aimed at engaging stakeholders, promoting adoption, and providing the necessary resources and support. Through workshops, collaborative pilots, and industry advocacy, OMA is committed to leading the charge in integrating LwM2M into the utility space, ensuring a future of enhanced efficiency, security, and innovation.
 
-> By leveraging the OMA LightweightM2M protocol, the utility sector can achieve unprecedented efficiency, security, and cost-effectiveness, driving innovation and growth in a rapidly evolving landscape. Embrace the future of utility management with LwM2M, where operational excellence meets technological advancement. 
 
 *Matt Gillmore OMA DMSO Working Group Chair*
 
 ::ShTextImg
 ---
 ui:
-    wrapper: mb-10
+    wrapper: mb-10 shadow-2xl
 positionText: left
 spanText: m
 alignText: left
@@ -191,12 +190,13 @@ urlImage: /images/utilities/utilities-4.png
 title: | 
     About OMA LwM2M and Utilities
 subtitle: |
-    _by Matt Gillmore, OMA DMSO Working Group Chair_
+    _Matt Gillmore is from Itron_
 text: |
-    > By leveraging the OMA LightweightM2M protocol, the utility sector can achieve unprecedented efficiency, security, and cost-effectiveness, driving innovation and growth in a rapidly evolving landscape. Embrace the future of utility management with LwM2M, where operational excellence meets technological advancement.
+    > By leveraging the OMA LightweightM2M protocol, the utility sector can achieve unprecedented efficiency, security, and cost-effectiveness, driving innovation and growth in a rapidly evolving landscape. 
 ---
 ::
 
+Embrace the future of utility management with LwM2M, where operational excellence meets technological advancement.
 
 # Introduction to LwM2M
 The Open Mobile Alliance's (OMA) LightweightM2M (LwM2M) protocol is an open and efficient protocol designed for managing IoT devices. LwM2M simplifies device management by offering features such as secure communication, remote updates, real-time monitoring, and efficient power usage. Its lightweight design makes it ideal for applications requiring minimal resource consumption while maintaining robust functionality and security.
