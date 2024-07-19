@@ -4,7 +4,7 @@ export default {
   footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   search: "pb-4",
   filter: "",
-  table: 'min-w-full table-fixed divide-y divide-gray-300 dark:divide-gray-700',
+  table: 'min-w-full divide-y divide-gray-300 dark:divide-gray-700',
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
   tr: {
     base: '',
@@ -19,7 +19,7 @@ export default {
     size: 'text-sm'
   },
   td: {
-    base: 'whitespace-nowrap',
+    base: 'whitespace-nowrap text-pretty ',
     padding: 'px-4 py-4',
     color: 'text-gray-500 dark:text-gray-400',
     font: '',

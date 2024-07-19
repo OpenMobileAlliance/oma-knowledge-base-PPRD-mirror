@@ -11,14 +11,14 @@
         <UAccordion :items="accordionItems" color="gray" class="not-prose">
           <template #quick-filters>
             <div class="grid gap-4 grid-cols-2">
-              <template v-for="column in props.data.columns">
+              <template v-for="column in props.columns">
                 <div class="rounded-lg border" v-if="column.filter">
                   <UDivider :label="column.title" class="py-4" />
                   <ul class="max-h-36 overflow-auto">
                     <li v-for="label in Object.keys(stats[column.name])" :data-filter-key="column.name"
                       :data-filter-value="label" @click="onFilterChange"
-                      class="list-none flex justify-between p-2 hover:invert hover:cursor-pointer"
-                      :class="isSelectedFilter(column.name, label) ? 'invert' : ''">
+                      class="list-none flex justify-between p-2 hover:bg-gray-50 hover:dark:bg-gray-800/50 hover:cursor-pointer"
+                      :class="isSelectedFilter(column.name, label) ? ui.tr.selected : ''">
                       <span>{{ label }}</span>
                       <UBadge>
                         {{ stats[column.name][label] }}
@@ -34,20 +34,20 @@
       <table :class="ui.table">
         <thead :calss="ui.thead">
           <tr :ui.tr.base>
-            <MDC v-for="column in props.data?.columns" :value="getColumTitle(column)" tag="th" class="not-prose"
+            <MDC v-for="column in props.columns" :value="getColumTitle(column)" tag="th" class="not-prose"
               :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]" />
           </tr>
         </thead>
         <tbody :calss="ui.tbody">
           <tr v-for="(row, index) in displayItems" :index="index" :calss="ui.tr.base">
-            <MDC v-for="column in props.data?.columns" :value="getItemColumValue(row, column)" tag="td"
-              class="not-prose" :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" />
+            <MDC v-for="column in props.columns" :value="getItemColumValue(row, column)" tag="td" class="not-prose"
+              :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" />
           </tr>
         </tbody>
       </table>
       <div :class="ui.pagination">
-        <UPagination v-model="page" :page-count="perPage" :total="items.length" :max="7" @click="onPageChange" show-last
-          show-first />
+        <UPagination v-model="page" :page-count="perPage" :total="numberOfItems" :max="10" @click="onPageChange"
+          show-last show-first />
       </div>
     </div>
     <div v-if="props.footer" :class="ui.footer">
@@ -67,18 +67,14 @@ type itemsElement = {
   filter?: Boolean;
   order?: Boolean;
   type?: String;
-
 }
 
-type DataType = {
-  base: String;
-  columns: itmesElement[];
-}
 
 const props = withDefaults(
   defineProps<{
     dataUrl: String;
-    data: DataType;
+    dataField: String;
+    columns: itemsElement[];
     ui?: Partial<typeof config>;
     header?: String;
     footer?: String;
@@ -87,7 +83,8 @@ const props = withDefaults(
   }>(),
   {
     dataUrl: '',
-    data: () => ({}),
+    dataField: '',
+    columns: () => ([]),
     ui: () => ({}),
     header: '',
     footer: '',
@@ -104,8 +101,9 @@ const { ui, attrs } = useUI(
 
 const fetchData = async () => {
   const data = await $fetch(props.dataUrl)
-  if (props.data?.base) {
-    return data[props.data.base]
+
+  if (props.dataField) {
+    return data[props.dataField]
   } else {
     return data
   }
@@ -114,7 +112,6 @@ const fetchData = async () => {
 const updateData = async () => {
   items.value = await fetchData()
   updateDisplayData()
-
 }
 
 const updateDisplayData = async () => {
@@ -152,7 +149,7 @@ const accordionItems = toRef([
 ])
 
 const filterDataByQuery = (data) => {
-  const fields2Search = props.data.columns.filter(item => item.query).map(item => item.name)
+  const fields2Search = props.columns.filter(item => item.query).map(item => item.name)
 
   if (q.value.length > 0) {
     return data.filter(item => {
@@ -172,19 +169,14 @@ const filterDataByQuery = (data) => {
 
 const filterDataByQuickFilter = (data) => {
   if (selectedFilters.value.length > 0) {
-    let finded = false
-    return data.filter(item => {
-      finded = false
-      for (let i = 0; i < selectedFilters.value.length; i++) {
-        const el = selectedFilters.value[i]
-        finded = item[el.name].toString() === el.value.toString()
-        if (finded) {
-          console.log('YES')
-          break
-        }
+    return selectedFilters.value.reduce((res, el) => {
+      if (res.length > 0) {
+        res = res.filter(item => item[el.name].toString() === el.value.toString())
+      } else {
+        res = data.filter(item => item[el.name].toString() === el.value.toString())
       }
-      return finded
-    })
+      return res
+    }, [])
   } else {
     return data
   }
@@ -205,13 +197,15 @@ const getItemColumValue = (item, column) => {
 
 const getStats = (data) => {
   const stats = {}
-  props.data.columns.forEach(el => {
-    stats[el.name] = {}
+  props.columns.forEach(el => {
+    if (el.filter) {
+      stats[el.name] = {}
+    }
   })
 
   data.forEach(el => {
-    props.data.columns.forEach(column => {
-      if (Object.keys(el).includes(column.name)) {
+    props.columns.forEach(column => {
+      if (Object.keys(el).includes(column.name) && Object.keys(stats).includes(column.name)) {
         const label = el[column.name]
         stats[column.name][label] = stats[column.name][label] ? stats[column.name][label] + 1 : 1
       }
