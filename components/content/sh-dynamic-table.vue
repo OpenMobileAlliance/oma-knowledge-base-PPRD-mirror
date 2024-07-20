@@ -34,8 +34,15 @@
       <table :class="ui.table">
         <thead :calss="ui.thead">
           <tr :ui.tr.base>
-            <MDC v-for="column in props.columns" :value="getColumTitle(column)" tag="th" class="not-prose"
-              :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]" />
+            <template v-for="column in props.columns">
+              <th :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]">
+                <UButton v-if="column.sortable" v-bind="{ ...(config.default.sortButton) }" :icon="getSortIcon(column)"
+                  @click="onSort(column)">
+                  <MDC :value="getColumTitle(column)" class="not-prose" />
+                </UButton>
+                <MDC v-else :value="getColumTitle(column)" class="not-prose" />
+              </th>
+            </template>
           </tr>
         </thead>
         <tbody :calss="ui.tbody">
@@ -119,6 +126,7 @@ const updateDisplayData = async () => {
 
   let filteredData = filterDataByQuery(items.value)
   filteredData = filterDataByQuickFilter(filteredData)
+  filteredData = sortDisplayData(filteredData)
 
   stats.value = getStats(filteredData)
 
@@ -147,6 +155,7 @@ const accordionItems = toRef([
     slot: "quick-filters"
   }
 ])
+const sortColumn = toRef({})
 
 const filterDataByQuery = (data) => {
   const fields2Search = props.columns.filter(item => item.query).map(item => item.name)
@@ -182,6 +191,14 @@ const filterDataByQuickFilter = (data) => {
   }
 }
 
+const sortDisplayData = (data) => {
+  if (Object.keys(sortColumn).length > 0) {
+    return data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction))
+  } else {
+    return data
+  }
+}
+
 const isSelectedFilter = (key, value) => {
   const res = selectedFilters.value.filter(item => item.name === key && item.value === value)
   return res.length > 0
@@ -193,6 +210,14 @@ const getColumTitle = (column) => {
 
 const getItemColumValue = (item, column) => {
   return item[column?.name] ? `${item[column?.name]}` : ""
+}
+
+const getSortIcon = (column) => {
+  if (sortColumn.value?.name === column.name) {
+    return sortColumn.value.direction === 'asc' ? config.default.sortAscIcon : config.default.sortDescIcon
+  } else {
+    return config.default.sortButton.icon
+  }
 }
 
 const getStats = (data) => {
@@ -244,6 +269,28 @@ const onFilterChange = (e) => {
   q.value = ""
   updateDisplayData()
 }
+
+const defaultSort = (a: any, b: any, direction: 'asc' | 'desc') => {
+  if (a === b) {
+    return 0
+  }
+
+  if (direction === 'asc') {
+    return a < b ? -1 : 1
+  } else {
+    return a > b ? -1 : 1
+  }
+}
+
+const onSort = (column) => {
+  if (sortColumn.value.name === column.name) {
+    sortColumn.value.direction = sortColumn.value.direction === 'asc' ? 'desc' : 'asc'
+  } else {
+    sortColumn.value = { name: column.name, direction: 'asc' }
+  }
+  updateDisplayData()
+}
+
 
 await updateData()
 </script>

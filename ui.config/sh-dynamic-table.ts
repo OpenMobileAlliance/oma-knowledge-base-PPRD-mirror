@@ -28,6 +28,16 @@ export default {
   pagination: '',
   perPage: [10, 25, 50, 100],
   default: {
-    perPage: 10
+    perPage: 10,
+    sortAscIcon: 'i-heroicons-bars-arrow-up-20-solid',
+    sortDescIcon: 'i-heroicons-bars-arrow-down-20-solid',
+    sortButton: {
+      icon: 'i-heroicons-arrows-up-down-20-solid',
+      trailing: true,
+      square: true,
+      color: 'gray' as const,
+      variant: 'ghost' as const,
+      class: '-m-1.5'
+    },
   }
 }
