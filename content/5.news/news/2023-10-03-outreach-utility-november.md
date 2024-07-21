@@ -1,14 +1,14 @@
 ---
-layout: news
-image: /images/news/utility2.jpeg
+urlUpperBase:
+urlimage: /images/news/utility2.jpeg
+imageBackground: ""
 title: Unlocking Utility Benefits with LwM2M
 subtitle: Workshop, Nov 15, 08:30 am PST.
 description: Workshop promotion.
-url: 
-date: 2023-Oct-03
-by: OMA SpecWorks
-homepage: 30
-tags: s
+leftLabel: 2023-Oct-03
+rightLabel: OMA SpecWorks
+cardID: 20
+tags: 
     - workshop
 ---
 

@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/news/validation-test.png
+urlUpperBase: ""
+urlimage: /images/news/validation-test.png
+imageBackground: ""
 title: Virtual Test Event
 subtitle: Specification Validation Event (SVE#40), Nov 2023.
-description: Virtual Test Event.
-url: 
-date: 2023-Nov-20
-by: OMA SpecWorks
-homepage: 23
+description: Virtual Test Event. 
+leftLabel: 2023-Nov-20
+rightLabel: OMA SpecWorks
+cardID: 22
 tags: 
     - workshop
 ---

@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/news/electric-meter.jpeg
+urlUpperBase: http://21247113.hs-sites.com/iot-for-utilities-workshop-1
+urlimage: /images/news/electric-meter.jpeg
+imageBackground: ""
 title: IoT and LwM2M for Utilities
 subtitle: Post-Workshop Updates
 description: Implementing LightWeight M2M protocol for Utilities
-url: http://21247113.hs-sites.com/iot-for-utilities-workshop-1
-date: 2023-Jun-09
-by: OMA SpecWorks
-homepage: 100
+leftLabel: 2023-Jun-09
+rightLabel: OMA SpecWorks
+cardID: 18
 tags: 
     - collaboration
 ---

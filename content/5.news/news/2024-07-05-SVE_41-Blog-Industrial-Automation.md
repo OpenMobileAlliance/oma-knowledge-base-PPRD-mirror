@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/news/Industrial_Autom_Underway.png
+urlUpperBase: ""
+urlimage: /images/news/Industrial_Autom_Underway.png
+imageBackground: ""
 title:  "Industrial Automation: Connecting Operations, People, Machines"
 subtitle: 
 description: 
-url: 
-date: 2024-July-5
-by: OMA
-homepage: 22
+leftLabel: 2024-July-5
+rightLabel: OMA
+cardID: 32
 tags: 
     - news
     - workshop

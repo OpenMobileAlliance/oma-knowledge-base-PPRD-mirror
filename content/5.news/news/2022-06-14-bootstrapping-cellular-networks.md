@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/news/bootstrapping.jpeg
+urlUpperBase: ""
+urlimage: /images/news/bootstrapping.jpeg
+imageBackground: ""
 title: LwM2M, Bootstrapping in Cellular Networks
 description: Creation of LightweightM2M Vanilla devices that can be configured automatically.
 subtitle: New Work Item
-url: 
-by: OMA SpecWorks
-date: 2022-Jun-14
-homepage: 210
+rightLabel: OMA SpecWorks
+leftLabel: 2022-Jun-14
+cardID: 14
 tags:
     - bootstrap
     - cellular networks

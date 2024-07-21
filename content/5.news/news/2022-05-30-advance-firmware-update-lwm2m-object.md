@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/news/micro-controllers.png
+urlUpperBase: ""
+urlimage: /images/news/micro-controllers.png
+imageBackground: ""
 title: Advanced LwM2M Firmware Update Object
 description: Blog to announce the agreement to start working in a new, advanced Advance Firmware Update Object
 subtitle: OMA SpecWorks is developing a new, advanced LwM2M Firmware Object
-url: 
-by: OMA SpecWorks
-date: 2022-May-30
-homepage: 300
+rightLabel: OMA SpecWorks
+leftLabel: 2022-May-30
+cardID: 12
 tags: 
     - microcontrollers
 ---

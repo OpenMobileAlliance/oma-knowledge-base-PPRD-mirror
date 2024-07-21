@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/iot_text_1.jpg
+urlUpperBase: ""
+urlimage: /images/iot_text_1.jpg
+imageBackground: ""
 title: A Tailored Solution for Utilities
 subtitle: Workshop, Nov 15, 08:30 am PST
 description: Online Workshop
-url: 
-date: 2023-Nov-15
-by: OMA SpecWorks
-homepage: 22
+leftLabel: 2023-Nov-15
+rightLabel: OMA SpecWorks
+cardID: 24
 tags: 
     - workshop
 ---

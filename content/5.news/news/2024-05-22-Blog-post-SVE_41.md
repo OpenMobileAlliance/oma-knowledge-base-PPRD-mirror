@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/modernazing-utilities.png
+urlUpperBase: ""
+urlimage: /images/modernazing-utilities.png
+imageBackground: ""
 title:  Harnessing the Power of Automation and IoT in the Utilities Industry
 subtitle: 
 description: 
-url: 
-date: 2024-June-3
-by: OMA
-homepage: 18
+leftLabel: 2024-June-3
+rightLabel: OMA
+cardID: 28
 tags: 
     - news
     - workshop

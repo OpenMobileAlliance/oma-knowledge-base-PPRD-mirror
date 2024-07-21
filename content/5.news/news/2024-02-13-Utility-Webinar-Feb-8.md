@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/news/water_meters.png
+urlUpperBase: ""
+urlimage: /images/news/water_meters.png
+imageBackground: ""
 title: Revolutionizing the Utilities Sector - The Transformative Power of LwM2M
 subtitle: Workshop, Feb 8, 11 pm PST
-description: Online Workshop
-url: 
-date: 2024-Feb-16
-by: Olivier Carmona
-homepage: 21
+description: Online Workshop 
+leftLabel: 2024-Feb-16
+rightLabel: Olivier Carmona
+cardID: 26
 tags: 
     - workshop
 ---
