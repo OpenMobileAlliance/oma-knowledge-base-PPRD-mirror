@@ -10,7 +10,7 @@
       <div :class="ui.filter">
         <UAccordion :items="accordionItems" color="gray" class="not-prose">
           <template #quick-filters>
-            <div class="grid gap-4 grid-cols-2">
+            <div :class="getQuickFilterClass()">
               <template v-for="column in props.columns">
                 <div class="rounded-lg border" v-if="column.filter">
                   <UDivider :label="column.title" class="py-4" />
@@ -217,6 +217,22 @@ const getSortIcon = (column) => {
     return sortColumn.value.direction === 'asc' ? config.default.sortAscIcon : config.default.sortDescIcon
   } else {
     return config.default.sortButton.icon
+  }
+}
+
+const getQuickFilterClass = () => {
+  const numFilterColumns = props.columns.reduce((res, column) => {
+    return column.filter ? res + 1 : res
+  }, 0)
+
+  if (numFilterColumns < 2) {
+    return 'grid grid-cols-1 gap-4'
+  } else if (numFilterColumns < 3) {
+    return 'grid grid-cols-2 gap-2'
+  } else if (numFilterColumns < 4) {
+    return 'grid grid-cols-3 gap-1'
+  } else {
+    return 'grid grid-cols-4 gap-1'
   }
 }
 
