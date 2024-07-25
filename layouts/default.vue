@@ -6,7 +6,7 @@
       </template>
     </AppHeader>
     <AppBreadcrumbs class="absolute z-20"/>
-    <UContainer class="pt-10 pb-20">
+    <UContainer :ui="{constrained: '',}" class="pb-20">
       <slot />
     </UContainer>
     <AppFooter />
