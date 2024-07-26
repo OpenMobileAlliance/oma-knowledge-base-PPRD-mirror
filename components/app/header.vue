@@ -13,6 +13,7 @@
       <div :class="ui.center">
         <div class="flex justify-between items-start mb-2">
           <div :class="ui.right">
+            <ColorMode />
             <span class="mr-2 text-sm">
               <ULink to="signin" active-class="text-primary" class="hover:text-primary">Sign In</ULink>
             </span>
