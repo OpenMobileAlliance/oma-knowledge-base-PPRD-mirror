@@ -165,6 +165,9 @@ The {{ $doc.constructorName }} constructor represents a card divided in two half
       <td>n/a</td>
       <td>The background image for the component's image section.</td>
     </tr>
+    <td>description</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
   </tbody>
 </table>
 
