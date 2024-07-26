@@ -24,6 +24,7 @@ import { textImg as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
     defineProps<{
+        description?: string;
         positionText?: string;
         spanText?: string;
         alignText?: string;
@@ -37,6 +38,7 @@ const props = withDefaults(
     }>(),
     {
         ui: () => ({}),
+        description: "",
         positionText: "right",
         spanText: "m",
         alignText: "center",

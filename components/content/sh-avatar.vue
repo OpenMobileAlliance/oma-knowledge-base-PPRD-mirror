@@ -36,6 +36,7 @@ import { avatar as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
   defineProps<{
+    description?: string;
     srcAvatar?: string;
     altAvatar?: string;
     name?: string;
@@ -49,6 +50,7 @@ const props = withDefaults(
   }>(),
   {
     ui: () => ({}),
+    description: "",
     srcAvatar: "",
     altAvatar: "",
     name: "",

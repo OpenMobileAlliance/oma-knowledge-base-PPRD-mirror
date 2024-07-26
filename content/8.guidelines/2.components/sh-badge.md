@@ -47,6 +47,11 @@ The {{ $doc.constructorName }} constructor represents a short text that is easil
       <td><code>wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
     </tbody>
 </table>
 

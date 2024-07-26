@@ -18,6 +18,7 @@ import { microCard as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
   defineProps<{
+    description?: string;
     urlWrapper?: string;
     urlImage?: string;
     altImage?: string;
@@ -30,6 +31,7 @@ const props = withDefaults(
   }>(),
   {
     ui: () => ({}),
+    description: "",
     urlWrapper: "",
     urlImage: "",
     altImage: "",

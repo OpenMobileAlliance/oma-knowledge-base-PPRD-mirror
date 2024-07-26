@@ -14,6 +14,7 @@ import {button as config } from "@/ui.config"
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
+    description?: string;
     urlButton: string;
     target?: string;
     colorButton?: string;
@@ -26,6 +27,7 @@ const props = withDefaults(
   }>(),
   {
     ui: () => ({}),
+    description: "",
     urlButton: () => "",
     target: () => config.default.target,
     colorButton: () => config.default.colorButton,

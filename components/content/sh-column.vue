@@ -21,6 +21,7 @@ import {column as config, gridSizes } from "@/ui.config"
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
+    description?: string;
     title?: string;
     subtitle?: string;
     footerText?: string;
@@ -29,6 +30,7 @@ const props = withDefaults(
   }>(),
   {
     ui: () => ({}),
+    description: "",
     title: "",
     subtitle: "",
     footerText: "",
