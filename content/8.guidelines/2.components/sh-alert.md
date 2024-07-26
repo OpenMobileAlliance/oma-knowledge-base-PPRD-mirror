@@ -123,6 +123,11 @@ The {{ $doc.constructorName }} constructor creates a notification field with dif
       <td><code>n/a</code></td>
       <td>This represents type of alert. <b>Options</b>: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
     </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 
