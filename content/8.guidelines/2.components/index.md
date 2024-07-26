@@ -11,6 +11,7 @@ description:
 - [Card](/guidelines/components/sh-card)
 - [Card (Micro)](/guidelines/components/sh-micro-card)
 - [Column](/guidelines/components/sh-column)
+- [FAQ](/guidelines/components/sh-faq)
 - [MultiColumn](/guidelines/components/sh-multi-column)
 - [Segment](/guidelines/components/sh-segment)
 - [Social](/guidelines/components/sh-social)
