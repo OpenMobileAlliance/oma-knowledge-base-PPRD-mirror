@@ -132,9 +132,9 @@ The {{ $doc.constructorName }} constructor allows for clients and customers to s
       <td>The color of the button.</td>
     </tr>
     <tr>
-      <td>variant</td>
+      <td>styleButton</td>
       <td>n/a</td>
-      <td>The variant style of the button (e.g., outline, soft, solid, link, ghost). </td>
+      <td>The style of the button (e.g., outline, soft, solid, link, ghost). </td>
     </tr>
     <tr>
       <td>icon</td>

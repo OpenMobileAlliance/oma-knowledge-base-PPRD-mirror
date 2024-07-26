@@ -10,7 +10,7 @@
                     <UInput placeholder="you@example.com" icon="i-heroicons-envelope" class="dark:invert"/>
                 </UFormGroup>
             </div>
-            <UButton :to="urlButton" target="_blank" :label="labelButton" :color="colorButton" size="xl" :class="ui.button" :variant="variant" />
+            <UButton :to="urlButton" target="_blank" :label="labelButton" :color="colorButton" size="xl" :class="ui.button" :variant="styleButton" />
             <UIcon :name="icon" dynamic size="lg" :class="ui.icon" :alt="altIcon" />
         </div>
     </div>
@@ -31,7 +31,7 @@ const props = withDefaults(
         urlButton?: string;
         labelButton?: string;
         colorButton?: string;
-        variant?: string;
+        styleButton?: string;
         icon?: string;
         altIcon?: string;
         imageBackground?: string;
@@ -48,7 +48,7 @@ const props = withDefaults(
         urlButton: "",
         labelButton: "",
         colorButton: "",
-        variant: "solid",
+        styleButton: "solid",
         icon: "",
         altIcon: "",
         imageBackground: "",
