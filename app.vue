@@ -56,4 +56,21 @@ h7 {
   font-size: var(--h7-font-size);
   font-family: var(--h7-font-type);
 }
+
+.dark code,
+.dark p,
+.dark strong,
+.dark em,
+.dark ul,
+.dark a,
+.dark td,
+.dark th,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: white;
+}
 </style>
