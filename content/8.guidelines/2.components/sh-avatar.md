@@ -145,6 +145,11 @@ The constructor creates a display format showcasing an avatar that represents a 
       <td>n/a</td>
       <td>URL link to the person's Twitter profile.</td>
     </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -212,14 +217,14 @@ These style properties can be modified via `ui` and are stored in the `sh-avatar
 
 ```ts
 export default {
-    wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit",
+    wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit dark:bg-white rounded-md",
     avatar: "grayscale justify-self-end tracking-widest rounded-full size-48",
     base: "",
-    name: "text-3xl font-bold grow text-oma-500 bottom-0",
-    role: "text-lg font-semibold text-black dark:text-white -mt-4",
-    company: "text-lg text-gray-500 tracking-widest -mt-5",
+    name: "text-3xl font-bold grow text-oma-500 bottom-0 dark:invert",
+    role: "text-lg font-semibold text-black dark:text-white -mt-4 dark:invert",
+    company: "text-lg text-gray-500 tracking-widest -mt-5 dark:text-black dark:invert",
     socials: "flex text-5xl -mx-1 -mt-4",
-    icon: "transition-transform transform hover:-translate-y-1 dark:text-white duration-400",
+    icon: "transition-transform transform hover:-translate-y-1 dark:text-black duration-400",
     // Default Tailwind CSS values
     default: {
     }
@@ -230,8 +235,8 @@ export default {
 These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-*  **Value**: `"grid grid-cols-2 gap-4 p-4 mx-auto w-fit"`
-*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the `wrapper` uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content.
+*  **Value**: `"grid grid-cols-2 gap-4 p-4 mx-auto w-fit dark:bg-white rounded-md"`
+*  **Description**: This defines the overall styling for the container holding the avatar elements. The value "grid grid-cols-2 gap-4 p-4 mx-auto w-fit" indicates that the `wrapper` uses a CSS grid layout with two columns, has a gap of 4 units between grid items, padding of 4 units, and centers the container horizontally with mx-auto and its width is set to fit the content. A "dark:bg-white" setts background to white whne in dark mode and "rounded-md" creates a rounded edges.
 
 _**avatar**_
 *  **Value**: <code>"grayscale justify-self-end tracking-widest rounded-full size-48"</code>
@@ -242,15 +247,15 @@ _**base**_
 *  **Description**: This is an empty placeholder for additional base styles that can be customized if needed.
 
 _**name**_
-*  **Value**: <code>"text-3xl font-bold grow text-oma-500 bottom-0"</code>
+*  **Value**: <code>"text-3xl font-bold grow text-oma-500 bottom-0 dark:invert"</code>
 *  **Description**: This defines the styling for the text displaying the person's name. The value "text-3xl font-bold grow text-oma-500 bottom-0" indicates a large font size (text-3xl), bold font weight (font-bold), flexible growth within the container (grow), oma color (text-oma-500), and positioning at the bottom of its container (bottom-0).
 
 _**role**_
-*  **Value**: <code>"text-lg font-semibold text-black dark:text-white -mt-4"</code>
+*  **Value**: <code>"text-lg font-semibold text-black dark:text-white -mt-4 dark:invert"</code>
 *  **Description**: This specifies the styling for the text displaying the role or position of the person. The value "text-lg font-semibold text-black dark:text-white -mt-4" includes a medium-large font size (text-lg), semi-bold font-weight (font-semibold), black text color (text-black) that switches to white in dark mode (dark:text-white), and a top margin of -4 units (-mt-4).
 
 _**company**_
-*  **Value**: <code>"text-lg text-gray-500 tracking-widest -mt-5"</code>
+*  **Value**: <code>"text-lg text-gray-500 tracking-widest -mt-5 dark:text-black dark:invert"</code>
 *  **Description**: This defines the styling for the text displaying the company name. The value "text-lg text-gray-500 tracking-widest -mt-5" includes a medium-large font size (text-lg), gray color (text-gray-500), widest possible letter spacing (tracking-widest), and a top margin of -5 units (-mt-5).
 
 _**socials**_
@@ -258,7 +263,7 @@ _**socials**_
 *  **Description**: This specifies the styling for the container holding social media icons. The value "flex text-5xl -mx-1 -mt-2" indicates a flexible box layout (flex), large icon size (text-5xl), horizontal margin of -1 unit (-mx-1), and top margin of -2 units (-mt-2).
 
 _**icon**_
-*  **Value**: <code>"transition-transform transform hover:-translate-y-1 dark:text-white duration-400"</code>
+*  **Value**: <code>"transition-transform transform hover:-translate-y-1 dark:text-black duration-400"</code>
 *  **Description**: This defines the styling for individual social media icons. The value "transition-transform transform hover:-translate-y-1 dark:text-white duration-400" includes a smooth transformation transition (transition-transform), translation transformation (transform), upward translation on hover (hover:-translate-y-1), white color in dark mode (dark:text-white), and a transition duration of 400ms (duration-400).
 
 _**default**_
