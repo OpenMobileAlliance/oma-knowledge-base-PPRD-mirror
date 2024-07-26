@@ -15,7 +15,7 @@ const props = withDefaults(
     description?: string;
     cols: Number;
     gap?: String;
-    class?: Any;
+    class?: any;
   }>(),
   {
     ui: () => ({}),

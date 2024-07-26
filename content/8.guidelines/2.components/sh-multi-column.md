@@ -4,11 +4,14 @@ description:
 constructorName: ShMultiColumn
 ---
 
-## Usage
-### Basic Usage
+### Usage
+
+#### Presentation 
+This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
 The following example shows a basic example of the <b>{{ $doc.constructorName }}</b> component. It is used  to organise the content in three columns with two rows.
 >Note: The `border` around the <b>{{ $doc.constructorName }}</b> is just to highlight the area covered by the component. It is not displayed in the written example below.
 
+##### Example Basic
 ::ShMultiColumn
 ---
 ui:
@@ -19,13 +22,13 @@ First column
 
 Second column
 
-Last colum
+Last column
 
 First column 2nd row
 
 Second column 2nd row
 
-Last colum 2nd row
+Last column 2nd row
 ::
 
 This is how the above example is written in markdown:
@@ -39,15 +42,80 @@ First column
 
 Second column
 
-Last colum
+Last column
 
 First column 2nd row
 
 Second column 2nd row
 
-Last colum 2nd row
+Last column 2nd row
 ::
 ```
+
+### Props
+These are the properties and attributes associated to the {{ $doc.constructorName }} constructor
+
+#### Properties and Attributes Description
+The constructor <b>{{ $doc.constructorName }}</b> allows to organize content inside a multi-column layout. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor:
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Attribute</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4"><code>ui</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>The <code>ui</code> property in the <code>ShMultiColumn</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the multi-column component. Each attribute within the <code>ui</code> property targets a specific part of the multi-column display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
+    </tr>
+    <tr>
+      <td><code>wrapper</code></td>
+      <td>n/a</td>
+      <td>Defines the overall styling for the container that holds all the elements of the multi-column. The default value is an empty string, indicating no styles are applied by default.</td>
+    </tr>
+    <tr>
+      <td><code>size</code></td>
+      <td>"L"</td>
+      <td>This attribute specifies the default width of the left column. The value "L" indicates a large size.</td>
+    </tr>
+    <tr>
+      <td><code>gap</code></td>
+      <td>"gap-4"</td>
+      <td>This attribute controls the gutters between columns. The value <code>"gap-4"</code> applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the <code>`gap`</code> property can be found in the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a>.</td>
+    </tr>
+    <tr>
+      <td><code>cols</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>The number of columns to display. If not provided, it defaults to the value specified in the configuration. If a value is provided, e.g., 4, the width of the space ocupied by the multi-column is divided by 4.</td>
+    </tr>
+    <tr>
+      <td><code>gap</code></td>
+      <td>n/a</td>
+      <td>"gap-4"</td>
+      <td>Optional. Controls the gutters between columns. The value <code>"gap-4"</code> applies a gap utility class from Tailwind CSS to add spacing between the columns.</td>
+    </tr>
+    <tr>
+      <td><code>class</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Optional. Additional CSS classes to apply to the multi-column container.</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
+  </tbody>
+</table>
+
 ### Advance Usage
 In the following example the <b>{{ $doc.constructorName }}</b> component is styled using the attribute `ui.wrapper` and `class` property. The [ShColumn](/guidelines/components/sh-column) component is usually used with the <b>{{ $doc.constructorName }}</b> component to present each column content. It is possible to use different width for each column.
 
@@ -346,67 +414,11 @@ This colum now is 2 column wide.
 ::
 ```
 
-## Properties
-
-The constructor  <b>{{ $doc.constructorName }}</b> allows to organize content inside a multi-column layout. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor:
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Attribute</th>
-      <th>Default</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="4"><code>ui</code></td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>The <code>ui</code> property in the <code>ShMultiColumn</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the multi-column component. Each attribute within the <code>ui</code> property targets a specific part of the multi-column display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
-    </tr>
-    <tr>
-      <td><code>wrapper</code></td>
-      <td>n/a</td>
-      <td>Defines the overall styling for the container that holds all the elements of the multi-column. The default value is an empty string, indicating no styles are applied by default.</td>
-    </tr>
-    <tr>
-      <td><code>size</code></td>
-      <td>"L"</td>
-      <td>This attribute specifies the default width of the left column. The value "L" indicates a large size.</td>
-    </tr>
-    <tr>
-      <td><code>gap</code></td>
-      <td>"gap-4"</td>
-      <td>This attribute controls the gutters between columns. The value <code>"gap-4"</code> applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the <code>`gap`</code> property can be found in the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a>.</td>
-    </tr>
-    <tr>
-      <td><code>cols</code></td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>The number of columns to display. If not provided, it defaults to the value specified in the configuration. If a value is provided, e.g., 4, the width of the space ocupied by the multi-column is divided by 4.</td>
-    </tr>
-    <tr>
-      <td><code>gap</code></td>
-      <td>n/a</td>
-      <td>"gap-4"</td>
-      <td>Optional. Controls the gutters between columns. The value <code>"gap-4"</code> applies a gap utility class from Tailwind CSS to add spacing between the columns.</td>
-    </tr>
-    <tr>
-      <td><code>class</code></td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>Optional. Additional CSS classes to apply to the multi-column container.</td>
-    </tr>
-  </tbody>
-</table>
-
-## Config
-Content of the `sh-multi-column.ts` file:
+### Config
+These style properties can be modified via `ui` and are stored in the `sh-multi-column.ts` file:
 
 ```ts
-{
+export default {
   wrapper: "",
   default: {
     size: 3,
@@ -415,11 +427,10 @@ Content of the `sh-multi-column.ts` file:
 }
 ```
 
-## Configuration
-The style attributes for the MultiColumn configuration can be modified via the property `ui` and are stored in the `sh-multi-column.ts` file:
+#### Class Descriptions
+These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
-### Attributes Description
-This section describes the attribute values utilized in the ShMultiColumn constructor. These values are customizable and can be strengthened or overridden through the UI properties' attributes.
+### Class Descriptions
 
 _**wrapper**_:
 
