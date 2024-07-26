@@ -1,4 +1,63 @@
 export default defineAppConfig({
+  ui: {
+    primary: "oma",
+  },
+  header: {
+    menu: {
+      font: {
+        type: 'Arial, sans-serif',
+        size: '22px',
+      }
+    }
+  },
+  main: {
+    font: {
+      type: 'DM Sans',
+      size: '23px',
+    },
+    h1: {
+      font: {
+        type: 'DM Sans',
+        size: '2em',
+      },
+    },
+    h2: {
+      font: {
+        type: 'DM Sans',
+        size: '1.5em',
+      },
+    },
+    h3: {
+      font: {
+        type: 'DM Sans',
+        size: '1.17em',
+      },
+    },
+    h4: {
+      font: {
+        type: 'DM Sans',
+        size: '1em',
+      },
+    },
+    h5: {
+      font: {
+        type: 'DM Sans',
+        size: '0.83em',
+      },
+    },
+    h6: {
+      font: {
+        type: 'DM Sans',
+        size: '0.67em',
+      },
+    },
+    h7: {
+      font: {
+        type: 'DM Sans',
+        size: '0.44em',
+      },
+    },
+  },
   socialLinks: {
     linkedIn: {
       title: "LinkedIn",
@@ -31,7 +90,4 @@ export default defineAppConfig({
       url: "http://openmobilealliance.org/rss/",
     },
   },
-  ui: {
-    primary: "oma"
-  }
 });

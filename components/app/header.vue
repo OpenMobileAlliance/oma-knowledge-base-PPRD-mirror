@@ -1,8 +1,8 @@
 <template>
   <header :class="ui.wrapper">
-    <UContainer :class="ui.container">
+    <UContainer :ui="{constrained: '',}" :class="ui.container">
       <div :class="ui.left">
-        <slot name="letf">
+        <slot name="left">
           <NuxtLink :to="to" :aria-label="ariaLabel" :class="ui.logo">
             <slot name="logo">
               {{ title || "OMA Knowledge Base" }}
@@ -25,9 +25,9 @@
             </slot>
           </div>
         </div>
-        <div class="">
-          <ul class="flex justify-between items-start">
-            <li v-for="link of topLinks" :key="link.path" class="ml-4">
+        <div>
+          <ul class="flex gap-1.5">
+            <li v-for="link in topLinks" :key="link.path" class="ml-4" :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
               <ULink :to="link._path" class="hover:text-primary">{{ link.title }}</ULink>
             </li>
           </ul>
@@ -39,8 +39,7 @@
 
 <script setup lang="ts">
 const config = {
-  wrapper:
-    "bg-background/75 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50",
+  wrapper: "bg-background/75 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
   left: "lg:flex-1 flex items-center gap-1.5",
   center: "hidden lg:flex flex flex-col grow",
@@ -83,4 +82,6 @@ const topLinks = navigation.value.reduce((previous, current) => {
   }
   return previous;
 }, []);
+
+const header = useAppConfig().header;
 </script>
