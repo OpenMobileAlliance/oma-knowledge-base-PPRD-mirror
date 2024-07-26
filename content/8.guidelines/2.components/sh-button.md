@@ -520,6 +520,12 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
             <td>n/a</td>
             <td>Sets the padding for the button, with options ranging from <code>2xs</code>, <code>xs</code>, <code>sm</code>, <code>md</code>, <code>base</code>, <code>lg</code>, <code>xl</code>, <code>2xl</code>, <code>3xl</code>, <code>4xl</code>, to <code>5xl</code>. Each padding size corresponds to predefined padding values, ensuring the button's content is appropriately spaced. It is recommended to <b>NOT</b> modify these values as it is synced with the <code>size</code> property.</td>
         </tr>
+        <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
     </tbody>
 </table>
 
@@ -528,7 +534,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
 ## Config
 
 ```ts
-{
+export default {
   wrapper: "align-middle m-1",
   inner: "text-center not-prose mx-auto",
   styleButton: {
@@ -573,3 +579,82 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
   }
 }
 ```
+
+#### Class Descriptions
+
+These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+
+_**wrapper**_
+*  **Value**: <code>"align-middle m-1"</code>
+*  **Description**: Defines the alignment and margin for the container. The value "align-middle m-1" centers the element vertically (align-middle) and adds a margin of 1 unit (m-1).
+
+_**inner**_
+*  **Value**: <code>"text-center not-prose mx-auto"</code>
+*  **Description**: Specifies styles for inner content. The value "text-center not-prose mx-auto" centers the text (text-center), excludes prose formatting (not-prose), and centers horizontally (mx-auto).
+
+_**styleButton.solid**_
+*  **Value**: <code>'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white dark:text-gray-900 no-underline'</code>
+*  **Description**: Defines styles for a solid button. The value includes background color based on `{colorButton}` (bg-{colorButton}-500, dark:bg-{colorButton}-400), white text color (text-white), dark mode text color (dark:text-gray-900), and no underline (no-underline).
+
+_**styleButton.outline**_
+*  **Value**: <code>'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline'</code>
+*  **Description**: Defines styles for an outlined button. The value includes text color based on `{colorButton}` (text-{colorButton}-500, dark:text-{colorButton}-400), an inset ring with color based on `{colorButton}` (ring-1 ring-inset ring-{colorButton}-500, dark:ring-{colorButton}-400), and no underline (no-underline).
+
+_**styleButton.link**_
+*  **Value**: <code>'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'</code>
+*  **Description**: Defines styles for a link button. The value includes text color based on `{colorButton}` (text-{colorButton}-500, dark:text-{colorButton}-400), hover text color (hover:text-{colorButton}-600, dark:hover:text-{colorButton}-500), disabled text color (disabled:text-{colorButton}-500, dark:disabled:text-{colorButton}-400), underline offset (underline-offset-4), hover underline (hover:underline), and focus-visible ring with color based on `{colorButton}` (focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500, dark:focus-visible:ring-{colorButton}-400).
+
+_**fullWidth**_
+*  **Value**: <code>"w-full flex justify-center items-center"</code>
+*  **Description**: Defines styles for full width elements. The value "w-full flex justify-center items-center" makes the element take full width (w-full), centers it using flexbox (flex justify-center items-center).
+
+_**inline**_
+*  **Value**: <code>"inline-flex items-center"</code>
+*  **Description**: Defines styles for inline elements. The value "inline-flex items-center" sets inline flex display (inline-flex) and centers items vertically (items-center).
+
+_**rounded**_
+*  **Value**: <code>"rounded-md"</code>
+*  **Description**: Defines the border radius. The value "rounded-md" applies a medium border radius.
+
+_**size**_
+*  **Value**: <code>{
+    '2xs': 'text-xs',
+    xs: 'text-xs',
+    sm: 'text-sm',
+    md: 'text-md',
+    base: 'text-base',
+    lg: 'text-lg',
+    xl: 'text-xl',
+    '2xl': 'text-2xl',
+    '3xl': 'text-3xl',
+    '4xl': 'text-4xl',
+    '5xl': 'text-5xl'
+  }</code>
+*  **Description**: Defines text sizes for various options. Each value represents a different text size class from extra small (text-xs) to five times extra large (text-5xl).
+
+_**padding**_
+*  **Value**: <code>{
+    '2xs': 'px-1 py-1',
+    xs: 'px-1.5 py-1.5',
+    sm: 'px-2 py-2',
+    md: 'px-2.5 py-2.5',
+    base: 'px-3 py-3',
+    lg: 'px-7 py-6',
+    xl: 'px-8 py-7',
+    '2xl': 'px-9 py-8',
+    '3xl': 'px-10 py-9',
+    '4xl': 'px-11 py-10',
+    '5xl': 'px-12 py-11',
+  }</code>
+*  **Description**: Defines padding sizes for various options. Each value represents different padding classes for different sizes.
+
+_**default**_
+*  **Value**: <code>{
+    size: 'base',
+    styleButton: 'solid',
+    colorButton: 'primary',
+    target: '_blank',
+  }</code>
+*  **Description**: Defines default settings. The value includes default text size (size: 'base'), default button style (styleButton: 'solid'), default button color (colorButton: 'primary'), and default link target (target: '_blank').
+
+These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
