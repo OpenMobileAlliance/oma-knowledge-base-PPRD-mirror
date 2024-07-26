@@ -70,6 +70,10 @@ The {{ $doc.constructorName }} constructor represents a versatile component that
       <td>n/a</td>
       <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShSegment</code>. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
+    <td><code>description</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
   </tbody>
 </table>
 
