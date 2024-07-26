@@ -22,6 +22,7 @@ import { actionCard as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
     defineProps<{
+        description?: string;
         title: string;
         subtitle?: string;
         text?: string;
@@ -38,6 +39,7 @@ const props = withDefaults(
     }>(),
     {
         ui: () => ({}),
+        description: "",
         title: "",
         subtitle: "",
         text: "",
