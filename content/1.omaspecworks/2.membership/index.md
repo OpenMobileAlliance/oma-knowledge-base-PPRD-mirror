@@ -120,7 +120,44 @@ We would like to thank all our member companies for their support. For a complet
 
 * Denotes 2023 Board of Directors seat
 
-THIS IS A PLACEHOLDER for the Current Members TABLE
+### Full
+
+- [Aetheros Inc.*](http://www.aetheros.com)
+- [Verizon](http://www.verizonwireless.com)
+- [Ericsson* (10+)](http://www.ericsson.com/se/)
+- [Intel Corporation (10+)](http://www.intel.com/content/www/us/en/homepage.html)
+- [Rohde & Schwarz (10+)](http://www.rohde-schwarz.com/)
+- [T-Mobile USA, Inc.* (5+)](http://www.t-mobile.com/)
+- [Itron* (5+)](https://www.itron.com/)
+- [IoTerop* (5+)](http://www.ioterop.com/)
+
+### Supporter
+
+- [Landis+Gyr Technology, Inc.](http://www.landisgyr.com)
+- [Polaris Wireless](http://www.polariswireless.com)
+- [Swift Navigation Inc.](http://www.swiftnav.com)
+- [Nokia (10+)](http://www.nokia.com/)
+- [Friendly Technologies (5+)](http://www.friendly-tech.com/)
+- [Smith Micro Software, Inc. (10+)](http://www.smithmicro.com/)
+- [IOTECC](http://www.iotecc.com)
+- [Cumulocity IoT](http://www.softwareag.com)
+- [Bulk Tainer Telematics Ltd](http://www.bulktainertelematics.com)
+- [Weihai Ploumeter Co., LTD](http://www.plou.cn/)
+- [Hydro-Québec](http://www.hydroquebec.com)
+- [HMD Global Oy](http://www.hmdglobal.com)
+- [Motive Software Solutions Inc](http://www.motive.com)
+- [Six Dee Telecom Solutions Private Limited](http://www.6dtech.co.in)
+
+### Associate
+
+- [AVSystem (5+)](https://www.avsystem.com/)
+- [Red Bend Software, acquired by HARMAN (10+)](https://services.harman.com/solutions/ota-software-management)
+- [Spirent Communications Ltd. (10+)](http://www.spirent.com/)
+- [Synapse Mobile Networks s.a. (10+)](http://www.synap.se/)
+- [Vuzix (5+)](http://www.vuzix.com/)
+- [Aclara Technologies](http://www.hubbell.com)
+
+
 
 ### Membership Benefits
 
@@ -282,54 +319,3 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
 </table>
 
 OMA SpecWorks invites you to send in the [Membership Application](https://omaspecworks.org/wp-content/uploads/2019/11/OMA-Reference-2019-0004-General_Application.pdf) today! For more information please contact Seth Newberry at [snewberry@omaorg](snewberry@omaorg).org.
-
-
-### Collaborate with OMA SpecWorks
-
-OMA SpecWorks is not alone in its role of creating standards, and recognizes the importance of working with other organizations that perform similar or complementary activities. To assist in this effort, OMA SpecWorks has relationships with outside organizations and standards bodies to ensure broad industry participation.  
-
-Liaison agreements with OMA SpecWorks operate in one of three ways:
-
-- Cooperation Framework (CF) provides a set of guidelines agreed (but not formally signed) by OMA SpecWorks and the external organization.
-- Cooperation Agreement (CA) where there is a formal, signed agreement in place between the external organization and OMA SpecWorks.
-- Memorandum of Understanding (MoU) is a signed formal agreement between the external organization and OMA SpecWorks.  
-
-For information on how to form a liaison with OMA SpecWorks, please contact Seth Newberry at [snewberry@omaorg.org](snewberry@omaorg.org).
-
-OMA currently holds liaison agreements with the following organizations:
-
-3GPP (Third Generation Partnership Project)  
-3GPP2 (Second Generation Partnership Project)  
-ADA (Application Developers Alliance)  
-ATIS  
-BBF (The Broadband Forum)  
-CCSA  
-CEA (Consumer Electronics Association)  
-China DRM Forum  
-DVB  
-ELSPA  
-ETSI  
-GCF (Global Certification Forum)  
-Global Platform  
-GSMA  
-ISO/IEC/JTC1/SC29/WG11  
-ITU-T  
-NFC Forum  
-NGMN  
-NPSTC National Public Safety Telecommunications Council  
-Oasis (e-Business standards)  
-OCF (Open Connectivity Foundation)  
-OGC  
-oneM2M  
-PTCRB  
-Small Cell Forum  
-TCCA – TETRA + Critical Communications Association  
-Telematics Forum  
-TIGA (Trade Association for Interests of Games developers)  
-TMF (Tele Management Forum)  
-TTA (Telecommunications Technology Association)  
-W3C (World Wide Web Consortium)  
-WBA (Wireless Broadband Association)  
-Wi-Fi Alliance  
-WS-I (Web Services Interoperability Organisation)  
-ZigBee Alliance

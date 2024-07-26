@@ -1,5 +1,5 @@
 ---
-title: INFORMATION
+title: NEWS
 ---
 
 ## Information

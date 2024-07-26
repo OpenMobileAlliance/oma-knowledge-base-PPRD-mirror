@@ -13,7 +13,6 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 
 ::ShActionCard
 ---
-imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
 subtitle: |
@@ -21,10 +20,6 @@ subtitle: |
 labelButton: Sign up
 colorButton: blue
 urlButton: https://www.nasa.gov/
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-altImage: NASA Logo
-icon: noto:rocket
-altIcon: Rocket
 text: |
  *New text goes [here](https://www.nasa.gov/).*
 ---
@@ -35,7 +30,6 @@ This is how it is constructed
 ```mdc
 ::ShActionCard
 ---
-imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
 subtitle: |
@@ -43,10 +37,6 @@ subtitle: |
 labelButton: Sign up
 colorButton: blue
 urlButton: https://www.nasa.gov/
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-altImage: NASA Logo
-icon: noto:rocket
-altIcon: Rocket
 text: |
  *New text goes [here](https://www.nasa.gov/).*
 ---
