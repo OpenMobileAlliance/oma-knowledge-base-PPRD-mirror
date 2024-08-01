@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial"],
   content: {
+    documentDriven: true,
     highlight: {
       theme: 'github-dark'
     },

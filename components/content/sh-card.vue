@@ -3,9 +3,7 @@
         <div :class="ui.upperBase" :style="backgroundClass">
             <NuxtLink :to="urlUpperBase" target="_blank" class="not-prose">
                 <div class="h-80 w-full flex justify-center items-center">
-                    <!-- Set a fixed height for the row containing the image -->
                     <img :src="urlImage" :class="ui.image" :alt="altImage" />
-                    <!-- Allow the image to expand within the row height -->
                 </div>
             </NuxtLink>
         </div>
@@ -40,7 +38,6 @@ import { card as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
     defineProps<{
-        cardID?: number;
         urlUpperBase?: string;
         urlImage?: string;
         altImage?: string;
@@ -79,4 +76,7 @@ const backgroundClass = computed(() => {
         return "background-image: url(" + props.imageBackground + ")";
     }
 });
+
+const { page } = useContent()
+const cardID = computed(() => page.value.cardID)
 </script>
