@@ -11,102 +11,7 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 
 #### Example Basic
 
-::ShListCards
----
-description: This constructor is standalone
-title: |
-    Featured Projects
-subtitle: |
-    Check out our latest projects
-text: |
-    Here are some of the exciting projects we're working on.
-cols: 3
-gap: gap-6
----
-    :::ShCard
-    ---
-    cardID: 15
-    text: |
-        15 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. 
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    cardID: 14
-    text: |
-        14 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    cardID: 200
-    text: |
-        200 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    cardID: 1
-    text: |
-        1 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-::
+<!-- input constructor for rendeer -->
 
 This is how it is constructed.
 
@@ -122,90 +27,8 @@ text: |
     Here are some of the exciting projects we're working on.
 cols: 3
 gap: gap-6
+cardId: 2, 34, 56
 ---
-    :::ShCard
-    ---
-    cardID: 15
-    text: |
-        15 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. 
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    cardID: 14
-    text: |
-        14 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    cardID: 200
-    text: |
-        200 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    cardID: 1
-    text: |
-        1 NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
 ::
 ```
 
@@ -266,6 +89,16 @@ The constructor creates a display format for a list of cards, including a header
       <td>n/a</td>
       <td>The gap size between the cards in the grid layout.</td>
     </tr>
+    <tr>
+      <td><code>cardID</code></td>
+      <td>n/a</td>
+      <td>This prop allows this constructor to list cards in order that is inputed</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
+      <td>This is used to help content writers. Doesn`t render on site.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -273,6 +106,11 @@ The constructor creates a display format for a list of cards, including a header
 ##### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
+<!-- input constructor for rendeer -->
+
+This is an example with customized `ui` attributes for enhanced display:
+
+```mdc
 ::ShListCards
 ---
 ui:
@@ -289,126 +127,8 @@ subtitle: |
     Check out our latest projects
 text: |
     Here are some of the exciting projects we're working on. Click on the cards to learn more!
----
-    :::ShCard
-    ---
-    text: |
-        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    text: |
-        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
+cardID: 4, 62, 98
 ::
-
-This is an example with customized `ui` attributes for enhanced display:
-
-```mdc
-::ShListCards
----
-ui:
-  header: "text-center mb-4"
-  title: "text-4xl font-bold text-blue-600"
-  subtitle: "text-2xl font-medium text-gray-700"
-  text: "text-lg text-gray-600"
-  base: "bg-gradient-to-b from-[#8FD2C4] rounded-2xl"
-cols: 2
-gap: gap-6
-title: |
-    Featured Projects
-subtitle: |
-    Check out our latest projects
-text: |
-    Here are some of the exciting projects we're working on. Click on the cards to learn more!
----
-    :::ShCard
-    ---
-    text: |
-        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    text: |
-        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-::
-```
-
-### Config
-These style properties can be modified via `ui` and are stored in the `sh-list-cards.ts` file:
-```ts
-export default {
-    wrapper: "p-4 bg-white",
-    header: "text-left mb-6",
-    title: "text-3xl font-semibold text-black",
-    subtitle: "text-xl text-gray-600",
-    text: "text-base text-gray-500",
-    base: "grid grid-cols-3 gap-4",
-    // Default Tailwind CSS values
-    default: {
-        cols: 3,
-        gap: "4"
-    }
-}
 ```
 
 ### Class Descriptions
