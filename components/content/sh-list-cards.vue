@@ -12,13 +12,17 @@
       </div>
     </div>
     <div :class="[ui.base, gridClass]">
-      <!-- insert logic for md files render here -->
+      <ShCard
+        v-for="(card, index) in cards"
+        :key="index"
+        v-bind="card"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { listCards as config, gridSizes } from "@/ui.config"
+import { listCards as config, gridSizes } from "@/ui.config";
 
 const props = withDefaults(
   defineProps<{
@@ -26,19 +30,20 @@ const props = withDefaults(
     title?: string;
     subtitle?: string;
     text?: string;
-    cols?: Number;
-    gap?: String;
+    cols?: number;
+    gap?: string;
     class?: any;
     description?: string;
+    cardID?: number[];
   }>(),
   {
     ui: () => ({}),
     title: "",
     subtitle: "",
     text: "",
-    cols: () => config.default.cols,
-    gap: () => config.default.gap,
-    class: () => undefined,
+    cols: config.default.cols,
+    gap: config.default.gap,
+    class: undefined,
     description: "",
   }
 );
@@ -55,4 +60,28 @@ const gridClass = computed(() => {
   return ["grid", gridSizes.gridCols[cols], props.gap].join(' ');
 });
 
+const cards = ref<any[]>([]); // Ref to store fetched card data
+
+onMounted(async () => {
+  if (props.cardID && props.cardID.length > 0) {
+    const fetchedCards = await Promise.all(
+      props.cardID.map(async (id) => {
+        try {
+          const result = await queryContent('news').where({ cardID: id }).findOne();
+          if (result) {
+            const { description, ...frontmatter } = result;
+            return {
+              ...frontmatter, // Inject frontmatter data as props
+              text: description // Inject description as text prop
+            };
+          }
+        } catch (error) {
+          console.error(`Failed to fetch file with cardID: ${id}`, error);
+        }
+        return null;
+      })
+    );
+    cards.value = fetchedCards.filter(card => card !== null); // Filter out any null results
+  }
+});
 </script>
