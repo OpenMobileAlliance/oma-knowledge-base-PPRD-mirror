@@ -12,17 +12,14 @@
       </div>
     </div>
     <div :class="[ui.base, gridClass]">
-      <ShCard
-        v-for="(card, index) in cards"
-        :key="index"
-        v-bind="card"
-      />
+        <ShCard v-for="(card, index) in cards" :key="index" v-bind="card" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { listCards as config, gridSizes } from "@/ui.config";
+import { listCards as config } from "@/ui.config";
+import { gridSizes } from "@/ui.config";
 
 const props = withDefaults(
   defineProps<{
@@ -64,24 +61,16 @@ const cards = ref<any[]>([]); // Ref to store fetched card data
 
 onMounted(async () => {
   if (props.cardID && props.cardID.length > 0) {
-    const fetchedCards = await Promise.all(
-      props.cardID.map(async (id) => {
-        try {
-          const result = await queryContent('news').where({ cardID: id }).findOne();
-          if (result) {
-            const { description, ...frontmatter } = result;
-            return {
-              ...frontmatter, // Inject frontmatter data as props
-              text: description // Inject description as text prop
-            };
-          }
-        } catch (error) {
-          console.error(`Failed to fetch file with cardID: ${id}`, error);
-        }
-        return null;
-      })
-    );
-    cards.value = fetchedCards.filter(card => card !== null); // Filter out any null results
+    const result = await queryContent('news').where({ cardID: { $in: props.cardID } }).find();
+    if (result && result.length > 0) {
+      result.forEach(item => {
+        const { description, ...frontmatter } = item;
+        cards.value.push({
+          ...frontmatter, // Inject frontmatter data as props
+          text: description // Inject description as text prop
+        });
+      });
+    }
   }
 });
 </script>
