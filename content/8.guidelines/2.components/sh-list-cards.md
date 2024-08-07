@@ -27,7 +27,7 @@ text: |
     Here are some of the exciting projects we're working on.
 cols: 3
 gap: gap-6
-cardId: 2, 34, 56
+cardID: [3, 2, 1]
 ---
 ::
 ```
@@ -127,7 +127,7 @@ subtitle: |
     Check out our latest projects
 text: |
     Here are some of the exciting projects we're working on. Click on the cards to learn more!
-cardID: 4, 62, 98
+cardID: [3, 2, 1]
 ::
 ```
 
