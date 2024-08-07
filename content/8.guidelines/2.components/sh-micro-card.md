@@ -9,7 +9,7 @@ constructorName: ShMicroCard
 #### Presentation
 This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
 
-##### Example Basic Avatar
+##### Example Basic
 
 ::ShMicroCard
 ---
@@ -113,6 +113,11 @@ The {{ $doc.constructorName }} constructor represents a micro card that can shoc
       <td>n/a</td>
       <td>The main text content to be displayed.</td>
     </tr>
+    <tr>
+      <td>description</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -163,8 +168,9 @@ These style properties can be modified via `ui` and are stored in the `sh-micro-
 
 ```ts
 export default {
-    wrapper: "grid grid-row-3 grid-flow-row border-2 rounded-2xl max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300",
+    wrapper: "grid grid-row-3 grid-flow-row border-2 rounded-2xl shadow-lg bg-red-100 max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300 hover:bg-red-200",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto",
+    icon: "relative mt-4 w-full h-auto flex shrink mx-auto",
     title: "text-2xl font-bold text-black dark:text-white",
     subtitle: "font-semibold text-lg text-gray-500 mt-3",
     text: "font-light text-md text-gray-400 mt-7",
@@ -172,34 +178,41 @@ export default {
     default: {
     }
   }
-  ```
+```
 
-  #### Class Descriptions
+#### Class Descriptions
 These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
+### Class Descriptions
+
 _**wrapper**_
-*  **Value**: <code>"grid grid-row-3 grid-flow-row border-2 rounded-2xl max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300"</code>
-*  **Description**: This defines the overall styling for the container holding the elements. The value "grid grid-row-3 grid-flow-row border-2 rounded-2xl max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300" indicates a grid layout with 3 rows (grid grid-row-3), a row flow layout (grid-flow-row), a 2-unit border (border-2), rounded corners (rounded-2xl), maximum width and height constraints (max-w-lg max-h-lg), padding of 4 units (p-4), centered horizontally (mx-auto), centered items (justify-items-center text-center), and a hover effect that scales up by 105% over 300ms (hover:scale-105 duration-300).
+*  **Value**: `grid grid-row-3 grid-flow-row border-2 rounded-2xl shadow-lg bg-red-100 max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300 hover:bg-red-200`
+*  **Description**: Defines a grid layout with 3 rows and a row flow, applies a 2-pixel border, extra-large rounded corners, a large shadow, and a light red background. Limits maximum width and height to large sizes, adds padding, centers the element horizontally, centers items in the grid, centers text, scales up on hover, transitions the scaling, and changes the background color on hover.
 
 _**image**_
-*  **Value**: <code>"relative mt-4 w-full h-auto flex shrink mx-auto"</code>
-*  **Description**: This specifies styles for an image. The value "relative mt-4 w-full h-auto flex shrink mx-auto" includes a relative positioning (relative), a top margin of 4 units (mt-4), full width (w-full), automatic height (h-auto), a flex container (flex), shrinking to fit (shrink), and centered horizontally (mx-auto).
+*  **Value**: `relative mt-4 w-full h-auto flex shrink mx-auto`
+*  **Description**: Positions the image relative to its container, adds a top margin, ensures full width and automatic height adjustment, applies flexbox styling, prevents shrinking, and centers it horizontally.
+
+_**icon**_
+*  **Value**: `relative mt-4 w-full h-auto flex shrink mx-auto`
+*  **Description**: Similar to the image class, it positions the icon relative to its container, adds a top margin, ensures full width and automatic height adjustment, applies flexbox styling, prevents shrinking, and centers it horizontally.
 
 _**title**_
-*  **Value**: <code>"text-2xl font-bold text-black dark:text-white"</code>
-*  **Description**: This defines the styling for the title text. The value "text-2xl font-bold text-black dark:text-white" includes an extra-large font size (text-2xl), bold font weight (font-bold), black text color (text-black), and white text color in dark mode (dark:text-white).
+*  **Value**: `text-2xl font-bold text-black dark:text-white`
+*  **Description**: Sets the text size to 2xl, applies bold font weight, and sets the text color to black with a white color in dark mode.
 
 _**subtitle**_
-*  **Value**: <code>"font-semibold text-lg text-gray-500 mt-3"</code>
-*  **Description**: This specifies the styling for the subtitle text. The value "font-semibold text-lg text-gray-500 mt-3" includes a large font size (text-lg), semi-bold font weight (font-semibold), gray text color (text-gray-500), and a top margin of 3 units (mt-3).
+*  **Value**: `font-semibold text-lg text-gray-500 mt-3`
+*  **Description**: Applies semi-bold font weight, sets text size to large, uses a gray color for the text, and adds a top margin.
 
 _**text**_
-*  **Value**: <code>"font-light text-md text-gray-400 mt-7"</code>
-*  **Description**: This defines the styling for general text. The value "font-light text-md text-gray-400 mt-7" includes a medium font size (text-md), light font weight (font-light), gray text color (text-gray-400), and a top margin of 7 units (mt-7).
+*  **Value**: `font-light text-md text-gray-400 mt-7`
+*  **Description**: Applies light font weight, sets text size to medium, uses a gray color for the text, and adds a top margin.
 
 _**default**_
-*  **Value**: <code>{}</code>
-*  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
+*  **Value**: `{}`
+*  **Description**: Placeholder for default Tailwind CSS values, currently empty.
+
 
 
 These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

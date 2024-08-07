@@ -4,12 +4,14 @@ discription:
 constructorName: ShTwoColumns
 ---
 
-## Usage
+### Usage
+
+#### Presentation
 The <b>{{ $doc.constructorName }}</b> constructor enables you to provide any content presented in two
 columns and one row.
 > Note: The `border` in `wrapper` is only for visual understanding of the <b>{{ $doc.constructorName }}</b> boundry. Component itself does not have that predefined
 
-### Basic Usage (text)
+#### Example Basic (text)
 
 ::ShTwoColumns
 ---
@@ -43,7 +45,7 @@ Text text is displayed in the right column second row.
 ::
 ```
 
-### Basic Usage (text/image)
+#### Example Basic (text/image)
 It is possible to add text or an image to one or to both columns. For example, text and image:
 
 ::ShTwoColumns
@@ -65,7 +67,7 @@ This text should be in the left column.
 ![image](https://free-images.com/sm/3b8f/dalmatiner_schw_braun.jpg){.not-prose .w-full .rounded-2xl}
 ::
 ```
-### Basic Usage (image/text)
+#### Example Basic (image/text)
 The order of the elements determine the left and right column content.
 
 ::ShTwoColumns
@@ -87,7 +89,58 @@ This is how the above example is written:
 This text should be in the right column. 
 ::
 ```
-### Advanced Usage 
+
+### Props
+The {{ $doc.constructorName }} constructor supports the following properties:
+
+#### Properties and Attributes Description
+The `gap` property controls gutters between columns.
+Values for this property and its basic usage can be found in
+[tailwindcss](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Attribute</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><code>ui</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Optional configuration object for customizing various styling aspects of the `ShTwoColumns` component.</td>
+    </tr>
+    <tr>
+      <td><code>wrapper</code></td>
+      <td>n/a</td>
+      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShTwoColumns</code>. The attribute <code>shadow-2xl</code> is used to provide a shadow effect around the wrapper.</td>
+    </tr>
+    <tr>
+      <td><code>size</code></td>
+      <td>n/a</td>
+      <td>"L"</td>
+      <td>Optional. Specifies the width of the left column.</td>
+    </tr>
+    <tr>
+      <td><code>gap</code></td>
+      <td>n/a</td>
+      <td>"gap-4"</td>
+      <td>Optional. Controls the gutters between columns. Refer to the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a> for values and usage.</td>
+    </tr>
+    <td><code>description</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.
+    </td>
+  </tbody>
+</table>
+
+### Example Usage
+##### Advanced Settings 
 It is possible to nest other components inside of the <b>{{ $doc.constructorName }}</b> component as e.g., an `ShSegment` and nest a <b>{{ $doc.constructorName }}</b> component to provide special effects. For instance the following example contains:
 * Two columns
   * **Column 1**: Contains an image with inline style.
@@ -379,55 +432,11 @@ ui:
   ::
 ::
 
-
-## Properties
-The ShTwoColumns constructor supports the following properties:
-
-The `gap` property controls gutters between columns.
-Values for this property and its basic usage can be find in
-[tailwindcss](https://tailwindcss.com/docs/gap){target="_blank"} documentation.
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Attribute</th>
-      <th>Default</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2"><code>ui</code></td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>Optional configuration object for customizing various styling aspects of the `ShTwoColumns` component.</td>
-    </tr>
-    <tr>
-      <td><code>wrapper</code></td>
-      <td>n/a</td>
-      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShTwoColumns</code>. The attribute <code>shadow-2xl</code> is used to provide a shadow effect around the wrapper.</td>
-    </tr>
-    <tr>
-      <td><code>size</code></td>
-      <td>n/a</td>
-      <td>"L"</td>
-      <td>Optional. Specifies the width of the left column.</td>
-    </tr>
-    <tr>
-      <td><code>gap</code></td>
-      <td>n/a</td>
-      <td>"gap-4"</td>
-      <td>Optional. Controls the gutters between columns. Refer to the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a> for values and usage.</td>
-    </tr>
-  </tbody>
-</table>
-
-## Config
-The style attributes can be modified via the property `ui` and are stored in the `sh-two-columns.ts` file: `sh-two-columns.ts`
+### Config
+The style attributes can be modified via the property `ui` and are stored in the `sh-two-columns.ts` file:
 
 ```ts
-{
+export default {
   wrapper: "",
   default: {
     size: "L",
@@ -436,8 +445,8 @@ The style attributes can be modified via the property `ui` and are stored in the
 }
 ```
 
-### Attributes Description
-This section describes the attributes values utilized in the ShTwoColumns constructor. These values are customizable and can be strengthened or overridden through the ui properties' attributes.
+#### Class Descriptions
+These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_:
 
@@ -458,4 +467,5 @@ _**gap**_:
 
 * **Value**: `"gap-4"`
 * **Description**: This defines the default gutter size between columns. The value "gap-4" applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the gap property can be found in the Tailwind CSS documentation.
+
 These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements. This value only can be modified in the `sh-two-columns.ts` file, it cannot be modified via markdown.

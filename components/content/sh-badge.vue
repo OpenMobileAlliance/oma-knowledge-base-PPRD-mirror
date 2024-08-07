@@ -11,9 +11,11 @@ import { badge as config } from '@/ui.config' // Importing the config file
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
+    description?: string;
   }>(),
   {
     ui: () => ({}),
+    description: "",
   });
 
 const { ui } = useUI(

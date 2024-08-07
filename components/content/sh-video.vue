@@ -14,12 +14,14 @@ import { video as config } from '@/ui.config' // Importing the config file
 
 const props = withDefaults(
     defineProps < {
+        description?: string;
         src: String;
         ui?: Partial < typeof config >;
     } > (),
     {
         ui: () => ({}),
         src: "",
+        description: "",
     });
 
 const { ui } = useUI(
