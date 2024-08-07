@@ -27,7 +27,7 @@ text: |
     Here are some of the exciting projects we're working on.
 cols: 3
 gap: gap-6
-cardId: 2, 34, 56
+cardID: [3, 2, 1]
 ---
 ::
 ```
@@ -42,13 +42,13 @@ The constructor creates a display format for a list of cards, including a header
   <thead>
     <tr>
       <th>Property</th>
-      <th>Class</th>
+      <th>Attribute</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4">ui</td>
+      <td rowspan="7">ui</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShListCards</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the list cards component. Each attribute within the <code>ui</code> property targets a specific part of the list cards display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
@@ -59,6 +59,18 @@ The constructor creates a display format for a list of cards, including a header
     <tr>
       <td><code>header</code></td>
       <td>Styles applied to the header section, including the title, subtitle, and description. This can include font size, color, and alignment settings.</td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>Define the style of title fonts, displayed prominently at the top of the header section.</td>
+    </tr>
+    <tr>
+      <td><code>subtitle</code></td>
+      <td>Define the style of subtitle fonts, which provides additional context or description for the list of cards.</td>
+    </tr>
+    <tr>
+      <td><code>text</code></td>
+      <td>Define the style of text fonts</td>
     </tr>
     <tr>
       <td><code>base</code></td>
@@ -127,8 +139,25 @@ subtitle: |
     Check out our latest projects
 text: |
     Here are some of the exciting projects we're working on. Click on the cards to learn more!
-cardID: 4, 62, 98
+cardID: [3, 2, 1]
 ::
+```
+
+### Config
+These style properties can be modified via `ui` and are stored in the `sh-list-cards.ts` file:
+
+```ts
+export default {
+    wrapper: "",
+    header: "",
+    title: "",
+    subtitle: "",
+    text: "",
+    base: "",
+    // Default Tailwind CSS values
+    default: {
+    }
+  }
 ```
 
 ### Class Descriptions
