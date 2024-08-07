@@ -3,6 +3,7 @@ export { default as gridSizes } from "@/ui.config/sh-grid-sizes"
 
 // cards
 export { default as card } from "@/ui.config/sh-card"
+export { default as carousel } from "@/ui.config/sh-carousel"
 export { default as microCard } from "@/ui.config/sh-micro-card"
 export { default as actionCard } from "@/ui.config/sh-action-card"
 export { default as button } from "@/ui.config/sh-button"
