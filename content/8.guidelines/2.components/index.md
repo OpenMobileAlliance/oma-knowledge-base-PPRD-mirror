@@ -10,6 +10,7 @@ description:
 - [Button](/guidelines/components/sh-button)
 - [Card](/guidelines/components/sh-card)
 - [Card (Micro)](/guidelines/components/sh-micro-card)
+- [Carousel](/guidelines/components/sh-carousel)
 - [Column](/guidelines/components/sh-column)
 - [FAQ](/guidelines/components/sh-faq)
 - [MultiColumn](/guidelines/components/sh-multi-column)
