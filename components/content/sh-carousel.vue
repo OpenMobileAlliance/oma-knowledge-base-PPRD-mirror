@@ -30,6 +30,7 @@ interface CarouselItem {
 const props = defineProps<{
     items: CarouselItem[];
     ui?: Partial<typeof config>;
+    description: string;    
 }>();
 
 const { ui, attrs } = useUI(
