@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial"],
   content: {
+    documentDriven: true,
     highlight: {
       theme: 'github-dark'
     },
@@ -14,6 +15,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
+      "Roboto": [300, 400, 600, 700],
       "DM Sans": [400, 500, 600, 700],
       "DM Mono": [400, 500],
     },

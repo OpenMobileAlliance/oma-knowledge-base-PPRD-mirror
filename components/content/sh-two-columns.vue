@@ -24,15 +24,17 @@ const VALID_SIZES = {
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
+    description?: String;
     size?: String;
     gap?: String;
-    class?: Any;
+    class?: any;
   }>(),
   {
     ui: () => ({}),
     size: () => config.default.size,
     gap: () => config.default.gap,
-    class: () => undefined
+    class: () => undefined,
+    description: "",
   });
 
 const { ui, attrs } = useUI(
