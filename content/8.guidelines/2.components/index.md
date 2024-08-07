@@ -13,6 +13,7 @@ description:
 - [Carousel](/guidelines/components/sh-carousel)
 - [Column](/guidelines/components/sh-column)
 - [FAQ](/guidelines/components/sh-faq)
+- [ListCards](/guidelines/components/sh-list-cards)
 - [MultiColumn](/guidelines/components/sh-multi-column)
 - [Segment](/guidelines/components/sh-segment)
 - [Social](/guidelines/components/sh-social)

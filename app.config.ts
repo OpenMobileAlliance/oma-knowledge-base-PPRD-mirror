@@ -5,14 +5,14 @@ export default defineAppConfig({
   header: {
     menu: {
       font: {
-        type: 'Arial, sans-serif',
+        type: 'DM Mono, Arial, sans-serif',
         size: '22px',
       }
     }
   },
   main: {
     font: {
-      type: 'DM Sans',
+      type: 'Roboto',
       size: '23px',
     },
     h1: {
