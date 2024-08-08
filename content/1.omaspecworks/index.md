@@ -210,3 +210,43 @@ cols: 5
         ::::
     :::          
 ::
+
+::ShCarousel
+---
+ui:
+    wrapper: shadow-2xl bg-blue-100 rounded-2xl
+title: Latest OMA News
+subtitle: Click here for more [news](/news)
+items:
+  - component: ShMicroCard
+    props:
+      urlImage: "images/news/Industrial_Autom_Underway.png"
+      urlWrapper: ""
+      title: "Industrial Automation: Connecting Operations, People, Machines"
+      subtitle: "Bring Real-Time to the Masses"
+      text: "The future of innovative industrial and manufacturing sectors is driven around industry 4.0, real-time production and industrial insights, machine learning, robotics, and agile practices. The industrial and manufacturing sectors are undergoing a revolutionary transformation, driven by cutting-edge innovations that are reshaping traditional processes and boosting efficiency, productivity, and sustainability."
+  - component: ShMicroCard
+    props:
+      urlImage: images/news/modernazing-utilities.png
+      urlWrapper: 
+      title: Modernizing Utilities
+      subtitle: Harnessing the Power of Automation and IoT in the Utilities Industry
+      text: The utilities industry is undergoing a transformative shift, driven by the integration of automation, Internet of Things (IoT), and advanced sensor systems. Automation is taking place in water conservation, waste management, oil monitoring, and energy usage/conservation. A number of key technologies are revolutionizing how utilities operate, enabling more efficient monitoring, enhanced asset management, and a stronger commitment to sustainability.
+  - component: ShMicroCard
+    props:
+      urlImage: images/news/test-event-raleigh.png
+      ui.image: h-240 w-300
+      urlWrapper: 
+      title: Specification Event Validation 
+      subtitle: Test Results - SVE-41, Raleigh, NC
+      text: Test Results
+  - component: ShMicroCard
+    props:
+      urlImage: images/OMA-129 Lightweight M2M Logo_RGB_full.png
+      ui.image: h-40 w-55
+      urlWrapper: 
+      title: LwM2M v1.2.2 
+      subtitle: Latest Release!
+      text: OMA LightWeightM2M latest release
+---
+::
