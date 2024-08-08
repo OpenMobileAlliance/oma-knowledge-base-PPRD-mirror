@@ -1,6 +1,6 @@
 ---
-urlUpperBase: ""
-urlimage: /images/news/nuSIM_Label_1C_tagline_3C.png
+urlUpperBase: "articles/#2022-04-12-nuSIM_objects"
+urlImage: /images/news/nuSIM_Label_1C_tagline_3C.png
 imageBackground: ""
 title: LwM2M Objects for nuSIM Integrated SIM
 subtitle: OMA SpecWorks defines new Objects for nuSIM

@@ -1,6 +1,6 @@
 ---
-urlUpperBase:
-urlimage: /images/news/utility2.jpeg
+urlUpperBase: "articles/#2023-10-03-outreach-utility-november"
+urlImage: /images/news/utility2.jpeg
 imageBackground: ""
 title: Unlocking Utility Benefits with LwM2M
 subtitle: Workshop, Nov 15, 08:30 am PST.

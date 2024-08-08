@@ -35,7 +35,7 @@ tags:  # A click on one of these tags will filter the list of Card based on that
 ::ShListCards
 ---
 ui:
-    wrapper: shadow-xl bg-sky-100 pb-5 rounded-2xl
+    wrapper: shadow-xl bg-sky-100 pb-10 rounded-2xl
 description: This constructor is standalone
 title: |
     Featured Projects
@@ -43,8 +43,8 @@ subtitle: |
     Check out our latest projects
 text: |
     Here are some of the exciting projects we're working on.
-cols: 3
-gap: gap-3
-cardID: [4, 2, 1]
+cols: 4
+gap: gap-6
+cardID: [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
 ---
 ::

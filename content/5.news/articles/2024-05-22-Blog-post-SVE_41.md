@@ -1,6 +1,6 @@
 ---
-urlUpperBase: ""
-urlimage: /images/modernazing-utilities.png
+urlUpperBase: "articles/#2024-05-22-Blog-post-SVE_41"
+urlImage: /images/news/modernazing-utilities.png
 imageBackground: ""
 title:  Harnessing the Power of Automation and IoT in the Utilities Industry
 subtitle: 

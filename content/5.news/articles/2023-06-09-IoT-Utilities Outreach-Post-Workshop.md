@@ -1,6 +1,6 @@
 ---
-urlUpperBase: http://21247113.hs-sites.com/iot-for-utilities-workshop-1
-urlimage: /images/news/electric-meter.jpeg
+urlUpperBase: "articles/#2023-06-09-IoT-Utilities Outreach-Post-Workshop"
+urlImage: /images/news/electric-meter.jpeg
 imageBackground: ""
 title: IoT and LwM2M for Utilities
 subtitle: Post-Workshop Updates

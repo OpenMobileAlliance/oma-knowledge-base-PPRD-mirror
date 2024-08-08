@@ -1,6 +1,6 @@
 ---
-urlUpperBase: ""
-urlimage: /images/news/micro-controllers.png
+urlUpperBase: "articles/#2022-05-30-advance-firmware-update-lwm2m-object"
+urlImage: /images/news/micro-controllers.png
 imageBackground: ""
 title: Advanced LwM2M Firmware Update Object
 description: Blog to announce the agreement to start working in a new, advanced Advance Firmware Update Object

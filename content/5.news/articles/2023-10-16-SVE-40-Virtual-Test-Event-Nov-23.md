@@ -1,6 +1,6 @@
 ---
-urlUpperBase: ""
-urlimage: /images/news/validation-test.png
+urlUpperBase: "articles/#2023-10-16-SVE-40-Virtual-Test-Event-Nov-23"
+urlImage: /images/news/validation-test.png
 imageBackground: ""
 title: Virtual Test Event
 subtitle: Specification Validation Event (SVE#40), Nov 2023.
