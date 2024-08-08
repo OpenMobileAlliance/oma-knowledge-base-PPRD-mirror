@@ -1,13 +1,13 @@
 ---
-layout: news
-image: /images/news/optimizingIoT-device-man.png
+urlUpperBase: "articles/#2024-07-27-Blog-Optimizing-IoT"
+urlImage: /images/news/optimizingIoT-device-man.png
+imageBackground: ""
 title:  "Optimizing IoT Device Management: Top 3 Key Considerations"
 subtitle: 
 description: 
-url: 
-date: 2024-July-27
-by: OMA
-homepage: 15
+leftLabel: 2024-July-27
+rightLabel: OMA
+cardID: 34
 tags: 
     - news
     - workshop
