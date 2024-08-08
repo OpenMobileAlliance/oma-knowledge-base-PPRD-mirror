@@ -61,7 +61,7 @@ const cards = ref<any[]>([]); // Ref to store fetched card data
 
 onMounted(async () => {
   if (props.cardID && props.cardID.length > 0) {
-    const result = await queryContent('news').where({ cardID: { $in: props.cardID } }).find();
+    const result = await queryContent('xnews').where({ cardID: { $in: props.cardID } }).find();
     if (result && result.length > 0) {
       result.forEach(item => {
         const { body, ...frontmatter } = item;
