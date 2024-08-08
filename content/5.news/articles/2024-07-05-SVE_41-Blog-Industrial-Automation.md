@@ -1,6 +1,6 @@
 ---
-urlUpperBase: ""
-urlimage: /images/news/Industrial_Autom_Underway.png
+urlUpperBase: "articles/#2024-07-05-SVE_41-Blog-Industrial-Automation"
+urlImage: /images/news/Industrial_Autom_Underway.png
 imageBackground: ""
 title:  "Industrial Automation: Connecting Operations, People, Machines"
 subtitle: 
