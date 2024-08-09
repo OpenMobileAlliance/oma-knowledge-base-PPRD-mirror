@@ -218,13 +218,23 @@ ui:
 title: Latest OMA News
 subtitle: Click here for more [news](/news)
 items:
-  - component: ShMicroCard
+  - component: ShCard
     props:
-      urlImage: "images/news/Industrial_Autom_Underway.png"
-      urlWrapper: ""
-      title: "Industrial Automation: Connecting Operations, People, Machines"
-      subtitle: "Bring Real-Time to the Masses"
-      text: "The future of innovative industrial and manufacturing sectors is driven around industry 4.0, real-time production and industrial insights, machine learning, robotics, and agile practices. The industrial and manufacturing sectors are undergoing a revolutionary transformation, driven by cutting-edge innovations that are reshaping traditional processes and boosting efficiency, productivity, and sustainability."
+      text: |
+        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+      title: |
+          NASA Space Program
+      subtitle: |
+          Per aspera ad astra
+      leftLabel: |
+          Hello left [label](https://www.nasa.gov)
+      centerLabel: |
+          Hello <a href="https://earth.google.com/" target="_blank">center</a> label
+      rightLabel: |
+          Hello <a href="https://earth.google.com/" target="_blank">right</a> label
+      imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
+      urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+      urlUpperBase: https://www.nasa.gov
   - component: ShMicroCard
     props:
       urlImage: images/news/modernazing-utilities.png
@@ -232,21 +242,20 @@ items:
       title: Modernizing Utilities
       subtitle: Harnessing the Power of Automation and IoT in the Utilities Industry
       text: The utilities industry is undergoing a transformative shift, driven by the integration of automation, Internet of Things (IoT), and advanced sensor systems. Automation is taking place in water conservation, waste management, oil monitoring, and energy usage/conservation. A number of key technologies are revolutionizing how utilities operate, enabling more efficient monitoring, enhanced asset management, and a stronger commitment to sustainability.
-  - component: ShMicroCard
+  - component: ShSocial
     props:
+      src: "1757162766115176926"
+  - component: ShTextImg
+    props:
+      positionText: left
+      spanText: m
+      alignText: left
       urlImage: images/news/test-event-raleigh.png
-      ui.image: h-240 w-300
-      urlWrapper: 
-      title: Specification Event Validation 
-      subtitle: Test Results - SVE-41, Raleigh, NC
-      text: Test Results
-  - component: ShMicroCard
-    props:
-      urlImage: images/OMA-129 Lightweight M2M Logo_RGB_full.png
-      ui.image: h-40 w-55
-      urlWrapper: 
-      title: LwM2M v1.2.2 
-      subtitle: Latest Release!
-      text: OMA LightWeightM2M latest release
+      title: |
+       Hello component
+      subtitle: |
+       Hello subtitle
+      text: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ligula quis justo bibendum consequat. Ut auctor diam sit amet diam ornare euismod. [URL](https://docs.google.com/spreadsheets/d/18O4QvBpIGMcXMq3VZMICwYB8L7tyJ11T/edit#gid=1718761465) elit at dapibus commodo. <a href="https://en.wikipedia.org/wiki/Gaius_Maecenas">Maecenas</a> sit amet purus eu metus pharetra pulvinar. In quis scelerisque leo. Praesent scelerisque at nulla non fermentum. Morbi varius nisi eu pharetra molestie. Sed ipsum mauris, tincidunt ut velit ac, luctus egestas mi. Quisque commodo dui in mi aliquam, nec varius nunc luctus
 ---
 ::
