@@ -8,25 +8,27 @@
             </NuxtLink>
         </div>
         <div :class="ui.lowerBase">
-            <p :class="ui.title">
+            <div :class="ui.title">
                 <MDC :value="title" />
-            </p>
-            <p :class="ui.subtitle">
+            </div>
+            <div :class="ui.subtitle">
                 <MDC :value="subtitle" />
-            </p>
-            <p :class="ui.text">
+            </div>
+            <div :class="ui.text">
                 <MDC :value="text" />
-            </p>
-            <div class="grid grid-cols-3">
-                <p :class="ui.leftLabel">
-                    <MDC :value="leftLabel" />
-                </p>
-                <p :class="ui.centerLabel">
-                    <MDC :value="centerLabel" />
-                </p>
-                <p :class="ui.rightLabel">
-                    <MDC :value="rightLabel" />
-                </p>
+            </div>
+            <div class="border-t mt-16">
+                <div class="grid grid-cols-3">
+                    <div :class="ui.leftLabel">
+                        <MDC :value="leftLabel" />
+                    </div>
+                    <div :class="ui.centerLabel">
+                        <MDC :value="centerLabel" />
+                    </div>
+                    <div :class="ui.rightLabel">
+                        <MDC :value="rightLabel" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
