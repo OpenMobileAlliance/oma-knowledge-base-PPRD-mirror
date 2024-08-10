@@ -114,9 +114,9 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Pending # Third Column
-        subtitle: Pending
-        urlWrapper: "/utilities/#"
+        title: Q&A # Third Column
+        subtitle: on Utilities & LwM2M
+        urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
         ---
         ::::      
     :::  
