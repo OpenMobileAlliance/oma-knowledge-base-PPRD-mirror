@@ -167,7 +167,7 @@ cols: 6
         ---
         ui:
             wrapper: mt-3
-        title: FAQs # Third Column
+        title: LwM2M Registry # Third Column
         subtitle: |
             **
         urlWrapper: ""
