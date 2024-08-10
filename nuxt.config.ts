@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial"],
+
   content: {
     documentDriven: true,
     highlight: {
@@ -10,9 +11,11 @@ export default defineNuxtConfig({
       anchorLinks: false 
     },
   },
+
   ui: {
     icons: ["heroicons-solid", "fa6-brands", "devicon", "icons8"],
   },
+
   googleFonts: {
     families: {
       "Roboto": [300, 400, 600, 700],
@@ -20,6 +23,7 @@ export default defineNuxtConfig({
       "DM Mono": [400, 500],
     },
   },
+
   app: {
     head: {
       link: [
@@ -27,5 +31,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   devtools: { enabled: true },
+  compatibilityDate: "2024-08-10",
 });
