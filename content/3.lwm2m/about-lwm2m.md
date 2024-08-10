@@ -9,7 +9,7 @@ The Open Mobile Alliance Lightweight M2M (OMA LwM2M) protocol is a communication
 3. **Bootstrap Server**: This server helps devices to connect to the LwM2M server by providing initial configuration and credentials.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/OpenMobileAlliance/LwM2M/development/TS_Core/images/overall_architecture.drawio.svg?token=GHSAT0AAAAAABZGAUAID7CUKVVJNUBIXRUQZUTXO4Q" alt="Overal LwM2M Architecture">
+    <img src="/images/lwm2m/overall_architecture.drawio.svg" alt="Overal LwM2M Architecture">
     <figcaption>Overal LwM2M Architecture</figcaption>
 </figure>
 
@@ -19,23 +19,23 @@ The LWM2M Enabler defines a simple resource model where each piece of informatio
 Resources are logically organized into Objects. The figure illustrates this structure, and the relationship between Resources, Objects, and the LWM2M Client.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/OpenMobileAlliance/LwM2M/development/TS_Core/images/relationship_client_object_resources.svg?token=GHSAT0AAAAAABZGAUAIAOHQQDCVMQ3FUTIQZUTXSRQ" alt="Resource Model">
+    <img src="/images/lwm2m/relationship_client_object_resources.svg" alt="Resource Model">
     <figcaption>Resource Model</figcaption>
 </figure>
 
-The LWM2M Client may have any number of Resources, each of which belongs to an Object.
-Resources and Objects have the capability to have multiple instances of the Resource or Object.
-Resources are defined per Object, and each Resource is given a unique identifier within that Object.
-Each Object and Resource is defined to have one or more operations that it supports.
-A Resource MAY consist of multiple instances called a Resource Instance as defined in the Object specification.
-
-### OMA LwM2M Object and Resource Model
-The OMA Lightweight M2M (LwM2M) protocol uses a hierarchical object and resource model to manage and interact with IoT devices. This model organizes the data and functionalities of a device into well-defined objects and resources, making it easier to monitor, control, and manage various aspects of the device.
 
 #### Object and Resource Hierarchy
+The OMA Lightweight M2M (LwM2M) protocol uses a hierarchical object and resource model to manage and interact with IoT devices. This model organizes the data and functionalities of a device into well-defined objects and resources, making it easier to monitor, control, and manage various aspects of the device.
+
 1. **Object**: An object represents a specific type of data or functionality on a device. For example, an object could be a temperature sensor, a firmware update mechanism, or a connectivity monitor.
 
 2. **Resource**: Each object consists of one or more resources. A resource represents a specific piece of data or a function within the object. For instance, a temperature sensor object might have resources for the current temperature reading, the sensor's unit of measurement, and the sensor's status.
+
+    * The LWM2M Client may have any number of Resources, each of which belongs to an Object.
+    * Resources and Objects have the capability to have multiple instances of the Resource or Object.
+    * Resources are defined per Object, and each Resource is given a unique identifier within that Object.
+    * Each Object and Resource is defined to have one or more operations that it supports.
+    * A Resource MAY consist of multiple instances called a Resource Instance as defined in the Object specification.
 
 #### Example: Temperature Sensor Object
 **Object ID**: 3303 (assigned ID for temperature sensor objects)
@@ -86,10 +86,15 @@ The registry includes:
 #### Conclusion
 The OMA LwM2M object and resource model provides a structured and efficient way to manage IoT devices, facilitating easy monitoring, control, and configuration of various sensors and actuators. The standardized registry maintained by OMA ensures consistency and interoperability, making LwM2M a robust choice for diverse industrial applications.
 
-### Communication Model
-LwM2M typically uses the Constrained Application Protocol (CoAP) as its transport layer. CoAP is a lightweight protocol designed for simple, constrained devices and low-bandwidth networks. It supports methods similar to HTTP, such as GET, POST, PUT, and DELETE, enabling RESTful interactions.
+### LwM2M Messaging Procol
+The Lightweight M2M (LwM2M) protocol, designed for efficient management of IoT devices, relies on a diverse set of transport bindings to facilitate secure and reliable communication between LwM2M Clients, Bootstrap Servers, and LwM2M Servers. As IoT ecosystems grow increasingly complex, the importance of flexible and robust transport mechanisms becomes paramount. This specification details the various transport bindings available within the LwM2M protocol stack, as depicted in Figure 4-1, illustrating their integration with messaging protocols. These transport options, including CoAP over different layers and technologies like UDP, TCP, SMS, and emerging Non-IP protocols, ensure that LwM2M can adapt to a wide range of network environments, enabling seamless device communication and management. Additionally, the use of OSCORE with these transport bindings offers enhanced security, catering to the diverse needs of modern IoT deployments.
 
-### Use Cases in Industry
+<figure>
+    <img src="/images/lwm2m/protocol_stack.svg" alt="Procotol Stack">
+    <figcaption>Protocol Stack (LwM2M)</figcaption>
+</figure>
+
+## Use Cases in Industry
 * **Energy Sector**: Manage smart grids, monitor energy consumption, and control distributed energy resources.
 * **Smart City**: Managing streetlights, traffic sensors, and environmental monitoring devices.
 * **Transportation**: Track and manage fleet vehicles, optimize logistics, and monitor vehicle health. 
