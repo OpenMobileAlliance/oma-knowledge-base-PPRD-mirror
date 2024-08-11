@@ -126,7 +126,7 @@ cols: 5
             wrapper: mt-3
         title: Use Cases # Third Column
         subtitle: Utilities & LwM2M
-        urlWrapper: "/utilities/"
+        urlWrapper: "/utilities/use-cases#introduction"
         ---
         ::::          
     :::  
