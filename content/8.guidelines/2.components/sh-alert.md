@@ -2,6 +2,7 @@
 title: Alert
 description:
 constructorName: ShAlert
+layout: doc
 ---
 
 ### Usage

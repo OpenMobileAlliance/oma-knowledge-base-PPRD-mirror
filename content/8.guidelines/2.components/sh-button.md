@@ -2,6 +2,7 @@
 title: Button
 description: Component do render a button in the document
 constructorName: ShButton
+layout: doc
 ---
 
 ## Usage

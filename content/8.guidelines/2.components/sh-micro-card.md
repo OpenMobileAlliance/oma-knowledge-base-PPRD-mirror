@@ -2,6 +2,7 @@
 title: Card (Micro)
 description:
 constructorName: ShMicroCard
+layout: doc
 ---
 
 ### Usage

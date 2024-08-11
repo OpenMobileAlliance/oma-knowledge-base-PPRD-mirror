@@ -1,6 +1,7 @@
 ---
 title: Components
 description:
+layout: doc
 ---
 
 - [Action Card](/guidelines/components/sh-action-card)
