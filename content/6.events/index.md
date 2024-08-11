@@ -6,7 +6,7 @@ title: EVENTS
 
 This page is reserved for the Events content
 * [Utility Workshops](#utility-workshops)
-* []()
+* [Product Listing](/events/listing)
 
 
 ## Utility Workshops
