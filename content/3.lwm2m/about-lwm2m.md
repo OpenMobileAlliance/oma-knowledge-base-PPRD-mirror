@@ -69,20 +69,6 @@ One of the significant capabilities of LwM2M is performing firmware updates on t
 
 These capabilities ensure that devices can be kept up-to-date with the latest software enhancements and security patches, reducing the need for physical maintenance and improving the overall reliability and security of the IoT deployment.
 
-#### OMA Object and Resource Registry
-OMA maintains a registry for objects and resources, which provides standardized definitions and IDs for various types of objects and their resources. This registry ensures consistency and interoperability across different devices and manufacturers.
-
-The registry includes:
-
-* **Object IDs**: Unique identifiers for different types of objects (e.g., temperature sensors, humidity sensors, actuators).
-* **Resource IDs**: Unique identifiers for resources within an object (e.g., sensor value, unit of measurement, control functions).
-* **Descriptions**: Detailed descriptions of objects and resources, including their data types and operational semantics.
-
-#### Benefits of the Registry
-* **Interoperability**: Standardized object and resource definitions enable devices from different vendors to work together seamlessly.
-* **Reusability**: Developers can use predefined objects and resources, speeding up the development process.
-* **Extensibility**: New objects and resources can be registered to address emerging needs and technologies.
-
 #### Conclusion
 The OMA LwM2M object and resource model provides a structured and efficient way to manage IoT devices, facilitating easy monitoring, control, and configuration of various sensors and actuators. The standardized registry maintained by OMA ensures consistency and interoperability, making LwM2M a robust choice for diverse industrial applications.
 
@@ -93,22 +79,6 @@ The Lightweight M2M (LwM2M) protocol, designed for efficient management of IoT d
     <img src="/images/lwm2m/protocol_stack.svg" alt="Procotol Stack">
     <figcaption>Protocol Stack (LwM2M)</figcaption>
 </figure>
-
-## Use Cases in Industry
-* **Energy Sector**: Manage smart grids, monitor energy consumption, and control distributed energy resources.
-* **Smart City**: Managing streetlights, traffic sensors, and environmental monitoring devices.
-* **Transportation**: Track and manage fleet vehicles, optimize logistics, and monitor vehicle health. 
-* **Industrial IoT**: Monitoring and managing machinery, sensors, and actuators in a factory setting.
-* **Smart Agriculture**: Remote management of soil sensors, weather stations, and irrigation systems.
-* **Smart Manufacturing**: Monitor and manage machinery, sensors, and production lines for efficiency and predictive maintenance.
-* **Healthcare**: Managing wearable health monitors and medical devices.
-
-### Advantages
-* **Scalability**: Capable of managing a large number of devices.
-* **Efficiency**: Designed for low power and low bandwidth environments.
-* **Flexibility**: Supports a wide range of devices and use cases.
-
-The OMA Lightweight M2M protocol provides a robust, secure, and efficient way to manage IoT devices, offering numerous benefits to industries. Its adoption can lead to improved operational efficiency, reduced costs, enhanced security, and greater scalability, making it a valuable tool for modern industrial applications.
 
 ## Key Features of OMA LwM2M
 1. **Device Management**: LwM2M facilitates remote management of devices, including firmware updates, configuration changes, and diagnostics.
