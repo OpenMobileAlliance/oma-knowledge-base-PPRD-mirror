@@ -87,7 +87,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Security # Third Column
+        title: Security # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#"
         ---
@@ -118,7 +118,17 @@ cols: 5
         subtitle: on Utilities & LwM2M
         urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
         ---
-        ::::      
+        ::::  
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Use Cases # Third Column
+        subtitle: Utilities & LwM2M
+        urlWrapper: "/utilities/"
+        ---
+        ::::          
     :::  
 
     :::ShColumn 
