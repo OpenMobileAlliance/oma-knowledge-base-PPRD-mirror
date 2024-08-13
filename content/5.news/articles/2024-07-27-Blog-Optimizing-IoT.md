@@ -4,7 +4,6 @@ urlImage: /images/news/optimizingIoT-device-man.png
 imageBackground: ""
 title:  "Optimizing IoT Device Management: Top 3 Key Considerations"
 subtitle: 
-description: 
 leftLabel: 2024-July-27
 rightLabel: OMA
 cardID: 34

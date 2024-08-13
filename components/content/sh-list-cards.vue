@@ -96,10 +96,10 @@ onMounted(async () => {
       cards.value = props.cardID.map(id => {
         const item = cardMap.get(id);
         if (item) {
-          const { body, ...frontmatter } = item;
+          const { description, ...frontmatter } = item;
           return {
             ...frontmatter,
-            text: body,
+            text: description,
           };
         }
       })

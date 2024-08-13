@@ -1,10 +1,9 @@
 ---
-urlUpperBase: "articles/#2023-06-09-IoT-Utilities Outreach-Post-Workshop"
+urlUpperBase: articles/2023-06-09-IoT-Utilities Outreach-Post-Workshop
 urlImage: /images/news/electric-meter.jpeg
 imageBackground: ""
 title: IoT and LwM2M for Utilities
 subtitle: Post-Workshop Updates
-description: Implementing LightWeight M2M protocol for Utilities
 leftLabel: 2023-Jun-09
 rightLabel: OMA SpecWorks
 cardID: 18
