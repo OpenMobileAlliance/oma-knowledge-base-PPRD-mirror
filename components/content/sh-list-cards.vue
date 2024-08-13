@@ -53,21 +53,44 @@ const { ui, attrs } = useUI(
 );
 
 const gridClass = computed(() => {
-  const cols = props.cols != undefined ? props.cols : config.default.cols;
-  return ["grid", gridSizes.gridCols[cols], props.gap].join(' ');
+  const cols = props.cols !== undefined ? props.cols : config.default.cols;
+
+  if (windowWidth.value >= 1024) { // lg breakpoint (1024px and up)
+    return ["grid", gridSizes.gridCols[cols], props.gap].join(' ')
+  } else if (windowWidth.value >= 640 && windowWidth.value < 768) { // sm to md breakpoint
+    return ["grid", "grid-cols-1", props.gap].join(' ');
+  } else if (windowWidth.value >= 769 && windowWidth.value < 2000) { // md to lg breakpoint
+    return ["grid", "grid-cols-3", props.gap].join(' ');
+  } else { 
+    return ["grid", "grid-cols-3", props.gap].join(' '); //check this!!!
+  }
+});
+
+const windowWidth = ref(window.innerWidth);
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize);
 });
 
 const cards = ref<any[]>([]); // Ref to store fetched card data
 
 onMounted(async () => {
   if (props.cardID && props.cardID.length > 0) {
-    const result = await queryContent('news/news').where({ cardID: { $in: props.cardID } }).find();
+    const result = await queryContent('news/articles').where({ cardID: { $in: props.cardID } }).find();
     if (result && result.length > 0) {
       result.forEach(item => {
-        const { description, ...frontmatter } = item;
+        const { body, ...frontmatter } = item;
         cards.value.push({
           ...frontmatter, // Inject frontmatter data as props
-          text: description // Inject description as text prop
+          text: body // Inject description as text prop
         });
       });
     }

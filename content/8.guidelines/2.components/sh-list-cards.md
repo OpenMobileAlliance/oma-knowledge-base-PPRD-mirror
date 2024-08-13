@@ -11,7 +11,20 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 
 #### Example Basic
 
-<!-- input constructor for rendeer -->
+::ShListCards
+---
+description: This constructor is standalone
+title: |
+    Featured Projects
+subtitle: |
+    Check out our latest projects
+text: |
+    Here are some of the exciting projects we're working on.
+cols: 3
+gap: gap-6
+cardID: [4, 2, 1]
+---
+::
 
 This is how it is constructed.
 
@@ -27,7 +40,7 @@ text: |
     Here are some of the exciting projects we're working on.
 cols: 3
 gap: gap-6
-cardID: [3, 2, 1]
+cardID: [4, 2, 1]
 ---
 ::
 ```
@@ -118,7 +131,25 @@ The constructor creates a display format for a list of cards, including a header
 ##### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
-<!-- input constructor for rendeer -->
+::ShListCards
+---
+ui:
+  header: "text-center mb-4"
+  title: "text-4xl font-bold text-blue-600"
+  subtitle: "text-2xl font-medium text-gray-700"
+  text: "text-lg text-gray-600"
+  base: "bg-gradient-to-b from-[#8FD2C4] rounded-2xl p-8"
+cols: 3
+gap: gap-6
+title: |
+    Advanced Usage of this constuctor
+subtitle: |
+    Check out the looks and feels
+text: |
+    Feel free to explore any styling option using Tailwind classes!
+cardID: [4, 2, 1]
+---
+::
 
 This is an example with customized `ui` attributes for enhanced display:
 
@@ -131,15 +162,16 @@ ui:
   subtitle: "text-2xl font-medium text-gray-700"
   text: "text-lg text-gray-600"
   base: "bg-gradient-to-b from-[#8FD2C4] rounded-2xl p-8"
-cols: 2
+cols: 3
 gap: gap-6
 title: |
-    Featured Projects
+    Advanced Usage of this constuctor
 subtitle: |
-    Check out our latest projects
+    Check out the looks and feels
 text: |
-    Here are some of the exciting projects we're working on. Click on the cards to learn more!
-cardID: [3, 2, 1]
+    Feel free to explore any styling option using Tailwind classes!
+cardID: [4, 2, 1]
+---
 ::
 ```
 
