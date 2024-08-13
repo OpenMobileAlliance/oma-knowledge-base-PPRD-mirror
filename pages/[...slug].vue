@@ -112,20 +112,7 @@ const filterNavigation = (list, path) => {
       return prev
     }, [])
 
-    if (branchList.length > 0) {
-      const pathDepth = path.split('/')
-      if (pathDepth.length > 3) {
-        pathDepth.pop()
-        const newPath = pathDepth.join('/')
-        console.log(branchList[0].children)
-        const res = filterNavigation(branchList[0].children, newPath)
-        return res
-      } else {
-        return branchList
-      }
-    } else {
-      return branchList
-    }
+    return branchList
 
   } else {
     return []
