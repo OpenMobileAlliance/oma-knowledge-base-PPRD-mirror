@@ -55,14 +55,14 @@ const { ui, attrs } = useUI(
 const gridClass = computed(() => {
   const cols = props.cols !== undefined ? props.cols : config.default.cols;
 
-  if (windowWidth.value >= 1024) { // lg breakpoint (1024px and up)
+  if (windowWidth.value >= 1300) { 
     return ["grid", gridSizes.gridCols[cols], props.gap].join(' ')
-  } else if (windowWidth.value >= 640 && windowWidth.value < 768) { // sm to md breakpoint
+  } else if (windowWidth.value < 640) { 
     return ["grid", "grid-cols-1", props.gap].join(' ');
-  } else if (windowWidth.value >= 769 && windowWidth.value < 2000) { // md to lg breakpoint
-    return ["grid", "grid-cols-3", props.gap].join(' ');
+  } else if (windowWidth.value > 640 && windowWidth.value < 980) { 
+    return ["grid", "grid-cols-2", props.gap].join(' ');
   } else { 
-    return ["grid", "grid-cols-3", props.gap].join(' '); //check this!!!
+    return ["grid", "grid-cols-3", props.gap].join(' '); 
   }
 });
 
