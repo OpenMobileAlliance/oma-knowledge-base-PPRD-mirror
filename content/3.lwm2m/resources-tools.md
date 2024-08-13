@@ -55,6 +55,20 @@
 ### OMNA Registry
 The OMA Lightweight M2M (LwM2M) Registry is a centralized database managed by the Open Mobile Alliance Naming Authority (OMNA) that assigns unique Object IDs to various types of devices and services for IoT deployments. It categorizes these Object IDs into several classes, including those produced by OMA (Object IDs 0-1023), reserved for future use (Object IDs 1024-2047), registered by third-party standards organizations (Object IDs 2048-10240), and those registered by companies or individuals (Object IDs 10241-32768). Additionally, there are ranges for company bulk reservations (Object IDs 32769-42768) and for testing purposes (Object IDs 42769-42800). This registry ensures that each Object ID is unique, preventing conflicts and enabling seamless interoperability between different IoT devices and services.
 
+#### OMA Object and Resource Registry
+OMA maintains a registry for objects and resources, which provides standardized definitions and IDs for various types of objects and their resources. This registry ensures consistency and interoperability across different devices and manufacturers.
+
+The registry includes:
+
+* **Object IDs**: Unique identifiers for different types of objects (e.g., temperature sensors, humidity sensors, actuators).
+* **Resource IDs**: Unique identifiers for resources within an object (e.g., sensor value, unit of measurement, control functions).
+* **Descriptions**: Detailed descriptions of objects and resources, including their data types and operational semantics.
+
+#### Benefits of the Registry
+* **Interoperability**: Standardized object and resource definitions enable devices from different vendors to work together seamlessly.
+* **Reusability**: Developers can use predefined objects and resources, speeding up the development process.
+* **Extensibility**: New objects and resources can be registered to address emerging needs and technologies.
+
 ### OMA SenMl Units
 <strong>OMA LwM2M adopts SenML</strong> <i>(Sensor Markup Language)</i> Units to ensure standardized and consistent measurement units across IoT resources. By following the rules provided by SenML, OMA LwM2M facilitates interoperability and data exchange among diverse IoT devices and platforms. Using standardized units is crucial for accurately interpreting sensor data, avoiding ambiguity, and ensuring that data from different sources can be seamlessly integrated and compared. This standardization also aids in the development of reliable and scalable IoT solutions, as developers can confidently build applications knowing that the data conforms to a recognized and consistent set of units. The adoption of SenML Units ultimately enhances the efficiency and reliability of IoT ecosystems, fostering innovation and broader adoption of IoT technologies.
 
