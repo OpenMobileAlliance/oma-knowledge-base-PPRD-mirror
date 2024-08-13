@@ -84,15 +84,25 @@ const cards = ref<any[]>([]); // Ref to store fetched card data
 
 onMounted(async () => {
   if (props.cardID && props.cardID.length > 0) {
-    const result = await queryContent('news/articles').where({ cardID: { $in: props.cardID } }).find();
+    const result = await queryContent('news/articles')
+      .where({ cardID: { $in: props.cardID } })
+      .find();
+
     if (result && result.length > 0) {
-      result.forEach(item => {
-        const { body, ...frontmatter } = item;
-        cards.value.push({
-          ...frontmatter, // Inject frontmatter data as props
-          text: body // Inject description as text prop
-        });
-      });
+      // Create a map of cardID to corresponding content
+      const cardMap = new Map(result.map(item => [item.cardID, item]));
+
+      // Sort the cards according to the order of cardID in props.cardID
+      cards.value = props.cardID.map(id => {
+        const item = cardMap.get(id);
+        if (item) {
+          const { body, ...frontmatter } = item;
+          return {
+            ...frontmatter,
+            text: body,
+          };
+        }
+      })
     }
   }
 });
