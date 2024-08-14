@@ -4,7 +4,6 @@ urlImage: "images/oma-specworks-logo.jpg"
 imageBackground: ""
 title: LwM2M v1.2 is now available!
 subtitle: Latest LwM2M Protocol version
-description: The standardization work on the LwM2M v1.2 specification has been completed and the specification bundle is now available for public download
 leftLabel: 2020-Dec-09
 rightLabel:  OMA SpecWorks
 cardID: 2
@@ -13,9 +12,9 @@ tags:
     - Release
 ---
 
-<b>The standardization</b> work on the LwM2M v1.2 specification has been completed and the specification bundle is now available for public download.
+<b>The standardization</b> work on the LwM2M v1.2 specification has been completed and the specification bundle is now available for public download.Originally proposed in 2012, LwM2M v1.0 was finally published in early 2017 after comprehensive research with developers across multiple industries and application areas. The original standard was a compelling solution for device lifecycle management with focus on constrained IoT devices. With LwM2M adoption observed across a broader range of device types and the benefit of feedback from real use cases, releases including v1.0.1 and v1.0.2 were published to keep up with ever increasing demand and expansion of LwM2M use. With v1.1 published in 2018, OMA SpecWorks increased the functionality of the protocol by adding support for Cellular IoT, LoRaWAN as well as in enterprise networks with CoAP over TCP/TLS.
 
-Originally proposed in 2012, LwM2M v1.0 was finally published in early 2017 after comprehensive research with developers across multiple industries and application areas. The original standard was a compelling solution for device lifecycle management with focus on constrained IoT devices. With LwM2M adoption observed across a broader range of device types and the benefit of feedback from real use cases, releases including v1.0.1 and v1.0.2 were published to keep up with ever increasing demand and expansion of LwM2M use. With v1.1 published in 2018, OMA SpecWorks increased the functionality of the protocol by adding support for Cellular IoT, LoRaWAN as well as in enterprise networks with CoAP over TCP/TLS.<!--more-->
+<!--more-->
 
 Over the years, implementers have developed many client and server software implementations for the industry. With the rise in number and frequency of new implementations, OMA SpecWorks hosted 8 testfests to ensure implementations conform to specification. Concurrently with the evolution of the LwM2M protocol, organizations and companies have been adding to the range of objects and resources via a dedicated registry which can be seen here [LwM2M registry](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html)
 

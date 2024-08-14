@@ -55,14 +55,14 @@ const { ui, attrs } = useUI(
 const gridClass = computed(() => {
   const cols = props.cols !== undefined ? props.cols : config.default.cols;
 
-  if (windowWidth.value >= 1024) { // lg breakpoint (1024px and up)
+  if (windowWidth.value >= 1300) { 
     return ["grid", gridSizes.gridCols[cols], props.gap].join(' ')
-  } else if (windowWidth.value >= 640 && windowWidth.value < 768) { // sm to md breakpoint
+  } else if (windowWidth.value < 640) { 
     return ["grid", "grid-cols-1", props.gap].join(' ');
-  } else if (windowWidth.value >= 769 && windowWidth.value < 2000) { // md to lg breakpoint
-    return ["grid", "grid-cols-3", props.gap].join(' ');
+  } else if (windowWidth.value > 640 && windowWidth.value < 980) { 
+    return ["grid", "grid-cols-2", props.gap].join(' ');
   } else { 
-    return ["grid", "grid-cols-3", props.gap].join(' '); //check this!!!
+    return ["grid", "grid-cols-3", props.gap].join(' '); 
   }
 });
 
@@ -84,15 +84,25 @@ const cards = ref<any[]>([]); // Ref to store fetched card data
 
 onMounted(async () => {
   if (props.cardID && props.cardID.length > 0) {
-    const result = await queryContent('news/articles').where({ cardID: { $in: props.cardID } }).find();
+    const result = await queryContent('news/articles')
+      .where({ cardID: { $in: props.cardID } })
+      .find();
+
     if (result && result.length > 0) {
-      result.forEach(item => {
-        const { body, ...frontmatter } = item;
-        cards.value.push({
-          ...frontmatter, // Inject frontmatter data as props
-          text: body // Inject description as text prop
-        });
-      });
+      // Create a map of cardID to corresponding content
+      const cardMap = new Map(result.map(item => [item.cardID, item]));
+
+      // Sort the cards according to the order of cardID in props.cardID
+      cards.value = props.cardID.map(id => {
+        const item = cardMap.get(id);
+        if (item) {
+          const { description, ...frontmatter } = item;
+          return {
+            ...frontmatter,
+            text: description,
+          };
+        }
+      })
     }
   }
 });

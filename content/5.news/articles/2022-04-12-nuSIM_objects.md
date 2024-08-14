@@ -4,16 +4,16 @@ urlImage: /images/news/nuSIM_Label_1C_tagline_3C.png
 imageBackground: ""
 title: LwM2M Objects for nuSIM Integrated SIM
 subtitle: OMA SpecWorks defines new Objects for nuSIM
-description: nuSIM is an optimized iSIM solution for IoT
 leftLabel: 2022-Apr-12
 rightLabel:  OMASpecWorks
 cardID: 10
 tags:
 ---
-
 The increasing demand for power-efficiency, robustness and small form factors along with growing simplicity needs along the value chain have caused the mobile industry to consider alternative solutions to the classical SIM, spearheaded by the integrated SIM (iSIM) – where the SIM functionality is integrated into the application processor or radio chip. 
 
-nuSIM is an optimized iSIM solution for IoT. It comes on the main chipset inside the IoT device's communication module, thus making a separate SIM component obsolete. Configuration data and credentials for a mobile carrier are installed on the device by loading a small (1 kB) set of encrypted data, called profile. Accordingly, the handling of physical SIMs is replaced by a fully digital process, ideal for the emerging IoT mass-market. <!--more-->
+<!--more-->
+
+nuSIM is an optimized iSIM solution for IoT. It comes on the main chipset inside the IoT device's communication module, thus making a separate SIM component obsolete. Configuration data and credentials for a mobile carrier are installed on the device by loading a small (1 kB) set of encrypted data, called profile. Accordingly, the handling of physical SIMs is replaced by a fully digital process, ideal for the emerging IoT mass-market. 
 
 Many IoT use cases can be satisfied with a one-time profile provisioning at device manufacturing so the profile remains operational until the device’s end-of-life. Other cases require an option to switch the profile - and therefore the carrier - after the device is already deployed, i.e. over the air.
 

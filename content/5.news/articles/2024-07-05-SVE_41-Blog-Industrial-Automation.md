@@ -4,7 +4,6 @@ urlImage: /images/news/Industrial_Autom_Underway.png
 imageBackground: ""
 title:  "Industrial Automation: Connecting Operations, People, Machines"
 subtitle: 
-description: 
 leftLabel: 2024-July-5
 rightLabel: OMA
 cardID: 32
@@ -19,11 +18,10 @@ tags:
 <h3>Bringing Real-Time to the Masses</h3>
 <p></p>
 <p></p>
+The future of innovative industrial and manufacturing sectors is driven around industry 4.0, real-time production and industrial insights, machine learning, robotics, and agile practices. The industrial and manufacturing sectors are undergoing a revolutionary transformation, driven by cutting-edge innovations that are reshaping traditional processes and boosting efficiency, productivity, and sustainability.<!--more-->
 
-The future of innovative industrial and manufacturing sectors is driven around industry 4.0, real-time production and industrial insights, machine learning, robotics, and agile practices. The industrial and manufacturing sectors are undergoing a revolutionary transformation, driven by cutting-edge innovations that are reshaping traditional processes and boosting efficiency, productivity, and sustainability. Understanding the industrial ecosystem can be impactful for engineering, integration, installation, and servicing customers in industries such as manufacturing, energy production, waste management, utilities, and others. Below is a depiction of the manufacturing ecosystem:
+Understanding the industrial ecosystem can be impactful for engineering, integration, installation, and servicing customers in industries such as manufacturing, energy production, waste management, utilities, and others. Below is a depiction of the manufacturing ecosystem:
 
-
-<!--more-->
 <style>
     img {
   display: block;
