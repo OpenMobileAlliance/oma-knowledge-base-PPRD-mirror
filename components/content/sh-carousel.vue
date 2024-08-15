@@ -12,18 +12,30 @@
           
           <!-- Clone the last slide and put it in the front for infinite loop -->
           <div v-if="allItems.length" class="min-w-full">
-            <component v-if="lastSlide.component" :is="lastSlide.component" v-bind="lastSlide.props" />
+            <component v-if="lastSlide.component" :is="lastSlide.component" v-bind="lastSlide.props">
+              <template v-if="lastSlide.slotContent">
+                <slot name="default">{{ lastSlide.slotContent }}</slot>
+              </template>
+            </component>
             <img v-else-if="lastSlide.urlImage" :src="lastSlide.urlImage" :alt="lastSlide.altImage" :class="ui.image" />
           </div>
 
           <div v-for="(item, index) in allItems" :key="index" class="min-w-full">
-            <component v-if="item.component" :is="item.component" v-bind="item.props" />
+            <component v-if="item.component" :is="item.component" v-bind="item.props">
+              <template v-if="item.slotContent">
+                <slot name="default">{{ item.slotContent }}</slot>
+              </template>
+            </component>
             <img v-else-if="item.urlImage" :src="item.urlImage" :alt="item.altImage" :class="ui.image" />
           </div>
 
           <!-- Clone the first slide and put it at the end for infinite loop -->
           <div v-if="allItems.length" class="min-w-full">
-            <component v-if="firstSlide.component" :is="firstSlide.component" v-bind="firstSlide.props" />
+            <component v-if="firstSlide.component" :is="firstSlide.component" v-bind="firstSlide.props">
+              <template v-if="firstSlide.slotContent">
+                <slot name="default">{{ firstSlide.slotContent }}</slot>
+              </template>
+            </component>
             <img v-else-if="firstSlide.urlImage" :src="firstSlide.urlImage" :alt="firstSlide.altImage" :class="ui.image" />
           </div>
         </div>
@@ -47,9 +59,9 @@ import { carousel as config } from '@/ui.config';
 interface CarouselItem {
   component?: any;
   props?: Record<string, any>;
+  slotContent?: string;
   urlImage?: string;
   altImage?: string;
-  description?: string;
 }
 
 const props = defineProps<{
@@ -57,9 +69,6 @@ const props = defineProps<{
   ui?: Partial<typeof config>;
   title: string;
   subtitle: string;
-  urlImage?: string;
-  altImage?: string;
-  description?: string;
 }>();
 
 const { ui } = useUI(
@@ -76,9 +85,6 @@ const allItems = computed(() => {
   const itemsList = [];
   if (props.items) {
     itemsList.push(...props.items);
-  }
-  if (props.urlImage) {
-    itemsList.push({ urlImage: props.urlImage, altImage: props.altImage });
   }
   return itemsList.length ? itemsList : [];
 });
