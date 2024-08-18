@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="">
     <AppHeader class="py-4" title="OMA">
       <template v-slot:logo>
         <img :src="computedLogoSrc" alt="Logo" />

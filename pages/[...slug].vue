@@ -7,15 +7,18 @@
             <nav v-if="displayNavigation">
               <ul class="space-y-1 lg:block">
                 <li v-for="(link, index) in displayNavigation" class="space-y-1 lg:block" :key="index">
-                  <ULink :to="link._path">{{ link.title }}</ULink>
+                  <ULink :to="link._path" class="no-underline hover:uppercase ">{{ link.title }}</ULink>
                   <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
                     <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink v-if="link._path !== subLink._path" :to="subLink._path" class="">{{ subLink.title }}
+                      <ULink v-if="link._path !== subLink._path" :to="subLink._path"
+                        class="no-underline hover:uppercase">
+                        {{ subLink.title }}
                       </ULink>
                       <ul v-if="subLink.children?.length > 0" class="space-y-1 hidden lg:block">
                         <li v-for="(subChildLink, subChildIndex) in subLink.children" class="space-y-1 lg:block"
                           :key="subChildIndex">
-                          <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path" class="">
+                          <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path"
+                            class="no-underline hover:uppercase">
                             {{ subChildLink.title }}
                           </ULink>
                         </li>
