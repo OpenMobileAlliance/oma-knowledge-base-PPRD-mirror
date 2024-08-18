@@ -2,6 +2,7 @@
 title: Carousel
 description: A component for displaying rotating slides with navigation controls and auto-sliding feature.
 constructorName: ShCarousel
+layout: doc
 ---
 
 ### Usage

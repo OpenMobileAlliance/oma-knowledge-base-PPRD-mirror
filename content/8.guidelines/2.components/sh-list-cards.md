@@ -2,6 +2,7 @@
 title: ShListCards
 description: This constructor is designed to showcase a list of cards, each represented by a component with associated properties. It provides a header section with a title, subtitle, and description, and dynamically renders the cards in a grid layout based on the provided settings and cardID.
 constructorName: ShListCards
+layout: doc
 ---
 
 ### Usage

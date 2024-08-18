@@ -2,6 +2,7 @@
 title: Multi Column 
 description:
 constructorName: ShMultiColumn
+layout: doc
 ---
 
 ### Usage
