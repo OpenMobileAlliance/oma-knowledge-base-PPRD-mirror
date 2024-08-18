@@ -15,8 +15,8 @@
                       <ul v-if="subLink.children?.length > 0" class="space-y-1 hidden lg:block">
                         <li v-for="(subChildLink, subChildIndex) in subLink.children" class="space-y-1 lg:block"
                           :key="subChildIndex">
-                          <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path" class="">{{
-                            subChildLink.title }}
+                          <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path" class="">
+                            {{ subChildLink.title }}
                           </ULink>
                         </li>
                       </ul>
@@ -77,6 +77,9 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 
 const main = useAppConfig().main
 
+const routeDepth = route.path.split('/').length
+const minDepth = routeDepth - 3 > 0 ? routeDepth - 3 : 0
+
 const contentClass = computed(() => {
   if (page.value.layout === 'doc') {
     return page.value.body?.toc?.links?.length > 0 ? "lg:col-span-6" : "lg:col-span-8"
@@ -85,7 +88,7 @@ const contentClass = computed(() => {
   }
 })
 
-const comparePathsForBranch = (path1, path2) => {
+const comparePathsForBranch = (path1: string, path2: string) => {
   const path1Parts = path1.split('/');
   const path2Parts = path2.split('/');
 
@@ -102,9 +105,8 @@ const comparePathsForBranch = (path1, path2) => {
   return true;
 }
 
-const filterNavigation = (list, path) => {
+const filterNavigation = (list: array, path: sting) => {
   if (list?.length > 0) {
-
     const branchList = list.reduce((prev, curr) => {
       if (comparePathsForBranch(path, curr._path)) {
         prev.push(curr)
@@ -115,12 +117,28 @@ const filterNavigation = (list, path) => {
     return branchList
 
   } else {
-    return []
+    return list
   }
 }
 
 const displayNavigation = computed(() => {
-  const res = filterNavigation(navigation.value, page.value._path)
+  let res = filterNavigation(navigation.value, page.value._path)
+  if (minDepth > 0) {
+    let depth = minDepth
+
+    while (depth > 0) {
+      let childResult = []
+      depth -= 1
+      if (res[0].children?.length > 0) {
+        childResult = filterNavigation(res[0].children, page.value._path)
+        childResult = childResult.filter((item) => {
+          const itemDepth = item._path.split('/')
+          return itemDepth.length >= routeDepth - 1
+        })
+        res = childResult.length > 0 ? childResult : res
+      }
+    }
+  }
   return res
 })
 </script>
