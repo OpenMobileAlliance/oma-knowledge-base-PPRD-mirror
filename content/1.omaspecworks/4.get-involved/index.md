@@ -1,7 +1,7 @@
 ---
-title: Get in Contact
+title: Contact us
 description:
 layout: doc
 ---
 
-This is a placeholder for Contact us information
+This is a placeholder for contact us.
