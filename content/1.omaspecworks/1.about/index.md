@@ -1,9 +1,9 @@
 ---
-title: About
+title: About OMA SpecWorks
 description:
 layout: doc
 ---
-## About OMA SpeckWorks
+
 OMA SpecWorks is an innovative kind of Standards Development Organization (SDO) where the needs for wireless industry consensus versus the quick and accurate creation of specifications and other technical documentation are balanced via a working group-driven, efficient and agile process. As a non-profit organization with a long history in mobile and Internet of Things (IoT) technology development, OMA SpecWorks is a specifications factory where industry-leading companies bring their ideas and talent to build market-accelerating standards that allow products and services to interoperate seamlessly across fixed and mobile wireless data networks.
 
 [Members]() come to OMA SpecWorks to work together in a transparent environment where companies of all shapes and sizes can contribute on an equal footing to the next generation of wireless technology standards. At OMA SpecWorks good ideas are valued, and high-quality technical outputs are completed, tested, and released to the market for use in the wide variety of market sectors such as healthcare, automotive, utilities, and home automation that make up today’s connected world.
