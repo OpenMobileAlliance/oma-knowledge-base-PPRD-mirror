@@ -1,6 +1,6 @@
 ---
 title: In Location Alliance
 description:
----
-## In Location Alliance
-This page provides the following content:
+layout: doc
+--- 
+This page is a placeholder for Location Alliance information.
