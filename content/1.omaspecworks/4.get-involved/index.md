@@ -1,5 +1,5 @@
 ---
-title: Contact us
+title: Get Involved with OMA
 description:
 layout: doc
 ---
