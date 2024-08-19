@@ -1,5 +1,5 @@
 ---
-title: About OMA SpecWorks2
+title: Get in Contact
 description:
 layout: doc
 ---
