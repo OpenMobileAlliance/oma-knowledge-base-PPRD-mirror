@@ -1,5 +1,7 @@
 ---
 title: OMASPECWORKS
+description:
+layout: doc
 ---
 
 ## Welcome to OMASpecWorks
@@ -163,6 +165,15 @@ cols: 5
         urlWrapper: 
         ---
         ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3 mb-10
+        title: F.A.Q # Fourth Column
+        subtitle: Questions & Answers
+        urlWrapper: ""
+        ---
+        ::::
     ::: 
 
     :::ShColumn 
@@ -197,15 +208,6 @@ cols: 5
         title: LwM2M # Fith Column
         subtitle: News
         urlWrapper: 
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3 mb-10
-        title: F.A.Q # Fith Column
-        subtitle: Questions & Answers
-        urlWrapper: ""
         ---
         ::::
     :::          

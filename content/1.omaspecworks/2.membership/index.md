@@ -1,6 +1,7 @@
 ---
 title: Membership
 description:
+layout: doc
 ---
 ### Membership
 
