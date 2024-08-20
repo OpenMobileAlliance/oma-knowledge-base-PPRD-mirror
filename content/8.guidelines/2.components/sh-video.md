@@ -2,6 +2,7 @@
 title: Video
 description:
 constructorName: ShVideo
+layout: doc
 ---
 
 ### Usage

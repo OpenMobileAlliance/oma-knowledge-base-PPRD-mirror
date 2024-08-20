@@ -2,6 +2,7 @@
 title: Card
 description: This constructor allows you to have image on one half of the card, and text with labels on the other one. Text and labels have full Markdown support.
 constructorName: ShCard
+layout: doc
 ---
 
 ### Usage

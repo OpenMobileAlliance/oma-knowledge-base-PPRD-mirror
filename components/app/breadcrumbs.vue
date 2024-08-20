@@ -4,14 +4,12 @@
       <nuxt-link to="/" class="text-[#dda20d] dark:text-[#87cefa] hover:text-[#044ea1]">HOME</nuxt-link>
       <span v-for="(crumb, index) in breadcrumbs" :key="index" class="text-[#dda20d] dark:text-[#87cefa]">
         &nbsp; <b> > </b> &nbsp;
-        <nuxt-link
-          v-if="crumb.to"
-          :to="crumb.to"
-          :class="{ 'active': isBreadcrumbActive(crumb, index) }"
-        >
+        <nuxt-link v-if="crumb.to != $route.path" :to="crumb.to"
+          :class="{ 'active': isBreadcrumbActive(crumb, index) }">
           {{ crumb.label.toUpperCase() }}
         </nuxt-link>
-        <span v-else>{{ crumb.label.toUpperCase() }}</span>
+        <span v-else :class="['curr-path', { 'active': isBreadcrumbActive(crumb, index) }]">{{
+          crumb.label.toUpperCase() }}</span>
       </span>
     </div>
   </header>
@@ -43,15 +41,28 @@ export default {
 
 <style scoped>
 .active {
-  color: #dda20d; /* change the color of active breadcrumb */
+  color: #dda20d;
+  /* change the color of active breadcrumb */
 }
+
 .dark .active {
-  color: #87cefa; /* change the color of active breadcrumb in dark mode */
+  color: #87cefa;
+  /* change the color of active breadcrumb in dark mode */
 }
+
 a:hover {
   color: #044ea1;
 }
+
 .dark a:hover {
   color: #dda20d;
+}
+
+.curr-path {
+  color: #64748b;
+}
+
+.dark .curr-path {
+  color: #FAFAFA;
 }
 </style>

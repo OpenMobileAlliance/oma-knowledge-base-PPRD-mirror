@@ -2,6 +2,7 @@
 title: Action Card
 description: This constructor allows clients to input their emails for newsletter and subscriptions
 constructorName: ShActionCard
+layout: doc
 ---
 
 ### Usage

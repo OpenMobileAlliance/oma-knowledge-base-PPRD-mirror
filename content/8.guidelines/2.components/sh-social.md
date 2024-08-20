@@ -2,6 +2,7 @@
 title: Social
 description:
 constructorName: ShSocial
+layout: doc
 ---
 
 ### Usage

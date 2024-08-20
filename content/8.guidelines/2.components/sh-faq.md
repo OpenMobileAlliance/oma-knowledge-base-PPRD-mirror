@@ -2,6 +2,7 @@
 title: FAQ
 description: Component to render a list of frequently asked questions and answers.
 constructorName: ShFaq
+layout: doc
 ---
 
 ## Usage
