@@ -100,6 +100,7 @@ onMounted(async () => {
           return {
             ...frontmatter,
             excerpt: item,
+            urlUpperBase: item._path,
           };
         }
       })
