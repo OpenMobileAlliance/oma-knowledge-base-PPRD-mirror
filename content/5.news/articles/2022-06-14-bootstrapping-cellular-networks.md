@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2022-06-14-bootstrapping-cellular-networks"
 urlImage: /images/news/bootstrapping.jpeg
 imageBackground: ""
 title: LwM2M, Bootstrapping in Cellular Networks

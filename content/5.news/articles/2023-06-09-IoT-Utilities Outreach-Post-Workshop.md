@@ -1,5 +1,4 @@
 ---
-urlUpperBase: articles/2023-06-09-IoT-Utilities Outreach-Post-Workshop
 urlImage: /images/news/electric-meter.jpeg
 imageBackground: ""
 title: IoT and LwM2M for Utilities
