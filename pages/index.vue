@@ -1,5 +1,5 @@
 <template>
-  <UContainer :ui="{constrained: '',}" class="prose mt-10 pb-20">
+  <UContainer class="w-full prose pt-10 mt-10 pb-20">
     <ContentDoc />
   </UContainer>
 </template>

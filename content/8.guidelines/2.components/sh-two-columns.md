@@ -2,6 +2,7 @@
 title: TwoColumns
 discription: 
 constructorName: ShTwoColumns
+layout: doc
 ---
 
 ### Usage

@@ -2,6 +2,7 @@
 title: Avatar
 description: This constructor is designed to showcase an Avatar representing a project member and provide a direct link to their social media profiles. 
 constructorName: ShAvatar
+layout: doc
 ---
 
 ### Usage

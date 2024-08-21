@@ -2,6 +2,7 @@
 title: Segment
 discription: 
 constructorName: ShSegment
+layout: doc
 ---
 
 The <b>{{ $doc.constructorName }}</b> component represent the most flexible component as it 
