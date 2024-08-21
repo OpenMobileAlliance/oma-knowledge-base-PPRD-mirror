@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "news/articles/20200123Lw2M2M5G"
 urlImage: "images/oma-specworks-logo.jpg"
 imageBackground: ""
 title: LwM2M v1.2 is now available!

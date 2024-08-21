@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2024-02-13-Utility-Webinar-Feb-8"
 urlImage: /images/news/water_meters.png
 imageBackground: ""
 title: Revolutionizing the Utilities Sector - The Transformative Power of LwM2M

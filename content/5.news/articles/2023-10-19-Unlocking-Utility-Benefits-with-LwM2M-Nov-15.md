@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2023-10-19-Unlocking-Utility-Benefits-with-LwM2M-Nov-15"
 urlImage: /images/news/iot_text_1.jpg
 imageBackground: ""
 title: A Tailored Solution for Utilities
