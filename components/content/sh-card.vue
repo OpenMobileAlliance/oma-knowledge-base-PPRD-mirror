@@ -15,7 +15,7 @@
                 <MDC :value="subtitle" />
             </div>
             <div :class="ui.text">
-                <MDC v-if="text" :value="text" />
+                <ContentRenderer :value="text" excerpt />
             </div>
             <div class="border-t mt-16">
                 <div class="grid grid-cols-3">
