@@ -16,7 +16,6 @@
             </div>
             <div :class="ui.text">
                 <MDC v-if="text" :value="text" />
-                <div v-else v-html="excerptHtml"></div>
             </div>
             <div class="border-t mt-16">
                 <div class="grid grid-cols-3">
@@ -36,7 +35,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, toRef, computed } from 'vue'
 import { card as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
@@ -82,5 +80,4 @@ const backgroundClass = computed(() => {
 });
 
 const { page } = useContent()
-const cardID = computed(() => page.value.cardID)
 </script>
