@@ -99,7 +99,7 @@ onMounted(async () => {
           const { ...frontmatter } = item;
           return {
             ...frontmatter,
-            text: item,
+            excerpt: item,
           };
         }
       })
