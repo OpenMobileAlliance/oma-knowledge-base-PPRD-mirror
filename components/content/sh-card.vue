@@ -15,7 +15,8 @@
                 <MDC :value="subtitle" />
             </div>
             <div :class="ui.text">
-                <ContentRenderer :value="text" excerpt />
+                <MDC v-if="text" :value="text" />
+                <ContentRenderer v-else :value="excerpt" excerpt />
             </div>
             <div class="border-t mt-16">
                 <div class="grid grid-cols-3">
@@ -45,6 +46,7 @@ const props = withDefaults(
         title?: string;
         subtitle?: string;
         text?: string;
+        excerpt?: string;
         leftLabel?: string;
         centerLabel?: string;
         rightLabel?: string;
@@ -61,6 +63,7 @@ const props = withDefaults(
         title: "",
         subtitle: "",
         text: "",
+        excerpt: "",
         leftLabel: "",
         centerLabel: "",
         rightLabel: "",
