@@ -15,7 +15,8 @@
                 <MDC :value="subtitle" />
             </div>
             <div :class="ui.text">
-                <MDC :value="text" />
+                <MDC v-if="text" :value="text" />
+                <ContentRenderer v-else :value="excerpt" excerpt />
             </div>
             <div class="border-t mt-16">
                 <div class="grid grid-cols-3">
@@ -35,7 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, toRef, computed } from 'vue'
 import { card as config } from '@/ui.config' // Import the config file
 
 const props = withDefaults(
@@ -46,6 +46,7 @@ const props = withDefaults(
         title?: string;
         subtitle?: string;
         text?: string;
+        excerpt?: string;
         leftLabel?: string;
         centerLabel?: string;
         rightLabel?: string;
@@ -62,6 +63,7 @@ const props = withDefaults(
         title: "",
         subtitle: "",
         text: "",
+        excerpt: "",
         leftLabel: "",
         centerLabel: "",
         rightLabel: "",
@@ -81,5 +83,4 @@ const backgroundClass = computed(() => {
 });
 
 const { page } = useContent()
-const cardID = computed(() => page.value.cardID)
 </script>

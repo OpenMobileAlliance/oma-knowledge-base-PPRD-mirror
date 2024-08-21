@@ -27,7 +27,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -50,7 +50,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -202,7 +202,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -236,7 +236,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::

@@ -91,15 +91,16 @@ onMounted(async () => {
     if (result && result.length > 0) {
       // Create a map of cardID to corresponding content
       const cardMap = new Map(result.map(item => [item.cardID, item]));
-
+      
       // Sort the cards according to the order of cardID in props.cardID
       cards.value = props.cardID.map(id => {
         const item = cardMap.get(id);
         if (item) {
-          const { description, ...frontmatter } = item;
+          const { ...frontmatter } = item;
           return {
             ...frontmatter,
-            text: description,
+            excerpt: item,
+            urlUpperBase: item._path,
           };
         }
       })

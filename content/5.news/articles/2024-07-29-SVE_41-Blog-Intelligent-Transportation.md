@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2024-07-29-SVE_41-Blog-Intelligent-Transportation"
 urlImage: /images/news/intelligent-transportation.png
 imageBackground: ""
 title:  "The Emergence of Intelligent Transportation, Riding Smart"
