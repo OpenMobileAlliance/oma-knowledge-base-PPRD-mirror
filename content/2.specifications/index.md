@@ -1,5 +1,6 @@
 ---
 title: SPECIFICATIONS
+layout: doc
 ---
 ## OMA Specifications
 
