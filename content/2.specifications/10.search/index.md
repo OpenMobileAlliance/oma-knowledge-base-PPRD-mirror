@@ -11,4 +11,6 @@ Unlock the Power of OMA's Enablers: With over 220 Enablers, each available in mu
 
 2. **Search by Project or Enabler**: Explore all documents related to a particular project or Enabler by selecting the relevant category.
 
+3. **Search by Public Documents**: TBD
+
 These methods make it easy to find the technical specifications you need.
