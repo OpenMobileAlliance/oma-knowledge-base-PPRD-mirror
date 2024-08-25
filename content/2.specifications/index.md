@@ -16,10 +16,10 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
+            icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
-        title: Specifications # First Row
-        subtitle: OMA
+        title: Search # First Row
+        subtitle: OMA Docs
         urlWrapper: "/specifications/#exploring-oma-specifications"
         ---
         ::::
