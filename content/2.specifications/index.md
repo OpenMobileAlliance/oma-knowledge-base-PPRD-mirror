@@ -6,7 +6,7 @@ layout: doc
 
 ::ShMultiColumn
 ---
-cols: 5 
+cols: 3 
 ---
     :::ShColumn 
     --- 
@@ -19,7 +19,7 @@ cols: 5
             icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Search # First Row
-        subtitle: OMA Docs
+        subtitle: OMA Documentation
         urlWrapper: "/specifications/#exploring-oma-specifications"
         ---
         ::::
@@ -28,8 +28,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Tech Specs # First Column
-        subtitle: Documents
+        title: by Specifications # First Column
+        subtitle: OMA Baselines
         urlWrapper: "/specifications/#search-by-specific-document"
         ---
         ::::
@@ -38,8 +38,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Releases # First Column
-        subtitle: Enablers
+        title: by Enabler # First Column
+        subtitle: OMA Enablers
         urlWrapper: "/specifications/#search-by-project-or-enabler"
         ---
         ::::
@@ -48,8 +48,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Public Documents # First Column
-        subtitle: OMA
+        title: by Public Documents # First Column
+        subtitle: OMA Public Documentation
         urlWrapper: "/specifications/#oma-public-documents"
         ---
         ::::
@@ -63,10 +63,10 @@ cols: 5
         ---
         ui:
             wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/4
+            icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Registries # Second Row
-        subtitle: OMNA
+        subtitle: OMNA Registries
         urlWrapper: "/specifications/#oma-registries-overview"
         ---
         ::::
@@ -75,8 +75,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: LwM2M Registry # Second Column
-        subtitle: OMNA
+        title: LwM2M # Second Column
+        subtitle: OMNA Registry
         urlWrapper: "/specifications/#oma-lwm2m-registry"
         ---
         ::::
@@ -85,19 +85,9 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: Enabler Registries # Second Column
-        subtitle: OMNA
+        title: Enablers # Second Column
+        subtitle: OMNA Registries
         urlWrapper: "/specifications/#omna-enabler-registries"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Registry API # Third Column
-        subtitle: LwM2M
-        urlWrapper: "/specifications/#oma-lwm2m-registry-api"
         ---
         ::::
     :::
@@ -112,8 +102,8 @@ cols: 5
             wrapper: bg-indigo-200 
             icon: text-blue-700
         icon: eos-icons:background-tasks
-        title: API # Third Column
-        subtitle: OMA
+        title: API's # Third Column
+        subtitle: OMA API's
         urlWrapper: "/specifications/#oma-api-inventory"
         ---
         ::::
@@ -122,8 +112,18 @@ cols: 5
         ---
         ui:
             wrapper: mt-3
-        title: OMA API's # Third Column
-        subtitle: OMA
+        title: LwM2M Registry API # Third Column
+        subtitle: LwM2M Registry
+        urlWrapper: "/specifications/#oma-lwm2m-registry-api"
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-3
+        title: Enablers API's # Third Column
+        subtitle: OMA Enablers
         urlWrapper: "/specifications/#oma-api-table"
         ---
         ::::      
