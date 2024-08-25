@@ -1,5 +1,5 @@
 ---
-title: OMA SPECIFICATIONS
+title: SPECIFICATIONS
 layout: doc
 ---
 ### Search OMA Specifications
