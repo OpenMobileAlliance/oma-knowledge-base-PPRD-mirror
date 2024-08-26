@@ -40,13 +40,13 @@ The following name and number registries are currently maintained by OMNA.
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">OMA Lightweight M2M (LWM2M)</td>
-      <td>Register Objects</td>
-      <td>Register Resources</td>
+      <td rowspan="2">OMA Lightweight M2M (LWM2M)</td>
+      <td>Register: LwM2M Objects</td>
+      <td>View: LwM2M Objects</td>
     </tr>
     <tr>
-      <td>OMA Lightweight M2M (LWM2M) Object & Resource Registry</td>
-      <td></td>
+      <td>Register: LwM2M Resources</td>
+      <td>View: LwM2M Resources</td>
     </tr>
   </tbody>
   </table>
