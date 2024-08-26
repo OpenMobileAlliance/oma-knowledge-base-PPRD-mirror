@@ -1,3 +1,8 @@
+---
+title: News
+description:
+layout: doc
+---
 ## News
 ### Blogs and Articles
 This section publishes technical topics related to OMA LightweightM2M, offering insights, updates, and expert opinions to support and educate the IoT community.
