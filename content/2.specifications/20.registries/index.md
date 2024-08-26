@@ -41,7 +41,9 @@ The following name and number registries are currently maintained by OMNA.
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">OMA Lightweight M2M (LWM2M)</td>
+      <td rowspan="2">OMA Lightweight M2M (LWM2M)</br>
+        <img src="images/OMA-129 Lightweight M2M Logo_RGB_full.png" alt="OMA LightweightM2M">
+      </td>
       <td>LwM2M Objects</td>
       <td>Register | View</td>
     </tr>
