@@ -1,11 +1,8 @@
 ---
 title: LwM2M
 description: Main page of the LwM2M topic
+layout: doc
 ---
-
-## LwM2M
-
-
 
 <img src="/images/lwm2m/logo-OMA.jpg" width="40%" style="z-index: 10; margin-left: 40%; margin-top: -4.5rem;"/>
 
