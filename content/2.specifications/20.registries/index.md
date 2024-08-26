@@ -30,4 +30,244 @@ OMNA maintains several name and number registries. These registries help ensure 
 
 The following name and number registries are currently maintained by OMNA.
 
-{OMNA REGISTRY TABLE}
+<table>
+  <thead>
+    <tr>
+      <th>OMNA Registry</th>
+      <th>To Register</th>
+      <th>To View Registries</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">WAP WSP</td>
+      <td>Register</td>
+      <td>Register</td>
+    </tr>
+    <tr>
+      <td>WSP Content Type Codes</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WSP Header Code Page Names</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WSP Header Parameters</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WSP Extended Methods</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">WAP WTP</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WTP Option TPI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">WAP WAG</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WBXML Public Document ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WMLScript Library ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PUSH Application</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">OMNA Shared</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA (URN) / Namespace Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA Schema-based Namespace Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA Private AVP Codes</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA Security</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ISO Object Identifiers</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">GBA Protocol Identifiers</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DM Application Characteristics (AC) Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DM Management Object (MO) Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">OMA Digital Rights Management (DRM)</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA Digital Rights Management System (DRMS) Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DRM EncryptionMethod Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MPEG-2 DRM Control Format (MDCF) Message Elements Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DRM sample_type Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">OMA Lightweight M2M (LWM2M)</td>
+      <td>Register Objects</td>
+      <td>Register Resources</td>
+    </tr>
+    <tr>
+      <td>OMA Lightweight M2M (LWM2M) Object & Resource Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA Location (LOC)</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">OMA Mobile Broadcast (BCAST)</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BCAST Service Class Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BCAST Identification Authority Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BCAST ClientManufacturerCode Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BCAST Parental Rating System Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA Smartcard Application (AID) Codes Registry</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA Mobile Codes (MC)</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA Mobile Codes Registry ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMA Mobile Codes Routing Prefix</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA Presence</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Service Description Elements</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA Presence and Availability (PAG)</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>XCAP Application Unique ID (AUID) Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA Push</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMNA Push Message Header Code Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA RESTful Network APIs</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Service and Policy Exceptions Registry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA XDM Document Management (XDM)</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>URI List Usage Names</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">OMA WSDL Packages</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>URNs for use in WSDL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">External Registrations</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMNA Assignments from External Registries</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CPM Registry for folder naming</td>
+      <td>Register</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
