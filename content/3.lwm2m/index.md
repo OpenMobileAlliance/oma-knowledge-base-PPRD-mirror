@@ -3,7 +3,7 @@ title: Introduction
 description: Main page of the LwM2M topic
 layout: doc
 ---
-## 
+
 
 ::ShTextImg
 ---
