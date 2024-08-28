@@ -15,11 +15,12 @@ cols: 6
     :::ShColumn 
     --- 
     ui: # First Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
+            wrapper: bg-indigo-100 mb-3
             icon: text-blue-700 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About LwM2M # First Row
@@ -31,7 +32,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: What is LwM2M # First Column
         subtitle: |
             **
@@ -42,7 +43,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: LwM2M Components # First Column
         subtitle: |
             **
@@ -53,7 +54,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Key Features # First Column
         subtitle: |
             **
@@ -64,7 +65,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3 mb-10
+            wrapper: mt-5 mb-5
         title: Benefits # First Column
         subtitle: |
             **
@@ -76,11 +77,12 @@ cols: 6
     :::ShColumn 
     --- 
     ui: # Second Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
+            wrapper: bg-indigo-100 mb-3
             icon: text-blue-700 w-1/4
         icon: i-eos-icons:rotating-gear
         title: Applications & Use Cases # Second Row
@@ -92,7 +94,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Industry Applications # Second Column
         subtitle: |
             **
@@ -103,7 +105,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Case Studies # Second Column
         subtitle: |
             **
@@ -115,15 +117,16 @@ cols: 6
     :::ShColumn 
     --- 
     ui: # Third Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Technical Resources # Third Column
-        subtitle: 
+        subtitle: LwM2M
         urlWrapper: ""
         ---
         ::::
@@ -131,10 +134,9 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Documentation # Third Column
-        subtitle: |
-            **
+        subtitle: LwM2M
         urlWrapper: 
         ---
         ::::
@@ -142,10 +144,9 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Tutorials & Guidelines # Third Column
-        subtitle: |
-            **
+        subtitle: LwM2M
         urlWrapper:
         ---
         :::: 
@@ -153,20 +154,18 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Tools # Third Column
-        subtitle: |
-            **
+        subtitle: LwM2M
         urlWrapper: ""
         ---
         ::::
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: LwM2M Registry # Third Column
-        subtitle: |
-            **
+        subtitle: LwM2M
         urlWrapper: ""
         ---
         ::::          
@@ -175,11 +174,12 @@ cols: 6
     :::ShColumn 
     --- 
     ui: # Fourth Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Community & Support # Fourth Column
@@ -191,7 +191,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Members Meetings # Fourth Column
         subtitle: |
             **
@@ -202,7 +202,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Webinars & Workshops # Fourth Column
         subtitle: |
             **
@@ -213,7 +213,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Test Events # Fourth Column
         subtitle: |
             **
@@ -224,7 +224,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: LwM2M Implementations # Fourth Column
         subtitle: |
             Open Source
@@ -236,11 +236,12 @@ cols: 6
     :::ShColumn 
     --- 
     ui: # Fith Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/2
         icon: eos-icons:background-tasks
         title: General # Fith Column
@@ -252,7 +253,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: News & Media # Fith Column
         subtitle: |
             **
@@ -263,7 +264,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Newsletter Signup # Fith Column
         subtitle: |
             **
@@ -275,11 +276,12 @@ cols: 6
     :::ShColumn 
     --- 
     ui: # Sixth Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Sixth Column
@@ -291,7 +293,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Membership Info # Fith Column
         subtitle: |
             **
@@ -302,7 +304,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Contact us # Fith Column
         subtitle: |
             **
@@ -312,7 +314,7 @@ cols: 6
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3 mb-10
+            wrapper: mt-5 mb-5
         title: F.A.Q # Fith Column
         subtitle: |
             **
@@ -322,5 +324,4 @@ cols: 6
     :::       
 ::
 
-## Latest News
 

@@ -13,11 +13,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # First Column
+       wrapper: p-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
+            wrapper: bg-indigo-100 mb-3
             icon: text-blue-700 w-1/3
         icon: i-eos-icons:rotating-gear
         title: Utilities # First Row
@@ -29,7 +30,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Benefits # First Column
         subtitle: for Utilities
         urlWrapper: "/utilities/#benefits-for-utilities"
@@ -39,7 +40,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Use Cases # First Column
         subtitle: Utitlities
         urlWrapper: "/utilities/#use-cases"
@@ -50,11 +51,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Second Column
+       wrapper: p-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
+            wrapper: bg-indigo-100 mb-3
             icon: text-blue-700 w-1/4
         icon: i-eos-icons:rotating-gear
         title: Technical Overview # Second Row
@@ -66,7 +68,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Interoperability # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#interoperability"
@@ -76,7 +78,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Scalability # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#scalability"
@@ -86,7 +88,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Security # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#"
@@ -97,11 +99,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Third Column
+       wrapper: p-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Market Potential # Third Column
@@ -113,7 +116,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Q&A # Third Column
         subtitle: on Utilities & LwM2M
         urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
@@ -123,7 +126,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: White Papers # Third Column
         subtitle: Utilities & LwM2M
         urlWrapper: "/utilities/"
@@ -134,11 +137,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Forth Column
+       wrapper: p-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Call to Action # Forth Column
@@ -150,7 +154,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Engage Stakeholders # Forth Column
         subtitle: Engagement Stakeholders
         urlWrapper: "/utilities/#engage-stakeholders"
@@ -160,7 +164,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Protomote Adoption # Forth Column
         subtitle: Engagement with OMA
         urlWrapper: "/utilities/#promote-adoption"
@@ -170,7 +174,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Provide Resources # Forth Column
         subtitle: Engagement with OMA
         urlWrapper: "/utilities/#provide-resources"
@@ -180,11 +184,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Fith Column
+       wrapper: p-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Workshops # Forth Column
@@ -196,7 +201,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Workshops # Forth Column
         subtitle: ""
         urlWrapper: "/utilities/workshops#previous-workshops"

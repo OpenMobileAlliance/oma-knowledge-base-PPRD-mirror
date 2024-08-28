@@ -23,7 +23,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
+            wrapper: bg-indigo-100 mb-3
             icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Search # First Row
@@ -35,7 +35,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: by Specifications # First Column
         subtitle: OMA Baselines
         urlWrapper: "/specifications/#search-by-specific-document"
@@ -45,7 +45,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: by Enabler # First Column
         subtitle: OMA Enablers
         urlWrapper: "/specifications/#search-by-project-or-enabler"
@@ -55,7 +55,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: by Public Documents # First Column
         subtitle: OMA Public Documentation
         urlWrapper: "/specifications/#oma-public-documents"
@@ -70,7 +70,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
+            wrapper: bg-indigo-100 mb-3
             icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Registries # Second Row
@@ -82,7 +82,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: LwM2M # Second Column
         subtitle: OMNA Registry
         urlWrapper: "/specifications/#oma-lwm2m-registry"
@@ -92,7 +92,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Enablers # Second Column
         subtitle: OMNA Registries
         urlWrapper: "/specifications/#omna-enabler-registries"
@@ -107,7 +107,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700
         icon: eos-icons:background-tasks
         title: API's # Third Column
@@ -119,7 +119,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: LwM2M Registry API # Third Column
         subtitle: LwM2M Registry
         urlWrapper: "/specifications/#oma-lwm2m-registry-api"
@@ -129,7 +129,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
         title: Enablers API's # Third Column
         subtitle: OMA Enablers
         urlWrapper: "/specifications/#oma-api-table"
