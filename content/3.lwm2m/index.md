@@ -308,6 +308,16 @@ cols: 6
         ---
         ui:
             wrapper: mt-5
+        title: LwM2M Groups # Fith Column
+        subtitle: Working Groups
+        urlWrapper: 
+        ---
+        ::::        
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
         title: Membership Info # Fith Column
         subtitle: |
             **
