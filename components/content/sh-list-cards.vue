@@ -1,15 +1,25 @@
 <template>
   <div :class="ui.wrapper">
-    <!-- Tag Selection Area -->
-    <div class="ui.tags">
-      <span
-        v-for="tag in tags"
-        :key="tag"
-        @click="toggleTag(tag)"
-        :class="['tag', { selected: selectedTags.includes(tag) }]"
-      >
-        {{ tag }}
-      </span>
+    <div :class="ui.inner">
+
+      <h3 :class="ui.tags.title">Tags</h3>
+
+      <div class="flex justify-center">
+        <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)"
+          :class="['inline-block ', ui.tags.list, { 'bg-oma-300 border-oma-300 hover:shadow-[#044da170] text-white dark:bg-oma-700 dark:border-oma-700 dark:hover:shadow-purple-950': selectedTags.includes(tag) }]">
+          {{ tag }}
+          <UIcon v-if="selectedTags.includes(tag)" name="i-line-md:close-circle" dynamic
+            class="hover:text-gray-300 duration-100" />
+        </span>
+      </div>
+
+      <div class="flex justify-center mt-5">
+        <button v-if="selectedTags.length" @click="clearTags" :class="ui.tags.clear">
+          Clear All
+          <UIcon name="i-line-md:filter-remove-twotone" dynamic class="animate-pulse"></UIcon>
+        </button>
+      </div>
+
     </div>
 
     <!-- Header Section -->
@@ -33,8 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import { listCards as config } from "@/ui.config";
-import { gridSizes } from "@/ui.config";
+import { listCards as config, gridSizes } from "@/ui.config";
 
 const props = withDefaults(
   defineProps<{
@@ -69,7 +78,7 @@ const { ui, attrs } = useUI(
 );
 
 const gridClass = computed(() => {
-  const cols = props.cols !== undefined ? props.cols : config.default.cols;
+  const cols = props.cols ?? config.default.cols;
 
   if (windowWidth.value >= 1300) {
     return ["grid", gridSizes.gridCols[cols], props.gap].join(' ');
@@ -116,23 +125,23 @@ onMounted(async () => {
       // Sort the cards according to the order of cardID in props.cardID
       cards.value = props.cardID.map(id => {
         const item = cardMap.get(id);
-        
+
         if (item) {
           // Ensure item.tags is an array before filtering
           const validTags = Array.isArray(item.tags) ? item.tags.filter(tag => tag !== null) : [];
-          
+
           // Add tags to the Set to ensure uniqueness
           validTags.forEach(tag => uniqueTags.add(tag));
-          
+
           const { ...frontmatter } = item;
           return {
             ...frontmatter,
             excerpt: item,
             urlUpperBase: item._path,
+            tags: validTags
           };
         }
-      }).filter(card => card !== undefined); // Filter out undefined values
-
+      })
       // Convert Set to an array and assign to tags ref
       tags.value = Array.from(uniqueTags);
     }
@@ -144,7 +153,7 @@ const filteredCards = computed(() => {
   if (selectedTags.value.length === 0) {
     return cards.value;
   }
-  return cards.value.filter(card => 
+  return cards.value.filter(card =>
     card.tags.some((tag: string) => selectedTags.value.includes(tag))
   );
 });
@@ -157,20 +166,9 @@ const toggleTag = (tag: string) => {
     selectedTags.value.push(tag);
   }
 };
+
+// Method to clear all selected tags
+const clearTags = () => {
+  selectedTags.value = [];
+};
 </script>
-
-<style scoped>
-.tag {
-  cursor: pointer;
-  padding: 4px 8px;
-  margin: 2px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.tag.selected {
-  background-color: #007bff;
-  color: white;
-  border-color: #007bff;
-}
-</style>
