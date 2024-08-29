@@ -258,8 +258,8 @@ cols: 6
             wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/2
         icon: eos-icons:background-tasks
-        title: General # Fith Column
-        subtitle: 
+        title: News # Fith Column
+        subtitle: About LwM2M
         urlWrapper: ""
         ---
         ::::
