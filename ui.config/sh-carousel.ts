@@ -1,5 +1,5 @@
 export default {
-    wrapper: "relative flex items-center w-full mt-10 overflow-hidden",
+    wrapper: "relative flex items-center w-full mt-10 overflow-hidden bg-gray-50",
     title: "text-3xl font-bold text-center dark:text-gray-100",
     subtitle: "text-2xl text-center dark:text-gray-300 -mt-5",
     inner: "flex transition-transform duration-500 ease-in-out",

@@ -7,7 +7,7 @@ layout: doc
 ::ShCarousel
 ---
 ui:
-    wrapper:  bg-slate-100 rounded-2xl border-2
+    wrapper: rounded-2xl border-2
 title: Latest OMA News
 subtitle: Click here for more [news](/news)
 items:
