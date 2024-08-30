@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <img :src="page.urlImage" alt="Image" v-if="page.urlImage" /> {{ page }}
+        <img :src="page.urlImage" alt="Image" v-if="page.urlImage" /> 
         <div class="">
             <h2 class="text-oma-300">{{ page.title }}</h2>
             <h3 class="" v-if="page.subtitle">{{ page.subtitle }}</h3>
