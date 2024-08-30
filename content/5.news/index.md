@@ -1,5 +1,7 @@
 ---
-title: NEWS
+title: Articles
+description:
+layout: doc
 ---
 
 
