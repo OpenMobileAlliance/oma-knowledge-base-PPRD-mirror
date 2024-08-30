@@ -1,5 +1,5 @@
 export default {
-    wrapper: "pl-4 pr-4 bg-gray-50 ",
+    wrapper: "pl-4 pr-4 bg-[#F7F8FA] border-2 border-[#D2D9E0]",
     header: "",
     title: "pt-12 text-3xl font-extrabold text-center",
     subtitle: "pb-6 text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8 text-center",
