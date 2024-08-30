@@ -6,7 +6,7 @@
 
       <div class="flex justify-center">
         <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)"
-          :class="['inline-block ', ui.tags.list, { 'bg-oma-300 border-oma-300 hover:shadow-[#044da170] text-white dark:bg-oma-700 dark:border-oma-700 dark:hover:shadow-purple-950': selectedTags.includes(tag) }]">
+          :class="[ui.tags.list, {'bg-oma-300 border-oma-300 hover:shadow-[#044da170] text-white dark:bg-oma-700 dark:border-oma-700 dark:hover:shadow-purple-950': selectedTags.includes(tag) }]">
           {{ tag }}
           <UIcon v-if="selectedTags.includes(tag)" name="i-line-md:close-circle" dynamic
             class="hover:text-gray-300 duration-100" />
