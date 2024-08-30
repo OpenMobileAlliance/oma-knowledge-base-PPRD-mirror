@@ -24,7 +24,7 @@ text: |
 
 ::ShMultiColumn
 ---
-cols: 6 
+cols: 5 
 ---
     :::ShColumn 
     --- 
@@ -256,49 +256,9 @@ cols: 6
         ---
         ui:
             wrapper: bg-indigo-100 
-            icon: text-blue-700 w-1/2
-        icon: eos-icons:background-tasks
-        title: News # Fith Column
-        subtitle: About LwM2M
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        title: News & Media # Fith Column
-        subtitle: |
-            **
-        urlWrapper: 
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        title: Newsletter Signup # Fith Column
-        subtitle: |
-            **
-        urlWrapper: 
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Sixth Column
-       wrapper: m-1
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-100 
             icon: text-blue-700 w-1/3
         icon: eos-icons:background-tasks
-        title: Get Involved # Sixth Column
+        title: Get Involved # Fith Column
         subtitle: 
         urlWrapper: ""
         ---

@@ -67,7 +67,7 @@ items:
 ---
 ui: 
    wrapper: bg-slate-100 rounded-2xl p-5 border-2
-cols: 5
+cols: 4
 ---
     :::ShColumn 
     --- 
@@ -233,43 +233,6 @@ cols: 5
         title: F.A.Q # Fourth Column
         subtitle: Questions & Answers
         urlWrapper: ""
-        ---
-        ::::
-    ::: 
-
-    :::ShColumn 
-    --- 
-    ui: # Fith Column
-       wrapper: m-1
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-100 
-            icon: text-blue-700 w-1/2
-        icon: eos-icons:background-tasks
-        title: News # Fith Column
-        subtitle: 
-        urlWrapper: ""
-        ---
-        ::::
-        
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        title: OMA SpecWorks # Fith Column
-        subtitle: News
-        urlWrapper: 
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        title: LwM2M # Fith Column
-        subtitle: News
-        urlWrapper: 
         ---
         ::::
     :::          
