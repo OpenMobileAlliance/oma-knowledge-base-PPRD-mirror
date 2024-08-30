@@ -1,7 +1,10 @@
 ---
-title: Utility Outreach Program
+title: Workshops
 description: 'Next Workshop'
+layout: doc
 ---
+## Open Workshops
+TBD
 
 ## Previous Workshops
 
@@ -13,7 +16,7 @@ description: 'Next Workshop'
         <th>Details</th>
     </tr>
 </thead>
-<tbody>ß
+<tbody>
   <tr>
         <td><strong>Revolutionizing Utility with LwM2M Ecosystem</strong></td> 
         <td>8 Feb 24 | 6:00 PM Melbourne, 8:00 AM CET | Feb 7, 11 PM PDT </td> 
