@@ -1,14 +1,18 @@
 <template>
-    <div class="">
-        <img :src="page.urlImage" alt="Image" v-if="page.urlImage" /> 
-        <div class="">
-            <h2 class="text-oma-300">{{ page.title }}</h2>
-            <h3 class="" v-if="page.subtitle">{{ page.subtitle }}</h3>
+    <div class="-mt-16">
+        <div class="container flex mx-auto">
+            <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
+        </div>
+        <div class="text-center">
+            <h2 class="text-oma-300 text-start">{{ page.title }}</h2>
+            <h3 v-if="page.subtitle" class="text-start">{{ page.subtitle }}</h3>
             <div class="text-center dark:text-white" v-if="page.tags && page.tags.length">
                 Tags:
-                <span v-for="tag in page.tags" :key="tag" class="border rounded-3xl p-3 mx-2 text-gray-500">{{ tag }}</span>
+                <span v-for="tag in page.tags" :key="tag" class="border rounded-3xl p-3 mx-2 text-gray-500">
+                    {{ tag }}
+                </span>
             </div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center mt-4">
                 <p v-if="page.rightLabel" class="mr-2">{{ 'By:' }}</p>
                 <p v-if="page.rightLabel" class="text-end text-gray-500">{{ page.rightLabel }}</p>
                 <p v-if="page.leftLabel" class="mx-2">{{ '|' }}</p>
@@ -20,6 +24,5 @@
 </template>
 
 <script setup lang="ts">
-
 const { page } = useContent();
 </script>
