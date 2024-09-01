@@ -9,6 +9,10 @@ cardID: 18
 tags: 
     - collaboration
 ---
+::ShHelperCard
+---
+---
+::
 
 This workshop addresses the needs of the utilities sector as they deploy new functionality through adoption of the LwM2M protocol.
 

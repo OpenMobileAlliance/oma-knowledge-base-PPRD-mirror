@@ -9,6 +9,10 @@ cardID: 26
 tags: 
     - workshop
 ---
+::ShHelperCard
+---
+---
+::
 
 In an era where digital transformation is paramount, the utility sector stands on the brink of a significant evolution. The recent OMA SpecWorks Workshop delved deep into the transformative potential of the Lightweight Machine to Machine (LwM2M) protocol in revolutionizing utility management, offering innovative solutions to age-old challenges.
 

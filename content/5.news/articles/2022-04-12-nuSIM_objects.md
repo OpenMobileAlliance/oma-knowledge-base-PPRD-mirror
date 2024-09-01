@@ -8,6 +8,11 @@ rightLabel:  OMASpecWorks
 cardID: 10
 tags:
 ---
+::ShHelperCard
+---
+---
+::
+
 The increasing demand for power-efficiency, robustness and small form factors along with growing simplicity needs along the value chain have caused the mobile industry to consider alternative solutions to the classical SIM, spearheaded by the integrated SIM (iSIM) – where the SIM functionality is integrated into the application processor or radio chip. 
 
 <!--more-->

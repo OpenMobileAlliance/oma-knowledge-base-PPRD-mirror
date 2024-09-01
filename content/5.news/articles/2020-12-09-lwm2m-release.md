@@ -1,5 +1,5 @@
 ---
-urlImage: "images/oma-specworks-logo.jpg"
+urlImage: "/images/oma-specworks-logo.jpg"
 imageBackground: ""
 title: LwM2M v1.2 is now available!
 subtitle: Latest LwM2M Protocol version
