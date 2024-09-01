@@ -10,6 +10,10 @@ tags:
     - news
     - workshop
 ---
+::ShHelperCard
+---
+---
+::
 
 The rapid growth of the Internet of Things (IoT) has led to an explosion of connected devices, each generating vast amounts of data and requiring robust management strategies. Connected devices can range from small and static assets like parts and tools to very large and moving assets like vehicles, fleets, and commuter trains. Effective IoT device management is critical to ensure these devices operate efficiently, securely, and at scale.
 <!--more-->

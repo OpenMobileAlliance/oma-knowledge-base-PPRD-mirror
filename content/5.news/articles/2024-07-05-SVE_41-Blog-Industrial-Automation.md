@@ -10,6 +10,10 @@ tags:
     - news
     - workshop
 ---
+::ShHelperCard
+---
+---
+::
 <!DOCTYPE html>
 <html>
 <body>

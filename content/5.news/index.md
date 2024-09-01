@@ -5,8 +5,6 @@ title: NEWS
 
 ::ShListCards
 ---
-ui:
-    wrapper: shadow-xl bg-sky-100 pb-10 rounded-2xl
 description: This constructor is standalone
 title: |
     Open Mobile Alliance News & Articles 
