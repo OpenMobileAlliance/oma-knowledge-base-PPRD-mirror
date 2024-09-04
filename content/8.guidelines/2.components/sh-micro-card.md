@@ -131,7 +131,7 @@ An example with customized `ui` attributes for enhanced display:
 ui:
     wrapper: shadow-xl bg-slate-200 #comments are allowed inline
     title: text-red-500
-    text: text-oma-400
+    text: text-oma-purple-300
 urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
 urlWrapper: https://www.axios.com/
 title: |
@@ -151,7 +151,7 @@ This is an example with customized `ui` attributes for enhanced display:
 ui:
     wrapper: shadow-xl bg-slate-200 #comments are allowed inline
     title: text-red-500
-    text: text-oma-400
+    text: text-oma-purple-300
 urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
 urlWrapper: https://www.axios.com/
 title: |

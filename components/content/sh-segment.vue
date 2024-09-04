@@ -18,7 +18,7 @@ const props = withDefaults(
   });
 
 const { ui, attrs } = useUI(
-  "shsection",
+  "sh-segment",
   toRef(props, "ui"),
   config
 )

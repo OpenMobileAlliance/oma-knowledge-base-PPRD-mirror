@@ -63,7 +63,7 @@ An example with customized `ui` attributes for enhanced display:
 ::ShBadge
 ---
 ui:
-    wrapper: hover:scale-125 duration-300 bg-red-200 border-oma-200 text-oma-500
+    wrapper: hover:scale-125 duration-300 bg-oma-red-50 text-primary
 ---
 1.2+
 ::
@@ -74,7 +74,7 @@ This is an example with customized `ui` attributes for enhanced display:
 ::ShBadge
 ---
 ui:
-    wrapper: hover:scale-125 duration-300 bg-red-200 border-oma-200 text-oma-500
+    wrapper: hover:scale-125 duration-300 bg-oma-red-50 text-primary
 ---
 1.2+
 ::

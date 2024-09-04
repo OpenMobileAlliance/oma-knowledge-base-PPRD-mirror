@@ -4,6 +4,7 @@
     <div :style="{ fontFamily: main.font.type }">
       <NuxtPage />
     </div>
+    <UNotifications icon="i-line-md:clipboard-check" dynamic class="text-green-700"/>
   </NuxtLayout>
 </template>
 

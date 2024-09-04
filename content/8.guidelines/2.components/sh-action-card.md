@@ -166,7 +166,7 @@ ui:
     wrapper: shadow-xl
     title: text-4xl
     subtitle: font-mono
-    text: text-oma-500
+    text: text-primary
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
@@ -193,7 +193,7 @@ ui:
     wrapper: shadow-xl
     title: text-4xl
     subtitle: font-mono
-    text: text-oma-500
+    text: text-primary
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
