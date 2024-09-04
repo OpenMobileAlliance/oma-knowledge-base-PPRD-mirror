@@ -78,7 +78,7 @@ cols: 4
         ---
         ui:
             wrapper: bg-indigo-100 m-1 
-            icon: text-oma-200 w-1/3
+            icon: text-oma-500 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
         subtitle: "OMA SpecWorks"
@@ -126,7 +126,7 @@ cols: 4
         ---
         ui:
             wrapper: bg-indigo-100 mb-5
-            icon: text-oma-400 w-1/4
+            icon: text-oma-700 w-1/4
         icon: i-eos-icons:rotating-gear
         title: Membership # Second Row
         subtitle: OMA SpecWorks
