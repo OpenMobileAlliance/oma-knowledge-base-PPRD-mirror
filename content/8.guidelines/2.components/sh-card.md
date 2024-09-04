@@ -27,7 +27,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -50,7 +50,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -182,10 +182,10 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-oma-500 # Add text-color
-    leftLabel: text-oma-500  # Add text-color
-    centerLabel: text-oma-500
-    rightLabel: text-oma-500
+    text: text-primary # Add text-color
+    leftLabel: text-primary  # Add text-color
+    centerLabel: text-primary
+    rightLabel: text-primary
     upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
     lowerBase: bg-red-100
     image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
@@ -202,7 +202,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -216,10 +216,10 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-oma-500 # Add text-color
-    leftLabel: text-oma-500  # Add text-color
-    centerLabel: text-oma-500
-    rightLabel: text-oma-500
+    text: text-primary # Add text-color
+    leftLabel: text-primary  # Add text-color
+    centerLabel: text-primary
+    rightLabel: text-primary
     upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
     lowerBase: bg-red-100
     image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
@@ -236,7 +236,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::

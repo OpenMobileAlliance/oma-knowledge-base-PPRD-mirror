@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2022-05-30-advance-firmware-update-lwm2m-object"
 urlImage: /images/news/micro-controllers.png
 imageBackground: ""
 title: Advanced LwM2M Firmware Update Object
@@ -10,6 +9,10 @@ cardID: 12
 tags: 
     - microcontrollers
 ---
+::ShHelperCard
+---
+---
+::
 
 Advanced Firmware Update Object – [OMASpecWorks](https://omaspecworks.org/) is developing a new, advanced Firmware Object using the [LwM2M](https://lwm2m.openmobilealliance.org/) protocol to support emerging microcontrollers with multiple instances of firmware.
 

@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2023-10-03-outreach-utility-november"
 urlImage: /images/news/utility2.jpeg
 imageBackground: ""
 title: Unlocking Utility Benefits with LwM2M
@@ -10,6 +9,10 @@ cardID: 20
 tags: 
     - workshop
 ---
+::ShHelperCard
+---
+---
+::
 
 Are you ready to take your utility management to the next level? Open Mobile Alliance (OMA) presents the OMASpeWorks Utility Benefits with LwM2M Workshop, a groundbreaking initiative aimed at promoting the adoption and understanding of the OMA LightweightM2M (LwM2M) protocol within the utility industry. In this blog, we'll delve into why this workshop is a game-changer for the utility sector.
 

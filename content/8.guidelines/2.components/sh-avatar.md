@@ -166,7 +166,7 @@ ui:
   name: text-3xl # controls text font, size and color
   role: text-2xl
   company: text-xl
-  icon: hover:text-oma-500 dark:hover:text-oma-500
+  icon: hover:text-primary dark:hover:text-primary
   # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
@@ -194,7 +194,7 @@ ui:
   name: text-3xl # controls text font, size and color
   role: text-2xl
   company: text-xl
-  icon: hover:text-oma-500 dark:hover:text-oma-500
+  icon: hover:text-primary dark:hover:text-primary
   # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
@@ -221,7 +221,7 @@ export default {
     wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit dark:bg-white rounded-md",
     avatar: "grayscale justify-self-end tracking-widest rounded-full size-48",
     base: "",
-    name: "text-3xl font-bold grow text-oma-500 bottom-0 dark:invert",
+    name: "text-3xl font-bold grow text-primary bottom-0 dark:invert",
     role: "text-lg font-semibold text-black dark:text-white -mt-4 dark:invert",
     company: "text-lg text-gray-500 tracking-widest -mt-5 dark:text-black dark:invert",
     socials: "flex text-5xl -mx-1 -mt-4",
@@ -248,8 +248,8 @@ _**base**_
 *  **Description**: This is an empty placeholder for additional base styles that can be customized if needed.
 
 _**name**_
-*  **Value**: <code>"text-3xl font-bold grow text-oma-500 bottom-0 dark:invert"</code>
-*  **Description**: This defines the styling for the text displaying the person's name. The value "text-3xl font-bold grow text-oma-500 bottom-0" indicates a large font size (text-3xl), bold font weight (font-bold), flexible growth within the container (grow), oma color (text-oma-500), and positioning at the bottom of its container (bottom-0).
+*  **Value**: <code>"text-3xl font-bold grow text-primary bottom-0 dark:invert"</code>
+*  **Description**: This defines the styling for the text displaying the person's name. The value "text-3xl font-bold grow text-primary bottom-0" indicates a large font size (text-3xl), bold font weight (font-bold), flexible growth within the container (grow), oma color (text-primary), and positioning at the bottom of its container (bottom-0).
 
 _**role**_
 *  **Value**: <code>"text-lg font-semibold text-black dark:text-white -mt-4 dark:invert"</code>
@@ -296,7 +296,7 @@ qas:
 
       3. **ui.icon**
 
-      Here we can add a certain color (we have added `hover:text-oma-500`) to the icons that will take place, in this case when we hover over them (see Facebook icon)
+      Here we can add a certain color (we have added `hover:text-primary`) to the icons that will take place, in this case when we hover over them (see Facebook icon)
       ![ui.icon](/images/faq/ui.icon.png)
 
       4. **ui.avatar**

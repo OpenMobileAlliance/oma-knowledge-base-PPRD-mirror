@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2024-05-22-Blog-post-SVE_41"
 urlImage: /images/news/modernazing-utilities.png
 imageBackground: ""
 title:  Harnessing the Power of Automation and IoT in the Utilities Industry
@@ -11,7 +10,10 @@ tags:
     - news
     - workshop
 ---
-
+::ShHelperCard
+---
+---
+::
 
 The utilities industry is undergoing a transformative shift, driven by the integration of automation, Internet of Things (IoT), and advanced sensor systems. Automation is taking place in water conservation, waste management, oil monitoring, and energy usage/conservation. A number of key technologies are revolutionizing how utilities operate, enabling more efficient monitoring, enhanced asset management, and a stronger commitment to sustainability. 
 

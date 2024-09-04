@@ -1,5 +1,4 @@
 ---
-urlUpperBase: "articles/#2024-02-13-Utility-Webinar-Feb-8"
 urlImage: /images/news/water_meters.png
 imageBackground: ""
 title: Revolutionizing the Utilities Sector - The Transformative Power of LwM2M
@@ -10,6 +9,10 @@ cardID: 26
 tags: 
     - workshop
 ---
+::ShHelperCard
+---
+---
+::
 
 In an era where digital transformation is paramount, the utility sector stands on the brink of a significant evolution. The recent OMA SpecWorks Workshop delved deep into the transformative potential of the Lightweight Machine to Machine (LwM2M) protocol in revolutionizing utility management, offering innovative solutions to age-old challenges.
 

@@ -21,6 +21,15 @@
                             class="no-underline hover:uppercase">
                             {{ subChildLink.title }}
                           </ULink>
+                          <ul v-if="subChildLink.children?.length > 0" class="space-y-1 hidden lg:block">
+                            <li v-for="(subSubChildLink, subSubChildIndex) in subChildLink.children"
+                              class="space-y-1 lg:block" :key="subSubChildIndex">
+                              <ULink v-if="subChildLink._path !== subSubChildLink._path" :to="subSubChildLink._path"
+                                class="no-underline hover:uppercase">
+                                {{ subSubChildLink.title }}
+                              </ULink>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
                     </li>
@@ -73,7 +82,6 @@
 </template>
 
 <script setup lang="ts">
-const { navDirFromPath } = useContentHelpers()
 const route = useRoute()
 const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
@@ -81,7 +89,7 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 const main = useAppConfig().main
 
 const routeDepth = route.path.split('/').length
-const minDepth = routeDepth - 3 > 0 ? routeDepth - 3 : 0
+const minDepth = routeDepth - 4 > 0 ? routeDepth - 4 : 0
 
 const contentClass = computed(() => {
   if (page.value.layout === 'doc') {
