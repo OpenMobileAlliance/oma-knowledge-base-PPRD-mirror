@@ -9,8 +9,6 @@ export default <Partial<Config>>{
     extend: {
       colors: {
         oma: {
-          400: '#c3504c',
-          500: '#bc3c38',
           red: {
             50: '#f2d8d7',
             100: '#e4b1af',
@@ -75,7 +73,7 @@ export default <Partial<Config>>{
             800: '#023771',
             900: '#022f61',
             950: '#022751'
-          }
+          },
         }
       }
     }
