@@ -3,5 +3,6 @@ title: WAP Forum
 description:
 layout: doc
 ---
-## WAP Forum
-This page provides the following content:
+
+This page is a placeholder for WAP Forum.
+

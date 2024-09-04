@@ -1,11 +1,20 @@
 ---
 title: SPECIFICATIONS
+layout: doc
 ---
-## OMA Specifications
+### Search OMA Specifications
+The Open Mobile Alliance (OMA) provides a vast repository of over 220 Enablers, each available in multiple release versions, empowering users to explore a wide range of technical specifications. To facilitate efficient access to this wealth of information, OMA offers two primary search methods. Users can search by specific document titles, keywords, or document type for quick retrieval, or they can explore documents related to a particular project or Enabler by selecting the relevant category. These intuitive search tools enable users to easily locate the technical specifications they need, ensuring they can effectively utilize OMA's comprehensive resources.
+
+### OMNA Registries
+The Open Mobile Naming Authority (OMNA) plays a crucial role in ensuring the interoperability and compatibility of OMA technologies by managing essential names and numbers across various registries, including the Lightweight M2M (LwM2M) Registry. OMNA simplifies the process for users by providing clear guidelines and a streamlined approach to navigate these registries. This includes submitting requests for assigned names, IDs, numbers, or objects, which are then reviewed and recorded in OMNA’s database, ensuring consistent use across OMA implementations. Through these registries, OMNA supports seamless integration within the OMA ecosystem, fostering a reliable and cohesive environment for technology deployment.
+
+### OMA APIs
+The Open Mobile Alliance (OMA) offers a robust set of API specifications, with the **OMA LightweightM2M (LwM2M) Service API** being a standout for IoT developers. This API exposes information from the LwM2M registry to internet-connected appliances, enabling efficient management and interaction with constrained IoT devices, including provisioning, firmware updates, and remote monitoring. Additionally, OMA’s API inventory includes RESTful APIs for scalable HTTP-based interactions, SOAP Web Services for secure, complex transactions, and LDAP APIs for directory services, providing developers with comprehensive tools for various application needs.
+
 
 ::ShMultiColumn
 ---
-cols: 5 
+cols: 3 
 ---
     :::ShColumn 
     --- 
@@ -14,11 +23,11 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
+            wrapper: bg-indigo-100 mb-3
+            icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
-        title: Specifications # First Row
-        subtitle: OMA
+        title: Search # First Row
+        subtitle: OMA Documentation
         urlWrapper: "/specifications/#exploring-oma-specifications"
         ---
         ::::
@@ -26,9 +35,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Tech Specs # First Column
-        subtitle: Documents
+            wrapper: mt-5
+        title: by Specifications # First Column
+        subtitle: OMA Baselines
         urlWrapper: "/specifications/#search-by-specific-document"
         ---
         ::::
@@ -36,9 +45,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Releases # First Column
-        subtitle: Enablers
+            wrapper: mt-5
+        title: by Enabler # First Column
+        subtitle: OMA Enablers
         urlWrapper: "/specifications/#search-by-project-or-enabler"
         ---
         ::::
@@ -46,9 +55,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Public Documents # First Column
-        subtitle: OMA
+            wrapper: mt-5
+        title: by Public Documents # First Column
+        subtitle: OMA Public Documentation
         urlWrapper: "/specifications/#oma-public-documents"
         ---
         ::::
@@ -61,11 +70,11 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/4
+            wrapper: bg-indigo-100 mb-3
+            icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Registries # Second Row
-        subtitle: OMNA
+        subtitle: OMNA Registries
         urlWrapper: "/specifications/#oma-registries-overview"
         ---
         ::::
@@ -73,9 +82,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: LwM2M Registry # Second Column
-        subtitle: OMNA
+            wrapper: mt-5
+        title: LwM2M # Second Column
+        subtitle: OMNA Registry
         urlWrapper: "/specifications/#oma-lwm2m-registry"
         ---
         ::::
@@ -83,20 +92,10 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Enabler Registries # Second Column
-        subtitle: OMNA
+            wrapper: mt-5
+        title: Enablers # Second Column
+        subtitle: OMNA Registries
         urlWrapper: "/specifications/#omna-enabler-registries"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Registry API # Third Column
-        subtitle: LwM2M
-        urlWrapper: "/specifications/#oma-lwm2m-registry-api"
         ---
         ::::
     :::
@@ -108,11 +107,11 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
+            wrapper: bg-indigo-100 
             icon: text-blue-700
         icon: eos-icons:background-tasks
-        title: API # Third Column
-        subtitle: OMA
+        title: API's # Third Column
+        subtitle: OMA API's
         urlWrapper: "/specifications/#oma-api-inventory"
         ---
         ::::
@@ -120,9 +119,19 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: OMA API's # Third Column
-        subtitle: OMA
+            wrapper: mt-5
+        title: LwM2M Registry API # Third Column
+        subtitle: LwM2M Registry
+        urlWrapper: "/specifications/#oma-lwm2m-registry-api"
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: Enablers API's # Third Column
+        subtitle: OMA Enablers
         urlWrapper: "/specifications/#oma-api-table"
         ---
         ::::      

@@ -1,6 +1,7 @@
 ---
-title: News
+title: Articles
 description: Dedicated to News
+layout: doc
 ---
 
 ## News list

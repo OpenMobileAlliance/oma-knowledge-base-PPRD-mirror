@@ -1,220 +1,13 @@
 ---
 title: OMASPECWORKS
+description:
+layout: doc
 ---
-
-## Welcome to OMASpecWorks
-
-This page provides the following content:
-
-- [About](/omaspecworks/about/)
-- [Membership](/omaspecworks/membership/)
-- [Collaborate](/omaspecworks/collaborate/)
-
-::ShMultiColumn
----
-cols: 5
----
-    :::ShColumn 
-    --- 
-    ui: # First Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
-        icon: i-eos-icons:rotating-gear
-        title: About # First Row
-        subtitle: "OMA SpecWorks"
-        urlWrapper: /omaspecworks/about/
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: OMA SpecWorks # First Column
-        subtitle: |
-            **
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: IPR # First Column
-        subtitle: |
-            **
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3 mb-10
-        title: Policies & Terms # First Column
-        subtitle: |
-            **
-        urlWrapper: ""
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Second Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/4
-        icon: i-eos-icons:rotating-gear
-        title: Membership # Second Row
-        subtitle: OMA SpecWorks
-        urlWrapper: /omaspecworks/membership/
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Join # Second Column
-        subtitle: OMA SpecWorks
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Benefits # Second Column
-        subtitle: Membership
-        urlWrapper: ""
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Members # Second Column
-        subtitle: OMA SpecWorks
-        urlWrapper: ""
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Third Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 
-            icon: text-blue-700 w-1/4
-        icon: eos-icons:background-tasks
-        title: Collaborate # Third Column
-        subtitle: OMA SpecWorks
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Liaisons # Third Column
-        subtitle: Standards Flora
-        urlWrapper: ""
-        ---
-        ::::        
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Fourth Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 
-            icon: text-blue-700 w-1/3
-        icon: eos-icons:background-tasks
-        title: Get Involved # Fourth Column
-        subtitle: 
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Contact us # Fourth Column
-        subtitle: |
-            **
-        urlWrapper: 
-        ---
-        ::::
-    ::: 
-
-    :::ShColumn 
-    --- 
-    ui: # Fith Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 
-            icon: text-blue-700 w-1/2
-        icon: eos-icons:background-tasks
-        title: News # Fith Column
-        subtitle: 
-        urlWrapper: ""
-        ---
-        ::::
-        
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: OMA SpecWorks # Fith Column
-        subtitle: News
-        urlWrapper: 
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: LwM2M # Fith Column
-        subtitle: News
-        urlWrapper: 
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3 mb-10
-        title: F.A.Q # Fith Column
-        subtitle: Questions & Answers
-        urlWrapper: ""
-        ---
-        ::::
-    :::          
-::
 
 ::ShCarousel
 ---
 ui:
-    wrapper: shadow-2xl bg-blue-100 rounded-2xl
+    wrapper: rounded-2xl border-2
 title: Latest OMA News
 subtitle: Click here for more [news](/news)
 items:
@@ -266,3 +59,183 @@ items:
     slotContent: "Ninjas are fast!"
 ---
 ::
+
+## Welcome to OMASpecWorks
+
+
+::ShMultiColumn
+---
+ui: 
+   wrapper: bg-slate-100 rounded-2xl p-5 border-2
+cols: 4
+---
+    :::ShColumn 
+    --- 
+    ui: # First Column
+       wrapper: m-1
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-indigo-100 m-1 
+            icon: text-oma-500 w-1/3
+        icon: i-eos-icons:rotating-gear
+        title: About # First Row
+        subtitle: "OMA SpecWorks"
+        urlWrapper: /omaspecworks/about/
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: OMA SpecWorks # First Column
+        subtitle: Introduction
+        urlWrapper: /omaspecworks/about/omaspecworks
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: IPR # First Column
+        subtitle: Terms
+        urlWrapper: /omaspecworks/about/ipr
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5 mb-10
+        title: Policies & Terms # First Column
+        subtitle: Terms
+        urlWrapper: /omaspecworks/about/policies-terms
+        ---
+        ::::
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Second Column
+       wrapper:  m-1
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-indigo-100 mb-5
+            icon: text-oma-700 w-1/4
+        icon: i-eos-icons:rotating-gear
+        title: Membership # Second Row
+        subtitle: OMA SpecWorks
+        urlWrapper: /omaspecworks/membership/
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: Join # Second Column
+        subtitle: OMA SpecWorks
+        urlWrapper: ""
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: Benefits # Second Column
+        subtitle: Membership
+        urlWrapper: ""
+        ---
+        ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: Members # Second Column
+        subtitle: OMA SpecWorks
+        urlWrapper: ""
+        ---
+        ::::
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Third Column
+       wrapper: m-1
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-indigo-100 
+            icon: text-oma-700 w-1/3
+        icon: ic:sharp-shopify
+        title: Collaborate # Third Column
+        subtitle: OMA SpecWorks
+        urlWrapper: ""
+        ---
+        ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: Affiliates # Third Column
+        subtitle: OMA Predecesors
+        urlWrapper: ""
+        ---
+        ::::  
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: Liaisons # Third Column
+        subtitle: Standards Flora
+        urlWrapper: ""
+        ---
+        ::::        
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Fourth Column
+       wrapper: m-1
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-indigo-100 
+            icon: text-blue-700 w-1/3
+        icon: eos-icons:background-tasks
+        title: Get Involved # Fourth Column
+        subtitle: 
+        urlWrapper: ""
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+        title: Contact us # Fourth Column
+        subtitle: Talk to us
+        urlWrapper: 
+        ---
+        ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5 mb-10
+        title: F.A.Q # Fourth Column
+        subtitle: Questions & Answers
+        urlWrapper: ""
+        ---
+        ::::
+    :::          
+::
+
+

@@ -3,7 +3,6 @@ title: Affiliates
 description:
 layout: doc
 ---
-## Affiliates
 This page provides the following content:
 
 - [Location Interoperability](location-interoperability/)
