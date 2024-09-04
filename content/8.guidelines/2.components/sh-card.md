@@ -182,10 +182,10 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-oma-500 # Add text-color
-    leftLabel: text-oma-500  # Add text-color
-    centerLabel: text-oma-500
-    rightLabel: text-oma-500
+    text: text-primary # Add text-color
+    leftLabel: text-primary  # Add text-color
+    centerLabel: text-primary
+    rightLabel: text-primary
     upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
     lowerBase: bg-red-100
     image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
@@ -216,10 +216,10 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-oma-500 # Add text-color
-    leftLabel: text-oma-500  # Add text-color
-    centerLabel: text-oma-500
-    rightLabel: text-oma-500
+    text: text-primary # Add text-color
+    leftLabel: text-primary  # Add text-color
+    centerLabel: text-primary
+    rightLabel: text-primary
     upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
     lowerBase: bg-red-100
     image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
