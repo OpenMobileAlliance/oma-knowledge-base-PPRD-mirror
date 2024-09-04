@@ -1,7 +1,6 @@
 ---
 title: Articles
 description:
-layout: doc
 ---
 
 
