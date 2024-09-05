@@ -7,8 +7,8 @@ layout: doc
 ::ShCarousel
 ---
 ui:
-    wrapper: rounded-2xl border-2 border-[#D2D9E0] bg-[#F7F8FA]
-    title: text-[#1F2329]
+    wrapper: 
+    title: 
     subtitle: text-[#1F2329]
 title: Latest OMA News
 subtitle: Click here for more [news](/news)
@@ -68,7 +68,7 @@ items:
 ::ShMultiColumn
 ---
 ui: 
-   wrapper: bg-[#F7F8FA] rounded-2xl p-5 border-1 border-[#DFE4EA]
+   wrapper: 
 cols: 4
 ---
     :::ShColumn 
@@ -79,7 +79,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#D9EEE7] m-1 border-2 border-[#D2D9E0]
+            wrapper: bg-[#D9EEE7] m-1 
             icon: text-oma-purple-500 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
@@ -129,7 +129,7 @@ cols: 4
         ui:
             wrapper: bg-[#D9EEE7] mb-5 border-2 border-[#D2D9E0]
             icon: text-oma-blue-500 w-1/3
-        icon: i-eos-icons:rotating-gear
+        icon: el:adult
         title: Membership # Second Row
         subtitle: OMA SpecWorks
         urlWrapper: /omaspecworks/membership/
