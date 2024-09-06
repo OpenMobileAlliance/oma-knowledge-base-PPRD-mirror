@@ -84,9 +84,9 @@
             </div>
             <div class="flex items-center justify-center">
               <p v-if="page.rightLabel" class="mr-2 text-2xl ">{{ 'By:' }}</p>
-              <p v-if="page.rightLabel" class="text-end text-gray-500 text-2xl">{{ page.rightLabel }}</p>
+              <p v-if="page.rightLabel" class="text-end text-gray-500 dark:text-gray-400 text-2xl">{{ page.rightLabel }}</p>
               <p v-if="page.leftLabel" class="mx-2 text-2xl">{{ '|' }}</p>
-              <p v-if="page.leftLabel" class="text-start text-gray-500 text-2xl">{{ page.leftLabel }}</p>
+              <p v-if="page.leftLabel" class="text-start text-gray-500 text-2xl dark:text-gray-400">{{ page.leftLabel }}</p>
             </div>
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="text-left dark:text-white" />
             <br />
