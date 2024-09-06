@@ -1,4 +1,5 @@
 ---
+layout: articles
 urlImage: /images/news/Industrial_Autom_Underway.png
 imageBackground: ""
 title:  "Industrial Automation: Connecting Operations, People, Machines"
@@ -10,13 +11,6 @@ tags:
     - news
     - workshop
 ---
-::ShHelperCard
----
----
-::
-<!DOCTYPE html>
-<html>
-<body>
 
 <h3>Bringing Real-Time to the Masses</h3>
 <p></p>
@@ -92,6 +86,3 @@ As we push processes, supply chains, logistics, and delivery of goods and servic
 <p style="text-align:right; font-size:80%;">Source: CompassIntel.com, 2024.</p>
 
 <p>The industrial and manufacturing sectors are experiencing a dynamic shift, driven by these groundbreaking innovations. As technology continues to evolve, manufacturers are better equipped to meet the demands of a fast-paced, ever-changing market. The on-demand economy is driving the need for faster and more efficient production delivered to the customer. Embracing these advancements not only enhances operational efficiency and product quality but also sets the stage for a more sustainable and resilient industrial future. The journey towards a smarter, more innovative manufacturing landscape is well underway, promising exciting developments in the years to come.</p>
-
-</body>
-</html>

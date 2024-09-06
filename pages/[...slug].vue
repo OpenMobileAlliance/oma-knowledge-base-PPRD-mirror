@@ -68,6 +68,31 @@
           </div>
         </div>
       </template>
+      <template v-else-if="page.layout === 'articles'">
+        <div class="-mt-16 mx-64 ">
+          <div class="container flex mx-auto">
+            <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
+          </div>
+          <div class="text-center">
+            <h2 class="text-oma-300 text-start text-4xl text-gray-700 dark:text-oma-blue-500">{{ page.title }}</h2>
+            <h3 v-if="page.subtitle" class="text-start text-3xl text-gray-600 dark:text-oma-blue-300">{{ page.subtitle }}</h3>
+            <div class="text-center dark:text-white text-2xl" v-if="page.tags && page.tags.length">
+              Tags:
+              <span v-for="tag in page.tags" :key="tag" class="border rounded-3xl p-2 mx-2 text-white bg-oma-blue-500 border-oma-blue-400 dark:bg-oma-purple-300 dark:border-oma-purple-400 text-xl">
+                {{ tag }}
+              </span>
+            </div>
+            <div class="flex items-center justify-center">
+              <p v-if="page.rightLabel" class="mr-2 text-2xl ">{{ 'By:' }}</p>
+              <p v-if="page.rightLabel" class="text-end text-gray-500 text-2xl">{{ page.rightLabel }}</p>
+              <p v-if="page.leftLabel" class="mx-2 text-2xl">{{ '|' }}</p>
+              <p v-if="page.leftLabel" class="text-start text-gray-500 text-2xl">{{ page.leftLabel }}</p>
+            </div>
+            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="text-left dark:text-white" />
+            <br />
+          </div>
+        </div>
+      </template>
       <template v-else>
         <ContentRenderer :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-24">
           <template #not-found>
