@@ -1,4 +1,5 @@
 ---
+layout: articles
 urlImage: /images/news/bootstrapping.jpeg
 imageBackground: ""
 title: LwM2M, Bootstrapping in Cellular Networks
@@ -10,10 +11,6 @@ tags:
     - bootstrap
     - cellular networks
 ---
-::ShHelperCard
----
----
-::
 
 OMASpecWorks announces the creation of a new Work Item, **LwM2M Device Bootstrapping in Cellular Networks** The Lightweight M2M protocol (LwM2M) has proven itself to be well suited to operating within Cellular networks, supporting a wide range of Device Types from Low Latency critical IoT applications (e.g., remote performance monitoring) to high latency massive IoT applications (e.g., water metering).
 

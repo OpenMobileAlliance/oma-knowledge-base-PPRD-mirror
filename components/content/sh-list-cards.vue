@@ -6,7 +6,7 @@
 
       <div class="flex justify-center">
         <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)"
-          :class="[ui.tags.list, {'bg-oma-300 border-oma-300 hover:shadow-[#044da170] text-white dark:bg-oma-700 dark:border-oma-700 dark:hover:shadow-purple-950': selectedTags.includes(tag) }]">
+          :class="[ui.tags.list, { 'bg-oma-blue-600 border-oma-blue-800 hover:shadow-oma-blue-200 text-white dark:bg-oma-purple-600 dark:border-purple-800 dark:hover:shadow-purple-900': selectedTags.includes(tag) }]">
           {{ tag }}
           <UIcon v-if="selectedTags.includes(tag)" name="i-line-md:close-circle" dynamic
             class="hover:text-gray-300 duration-100" />
@@ -32,11 +32,12 @@
       </div>
       <div :class="ui.text">
         <MDC :value="text" />
+        
       </div>
     </div>
 
     <!-- Cards Section -->
-    <div :class="[ui.base, gridClass]">
+    <div :class="[ui.base, ui.gap, gridClass]">
       <ShCard v-for="(card, index) in filteredCards" :key="index" v-bind="card" />
     </div>
   </div>
@@ -52,7 +53,6 @@ const props = withDefaults(
     subtitle?: string;
     text?: string;
     cols?: number;
-    gap?: string;
     class?: any;
     description?: string;
     cardID?: number[];
@@ -64,7 +64,6 @@ const props = withDefaults(
     subtitle: "",
     text: "",
     cols: config.default.cols,
-    gap: config.default.gap,
     class: undefined,
     description: "",
   }
@@ -81,15 +80,17 @@ const gridClass = computed(() => {
   const cols = props.cols ?? config.default.cols;
 
   if (windowWidth.value >= 1300) {
-    return ["grid", gridSizes.gridCols[cols], props.gap].join(' ');
+    return ["grid", gridSizes.gridCols[cols]].join(' ');
   } else if (windowWidth.value < 640) {
-    return ["grid", "grid-cols-1", props.gap].join(' ');
+    return ["grid", "grid-cols-1"].join(' ');
   } else if (windowWidth.value > 640 && windowWidth.value < 980) {
-    return ["grid", "grid-cols-2", props.gap].join(' ');
+    return ["grid", "grid-cols-2"].join(' ');
   } else {
-    return ["grid", "grid-cols-3", props.gap].join(' ');
+    return ["grid", "grid-cols-3"].join(' ');
   }
 });
+
+const { page } = useContent()
 
 const windowWidth = ref(window.innerWidth);
 
@@ -138,7 +139,8 @@ onMounted(async () => {
             ...frontmatter,
             excerpt: item,
             urlUpperBase: item._path,
-            tags: validTags
+            tags: validTags,
+            article: item._path,
           };
         }
       })

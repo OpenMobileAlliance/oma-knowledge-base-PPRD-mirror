@@ -1,4 +1,5 @@
 ---
+layout: articles
 urlImage: "/images/oma-specworks-logo.jpg"
 imageBackground: ""
 title: LwM2M v1.2 is now available!
@@ -10,10 +11,6 @@ tags:
     - v1.2
     - Release
 ---
-::ShHelperCard
----
----
-::
 
 <b>The standardization</b> work on the LwM2M v1.2 specification has been completed and the specification bundle is now available for public download.Originally proposed in 2012, LwM2M v1.0 was finally published in early 2017 after comprehensive research with developers across multiple industries and application areas. The original standard was a compelling solution for device lifecycle management with focus on constrained IoT devices. With LwM2M adoption observed across a broader range of device types and the benefit of feedback from real use cases, releases including v1.0.1 and v1.0.2 were published to keep up with ever increasing demand and expansion of LwM2M use. With v1.1 published in 2018, OMA SpecWorks increased the functionality of the protocol by adding support for Cellular IoT, LoRaWAN as well as in enterprise networks with CoAP over TCP/TLS.
 
