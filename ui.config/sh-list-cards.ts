@@ -11,6 +11,7 @@ export default {
   subtitle: "pb-6 text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8 text-center",
   text: "pb-16 text-center font-light",
   base: "justify-between flex flex-wrap",
+  gap: "gap-0",
   // Default Tailwind CSS values
   default: {
   }

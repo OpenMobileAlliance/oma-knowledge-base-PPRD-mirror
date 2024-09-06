@@ -36,7 +36,7 @@
     </div>
 
     <!-- Cards Section -->
-    <div :class="[ui.base, gridClass]">
+    <div :class="[ui.base, ui.gap, gridClass]">
       <ShCard v-for="(card, index) in filteredCards" :key="index" v-bind="card" />
     </div>
   </div>
@@ -52,7 +52,6 @@ const props = withDefaults(
     subtitle?: string;
     text?: string;
     cols?: number;
-    gap?: string;
     class?: any;
     description?: string;
     cardID?: number[];
@@ -64,7 +63,6 @@ const props = withDefaults(
     subtitle: "",
     text: "",
     cols: config.default.cols,
-    gap: config.default.gap,
     class: undefined,
     description: "",
   }
@@ -81,13 +79,13 @@ const gridClass = computed(() => {
   const cols = props.cols ?? config.default.cols;
 
   if (windowWidth.value >= 1300) {
-    return ["grid", gridSizes.gridCols[cols], props.gap].join(' ');
+    return ["grid", gridSizes.gridCols[cols]].join(' ');
   } else if (windowWidth.value < 640) {
-    return ["grid", "grid-cols-1", props.gap].join(' ');
+    return ["grid", "grid-cols-1"].join(' ');
   } else if (windowWidth.value > 640 && windowWidth.value < 980) {
-    return ["grid", "grid-cols-2", props.gap].join(' ');
+    return ["grid", "grid-cols-2"].join(' ');
   } else {
-    return ["grid", "grid-cols-3", props.gap].join(' ');
+    return ["grid", "grid-cols-3"].join(' ');
   }
 });
 
