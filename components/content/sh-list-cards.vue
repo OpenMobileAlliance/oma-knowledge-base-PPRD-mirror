@@ -32,6 +32,7 @@
       </div>
       <div :class="ui.text">
         <MDC :value="text" />
+        
       </div>
     </div>
 
@@ -89,6 +90,8 @@ const gridClass = computed(() => {
   }
 });
 
+const { page } = useContent()
+
 const windowWidth = ref(window.innerWidth);
 
 const handleResize = () => {
@@ -136,7 +139,8 @@ onMounted(async () => {
             ...frontmatter,
             excerpt: item,
             urlUpperBase: item._path,
-            tags: validTags
+            tags: validTags,
+            article: item._path,
           };
         }
       })
