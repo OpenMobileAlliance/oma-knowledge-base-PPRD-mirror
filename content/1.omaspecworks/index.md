@@ -79,7 +79,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#D9EEE7] m-1 
+            wrapper: bg-oma-blue-50 m-1 
             icon: text-oma-purple-500 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
