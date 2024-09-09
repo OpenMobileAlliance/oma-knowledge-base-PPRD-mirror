@@ -67,7 +67,7 @@ const route = useRoute()
 
 const config = {
   wrapper:
-    "fixed top-42 overflow-auto ",
+    "",
 };
 
 

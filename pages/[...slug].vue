@@ -1,28 +1,17 @@
 <template>
   <main class="">
-    <article class="prose w-full max-w-full pt-16">
+    <article class="prose w-full max-w-full mt-16">
       <template v-if="page?.layout === 'doc'">
-        <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-8">
-          <AppSideMenu :items="displayNavigation" class="flex flex-1" />
-          <div class="flex flex-1 lg:col-span-2"></div>
-          <section :class="contentClass" class="flex flex-1 flex-col">
-            <h1 class="capitalize hover:uppercase">
-              {{ page.title }}
-            </h1>
-            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-10">
-              <template #not-found>
-                <UAlert title="File not found!" description="The requested resource cannot be found."
-                  icon="i-heroicons-exclamation-triangle" />
-              </template>
-            </ContentRenderer>
-            <PrevNextPage v-if="$route.path !== '/'" />
-          </section>
-          <div v-if="page.body?.toc?.links?.length > 0" class="lg:col-span-2 order-first lg:order-last">
+        <div class="">
+          <AppSideMenu :items="displayNavigation"
+            class="fixed top-64 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
+          <div v-if="page.body?.toc?.links?.length > 0"
+            class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
             <nav>
               <button class="flex items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
                 <span class="font-semibold text-sm/6 truncate">Table of Contents</span>
               </button>
-              <ul class="space-y-1 lg:block">
+              <ul class="space-y-1 lg:block overflow-auto">
                 <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
                   <ULink :to="`${page._path}#${link.id}`">{{ link.text }}</ULink>
                   <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
@@ -34,6 +23,18 @@
               </ul>
             </nav>
           </div>
+          <section :class="contentClass" class="ml-64 p-8 ">
+            <h1 class="capitalize hover:uppercase">
+              {{ page.title }}
+            </h1>
+            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-10">
+              <template #not-found>
+                <UAlert title="File not found!" description="The requested resource cannot be found."
+                  icon="i-heroicons-exclamation-triangle" />
+              </template>
+            </ContentRenderer>
+            <PrevNextPage v-if="$route.path !== '/'" />
+          </section>
         </div>
       </template>
       <template v-else-if="page?.layout === 'articles'">
@@ -90,17 +91,11 @@ const main = useAppConfig().main
 const routeDepth = route.path.split('/').length
 const minDepth = routeDepth - 4 > 0 ? routeDepth - 4 : 0
 
-const GRID_WIDTHS = {
-  with_toc: "lg:col-span-6",
-  no_toc: "lg:col-span-8 ",
-  default: "lg:col-span-10"
-}
-
 const contentClass = computed(() => {
   if (page?.value.layout === 'doc') {
-    return page.value.body?.toc?.links?.length > 0 ? GRID_WIDTHS.with_toc : GRID_WIDTHS.no_toc
+    return page.value.body?.toc?.links?.length > 0 ? "mr-64" : ""
   } else {
-    return GRID_WIDTHS.default
+    return ""
   }
 })
 
