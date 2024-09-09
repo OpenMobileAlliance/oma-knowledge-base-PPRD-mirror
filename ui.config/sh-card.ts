@@ -1,5 +1,5 @@
 export default {
-  wrapper: "flex flex-col justify-between border-2 border-[#D2D9E0] hover:border-2 hover:border-oma-blue-400 rounded-xl mx-auto max-w-lg overflow-hidden bg-white shadow-2xl",
+  wrapper: "flex flex-col justify-between border-2 border-[#D2D9E0] hover:border-2 hover:border-oma-red-500 rounded-xl mx-auto max-w-lg overflow-hidden bg-white shadow-2xl",
   upperBase: "flex items-center justify-center rounded-t-xl",
   image: "h-full w-screen rounded-b-xl overflow-hidden",
   lowerBase: "p-6 rounded-b-xl",
