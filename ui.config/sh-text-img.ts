@@ -1,13 +1,13 @@
 import status from './status';
 
 export default {
-  wrapper: "px-8 border dark:border-gray-700 rounded-2xl bg-slate-100",
-  title: "font-bold text-2xl",
-  subtitle: "font-semibold text-xl -mt-6",
+  wrapper: "bg-gray-50 rounded-2xl shadow-2xl p-5 border-2 border-oma-gray-50",
+  title: "font-bold text-3xl",
+  subtitle: "font-semibold text-2xl -mt-6",
   text: "",
   image: "mx-auto rounded-xl",
-  status,
+  status: "",
   // Default Tailwind CSS values
-  default: {
+  default: { 
   }
 }
