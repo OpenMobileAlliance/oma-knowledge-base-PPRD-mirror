@@ -1,4 +1,5 @@
 ---
+layout: articles
 urlImage: /images/news/intelligent-transportation.png
 imageBackground: ""
 title:  "The Emergence of Intelligent Transportation, Riding Smart"
@@ -10,10 +11,6 @@ tags:
     - news
     - workshop
 ---
-::ShHelperCard
----
----
-::
 
 Disruption at its finest…the transportation and the automotive industry embraces data intelligence, sensors, IoT, AI, and real-time edge computing to deliver advanced driving experiences. Urban modernization gives rise to the **intelligent transportation market**, integrating a variety of machines and technologies to enhance the efficiency, safety, and sustainability of transportation systems. Below we will dive into autonomous vehicles, electric vehicles, public transit, and transportation management.
 <!--more-->

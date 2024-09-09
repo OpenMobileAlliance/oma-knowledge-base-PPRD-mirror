@@ -1,4 +1,5 @@
 ---
+layout: articles
 urlImage: /images/news/validation-test.png
 imageBackground: ""
 title: Virtual Test Event
@@ -9,10 +10,6 @@ cardID: 22
 tags: 
     - workshop
 ---
-::ShHelperCard
----
----
-::
 
 The Open Mobile Alliance (OMA) is excited to announce a groundbreaking event: *Virtual-SVE-40* (Specification Validation Event). Hosted by OMA, this event is set to take place in **November 2023**. *Virtual-SVE-40*, also known as the Virtual TestFest, is an exceptional opportunity for all LwM2M implementers, and it's coming your way! Get ready for a week filled with exploration, testing, and innovation.
  </br>

@@ -18,6 +18,11 @@
                 <MDC v-if="text" :value="text" />
                 <ContentRenderer v-else :value="excerpt" excerpt />
             </div>
+            <div v-if="page._path === '/news'">
+                <NuxtLink :to="article" target="_blank" class="hover:text-oma-blue-500 not-prose">
+                    Read more...
+                </NuxtLink>
+            </div>
             <div class="border-t mt-16">
                 <div class="grid grid-cols-3">
                     <div :class="ui.leftLabel">
@@ -51,6 +56,7 @@ const props = withDefaults(
         centerLabel?: string;
         rightLabel?: string;
         imageBackground?: string;
+        article?: string;
         description?: string;
         ui?: Partial<typeof config>;
     }>(),
