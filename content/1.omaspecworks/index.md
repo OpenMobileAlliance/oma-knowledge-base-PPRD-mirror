@@ -79,7 +79,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-blue-50 m-1 
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1 
             icon: text-oma-purple-500 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
@@ -133,7 +133,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-blue-50 mb-5 border-2 border-[#D2D9E0]
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
             icon: text-oma-blue-500 w-1/3
         icon: el:adult
         title: Membership # Second Row
@@ -180,7 +180,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-blue-50 border-2 border-[#D2D9E0]
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
             icon: text-red-800 w-1/3
         icon: ic:sharp-shopify
         title: Collaborate # Third Column
@@ -216,7 +216,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-blue-50 border-2 border-[#D2D9E0]
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
             icon: text-oma-yellow-800 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fourth Column
