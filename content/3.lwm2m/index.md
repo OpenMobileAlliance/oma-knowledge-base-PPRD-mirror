@@ -1,5 +1,5 @@
 ---
-title: About LwM2M
+title:  About LwM2M
 description: Main page of the LwM2M topic
 layout: doc
 ---
