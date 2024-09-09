@@ -92,6 +92,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5 border-[#DFE4EA]
+            icon: text-oma-yellow-300 w-1/3
+        icon: heroicons-outline:academic-cap
         title: OMA SpecWorks # First Column
         subtitle: Introduction
         urlWrapper: /omaspecworks/about/omaspecworks
@@ -102,6 +104,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: text-green-400
+        icon: la:balance-scale
         title: IPR # First Column
         subtitle: Terms
         urlWrapper: /omaspecworks/about/ipr
@@ -112,6 +116,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5 mb-10
+            icon: text-red-400 w-1/3
+        icon: mdi:account-eye-outline
         title: Policies & Terms # First Column
         subtitle: Terms
         urlWrapper: /omaspecworks/about/policies-terms
@@ -127,7 +133,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#D9EEE7] mb-5 border-2 border-[#D2D9E0]
+            wrapper: bg-oma-blue-50 mb-5 border-2 border-[#D2D9E0]
             icon: text-oma-blue-500 w-1/3
         icon: el:adult
         title: Membership # Second Row
@@ -174,7 +180,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#D9EEE7] border-2 border-[#D2D9E0]
+            wrapper: bg-oma-blue-50 border-2 border-[#D2D9E0]
             icon: text-red-800 w-1/3
         icon: ic:sharp-shopify
         title: Collaborate # Third Column
@@ -210,7 +216,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#D9EEE7] border-2 border-[#D2D9E0]
+            wrapper: bg-oma-blue-50 border-2 border-[#D2D9E0]
             icon: text-oma-yellow-800 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fourth Column
