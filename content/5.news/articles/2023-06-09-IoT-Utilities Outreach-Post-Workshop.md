@@ -1,4 +1,5 @@
 ---
+layout: articles
 urlImage: /images/news/electric-meter.jpeg
 imageBackground: ""
 title: IoT and LwM2M for Utilities
@@ -9,10 +10,6 @@ cardID: 18
 tags: 
     - collaboration
 ---
-::ShHelperCard
----
----
-::
 
 This workshop addresses the needs of the utilities sector as they deploy new functionality through adoption of the LwM2M protocol.
 

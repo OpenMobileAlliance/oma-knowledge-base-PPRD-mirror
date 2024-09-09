@@ -8,8 +8,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        oma: {
-          red: {
+          'oma-red': {
             50: '#f2d8d7',
             100: '#e4b1af',
             200: '#d78a88',
@@ -22,7 +21,7 @@ export default <Partial<Config>>{
             900: '#712422',
             950: '#5e1e1c'
           },
-          purple: {
+          'oma-purple': {
             50: '#e6dcec',
             100: '#cdbad9',
             200: '#b497c6',
@@ -35,7 +34,7 @@ export default <Partial<Config>>{
             900: '#4e3160',
             950: '#412950'
           },
-          yellow: {
+          'oma-yellow': {
             50: '#f8eedc',
             100: '#f1ddba',
             200: '#ebcb97',
@@ -48,7 +47,7 @@ export default <Partial<Config>>{
             900: '#856531',
             950: '#6f5529'
           },
-          cyan: {
+          'oma-cyan': {
             50: '#e9f6f3',
             100: '#d2ede7',
             200: '#bce4dc',
@@ -61,7 +60,7 @@ export default <Partial<Config>>{
             900: '#567e76',
             950: '#486962'
           },
-          blue: {
+          'oma-blue': {
             50: '#cddcec',
             100: '#9ab8da',
             200: '#6895c7',
@@ -74,7 +73,6 @@ export default <Partial<Config>>{
             900: '#022f61',
             950: '#022751'
           },
-        }
       }
     }
   },
