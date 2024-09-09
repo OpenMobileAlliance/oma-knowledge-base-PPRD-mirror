@@ -9,7 +9,7 @@ layout: doc
 ui:
     wrapper: 
     title: 
-    subtitle: text-[#1F2329]
+    subtitle:
 title: Latest OMA News
 subtitle: Click here for more [news](/news)
 items:
