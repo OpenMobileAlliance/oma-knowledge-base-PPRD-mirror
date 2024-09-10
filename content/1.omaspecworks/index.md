@@ -4,63 +4,38 @@ description:
 layout: doc
 ---
 
-::ShCarousel
+::ShTextImg
 ---
-ui:
-    wrapper: 
-    title: 
-    subtitle:
-title: Latest OMA News
-subtitle: Click here for more [news](/news)
-items:
-  - component: ShCard
-    props:
-      text: |
-        Disruption at its finest…the transportation and the automotive industry embraces data intelligence, sensors, IoT, AI, and real-time edge computing to deliver advanced driving experiences. Urban modernization gives rise to the **intelligent transportation market**, integrating a variety of machines and technologies to enhance the efficiency, safety, and sustainability of transportation systems. Below we will dive into autonomous vehicles, electric vehicles, public transit, and transportation management.
-      title: |
-          "The Emergence of Intelligent Transportation, Riding Smart"
-      subtitle: |
-          "How IoT, AI, and Real-Time Data are Revolutionizing Urban Transportation Systems for a Safer, Smarter Future"
-      leftLabel: |
-          2024-July-29
-      centerLabel: ""
-      rightLabel: |
-          OMA
-      imageBackground: "" 
-      urlImage: images/news/Industrial_Autom_Underway.png
-      urlUpperBase: ""
-  - component: ShTextImg
-    props:
-      positionText: right
-      spanText: m
-      alignText: left
-      status: a
-      urlImage: images/news/test-event-raleigh.png
-      title: |
-       Hello component
-      subtitle: |
-       Hello subtitle
-      text: |
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ligula quis justo bibendum consequat. Ut auctor diam sit amet diam ornare euismod. [URL](https://docs.google.com/spreadsheets/d/18O4QvBpIGMcXMq3VZMICwYB8L7tyJ11T/edit#gid=1718761465) elit at dapibus commodo. <a href="https://en.wikipedia.org/wiki/Gaius_Maecenas">Maecenas</a> sit amet purus eu metus pharetra pulvinar. In quis scelerisque leo. Praesent scelerisque at nulla non fermentum. Morbi varius nisi eu pharetra molestie. Sed ipsum mauris, tincidunt ut velit ac, luctus egestas mi. Quisque commodo dui in mi aliquam, nec varius nunc luctus
-  - component: ShSocial
-    props:
-      src: "1813265126784393367"
-  - component: ShTextImg
-    props:
-      positionText: left
-      spanText: m
-      alignText: left
-      urlImage: images/news/test-event-raleigh.png
-      title: |
-       Hello component
-      subtitle: |
-       Hello subtitle
-      text: |
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ligula quis justo bibendum consequat. Ut auctor diam sit amet diam ornare euismod. [URL](https://docs.google.com/spreadsheets/d/18O4QvBpIGMcXMq3VZMICwYB8L7tyJ11T/edit#gid=1718761465) elit at dapibus commodo. <a href="https://en.wikipedia.org/wiki/Gaius_Maecenas">Maecenas</a> sit amet purus eu metus pharetra pulvinar. In quis scelerisque leo. Praesent scelerisque at nulla non fermentum. Morbi varius nisi eu pharetra molestie. Sed ipsum mauris, tincidunt ut velit ac, luctus egestas mi. Quisque commodo dui in mi aliquam, nec varius nunc luctus
-  - component: ShSegment
-    slotContent: "Ninjas are fast!"
+positionText: left
+spanText: m
+alignText: right
+urlImage: /omaspecworks_logotag_CMYK.jpg
+title: |
+  Welcome to OMASpecWorks
+subtitle: |
+  A.K.A Open Mobile Alliance
+text: |
+  OMA SpecWorks, formerly known as the Open Mobile Alliance (OMA), rebranded after merging with the IPSO Alliance. This merger expanded its scope to include broader IoT standards, enhancing its expertise in device management and interoperability. As a forward-thinking Standards Development Organization (SDO), OMA SpecWorks expertly balances industry consensus with the rapid creation of technical specifications. Its key protocol, OMA LightweightM2M (LwM2M), is essential for efficient and secure IoT device management. By uniting industry leaders, OMA SpecWorks drives standards that ensure seamless interoperability across wireless networks.
 ---
 ::
+
+::ShTextImg
+---
+ui:
+    wrapper: mt-10
+positionText: right
+spanText: m
+alignText: right
+urlImage: /images/OMA-129_Lightweight_M2M_Logo_RGB_full.png
+title: |
+  Welcome to OMA LightweightM2M
+subtitle: |
+  LwM2M
+text: |
+  OMA SpecWorks fosters a transparent, egalitarian environment where companies of all sizes equally contribute to advancing wireless technology standards. The success of protocols like LwM2M, now widely adopted in healthcare, automotive, utilities, and home automation, reflects the organization's high-quality technical work. The 2018 merger with the IPSO Alliance strengthened OMA SpecWorks' mission to develop comprehensive documents, ensuring protocols like LwM2M continue to lead IoT device management and support the connected world's growth.
+---
+::
+
 
 ## Welcome to OMASpecWorks
 
@@ -247,4 +222,62 @@ cols: 4
 ::
 
 > Comment text
+
+::ShCarousel
+---
+ui:
+    wrapper: 
+    title: 
+    subtitle:
+title: Latest OMA News
+subtitle: Click here for more [news](/news)
+items:
+  - component: ShCard
+    props:
+      text: |
+        Disruption at its finest…the transportation and the automotive industry embraces data intelligence, sensors, IoT, AI, and real-time edge computing to deliver advanced driving experiences. Urban modernization gives rise to the **intelligent transportation market**, integrating a variety of machines and technologies to enhance the efficiency, safety, and sustainability of transportation systems. Below we will dive into autonomous vehicles, electric vehicles, public transit, and transportation management.
+      title: |
+          "The Emergence of Intelligent Transportation, Riding Smart"
+      subtitle: |
+          "How IoT, AI, and Real-Time Data are Revolutionizing Urban Transportation Systems for a Safer, Smarter Future"
+      leftLabel: |
+          2024-July-29
+      centerLabel: ""
+      rightLabel: |
+          OMA
+      imageBackground: "" 
+      urlImage: images/news/Industrial_Autom_Underway.png
+      urlUpperBase: ""
+  - component: ShTextImg
+    props:
+      positionText: right
+      spanText: m
+      alignText: left
+      status: a
+      urlImage: images/news/test-event-raleigh.png
+      title: |
+       Hello component
+      subtitle: |
+       Hello subtitle
+      text: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ligula quis justo bibendum consequat. Ut auctor diam sit amet diam ornare euismod. [URL](https://docs.google.com/spreadsheets/d/18O4QvBpIGMcXMq3VZMICwYB8L7tyJ11T/edit#gid=1718761465) elit at dapibus commodo. <a href="https://en.wikipedia.org/wiki/Gaius_Maecenas">Maecenas</a> sit amet purus eu metus pharetra pulvinar. In quis scelerisque leo. Praesent scelerisque at nulla non fermentum. Morbi varius nisi eu pharetra molestie. Sed ipsum mauris, tincidunt ut velit ac, luctus egestas mi. Quisque commodo dui in mi aliquam, nec varius nunc luctus
+  - component: ShSocial
+    props:
+      src: "1813265126784393367"
+  - component: ShTextImg
+    props:
+      positionText: left
+      spanText: m
+      alignText: left
+      urlImage: images/news/test-event-raleigh.png
+      title: |
+       Hello component
+      subtitle: |
+       Hello subtitle
+      text: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ligula quis justo bibendum consequat. Ut auctor diam sit amet diam ornare euismod. [URL](https://docs.google.com/spreadsheets/d/18O4QvBpIGMcXMq3VZMICwYB8L7tyJ11T/edit#gid=1718761465) elit at dapibus commodo. <a href="https://en.wikipedia.org/wiki/Gaius_Maecenas">Maecenas</a> sit amet purus eu metus pharetra pulvinar. In quis scelerisque leo. Praesent scelerisque at nulla non fermentum. Morbi varius nisi eu pharetra molestie. Sed ipsum mauris, tincidunt ut velit ac, luctus egestas mi. Quisque commodo dui in mi aliquam, nec varius nunc luctus
+  - component: ShSegment
+    slotContent: "Ninjas are fast!"
+---
+::
 
