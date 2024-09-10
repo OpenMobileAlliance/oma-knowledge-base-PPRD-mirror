@@ -187,7 +187,6 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # First Column - Red
-        wrapper: 
     ---
         ::::ShMicroCard
         ---
@@ -244,21 +243,15 @@ cols: 5
         ---
         ::::
 
-        ::::ShSegment
+        ::::ShMicroCard
         ---
+        clipboard: true
         ui:
-            wrapper: mt-3 pt-1 pb-1 pl-2 border-l-8 border-t-8 border-b-8 rounded-l-3xl border-black dark:border-white -mr-4 pr-4
+            wrapper: mt-3 bg-oma-red-500 min-h-24
+            title: text-neutral-700 dark:text-neutral-700 font-mono
+        title: |
+            oma-red-500
         ---
-            :::::ShMicroCard
-            ---
-            clipboard: true
-            ui:
-                wrapper: bg-oma-red-500 min-h-24
-                title: text-neutral-700 dark:text-neutral-700 font-mono
-            title: |
-                oma-red-500
-            ---
-            :::::
         ::::
 
         ::::ShMicroCard
@@ -377,21 +370,15 @@ cols: 5
         ---
         ::::
 
-        ::::ShSegment
+        ::::ShMicroCard
         ---
+        clipboard: true
         ui:
-            wrapper: mt-3 pt-1 pb-1 -pr-4 border-t-8 border-b-8 border-black dark:border-white -mr-4 pr-4 
+            wrapper: mt-3 bg-oma-purple-500
+            title: text-neutral-700 dark:text-neutral-700 font-mono
+        title: |
+            oma-purple-500
         ---
-            :::::ShMicroCard
-            ---
-            clipboard: true
-            ui:
-                wrapper: bg-oma-purple-500
-                title: text-neutral-700 dark:text-neutral-700 font-mono
-            title: |
-                oma-purple-500
-            ---
-            :::::
         ::::
 
         ::::ShMicroCard
@@ -509,21 +496,15 @@ cols: 5
         ---
         ::::
 
-        ::::ShSegment
+        ::::ShMicroCard
         ---
+        clipboard: true
         ui:
-            wrapper: mt-3 pt-1 pb-1 border-t-8 border-b-8 border-black dark:border-white -mr-4 pr-4
+            wrapper: mt-3 min-h-24 bg-oma-cyan-500
+            title: text-neutral-600 dark:text-neutral-600 font-mono
+        title: |
+            oma-cyan-500
         ---
-            :::::ShMicroCard
-            ---
-            clipboard: true
-            ui:
-                wrapper: bg-oma-cyan-500 min-h-24
-                title: text-neutral-700 dark:text-neutral-700 font-mono
-            title: |
-                oma-cyan-500
-            ---
-            :::::
         ::::
 
         ::::ShMicroCard
@@ -641,21 +622,15 @@ cols: 5
         ---
         ::::
 
-        ::::ShSegment
+        ::::ShMicroCard
         ---
+        clipboard: true
         ui:
-            wrapper: mt-3 pt-1 pb-1 border-t-8 border-b-8 border-black dark:border-white -mr-4 pr-4
+            wrapper: mt-3 bg-oma-yellow-500
+            title: text-neutral-700 dark:text-neutral-700 font-mono
+        title: |
+            oma-yellow-500
         ---
-            :::::ShMicroCard
-            ---
-            clipboard: true
-            ui:
-                wrapper: bg-oma-yellow-500
-                title: text-neutral-700 dark:text-neutral-700 font-mono
-            title: |
-                oma-yellow-500
-            ---
-            :::::
         ::::
 
         ::::ShMicroCard
@@ -773,21 +748,15 @@ cols: 5
         ---
         ::::
 
-        ::::ShSegment
+        ::::ShMicroCard
         ---
+        clipboard: true
         ui:
-            wrapper: mt-3 pt-1 pb-1 pr-2 border-t-8 border-b-8 border-r-8 rounded-r-3xl border-black dark:border-white
+            wrapper: bg-oma-blue-500
+            title: text-neutral-700 dark:text-neutral-700 font-mono
+        title: |
+            oma-blue-500
         ---
-            :::::ShMicroCard
-            ---
-            clipboard: true
-            ui:
-                wrapper: bg-oma-blue-500
-                title: text-neutral-700 dark:text-neutral-700 font-mono
-            title: |
-                oma-blue-500
-            ---
-            :::::
         ::::
 
         ::::ShMicroCard
@@ -848,4 +817,4 @@ cols: 5
 
 ::
 
-> Colors in border, with values of **500** are official colors of OMA, so if you ever need their hexadecimal values, just look at this chart and compar it against the `tailwind.config.ts` file where all hexadecimal values live
+> Colors with values of **500** are official colors of OMA, so if you ever need their hexadecimal values, just look at this chart and compar it against the `tailwind.config.ts` file where all hexadecimal values live
