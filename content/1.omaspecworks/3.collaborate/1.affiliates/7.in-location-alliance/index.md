@@ -1,6 +1,6 @@
 ---
 title: In Location Alliance
-description:
+description: 
 layout: doc
 --- 
 

@@ -1,18 +1,26 @@
 <template>
-  <NuxtLayout :name="layout">
-    <NuxtLoadingIndicator />
-    <div :style="{ fontFamily: main.font.type }">
+  <div class="flex flex-col w-full" :style="{ fontFamily: main.font.type }">
+    <AppHeader class="flex py-4" title="OMA">
+      <template v-slot:logo>
+        <img :src="computedLogoSrc" alt="Logo" />
+      </template>
+    </AppHeader>
+    <UContainer :ui="{ constrained: '', }" class="w-full pb-24">
       <NuxtPage />
-    </div>
-    <UNotifications icon="i-line-md:clipboard-check" dynamic class="text-green-700"/>
-  </NuxtLayout>
+    </UContainer>
+    <AppFooter />
+  </div>
 </template>
 
 <script setup lang="ts">
 
-const layout = "default";
 const main = useAppConfig().main;
 
+const theme = useColorMode();
+
+const computedLogoSrc = computed(() => {
+  return theme.value === 'dark' ? '/logo-dark.png' : '/logo-light.png';
+});
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
   for (let i = 1; i <= 7; i++) {

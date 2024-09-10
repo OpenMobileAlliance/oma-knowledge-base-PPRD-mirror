@@ -1,6 +1,6 @@
 <template>
-  <header :class="ui.wrapper">
-    <UContainer :ui="{ constrained: '', }" class="flex flex-col">
+  <header :class="ui.wrapper" class="flex flex-col">
+    <div class="px-8">
       <div :class="ui.container">
         <div :class="ui.left">
           <slot name="left">
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-    </UContainer>
+    </div>
     <AppBreadcrumbs class="mt-4" />
   </header>
 </template>
