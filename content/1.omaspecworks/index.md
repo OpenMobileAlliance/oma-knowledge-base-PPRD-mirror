@@ -7,7 +7,9 @@ layout: doc
 ::ShCarousel
 ---
 ui:
-    wrapper: rounded-2xl border-2
+    wrapper: 
+    title: 
+    subtitle:
 title: Latest OMA News
 subtitle: Click here for more [news](/news)
 items:
@@ -66,7 +68,7 @@ items:
 ::ShMultiColumn
 ---
 ui: 
-   wrapper: bg-slate-100 rounded-2xl p-5 border-2
+   wrapper: 
 cols: 4
 ---
     :::ShColumn 
@@ -77,8 +79,8 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 m-1 
-            icon: text-oma-500 w-1/3
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1 
+            icon: text-oma-purple-500 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
         subtitle: "OMA SpecWorks"
@@ -89,7 +91,9 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5
+            wrapper: mt-5 border-[#DFE4EA]
+            icon: text-oma-yellow-300 w-1/3
+        icon: heroicons-outline:academic-cap
         title: OMA SpecWorks # First Column
         subtitle: Introduction
         urlWrapper: /omaspecworks/about/omaspecworks
@@ -100,6 +104,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
+            icon: text-green-400
+        icon: la:balance-scale
         title: IPR # First Column
         subtitle: Terms
         urlWrapper: /omaspecworks/about/ipr
@@ -110,6 +116,8 @@ cols: 4
         ---
         ui:
             wrapper: mt-5 mb-10
+            icon: text-red-400 w-1/3
+        icon: mdi:account-eye-outline
         title: Policies & Terms # First Column
         subtitle: Terms
         urlWrapper: /omaspecworks/about/policies-terms
@@ -120,14 +128,14 @@ cols: 4
     :::ShColumn 
     --- 
     ui: # Second Column
-       wrapper:  m-1
+       wrapper:  m-1 
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 mb-5
-            icon: text-oma-700 w-1/4
-        icon: i-eos-icons:rotating-gear
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            icon: text-oma-blue-500 w-1/3
+        icon: el:adult
         title: Membership # Second Row
         subtitle: OMA SpecWorks
         urlWrapper: /omaspecworks/membership/
@@ -167,13 +175,13 @@ cols: 4
     :::ShColumn 
     --- 
     ui: # Third Column
-       wrapper: m-1
+       wrapper: m-1 border-[#D2D9E0]
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 
-            icon: text-oma-700 w-1/3
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            icon: text-red-800 w-1/3
         icon: ic:sharp-shopify
         title: Collaborate # Third Column
         subtitle: OMA SpecWorks
@@ -203,16 +211,16 @@ cols: 4
     :::ShColumn 
     --- 
     ui: # Fourth Column
-       wrapper: m-1
+       wrapper: m-1 border-[#D2D9E0]
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 
-            icon: text-blue-700 w-1/3
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            icon: text-oma-yellow-800 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fourth Column
-        subtitle: 
+        subtitle: OMASpecWorks
         urlWrapper: ""
         ---
         ::::
@@ -238,4 +246,5 @@ cols: 4
     :::          
 ::
 
+> Comment text
 

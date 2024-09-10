@@ -1,5 +1,5 @@
 export default {
-  wrapper: "pl-4 pr-4 pb-10 shadow-xl bg-sky-100 dark:bg-oma-blue-950 rounded-2xl",
+  wrapper: "pl-4 pr-4 pb-10 shadow-xl bg-[#F7F8FA] dark:bg-slate-950 rounded-2xl",
   inner: "",
   tags: {
     title: "flex flex-wrap justify-center",

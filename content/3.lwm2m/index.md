@@ -1,5 +1,5 @@
 ---
-title: LwM2M
+title:  About LwM2M
 description: Main page of the LwM2M topic
 layout: doc
 ---
@@ -14,9 +14,9 @@ spanText: m
 alignText: left
 urlImage: /images/OMA-129_Lightweight_M2M_Logo_RGB_full.png
 title: 
-subtitle: About LwM2M
+subtitle: 
 text: |
-  **The Lightweight Machine-to-Machine (LwM2M)** protocol is a specialized Internet of Things device management protocol, which was initially designed for use with constrained devices and constrained networks in the Internet of Things (IoT). It is, however, also successfully used on high-end IoT devices as well. LwM2M is deployed in a variety of verticals, such as smart energy, building automation, precision farming, logistics, etc. The object and resource model defined for LwM2M allows extensiblity while maintaining interoperability. More than 300 objects and resources have been specified to retrieve sensor data, control actuators, and to manage application data. These objects and resources are free to use and publically available.
+  > **The Lightweight Machine-to-Machine (LwM2M)** protocol is a specialized Internet of Things device management protocol, which was initially designed for use with constrained devices and constrained networks in the Internet of Things (IoT). It is, however, also successfully used on high-end IoT devices as well. LwM2M is deployed in a variety of verticals, such as smart energy, building automation, precision farming, logistics, etc. The object and resource model defined for LwM2M allows extensiblity while maintaining interoperability. More than 300 objects and resources have been specified to retrieve sensor data, control actuators, and to manage application data. These objects and resources are free to use and publically available.
 ---
 ::
 
@@ -34,7 +34,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 mb-3
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
             icon: text-blue-700 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About LwM2M # First Row
@@ -96,8 +96,8 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 mb-3
-            icon: text-blue-700 w-1/4
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            icon: text-purple-700 w-1/4
         icon: i-eos-icons:rotating-gear
         title: Applications & Use Cases # Second Row
         subtitle: 
@@ -136,7 +136,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Technical Resources # Third Column
@@ -193,8 +193,8 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 
-            icon: text-blue-700 w-1/4
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1 
+            icon: text-yellow-700 w-1/4
         icon: eos-icons:background-tasks
         title: Community & Support # Fourth Column
         subtitle: 
@@ -255,8 +255,8 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-100 
-            icon: text-blue-700 w-1/3
+            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            icon: text-cyan-700 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fith Column
         subtitle: 
