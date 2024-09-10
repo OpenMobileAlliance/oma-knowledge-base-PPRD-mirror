@@ -23,7 +23,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-oma-red-50 border-oma-red-100
             icon: text-yellow-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Search # First Row
@@ -70,7 +70,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-oma-red-50 border-oma-red-100
             icon: text-blue-700 w-1/2
         icon: i-eos-icons:rotating-gear
         title: Registries # Second Row
@@ -107,7 +107,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-oma-red-50 border-oma-red-100 
             icon: text-green-700
         icon: eos-icons:background-tasks
         title: API's # Third Column
