@@ -3,7 +3,7 @@ const { prev, next } = useContent()
 </script>
 
 <template>
-  <div class="grid grid-cols-2 mt-10 mx-auto max-w-max min-w-full">
+  <div class="grid grid-cols-2 mt-10 mx-auto max-w-max min-w-full not-prose">
     <NuxtLink v-if="prev" :to="prev._path" class="grid grid-rows-3 border p-4 rounded-xl hover:bg-gray-100 dark:hover:bg-neutral-800 justify-items-start lg:mr-20 sm:mr-5">
         <UIcon name="i-vaadin:chevron-circle-left-o" dynamic class="text-3xl hover:scale-105" />
         <div class="text-3xl font-semibold mt-2">{{ prev.title }}</div>
