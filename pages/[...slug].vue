@@ -13,10 +13,10 @@
               </button>
               <ul class="space-y-1 lg:block overflow-auto">
                 <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
-                  <ULink :to="`${page._path}#${link.id}`">{{ link.text }}</ULink>
+                  <ULink :to="`${page._path}#${link.id}`" class="not-prose">{{ link.text }}</ULink>
                   <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
                     <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink :to="`${page._path}#${subLink.id}`" class="">{{ subLink.text }}</ULink>
+                      <ULink :to="`${page._path}#${subLink.id}`" class="not-prose">{{ subLink.text }}</ULink>
                     </li>
                   </ul>
                 </li>
