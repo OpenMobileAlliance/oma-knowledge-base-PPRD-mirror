@@ -31,7 +31,7 @@
             <ul class="flex gap-1.5">
               <li v-for="link in topLinks" :key="link.path" class="ml-4"
                 :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-                <ULink :to="link._path" class="hover:text-inherit hover:bg-primary-100/[0.5] dark:hover:bg-neutral-600 dark:hover:text-inherit rounded-lg p-2 focus:bg-primary-100/[0.5] focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600 ">{{ link.title }}</ULink>
+                <ULink :to="link._path" :class="ui.shadow">{{ link.title }}</ULink>
               </li>
             </ul>
           </div>
@@ -50,6 +50,7 @@ const config = {
   center: "hidden lg:flex flex flex-col grow",
   right: "flex items-center justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
+  shadow: "hover:text-inherit hover:bg-primary-100/[0.5] focus:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600 rounded-full p-2"
 };
 
 const props = withDefaults(

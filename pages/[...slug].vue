@@ -6,17 +6,17 @@
           <AppSideMenu :items="displayNavigation"
             class="fixed top-64 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
           <div v-if="page.body?.toc?.links?.length > 0"
-            class="fixed top-64 right-8 w-72 h-[calc(100vh-20rem)] overflow-auto">
+            class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
             <nav>
               <button class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
                 <span class="font-semibold text-sm/6 truncate dark:text-white/80 mx-auto">Table of Contents</span>
               </button>
-              <ul class="space-y-1 lg:block overflow-auto -ml-2">
+              <ul class="space-y-1 lg:block -ml-2">
                 <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
-                  <ULink :to="`${page._path}#${link.id}`" class="not-prose truncate rounded-lg p-2 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500">{{ link.text }}</ULink>
+                  <ULink :to="`${page._path}#${link.id}`" :class="ui.shadow" class="not-prose truncate rounded-lg p-2">{{ link.text }}</ULink>
                   <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
                     <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink :to="`${page._path}#${subLink.id}`" class="not-prose text-clip rounded-lg p-2 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500">{{ subLink.text }}</ULink>
+                      <ULink :to="`${page._path}#${subLink.id}`" :class="ui.shadow" class="not-prose text-ellipsis rounded-lg p-2">{{ subLink.text }}</ULink>
                     </li>
                   </ul>
                 </li>
@@ -81,6 +81,27 @@
 </template>
 
 <script setup lang="ts">
+
+const config = {
+  shadow: 'hover:bg-primary-100 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
+};
+
+
+const props = withDefaults(
+  defineProps<{
+    ui?: Partial<typeof config>;
+  }>(),
+  {
+    ui: () => ({}),
+  },
+);
+
+const { ui, attrs } = useUI(
+  "[...slug]",
+  toRef(props, "ui"),
+  config,
+);
+
 const route = useRoute()
 const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
