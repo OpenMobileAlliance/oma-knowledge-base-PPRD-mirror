@@ -52,7 +52,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1 
+            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1 
             icon: text-oma-purple-500 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
@@ -106,7 +106,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
             icon: text-oma-blue-500 w-1/3
         icon: el:adult
         title: Membership # Second Row
@@ -153,7 +153,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
             icon: text-red-800 w-1/3
         icon: ic:sharp-shopify
         title: Collaborate # Third Column
@@ -189,7 +189,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
             icon: text-oma-yellow-800 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fourth Column
