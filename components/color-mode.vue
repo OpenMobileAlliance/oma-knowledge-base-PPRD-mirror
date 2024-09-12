@@ -6,6 +6,7 @@
         variant="link"
         aria-label="Theme"
         @click="isDark = !isDark"
+        class="hover:text-primary dark:hover:text-primary contrast-125"
       />
       <template #fallback>
         <div class="w-8 h-8" />
