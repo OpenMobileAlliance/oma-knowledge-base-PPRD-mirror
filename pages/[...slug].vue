@@ -8,15 +8,15 @@
           <div v-if="page.body?.toc?.links?.length > 0"
             class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
             <nav>
-              <button class="flex items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
+              <button class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
                 <span class="font-semibold text-sm/6 truncate">Table of Contents</span>
               </button>
               <ul class="space-y-1 lg:block overflow-auto">
                 <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
-                  <ULink :to="`${page._path}#${link.id}`" class="not-prose">{{ link.text }}</ULink>
+                  <ULink :to="`${page._path}#${link.id}`" class="not-prose hover:text-primary">{{ link.text }}</ULink>
                   <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
                     <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink :to="`${page._path}#${subLink.id}`" class="not-prose">{{ subLink.text }}</ULink>
+                      <ULink :to="`${page._path}#${subLink.id}`" class="not-prose hover:text-primary">{{ subLink.text }}</ULink>
                     </li>
                   </ul>
                 </li>
@@ -43,13 +43,12 @@
             <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
           </div>
           <div class="text-center">
-            <h2 class="text-oma-300 text-start text-4xl text-gray-700 dark:text-oma-blue-500">{{ page.title }}</h2>
-            <h3 v-if="page.subtitle" class="text-start text-3xl text-gray-600 dark:text-oma-blue-300">{{ page.subtitle
-              }}</h3>
-            <div class="text-center dark:text-white text-2xl" v-if="page.tags && page.tags.length">
+            <h2 class="text-oma-300 text-start text-4xl text-primary dark:text-primary">{{ page.title }}</h2>
+            <h3 v-if="page.subtitle" class="text-start text-3xl text-primary-700 dark:text-primary-700">{{ page.subtitle}}</h3>
+            <div class="text-center text-2xl" v-if="page.tags && page.tags.length">
               Tags:
               <span v-for="tag in page.tags" :key="tag"
-                class="border rounded-3xl p-2 mx-2 text-white bg-oma-blue-500 border-oma-blue-400 dark:bg-oma-purple-300 dark:border-oma-purple-400 text-xl">
+                class="border rounded-3xl p-2 mx-2 text-white bg-primary border-primary-600 dark:bg-primary dark:border-primary-400 text-xl">
                 {{ tag }}
               </span>
             </div>
@@ -74,7 +73,7 @@
               icon="i-heroicons-exclamation-triangle" />
           </template>
         </ContentRenderer>
-        <PrevNextPage v-if="$route.path !== '/'" />
+        <PrevNextPage v-if="route.path !== '/'" />
       </template>
     </article>
 
@@ -116,7 +115,7 @@ const comparePathsForBranch = (path1: string, path2: string) => {
   return true;
 }
 
-const filterNavigation = (list: array, path: sting) => {
+const filterNavigation = (list: Array, path: string) => {
   if (list?.length > 0) {
     const branchList = list.reduce((prev, curr) => {
       if (comparePathsForBranch(path, curr._path)) {

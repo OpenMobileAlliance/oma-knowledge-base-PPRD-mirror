@@ -2,7 +2,7 @@
   <div :class="ui.wrapper">
     <aside class="not-prose text-wrap">
       <nav v-if="items" class="">
-        <ul class="">
+        <ul class="border-r-2 border-primary/[0.2]">
           <li v-for="(link, index) in items" class="" :key="index">
             <Disclosure v-slot="{ open }" defaultOpen>
               <DisclosureButton
@@ -32,8 +32,8 @@
                                   {{ subChildLink.title }}
                                 </ULink>
                               </DisclosureButton>
-                              <DisclosurePanel class="pl-2 pb-1 text-sm text-gray-500"
-                                v-if="subChildLink.children?.length > 0">
+                              <DisclosurePanel class="pl-2 pb-1 text-sm text-primary-900 hover:font-bold"
+                                v-if="subChildLink.children?.length > 0"> <!-- classes for depth lvl 3-->
                                 <ul v-if="subChildLink.children?.length > 0" class="">
                                   <li v-for="(subSubChildLink, subSubChildIndex) in subChildLink.children" class="py-1"
                                     :key="subSubChildIndex">
@@ -93,7 +93,7 @@ const { ui, attrs } = useUI(
 );
 
 const isActive = (path) => {
-  return route.path === path ? "border-b-4 border-b-primary-300" : ""
+  return route.path === path ? "border-b-2 border-b-primary-300 rounded-md pl-1 pr-1" : ""
 }
 
 </script>

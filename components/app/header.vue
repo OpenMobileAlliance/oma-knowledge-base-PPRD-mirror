@@ -1,5 +1,6 @@
 <template>
-  <header :class="ui.wrapper" class="flex flex-col">
+  <header :class="ui.wrapper"
+    class="backdrop-blur bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-b dark:from-primary/[0.25]"> <!-- bg-primary/[0.06] dark:bg-primary/[0.08] border-b border-primary/[0.6] dark:border-primary/[0.7] instead gradient -->
     <div class="px-8">
       <div :class="ui.container">
         <div :class="ui.left">
@@ -37,13 +38,13 @@
         </div>
       </div>
     </div>
-    <AppBreadcrumbs class="mt-4" />
+    <AppBreadcrumbs v-if="route.name !== 'index'" />
   </header>
 </template>
 
 <script setup lang="ts">
 const config = {
-  wrapper: "bg-background/75 backdrop-blur -mb-px sticky top-0 z-50",
+  wrapper: "flex flex-col -mb-px sticky top-0 z-50",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
   left: "lg:flex-1 flex items-center gap-1.5",
   center: "hidden lg:flex flex flex-col grow",
@@ -88,4 +89,5 @@ const topLinks = navigation.value.reduce((previous, current) => {
 }, []);
 
 const header = useAppConfig().header;
+const route = useRoute();
 </script>

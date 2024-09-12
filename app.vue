@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full" :style="{ fontFamily: main.font.type }">
+  <div class="flex flex-col w-full dark:bg-[#19191a] " :style="{ fontFamily: main.font.type }">
     <AppHeader class="flex py-4" title="OMA">
       <template v-slot:logo>
         <img :src="computedLogoSrc" alt="Logo" />
@@ -67,7 +67,6 @@ h7 {
 }
 
 .dark code,
-.dark p,
 .dark strong,
 .dark em,
 .dark ul,
@@ -80,6 +79,6 @@ h7 {
 .dark h4,
 .dark h5,
 .dark h6 {
-  color: white;
+  color: #E7D6C2;
 }
 </style>
