@@ -23,7 +23,7 @@
                 <ULink to="contactus" class="hover:text-primary">Contact us</ULink>
               </span>
               <slot name="right">
-                <AppSocialLinks />
+                <AppSocialLinks class="text-xl" />
               </slot>
             </div>
           </div>
