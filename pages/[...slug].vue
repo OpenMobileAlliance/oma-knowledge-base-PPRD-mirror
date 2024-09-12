@@ -9,7 +9,7 @@
             class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
             <nav>
               <button class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
-                <span class="font-semibold text-sm/6 truncate">Table of Contents</span>
+                <span class="font-semibold text-sm/6 truncate dark:text-white/80">Table of Contents</span>
               </button>
               <ul class="space-y-1 lg:block overflow-auto">
                 <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">

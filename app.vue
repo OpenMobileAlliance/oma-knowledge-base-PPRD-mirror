@@ -67,10 +67,12 @@ h7 {
 }
 
 .dark code,
+.dark a,
+.dark p,
 .dark strong,
 .dark em,
 .dark ul,
-.dark a,
+.dark ol,
 .dark td,
 .dark th,
 .dark h1,
