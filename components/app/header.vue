@@ -31,7 +31,7 @@
             <ul class="flex gap-1.5">
               <li v-for="link in topLinks" :key="link.path" class="ml-4"
                 :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-                <ULink :to="link._path" class="hover:text-primary-700 hover:font-semibold">{{ link.title }}</ULink>
+                <ULink :to="link._path" class="hover:text-inherit hover:bg-primary-100/[0.5] dark:hover:bg-neutral-600 dark:hover:text-inherit rounded-lg p-2 focus:bg-primary-100/[0.5] focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600 ">{{ link.title }}</ULink>
               </li>
             </ul>
           </div>

@@ -1,7 +1,6 @@
 <template>
 <header class="-mb-1 w-full text-xs italic flex items-center">
-    <div class="mx-auto">
-      <hr class="mt-2 mb-3 antialiased border-1 border-primary/[0.4] rounded-full"/>
+    <div class="mx-auto mt-4">
       <NuxtLink to="/" :class="ui.linkCrumb">HOME</NuxtLink>
       <span v-for="(crumb, index) in breadcrumbs" :key="index" class="text-primary/[0.6] dark:text-primary/[0.8]">
         &nbsp; <b> > </b> &nbsp;
@@ -12,6 +11,7 @@
         <span v-else :class="[ui.activeCrumb, { '': isBreadcrumbActive(crumb, index) }]">{{
           crumb.label.toUpperCase() }}</span>
       </span>
+      <hr class="mb-3 antialiased border-1 border-primary/[0.4] rounded-full"/>
     </div>
   </header>
 </template>

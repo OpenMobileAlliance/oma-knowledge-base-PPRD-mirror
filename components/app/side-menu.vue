@@ -2,11 +2,11 @@
   <div :class="ui.wrapper">
     <aside class="not-prose text-wrap">
       <nav v-if="items" class="">
-        <ul class="border-r-2 border-neutral-200 dark:border-neutral-500">
+        <ul class="">
           <li v-for="(link, index) in items" class="" :key="index">
             <Disclosure v-slot="{ open }" defaultOpen>
               <DisclosureButton
-                class="flex w-full justify-between rounded-lg pl-2 py-1 text-left text-sm font-medium text-primary-900 focus:outline-none focus-visible:ring focus-visible:ring-primary-500/75">
+                class="flex w-full justify-between rounded-md pl-2 py-1 text-left text-lg font-medium text-primary-900 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500 p-1 mb-1">
                 <ULink :to="link._path" class="no-underline" :class="isActive(link._path)">{{ link.title
                   }}</ULink>
               </DisclosureButton>
@@ -15,7 +15,7 @@
                   <li v-for="(subLink, subIndex) in link.children" class="" :key="subIndex">
                     <Disclosure v-slot="{ open }" defaultOpen v-if="subLink._path !== link._path">
                       <DisclosureButton
-                        class="flex w-full justify-between rounded-lg  pl-2 py-1 text-left text-sm font-medium text-primary-900 focus:outline-none focus-visible:ring focus-visible:ring-primary-500/75">
+                        class="flex w-full justify-between rounded-md  pl-2 py-1 text-left text-base font-medium text-primary-900 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500 p-1 mt-1">
                         <ULink v-if="link._path !== subLink._path" :to="subLink._path"
                           class="no-underline" :class="isActive(subLink._path)">
                           {{ subLink.title }}
@@ -26,19 +26,19 @@
                           <li v-for="(subChildLink, subChildIndex) in subLink.children" class="" :key="subChildIndex">
                             <Disclosure v-slot="{ open }" defaultOpen v-if="subLink._path !== subChildLink._path">
                               <DisclosureButton
-                                class="flex w-full justify-between rounded-lg  pl-2 py-1 text-left text-sm font-medium text-primary-900 focus:outline-none focus-visible:ring focus-visible:ring-primary-500/75">
+                                class="flex w-full justify-between rounded-lg  pl-2 py-1 text-left text-sm font-medium text-primary-900 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500 p-1 mt-1">
                                 <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path"
-                                  class="no-underline hover:bg-primary-100 rounded-md p-1" :class="isActive(subChildLink._path)">
+                                  class="no-underline" :class="isActive(subChildLink._path)">
                                   {{ subChildLink.title }}
                                 </ULink>
                               </DisclosureButton>
-                              <DisclosurePanel class="pl-2 pb-1 text-sm text-primary-900"
+                              <DisclosurePanel class="pl-2 pb-1 text-xs text-primary-900"
                                 v-if="subChildLink.children?.length > 0"> <!-- classes for depth lvl 3-->
                                 <ul v-if="subChildLink.children?.length > 0" class="">
-                                  <li v-for="(subSubChildLink, subSubChildIndex) in subChildLink.children" class="py-1"
+                                  <li v-for="(subSubChildLink, subSubChildIndex) in subChildLink.children" class="py-1 rounded-lg p-1 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500"
                                     :key="subSubChildIndex">
                                     <ULink v-if="subChildLink._path !== subSubChildLink._path"
-                                      :to="subSubChildLink._path" class="pl-2 no-underline hover:bg-primary-100 rounded-md p-1"
+                                      :to="subSubChildLink._path" class="pl-2 no-underline"
                                       :class="isActive(subSubChildLink._path)">
                                       {{ subSubChildLink.title }}
                                     </ULink>
@@ -93,7 +93,7 @@ const { ui, attrs } = useUI(
 );
 
 const isActive = (path) => {
-  return route.path === path ? "border-b-2 border-b-primary-300 rounded-md pl-1 pr-1" : ""
+  return route.path === path ? "pl-1" : ""
 }
 
 </script>

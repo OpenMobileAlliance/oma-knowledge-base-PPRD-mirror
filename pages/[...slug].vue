@@ -6,17 +6,17 @@
           <AppSideMenu :items="displayNavigation"
             class="fixed top-64 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
           <div v-if="page.body?.toc?.links?.length > 0"
-            class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
+            class="fixed top-64 right-8 w-72 h-[calc(100vh-20rem)] overflow-auto">
             <nav>
               <button class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
-                <span class="font-semibold text-sm/6 truncate dark:text-white/80">Table of Contents</span>
+                <span class="font-semibold text-sm/6 truncate dark:text-white/80 mx-auto">Table of Contents</span>
               </button>
-              <ul class="space-y-1 lg:block overflow-auto">
+              <ul class="space-y-1 lg:block overflow-auto -ml-2">
                 <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
-                  <ULink :to="`${page._path}#${link.id}`" class="not-prose hover:text-primary">{{ link.text }}</ULink>
+                  <ULink :to="`${page._path}#${link.id}`" class="not-prose truncate rounded-lg p-2 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500">{{ link.text }}</ULink>
                   <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
                     <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink :to="`${page._path}#${subLink.id}`" class="not-prose hover:text-primary">{{ subLink.text }}</ULink>
+                      <ULink :to="`${page._path}#${subLink.id}`" class="not-prose text-clip rounded-lg p-2 hover:bg-primary-100 dark:hover:bg-neutral-500 focus:bg-primary-100 dark:focus:bg-primary-500">{{ subLink.text }}</ULink>
                     </li>
                   </ul>
                 </li>
