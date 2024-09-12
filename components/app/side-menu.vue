@@ -20,7 +20,7 @@
                           {{ subLink.title }}
                         </ULink>
                       </DisclosureButton>
-                      <DisclosurePanel class="pl-2 pb-1 text-sm text-gray-500" v-if="subLink.children?.length > 0">
+                      <DisclosurePanel class="pl-2 pb-1 text-sm" v-if="subLink.children?.length > 0">
                         <ul v-if="subLink.children?.length > 0" class="">
                           <li v-for="(subChildLink, subChildIndex) in subLink.children" class="" :key="subChildIndex">
                             <Disclosure v-slot="{ open }" defaultOpen v-if="subLink._path !== subChildLink._path">
@@ -31,7 +31,7 @@
                                   {{ subChildLink.title }}
                                 </ULink>
                               </DisclosureButton>
-                              <DisclosurePanel class="pl-2 pb-1 text-xs text-primary-900"
+                              <DisclosurePanel class="pl-2 pb-1 text-sm text-primary-900"
                                 v-if="subChildLink.children?.length > 0"> <!-- classes for depth lvl 3-->
                                 <ul v-if="subChildLink.children?.length > 0" class="">
                                   <li v-for="(subSubChildLink, subSubChildIndex) in subChildLink.children"

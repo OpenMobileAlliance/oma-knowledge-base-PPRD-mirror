@@ -37,3 +37,20 @@ text: |
   OMA SpecWorks fosters a transparent, egalitarian environment where companies of all sizes equally contribute to advancing wireless technology standards. The success of protocols like LwM2M, now widely adopted in healthcare, automotive, utilities, and home automation, reflects the organization's high-quality technical work. The 2018 merger with the IPSO Alliance strengthened OMA SpecWorks' mission to develop comprehensive documents, ensuring protocols like LwM2M continue to lead IoT device management and support the connected world's growth.
 ---
 ::
+
+::ShCarousel
+---
+title: This is Carousel component, testing title
+subtitle: This is subtitle
+items:
+  - component: ShMicroCard
+    props:
+      urlImage: /omaspecworks_logotag_CMYK.jpg
+  - component: ShMicroCard
+    props:
+      urlImage: /images/oma2.png
+  - component: ShMicroCard
+    props:
+      urlImage: /images/oma-old-logo.jpeg
+---
+::

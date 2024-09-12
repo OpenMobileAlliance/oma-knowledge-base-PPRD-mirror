@@ -16,10 +16,10 @@
           <div class="flex justify-between items-start mb-2">
             <div :class="ui.right">
               <ColorMode />
-              <span class="mr-2 text-sm">
+              <span class="mr-2 text-base">
                 <ULink to="signin" active-class="text-primary" class="hover:text-primary">Sign In</ULink>
               </span>
-              <span class="mr-2 text-sm">
+              <span class="mr-2 text-base">
                 <ULink to="contactus" class="hover:text-primary">Contact us</ULink>
               </span>
               <slot name="right">
@@ -50,7 +50,7 @@ const config = {
   center: "hidden lg:flex flex flex-col grow",
   right: "flex items-center justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
-  shadow: "hover:text-inherit hover:bg-primary-100/[0.5] focus:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600 rounded-full p-2"
+  shadow: "focus:underline focus:underline-offset-4 hover:text-inherit hover:bg-primary-100/[0.5] focus:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600 rounded-xl p-2"
 };
 
 const props = withDefaults(
