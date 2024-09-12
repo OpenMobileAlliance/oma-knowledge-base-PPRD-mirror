@@ -6,10 +6,10 @@
 
       <div class="flex justify-center">
         <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)"
-          :class="[ui.tags.list, { 'bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:hover:shadow-primary/[0.3]': selectedTags.includes(tag) }]">
+          :class="[ui.tags.list, { 'bg-primary-300 border-primary-400 text-neutral-600 dark:bg-primary-700 dark:border-primary-600 dark:hover:shadow-primary/[0.1]': selectedTags.includes(tag) }]">
           {{ tag }}
           <UIcon v-if="selectedTags.includes(tag)" name="i-line-md:close-circle" dynamic
-            class="hover:text-gray-300 duration-100" />
+            class="hover:text-gray-500 duration-100" />
         </span>
       </div>
 
