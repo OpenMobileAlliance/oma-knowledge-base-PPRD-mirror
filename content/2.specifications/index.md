@@ -24,8 +24,8 @@ cols: 3
         ---
         ui:
             wrapper: bg-oma-red-50 border-oma-red-100
-            icon: text-yellow-700 w-1/2
-        icon: i-eos-icons:rotating-gear
+            icon: text-blue-700 w-1/4
+        icon: svg-spinners:8-dots-rotate
         title: Search # First Row
         subtitle: OMA Documentation
         urlWrapper: "/specifications/#exploring-oma-specifications"
@@ -36,6 +36,8 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
+            icon: text-blue-700 w-1/4
+        icon: i-heroicons:puzzle-piece
         title: by Specifications # First Column
         subtitle: OMA Baselines
         urlWrapper: "/specifications/#search-by-specific-document"
@@ -46,6 +48,8 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
+            icon: text-blue-700 w-1/3
+        icon: codicon:versions
         title: by Enabler # First Column
         subtitle: OMA Enablers
         urlWrapper: "/specifications/#search-by-project-or-enabler"
@@ -56,6 +60,8 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
+            icon: text-blue-700 w-1/5
+        icon: i-oui:folder-open
         title: by Public Documents # First Column
         subtitle: OMA Public Documentation
         urlWrapper: "/specifications/#oma-public-documents"
@@ -71,8 +77,8 @@ cols: 3
         ---
         ui:
             wrapper: bg-oma-red-50 border-oma-red-100
-            icon: text-blue-700 w-1/2
-        icon: i-eos-icons:rotating-gear
+            icon: text-blue-700 w-1/3
+        icon: i-eos-icons:installing
         title: Registries # Second Row
         subtitle: OMNA Registries
         urlWrapper: "/specifications/#oma-registries-overview"
@@ -83,6 +89,8 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
+            icon: text-blue-800 w-1/3
+        icon: uit:slack-alt
         title: LwM2M # Second Column
         subtitle: OMNA Registry
         urlWrapper: "/specifications/#oma-lwm2m-registry"
@@ -93,6 +101,8 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
+            icon: text-blue-700 w-1/4
+        icon: eos-icons:products-outlined
         title: Enablers # Second Column
         subtitle: OMNA Registries
         urlWrapper: "/specifications/#omna-enabler-registries"
@@ -108,8 +118,8 @@ cols: 3
         ---
         ui:
             wrapper: bg-oma-red-50 border-oma-red-100 
-            icon: text-green-700
-        icon: eos-icons:background-tasks
+            icon: text-blue-700 w-1/2
+        icon: i-eos-icons:atom-electron
         title: API's # Third Column
         subtitle: OMA API's
         urlWrapper: "/specifications/#oma-api-inventory"
@@ -120,6 +130,8 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
+            icon: text-blue-700 w-1/6
+        icon: i-pajamas:comparison
         title: LwM2M Registry API # Third Column
         subtitle: LwM2M Registry
         urlWrapper: "/specifications/#oma-lwm2m-registry-api"
@@ -129,7 +141,8 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5
+            icon: text-blue-700 w-1/4
+        icon: i-eos-icons:ingress
         title: Enablers API's # Third Column
         subtitle: OMA Enablers
         urlWrapper: "/specifications/#oma-api-table"
