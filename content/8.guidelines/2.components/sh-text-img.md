@@ -23,7 +23,7 @@ title: |
 subtitle: |
   Hello subtitle
 text: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ligula quis justo bibendum consequat. Ut auctor diam sit amet diam ornare euismod. [URL](https://docs.google.com/spreadsheets/d/18O4QvBpIGMcXMq3VZMICwYB8L7tyJ11T/edit#gid=1718761465) elit at dapibus commodo. <a href="https://en.wikipedia.org/wiki/Gaius_Maecenas">Maecenas</a> sit amet purus eu metus pharetra pulvinar. In quis scelerisque leo. Praesent scelerisque at nulla non fermentum. Morbi varius nisi eu pharetra molestie. Sed ipsum mauris, tincidunt ut velit ac, luctus egestas mi. Quisque commodo dui in mi aliquam, nec varius nunc luctus.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ligula quis justo bibendum consequat. Ut auctor diam sit amet diam ornare euismod. [URL](https://docs.google.com/spreadsheets/d/18O4QvBpIGMcXMq3VZMICwYB8L7tyJ11T/edit#gid=1718761465) elit at dapibus commodo. <a href="https://en.wikipedia.org/wiki/Gaius_Maecenas">Maecenas</a> sit amet purus eu metus pharetra pulvinar. In quis scelerisque leo.
 ---
 ::
 
@@ -196,17 +196,15 @@ This is the content inside of the `sh-text-img.ts` & `status.ts`. It list proper
 `sh-text-img.ts`
 
 ```ts
-import status from './status';
-
 export default {
-  wrapper: "px-8 border dark:border-gray-700 rounded-2xl",
-  title: "font-bold text-2xl",
-  subtitle: "font-semibold text-xl -mt-6",
-  text: "",
+  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-300 dark:border-neutral-500 rounded-2xl shadow-2xl p-5",
+  title: "font-bold text-3xl dark:text-white",
+  subtitle: "font-semibold text-2xl -mt-6 dark:text-neutral-400",
+  text: "dark:text-neutral-500 not-prose",
   image: "mx-auto rounded-xl",
-  status,
+  status: "",
   // Default Tailwind CSS values
-  default: {
+  default: { 
   }
 }
 ```

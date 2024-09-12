@@ -1,5 +1,5 @@
 export default {
-  wrapper: "align-middle m-1",
+  wrapper: "align-middle m-1 hover:saturate-150",
   inner: "text-center not-prose mx-auto",
   styleButton: {
     solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white dark:text-gray-900 no-underline',

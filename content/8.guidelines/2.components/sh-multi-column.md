@@ -420,7 +420,7 @@ These style properties can be modified via `ui` and are stored in the `sh-multi-
 
 ```ts
 export default {
-  wrapper: "",
+  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-300 dark:border-neutral-500 rounded-2xl shadow-2xl p-5",
   default: {
     size: 3,
     gap: "gap-4"
