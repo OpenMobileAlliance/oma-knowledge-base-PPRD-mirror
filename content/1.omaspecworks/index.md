@@ -106,13 +106,8 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-<<<<<<< HEAD
             wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
             icon: text-oma-blue-500 w-1/3
-=======
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
-            icon: text-oma-blue-500 w-1/4
->>>>>>> development
         icon: el:adult
         title: Membership # Second Row
         subtitle: OMA SpecWorks
