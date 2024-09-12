@@ -2,7 +2,7 @@
   <div :class="ui.wrapper">
     <aside class="not-prose text-wrap">
       <nav v-if="items" class="">
-        <ul class="border-r-2 border-primary/[0.2]">
+        <ul class="border-r-2 border-neutral-300 dark:border-neutral-500">
           <li v-for="(link, index) in items" class="" :key="index">
             <Disclosure v-slot="{ open }" defaultOpen>
               <DisclosureButton
