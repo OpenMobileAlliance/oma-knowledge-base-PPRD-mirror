@@ -31,6 +31,10 @@ onMounted(() => {
 </script>
 
 <style>
+html {
+  scroll-padding-top: 16rem;
+}
+
 h1 {
   font-size: var(--h1-font-size);
   font-family: var(--h1-font-type);
