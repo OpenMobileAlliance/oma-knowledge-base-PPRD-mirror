@@ -52,7 +52,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1 
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary border-primary-50 hover:border-primary-200 dark:bg-primary-900 dark:border-primary-800 dark:hover:border-primary-950 m-1 
             icon: text-oma-purple-500 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About # First Row
@@ -64,7 +64,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5 border-[#DFE4EA]
+            wrapper: mt-5
             icon: text-oma-yellow-300 w-1/3
         icon: heroicons-outline:academic-cap
         title: OMA SpecWorks # First Column
@@ -106,7 +106,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary border-primary-50 hover:border-primary-200 dark:bg-primary-900 dark:border-primary-800 dark:hover:border-primary-950 m-1 
             icon: text-oma-blue-500 w-1/3
         icon: el:adult
         title: Membership # Second Row
@@ -159,7 +159,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary border-primary-50 hover:border-primary-200 dark:bg-primary-900 dark:border-primary-800 dark:hover:border-primary-950 m-1 
             icon: text-red-800 w-1/3
         icon: carbon:collaborate
         title: Collaborate # Third Column
@@ -200,7 +200,7 @@ cols: 4
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.4] border-oma-red-100 hover:border-oma-red-200 dark:bg-oma-red-700 dark:border-oma-red-800 dark:hover:border-oma-red-950 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary border-primary-50 hover:border-primary-200 dark:bg-primary-900 dark:border-primary-800 dark:hover:border-primary-950 m-1 
             icon: text-oma-yellow-800 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fourth Column

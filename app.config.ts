@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: "oma-red",
+    primary: "oma-blue",
   },
   header: {
     menu: {
