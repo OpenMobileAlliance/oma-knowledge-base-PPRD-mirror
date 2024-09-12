@@ -31,13 +31,14 @@
             <ul class="flex gap-1.5">
               <li v-for="link in topLinks" :key="link.path" class="ml-4"
                 :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-                <ULink :to="link._path" :class="ui.shadow">{{ link.title }}</ULink>
+                <ULink :to="link._path" :class="['underline', ui.shadow]">{{ link.title }}</ULink>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    <hr class="mt-1 border-neutral-50/[0.5] dark:border-neutral-700"/>
     <AppBreadcrumbs v-if="route.name !== 'index'" />
   </header>
 </template>
@@ -50,7 +51,7 @@ const config = {
   center: "hidden lg:flex flex flex-col grow",
   right: "flex items-center justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
-  shadow: "focus:underline focus:underline-offset-4 hover:text-inherit hover:bg-primary-100/[0.5] focus:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600 rounded-xl p-2"
+  shadow: "focus:decoration-oma-blue-400 dark:focus:decoration-oma-blue-600 decoration-2 hover:text-inherit hover:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 rounded-xl p-2" //focus:bg-primary-100/[0.5] focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600
 };
 
 const props = withDefaults(
@@ -92,3 +93,20 @@ const topLinks = navigation.value.reduce((previous, current) => {
 const header = useAppConfig().header;
 const route = useRoute();
 </script>
+
+<style>
+.underline {
+  text-underline-offset: 14px;
+  text-decoration: none;
+}
+
+.underline:focus {
+  text-decoration: underline;
+  text-decoration-color: theme('colors.blue.700');
+}
+
+.dark .underline:focus {
+  text-decoration: underline;
+  text-decoration-color: theme('colors.blue.500');
+}
+</style>
