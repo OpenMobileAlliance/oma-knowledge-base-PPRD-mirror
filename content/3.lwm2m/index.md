@@ -322,7 +322,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
+            icon: w-2/5
         icon: ep:service
         title: Contact us # Fifth Column
         subtitle: |
@@ -334,7 +334,7 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/2
+            icon: w-4/5
         icon: humbleicons:user-asking
         title: F.A.Q # Fifth Column
         subtitle: |
