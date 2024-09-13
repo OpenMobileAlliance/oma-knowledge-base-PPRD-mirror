@@ -20,7 +20,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/3
         icon: i-eos-icons:rotating-gear
         title: Utilities # First Row
@@ -58,7 +58,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/4
         icon: i-eos-icons:rotating-gear
         title: Technical Overview # Second Row
@@ -106,7 +106,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Market Potential # Third Column
@@ -144,7 +144,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Call to Action # Forth Column
@@ -191,7 +191,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Workshops # Forth Column

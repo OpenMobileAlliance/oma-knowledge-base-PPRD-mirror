@@ -34,7 +34,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/3
         icon: i-eos-icons:rotating-gear
         title: About LwM2M # First Row
@@ -96,7 +96,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-purple-700 w-1/4
         icon: i-eos-icons:rotating-gear
         title: Applications & Use Cases # Second Row
@@ -136,7 +136,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/4
         icon: eos-icons:background-tasks
         title: Technical Resources # Third Column
@@ -193,7 +193,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1 
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-yellow-700 w-1/4
         icon: eos-icons:background-tasks
         title: Community & Support # Fourth Column
@@ -255,7 +255,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-cyan-700 w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fith Column
