@@ -168,7 +168,7 @@ cols: 4
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/3
-        icon: eos-icons:background-tasks
+        icon: i-svg-spinners:blocks-shuffle-3
         title: Get Involved # Fourth Column
         subtitle: OMASpecWorks
         urlWrapper: ""
