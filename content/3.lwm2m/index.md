@@ -47,6 +47,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: charm:atom
         title: What is LwM2M # First Column
         subtitle: |
             **
@@ -58,6 +60,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: carbon:development
         title: LwM2M Components # First Column
         subtitle: |
             **
@@ -69,6 +73,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: i-ic:baseline-find-replace
         title: Key Features # First Column
         subtitle: |
             **
@@ -79,7 +85,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5 mb-5
+            wrapper: mt-5
+            icon: w-1/2
+        icon: ic:outline-interests
         title: Benefits # First Column
         subtitle: |
             **
@@ -98,7 +106,7 @@ cols: 5
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: i-eos-icons:rotating-gear
+        icon: line-md:gauge-loop
         title: Applications & Use Cases # Second Row
         subtitle: 
         urlWrapper: ""
@@ -109,9 +117,11 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: i-ic:baseline-engineering
         title: Industry Applications # Second Column
         subtitle: |
-            **
+            **  
         urlWrapper: ""
         ---
         ::::
@@ -120,6 +130,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: pajamas:issue-type-requirements
         title: Case Studies # Second Column
         subtitle: |
             **
@@ -138,7 +150,7 @@ cols: 5
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: eos-icons:background-tasks
+        icon: i-svg-spinners:wind-toy
         title: Technical Resources # Third Column
         subtitle: LwM2M
         urlWrapper: ""
@@ -149,6 +161,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: i-carbon:ibm-watson-knowledge-catalog
         title: Documentation # Third Column
         subtitle: LwM2M
         urlWrapper: 
@@ -159,9 +173,11 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: carbon:ibm-engineering-lifecycle-mgmt
         title: Tutorials & Guidelines # Third Column
         subtitle: LwM2M
-        urlWrapper:
+        urlWrapper: ""
         ---
         :::: 
 
@@ -169,17 +185,22 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/2
+        icon: pajamas:issue-type-maintenance
         title: Tools # Third Column
         subtitle: LwM2M
         urlWrapper: ""
         ---
         ::::
+
         ::::ShMicroCard
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: ic:twotone-apps
         title: LwM2M Registry # Third Column
-        subtitle: LwM2M
+        subtitle: ...
         urlWrapper: ""
         ---
         ::::          
@@ -194,8 +215,8 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon:  w-1/4
-        icon: eos-icons:background-tasks
+            icon:  w-1/3
+        icon: eos-icons:service-outlined
         title: Community & Support # Fourth Column
         subtitle: 
         urlWrapper: ""
@@ -206,6 +227,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: jam:myspace
         title: Members Meetings # Fourth Column
         subtitle: |
             **
@@ -217,6 +240,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: mdi:crowd
         title: Webinars & Workshops # Fourth Column
         subtitle: |
             **
@@ -228,6 +253,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: carbon:ibm-toolchain
         title: Test Events # Fourth Column
         subtitle: |
             **
@@ -239,6 +266,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/5
+        icon: pajamas:api
         title: LwM2M Implementations # Fourth Column
         subtitle: |
             Open Source
@@ -249,7 +278,7 @@ cols: 5
 
     :::ShColumn 
     --- 
-    ui: # Fith Column
+    ui: # Fifth Column
        wrapper: m-1
     ---
         ::::ShMicroCard
@@ -257,8 +286,8 @@ cols: 5
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/3
-        icon: eos-icons:background-tasks
-        title: Get Involved # Fith Column
+        icon: i-svg-spinners:blocks-shuffle-3
+        title: Get Involved # Fifth Column
         subtitle: 
         urlWrapper: ""
         ---
@@ -268,7 +297,9 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
-        title: LwM2M Groups # Fith Column
+            icon: w-1/3
+        icon: i-ic:baseline-groups-3
+        title: LwM2M Groups # Fifth Column
         subtitle: Working Groups
         urlWrapper: 
         ---
@@ -278,7 +309,9 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
-        title: Membership Info # Fith Column
+            icon: w-1/3
+        icon: i-mdi:account-circle-outline
+        title: Membership Info # Fifth Column
         subtitle: |
             **
         urlWrapper: 
@@ -289,7 +322,9 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
-        title: Contact us # Fith Column
+            icon: w-1/3
+        icon: ep:service
+        title: Contact us # Fifth Column
         subtitle: |
             **
         urlWrapper: 
@@ -298,8 +333,10 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5 mb-5
-        title: F.A.Q # Fith Column
+            wrapper: mt-5
+            icon: w-1/2
+        icon: humbleicons:user-asking
+        title: F.A.Q # Fifth Column
         subtitle: |
             **
         urlWrapper: ""
