@@ -11,7 +11,6 @@
         <span v-else :class="[ui.activeCrumb, { '': isBreadcrumbActive(crumb, index) }]">{{
           crumb.label.toUpperCase() }}</span>
       </span>
-      <hr class="mb-3 antialiased border-1 border-primary/[0.4] rounded-full"/>
     </div>
   </header>
 </template>
