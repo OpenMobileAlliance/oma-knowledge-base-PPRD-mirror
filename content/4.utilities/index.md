@@ -21,8 +21,8 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/3
-        icon: i-eos-icons:rotating-gear
+            icon: w-2/5
+        icon: carbon:process
         title: Utilities # First Row
         subtitle: Introduction
         urlWrapper: "/utilities/#introduction-to-lwm2m"
@@ -33,6 +33,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/2
+        icon: i-ic:sharp-handshake
         title: Benefits # First Column
         subtitle: for Utilities
         urlWrapper: "/utilities/#benefits-for-utilities"
@@ -43,6 +45,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: cil:puzzle
         title: Use Cases # First Column
         subtitle: Utitlities
         urlWrapper: "/utilities/#use-cases"
@@ -60,7 +64,7 @@ cols: 5
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: i-eos-icons:rotating-gear
+        icon: i-tabler:api-app
         title: Technical Overview # Second Row
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#technical-overview"
@@ -71,6 +75,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: carbon:drone
         title: Interoperability # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#interoperability"
@@ -81,6 +87,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: mingcute:scale-line
         title: Scalability # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#scalability"
@@ -91,6 +99,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: i-mdi:lock-reset
         title: Security # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#"
@@ -108,7 +118,7 @@ cols: 5
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: eos-icons:background-tasks
+        icon: eos-icons:project-outlined
         title: Market Potential # Third Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#market-potential"
@@ -119,6 +129,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: i-carbon:query
         title: Q&A # Third Column
         subtitle: on Utilities & LwM2M
         urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
@@ -129,6 +141,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: cil:layers
         title: White Papers # Third Column
         subtitle: Utilities & LwM2M
         urlWrapper: "/utilities/"
@@ -146,7 +160,7 @@ cols: 5
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: eos-icons:background-tasks
+        icon: i-mingcute:horn-line
         title: Call to Action # Forth Column
         subtitle: Engagement with OMA
         urlWrapper: "/utilities/#call-to-action"
@@ -157,6 +171,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: material-symbols:diversity-2-rounded
         title: Engage Stakeholders # Forth Column
         subtitle: Engagement Stakeholders
         urlWrapper: "/utilities/#engage-stakeholders"
@@ -167,6 +183,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/4
+        icon: i-carbon:calibrate
         title: Protomote Adoption # Forth Column
         subtitle: Engagement with OMA
         urlWrapper: "/utilities/#promote-adoption"
@@ -177,6 +195,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/3
+        icon: material-symbols:query-stats
         title: Provide Resources # Forth Column
         subtitle: Engagement with OMA
         urlWrapper: "/utilities/#provide-resources"
@@ -193,7 +213,7 @@ cols: 5
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: eos-icons:background-tasks
+        icon: carbon:events
         title: Workshops # Forth Column
         subtitle: Engagement with OMA Utilities Outreach
         urlWrapper: "/utilities/"
@@ -204,6 +224,8 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
+            icon: w-1/2
+        icon: carbon:events-alt
         title: Workshops # Forth Column
         subtitle: ""
         urlWrapper: "/utilities/workshops#previous-workshops"
