@@ -23,7 +23,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/4
         icon: svg-spinners:8-dots-rotate
         title: Search # First Row
@@ -76,7 +76,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/3
         icon: i-eos-icons:installing
         title: Registries # Second Row
@@ -117,7 +117,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-oma-red-50 border-oma-red-100 
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: text-blue-700 w-1/2
         icon: i-eos-icons:atom-electron
         title: API's # Third Column
