@@ -5,42 +5,50 @@
         <ul class="">
           <li v-for="(link, index) in items" :key="index">
             <Disclosure v-slot="{ open }" defaultOpen>
-              <DisclosureButton :class="ui.shadow"
-                class="flex w-full justify-between pl-2 py-1 text-left text-lg font-medium text-black p-1 mb-1">
-                <ULink :to="link._path" class="no-underline" :class="isActive(link._path)">{{ link.title}}</ULink>
-              </DisclosureButton>
+              <div :class="['verticalLine pl-2']">
+                <DisclosureButton :class="ui.shadow"
+                  class="flex w-full justify-between pl-2 py-1 text-left text-lg font-medium text-black p-1 mb-1">
+                  <ULink :to="link._path" class="no-underline" :class="isActive(link._path)">{{ link.title }}</ULink>
+                </DisclosureButton>
+              </div>
               <DisclosurePanel class="pl-2 pb-1 text-sm text-gray-500" v-if="link.children?.length > 0">
                 <ul v-if="link.children?.length > 0" class="hidden lg:block">
                   <li v-for="(subLink, subIndex) in link.children" class="" :key="subIndex">
                     <Disclosure v-slot="{ open }" defaultOpen v-if="subLink._path !== link._path">
-                      <DisclosureButton :class="ui.shadow"
-                        class="flex w-full justify-between pl-2 py-1 text-left text-base font-medium text-black p-1 mt-1">
-                        <ULink v-if="link._path !== subLink._path" :to="subLink._path" class="no-underline"
-                          :class="isActive(subLink._path)">
-                          {{ subLink.title }}
-                        </ULink>
-                      </DisclosureButton>
+                      <div :class="['verticalLine pl-2']">
+                        <DisclosureButton :class="ui.shadow"
+                          class="flex w-full justify-between pl-2 py-1 text-left text-base font-medium text-black p-1 mt-1">
+                          <ULink v-if="link._path !== subLink._path" :to="subLink._path" class="no-underline"
+                            :class="isActive(subLink._path)">
+                            {{ subLink.title }}
+                          </ULink>
+                        </DisclosureButton>
+                      </div>
                       <DisclosurePanel class="pl-2 pb-1 text-sm" v-if="subLink.children?.length > 0">
                         <ul v-if="subLink.children?.length > 0" class="">
                           <li v-for="(subChildLink, subChildIndex) in subLink.children" class="" :key="subChildIndex">
                             <Disclosure v-slot="{ open }" defaultOpen v-if="subLink._path !== subChildLink._path">
-                              <DisclosureButton :class="ui.shadow"
-                                class="flex w-full justify-between pl-2 py-1 text-left text-sm font-medium text-black p-1 mt-1">
-                                <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path"
-                                  class="no-underline" :class="isActive(subChildLink._path)">
-                                  {{ subChildLink.title }}
-                                </ULink>
-                              </DisclosureButton>
+                              <div :class="['verticalLine pl-2']">
+                                <DisclosureButton :class="ui.shadow"
+                                  class="flex w-full justify-between pl-2 py-1 text-left text-sm font-medium text-black p-1 mt-1">
+                                  <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path"
+                                    class="no-underline" :class="isActive(subChildLink._path)">
+                                    {{ subChildLink.title }}
+                                  </ULink>
+                                </DisclosureButton>
+                              </div>
                               <DisclosurePanel class="pl-2 pb-1 text-sm text-primary-900"
                                 v-if="subChildLink.children?.length > 0"> <!-- classes for depth lvl 3-->
                                 <ul v-if="subChildLink.children?.length > 0" class="">
                                   <li v-for="(subSubChildLink, subSubChildIndex) in subChildLink.children"
-                                    :class="ui.shadow" class="py-1 p-1 text-black" :key="subSubChildIndex">
-                                    <ULink v-if="subChildLink._path !== subSubChildLink._path"
-                                      :to="subSubChildLink._path" class="pl-2 no-underline"
-                                      :class="isActive(subSubChildLink._path)">
-                                      {{ subSubChildLink.title }}
-                                    </ULink>
+                                    class="py-1 p-1 text-black" :key="subSubChildIndex">
+                                    <div :class="['verticalLine pl-2']">
+                                      <ULink v-if="subChildLink._path !== subSubChildLink._path"
+                                        :to="subSubChildLink._path" class="no-underline"
+                                        :class="'p-1', ui.shadow, isActive(subSubChildLink._path)">
+                                        {{ subSubChildLink.title }}
+                                      </ULink>
+                                    </div>
                                   </li>
                                 </ul>
                               </DisclosurePanel>
@@ -92,7 +100,19 @@ const { ui, attrs } = useUI(
 );
 
 const isActive = (path) => {
-  return route.path === path ? "pl-1" : ""
+  return route.path === path ? "" : ""
+}
+</script>
+
+<style scoped>
+/*.verticalLine {
+  border-left: 4px solid;
+  border-color: theme('colors.oma-blue.300');
+  border-radius: 5px solid
 }
 
-</script>
+.dark .verticalLine {
+  border-left: 4px solid;
+  border-color: theme('colors.oma-blue.400');
+}*/
+</style>
