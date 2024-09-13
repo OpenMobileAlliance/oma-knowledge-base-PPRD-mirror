@@ -35,7 +35,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/3
+            icon: w-1/3
         icon: i-eos-icons:rotating-gear
         title: About LwM2M # First Row
         subtitle: 
@@ -97,7 +97,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-purple-700 w-1/4
+            icon: w-1/4
         icon: i-eos-icons:rotating-gear
         title: Applications & Use Cases # Second Row
         subtitle: 
@@ -137,7 +137,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: eos-icons:background-tasks
         title: Technical Resources # Third Column
         subtitle: LwM2M
@@ -194,7 +194,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-yellow-700 w-1/4
+            icon:  w-1/4
         icon: eos-icons:background-tasks
         title: Community & Support # Fourth Column
         subtitle: 
@@ -256,7 +256,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-cyan-700 w-1/3
+            icon: w-1/3
         icon: eos-icons:background-tasks
         title: Get Involved # Fith Column
         subtitle: 

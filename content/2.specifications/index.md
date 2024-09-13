@@ -24,7 +24,7 @@ cols: 3
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: svg-spinners:8-dots-rotate
         title: Search # First Row
         subtitle: OMA Documentation
@@ -36,7 +36,7 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: i-heroicons:puzzle-piece
         title: by Specifications # First Column
         subtitle: OMA Baselines
@@ -48,7 +48,7 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: text-blue-700 w-1/3
+            icon: w-1/3
         icon: codicon:versions
         title: by Enabler # First Column
         subtitle: OMA Enablers
@@ -60,7 +60,7 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: text-blue-700 w-1/5
+            icon: w-1/5
         icon: i-oui:folder-open
         title: by Public Documents # First Column
         subtitle: OMA Public Documentation
@@ -77,7 +77,7 @@ cols: 3
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/3
+            icon: w-1/3
         icon: i-eos-icons:installing
         title: Registries # Second Row
         subtitle: OMNA Registries
@@ -89,7 +89,7 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: text-blue-800 w-1/3
+            icon: w-1/3
         icon: uit:slack-alt
         title: LwM2M # Second Column
         subtitle: OMNA Registry
@@ -101,7 +101,7 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: eos-icons:products-outlined
         title: Enablers # Second Column
         subtitle: OMNA Registries
@@ -118,7 +118,7 @@ cols: 3
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/2
+            icon: w-1/2
         icon: i-eos-icons:atom-electron
         title: API's # Third Column
         subtitle: OMA API's
@@ -130,7 +130,7 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: text-blue-700 w-1/6
+            icon: w-1/6
         icon: i-pajamas:comparison
         title: LwM2M Registry API # Third Column
         subtitle: LwM2M Registry
@@ -141,7 +141,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: i-eos-icons:ingress
         title: Enablers API's # Third Column
         subtitle: OMA Enablers

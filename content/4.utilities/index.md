@@ -21,7 +21,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/3
+            icon: w-1/3
         icon: i-eos-icons:rotating-gear
         title: Utilities # First Row
         subtitle: Introduction
@@ -59,7 +59,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: i-eos-icons:rotating-gear
         title: Technical Overview # Second Row
         subtitle: LwM2M in Utilities
@@ -107,7 +107,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: eos-icons:background-tasks
         title: Market Potential # Third Column
         subtitle: LwM2M in Utilities
@@ -145,7 +145,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: eos-icons:background-tasks
         title: Call to Action # Forth Column
         subtitle: Engagement with OMA
@@ -192,7 +192,7 @@ cols: 5
         ---
         ui:
             wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: text-blue-700 w-1/4
+            icon: w-1/4
         icon: eos-icons:background-tasks
         title: Workshops # Forth Column
         subtitle: Engagement with OMA Utilities Outreach
