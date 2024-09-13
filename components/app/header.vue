@@ -102,11 +102,11 @@ const route = useRoute();
 
 .underline:focus {
   text-decoration: underline;
-  text-decoration-color: theme('colors.blue.700');
+  text-decoration-color: theme('colors.oma-blue.300');
 }
 
 .dark .underline:focus {
   text-decoration: underline;
-  text-decoration-color: theme('colors.blue.500');
+  text-decoration-color: theme('colors.oma-blue.400');
 }
 </style>
