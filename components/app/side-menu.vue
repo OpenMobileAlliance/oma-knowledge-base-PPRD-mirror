@@ -1,66 +1,14 @@
 <template>
   <div :class="ui.wrapper">
     <aside class="not-prose text-wrap">
-      <nav v-if="items" class="">
+      <nav v-if="sideManuItems" class="">
         <ul class="">
-          <li v-for="(link, index) in items" :key="index">
-            <Disclosure v-slot="{ open }" defaultOpen>
-              <div :class="['verticalLine pl-2']">
-                <DisclosureButton :class="ui.shadow"
-                  class="flex w-full justify-between pl-2 py-1 text-left text-lg font-medium text-black p-1 mb-1">
-                  <ULink :to="link._path" class="no-underline" :class="isActive(link._path)">{{ link.title }}</ULink>
-                </DisclosureButton>
-              </div>
-              <DisclosurePanel class="pl-2 pb-1 text-sm text-gray-500" v-if="link.children?.length > 0">
-                <ul v-if="link.children?.length > 0" class="hidden lg:block">
-                  <li v-for="(subLink, subIndex) in link.children" class="" :key="subIndex">
-                    <Disclosure v-slot="{ open }" defaultOpen v-if="subLink._path !== link._path">
-                      <div :class="['verticalLine pl-2']">
-                        <DisclosureButton :class="ui.shadow"
-                          class="flex w-full justify-between pl-2 py-1 text-left text-base font-medium text-black p-1 mt-1">
-                          <ULink v-if="link._path !== subLink._path" :to="subLink._path" class="no-underline"
-                            :class="isActive(subLink._path)">
-                            {{ subLink.title }}
-                          </ULink>
-                        </DisclosureButton>
-                      </div>
-                      <DisclosurePanel class="pl-2 pb-1 text-sm" v-if="subLink.children?.length > 0">
-                        <ul v-if="subLink.children?.length > 0" class="">
-                          <li v-for="(subChildLink, subChildIndex) in subLink.children" class="" :key="subChildIndex">
-                            <Disclosure v-slot="{ open }" defaultOpen v-if="subLink._path !== subChildLink._path">
-                              <div :class="['verticalLine pl-2']">
-                                <DisclosureButton :class="ui.shadow"
-                                  class="flex w-full justify-between pl-2 py-1 text-left text-sm font-medium text-black p-1 mt-1">
-                                  <ULink v-if="subLink._path !== subChildLink._path" :to="subChildLink._path"
-                                    class="no-underline" :class="isActive(subChildLink._path)">
-                                    {{ subChildLink.title }}
-                                  </ULink>
-                                </DisclosureButton>
-                              </div>
-                              <DisclosurePanel class="pl-2 pb-1 text-sm text-primary-900"
-                                v-if="subChildLink.children?.length > 0"> <!-- classes for depth lvl 3-->
-                                <ul v-if="subChildLink.children?.length > 0" class="">
-                                  <li v-for="(subSubChildLink, subSubChildIndex) in subChildLink.children"
-                                    class="py-1 p-1 text-black" :key="subSubChildIndex">
-                                    <div :class="['verticalLine pl-2']">
-                                      <ULink v-if="subChildLink._path !== subSubChildLink._path"
-                                        :to="subSubChildLink._path" class="no-underline"
-                                        :class="'p-1', ui.shadow, isActive(subSubChildLink._path)">
-                                        {{ subSubChildLink.title }}
-                                      </ULink>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </DisclosurePanel>
-                            </Disclosure>
-                          </li>
-                        </ul>
-                      </DisclosurePanel>
-                    </Disclosure>
-                  </li>
-                </ul>
-              </DisclosurePanel>
-            </Disclosure>
+          <li v-for="(link, index) in sideManuItems" :key="index">
+            <div :class="[ui.shadow, isActive(link.to) ? ui.active : ui.normal]">
+              <a :href="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal">
+                <span :class="[getIndent(link.depth), 'text-nowrap']">{{ link.title }}</span>
+              </a>
+            </div>
           </li>
         </ul>
       </nav>
@@ -69,13 +17,44 @@
 </template>
 
 <script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 const route = useRoute()
 
 const config = {
   wrapper: '',
-  shadow: 'hover:bg-primary-100 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
+  shadow: 'hover:bg-primary-100 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500',
+  active: 'block border-l-2 dark:border-oma-blue-400 border-oma-blue-400',
+  normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px',
+  link: {
+    active: 'text-oma-blue-500 dark:text-oma-blue-400 font-bold',
+    normal: ''
+  }
 };
+
+const addMenuItems = (list, depth, prevEl, outList) => {
+  if (list.length > 0 && depth < 4) {
+    list.forEach(el => {
+      if (prevEl != el._path) {
+        outList.push({
+          to: el._path,
+          title: el.title,
+          depth: depth,
+          children: el.children?.length > 0
+        })
+      }
+      if (el.children?.length > 0) {
+        addMenuItems(el.children, depth + 1, el._path, outList)
+      }
+    });
+  }
+}
+
+const sideManuItems = computed(() => {
+  const menuItems = []
+  if (props.items?.length > 0) {
+    addMenuItems(props.items, 0, null, menuItems)
+  }
+  return menuItems
+})
 
 
 const props = withDefaults(
@@ -100,7 +79,13 @@ const { ui, attrs } = useUI(
 );
 
 const isActive = (path) => {
-  return route.path === path ? "" : ""
+  return route.path === path
+}
+
+const COSNT_INDENT = ['pl-2', 'pl-4', 'pl-8', 'pl-12']
+
+const getIndent = (depth) => {
+  return COSNT_INDENT[depth]
 }
 </script>
 
