@@ -1,5 +1,5 @@
 <template>
-  <footer :class="[ui.wrapper, $route.name === 'index' ? 'fixed' : '']" v-bind="attrs">
+  <footer :class="[ui.wrapper, 'fixed']" v-bind="attrs">
     <UContainer :class="ui.container">
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
