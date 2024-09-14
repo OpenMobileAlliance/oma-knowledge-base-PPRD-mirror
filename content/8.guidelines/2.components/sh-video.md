@@ -2,6 +2,7 @@
 title: Video
 description:
 constructorName: ShVideo
+layout: doc
 ---
 
 ### Usage
@@ -56,6 +57,10 @@ The {{ $doc.constructorName }} constructor creates a display format for embeddin
       <td>n/a</td>
       <td>The source URL of the video to be embedded. This property is mandatory.</td>
     </tr>
+    <td>description</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.
+    </td>
   </tbody>
 </table>
 

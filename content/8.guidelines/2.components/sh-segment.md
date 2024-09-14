@@ -2,13 +2,14 @@
 title: Segment
 discription: 
 constructorName: ShSegment
+layout: doc
 ---
 
 The <b>{{ $doc.constructorName }}</b> component represent the most flexible component as it 
 encapsulates one block or container of markdown and HTML content that can be styled.
 
-## Usage
-### Basic Usage
+### Usage
+##### Example Basic
 This is and example of how a basic <b>{{ $doc.constructorName }}</b> component is displayed:
 
 ::ShSegment
@@ -42,6 +43,40 @@ This is a HTML <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank
 
 The content can be markdown or HTML text of any length. All elements are supported as in
 the *normal* text.
+
+### Props
+The <b>{{ $doc.constructorName }}</b> consturctor supports only one property: `ui`.
+
+#### Attributes Description
+The {{ $doc.constructorName }} constructor represents a versatile component that can take any value and represent it.
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Attribute</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><code>ui</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>The <code>ui</code> property in the <code>ShSegment</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the segment component. The <code>ui</code> property contains only one attribute that targets the framework on how `ShSegment` is displayed. Below is the description of of the single attribute within the <code>ui</code> property:</td>
+    </tr>
+    <tr>
+      <td><code>wrapper</code></td>
+      <td>n/a</td>
+      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShSegment</code>. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
+    </tr>
+    <td><code>description</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+  </tbody>
+</table>
 
 ### Advanced Usage
 This is how a complex example of the <b>{{ $doc.constructorName }}</b> is displayed. When hovering over the content is zoom in/out and contains different type of content:
@@ -147,37 +182,10 @@ That is making this used to show this component flexibility.
 :::
 
 ::
-```
+```    
 
-## Properties
-The <b>{{ $doc.constructorName }}</b> consturctor supports only one property: `ui`.
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Attribute</th>
-      <th>Default</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2"><code>ui</code></td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>The <code>ui</code> property in the <code>ShSegment</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the segment component. The <code>ui</code> property contains only one attribute that targets the framework on how `ShSegment` is displayed. Below is the description of of the single attribute within the <code>ui</code> property:</td>
-    </tr>
-    <tr>
-      <td><code>wrapper</code></td>
-      <td>n/a</td>
-      <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShSegment</code>. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
-    </tr>
-  </tbody>
-</table>    
-
-## Config
-The <b>{{ $doc.constructorName }}</b> component or constructor contains a single property `ui` with a single attribute `wrapper` which doesn't contains any default value.
+### Config
+These style properties can be modified via `ui` and are stored in the `sh-segment.ts` file:
 
 ```ts
 {

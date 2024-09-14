@@ -1,57 +1,57 @@
 <template>
-  <header class="h-8 p-4 w-full bg-zinc-200 dark:bg-slate-800 text-xs italic flex items-center">
-    <div class="mx-auto">
-      <nuxt-link to="/" class="text-[#dda20d] dark:text-[#87cefa] hover:text-[#044ea1]">HOME</nuxt-link>
-      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="text-[#dda20d] dark:text-[#87cefa]">
+<header class="-mb-1 w-full text-xs italic flex items-center">
+    <div class="mx-auto mt-4">
+      <NuxtLink to="/" :class="ui.linkCrumb">HOME</NuxtLink>
+      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="text-primary/[0.6] dark:text-primary/[0.8]">
         &nbsp; <b> > </b> &nbsp;
-        <nuxt-link
-          v-if="crumb.to"
-          :to="crumb.to"
-          :class="{ 'active': isBreadcrumbActive(crumb, index) }"
-        >
+        <NuxtLink v-if="crumb.to != route.path" :to="crumb.to"
+          :class="{ [ui.linkCrumb]: isBreadcrumbActive(crumb, index) }">
           {{ crumb.label.toUpperCase() }}
-        </nuxt-link>
-        <span v-else>{{ crumb.label.toUpperCase() }}</span>
+      </NuxtLink>
+        <span v-else :class="[ui.activeCrumb, { '': isBreadcrumbActive(crumb, index) }]">{{
+          crumb.label.toUpperCase() }}</span>
       </span>
     </div>
   </header>
 </template>
 
-<script>
-export default {
-  computed: {
-    breadcrumbs() {
-      const pathSegments = this.$route.path.split('/').filter(segment => segment !== '');
-      return pathSegments.map((segment, index) => {
-        const to = `/${pathSegments.slice(0, index + 1).join('/')}`;
-        const label = this.capitalize(segment);
-        return { to, label };
-      });
-    },
+<script setup lang="ts">
+
+const config = {
+  linkCrumb: 'text-primary/[0.7] hover:text-primary contrast-125 dark:text-primary/[0.8] dark:hover:text-primary',
+  activeCrumb: 'text-primary dark:text-primary contrast-125'
+};
+
+const props = withDefaults(
+  defineProps<{
+    ui?: Partial<typeof config>;
+  }>(),
+  {
+    ui: () => ({}),
   },
-  methods: {
-    capitalize(str) {
-      return str.charAt(0).toUpperCase() + str.slice(1);
-    },
-    isBreadcrumbActive(crumb, index) {
-      const currentPath = `/${this.$route.path.split('/').filter(segment => segment !== '').slice(0, index + 1).join('/')}`;
-      return crumb.to === currentPath;
-    },
-  },
+);
+
+const { ui } = useUI(
+  "breadcrumbs",
+  toRef(props, "ui"),
+  config
+);
+
+const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+
+const route = useRoute();
+
+const breadcrumbs = computed(() => {
+  const pathSegments = route.path.split('/').filter(segment => segment !== '');
+  return pathSegments.map((segment, index) => {
+    const to = `/${pathSegments.slice(0, index + 1).join('/')}`;
+    const label = capitalize(segment);
+    return { to, label };
+  });
+});
+
+const isBreadcrumbActive = (crumb: { to: string }, index: number) => {
+  const currentPath = `/${route.path.split('/').filter(segment => segment !== '').slice(0, index + 1).join('/')}`;
+  return crumb.to === currentPath;
 };
 </script>
-
-<style scoped>
-.active {
-  color: #dda20d; /* change the color of active breadcrumb */
-}
-.dark .active {
-  color: #87cefa; /* change the color of active breadcrumb in dark mode */
-}
-a:hover {
-  color: #044ea1;
-}
-.dark a:hover {
-  color: #dda20d;
-}
-</style>

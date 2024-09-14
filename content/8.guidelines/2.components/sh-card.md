@@ -2,6 +2,7 @@
 title: Card
 description: This constructor allows you to have image on one half of the card, and text with labels on the other one. Text and labels have full Markdown support.
 constructorName: ShCard
+layout: doc
 ---
 
 ### Usage
@@ -26,7 +27,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -49,7 +50,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -165,6 +166,9 @@ The {{ $doc.constructorName }} constructor represents a card divided in two half
       <td>n/a</td>
       <td>The background image for the component's image section.</td>
     </tr>
+    <td>description</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
   </tbody>
 </table>
 
@@ -178,10 +182,10 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-oma-500 # Add text-color
-    leftLabel: text-oma-500  # Add text-color
-    centerLabel: text-oma-500
-    rightLabel: text-oma-500
+    text: text-primary # Add text-color
+    leftLabel: text-primary  # Add text-color
+    centerLabel: text-primary
+    rightLabel: text-primary
     upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
     lowerBase: bg-red-100
     image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
@@ -198,7 +202,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -212,10 +216,10 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-oma-500 # Add text-color
-    leftLabel: text-oma-500  # Add text-color
-    centerLabel: text-oma-500
-    rightLabel: text-oma-500
+    text: text-primary # Add text-color
+    leftLabel: text-primary  # Add text-color
+    centerLabel: text-primary
+    rightLabel: text-primary
     upperBase: bg-red-300 # in order for this bg color to be displayed, we need to remove background prop
     lowerBase: bg-red-100
     image: hover:saturate-200 hover:scale-125 duration-300 # Options to style image
@@ -232,7 +236,7 @@ centerLabel: |
 rightLabel: |
     Hello <a href="https://earth.google.com/" target="_blank">right</a> label
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
+urlImage: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 urlUpperBase: https://www.nasa.gov
 ---
 ::
@@ -243,65 +247,64 @@ These style properties can be modified via `ui` and are stored in the `sh-card.t
 
 ```ts
 export default {
-    wrapper: "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min",
-    upperBase: "row-start-1 flex items-center justify-center rounded-t-xl",
-    image: "h-full w-auto p-8",
-    lowerBase: "row-start-2 p-6 rounded-b-xl",
-    title: "text-3xl font-extrabold",
-    subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8",
-    text: "",
-    leftLabel: "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    centerLabel: "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    rightLabel: "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    icon: "",
-    // Default Tailwind CSS values
-    default: {
-    }
+  wrapper: "flex flex-col justify-between border-2 dark:border-neutral-700 hover:border-2 hover:border-primary dark:hover:border-2 dark:hover:border-primary rounded-xl mx-auto max-w-lg overflow-hidden bg-inherit shadow-2xl",
+  upperBase: "flex items-center justify-center rounded-t-xl",
+  image: "h-full w-screen rounded-b-xl overflow-hidden",
+  lowerBase: "p-6 rounded-b-xl",
+  title: "text-3xl font-extrabold text-primary",
+  subtitle: "text-xl font-semibold text-primary-700 -mt-8",
+  text: "text-base text-gray-800 dark:text-gray-200 not-prose",
+  leftLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+  centerLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+  rightLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+  // Default Tailwind CSS values
+  default: {
   }
+}
 ```
 
 #### Class Descriptions
 These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
-*  **Value**: <code>"grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min"</code>
-*  **Description**: This defines the overall styling for the container holding the elements. The value "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min" indicates a grid layout with 2 rows (grid grid-rows-2), a 2-unit border (border-2), rounded corners (rounded-xl), top and bottom margins of 4 units each (mt-4 mb-4), centered horizontally (mx-auto), and size constraints with maximum width and height set (max-w-lg max-h-min).
+*  **Value**: <code>"flex flex-col justify-between border-2 rounded-xl mx-auto max-w-lg overflow-hidden"</code>
+*  **Description**: Defines the overall container styles. The value "flex flex-col justify-between border-2 rounded-xl mx-auto max-w-lg overflow-hidden" sets a flexible column layout (flex flex-col), evenly spaces items (justify-between), applies a 2-unit border (border-2), rounds corners (rounded-xl), centers horizontally (mx-auto), constrains maximum width (max-w-lg), and hides overflow (overflow-hidden).
 
 _**upperBase**_
-*  **Value**: <code>"row-start-1 flex items-center justify-center rounded-t-xl"</code>
-*  **Description**: This specifies the styles for the upper base. The value "row-start-1 flex items-center justify-center rounded-t-xl" includes starting at row 1 (row-start-1), a flex container (flex), centering items both horizontally and vertically (items-center justify-center), and rounded top corners (rounded-t-xl).
+*  **Value**: <code>"flex items-center justify-center rounded-t-xl overflow-hidden"</code>
+*  **Description**: Specifies styles for the upper section. The value "flex items-center justify-center rounded-t-xl overflow-hidden" uses a flexible box layout (flex), centers items (items-center justify-center), rounds the top corners (rounded-t-xl), and hides overflow (overflow-hidden).
 
 _**image**_
-*  **Value**: <code>"h-full w-auto p-8"</code>
-*  **Description**: This specifies styles for an image. The value "h-full w-auto p-8" includes full height (h-full), automatic width (w-auto), and padding of 8 units (p-8).
+*  **Value**: <code>"h-full w-auto p-8 object-cover"</code>
+*  **Description**: Defines styles for the image. The value "h-full w-auto p-8 object-cover" makes the image fill its container height (h-full), adjusts width automatically (w-auto), adds padding of 8 units (p-8), and ensures the image covers the container while maintaining aspect ratio (object-cover).
 
 _**lowerBase**_
-*  **Value**: <code>"row-start-2 p-6 rounded-b-xl"</code>
-*  **Description**: This specifies the styles for the lower base. The value "row-start-2 p-6 rounded-b-xl" includes starting at row 2 (row-start-2), padding of 6 units (p-6), and rounded bottom corners (rounded-b-xl).
+*  **Value**: <code>"p-6 rounded-b-xl"</code>
+*  **Description**: Specifies styles for the lower section. The value "p-6 rounded-b-xl" adds padding of 6 units (p-6) and rounds the bottom corners (rounded-b-xl).
 
 _**title**_
 *  **Value**: <code>"text-3xl font-extrabold"</code>
-*  **Description**: This defines the styling for the title text. The value "text-3xl font-extrabold" includes an extra-large font size (text-3xl) and extra-bold font weight (font-extrabold).
+*  **Description**: Defines styles for the title text. The value "text-3xl font-extrabold" sets a large font size (text-3xl) and applies an extra-bold font weight (font-extrabold).
 
 _**subtitle**_
 *  **Value**: <code>"text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8"</code>
-*  **Description**: This specifies the styling for the subtitle text. The value "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8" includes a large font size (text-xl), semi-bold font weight (font-semibold), gray text color (text-gray-600), gray text color in dark mode (dark:text-gray-400), and a top margin of -8 units (-mt-8).
+*  **Description**: Specifies styles for the subtitle text. The value "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8" includes a large font size (text-xl), semi-bold font weight (font-semibold), gray text color (text-gray-600), dark mode gray text color (dark:text-gray-400), and a top margin of -8 units (-mt-8).
 
 _**text**_
-*  **Value**: <code>""</code>
-*  **Description**: This defines the styling for general text. As it is empty, it implies no specific styles have been set.
+*  **Value**: <code>"text-base text-gray-800 dark:text-gray-200"</code>
+*  **Description**: Defines styles for general text. The value "text-base text-gray-800 dark:text-gray-200" includes a base font size (text-base), gray text color (text-gray-800), and dark mode gray text color (dark:text-gray-200).
 
 _**leftLabel**_
-*  **Value**: <code>"col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
-*  **Description**: This specifies the styling for the left label. The value "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 1 (col-start-1), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+*  **Value**: <code>"text-lg text-gray-600 dark:text-gray-400"</code>
+*  **Description**: Defines styles for the left label text. The value "text-lg text-gray-600 dark:text-gray-400" includes a large font size (text-lg), gray text color (text-gray-600), and dark mode gray text color (dark:text-gray-400).
 
 _**centerLabel**_
-*  **Value**: <code>"col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
-*  **Description**: This specifies the styling for the center label. The value "col-start-2 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 2 (col-start-2), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+*  **Value**: <code>"text-lg text-gray-600 dark:text-gray-400"</code>
+*  **Description**: Specifies styles for the center label text. The value "text-lg text-gray-600 dark:text-gray-400" includes a large font size (text-lg), gray text color (text-gray-600), and dark mode gray text color (dark:text-gray-400).
 
 _**rightLabel**_
-*  **Value**: <code>"col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400"</code>
-*  **Description**: This specifies the styling for the right label. The value "col-start-3 text-lg justify-self-start text-gray-600 dark:text-gray-400" includes starting at column 3 (col-start-3), a large font size (text-lg), justified at the start (justify-self-start), gray text color (text-gray-600), and gray text color in dark mode (dark:text-gray-400).
+*  **Value**: <code>"text-lg text-gray-600 dark:text-gray-400"</code>
+*  **Description**: Defines styles for the right label text. The value "text-lg text-gray-600 dark:text-gray-400" includes a large font size (text-lg), gray text color (text-gray-600), and dark mode gray text color (dark:text-gray-400).
 
 _**default**_
 *  **Value**: <code>{}</code>

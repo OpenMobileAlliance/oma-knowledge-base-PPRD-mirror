@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="prose">
+  <UContainer class="w-full prose pt-10 mt-10 pb-20">
     <ContentDoc />
   </UContainer>
 </template>

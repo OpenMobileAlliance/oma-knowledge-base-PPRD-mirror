@@ -42,6 +42,7 @@ import { social as config } from '@/ui.config' // Import the config file
 // Define props
 const props = withDefaults(
     defineProps<{
+        description?: string;
         src?: string;
         width?: string;
         height?: string;
@@ -49,6 +50,7 @@ const props = withDefaults(
     }>(),
     {
         ui: () => ({}),
+        description: "",
         src: "",
         width: "500",
         height: "",

@@ -1,12 +1,12 @@
 export default {
-    wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit",
-    avatar: "grayscale justify-self-end tracking-widest rounded-full size-48",
+    wrapper: "grid grid-cols-2 gap-4 p-4 mx-auto w-fit dark:bg-inherit rounded-md",
+    avatar: "grayscale justify-self-end tracking-widest rounded-full size-48 dark:border dark:border-primary/[0.6]",
     base: "",
-    name: "text-3xl font-bold grow text-oma-500 bottom-0",
-    role: "text-lg font-semibold text-black dark:text-white -mt-4",
-    company: "text-lg text-gray-500 tracking-widest -mt-5",
+    name: "text-3xl font-bold grow text-primary bottom-0 dark:primary",
+    role: "text-lg font-semibold text-black -mt-4 dark:text-gray-400",
+    company: "text-lg text-gray-500 tracking-widest -mt-5 dark:text-gray-300",
     socials: "flex text-5xl -mx-1 -mt-4",
-    icon: "transition-transform transform hover:-translate-y-1 dark:text-white duration-400",
+    icon: "transition-transform transform hover:-translate-y-1 dark:primary/[0.3] duration-400",
     // Default Tailwind CSS values
     default: {
     }

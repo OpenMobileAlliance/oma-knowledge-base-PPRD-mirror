@@ -2,6 +2,7 @@
 title: Column
 description: Component representing the column with header and footer
 constructorName: ShColumn
+layout: doc
 ---
 
 ## Usage
@@ -225,6 +226,10 @@ The constructor allows you to organize content inside one column and then nest i
       <td>n/a</td>
       <td>Text at the footer of the column</td>
     </tr>
+    <td><code>description</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
   </tbody>
 </table>
 
@@ -234,7 +239,7 @@ The style attributes can be modified via `ui` and are stored in the `sh-column.t
 `sh-column.ts`
 
 ```ts
-{
+export default {
   wrapper: "",
   header: {
     wrapper: "",

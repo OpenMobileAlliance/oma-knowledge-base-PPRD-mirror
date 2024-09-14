@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     preference: 'light'
   },
   content: {
+    documentDriven: true,
     highlight: {
       theme: 'github-dark'
     },
@@ -12,15 +13,19 @@ export default defineNuxtConfig({
       anchorLinks: false 
     },
   },
+
   ui: {
     icons: ["heroicons-solid", "fa6-brands", "devicon", "icons8"],
   },
+
   googleFonts: {
     families: {
+      "Roboto": [300, 400, 600, 700],
       "DM Sans": [400, 500, 600, 700],
       "DM Mono": [400, 500],
     },
   },
+
   app: {
     head: {
       link: [
@@ -28,5 +33,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   devtools: { enabled: true },
+  compatibilityDate: "2024-08-13",
 });

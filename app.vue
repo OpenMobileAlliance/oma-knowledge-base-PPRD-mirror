@@ -1,16 +1,26 @@
 <template>
-  <NuxtLayout :name="layout">
-    <div :style="{ fontFamily: main.font.type }">
+  <div class="flex flex-col w-full dark:bg-[#19191a] " :style="{ fontFamily: main.font.type }">
+    <AppHeader class="flex py-4" title="OMA">
+      <template v-slot:logo>
+        <img :src="computedLogoSrc" alt="Logo" />
+      </template>
+    </AppHeader>
+    <UContainer :ui="{ constrained: '', }" class="w-full pb-24">
       <NuxtPage />
-    </div>
-  </NuxtLayout>
+    </UContainer>
+    <AppFooter />
+  </div>
 </template>
 
 <script setup lang="ts">
 
-const layout = "default";
 const main = useAppConfig().main;
 
+const theme = useColorMode();
+
+const computedLogoSrc = computed(() => {
+  return theme.value === 'dark' ? '/logo-dark.png' : '/logo-light.png';
+});
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
   for (let i = 1; i <= 7; i++) {
@@ -21,6 +31,10 @@ onMounted(() => {
 </script>
 
 <style>
+html {
+  scroll-padding-top: 16rem;
+}
+
 h1 {
   font-size: var(--h1-font-size);
   font-family: var(--h1-font-type);
@@ -54,5 +68,23 @@ h6 {
 h7 {
   font-size: var(--h7-font-size);
   font-family: var(--h7-font-type);
+}
+
+.dark code,
+.dark a,
+.dark p,
+.dark strong,
+.dark em,
+.dark ul,
+.dark ol,
+.dark td,
+.dark th,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #E7D6C2;
 }
 </style>

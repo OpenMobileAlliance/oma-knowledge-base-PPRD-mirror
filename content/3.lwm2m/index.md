@@ -1,15 +1,9 @@
 ---
-title: LwM2M
+title:  About LwM2M
 description: Main page of the LwM2M topic
+layout: doc
 ---
-
-## LwM2M
-
-
-
-<img src="/images/lwm2m/logo-OMA.jpg" width="40%" style="z-index: 10; margin-left: 40%; margin-top: -4.5rem;"/>
-
-The Lightweight Machine-to-Machine (LwM2M) protocol is a specialized Internet of Things device management protocol, which was initially designed for use with constrained devices and constrained networks in the Internet of Things (IoT). It is, however, also successfully used on high-end IoT devices as well. LwM2M is deployed in a variety of verticals, such as smart energy, building automation, precision farming, logistics, etc. The object and resource model defined for LwM2M allows extensiblity while maintaining interoperability. More than 300 objects and resources have been specified to retrieve sensor data, control actuators, and to manage application data. These objects and resources are free to use and publically available.
+Select one option from the menu below:
 
 ::ShMultiColumn
 ---
@@ -18,12 +12,13 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # First Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            icon: w-1/3
         icon: i-eos-icons:rotating-gear
         title: About LwM2M # First Row
         subtitle: 
@@ -34,7 +29,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
+            icon: w-1/4
+        icon: charm:atom
         title: What is LwM2M # First Column
         subtitle: |
             **
@@ -45,7 +42,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
+            icon: w-1/4
+        icon: carbon:development
         title: LwM2M Components # First Column
         subtitle: |
             **
@@ -56,7 +55,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
+            icon: w-1/3
+        icon: i-ic:baseline-find-replace
         title: Key Features # First Column
         subtitle: |
             **
@@ -67,7 +68,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3 mb-10
+            wrapper: mt-5
+            icon: w-1/2
+        icon: ic:outline-interests
         title: Benefits # First Column
         subtitle: |
             **
@@ -79,13 +82,14 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Second Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/4
-        icon: i-eos-icons:rotating-gear
+            wrapper:  bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            icon: w-1/4
+        icon: line-md:gauge-loop
         title: Applications & Use Cases # Second Row
         subtitle: 
         urlWrapper: ""
@@ -95,10 +99,12 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
+            icon: w-1/4
+        icon: i-ic:baseline-engineering
         title: Industry Applications # Second Column
         subtitle: |
-            **
+            **  
         urlWrapper: ""
         ---
         ::::
@@ -106,7 +112,9 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
+            wrapper: mt-5
+            icon: w-1/4
+        icon: pajamas:issue-type-requirements
         title: Case Studies # Second Column
         subtitle: |
             **
@@ -118,15 +126,16 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Third Column
+       wrapper: m-1
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-indigo-200 
-            icon: text-blue-700 w-1/4
-        icon: eos-icons:background-tasks
-        title: LwM2M Framework # Third Column
-        subtitle: 
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            icon: w-1/4
+        icon: i-svg-spinners:wind-toy
+        title: Technical Resources # Third Column
+        subtitle: LwM2M
         urlWrapper: ""
         ---
         ::::
@@ -134,58 +143,158 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Resources # Third Column
-        subtitle: |
-            **
-        urlWrapper: https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html
+            wrapper: mt-5
+            icon: w-1/4
+        icon: i-carbon:ibm-watson-knowledge-catalog
+        title: Documentation # Third Column
+        subtitle: LwM2M
+        urlWrapper: 
         ---
         ::::
 
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Tools # Third Column
-        subtitle: |
-            **
-        urlWrapper: https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/wiki
+            wrapper: mt-5
+            icon: w-1/4
+        icon: carbon:ibm-engineering-lifecycle-mgmt
+        title: Tutorials & Guidelines # Third Column
+        subtitle: LwM2M
+        urlWrapper: ""
         ---
         :::: 
 
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: LwM2M Guidelines # Third Column
+            wrapper: mt-5
+            icon: w-1/2
+        icon: pajamas:issue-type-maintenance
+        title: Tools # Third Column
+        subtitle: LwM2M
+        urlWrapper: ""
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/4
+        icon: ic:twotone-apps
+        title: LwM2M Registry # Third Column
+        subtitle: ...
+        urlWrapper: ""
+        ---
+        ::::          
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Fourth Column
+       wrapper: m-1
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            icon:  w-1/3
+        icon: eos-icons:service-outlined
+        title: Community & Support # Fourth Column
+        subtitle: 
+        urlWrapper: ""
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/4
+        icon: jam:myspace
+        title: Members Meetings # Fourth Column
         subtitle: |
             **
+        urlWrapper: 
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: mdi:crowd
+        title: Webinars & Workshops # Fourth Column
+        subtitle: |
+            **
+        urlWrapper: 
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: carbon:ibm-toolchain
+        title: Test Events # Fourth Column
+        subtitle: |
+            **
+        urlWrapper: 
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/5
+        icon: pajamas:api
+        title: LwM2M Implementations # Fourth Column
+        subtitle: |
+            Open Source
+        urlWrapper: 
+        ---
+        ::::
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Fifth Column
+       wrapper: m-1
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            icon: w-1/3
+        icon: i-svg-spinners:blocks-shuffle-3
+        title: Get Involved # Fifth Column
+        subtitle: 
         urlWrapper: ""
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: i-ic:baseline-groups-3
+        title: LwM2M Groups # Fifth Column
+        subtitle: Working Groups
+        urlWrapper: 
         ---
         ::::        
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Fourth Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 
-            icon: text-blue-700
-        icon: eos-icons:background-tasks
-        title: News # Fourth Column
-        subtitle: 
-        urlWrapper: ""
-        ---
-        ::::
 
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Blogs # Fourth Column
+            wrapper: mt-5
+            icon: w-1/3
+        icon: i-mdi:account-circle-outline
+        title: Membership Info # Fifth Column
         subtitle: |
             **
         urlWrapper: 
@@ -195,8 +304,10 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3
-        title: Press Release # Fourth Column
+            wrapper: mt-5
+            icon: w-2/5
+        icon: ep:service
+        title: Contact us # Fifth Column
         subtitle: |
             **
         urlWrapper: 
@@ -205,57 +316,10 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-3 mb-10
-        title: Newsletter Signup # Fourth Column
-        subtitle: |
-            **
-        urlWrapper: 
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Fourth Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 
-            icon: text-blue-700 w-1/3
-        icon: eos-icons:background-tasks
-        title: Get Involved # Fith Column
-        subtitle: 
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Membership Info # Fith Column
-        subtitle: |
-            **
-        urlWrapper: 
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Contact us # Fith Column
-        subtitle: |
-            **
-        urlWrapper: 
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3 mb-10
-        title: F.A.Q # Fith Column
+            wrapper: mt-5
+            icon: w-4/5
+        icon: humbleicons:user-asking
+        title: F.A.Q # Fifth Column
         subtitle: |
             **
         urlWrapper: ""
@@ -264,488 +328,18 @@ cols: 5
     :::       
 ::
 
-::ShMultiColumn
+
+::ShTextImg
 ---
-cols: 5 
+ui:
+    wrapper: m-10 p-10
+positionText: left
+spanText: m
+alignText: left
+urlImage: /images/OMA-129_Lightweight_M2M_Logo_RGB_full.png
+title: 
+subtitle: 
+text: |
+  > **The Lightweight Machine-to-Machine (LwM2M)** protocol is a specialized Internet of Things device management protocol, which was initially designed for use with constrained devices and constrained networks in the Internet of Things (IoT). It is, however, also successfully used on high-end IoT devices as well. LwM2M is deployed in a variety of verticals, such as smart energy, building automation, precision farming, logistics, etc. The object and resource model defined for LwM2M allows extensiblity while maintaining interoperability. More than 300 objects and resources have been specified to retrieve sensor data, control actuators, and to manage application data. These objects and resources are free to use and publically available.
 ---
-    :::ShColumn 
-    --- 
-    ui: # First Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
-        icon: i-eos-icons:rotating-gear
-        title: LwM2M # First Column
-        subtitle: |
-            *Protocol*
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Version 1.2.1 - CORE # First Column
-        subtitle: |
-            *PDF Format*
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.pdf
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Version 1.2.1 - Transport # First Column
-        subtitle: |
-            *PDF Format*
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-TS-LightweightM2M_Transport-V1_2_1-20221209-A.pdf
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Version 1.2.1 - COREs # First Column
-        subtitle: |
-            *HTML Format*
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/HTML-Version/OMA-TS-LightweightM2M_Core-V1_2_1-20221209-A.html
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Version 1.2.1 - Transport # First Column
-        subtitle: |
-            *HTML Format*
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/HTML-Version/OMA-TS-LightweightM2M_Transport-V1_2_1-20221209-A.html
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Version 1.2.1 # First Column
-        subtitle: |
-            *Zip File*
-        urlWrapper: https://openmobilealliance.org/release/LightweightM2M/V1_2_1-20221209-A/OMA-ERP-LightweightM2M-V1_2_1-20221209-A.zip
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Version 1.1.1 # First Column
-        subtitle: |
-            *17-Jun-2019*
-        urlWrapper: https://openmobilealliance.github.io/dmse-documentation/#v11-functionality
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Version 1.0.2 # First Column
-        subtitle: |
-            *02-Feb-2018*
-        urlWrapper: https://openmobilealliance.github.io/dmse-documentation/#v10-functionality
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Second Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
-        icon: eos-icons:bubble-loading
-        title: LwM2M # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Binary Application Data # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-binary-application-data-container
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Connectivity Management # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-connectivity-management
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Device Capability Management # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-device-capabilities-management
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Event Log # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-event-log
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Gateway # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-gateway
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Lock & Wipe # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-lock--wipe
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Portfolio Object # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-portfolio-object
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Software Management # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-software-management
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: LwM2M Virtual Observation # Second Column
-        subtitle: |
-            *Enabler*
-        urlWrapper: https://guidelines.openmobilealliance.org/enablers/#lwm2m-virtual-observation
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Third Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
-        icon: eos-icons:background-tasks
-        title: Test Cases # Third Column
-        subtitle: |
-            *Interoperability*
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Test V1.2.x # Third Column
-        subtitle: |
-            *Interoperability*
-        urlWrapper: https://www.openmobilealliance.org/release/LightweightM2M/ETS/OMA-ETS-LightweightM2M_INT-V1_2_1-20240312-C.pdf
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Test V1.1 # Third Column
-        subtitle: |
-            *Interoperability*
-        urlWrapper: https://www.openmobilealliance.org/release/LightweightM2M/ETS/OMA-ETS-LightweightM2M-V1_1-20190912-D.pdf
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Test V1.0.2 # Third Column
-        subtitle: |
-            *Interoperability*
-        urlWrapper: https://www.openmobilealliance.org/release/LightweightM2M/ETS/OMA-ETS-LightweightM2M-V1_1-20190912-D.pdf
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Fourth Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/4
-        icon: eos-icons:atom-electron
-        title: Implementations # Fourth Column
-        subtitle: |
-            *Code*
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Leshan # Fourth Column
-        subtitle: |
-            *Eclipse*
-        urlWrapper: https://github.com/eclipse-leshan/leshan
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Wakaama # Fourth Column
-        subtitle: |
-            *Eclipse*
-        urlWrapper: https://github.com/eclipse-wakaama/wakaama
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Anjay # Fourth Column
-        subtitle: |
-            *AVSystem*
-        urlWrapper: https://github.com/AVSystem/Anjay
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: IOWA # Fourth Column
-        subtitle: |
-            *IoTerop*
-        urlWrapper: https://github.com/IOTEROP/IOWA
-        ---
-        ::::
-    
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Zephyr # Fourth Column
-        subtitle: |
-            *LwM2M Client*
-        urlWrapper: https://docs.zephyrproject.org/latest/samples/net/lwm2m_client/README.html
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Leshan Sandbox # Fourth Column
-        subtitle: |
-            *Server Sandbox*
-        urlWrapper: https://github.com/eclipse-leshan/leshan#test-server-sandbox
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Tools # Fourth Column
-        subtitle: |
-            *LwM2M*
-        urlWrapper: https://guidelines.openmobilealliance.org/tools/
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Fith Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-indigo-200 mb-3
-            icon: text-blue-700 w-1/3
-        icon: simple-line-icons:people
-        title: Events # Fith Column
-        subtitle: |
-            *Past/Future*
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Member Meetings # Fith Column
-        subtitle: |
-            *Events*
-        urlWrapper: https://omaspecworks.org/events/member-meetings/
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Previous Test Events # Fith Column
-        subtitle: |
-            *Events*
-        urlWrapper: https://guidelines.openmobilealliance.org/testfests
-        ---
-        ::::
-    
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-3
-        title: Utility # Fith Column
-        subtitle: |
-            *Workshops I, II, III*
-        urlWrapper: https://guidelines.openmobilealliance.org/workshop/
-        ---
-        ::::
-
-    :::
-
-:: 
-
-> (*) _Note - The Open Mobile Alliance is not responsible for the content of any particular implementation and does not endorse any particular implementation._{style="background-color: coral"}
-
-
-## Latest News
-
-::ShMultiColumn
----
-cols: 3
----
-    :::ShCard 
-    --- 
-    text: | #first news
-        NASAss explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    text: |
-        NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. At its 20 centers and facilities across the country – and the only National Laboratory in space – [NASA](https://www.nasa.gov/) studies <a href="https://earth.google.com/web/" target="_blank">Earth</a>, including its climate, our Sun, and our solar system and beyond.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
-
-    :::ShCard
-    ---
-    text: |
-        This represents the third iteration of same component, but with different text, so we can visualize how this constructor behaves nested in other constructor.
-    title: |
-        NASA Space Program
-    subtitle: |
-        Per aspera ad astra
-    leftLabel: |
-        Hello left [label](https://www.nasa.gov)
-    centerLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">center</a> label
-    rightLabel: |
-        Hello <a href="https://earth.google.com/" target="_blank">right</a> label
-    imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg 
-    urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-    urlUpperBase: https://www.nasa.gov
-    ---
-    :::
 ::

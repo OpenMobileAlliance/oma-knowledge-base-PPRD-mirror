@@ -28,12 +28,14 @@ interface Faq {
 // Define the props to accept a dynamic number of Q&A pairs
 const props = withDefaults(
   defineProps<{
+    description?: string;
     qas: Faq[];
     title?: string;
     ui?: Partial<typeof config>;
   }>(),
   {
     ui: () => ({}),
+    description: "",
     title: "FAQs",
   }
 );

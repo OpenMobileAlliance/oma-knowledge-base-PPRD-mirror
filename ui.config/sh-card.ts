@@ -1,15 +1,15 @@
 export default {
-    wrapper: "grid grid-rows-2 border-2 rounded-xl mt-4 mb-4 mx-auto max-w-lg max-h-min",
-    upperBase: "row-start-1 flex items-center justify-center rounded-t-xl",
-    image: "h-full w-auto p-8",
-    lowerBase: "row-start-2 p-6 rounded-b-xl",
-    title: "text-3xl font-extrabold",
-    subtitle: "text-xl font-semibold text-gray-600 dark:text-gray-400 -mt-8",
-    text: "",
-    leftLabel: "col-start-1 text-lg justify-self-start text-gray-600 dark:text-gray-400",
-    centerLabel: "col-start-2 text-lg justify-self-center text-gray-600 dark:text-gray-400",
-    rightLabel: "col-start-3 text-lg justify-self-end text-gray-600 dark:text-gray-400",
-    // Default Tailwind CSS values
-    default: {
-    }
+  wrapper: "flex flex-col justify-between border-2 dark:border-neutral-700 hover:border-2 hover:border-primary dark:hover:border-2 dark:hover:border-primary rounded-xl mx-auto max-w-lg overflow-hidden bg-inherit shadow-2xl",
+  upperBase: "flex items-center justify-center rounded-t-xl",
+  image: "h-full w-screen rounded-b-xl overflow-hidden",
+  lowerBase: "p-6 rounded-b-xl",
+  title: "text-3xl font-extrabold text-primary",
+  subtitle: "text-xl font-semibold text-primary-700 -mt-8",
+  text: "text-base text-gray-800 dark:text-gray-200 not-prose",
+  leftLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+  centerLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+  rightLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+  // Default Tailwind CSS values
+  default: {
   }
+}

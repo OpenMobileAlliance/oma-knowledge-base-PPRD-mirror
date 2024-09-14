@@ -1,49 +1,57 @@
 <template>
-  <header :class="ui.wrapper">
-    <UContainer :class="ui.container">
-      <div :class="ui.left">
-        <slot name="letf">
-          <NuxtLink :to="to" :aria-label="ariaLabel" :class="ui.logo">
-            <slot name="logo">
-              {{ title || "OMA Knowledge Base" }}
-            </slot>
-          </NuxtLink>
-        </slot>
-      </div>
-      <div :class="ui.center">
-        <div class="flex justify-between items-start mb-2">
-          <div :class="ui.right">
-            <span class="mr-2 text-sm">
-              <ULink to="signin" active-class="text-primary" class="hover:text-primary">Sign In</ULink>
-            </span>
-            <span class="mr-2 text-sm">
-              <ULink to="contactus" class="hover:text-primary">Contact us</ULink>
-            </span>
-            <slot name="right">
-              <AppSocialLinks />
-            </slot>
+  <header :class="ui.wrapper"
+    class="backdrop-blur bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-b dark:from-primary/[0.25]"> <!-- bg-primary/[0.06] dark:bg-primary/[0.08] border-b border-primary/[0.6] dark:border-primary/[0.7] instead gradient -->
+    <div class="px-8">
+      <div :class="ui.container">
+        <div :class="ui.left">
+          <slot name="left">
+            <NuxtLink :to="to" :aria-label="ariaLabel" :class="ui.logo">
+              <slot name="logo">
+                {{ title || "OMA Knowledge Base" }}
+              </slot>
+            </NuxtLink>
+          </slot>
+        </div>
+        <div :class="ui.center">
+          <div class="flex justify-between items-start mb-2">
+            <div :class="ui.right">
+              <ColorMode />
+              <span class="mr-2 text-base">
+                <ULink to="signin" active-class="text-primary" class="hover:text-primary">Sign In</ULink>
+              </span>
+              <span class="mr-2 text-base">
+                <ULink to="contactus" class="hover:text-primary">Contact us</ULink>
+              </span>
+              <slot name="right">
+                <AppSocialLinks class="text-xl" />
+              </slot>
+            </div>
+          </div>
+          <div>
+            <ul class="flex gap-1.5">
+              <li v-for="link in topLinks" :key="link.path" class="ml-4"
+                :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
+                <ULink :to="link._path" :class="['underline', ui.shadow]">{{ link.title }}</ULink>
+              </li>
+            </ul>
           </div>
         </div>
-        <div>
-          <ul class="flex justify-between items-start">
-            <li v-for="link in topLinks" :key="link.path" class="ml-4" :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-              <ULink :to="link._path" class="hover:text-primary">{{ link.title }}</ULink>
-            </li>
-          </ul>
-        </div>
       </div>
-    </UContainer>
+    </div>
+    <hr class="mt-1 border-neutral-50/[0.5] dark:border-neutral-700"/>
+    <AppBreadcrumbs v-if="route.name !== 'index'" />
   </header>
 </template>
 
 <script setup lang="ts">
 const config = {
-  wrapper: "bg-background/75 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50",
+  wrapper: "flex flex-col -mb-px sticky top-0 z-50",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
   left: "lg:flex-1 flex items-center gap-1.5",
   center: "hidden lg:flex flex flex-col grow",
   right: "flex items-center justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
+  shadow: "focus:decoration-oma-blue-400 dark:focus:decoration-oma-blue-600 decoration-2 hover:text-inherit hover:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 rounded-xl p-2" //focus:bg-primary-100/[0.5] focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600
 };
 
 const props = withDefaults(
@@ -83,4 +91,22 @@ const topLinks = navigation.value.reduce((previous, current) => {
 }, []);
 
 const header = useAppConfig().header;
+const route = useRoute();
 </script>
+
+<style>
+.underline {
+  text-underline-offset: 14px;
+  text-decoration: none;
+}
+
+.underline:focus {
+  text-decoration: underline;
+  text-decoration-color: theme('colors.oma-blue.300');
+}
+
+.dark .underline:focus {
+  text-decoration: underline;
+  text-decoration-color: theme('colors.oma-blue.400');
+}
+</style>

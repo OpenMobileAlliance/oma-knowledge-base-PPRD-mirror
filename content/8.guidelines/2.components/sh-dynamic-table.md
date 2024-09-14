@@ -2,6 +2,7 @@
 title: Dynamic Table
 description: Table component with dynamic capabiities
 constructorName: ShDynamicTable
+layout: doc
 ---
 
 

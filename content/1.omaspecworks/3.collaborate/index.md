@@ -1,5 +1,7 @@
 ---
 title: Collaborate
+description:
+layout: doc
 ---
 
 ## Welcome to Collaborate with OMASpecWorks

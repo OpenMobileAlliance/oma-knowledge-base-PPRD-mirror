@@ -2,6 +2,7 @@
 title: Action Card
 description: This constructor allows clients to input their emails for newsletter and subscriptions
 constructorName: ShActionCard
+layout: doc
 ---
 
 ### Usage
@@ -13,7 +14,6 @@ This is the display format for the {{ $doc.constructorName }} constructor, desig
 
 ::ShActionCard
 ---
-imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
 subtitle: |
@@ -21,10 +21,6 @@ subtitle: |
 labelButton: Sign up
 colorButton: blue
 urlButton: https://www.nasa.gov/
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-altImage: NASA Logo
-icon: noto:rocket
-altIcon: Rocket
 text: |
  *New text goes [here](https://www.nasa.gov/).*
 ---
@@ -35,7 +31,6 @@ This is how it is constructed
 ```mdc
 ::ShActionCard
 ---
-imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
 subtitle: |
@@ -43,10 +38,6 @@ subtitle: |
 labelButton: Sign up
 colorButton: blue
 urlButton: https://www.nasa.gov/
-urlImage: https://gpm.nasa.gov/sites/default/files/document_files/NASA-Logo-Large.png
-altImage: NASA Logo
-icon: noto:rocket
-altIcon: Rocket
 text: |
  *New text goes [here](https://www.nasa.gov/).*
 ---
@@ -142,9 +133,9 @@ The {{ $doc.constructorName }} constructor allows for clients and customers to s
       <td>The color of the button.</td>
     </tr>
     <tr>
-      <td>variant</td>
+      <td>styleButton</td>
       <td>n/a</td>
-      <td>The variant style of the button (e.g., outline, soft, solid, link, ghost). </td>
+      <td>The style of the button (e.g., outline, soft, solid, link, ghost). </td>
     </tr>
     <tr>
       <td>icon</td>
@@ -155,6 +146,11 @@ The {{ $doc.constructorName }} constructor allows for clients and customers to s
       <td>altIcon</td>
       <td>n/a</td>
       <td>Alternative text for the icon, used for accessibility.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
     </tr>
   </tbody>
 </table>
@@ -170,7 +166,7 @@ ui:
     wrapper: shadow-xl
     title: text-4xl
     subtitle: font-mono
-    text: text-oma-500
+    text: text-primary
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
@@ -197,7 +193,7 @@ ui:
     wrapper: shadow-xl
     title: text-4xl
     subtitle: font-mono
-    text: text-oma-500
+    text: text-primary
 imageBackground: https://static.vecteezy.com/system/resources/previews/026/459/005/non_2x/abstract-background-images-wallpaper-ai-generated-free-photo.jpg
 title: |
     Stay updated with our articles updates
@@ -221,11 +217,11 @@ These style properties can be modified via `ui` and are stored in the `sh-action
 
 ```ts
 export default {
-    wrapper: "mt-6 border-2 dark:border-gray-700 mx-auto p-4 rounded-xl 'bg-no-repeat bg-cover size-full max-w-4xl max-h-3xl",
+    wrapper: "mt-6 dark:bg-inherit border-2 border-neutral-300 dark:border-neutral-500 mx-auto p-4 rounded-xl bg-no-repeat bg-cover size-full max-w-4xl max-h-3xl",
     image: "col-start-1 col-span-1 size-4/6 self-center place-self-center row-span-2 w-fit h-fit",
-    title: "text-2xl text-black text-center font-bold",
-    subtitle: "text-lg text-center font-semibold text-gray-600 -mt-8",
-    text: "text-md text-center font-light text-gray-600",
+    title: "text-2xl text-black dark:text-white text-center font-bold",
+    subtitle: "text-lg text-center font-semibold text-gray-400 -mt-8",
+    text: "text-md text-center font-light not-prose",
     button: "hover:drop-shadow-xl hover:saturate-200 col-start-3 col-span-1 mx-auto mb-4 not-prose",
     colorButton: "black",
     icon: "self-center place-self-center row-start-1 row-span-2 col-start-5 col-span-1",

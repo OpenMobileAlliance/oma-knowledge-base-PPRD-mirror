@@ -2,6 +2,7 @@
 title: Card (Micro)
 description:
 constructorName: ShMicroCard
+layout: doc
 ---
 
 ### Usage
@@ -9,7 +10,7 @@ constructorName: ShMicroCard
 #### Presentation
 This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
 
-##### Example Basic Avatar
+##### Example Basic
 
 ::ShMicroCard
 ---
@@ -113,6 +114,11 @@ The {{ $doc.constructorName }} constructor represents a micro card that can shoc
       <td>n/a</td>
       <td>The main text content to be displayed.</td>
     </tr>
+    <tr>
+      <td>description</td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -125,7 +131,7 @@ An example with customized `ui` attributes for enhanced display:
 ui:
     wrapper: shadow-xl bg-slate-200 #comments are allowed inline
     title: text-red-500
-    text: text-oma-400
+    text: text-oma-purple-300
 urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
 urlWrapper: https://www.axios.com/
 title: |
@@ -145,7 +151,7 @@ This is an example with customized `ui` attributes for enhanced display:
 ui:
     wrapper: shadow-xl bg-slate-200 #comments are allowed inline
     title: text-red-500
-    text: text-oma-400
+    text: text-oma-purple-300
 urlImage: https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png
 urlWrapper: https://www.axios.com/
 title: |
@@ -163,43 +169,51 @@ These style properties can be modified via `ui` and are stored in the `sh-micro-
 
 ```ts
 export default {
-    wrapper: "grid grid-row-3 grid-flow-row border-2 rounded-2xl max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300",
+    wrapper: "grid grid-row-3 grid-flow-row rounded-2xl max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300 bg-white border-2 border-neutral-300 dark:bg-zinc-800 hover:border-primary dark:border-neutral-500 dark:hover:border-primary",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto",
-    title: "text-2xl font-bold text-black dark:text-white",
-    subtitle: "font-semibold text-lg text-gray-500 mt-3",
-    text: "font-light text-md text-gray-400 mt-7",
+    icon: "relative mt-4 w-full h-auto flex shrink mx-auto", 
+    title: "text-2xl font-medium text-black dark:text-white",
+    subtitle: "font-light text-lg text-[#1F2329] dark:text-gray-400 mt-3 font-style: italic",
+    text: "font-light text-md text-gray-400 dark:text-gray-600 mt-7",
     // Default Tailwind CSS values
     default: {
     }
   }
-  ```
+```
 
-  #### Class Descriptions
+#### Class Descriptions
 These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
+### Class Descriptions
+
 _**wrapper**_
-*  **Value**: <code>"grid grid-row-3 grid-flow-row border-2 rounded-2xl max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300"</code>
-*  **Description**: This defines the overall styling for the container holding the elements. The value "grid grid-row-3 grid-flow-row border-2 rounded-2xl max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300" indicates a grid layout with 3 rows (grid grid-row-3), a row flow layout (grid-flow-row), a 2-unit border (border-2), rounded corners (rounded-2xl), maximum width and height constraints (max-w-lg max-h-lg), padding of 4 units (p-4), centered horizontally (mx-auto), centered items (justify-items-center text-center), and a hover effect that scales up by 105% over 300ms (hover:scale-105 duration-300).
+*  **Value**: `grid grid-row-3 grid-flow-row border-2 rounded-2xl shadow-lg bg-red-100 max-w-lg max-h-lg p-4 mx-auto justify-items-center text-center hover:scale-105 duration-300 hover:bg-red-200`
+*  **Description**: Defines a grid layout with 3 rows and a row flow, applies a 2-pixel border, extra-large rounded corners, a large shadow, and a light red background. Limits maximum width and height to large sizes, adds padding, centers the element horizontally, centers items in the grid, centers text, scales up on hover, transitions the scaling, and changes the background color on hover.
 
 _**image**_
-*  **Value**: <code>"relative mt-4 w-full h-auto flex shrink mx-auto"</code>
-*  **Description**: This specifies styles for an image. The value "relative mt-4 w-full h-auto flex shrink mx-auto" includes a relative positioning (relative), a top margin of 4 units (mt-4), full width (w-full), automatic height (h-auto), a flex container (flex), shrinking to fit (shrink), and centered horizontally (mx-auto).
+*  **Value**: `relative mt-4 w-full h-auto flex shrink mx-auto`
+*  **Description**: Positions the image relative to its container, adds a top margin, ensures full width and automatic height adjustment, applies flexbox styling, prevents shrinking, and centers it horizontally.
+
+_**icon**_
+*  **Value**: `relative mt-4 w-full h-auto flex shrink mx-auto`
+*  **Description**: Similar to the image class, it positions the icon relative to its container, adds a top margin, ensures full width and automatic height adjustment, applies flexbox styling, prevents shrinking, and centers it horizontally.
 
 _**title**_
-*  **Value**: <code>"text-2xl font-bold text-black dark:text-white"</code>
-*  **Description**: This defines the styling for the title text. The value "text-2xl font-bold text-black dark:text-white" includes an extra-large font size (text-2xl), bold font weight (font-bold), black text color (text-black), and white text color in dark mode (dark:text-white).
+*  **Value**: `text-2xl font-bold text-black dark:text-white`
+*  **Description**: Sets the text size to 2xl, applies bold font weight, and sets the text color to black with a white color in dark mode.
 
 _**subtitle**_
-*  **Value**: <code>"font-semibold text-lg text-gray-500 mt-3"</code>
-*  **Description**: This specifies the styling for the subtitle text. The value "font-semibold text-lg text-gray-500 mt-3" includes a large font size (text-lg), semi-bold font weight (font-semibold), gray text color (text-gray-500), and a top margin of 3 units (mt-3).
+*  **Value**: `font-semibold text-lg text-gray-500 mt-3`
+*  **Description**: Applies semi-bold font weight, sets text size to large, uses a gray color for the text, and adds a top margin.
 
 _**text**_
-*  **Value**: <code>"font-light text-md text-gray-400 mt-7"</code>
-*  **Description**: This defines the styling for general text. The value "font-light text-md text-gray-400 mt-7" includes a medium font size (text-md), light font weight (font-light), gray text color (text-gray-400), and a top margin of 7 units (mt-7).
+*  **Value**: `font-light text-md text-gray-400 mt-7`
+*  **Description**: Applies light font weight, sets text size to medium, uses a gray color for the text, and adds a top margin.
 
 _**default**_
-*  **Value**: <code>{}</code>
-*  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
+*  **Value**: `{}`
+*  **Description**: Placeholder for default Tailwind CSS values, currently empty.
+
 
 
 These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

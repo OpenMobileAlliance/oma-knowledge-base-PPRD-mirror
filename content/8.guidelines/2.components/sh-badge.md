@@ -2,6 +2,7 @@
 title: Badge
 description: Display a short text to represent a status or a category.
 constructorName: ShBadge
+layout: doc
 ---
 
 ### Usage
@@ -47,6 +48,11 @@ The {{ $doc.constructorName }} constructor represents a short text that is easil
       <td><code>wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
+      <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
     </tbody>
 </table>
 
@@ -57,7 +63,7 @@ An example with customized `ui` attributes for enhanced display:
 ::ShBadge
 ---
 ui:
-    wrapper: hover:scale-125 duration-300 bg-red-200 border-oma-200 text-oma-500
+    wrapper: hover:scale-125 duration-300 bg-oma-red-50 text-primary
 ---
 1.2+
 ::
@@ -68,7 +74,7 @@ This is an example with customized `ui` attributes for enhanced display:
 ::ShBadge
 ---
 ui:
-    wrapper: hover:scale-125 duration-300 bg-red-200 border-oma-200 text-oma-500
+    wrapper: hover:scale-125 duration-300 bg-oma-red-50 text-primary
 ---
 1.2+
 ::

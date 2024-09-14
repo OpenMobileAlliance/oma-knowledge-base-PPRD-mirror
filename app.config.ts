@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: "oma",
+    primary: "neutral",
   },
   header: {
     menu: {
@@ -12,7 +12,7 @@ export default defineAppConfig({
   },
   main: {
     font: {
-      type: 'DM Sans',
+      type: 'Arial',
       size: '23px',
     },
     h1: {
