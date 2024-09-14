@@ -2,15 +2,6 @@
 title: SPECIFICATIONS
 layout: doc
 ---
-### Search OMA Specifications
-The Open Mobile Alliance (OMA) provides a vast repository of over 220 Enablers, each available in multiple release versions, empowering users to explore a wide range of technical specifications. To facilitate efficient access to this wealth of information, OMA offers two primary search methods. Users can search by specific document titles, keywords, or document type for quick retrieval, or they can explore documents related to a particular project or Enabler by selecting the relevant category. These intuitive search tools enable users to easily locate the technical specifications they need, ensuring they can effectively utilize OMA's comprehensive resources.
-
-### OMNA Registries
-The Open Mobile Naming Authority (OMNA) plays a crucial role in ensuring the interoperability and compatibility of OMA technologies by managing essential names and numbers across various registries, including the Lightweight M2M (LwM2M) Registry. OMNA simplifies the process for users by providing clear guidelines and a streamlined approach to navigate these registries. This includes submitting requests for assigned names, IDs, numbers, or objects, which are then reviewed and recorded in OMNA’s database, ensuring consistent use across OMA implementations. Through these registries, OMNA supports seamless integration within the OMA ecosystem, fostering a reliable and cohesive environment for technology deployment.
-
-### OMA APIs
-The Open Mobile Alliance (OMA) offers a robust set of API specifications, with the **OMA LightweightM2M (LwM2M) Service API** being a standout for IoT developers. This API exposes information from the LwM2M registry to internet-connected appliances, enabling efficient management and interaction with constrained IoT devices, including provisioning, firmware updates, and remote monitoring. Additionally, OMA’s API inventory includes RESTful APIs for scalable HTTP-based interactions, SOAP Web Services for secure, complex transactions, and LDAP APIs for directory services, providing developers with comprehensive tools for various application needs.
-
 
 ::ShMultiColumn
 ---
@@ -23,9 +14,9 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: svg-spinners:8-dots-rotate
+        icon: tabler:search
         title: Search # First Row
         subtitle: OMA Documentation
         urlWrapper: "/specifications/#exploring-oma-specifications"
@@ -76,7 +67,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/3
         icon: i-eos-icons:installing
         title: Registries # Second Row
@@ -117,7 +108,7 @@ cols: 3
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/2
         icon: i-eos-icons:atom-electron
         title: API's # Third Column

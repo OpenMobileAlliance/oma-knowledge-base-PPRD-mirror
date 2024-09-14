@@ -4,9 +4,19 @@ description:
 layout: doc
 ---
 
-As the utility sector adapts to the evolving landscape of IoT technologies, the Open Mobile Alliance's (OMA) LightweightM2M (LwM2M) protocol emerges as a vital solution, offering secure communication, remote updates, real-time monitoring, and efficient power usage to simplify device management. LwM2M enhances operational efficiency, cost savings, and secure remote management while ensuring seamless interoperability and adaptability across various utilities like electricity, water, and gas. Its vendor-agnostic nature and multi-network compatibility drive innovation and competitive markets. OMA's initiatives, including workshops, collaborative pilots, and industry advocacy, aim to integrate LwM2M into the utility sector, promoting a future of enhanced efficiency, security, and innovation.
-
-
+::ShTextImg
+---
+ui:
+    wrapper: mb-10 shadow-2xl
+    text: text-lg
+positionText: left
+spanText: m
+alignText: left
+urlImage: /images/utilities/utilities-4.png
+text: |
+    > As the utility sector adapts to the evolving landscape of IoT technologies, the Open Mobile Alliance's (OMA) LightweightM2M (LwM2M) protocol emerges as a vital solution, offering secure communication, remote updates, real-time monitoring, and efficient power usage to simplify device management. LwM2M enhances operational efficiency, cost savings, and secure remote management while ensuring seamless interoperability and adaptability across various utilities like electricity, water, and gas. Its vendor-agnostic nature and multi-network compatibility drive innovation and competitive markets. OMA's initiatives, including workshops, collaborative pilots, and industry advocacy, aim to integrate LwM2M into the utility sector, promoting a future of enhanced efficiency, security, and innovation. 
+---
+::
 
 ::ShMultiColumn
 ---
@@ -20,7 +30,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-2/5
         icon: carbon:process
         title: Utilities # First Row
@@ -62,7 +72,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
         icon: i-tabler:api-app
         title: Technical Overview # Second Row
@@ -116,7 +126,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
         icon: eos-icons:project-outlined
         title: Market Potential # Third Column
@@ -158,7 +168,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
         icon: i-mingcute:horn-line
         title: Call to Action # Forth Column
@@ -211,7 +221,7 @@ cols: 5
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
         icon: carbon:events
         title: Workshops # Forth Column

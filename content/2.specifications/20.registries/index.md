@@ -3,8 +3,7 @@ title: OMNA Registries Overview
 description:
 layout: doc
 ---
-
-The Open Mobile Naming Authority (OMNA) ensures seamless integration and interoperability by managing names and numbers for OMA technologies, including the Lightweight M2M (LwM2M) Registry and other active registries. OMNA simplifies the process and provides clear instructions, making it easy for users to navigate and find necessary information.
+> **OMNA Registries**: The Open Mobile Naming Authority (OMNA) plays a crucial role in ensuring the interoperability and compatibility of OMA technologies by managing essential names and numbers across various registries, including the Lightweight M2M (LwM2M) Registry. OMNA simplifies the process for users by providing clear guidelines and a streamlined approach to navigate these registries. This includes submitting requests for assigned names, IDs, numbers, or objects, which are then reviewed and recorded in OMNA’s database, ensuring consistent use across OMA implementations. Through these registries, OMNA supports seamless integration within the OMA ecosystem, fostering a reliable and cohesive environment for technology deployment.
 
 ### How the OMNA Process Works
 
