@@ -8,6 +8,11 @@ Please click on one of the available OMASpecWorks resources available:
 
 ::ShMultiColumn
 ---
+cols: 2
+---
+
+::ShMultiColumn
+---
 cols: 4
 ---
     :::ShColumn 
@@ -139,7 +144,6 @@ cols: 4
             wrapper: mt-5
             icon: w-1/3
         icon: ic:baseline-diversity-3
-
         title: Affiliates # Third Column
         subtitle: OMA Predecesors
         urlWrapper: ""
@@ -199,7 +203,18 @@ cols: 4
         ::::
     :::          
 ::
+::ShSegment
+---
+ui:
+  wrapper: p-5 # Comment
+---
 
+![](/images/omaspecworks/about/Idea-Machine-v02-1-800x344.png){ class="mx-auto hover:scale-105"}
+
+OMA SpecWorks is a Standards Development Organization (SDO) focused on creating consensus-driven technical specifications, particularly for mobile and IoT sectors. It has notably developed the OMA LightweightM2M (LwM2M) protocol, essential for IoT device management across diverse networks. The organization promotes standards that enhance interoperability and accelerate market growth.
+
+::
+::
 > Comment text
 
 ::ShCarousel

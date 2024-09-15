@@ -3,7 +3,8 @@ title:  About LwM2M
 description: Main page of the LwM2M topic
 layout: doc
 ---
-Select one option from the menu below:
+Welcome to the **Lightweight M2M (LwM2M) Resource Center**. Here, you'll find comprehensive information on LwM2M, covering key features, industry applications, technical resources, and community support. Whether you're looking to understand the components of LwM2M, access documentation and case studies, or engage with community groups, this section provides everything you need to get started and involved with LwM2M technology. Explore the tools, registry, and implementation resources, and join the conversation through webinars, workshops, and member meetings.
+
 
 ::ShMultiColumn
 ---
@@ -12,12 +13,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # First Column
-       wrapper: m-1
+       wrapper: 
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             icon: w-1/3
         icon: i-eos-icons:rotating-gear
         title: About LwM2M # First Row
@@ -82,12 +83,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Second Column
-       wrapper: m-1
+       wrapper: 
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper:  bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper:  bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/4
         icon: line-md:gauge-loop
         title: Applications & Use Cases # Second Row
@@ -126,12 +127,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Third Column
-       wrapper: m-1
+       wrapper: 
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/4
         icon: i-svg-spinners:wind-toy
         title: Technical Resources # Third Column
@@ -192,12 +193,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Fourth Column
-       wrapper: m-1
+       wrapper: 
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             icon:  w-1/3
         icon: eos-icons:service-outlined
         title: Community & Support # Fourth Column
@@ -262,12 +263,12 @@ cols: 5
     :::ShColumn 
     --- 
     ui: # Fifth Column
-       wrapper: m-1
+       wrapper: 
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/3
         icon: i-svg-spinners:blocks-shuffle-3
         title: Get Involved # Fifth Column
@@ -325,21 +326,8 @@ cols: 5
         urlWrapper: ""
         ---
         ::::
-    :::       
+    :::     
 ::
 
 
-::ShTextImg
----
-ui:
-    wrapper: m-10 p-10
-positionText: left
-spanText: m
-alignText: left
-urlImage: /images/OMA-129_Lightweight_M2M_Logo_RGB_full.png
-title: 
-subtitle: 
-text: |
-  > **The Lightweight Machine-to-Machine (LwM2M)** protocol is a specialized Internet of Things device management protocol, which was initially designed for use with constrained devices and constrained networks in the Internet of Things (IoT). It is, however, also successfully used on high-end IoT devices as well. LwM2M is deployed in a variety of verticals, such as smart energy, building automation, precision farming, logistics, etc. The object and resource model defined for LwM2M allows extensiblity while maintaining interoperability. More than 300 objects and resources have been specified to retrieve sensor data, control actuators, and to manage application data. These objects and resources are free to use and publically available.
----
-::
+

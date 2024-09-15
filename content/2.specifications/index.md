@@ -2,144 +2,161 @@
 title: SPECIFICATIONS
 layout: doc
 ---
-
 ::ShMultiColumn
 ---
-cols: 3 
+cols: 2 
 ---
-    :::ShColumn 
-    --- 
-    ui: # First Column
+    ::ShSegment
     ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/4
-        icon: tabler:search
-        title: Search # First Row
-        subtitle: OMA Documentation
-        urlWrapper: "/specifications/#exploring-oma-specifications"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/4
-        icon: i-heroicons:puzzle-piece
-        title: by Specifications # First Column
-        subtitle: OMA Baselines
-        urlWrapper: "/specifications/#search-by-specific-document"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: codicon:versions
-        title: by Enabler # First Column
-        subtitle: OMA Enablers
-        urlWrapper: "/specifications/#search-by-project-or-enabler"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/5
-        icon: i-oui:folder-open
-        title: by Public Documents # First Column
-        subtitle: OMA Public Documentation
-        urlWrapper: "/specifications/#oma-public-documents"
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Second Column
+    ui:
+        wrapper: rounded-lg
     ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/3
-        icon: i-eos-icons:installing
-        title: Registries # Second Row
-        subtitle: OMNA Registries
-        urlWrapper: "/specifications/#oma-registries-overview"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: uit:slack-alt
-        title: LwM2M # Second Column
-        subtitle: OMNA Registry
-        urlWrapper: "/specifications/#oma-lwm2m-registry"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/4
-        icon: eos-icons:products-outlined
-        title: Enablers # Second Column
-        subtitle: OMNA Registries
-        urlWrapper: "/specifications/#omna-enabler-registries"
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Third Column
+    <figure>
+    <img src="/images/specifications/oma-specs-resources.png" class="rounded-lg">
+    </figure>
+    ::
+    
+    
+    ::ShMultiColumn
     ---
-        ::::ShMicroCard
+    cols: 3 
+    ---
+        :::ShColumn 
+        --- 
+        ui: # First Column
         ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/2
-        icon: i-eos-icons:atom-electron
-        title: API's # Third Column
-        subtitle: OMA API's
-        urlWrapper: "/specifications/#oma-api-inventory"
-        ---
-        ::::
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                icon: w-1/4
+            icon: tabler:search
+            title: Search # First Row
+            subtitle: OMA Documentation
+            urlWrapper: "/specifications/#exploring-oma-specifications"
+            ---
+            ::::
 
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/6
-        icon: i-pajamas:comparison
-        title: LwM2M Registry API # Third Column
-        subtitle: LwM2M Registry
-        urlWrapper: "/specifications/#oma-lwm2m-registry-api"
-        ---
-        ::::
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/4
+            icon: i-heroicons:puzzle-piece
+            title: by Specifications # First Column
+            subtitle: OMA Baselines
+            urlWrapper: "/specifications/#search-by-specific-document"
+            ---
+            ::::
 
-        ::::ShMicroCard
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/3
+            icon: codicon:versions
+            title: by Enabler # First Column
+            subtitle: OMA Enablers
+            urlWrapper: "/specifications/#search-by-project-or-enabler"
+            ---
+            ::::
+
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/5
+            icon: i-oui:folder-open
+            title: by Public Documents # First Column
+            subtitle: OMA Public Documentation
+            urlWrapper: "/specifications/#oma-public-documents"
+            ---
+            ::::
+        :::
+
+        :::ShColumn 
+        --- 
+        ui: # Second Column
         ---
-        ui:
-            icon: w-1/4
-        icon: i-eos-icons:ingress
-        title: Enablers API's # Third Column
-        subtitle: OMA Enablers
-        urlWrapper: "/specifications/#oma-api-table"
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                icon: w-1/3
+            icon: i-eos-icons:installing
+            title: Registries # Second Row
+            subtitle: OMNA Registries
+            urlWrapper: "/specifications/#oma-registries-overview"
+            ---
+            ::::
+
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/3
+            icon: uit:slack-alt
+            title: LwM2M # Second Column
+            subtitle: OMNA Registry
+            urlWrapper: "/specifications/#oma-lwm2m-registry"
+            ---
+            ::::
+
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/4
+            icon: eos-icons:products-outlined
+            title: Enablers # Second Column
+            subtitle: OMNA Registries
+            urlWrapper: "/specifications/#omna-enabler-registries"
+            ---
+            ::::
+        :::
+
+        :::ShColumn 
+        --- 
+        ui: # Third Column
         ---
-        ::::      
-    :::      
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                icon: w-1/2
+            icon: i-eos-icons:atom-electron
+            title: API's # Third Column
+            subtitle: OMA API's
+            urlWrapper: "/specifications/#oma-api-inventory"
+            ---
+            ::::
+
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/6
+            icon: i-pajamas:comparison
+            title: LwM2M Registry API # Third Column
+            subtitle: LwM2M Registry
+            urlWrapper: "/specifications/#oma-lwm2m-registry-api"
+            ---
+            ::::
+
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/4
+            icon: i-eos-icons:ingress
+            title: Enablers API's # Third Column
+            subtitle: OMA Enablers
+            urlWrapper: "/specifications/#oma-api-table"
+            ---
+            ::::      
+        :::      
+    ::
+    
 ::
 
 
