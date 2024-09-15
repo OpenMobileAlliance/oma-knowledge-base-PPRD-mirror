@@ -144,7 +144,6 @@ cols: 4
             wrapper: mt-5
             icon: w-1/3
         icon: ic:baseline-diversity-3
-
         title: Affiliates # Third Column
         subtitle: OMA Predecesors
         urlWrapper: ""
