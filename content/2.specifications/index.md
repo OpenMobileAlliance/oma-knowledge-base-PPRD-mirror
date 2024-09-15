@@ -6,6 +6,17 @@ layout: doc
 ---
 cols: 2 
 ---
+    ::ShSegment
+    ---
+    ui:
+        wrapper: rounded-lg
+    ---
+    <figure>
+    <img src="/images/specifications/oma-specs-resources.png" class="rounded-lg">
+    </figure>
+    ::
+    
+    
     ::ShMultiColumn
     ---
     cols: 3 
@@ -146,11 +157,6 @@ cols: 2
         :::      
     ::
     
-    ::ShSegment
-    <figure>
-    <img src="/images/specifications/oma-specs-resources.png" class="rounded-lg">
-    </figure>
-    ::
 ::
 
 
