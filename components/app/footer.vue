@@ -5,6 +5,13 @@
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           Copyright &copy; 2024. All Rights Reserved.
         </span>
+        <ClientOnly>
+          <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
+            variant="ghost" aria-label="Theme" @click="isDark = !isDark" />
+          <template #fallback>
+            <div class="w-8 h-8" />
+          </template>
+        </ClientOnly>
         <AppSocialLinks />
       </div>
     </UContainer>
@@ -12,6 +19,8 @@
 </template>
 
 <script setup lang="ts">
+const colorMode = useColorMode()
+
 const config = {
   wrapper:
     "py-4 bottom-0 z-50 w-full bg-background/75 backdrop-blur border-t border-primary/[0.4] dark:border-primary/[0.4]", // removed fixed class
@@ -36,4 +45,13 @@ const { ui, attrs } = useUI(
   toRef(props, "class"),
   true,
 );
+
+const isDark = computed({
+  get() {
+    return colorMode.value === 'dark'
+  },
+  set() {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  }
+})
 </script>

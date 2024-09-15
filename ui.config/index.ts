@@ -24,4 +24,5 @@ export { default as column } from "@/ui.config/sh-column"
 export { default as faq } from "@/ui.config/sh-faq"
 export { default as listCards } from "@/ui.config/sh-list-cards"
 
+export { default as dynamicTable } from "@/ui.config/sh-dynamic-table"
 export { default as video } from "@/ui.config/sh-video"

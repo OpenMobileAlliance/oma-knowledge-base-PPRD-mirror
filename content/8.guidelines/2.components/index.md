@@ -75,3 +75,4 @@ In this example, we can notice few things:
 3. Classes can be any valid [Tailwind](https://tailwindcss.com/){.not-prose .text-oma-blue-500 .dark:text-oma-blue-300 .hover:text-oma-blue-300 .dark:hover:text-oma-blue-500} classes and we can concatinate them by separating them with spaces.
 
 > Note: Components can be nested, as you will see in guidelines itslef.
+
