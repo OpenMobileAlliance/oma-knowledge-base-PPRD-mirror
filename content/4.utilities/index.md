@@ -259,7 +259,7 @@ Moreover, real-world use cases highlight the transformative impact of LwM2M acro
 ---
 ui:
     wrapper: mb-10 shadow-2xl
-positionText: left
+positionText: rigt
 spanText: m
 alignText: left
 urlImage: /images/utilities/utilities-4.png
