@@ -5,7 +5,7 @@
         :class="['relative w-[300px] h-[300px]', { 'opacity-0': !isLogoVisible, 'opacity-100': isLogoVisible, 'transition-opacity duration-[700ms] ease-in-out': true }]">
         <img src="/logo.png" alt="OMA Logo"
           class="absolute inset-0 w-full h-full transition-filter duration-1000 ease-in-out"
-          :class="{'filter grayscale': isGrayscale, 'filter grayscale-0': !isGrayscale}" />
+          :class="{ 'filter grayscale': isGrayscale, 'filter grayscale-0': !isGrayscale }" />
       </div>
     </div>
 
@@ -23,7 +23,9 @@
     </div>
 
     <div class="flex justify-center">
-      <UIcon name="i-iconoir:mouse-scroll-wheel" dynamic class="text-6xl text-neutral-700 animate-bounce rounded-full hover:cursor-none" />
+      <UIcon name="i-iconoir:mouse-scroll-wheel" dynamic
+        class="text-6xl text-neutral-700 transition-opacity duration-1000 delay-700 opacity-0 animate-bounce rounded-full hover:cursor-none"
+        :class="{ 'opacity-100': isTextVisible }" />
     </div>
   </div>
 
@@ -45,20 +47,19 @@ const isGrayscale = ref(true);
 const isTextVisible = ref(false);
 
 onMounted(() => {
-  // Start with grayscale
+
   setTimeout(() => {
-    // Transition from grayscale to color
+    isLogoVisible.value = true;
+  }, 700);
+
+  setTimeout(() => {
     isGrayscale.value = false;
-  }, 700); // Delay for grayscale to color transition
+  }, 1100);
 
   nextTick();
   setTimeout(() => {
     isTextVisible.value = true;
-  }, 1700); // Delay to show text
-
-  setTimeout(() => {
-    isLogoVisible.value = true;
-  }, 700); // Delay to show logo
+  }, 2000);
 });
 </script>
 
@@ -67,6 +68,7 @@ body,
 html {
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
