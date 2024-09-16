@@ -47,8 +47,11 @@
         </thead>
         <tbody :calss="ui.tbody">
           <tr v-for="(row, index) in displayItems" :index="index" :calss="ui.tr.base">
-            <MDC v-for="column in props.columns" :value="getItemColumValue(row, column)" tag="td" class="not-prose"
-              :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" />
+            <template v-for="column in props.columns">
+              <td :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
+                {{ getItemColumValue(row, column) }}
+              </td>
+            </template>
           </tr>
         </tbody>
       </table>
@@ -74,13 +77,14 @@ type itemsElement = {
   filter?: Boolean;
   order?: Boolean;
   type?: String;
+  typeData?: Array;
 }
 
 
 const props = withDefaults(
   defineProps<{
     dataUrl: String;
-    dataField: String;
+    dataField?: String;
     columns: itemsElement[];
     ui?: Partial<typeof config>;
     header?: String;
@@ -90,7 +94,7 @@ const props = withDefaults(
   }>(),
   {
     dataUrl: '',
-    dataField: '',
+    dataField: () => undefined,
     columns: () => ([]),
     ui: () => ({}),
     header: '',
@@ -164,7 +168,12 @@ const filterDataByQuery = (data) => {
     return data.filter(item => {
       let finded = false
       for (name of fields2Search) {
-        if (item[name]?.toString().toLowerCase().includes(q.value.toLowerCase())) {
+        if (name === "Undefined") {
+          if (q.value === "") {
+            finded = true
+            break
+          }
+        } else if (item[name]?.toString().toLowerCase().includes(q.value.toLowerCase())) {
           finded = true
           break
         }
@@ -180,9 +189,9 @@ const filterDataByQuickFilter = (data) => {
   if (selectedFilters.value.length > 0) {
     return selectedFilters.value.reduce((res, el) => {
       if (res.length > 0) {
-        res = res.filter(item => item[el.name].toString() === el.value.toString())
+        res = res.filter(item => item[el.name] && el.value ? item[el.name].toString() === el.value.toString() : false)
       } else {
-        res = data.filter(item => item[el.name].toString() === el.value.toString())
+        res = data.filter(item => item[el.name] && el.value ? item[el.name].toString() === el.value.toString() : false)
       }
       return res
     }, [])
@@ -193,7 +202,7 @@ const filterDataByQuickFilter = (data) => {
 
 const sortDisplayData = (data) => {
   if (Object.keys(sortColumn).length > 0) {
-    return data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction))
+    return data.sort ? data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
   } else {
     return data
   }
@@ -209,7 +218,7 @@ const getColumTitle = (column) => {
 }
 
 const getItemColumValue = (item, column) => {
-  return item[column?.name] ? `${item[column?.name]}` : ""
+  return item[column?.name] ? item[column.name] : " "
 }
 
 const getSortIcon = (column) => {
@@ -244,14 +253,17 @@ const getStats = (data) => {
     }
   })
 
-  data.forEach(el => {
-    props.columns.forEach(column => {
-      if (Object.keys(el).includes(column.name) && Object.keys(stats).includes(column.name)) {
-        const label = el[column.name]
-        stats[column.name][label] = stats[column.name][label] ? stats[column.name][label] + 1 : 1
-      }
+  if (data.forEach) {
+    data.forEach(el => {
+      props.columns.forEach(column => {
+        if (Object.keys(el).includes(column.name) && Object.keys(stats).includes(column.name)) {
+          const label = el[column.name] ? el[column.name] : "Undefined"
+          stats[column.name][label] = stats[column.name][label] ? stats[column.name][label] + 1 : 1
+        }
+      })
     })
-  })
+
+  }
 
   return stats
 
@@ -287,6 +299,12 @@ const onFilterChange = (e) => {
 }
 
 const defaultSort = (a: any, b: any, direction: 'asc' | 'desc') => {
+  if (a == null) {
+    a = ""
+  }
+  if (b == null) {
+    b = ""
+  }
   if (a === b) {
     return 0
   }
