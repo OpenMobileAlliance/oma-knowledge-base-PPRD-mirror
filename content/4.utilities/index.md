@@ -44,7 +44,7 @@ cols: 5
         ui:
             wrapper: mt-5
             icon: w-1/2
-        icon: i-ic:sharp-handshake
+        icon: solar:hand-stars-linear
         title: Benefits # First Column
         subtitle: for Utilities
         urlWrapper: "/utilities/#benefits-for-utilities"
@@ -56,7 +56,7 @@ cols: 5
         ui:
             wrapper: mt-5
             icon: w-1/3
-        icon: cil:puzzle
+        icon: lucide:puzzle
         title: Use Cases # First Column
         subtitle: Utitlities
         urlWrapper: "/utilities/#use-cases"
@@ -86,7 +86,7 @@ cols: 5
         ui:
             wrapper: mt-5
             icon: w-1/3
-        icon: carbon:drone
+        icon: tabler:network
         title: Interoperability # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#interoperability"
@@ -140,7 +140,7 @@ cols: 5
         ui:
             wrapper: mt-5
             icon: w-1/4
-        icon: i-carbon:query
+        icon: fluent:chat-bubbles-question-16-regular
         title: Q&A # Third Column
         subtitle: on Utilities & LwM2M
         urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
