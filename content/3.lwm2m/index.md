@@ -23,7 +23,7 @@ cols: 5
         icon: i-eos-icons:rotating-gear
         title: About LwM2M # First Row
         subtitle: 
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/about"
         ---
         ::::
 
@@ -36,7 +36,7 @@ cols: 5
         title: What is LwM2M # First Column
         subtitle: |
             **
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/about/what-is"
         ---
         ::::
 
@@ -49,7 +49,7 @@ cols: 5
         title: LwM2M Components # First Column
         subtitle: |
             **
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/about/components"
         ---
         ::::
 
@@ -62,7 +62,7 @@ cols: 5
         title: Key Features # First Column
         subtitle: |
             **
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/about/key-features"
         ---
         ::::
 
@@ -75,7 +75,7 @@ cols: 5
         title: Benefits # First Column
         subtitle: |
             **
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/about/benefits"
         ---
         ::::
     :::
@@ -93,20 +93,7 @@ cols: 5
         icon: line-md:gauge-loop
         title: Applications & Use Cases # Second Row
         subtitle: 
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/4
-        icon: i-ic:baseline-engineering
-        title: Industry Applications # Second Column
-        subtitle: |
-            **  
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/applications-use-cases"
         ---
         ::::
 
@@ -119,9 +106,22 @@ cols: 5
         title: Case Studies # Second Column
         subtitle: |
             **
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/applications-use-cases/use-cases"
         ---
         ::::
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/4
+        icon: i-ic:baseline-engineering
+        title: Industry Applications # Second Column
+        subtitle: |
+            **  
+        urlWrapper: "/lwm2m/applications-use-cases/industrial-applications"
+        ---
+        ::::
+
     :::
 
     :::ShColumn 
@@ -137,7 +137,7 @@ cols: 5
         icon: i-svg-spinners:wind-toy
         title: Technical Resources # Third Column
         subtitle: LwM2M
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/resources"
         ---
         ::::
 
@@ -149,7 +149,7 @@ cols: 5
         icon: i-carbon:ibm-watson-knowledge-catalog
         title: Documentation # Third Column
         subtitle: LwM2M
-        urlWrapper: 
+        urlWrapper: "/lwm2m/resources/specifications"
         ---
         ::::
 
@@ -161,7 +161,7 @@ cols: 5
         icon: carbon:ibm-engineering-lifecycle-mgmt
         title: Tutorials & Guidelines # Third Column
         subtitle: LwM2M
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/resources/tutorials-guidelines"
         ---
         :::: 
 
@@ -173,7 +173,7 @@ cols: 5
         icon: pajamas:issue-type-maintenance
         title: Tools # Third Column
         subtitle: LwM2M
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/resources/tools"
         ---
         ::::
 
@@ -185,7 +185,7 @@ cols: 5
         icon: ic:twotone-apps
         title: LwM2M Registry # Third Column
         subtitle: ...
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/resources/registry"
         ---
         ::::          
     :::
@@ -203,7 +203,7 @@ cols: 5
         icon: eos-icons:service-outlined
         title: Community & Support # Fourth Column
         subtitle: 
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/community.md"
         ---
         ::::
 
@@ -216,7 +216,7 @@ cols: 5
         title: Members Meetings # Fourth Column
         subtitle: |
             **
-        urlWrapper: 
+        urlWrapper: "/lwm2m/community.md/members-meetings"
         ---
         ::::
 
@@ -229,7 +229,7 @@ cols: 5
         title: Webinars & Workshops # Fourth Column
         subtitle: |
             **
-        urlWrapper: 
+        urlWrapper: "/lwm2m/community.md/webinars-workshops"
         ---
         ::::
 
@@ -242,7 +242,7 @@ cols: 5
         title: Test Events # Fourth Column
         subtitle: |
             **
-        urlWrapper: 
+        urlWrapper: "/lwm2m/community.md/test-events"
         ---
         ::::
 
@@ -255,7 +255,7 @@ cols: 5
         title: LwM2M Implementations # Fourth Column
         subtitle: |
             Open Source
-        urlWrapper: 
+        urlWrapper: "h/lwm2m/community.md/implementations"
         ---
         ::::
     :::
@@ -273,7 +273,7 @@ cols: 5
         icon: i-svg-spinners:blocks-shuffle-3
         title: Get Involved # Fifth Column
         subtitle: 
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/get-involved"
         ---
         ::::
 
@@ -285,7 +285,7 @@ cols: 5
         icon: i-ic:baseline-groups-3
         title: LwM2M Groups # Fifth Column
         subtitle: Working Groups
-        urlWrapper: 
+        urlWrapper: "/lwm2m/get-involved/working-groups"
         ---
         ::::        
 
@@ -298,7 +298,7 @@ cols: 5
         title: Membership Info # Fifth Column
         subtitle: |
             **
-        urlWrapper: 
+        urlWrapper: "/lwm2m/get-involved/membership-info"
         ---
         ::::
 
@@ -311,7 +311,7 @@ cols: 5
         title: Contact us # Fifth Column
         subtitle: |
             **
-        urlWrapper: 
+        urlWrapper: "/lwm2m/get-involved/contact-us"
         ---
         ::::
         ::::ShMicroCard
@@ -323,7 +323,7 @@ cols: 5
         title: F.A.Q # Fifth Column
         subtitle: |
             **
-        urlWrapper: ""
+        urlWrapper: "/lwm2m/get-involved/faq"
         ---
         ::::
     :::     
