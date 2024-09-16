@@ -27,7 +27,34 @@ onMounted(() => {
     document.documentElement.style.setProperty(`--h${i}-font-type`, main[`h${i}`].font.type);
     document.documentElement.style.setProperty(`--h${i}-font-size`, main[`h${i}`].font.size);
   }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const el = document.querySelector(`a[id="toc-${id}"]`)
+      if (entry.intersectionRatio > 0) {
+        if (el) {
+          el.classList.add('bg-primary-100');
+          el.classList.add('rounded-lg');
+          el.classList.add('dark:bg-neutral-500');
+        }
+      } else {
+        if (el) {
+          el.classList.remove('bg-primary-100');
+          el.classList.remove('rounded-lg');
+          el.classList.remove('dark:bg-neutral-500');
+        }
+      }
+    });
+  });
+
+  // Track all sections that have an `id` applied
+  document.querySelectorAll('h2, h3').forEach((section) => {
+    observer.observe(section);
+  });
+
 });
+
 </script>
 
 <style>

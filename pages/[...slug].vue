@@ -8,15 +8,19 @@
           <div v-if="page.body?.toc?.links?.length > 0"
             class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
             <nav>
-              <button class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
+              <button
+                class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
                 <span class="font-semibold text-sm/6 truncate dark:text-white/80 mx-auto">Table of Contents</span>
               </button>
               <ul class="space-y-1 lg:block -ml-2">
                 <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
-                  <ULink :to="`${page._path}#${link.id}`" :class="ui.shadow" class="not-prose truncate rounded-lg p-2">{{ link.text }}</ULink>
+                  <ULink :id="`toc-${link.id}`" :to="`${page._path}#${link.id}`" :class="ui.shadow"
+                    class="not-prose truncate rounded-lg p-2">
+                    {{ link.text }}</ULink>
                   <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
                     <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink :to="`${page._path}#${subLink.id}`" :class="ui.shadow" class="not-prose text-ellipsis rounded-lg p-2">{{ subLink.text }}</ULink>
+                      <ULink :id="`toc-${subLink.id}`" :to="`${page._path}#${subLink.id}`" :class="ui.shadow"
+                        class="not-prose text-ellipsis rounded-lg p-2">{{ subLink.text }}</ULink>
                     </li>
                   </ul>
                 </li>
@@ -44,7 +48,8 @@
           </div>
           <div class="text-center">
             <h2 class="text-oma-300 text-start text-4xl text-primary dark:text-primary">{{ page.title }}</h2>
-            <h3 v-if="page.subtitle" class="text-start text-3xl text-primary-700 dark:text-primary-700">{{ page.subtitle}}</h3>
+            <h3 v-if="page.subtitle" class="text-start text-3xl text-primary-700 dark:text-primary-700">{{
+              page.subtitle }}</h3>
             <div class="text-center text-2xl" v-if="page.tags && page.tags.length">
               Tags:
               <span v-for="tag in page.tags" :key="tag"
