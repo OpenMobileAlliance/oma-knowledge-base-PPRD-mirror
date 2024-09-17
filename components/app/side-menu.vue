@@ -6,7 +6,7 @@
           <li v-for="(link, index) in sideManuItems" :key="index">
             <div :class="[ui.shadow, isActive(link.to) ? ui.active : ui.normal]">
               <a :href="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal">
-                <span :class="[getIndent(link.depth), 'text-nowrap']">{{ link.title }}</span>
+                <span :class="[getIndent(link.depth), 'text-nowrap w-full']">{{ link.title }}</span>
               </a>
             </div>
           </li>
@@ -23,10 +23,10 @@ const config = {
   wrapper: '',
   shadow: 'hover:bg-primary-100 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500',
   active: 'block border-l-2 dark:border-oma-blue-400 border-oma-blue-400',
-  normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px',
+  normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px w-full',
   link: {
     active: 'text-oma-blue-500 dark:text-oma-blue-400 font-bold',
-    normal: ''
+    normal: 'w-full block'
   }
 };
 

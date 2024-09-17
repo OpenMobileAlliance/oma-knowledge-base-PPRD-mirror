@@ -5,7 +5,8 @@
         <img :src="computedLogoSrc" alt="Logo" />
       </template>
     </AppHeader>
-    <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }" :class="route.path === '/' ? 'w-full h-screen' : 'w-full'">
+    <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
+      :class="route.path === '/' ? 'w-full h-screen' : 'w-full'">
       <NuxtPage />
     </UContainer>
     <AppFooter v-if="route.path !== '/' && route" />
@@ -30,7 +31,6 @@ onMounted(() => {
     document.documentElement.style.setProperty(`--h${i}-font-type`, main[`h${i}`].font.type);
     document.documentElement.style.setProperty(`--h${i}-font-size`, main[`h${i}`].font.size);
   }
-
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const id = entry.target.getAttribute('id');
@@ -57,11 +57,11 @@ onMounted(() => {
   });
 
 });
-
 </script>
 
 <style>
 html {
+  scroll-behavior: smooth !important;
   scroll-padding-top: 16rem;
 }
 
