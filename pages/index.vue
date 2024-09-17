@@ -101,18 +101,7 @@ onMounted(() => {
 const opacity = computed(() => 'sm:opacity-0 lg:opacity-100');
 </script>
 
-<style>
-body,
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
+<style scoped>
 
 .constructor {
   transform: translateX(100%);
