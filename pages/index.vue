@@ -23,14 +23,14 @@
     </div>
   </div>
 
-  <div class="constructor h-[20%] bg-oma-blue-500 dark:bg-oma-blue-800 text-xl text-white p-44 text-center">
+  <!-- <div class="constructor h-[20%] bg-oma-blue-500 dark:bg-oma-blue-800 text-xl text-white p-44 text-center">
     <p>Welcome to OMA KnowledgeBase website, where all of our sites will be combined into one place.</p>
   </div>
 
   <div :class="[ui.constructors.wrapper, 'constructor']">
     <ContentDoc />
     <img src="/logo-dark.png" alt="OMA Logo" class="mx-auto mt-12 contrast-125" />
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">
@@ -82,20 +82,20 @@ onMounted(() => {
     }, 2000);
   });
 
-  nextTick(() => {
-    const constructors = document.querySelectorAll('.constructor');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle('show', entry.isIntersecting);
-      });
-    }, {
-      threshold: 1,
-    });
+  // nextTick(() => {
+  //   const constructors = document.querySelectorAll('.constructor');
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       entry.target.classList.toggle('show', entry.isIntersecting);
+  //     });
+  //   }, {
+  //     threshold: 1,
+  //   });
 
-    constructors.forEach((constructor) => {
-      observer.observe(constructor);
-    });
-  })
+  //   constructors.forEach((constructor) => {
+  //     observer.observe(constructor);
+  //   });
+  // })
 });
 
 const opacity = computed(() => 'sm:opacity-0 lg:opacity-100');
