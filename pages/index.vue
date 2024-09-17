@@ -1,19 +1,17 @@
 <template>
-  <div class="relative flex flex-col h-full items-center w-screen bg-gradient-to-t from-neutral-200">
+  <div :class="ui.landingHero.wrapper">
     <div :class="['mt-44 transition-all duration-1000 ease-in-out', { 'translate-y-6': !isTextVisible }]">
       <div
         :class="['relative w-[300px] h-[300px]', { 'opacity-0': !isLogoVisible, 'opacity-100': isLogoVisible, 'transition-opacity duration-[700ms] ease-in-out': true }]">
         <img src="/logo.png" alt="OMA Logo"
-          class="absolute inset-0 w-full h-full transition-filter duration-1000 ease-in-out"
-          :class="{ 'filter grayscale': isGrayscale, 'filter grayscale-0': !isGrayscale }" />
+          :class="ui.landingHero.image, { 'filter grayscale': isGrayscale, 'filter grayscale-0': !isGrayscale }" />
       </div>
     </div>
-    <div
-      :class="['text-center font-serif text-6xl mt-16 text-neutral-700 dark:text-[#333333] opacity-0', { 'transition-opacity duration-[1700ms] opacity-100 ease-in': !isGrayscale }]">
+    <div :class="[ui.landingHero.title, { 'transition-opacity duration-[1700ms] opacity-100 ease-in': !isGrayscale }]">
       Welcome to OMA KnowledgeBase
     </div>
     <div
-      :class="['content-center mt-[15%] ml-[120%] w-[20%] h-[10%] bg-neutral-400 dark:bg-neutral-600 rounded-l-full hover:scale-105 duration-700 delay-0 p-3', { 'transition-all -translate-x-full duration-1000 ease-in-out transform-gpu': isTextVisible }]">
+      :class="[ui.landingHero.bookmark, { 'transition-all -translate-x-full duration-1000 ease-in-out transform-gpu': isTextVisible }]">
       <NuxtLink to="/omaspecworks/about/" class="not-prose flex items-center">
         <img v-if="opacity !== 'sm:opacity-0'" src="/logo-dark.png" alt="OMA Logo" :class="['mx-auto', opacity]" />
         <UIcon name="i-line-md:home-twotone" dynamic
@@ -21,9 +19,7 @@
       </NuxtLink>
     </div>
     <div class="flex justify-center -mt-16">
-      <UIcon name="i-iconoir:mouse-scroll-wheel" dynamic
-        class="text-6xl text-neutral-700 transition-opacity duration-1000 delay-700 opacity-0 animate-bounce rounded-full hover:cursor-none"
-        :class="{ 'opacity-100': isTextVisible }" />
+      <UIcon name="i-iconoir:mouse-scroll-wheel" dynamic :class="[ui.landingHero.scroll, { 'opacity-100': isTextVisible }]" />
     </div>
   </div>
 
@@ -31,14 +27,41 @@
     <p>Welcome to OMA KnowledgeBase website, where all of our sites will be combined into one place.</p>
   </div>
 
-  <div class="constructor h-screen bg-gradient-to-t from-oma-blue-500 p-16">
+  <div :class="[ui.constructors.wrapper, 'constructor']">
     <ContentDoc />
     <img src="/logo-dark.png" alt="OMA Logo" class="mx-auto mt-12 contrast-125" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed, nextTick } from 'vue';
+
+const config = {
+  landingHero: {
+    wrapper: 'relative flex flex-col h-full items-center w-screen bg-gradient-to-t from-neutral-200',
+    image: 'absolute inset-0 w-full h-full transition-filter duration-1000 ease-in-out',
+    title: 'text-center font-serif text-6xl mt-16 text-neutral-700 dark:text-[#333333] opacity-0',
+    bookmark: 'content-center mt-[15%] ml-[120%] w-[20%] h-[10%] bg-neutral-400 dark:bg-neutral-600 rounded-l-full hover:scale-105 duration-700 delay-0 p-3',
+    scroll: 'text-6xl text-neutral-700 transition-opacity duration-1000 delay-700 opacity-0 animate-bounce rounded-full hover:cursor-none'
+  },
+  constructors: {
+    wrapper: 'h-screen bg-gradient-to-t from-oma-blue-500 p-16',
+  },
+};
+
+const props = withDefaults(
+  defineProps<{
+    ui?: Partial<typeof config>;
+  }>(),
+  {
+    ui: () => ({}),
+  },
+);
+
+const { ui, attrs } = useUI(
+  "index",
+  toRef(props, "ui"),
+  config,
+);
 
 const isLogoVisible = ref(false);
 const isGrayscale = ref(true);
