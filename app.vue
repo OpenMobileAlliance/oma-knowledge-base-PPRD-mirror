@@ -1,20 +1,23 @@
 <template>
   <div class="flex flex-col w-full dark:bg-[#19191a] " :style="{ fontFamily: main.font.type }">
-    <AppHeader class="flex py-4" title="OMA">
+    <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
         <img :src="computedLogoSrc" alt="Logo" />
       </template>
     </AppHeader>
-    <UContainer :ui="{ constrained: '', }" class="w-full pb-24">
+    <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }" :class="route.path === '/' ? 'w-full h-screen' : 'w-full'">
       <NuxtPage />
     </UContainer>
-    <AppFooter />
+    <AppFooter v-if="route.path !== '/' && route" />
   </div>
 </template>
 
 <script setup lang="ts">
 
+import { useRoute } from 'vue-router';
+
 const main = useAppConfig().main;
+const route = useRoute();
 
 const theme = useColorMode();
 
