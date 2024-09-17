@@ -28,7 +28,7 @@ cols: 4
         icon: i-eos-icons:rotating-gear
         title: About # First Row
         subtitle: "OMA SpecWorks"
-        urlWrapper: /omaspecworks/about/
+        urlWrapper: /omaspecworks/about
         ---
         ::::
 
@@ -94,7 +94,7 @@ cols: 4
         icon: carbon:partnership
         title: Join # Second Column
         subtitle: OMA SpecWorks
-        urlWrapper: ""
+        urlWrapper: /omaspecworks/membership/join
         ---
         ::::
 
@@ -106,7 +106,7 @@ cols: 4
         icon: fa6-solid:handshake
         title: Benefits # Second Column
         subtitle: Membership
-        urlWrapper: ""
+        urlWrapper: /omaspecworks/membership/benefits
         ---
         ::::
         ::::ShMicroCard
@@ -117,7 +117,7 @@ cols: 4
         icon: carbon:events
         title: Members # Second Column
         subtitle: OMA SpecWorks
-        urlWrapper: ""
+        urlWrapper: /omaspecworks/membership/members
         ---
         ::::
     :::
@@ -135,7 +135,7 @@ cols: 4
         icon: carbon:collaborate
         title: Collaborate # Third Column
         subtitle: OMA SpecWorks
-        urlWrapper: ""
+        urlWrapper: "/omaspecworks/collaborate"
         ---
         ::::
         ::::ShMicroCard
@@ -146,7 +146,7 @@ cols: 4
         icon: ic:baseline-diversity-3
         title: Affiliates # Third Column
         subtitle: OMA Predecesors
-        urlWrapper: ""
+        urlWrapper: /omaspecworks/collaborate/affiliates
         ---
         ::::  
         ::::ShMicroCard
@@ -157,7 +157,7 @@ cols: 4
         icon: carbon:concept
         title: Liaisons # Third Column
         subtitle: Standards Flora
-        urlWrapper: ""
+        urlWrapper: /omaspecworks/collaborate/liaison-agreements
         ---
         ::::        
     :::
@@ -175,7 +175,7 @@ cols: 4
         icon: i-svg-spinners:blocks-shuffle-3
         title: Get Involved # Fourth Column
         subtitle: OMASpecWorks
-        urlWrapper: ""
+        urlWrapper: /omaspecworks/get-involved
         ---
         ::::
 
@@ -187,7 +187,7 @@ cols: 4
         icon: ic:outline-email
         title: Contact us # Fourth Column
         subtitle: Talk to us
-        urlWrapper: 
+        urlWrapper: /omaspecworks/get-involved/contact-us
         ---
         ::::
         ::::ShMicroCard
@@ -198,7 +198,7 @@ cols: 4
         icon: ic:outline-live-help
         title: F.A.Q # Fourth Column
         subtitle: Questions & Answers
-        urlWrapper: ""
+        urlWrapper: /omaspecworks/get-involved/faq
         ---
         ::::
     :::          
