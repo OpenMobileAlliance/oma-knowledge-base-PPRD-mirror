@@ -160,7 +160,7 @@ cols: 5
         icon: codicon:versions
         title: Enablers # Third Column
         subtitle: LwM2M
-        urlWrapper: "/lwm2m/resources/enablers"
+        urlWrapper: "/lwm2m/resources/lwm2m-enablers"
         ---
         ::::
 
