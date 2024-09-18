@@ -203,7 +203,7 @@ cols: 5
         icon: eos-icons:service-outlined
         title: Community & Support # Fourth Column
         subtitle: LwM2M
-        urlWrapper: "/lwm2m/community.md"
+        urlWrapper: "/lwm2m/community"
         ---
         ::::
 
