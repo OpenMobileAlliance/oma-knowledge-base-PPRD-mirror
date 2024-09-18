@@ -216,7 +216,7 @@ cols: 5
         title: Members Meetings # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community.md/members-meetings"
+        urlWrapper: "/lwm2m/community/members-meetings"
         ---
         ::::
 
@@ -229,7 +229,7 @@ cols: 5
         title: Webinars & Workshops # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community.md/webinars-workshops"
+        urlWrapper: "/lwm2m/community/webinars-workshops"
         ---
         ::::
 
@@ -242,7 +242,7 @@ cols: 5
         title: Test Events # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community.md/test-events"
+        urlWrapper: "/lwm2m/community/test-events"
         ---
         ::::
 
@@ -255,7 +255,20 @@ cols: 5
         title: LwM2M Implementations # Fourth Column
         subtitle: |
             Open Source
-        urlWrapper: "h/lwm2m/community.md/implementations"
+        urlWrapper: "/lwm2m/community/implementations"
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/5
+        icon: pajamas:api
+        title: Product Listing # Fourth Column
+        subtitle: |
+            LwM2M
+        urlWrapper: "/lwm2m/community/product-listing"
         ---
         ::::
     :::
