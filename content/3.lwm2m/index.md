@@ -211,12 +211,12 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/4
-        icon: jam:myspace
-        title: Members Meetings # Fourth Column
+            icon: w-1/3
+        icon: carbon:ibm-toolchain
+        title: Test Events # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community/members-meetings"
+        urlWrapper: "/lwm2m/community/test-events"
         ---
         ::::
 
@@ -237,12 +237,12 @@ cols: 5
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
-        icon: carbon:ibm-toolchain
-        title: Test Events # Fourth Column
+            icon: w-1/4
+        icon: jam:myspace
+        title: Members Meetings # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community/test-events"
+        urlWrapper: "/lwm2m/community/members-meetings"
         ---
         ::::
 
