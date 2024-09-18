@@ -216,7 +216,7 @@ cols: 5
         title: Test Events # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community/test-events"
+        urlWrapper: "/events/test-events"
         ---
         ::::
 
@@ -229,7 +229,7 @@ cols: 5
         title: Webinars & Workshops # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community/webinars-workshops"
+        urlWrapper: "/events/webinar-workshops"
         ---
         ::::
 
@@ -242,7 +242,7 @@ cols: 5
         title: Members Meetings # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/community/members-meetings"
+        urlWrapper: "/events/members-meetings"
         ---
         ::::
 
