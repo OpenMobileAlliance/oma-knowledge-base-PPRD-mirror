@@ -6,9 +6,11 @@ layout: doc
 
 Please click on one of the available OMASpecWorks resources available:
 
-::ShMultiColumn
+::ShTwoColumns
 ---
-cols: 2
+size: XL
+ui: # First Column
+  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl shadow-2xl p-5"
 ---
 
 ::ShMultiColumn
@@ -219,12 +221,16 @@ cols: 4
 ::ShSegment
 ---
 ui:
-  wrapper: p-5 # Comment
+  wrapper: px-4 text-xl leading-7 # Comment
 ---
 
-![](/images/omaspecworks/about/Idea-Machine-v02-1-800x344.png){ class="mx-auto hover:scale-105"}
+![](/images/omaspecworks/about/DALL_E_Idea_machine.webp){ class="mx-auto rounded-lg hover:scale-105"}
 
-OMA SpecWorks is a Standards Development Organization (SDO) focused on creating consensus-driven technical specifications, particularly for mobile and IoT sectors. It has notably developed the OMA LightweightM2M (LwM2M) protocol, essential for IoT device management across diverse networks. The organization promotes standards that enhance interoperability and accelerate market growth.
+OMA SpecWorks is a Standards Development Organization (SDO) focused on creating consensus-driven technical specifications, particularly for mobile and IoT sectors.  
+
+It has notably developed the OMA LightweightM2M (LwM2M) protocol, essential for IoT device management across diverse networks.  
+
+The organization promotes standards that enhance interoperability and accelerate market growth.
 
 ::
 ::
