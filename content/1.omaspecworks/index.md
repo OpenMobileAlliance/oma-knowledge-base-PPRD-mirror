@@ -138,6 +138,19 @@ cols: 4
         urlWrapper: "/omaspecworks/collaborate"
         ---
         ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: ic:baseline-diversity-3
+        title: OMA Groups # Third Column
+        subtitle: Working Groups
+        urlWrapper: /omaspecworks/working-groups
+        ---
+        ::::  
+        
         ::::ShMicroCard
         ---
         ui:

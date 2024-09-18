@@ -311,7 +311,7 @@ cols: 5
         title: Membership Info # Fifth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/get-involved/membership-info"
+        urlWrapper: "/omaspecworks/membership/"
         ---
         ::::
 
@@ -324,7 +324,7 @@ cols: 5
         title: Contact us # Fifth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/get-involved/contact-us"
+        urlWrapper: "/omaspecworks/get-involved/contact-us"
         ---
         ::::
         ::::ShMicroCard
@@ -336,7 +336,7 @@ cols: 5
         title: F.A.Q # Fifth Column
         subtitle: |
             **
-        urlWrapper: "/lwm2m/get-involved/faq"
+        urlWrapper: "/omaspecworks/get-involved/faq"
         ---
         ::::
     :::     
