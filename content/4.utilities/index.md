@@ -38,7 +38,7 @@ cols: 4
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-2/5
         icon: carbon:process
-        title: Overview # First Row
+        title: Introduction # First Row
         subtitle: Utilities
         urlWrapper: "/utilities/#introduction-to-lwm2m"
         ---
@@ -239,19 +239,7 @@ cols: 4
 Embrace the future of utility management with __LwM2M__, where operational excellence meets technological advancement.
 
 
-## Technical Overview
 
-### Interoperability
-
-- LwM2M supports various data formats and integrates seamlessly with other standard development organizations (SDOs), allowing utilities to leverage existing systems and data.
-
-### Scalability
-
-- The protocol's design accommodates large-scale deployments, offering centralized network management, efficient resource allocation, and group operations.
-
-### Security
-
-- LwM2M employs robust security measures, including secure device onboarding, authentication, and encrypted communication (DTLS, TLS, OSCORE), ensuring data integrity and privacy.
 
 ## Market Potential
 The utility sector is poised for transformation through the adoption of LwM2M. As utilities increasingly embrace IoT technologies, LwM2M provides a robust, scalable, and secure protocol that meets the sector's evolving needs. The global adoption and proven reliability of LwM2M in telecommunications and automotive industries underscore its potential to drive innovation and growth in utilities. By adopting LwM2M, utility providers can enhance operational efficiency, reduce costs, and improve service reliability, positioning themselves as leaders in the smart utility revolution.
