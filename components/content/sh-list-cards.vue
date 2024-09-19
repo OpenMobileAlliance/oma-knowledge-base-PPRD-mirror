@@ -76,6 +76,22 @@ const { ui, attrs } = useUI(
   toRef(props, "class")
 );
 
+const windowWidth = ref(0);
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+// Ensure window.innerWidth is accessed only in the browser otherwise it will throw an error on refresh
+onMounted(() => {
+  windowWidth.value = window.innerWidth;
+  window.addEventListener('resize', handleResize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize);
+});
+
 const gridClass = computed(() => {
   const cols = props.cols ?? config.default.cols;
 
@@ -90,21 +106,7 @@ const gridClass = computed(() => {
   }
 });
 
-const { page } = useContent()
-
-const windowWidth = ref(window.innerWidth);
-
-const handleResize = () => {
-  windowWidth.value = window.innerWidth;
-};
-
-onMounted(() => {
-  window.addEventListener('resize', handleResize);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', handleResize);
-});
+const { page } = useContent();
 
 const cards = ref<any[]>([]); // Ref to store fetched card data
 const tags = ref<string[]>([]); // Ref to store all tags
@@ -117,21 +119,13 @@ onMounted(async () => {
       .find();
 
     if (result && result.length > 0) {
-      // Create a map of cardID to corresponding content
       const cardMap = new Map(result.map(item => [item.cardID, item]));
-
-      // Temporary Set to store unique tags
       const uniqueTags = new Set<string>();
 
-      // Sort the cards according to the order of cardID in props.cardID
       cards.value = props.cardID.map(id => {
         const item = cardMap.get(id);
-
         if (item) {
-          // Ensure item.tags is an array before filtering
           const validTags = Array.isArray(item.tags) ? item.tags.filter(tag => tag !== null) : [];
-
-          // Add tags to the Set to ensure uniqueness
           validTags.forEach(tag => uniqueTags.add(tag));
 
           const { ...frontmatter } = item;
@@ -143,14 +137,12 @@ onMounted(async () => {
             article: item._path,
           };
         }
-      })
-      // Convert Set to an array and assign to tags ref
+      });
       tags.value = Array.from(uniqueTags);
     }
   }
 });
 
-// Computed property to filter cards based on selected tags
 const filteredCards = computed(() => {
   if (selectedTags.value.length === 0) {
     return cards.value;
@@ -160,7 +152,6 @@ const filteredCards = computed(() => {
   );
 });
 
-// Method to toggle tag selection
 const toggleTag = (tag: string) => {
   if (selectedTags.value.includes(tag)) {
     selectedTags.value = selectedTags.value.filter(t => t !== tag);
@@ -169,7 +160,6 @@ const toggleTag = (tag: string) => {
   }
 };
 
-// Method to clear all selected tags
 const clearTags = () => {
   selectedTags.value = [];
 };
