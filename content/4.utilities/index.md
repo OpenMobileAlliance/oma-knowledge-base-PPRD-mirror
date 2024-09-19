@@ -1,26 +1,31 @@
 ---
-title: Benefits & Use Cases
+title: 
 description:
 layout: doc
 ---
 
-::ShTextImg
+::ShMultiColumn
+---
+cols: 2 
+---
+:::ShColumn
 ---
 ui:
-    wrapper: mb-10 shadow-2xl
-    text: text-lg
-positionText: left
-spanText: m
-alignText: left
-urlImage: /images/utilities/utilities-4.png
-text: |
-    > As the utility sector adapts to the evolving landscape of IoT technologies, the Open Mobile Alliance's (OMA) LightweightM2M (LwM2M) protocol emerges as a vital solution, offering secure communication, remote updates, real-time monitoring, and efficient power usage to simplify device management. LwM2M enhances operational efficiency, cost savings, and secure remote management while ensuring seamless interoperability and adaptability across various utilities like electricity, water, and gas. Its vendor-agnostic nature and multi-network compatibility drive innovation and competitive markets. OMA's initiatives, including workshops, collaborative pilots, and industry advocacy, aim to integrate LwM2M into the utility sector, promoting a future of enhanced efficiency, security, and innovation. 
+    header:
+        title: text-center text-3xl font-bold m-5
+title: LwM2M & Utilities
 ---
-::
+As the utility sector evolves with IoT technologies, the **LwM2M** protocol from the Open Mobile Alliance provides secure communication, remote updates, real-time monitoring, and efficient power use for streamlined device management. It boosts operational efficiency, cost savings, and secure remote management while ensuring interoperability across utilities like electricity, water, and gas. Its vendor-agnostic, multi-network design fosters innovation and competition. OMA’s workshops, pilots, and advocacy work to integrate **LwM2M**, driving greater efficiency, security, and innovation in the utility industry. **Click** _... to know more_
+
+<img src="/images/utilities/utilities-4.png" alt="LwM2M in Utilities" class="rounded-2xl">
+
+:::
+
+
 
 ::ShMultiColumn
 ---
-cols: 5 
+cols: 4 
 ---
     :::ShColumn 
     --- 
@@ -33,8 +38,8 @@ cols: 5
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-2/5
         icon: carbon:process
-        title: Utilities # First Row
-        subtitle: Introduction
+        title: Overview # First Row
+        subtitle: Utilities
         urlWrapper: "/utilities/#introduction-to-lwm2m"
         ---
         ::::
@@ -184,7 +189,7 @@ cols: 5
             icon: w-1/4
         icon: material-symbols:diversity-2-rounded
         title: Engage Stakeholders # Forth Column
-        subtitle: Engagement Stakeholders
+        subtitle: 
         urlWrapper: "/utilities/#engage-stakeholders"
         ---
         ::::     
@@ -196,7 +201,7 @@ cols: 5
             icon: w-1/4
         icon: i-carbon:calibrate
         title: Protomote Adoption # Forth Column
-        subtitle: Engagement with OMA
+        subtitle: 
         urlWrapper: "/utilities/#promote-adoption"
         ---
         :::: 
@@ -208,25 +213,8 @@ cols: 5
             icon: w-1/3
         icon: material-symbols:query-stats
         title: Provide Resources # Forth Column
-        subtitle: Engagement with OMA
+        subtitle: 
         urlWrapper: "/utilities/#provide-resources"
-        ---
-        ::::
-    ::: 
-    :::ShColumn 
-    --- 
-    ui: # Fith Column
-       wrapper: p-1
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/4
-        icon: carbon:events
-        title: Workshops # Forth Column
-        subtitle: Engagement with OMA Utilities Outreach
-        urlWrapper: "/utilities/"
         ---
         ::::
 
@@ -237,76 +225,19 @@ cols: 5
             icon: w-1/2
         icon: carbon:events-alt
         title: Workshops # Forth Column
-        subtitle: ""
+        subtitle: 
         urlWrapper: "/utilities/workshops#previous-workshops"
         ---
-        ::::     
-    ::: 
+        ::::            
+
+::
+
 ::
 
 
-## Overview
-As the utility sector navigates the challenges and opportunities presented by the rapidly evolving landscape of connected devices and IoT technologies, the need for robust, scalable, and secure protocols becomes increasingly vital. The Open Mobile Alliance's (OMA) LightweightM2M (LwM2M) protocol stands out as a premier solution tailored to meet these demands. By simplifying device management through secure communication, remote updates, real-time monitoring, and efficient power usage, LwM2M ensures utilities can achieve optimal performance while maintaining minimal resource consumption.
+    
+Embrace the future of utility management with __LwM2M__, where operational excellence meets technological advancement.
 
-In the following sections, we delve into the multitude of benefits that LwM2M brings to the utility sector. From enhancing operational efficiency and cost savings to ensuring secure remote management and seamless interoperability, LwM2M addresses the core challenges faced by utilities today. The protocol's vendor-agnostic nature and multi-network compatibility further underscore its adaptability and potential to drive innovation. By providing a unified standard for device lifecycle and network management, LwM2M not only simplifies operations but also fosters a competitive and innovative market landscape.
-
-Moreover, real-world use cases highlight the transformative impact of LwM2M across various utilities, including electricity, water, and gas. These examples, coupled with a comprehensive technical overview, underscore the protocol's scalability, security, and broad market potential. As we explore these aspects, we also present a structured call to action aimed at engaging stakeholders, promoting adoption, and providing the necessary resources and support. Through workshops, collaborative pilots, and industry advocacy, OMA is committed to leading the charge in integrating LwM2M into the utility space, ensuring a future of enhanced efficiency, security, and innovation.
-
-
-*Matt Gillmore OMA DMSO Working Group Chair*
-
-::ShTextImg
----
-ui:
-    wrapper: mb-10 shadow-2xl
-positionText: rigt
-spanText: m
-alignText: left
-urlImage: /images/utilities/utilities-4.png
-title: | 
-    About OMA LwM2M and Utilities
-subtitle: |
-    _Matt Gillmore is from Itron_
-text: |
-    > By leveraging the OMA LightweightM2M protocol, the utility sector can achieve unprecedented efficiency, security, and cost-effectiveness, driving innovation and growth in a rapidly evolving landscape. 
----
-::
-
-Embrace the future of utility management with LwM2M, where operational excellence meets technological advancement.
-
-## Introduction to LwM2M
-The Open Mobile Alliance's (OMA) LightweightM2M (LwM2M) protocol is an open and efficient protocol designed for managing IoT devices. LwM2M simplifies device management by offering features such as secure communication, remote updates, real-time monitoring, and efficient power usage. Its lightweight design makes it ideal for applications requiring minimal resource consumption while maintaining robust functionality and security.
-
-## Benefits for Utilities
-
-### Efficiency and Cost Savings
-
-- **Streamlined Operations**: LwM2M provides a unified standard for device lifecycle and network management, reducing the complexity of handling multiple proprietary systems. This standardization minimizes operational costs and accelerates device deployment.
-- **Power Efficiency**: The protocol's design optimizes power usage, making it suitable for battery-powered devices. This contributes to longer device lifecycles and lower operational costs.
-
-### Remote Monitoring and Management
-
-- **Enhanced Security**: LwM2M ensures secure device onboarding, authentication, and access control, protecting against unauthorized access and cyber threats.
-- **Real-Time Connectivity Monitoring**: Continuous monitoring helps detect and resolve network issues, ensuring uninterrupted service.
-
-### Interoperability and Scalability
-
-- **Vendor-Agnostic**: LwM2M's vendor-agnostic nature allows utilities to integrate various devices and systems, reducing dependency on specific vendors and fostering innovation.
-- **Multi-Network Compatibility**: The protocol works seamlessly across multiple network technologies, ensuring compatibility with existing and future infrastructures.
-
-## Use Cases
-
-### Electricity
-
-- **Smart Metering**: Utility companies can remotely manage and monitor electricity meters, enabling accurate billing and reducing the need for manual meter readings. LwM2M supports secure firmware updates, ensuring compliance and security.
-
-### Water
-
-- **Leak Detection and Management**: Water utilities can use LwM2M-enabled sensors to detect leaks in real-time, reducing water waste and maintenance costs. Remote monitoring and management enhance operational efficiency.
-
-### Gas
-
-- **Safety and Efficiency**: Gas utilities can implement LwM2M for real-time monitoring of gas meters and infrastructure, improving safety through early detection of leaks and ensuring efficient gas distribution.
 
 ## Technical Overview
 
