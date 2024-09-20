@@ -4,30 +4,9 @@
       <template v-if="page?.layout === 'doc'">
         <div class="">
           <AppSideMenu :items="displayNavigation"
-            class="fixed top-64 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
-          <div v-if="page.body?.toc?.links?.length > 0"
-            class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
-            <nav>
-              <button
-                class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
-                <span class="font-semibold text-sm/6 truncate dark:text-white/80 mx-auto">Table of Contents</span>
-              </button>
-              <ul class="space-y-1 lg:block -ml-2">
-                <li v-for="(link, index) in page.body.toc.links" class="space-y-1 lg:block" :key="index">
-                  <ULink :id="`toc-${link.id}`" :to="`${page._path}#${link.id}`" :class="ui.shadow"
-                    class="not-prose truncate rounded-lg p-2">
-                    {{ link.text }}</ULink>
-                  <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
-                    <li v-for="(subLink, subIndex) in link.children" class="space-y-1 lg:block" :key="subIndex">
-                      <ULink :id="`toc-${subLink.id}`" :to="`${page._path}#${subLink.id}`" :class="ui.shadow"
-                        class="not-prose text-ellipsis rounded-lg p-2">{{ subLink.text }}</ULink>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <section :class="contentClass" class="ml-64 p-8 ">
+            class="fixed top-56 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
+          <AppToc class="top-56" />
+          <section :class="contentClass" class="ml-64 pl-8 pr-8">
             <h1 class="capitalize hover:uppercase">
               {{ page.title }}
             </h1>
@@ -81,14 +60,13 @@
         <PrevNextPage v-if="route.path !== '/'" />
       </template>
     </article>
-
   </main>
 </template>
 
 <script setup lang="ts">
 
 const config = {
-  shadow: 'hover:bg-primary-100 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
+  shadow: 'hover:bg-primary-500 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
 };
 
 
