@@ -25,7 +25,7 @@ As the utility sector evolves with IoT technologies, the **LwM2M** protocol from
 
 ::ShMultiColumn
 ---
-cols: 4 
+cols: 3 
 ---
     :::ShColumn 
     --- 
@@ -40,7 +40,7 @@ cols: 4
         icon: carbon:process
         title: Introduction # First Row
         subtitle: Utilities
-        urlWrapper: "/utilities/#introduction-to-lwm2m"
+        urlWrapper: "/utilities/introduction"
         ---
         ::::
 
@@ -50,9 +50,9 @@ cols: 4
             wrapper: mt-5
             icon: w-1/2
         icon: solar:hand-stars-linear
-        title: Benefits # First Column
+        title: Benefits # Second Column
         subtitle: for Utilities
-        urlWrapper: "/utilities/#benefits-for-utilities"
+        urlWrapper: "/utilities/introduction/#benefits-for-utilities"
         ---
         ::::
 
@@ -62,9 +62,21 @@ cols: 4
             wrapper: mt-5
             icon: w-1/3
         icon: lucide:puzzle
-        title: Use Cases # First Column
+        title: Use Cases # Third Column
         subtitle: Utitlities
-        urlWrapper: "/utilities/#use-cases"
+        urlWrapper: "/utilities/introduction/#use-cases"
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/4
+        icon: carbon:process
+        title: Technical Overview # Third Column
+        subtitle: Utitlities
+        urlWrapper: "/utilities/introduction/#technical-overview"
         ---
         ::::
     :::
@@ -79,62 +91,8 @@ cols: 4
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
-        icon: i-tabler:api-app
-        title: Technical Overview # Second Row
-        subtitle: LwM2M in Utilities
-        urlWrapper: "/utilities/#technical-overview"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: tabler:network
-        title: Interoperability # Second Column
-        subtitle: LwM2M in Utilities
-        urlWrapper: "/utilities/#interoperability"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: mingcute:scale-line
-        title: Scalability # Second Column
-        subtitle: LwM2M in Utilities
-        urlWrapper: "/utilities/#scalability"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: i-mdi:lock-reset
-        title: Security # Second Column
-        subtitle: LwM2M in Utilities
-        urlWrapper: "/utilities/#"
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Third Column
-       wrapper: p-1
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/4
         icon: eos-icons:project-outlined
-        title: Market Potential # Third Column
+        title: Market Potential # Second Column
         subtitle: LwM2M in Utilities
         urlWrapper: "/utilities/#market-potential"
         ---
@@ -146,7 +104,7 @@ cols: 4
             wrapper: mt-5
             icon: w-1/4
         icon: fluent:chat-bubbles-question-16-regular
-        title: Q&A # Third Column
+        title: Q&A # Second Column
         subtitle: on Utilities & LwM2M
         urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
         ---
