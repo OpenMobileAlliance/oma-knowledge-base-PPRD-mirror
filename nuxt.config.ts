@@ -1,13 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial"],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode'],
   colorMode: {
-    preference: 'light'
+    preference: 'system'
   },
   content: {
     documentDriven: true,
     highlight: {
-      theme: 'github-dark'
+      theme: {
+        default: 'github-dark',
+      },
     },
     markdown: {
       anchorLinks: false 
