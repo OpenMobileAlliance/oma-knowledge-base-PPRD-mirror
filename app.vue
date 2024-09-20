@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full dark:bg-[#19191a]" :style="{ fontFamily: main.font.type }">
+  <div class="flex flex-col w-full bg-golden/[0.2] dark:bg-[#19191a]" :style="{ fontFamily: main.font.type }">
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
         <img :src="computedLogoSrc" alt="Logo" />
@@ -100,7 +100,7 @@ h7 {
   font-family: var(--h7-font-type);
 }
 
-.dark p,
+.dark div[data-content-id],/* Add dark mode to the content, but leave components out */
 .dark strong,
 .dark em,
 .dark ul,
@@ -119,6 +119,7 @@ h7 {
 /* Links */
 a {
   color: theme('colors.oma-blue.300');
+  text-decoration: none;
 }
 
 a:hover {
@@ -127,6 +128,7 @@ a:hover {
 
 .dark a {
   color: theme('colors.oma-blue.200');
+  text-decoration: none;
 }
 
 .dark a:hover {
@@ -136,33 +138,41 @@ a:hover {
 /* Code block */
 code {
   border: 3px solid #dcdcdc;
-  border-radius: 30px;
+  border-radius: 6px;
   background-color: #dcdcdc;
-  padding: 0px 8px; 
-  position: relative; 
+  padding: 2px 6px;
+  position: relative;
 }
 
 code::before,
 code::after {
-  content: ''; 
-  display: none; 
+  content: '';
+  display: none;
 }
 
 .dark code {
-  border: 3px solid #9b9b9b;
-  border-radius: 30px;
-  background-color: #9b9b9b;
-  padding: 0px 8px; 
-  position: relative;
+  border: 3px solid #414141;
+  border-radius: 6px;
+  background-color: #414141;
+  padding: 2px 6px;
   color: #ffffff;
 }
 
 pre code {
   border: none;
+  border-radius: 0;
   background: none;
-  padding: 0; 
+  padding: 0;
+  box-shadow: none;
 }
 
+.dark pre code {
+  border: none;
+  background: none;
+  color: #ffffff; 
+}
+
+/* Blockquote */
 blockquote {
   background-color: theme('colors.neutral.200');
   border-left: 4px solid #858585;
