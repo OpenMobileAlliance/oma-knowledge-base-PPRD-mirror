@@ -1,5 +1,5 @@
 ---
-title: 
+title: LwM2M for Utilities
 description:
 layout: doc
 ---
@@ -94,7 +94,7 @@ cols: 3
         icon: lucide:puzzle
         title: Use Cases # Third Column
         subtitle: Utitlities
-        urlWrapper: "/utilities/introduction/#use-cases"
+        urlWrapper: "/utilities/market-potential/#use-cases"
         ---
         ::::        
 
@@ -102,13 +102,25 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
+            icon: w-1/4
         icon: cil:layers
-        title: White Papers # Third Column
-        subtitle: Utilities & LwM2M
-        urlWrapper: "/utilities/"
+        title: Unlocking Benefits # Third Column
+        subtitle: Whitepaper
+        urlWrapper: "/utilities/market-potential/whitepaper-lwm2m-utilities-benefits"
         ---
         ::::   
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/4
+        icon: cil:layers
+        title: Unlocking Savings # Third Column
+        subtitle: Whitepaper
+        urlWrapper: "/utilities/market-potential/whitepaper-lwm2m-metering-use-case"
+        ---
+        ::::  
 
         ::::ShMicroCard
         ---
@@ -118,7 +130,7 @@ cols: 3
         icon: fluent:chat-bubbles-question-16-regular
         title: Q&A # Second Column
         subtitle: on Utilities & LwM2M
-        urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
+        urlWrapper: "/utilities/market-potential/faq/"
         ---
         ::::         
     :::  
@@ -132,11 +144,11 @@ cols: 3
         ---
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/4
+            icon: w-1/5
         icon: i-mingcute:horn-line
-        title: Adoption # Forth Column
+        title: Promoting LwM2M # Forth Column
         subtitle: for Utilities
-        urlWrapper: "/utilities/adoption/"
+        urlWrapper: "/utilities/promotion/"
         ---
         ::::
 
@@ -146,9 +158,9 @@ cols: 3
             wrapper: mt-5
             icon: w-1/4
         icon: material-symbols:diversity-2-rounded
-        title: Engage Stakeholders # Forth Column
+        title: Engaging Stakeholders # Forth Column
         subtitle: 
-        urlWrapper: "/utilities/adoption/#engage-stakeholders"
+        urlWrapper: "/utilities/promotion/#engaging-stakeholders"
         ---
         ::::     
         
@@ -158,9 +170,9 @@ cols: 3
             wrapper: mt-5
             icon: w-1/4
         icon: i-carbon:calibrate
-        title: Protomote Adoption # Forth Column
+        title: Protomoting Adoption # Forth Column
         subtitle: 
-        urlWrapper: "/utilities/adoption/#promote-adoption"
+        urlWrapper: "/utilities/promotion/#promoting-adoption"
         ---
         :::: 
 
@@ -170,9 +182,9 @@ cols: 3
             wrapper: mt-5
             icon: w-1/3
         icon: material-symbols:query-stats
-        title: Provide Resources # Forth Column
+        title: Providing Resources # Forth Column
         subtitle: 
-        urlWrapper: "/utilities/adoption/#provide-resources"
+        urlWrapper: "/utilities/promotion/#providing-resources"
         ---
         ::::          
 
