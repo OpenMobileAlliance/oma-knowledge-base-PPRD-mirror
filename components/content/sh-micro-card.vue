@@ -1,6 +1,6 @@
 <template>
   <div :class="ui.wrapper">
-    <NuxtLink :to="urlWrapper" target="_blank" class="not-prose">
+    <NuxtLink :to="urlWrapper" class="not-prose">
       <div class="relative group">
         <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage"/>
         <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="ui.icon" />
