@@ -21,12 +21,12 @@ const route = useRoute()
 
 const config = {
   wrapper: '',
-  shadow: 'hover:bg-primary-200 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500',
-  active: 'block border-l-4 dark:border-oma-blue-400 border-oma-blue-400',
+  shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600',
+  active: 'block border-l-4 dark:border-oma-blue-400 border-oma-blue-400 bg-primary-200 dark:bg-primary-600/[0.7]',
   normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px w-full',
   link: {
     active: 'text-oma-blue-500 dark:text-oma-blue-400 font-bold',
-    normal: 'w-full block'
+    normal: 'w-full block text-black dark:text-golden hover:text-black dark:hover:text-golden'
   }
 };
 
