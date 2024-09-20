@@ -1,13 +1,13 @@
 <template>
   <div :class="ui.wrapper">
     <aside class="not-prose text-wrap">
-      <nav v-if="sideManuItems" class="">
+      <nav v-if="sideMenuItems" class="">
         <ul class="">
-          <li v-for="(link, index) in sideManuItems" :key="index">
+          <li v-for="(link, index) in sideMenuItems" :key="index">
             <div :class="[ui.shadow, isActive(link.to) ? ui.active : ui.normal]">
-              <a :href="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal">
+              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal">
                 <span :class="[getIndent(link.depth), 'text-nowrap w-full']">{{ link.title }}</span>
-              </a>
+              </NuxtLink>
             </div>
           </li>
         </ul>
@@ -21,8 +21,8 @@ const route = useRoute()
 
 const config = {
   wrapper: '',
-  shadow: 'hover:bg-primary-100 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500',
-  active: 'block border-l-2 dark:border-oma-blue-400 border-oma-blue-400',
+  shadow: 'hover:bg-primary-200 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500',
+  active: 'block border-l-4 dark:border-oma-blue-400 border-oma-blue-400',
   normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px w-full',
   link: {
     active: 'text-oma-blue-500 dark:text-oma-blue-400 font-bold',
@@ -48,7 +48,7 @@ const addMenuItems = (list, depth, prevEl, outList) => {
   }
 }
 
-const sideManuItems = computed(() => {
+const sideMenuItems = computed(() => {
   const menuItems = []
   if (props.items?.length > 0) {
     addMenuItems(props.items, 0, null, menuItems)
@@ -82,22 +82,9 @@ const isActive = (path) => {
   return route.path === path
 }
 
-const COSNT_INDENT = ['pl-2', 'pl-4', 'pl-8', 'pl-12']
+const CONST_INDENT = ['pl-2', 'pl-4', 'pl-8', 'pl-12']
 
 const getIndent = (depth) => {
-  return COSNT_INDENT[depth]
+  return CONST_INDENT[depth]
 }
 </script>
-
-<style scoped>
-/*.verticalLine {
-  border-left: 4px solid;
-  border-color: theme('colors.oma-blue.300');
-  border-radius: 5px solid
-}
-
-.dark .verticalLine {
-  border-left: 4px solid;
-  border-color: theme('colors.oma-blue.400');
-}*/
-</style>
