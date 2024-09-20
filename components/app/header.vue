@@ -53,7 +53,7 @@ const config = {
   center: "hidden lg:flex flex flex-col grow",
   right: "flex items-center justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
-  shadow: "focus:decoration-oma-blue-400 dark:focus:decoration-oma-blue-600 decoration-2 hover:text-inherit hover:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 rounded-xl p-2", //focus:bg-primary-100/[0.5] focus:dark:hover:bg-neutral-600 focus:dark:bg-neutral-600
+  shadow: "focus:decoration-oma-blue-400 dark:focus:decoration-oma-blue-600 decoration-2 hover:text-inherit hover:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 rounded-xl p-2",
 };
 
 const props = withDefaults(
@@ -95,7 +95,10 @@ const topLinks = navigation.value.reduce((previous, current) => {
 const header = useAppConfig().header;
 const route = useRoute();
 
+// Function to determine if a link should stay underlined/active
 function isLinkActive(path: string): boolean {
-  return route.path === path;
+  // Check if the current route path starts with the link path
+  return route.path.startsWith(path);
 }
 </script>
+
