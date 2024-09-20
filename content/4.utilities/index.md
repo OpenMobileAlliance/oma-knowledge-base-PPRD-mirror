@@ -188,6 +188,17 @@ cols: 3
         ---
         ::::          
 
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: mdi:crowd
+        title: Webinar | Workshops # Forth Column
+        subtitle: 
+        urlWrapper: "/events/webinar-workshops"
+        ---
+        :::: 
 ::
 
 ::
