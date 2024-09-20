@@ -4,9 +4,8 @@ layout: doc
 ---
 The following documents produced by InLocation Alliance are being posted here as InLocation Alliance has ceased its operations and members in common with the former InLocation Alliance and OMA SpecWorks have requested the hosting of these documents. OMA SpecWorks has domain expertise relative to location technologies; however, these documents are solely the work product of the former InLocation Alliance. In no event shall OMA SpecWorks be liable in any manner regarding the InLocation Alliance documents.
 
-## InLocation Alliance (ILA) documents
 
-[Click here to view Use Agreement](https://www.omaspecworks.org/about/policies-and-terms-of-use/){.not-prose .hover:text-oma-blue-500 .dark:hover:text-oma-blue-200}
+[Click here to view Use Agreement](/omaspecworks/about/policies-terms){.not-prose .hover:text-oma-blue-500 .dark:hover:text-oma-blue-200}
 
 ::ShSegment
 ---
