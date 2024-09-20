@@ -48,35 +48,23 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/2
-        icon: solar:hand-stars-linear
-        title: Benefits # Second Column
-        subtitle: for Utilities
-        urlWrapper: "/utilities/introduction/#benefits-for-utilities"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: lucide:puzzle
-        title: Use Cases # Third Column
-        subtitle: Utitlities
-        urlWrapper: "/utilities/introduction/#use-cases"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
             icon: w-1/4
         icon: carbon:process
         title: Technical Overview # Third Column
         subtitle: Utitlities
         urlWrapper: "/utilities/introduction/#technical-overview"
+        ---
+        ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/2
+        icon: solar:hand-stars-linear
+        title: Benefits # Second Column
+        subtitle: for Utilities
+        urlWrapper: "/utilities/introduction/#benefits-for-utilities"
         ---
         ::::
     :::
@@ -102,13 +90,13 @@ cols: 3
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/4
-        icon: fluent:chat-bubbles-question-16-regular
-        title: Q&A # Second Column
-        subtitle: on Utilities & LwM2M
-        urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
+            icon: w-1/3
+        icon: lucide:puzzle
+        title: Use Cases # Third Column
+        subtitle: Utitlities
+        urlWrapper: "/utilities/introduction/#use-cases"
         ---
-        ::::  
+        ::::        
 
         ::::ShMicroCard
         ---
@@ -120,7 +108,19 @@ cols: 3
         subtitle: Utilities & LwM2M
         urlWrapper: "/utilities/"
         ---
-        ::::          
+        ::::   
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/4
+        icon: fluent:chat-bubbles-question-16-regular
+        title: Q&A # Second Column
+        subtitle: on Utilities & LwM2M
+        urlWrapper: "/utilities/faq/#q-a-on-utilities-lwm2m"
+        ---
+        ::::         
     :::  
 
     :::ShColumn 
