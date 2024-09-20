@@ -17,10 +17,10 @@
             <div :class="ui.right">
               <ColorMode />
               <span class="mr-2 text-base">
-                <ULink to="signin" active-class="text-primary" class="hover:text-primary">Sign In</ULink>
+                <ULink to="signin" class="text-black dark:text-golden">Sign In</ULink>
               </span>
               <span class="mr-2 text-base">
-                <ULink to="contactus" class="hover:text-primary">Contact us</ULink>
+                <ULink to="contactus" class="text-black dark:text-golden">Contact us</ULink>
               </span>
               <slot name="right">
                 <AppSocialLinks class="text-xl" />
@@ -31,7 +31,7 @@
             <ul class="flex gap-1.5">
               <li v-for="link in topLinks" :key="link.path" class="ml-4"
                 :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-                <ULink :to="link._path" :class="['underline', ui.shadow]">{{ link.title }}</ULink>
+                <ULink :to="link._path" :class="['underline text-black dark:text-golden', ui.shadow]">{{ link.title }}</ULink>
               </li>
             </ul>
           </div>
