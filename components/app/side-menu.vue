@@ -5,9 +5,9 @@
         <ul class="">
           <li v-for="(link, index) in sideManuItems" :key="index">
             <div :class="[ui.shadow, isActive(link.to) ? ui.active : ui.normal]">
-              <a :href="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal">
+              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal">
                 <span :class="[getIndent(link.depth), 'text-nowrap w-full']">{{ link.title }}</span>
-              </a>
+              </NuxtLink>
             </div>
           </li>
         </ul>
