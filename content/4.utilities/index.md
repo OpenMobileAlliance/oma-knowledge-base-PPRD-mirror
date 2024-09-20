@@ -94,7 +94,7 @@ cols: 3
         icon: eos-icons:project-outlined
         title: Market Potential # Second Column
         subtitle: LwM2M in Utilities
-        urlWrapper: "/utilities/#market-potential"
+        urlWrapper: "/utilities/market-potential"
         ---
         ::::
 
@@ -198,12 +198,6 @@ Embrace the future of utility management with __LwM2M__, where operational excel
 
 
 
-
-## Market Potential
-The utility sector is poised for transformation through the adoption of LwM2M. As utilities increasingly embrace IoT technologies, LwM2M provides a robust, scalable, and secure protocol that meets the sector's evolving needs. The global adoption and proven reliability of LwM2M in telecommunications and automotive industries underscore its potential to drive innovation and growth in utilities. By adopting LwM2M, utility providers can enhance operational efficiency, reduce costs, and improve service reliability, positioning themselves as leaders in the smart utility revolution.
-
-* White paper [Unlocking Utilities Benefits: Leveraging OMA LwM2M for Field Area Management in the Utility Ecosystem]()
-* White paper [Unlocking Utilities Savings: LwM2M for Utilities Meter Management]()
 
 ## Call to Action
 
