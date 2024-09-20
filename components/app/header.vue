@@ -17,10 +17,10 @@
             <div :class="ui.right">
               <ColorMode />
               <span class="mr-2 text-base">
-                <ULink to="signin" active-class="text-primary" class="hover:text-primary">Sign In</ULink>
+                <ULink to="signin" active-class="text-primary" class="text-black dark:text-golden hover:text-primary">Sign In</ULink>
               </span>
               <span class="mr-2 text-base">
-                <ULink to="contactus" class="hover:text-primary">Contact us</ULink>
+                <ULink to="contactus" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
               </span>
               <slot name="right">
                 <AppSocialLinks class="text-xl" />
@@ -31,7 +31,7 @@
             <ul class="flex gap-1.5">
               <li v-for="link in topLinks" :key="link.path" class="ml-4"
                 :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-                <ULink :to="link._path" :class="[{ 'underline decoration-oma-blue-400 dark:decoration-oma-600 decoration-4 underline-offset-[14px]': isLinkActive(link._path) }, ui.shadow]">
+                <ULink :to="link._path" :class="[{ 'underline decoration-4 underline-offset-[14px] decoration-oma-blue-400 dark:underline dark:decoration-4 dark:underline-offset-[14px] dark:decoration-oma-blue-600 ': isLinkActive(link._path) }, ui.shadow, 'text-black dark:text-golden']">
                   {{ link.title }}
                 </ULink>
               </li>
@@ -53,7 +53,7 @@ const config = {
   center: "hidden lg:flex flex flex-col grow",
   right: "flex items-center justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
-  shadow: "focus:decoration-oma-blue-400 dark:focus:decoration-oma-blue-600 decoration-2 hover:text-inherit hover:bg-primary-100/[0.5] dark:hover:text-inherit dark:hover:bg-neutral-600 rounded-xl p-2",
+  shadow: "hover:text-black dark:hover:text-golden hover:bg-primary-200 dark:hover:bg-primary-600 rounded-xl p-2",
 };
 
 const props = withDefaults(
