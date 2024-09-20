@@ -6,7 +6,7 @@
         variant="link"
         aria-label="Theme"
         @click="isDark = !isDark"
-        class="hover:text-primary dark:hover:text-primary contrast-125"
+        class="hover:text-black dark:hover:text-oma-yellow-300 contrast-125"
       />
       <template #fallback>
         <div class="w-8 h-8" />
@@ -15,6 +15,7 @@
   </template>
 
 <script setup lang="ts">
+
 const colorMode = useColorMode()
 const isDark = computed({
   get () {
@@ -25,4 +26,3 @@ const isDark = computed({
   }
 })
 </script>
-
