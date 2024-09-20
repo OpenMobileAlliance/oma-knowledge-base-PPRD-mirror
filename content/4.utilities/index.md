@@ -134,9 +134,9 @@ cols: 3
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
             icon: w-1/4
         icon: i-mingcute:horn-line
-        title: Call to Action # Forth Column
-        subtitle: Engagement with OMA
-        urlWrapper: "/utilities/#call-to-action"
+        title: Adoption # Forth Column
+        subtitle: for Utilities
+        urlWrapper: "/utilities/adoption/"
         ---
         ::::
 
@@ -148,7 +148,7 @@ cols: 3
         icon: material-symbols:diversity-2-rounded
         title: Engage Stakeholders # Forth Column
         subtitle: 
-        urlWrapper: "/utilities/#engage-stakeholders"
+        urlWrapper: "/utilities/adoption/#engage-stakeholders"
         ---
         ::::     
         
@@ -160,7 +160,7 @@ cols: 3
         icon: i-carbon:calibrate
         title: Protomote Adoption # Forth Column
         subtitle: 
-        urlWrapper: "/utilities/#promote-adoption"
+        urlWrapper: "/utilities/adoption/#promote-adoption"
         ---
         :::: 
 
@@ -172,21 +172,9 @@ cols: 3
         icon: material-symbols:query-stats
         title: Provide Resources # Forth Column
         subtitle: 
-        urlWrapper: "/utilities/#provide-resources"
+        urlWrapper: "/utilities/adoption/#provide-resources"
         ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/2
-        icon: carbon:events-alt
-        title: Workshops # Forth Column
-        subtitle: 
-        urlWrapper: "/utilities/workshops#previous-workshops"
-        ---
-        ::::            
+        ::::          
 
 ::
 
@@ -195,44 +183,3 @@ cols: 3
 
     
 Embrace the future of utility management with __LwM2M__, where operational excellence meets technological advancement.
-
-
-
-
-## Call to Action
-
-### Engage Stakeholders
-
-- **Workshops and Webinars**: Our program includes educational sessions where we demonstrate the benefits and applications of LwM2M in utilities.
-  - **Interactive Demos**: We conduct live demonstrations of LwM2M implementation in various utility scenarios, including smart metering, leak detection, and gas monitoring.
-  - **Expert Panels**: Engage with industry experts and OMA engineers to discuss the technical aspects, implementation challenges, and success stories of LwM2M.
-  - **Q&A Sessions**: Participate in dedicated Q&A sessions to address specific concerns and inquiries related to LwM2M adoption.
-
-- **Collaborative Pilots**: Our program partners with OMA technology providers and utility companies to implement pilot projects showcasing LwM2M's capabilities.
-  - **Pilot Program Framework**: We provide a structured framework for launching collaborative pilot projects, including guidelines, best practices, and success metrics.
-  - **Funding Opportunities**: Explore potential funding sources and grants available for pilot projects to reduce the financial burden on participating utilities.
-  - **Pilot Success Stories**: Learn from detailed case studies of previous pilot projects, highlighting key outcomes, lessons learned, and paths to full-scale deployment.
-
-###S Promote Adoption
-
-- **Standardization Efforts**: Our program advocates for LwM2M standardization in the utility sector to facilitate widespread adoption and interoperability.
-  - **Industry Advocacy**: We participate in industry-wide initiatives and working groups focused on standardizing LwM2M protocols for utilities.
-  - **Policy Development**: Collaborate with regulatory bodies to develop policies and guidelines that encourage the adoption of standardized LwM2M protocols.
-  - **Certification Programs**: Support the creation of certification programs to ensure compliance and interoperability of LwM2M-enabled devices and solutions.
-
-- **Success Stories**: Our program highlights case studies and real-world examples of successful LwM2M implementations to illustrate its tangible benefits.
-  - **Detailed Case Studies**: Access comprehensive case studies from diverse utility sectors, showcasing the practical benefits and ROI of LwM2M implementations.
-  - **Video Testimonials**: Watch video testimonials from industry leaders and utility managers who have successfully integrated LwM2M into their operations.
-  - **Infographics and Reports**: Download visually engaging infographics and detailed reports summarizing the impact of LwM2M on efficiency, cost savings, and operational improvements.
-
-### Provide Resources
-
-- **Documentation and Support**: Our program offers comprehensive resources, including white papers, technical documentation, and FAQs, to assist utilities in adopting LwM2M.
-  - **Resource Library**: Access a centralized library of technical documents, white papers, and FAQs tailored to the needs of utility professionals.
-  - **Implementation Guides**: Utilize step-by-step implementation guides and best practices for integrating LwM2M into existing utility systems.
-  - **Support Forums**: Join support forums and online communities to connect with peers, share experiences, and seek advice on LwM2M adoption.
-
-- **Industry Collaboration**: Our program fosters collaboration through industry associations, online forums, and standards organizations like the Open Mobile Alliance.
-  - **Joint Research Initiatives**: Participate in joint research projects aimed at exploring new applications and enhancements for LwM2M in the utility sector.
-  - **Networking Events**: Attend industry conferences, trade shows, and networking events to build connections and learn from leading experts in the field.
-  - **Collaborative Publications**: Contribute to collaborative publications and industry journals to share insights and advancements related to LwM2M technology.
