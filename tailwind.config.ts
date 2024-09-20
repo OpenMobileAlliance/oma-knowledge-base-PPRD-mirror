@@ -8,6 +8,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
+        'golden': '#E7D6C2',
           'oma-red': {
             50: '#f2d8d7',
             100: '#e4b1af',

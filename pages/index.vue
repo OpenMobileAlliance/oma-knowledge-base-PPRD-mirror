@@ -37,7 +37,7 @@
 
 const config = {
   landingHero: {
-    wrapper: 'relative flex flex-col h-full items-center w-screen bg-gradient-to-t from-neutral-200',
+    wrapper: 'relative flex flex-col h-screen items-center w-screen bg-gradient-to-t from-neutral-200',
     image: 'absolute inset-0 w-full h-full transition-filter duration-1000 ease-in-out',
     title: 'text-center font-serif text-6xl mt-16 text-neutral-700 dark:text-[#333333] opacity-0',
     bookmark: 'content-center mt-[15%] ml-[120%] w-[20%] h-[10%] bg-neutral-400 dark:bg-neutral-600 rounded-l-full hover:scale-105 duration-700 delay-0 p-3',

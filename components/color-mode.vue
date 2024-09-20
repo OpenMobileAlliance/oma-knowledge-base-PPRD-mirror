@@ -1,28 +1,30 @@
 <template>
-    <ClientOnly>
-      <UButton
-        :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
-        color="gray"
-        variant="link"
-        aria-label="Theme"
-        @click="isDark = !isDark"
-        class="hover:text-primary dark:hover:text-primary contrast-125"
-      />
-      <template #fallback>
-        <div class="w-8 h-8" />
-      </template>
-    </ClientOnly>
-  </template>
+  <div>
+    <button
+      class="pl-3 pr-3 transition-colors"
+      @click="cycleTheme">
+      <UIcon :name="iconForTheme" class="hover:text-primary-600 dark:hover:text-primary-400 text-2xl" dynamic />
+    </button>
+  </div>
+</template>
 
 <script setup lang="ts">
 const colorMode = useColorMode()
-const isDark = computed({
-  get () {
-    return colorMode.value === 'dark'
-  },
-  set () {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-  }
-})
-</script>
 
+const themes = ['system', 'light', 'dark'] // Removed sepia
+const themeIcons = {
+  system: 'i-grommet-icons:system',
+  light: 'i-heroicons-sun-20-solid',
+  dark: 'i-heroicons-moon-20-solid',
+}
+
+// Function to cycle through themes
+const cycleTheme = () => {
+  const currentIndex = themes.indexOf(colorMode.preference)
+  const nextIndex = (currentIndex + 1) % themes.length
+  colorMode.preference = themes[nextIndex]
+}
+
+// Computed property for the current icon
+const iconForTheme = computed(() => themeIcons[colorMode.preference as keyof typeof themeIcons])
+</script>
