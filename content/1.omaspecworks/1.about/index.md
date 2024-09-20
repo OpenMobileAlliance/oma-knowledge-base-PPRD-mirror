@@ -16,7 +16,7 @@ OMA SpecWorks ensures the creation of market-accelerating standards that
 facilitate seamless interoperability across both fixed and mobile wireless
 networks.
 
-![](/images/omaspecworks/about/DALL_E_Idea_machine_landscape.png){ class="mx-auto w-1/5 hover:scale-105"}
+![](/images/omaspecworks/about/DALL_E_Idea_machine_landscape.png){ class="mx-auto hover:scale-105"}
 
 [Members](/omaspecworks/membership/members) of OMA SpecWorks collaborate in a
 transparent and egalitarian environment, where companies of all sizes can
