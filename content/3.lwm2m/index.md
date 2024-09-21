@@ -184,7 +184,7 @@ cols: 5
         icon: pajamas:issue-type-maintenance
         title: Tools # Third Column
         subtitle: LwM2M
-        urlWrapper: "/lwm2m/resources/tools"
+        urlWrapper: "/tools/"
         ---
         ::::
         
@@ -341,6 +341,4 @@ cols: 5
         ::::
     :::     
 ::
-
-
 
