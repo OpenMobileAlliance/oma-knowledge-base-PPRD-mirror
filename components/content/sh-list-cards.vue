@@ -32,13 +32,17 @@
       </div>
       <div :class="ui.text">
         <MDC :value="text" />
-        
+
       </div>
     </div>
 
     <!-- Cards Section -->
     <div :class="[ui.base, ui.gap, gridClass]">
-      <ShCard v-for="(card, index) in filteredCards" :key="index" v-bind="card" />
+      <template v-for="(card, index) in filteredCards" :key="index">
+        <ShCard :title="card.title" :subtitle="card.subtitle" :excerpt="card" :urlImage="card.urlImage"
+          :urlUpperBase="card._path" :article="card._path" :leftLabel="card.leftLabel" :rightLabel="card.rightLabel"
+          :centerLabel="card.centerLabel" />
+      </template>
     </div>
   </div>
 </template>
@@ -112,36 +116,34 @@ const cards = ref<any[]>([]); // Ref to store fetched card data
 const tags = ref<string[]>([]); // Ref to store all tags
 const selectedTags = ref<string[]>([]); // Ref to store selected tags
 
-onMounted(async () => {
-  if (props.cardID && props.cardID.length > 0) {
-    const result = await queryContent('news/articles')
-      .where({ cardID: { $in: props.cardID } })
-      .find();
+const getCards = async () => {
+  const result = await queryContent('news/articles')
+    .where({ cardID: { $in: props.cardID } })
+    .find();
 
-    if (result && result.length > 0) {
-      const cardMap = new Map(result.map(item => [item.cardID, item]));
-      const uniqueTags = new Set<string>();
+  return result;
+}
 
-      cards.value = props.cardID.map(id => {
-        const item = cardMap.get(id);
-        if (item) {
-          const validTags = Array.isArray(item.tags) ? item.tags.filter(tag => tag !== null) : [];
-          validTags.forEach(tag => uniqueTags.add(tag));
-
-          const { ...frontmatter } = item;
-          return {
-            ...frontmatter,
-            excerpt: item,
-            urlUpperBase: item._path,
-            tags: validTags,
-            article: item._path,
-          };
+const tagStac = () => {
+  if (cards.value.length > 0) {
+    const uniqueTags = new Set<string>();
+    cards.value.forEach(el => {
+      el.tags?.forEach(tag => {
+        if (tag !== null && tag.length > 0) {
+          uniqueTags.add(tag)
         }
       });
-      tags.value = Array.from(uniqueTags);
-    }
+    })
+    tags.value = Array.from(uniqueTags)
+  } else {
+    tags.value = []
   }
-});
+}
+
+const updateData = async () => {
+  cards.value = await getCards()
+  tagStac()
+}
 
 const filteredCards = computed(() => {
   if (selectedTags.value.length === 0) {
@@ -163,4 +165,6 @@ const toggleTag = (tag: string) => {
 const clearTags = () => {
   selectedTags.value = [];
 };
+
+updateData()
 </script>
