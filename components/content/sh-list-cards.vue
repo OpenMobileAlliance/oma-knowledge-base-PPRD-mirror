@@ -110,7 +110,8 @@ const gridClass = computed(() => {
   }
 });
 
-const { page } = useContent();
+const route = useRoute()
+const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 
 const cards = ref<any[]>([]); // Ref to store fetched card data
 const tags = ref<string[]>([]); // Ref to store all tags

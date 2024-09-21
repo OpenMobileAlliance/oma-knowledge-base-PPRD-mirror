@@ -17,10 +17,13 @@
             <div :class="ui.right">
               <ColorMode />
               <span class="mr-2 text-base">
-                <ULink to="signin" active-class="text-primary" class="text-black dark:text-golden hover:text-primary">Sign In</ULink>
+                <!-- TODO: provide proper URL -->
+                <ULink to="/" active-class="text-primary" class="text-black dark:text-golden hover:text-primary">Sign In
+                </ULink>
               </span>
               <span class="mr-2 text-base">
-                <ULink to="contactus" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
+                <!-- TODO: provide proper URL -->
+                <ULink to="/" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
               </span>
               <slot name="right">
                 <AppSocialLinks class="text-xl" />
@@ -31,7 +34,8 @@
             <ul class="flex gap-1.5">
               <li v-for="link in topLinks" :key="link.path" class="ml-4"
                 :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-                <ULink :to="link._path" :class="[{ 'underline decoration-4 underline-offset-[14px] decoration-oma-blue-400 dark:underline dark:decoration-4 dark:underline-offset-[14px] dark:decoration-oma-blue-600 ': isLinkActive(link._path) }, ui.shadow, 'text-black dark:text-golden']">
+                <ULink :to="link._path"
+                  :class="[{ 'underline decoration-4 underline-offset-[14px] decoration-oma-blue-400 dark:underline dark:decoration-4 dark:underline-offset-[14px] dark:decoration-oma-blue-600 ': isLinkActive(link._path) }, ui.shadow, 'text-black dark:text-golden']">
                   {{ link.title }}
                 </ULink>
               </li>
@@ -101,4 +105,3 @@ function isLinkActive(path: string): boolean {
   return route.path.startsWith(path);
 }
 </script>
-

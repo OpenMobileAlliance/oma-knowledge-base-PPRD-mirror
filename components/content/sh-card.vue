@@ -43,6 +43,9 @@
 <script setup lang="ts">
 import { card as config } from '@/ui.config' // Import the config file
 
+const route = useRoute()
+const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
+
 const props = withDefaults(
   defineProps<{
     urlUpperBase?: string;
@@ -88,5 +91,4 @@ const backgroundClass = computed(() => {
   }
 });
 
-const { page } = useContent()
 </script>
