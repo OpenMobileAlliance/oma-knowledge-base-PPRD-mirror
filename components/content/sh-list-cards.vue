@@ -150,9 +150,15 @@ const filteredCards = computed(() => {
   if (selectedTags.value.length === 0) {
     return cards.value;
   }
-  return cards.value.filter(card =>
-    card.tags.some((tag: string) => selectedTags.value.includes(tag))
-  );
+  return cards.value.filter(card => {
+    let belongs = false;
+    card.tags?.forEach(tag => {
+      if (tag !== null && tag.length > 0 && selectedTags.value.includes(tag)) {
+        belongs = true
+      }
+    });
+    return belongs;
+  });
 });
 
 const toggleTag = (tag: string) => {
