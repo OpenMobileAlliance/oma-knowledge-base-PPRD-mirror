@@ -149,7 +149,7 @@ cols: 4
         icon: ic:baseline-diversity-3
         title: OMA Groups # Third Column
         subtitle: Working Groups
-        urlWrapper: /omaspecworks/working-groups
+        urlWrapper: /omaspecworks/collaborate/working-groups
         ---
         ::::  
         
@@ -205,6 +205,19 @@ cols: 4
         urlWrapper: /omaspecworks/get-involved/contact-us
         ---
         ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: ic:outline-email
+        title: Newsletter # Fourth Column
+        subtitle: Join our Newsletter!
+        urlWrapper: /omaspecworks/get-involved/contact-us
+        ---
+        ::::
+
         ::::ShMicroCard
         ---
         ui:
@@ -234,7 +247,18 @@ The organization promotes standards that enhance interoperability and accelerate
 
 ::
 ::
-> Comment text
+
+::ShAlert
+OMA SpecWorks is an innovative kind of Standards Development Organization
+(SDO) where the needs for wireless industry consensus versus the quick and
+accurate creation of specifications and other technical documentation are
+balanced via a working group-driven, efficient and [agile process](https://omaspecworks.org/what-is-oma-specworks/agile-process-for-standardization-in-todays-market-landscape/).
+As a non-profit organization with a long history in mobile and Internet of
+Things (IoT) technology development, OMA SpecWorks is a specifications factory
+where industry-leading companies bring their ideas and talent to build
+market-accelerating standards that allow products and services to interoperate
+seamlessly across fixed and mobile wireless data networks.
+::
 
 ::ShCarousel
 ---
@@ -273,15 +297,4 @@ items:
 ---
 ::
 
-### About OMA SpecWorks
-::ShAlert
-OMA SpecWorks is an innovative kind of Standards Development Organization
-(SDO) where the needs for wireless industry consensus versus the quick and
-accurate creation of specifications and other technical documentation are
-balanced via a working group-driven, efficient and [agile process](https://omaspecworks.org/what-is-oma-specworks/agile-process-for-standardization-in-todays-market-landscape/).
-As a non-profit organization with a long history in mobile and Internet of
-Things (IoT) technology development, OMA SpecWorks is a specifications factory
-where industry-leading companies bring their ideas and talent to build
-market-accelerating standards that allow products and services to interoperate
-seamlessly across fixed and mobile wireless data networks.
-::
+

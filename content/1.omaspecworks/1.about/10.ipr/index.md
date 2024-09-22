@@ -20,7 +20,7 @@ Full details of OMA’s IPR policy may be found in:
 
 OMA maintains the following lists of IPR declarations:
 
-* [OMA Member IPR Declarations](/members)
-* [Non-OMA Member IPR Declarations](/non-members)
+* [OMA Member IPR Declarations](/omaspecworks/about/ipr/members)
+* [Non-OMA Member IPR Declarations](/omaspecworks/about/ipr/non-members)
 
 For questions regarding the OMA IPR Policy please contact the OMA Membership [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).
