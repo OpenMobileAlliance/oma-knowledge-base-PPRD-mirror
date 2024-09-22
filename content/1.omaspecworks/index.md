@@ -205,6 +205,19 @@ cols: 4
         urlWrapper: /omaspecworks/get-involved/contact-us
         ---
         ::::
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: ic:outline-email
+        title: Newsletter # Fourth Column
+        subtitle: Join our Newsletter!
+        urlWrapper: /omaspecworks/get-involved/contact-us
+        ---
+        ::::
+
         ::::ShMicroCard
         ---
         ui:
