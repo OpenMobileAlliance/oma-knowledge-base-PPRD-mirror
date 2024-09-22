@@ -16,11 +16,11 @@ layout: doc
 Full details of OMA’s IPR policy may be found in:
 
 * The Open Mobile Alliance Application Form
-* The [OMA IPR guidelines](https://omaspecworks.org/wp-content/uploads/2018/02/Member_IPRGuidelines_v53006.pdf)
+* The <a href="https://omaspecworks.org/wp-content/uploads/2018/02/Member_IPRGuidelines_v53006.pdf" target="_blank">OMA IPR guidelines</a>
 
 OMA maintains the following lists of IPR declarations:
 
-* [OMA Member IPR Declarations](/) <!-- TODO: provide proper URL -->
-* [Non-OMA Member IPR Declarations](/) <!-- TODO: provide proper URL -->
+* [OMA Member IPR Declarations](/omaspecworks/about/ipr/members)
+* [Non-OMA Member IPR Declarations](/omaspecworks/about/ipr/non-members)
 
 For questions regarding the OMA IPR Policy please contact the OMA Membership [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).

@@ -1,5 +1,5 @@
 export default {
-  wrapper: "",
+  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-5",
   header: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   search: "pb-4",
