@@ -20,6 +20,8 @@ OMA has developed an editor for creating LwM2M Objects & Resources.
 
 ## ObjectID Classes
 
+> Note: Final alocation of ObjectsID is done by the OMNA Staff.
+
 <table>
   <tr>
     <th>Category</th>
@@ -35,7 +37,7 @@ OMA has developed an editor for creating LwM2M Objects & Resources.
     <td><code>urn:oma:lwm2m:oma:&lt;id&gt;:&lt;version&gt;</code></td>
     <td>0 - 1023</td>
     <td>Objects Produced by OMA. Only OMA can use this range.<br>0-499 DM&amp;SE Working Group<br>500-1023 IPSO Working Group</td>
-    <td rowspan="7"><a href="" alt=""><img scr="carbon:view-filled" alt="View"></a>  <a href="" alt=""><img scr="icon-park:write" alt="Register"></a></td>
+    <td rowspan="7"><a href="/objects" alt="View LwM2M Objects"><img scr="carbon:view-filled" alt="View"></a>  <a href="https://github.com/OpenMobileAlliance/lwm2m-registry/blob/prod/README.md" alt=" Register LwM2M Objects"><img scr="icon-park:write" alt="Register"></a></td>
   </tr>
   <tr>
     <td>Reserved</td>
