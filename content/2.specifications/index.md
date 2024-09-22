@@ -127,7 +127,7 @@ cols: 2
             icon: i-eos-icons:atom-electron
             title: API's # Third Column
             subtitle: OMA API's
-            urlWrapper: "/specifications/#oma-api-inventory"
+            urlWrapper: "/specifications/api"
             ---
             ::::
 
@@ -139,7 +139,7 @@ cols: 2
             icon: i-pajamas:comparison
             title: LwM2M Registry API # Third Column
             subtitle: LwM2M Registry
-            urlWrapper: "/specifications/#oma-lwm2m-registry-api"
+            urlWrapper: "/tools/lwm2m-api-registry"
             ---
             ::::
 
@@ -149,9 +149,9 @@ cols: 2
                 wrapper: mt-5
                 icon: w-1/4
             icon: i-eos-icons:ingress
-            title: Enablers API's # Third Column
+            title: API Inventory # Third Column
             subtitle: OMA Enablers
-            urlWrapper: "/specifications/#oma-api-table"
+            urlWrapper: "/specifications/api/#oma-api-inventory"
             ---
             ::::      
         :::      
@@ -248,58 +248,4 @@ The following name and number registries are currently maintained by OMNA.
 
 {OMNA REGISTRY TABLE}
 
-### OMA LwM2M Registry API
-The OMA LwM2M Registry API, also known as the OMNA (OMA Naming Authority), provides essential tools and information for interacting with the OMA Registry. This documentation outlines the available functionalities of the LwM2M Registry API version 1, offering comprehensive details on how to access and retrieve metadata about various objects within the registry.
 
-**Base URL for the Registry API**:
-http://www.openmobilealliance.org/api/
-
-#### API Functions and Endpoints
-##### Objects Discovery:
-
-* **Endpoint**: lwm2m/v1/Object
-    * **Description**: Retrieve a JSON file containing metadata information on all object versions.
-* **Endpoint**: lwm2m/v1/Object?ObjectVersion=latest
-    * **Description**: Retrieve a JSON file containing metadata information with the latest object versions.
-
-##### Get an Object:
-
-* **Endpoint**: lwm2m/v1/Object?ObjectID=12
-    * **Description**: Retrieve a JSON file with metadata information on Object 12.
-* **Endpoint**: lwm2m/v1/Object?ObjectID=12&ObjectVersion=latest
-    * **Description**: Retrieve a JSON file with metadata information on the latest version of Object 12.
-* **Endpoint**: lwm2m/v1/Object?ObjectID=12&ObjectVersion=1.0
-    * Description: Retrieve a JSON file with metadata information on version 1.0 of Object 12.
-    * >Note: When specifying an ObjectVersion other than "latest", the ObjectID must be included.
-#### Error Codes
-* **HTTP 400**: ObjectID must be included when ObjectVersion is set to "latest".
-* **HTTP 404**: The specified ObjectID and/or ObjectVersion is not found in the registry.
-
-### Metadata Information
-The metadata provided by the API defines and classifies objects within the OMA system. This includes descriptions, object names, unique URNs, links to XML descriptions, and more. Key metadata elements include:
-
-* **Description**: Description of the object.
-* **Label**: Identifier for who has defined the object (OMA, external SDO, private registration).
-* **Name**: Object name.
-* **ObjectID**: Unique identifier for the object.
-* **ObjectLink**: URL to the XML file describing the object, with visibility settings.
-* **SpecLink**: URL to the Technical Specifications, with visibility settings.
-* **URN**: Unique URN for the object.
-* **Owner**: Organization name that registered the object.
-* **Version**: Object version.
-* **VortoLink**: DEPRECATED. URL to this object in Vorto.
-
-This comprehensive API documentation ensures users can effectively interact with and retrieve vital information from the OMA LwM2M Registry.
-
-
-## OMA API Inventory
-This section showcases the API specifications managed by the Open Mobile Alliance (OMA), organized by protocol bindings such as RESTful, SOAP Web Services, and LDAP. You'll find a comprehensive list of APIs under each protocol binding, with detailed descriptions to help you navigate and understand their functions. This inventory serves as a resource for easily accessing and comprehending the available APIs and their uses.
-
-* **RESTful APIs**: These APIs use the REST architectural style with an HTTP protocol binding. API operations are mapped to HTTP verbs (GET, POST, PUT, DELETE), allowing clients to query or modify the current state of a resource.
-
-* **SOAP Web Services APIs**: These APIs utilize a SOAP binding, where API operations and their input parameters are encapsulated within an XML document sent via an HTTP POST method.
-
-* **LDAP APIs**: These APIs bind operations to specific LDAP messages, such as AddRequest, SearchRequest, ModifyRequest, and DelRequest, to perform directory services tasks.
-
-{OMA API TABLE}
-### OMA API Table
