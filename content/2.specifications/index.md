@@ -33,7 +33,7 @@ cols: 2
             icon: tabler:search
             title: Search # First Row
             subtitle: OMA Documentation
-            urlWrapper: "/specifications/#exploring-oma-specifications"
+            urlWrapper: "/specifications/search"
             ---
             ::::
 
@@ -45,7 +45,7 @@ cols: 2
             icon: i-heroicons:puzzle-piece
             title: by Specifications # First Column
             subtitle: OMA Baselines
-            urlWrapper: "/specifications/#search-by-specific-document"
+            urlWrapper: "/specifications/search/specifications"
             ---
             ::::
 
@@ -57,7 +57,7 @@ cols: 2
             icon: codicon:versions
             title: by Enabler # First Column
             subtitle: OMA Enablers
-            urlWrapper: "/specifications/#search-by-project-or-enabler"
+            urlWrapper: "/specifications/search/enablers"
             ---
             ::::
 
@@ -69,7 +69,7 @@ cols: 2
             icon: i-oui:folder-open
             title: by Public Documents # First Column
             subtitle: OMA Public Documentation
-            urlWrapper: "/specifications/#oma-public-documents"
+            urlWrapper: "/specifications/search/public-docs"
             ---
             ::::
         :::
@@ -86,7 +86,7 @@ cols: 2
             icon: i-eos-icons:installing
             title: Registries # Second Row
             subtitle: OMNA Registries
-            urlWrapper: "/specifications/#oma-registries-overview"
+            urlWrapper: "/specifications/registries"
             ---
             ::::
 
@@ -98,7 +98,7 @@ cols: 2
             icon: uit:slack-alt
             title: LwM2M # Second Column
             subtitle: OMNA Registry
-            urlWrapper: "/specifications/#oma-lwm2m-registry"
+            urlWrapper: "/lwm2m/resources/registry"
             ---
             ::::
 
@@ -108,9 +108,9 @@ cols: 2
                 wrapper: mt-5
                 icon: w-1/4
             icon: eos-icons:products-outlined
-            title: Enablers # Second Column
-            subtitle: OMNA Registries
-            urlWrapper: "/specifications/#omna-enabler-registries"
+            title: OMNA Registries # Second Column
+            subtitle: Enablers
+            urlWrapper: "/specifications/registries/enablers"
             ---
             ::::
         :::
