@@ -166,7 +166,7 @@ ui:
   name: text-3xl # controls text font, size and color
   role: text-2xl
   company: text-xl
-  icon: hover:text-primary dark:hover:text-primary
+  icon: hover:text-blue-800 dark:hover:text-blue-400
   # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
@@ -194,7 +194,7 @@ ui:
   name: text-3xl # controls text font, size and color
   role: text-2xl
   company: text-xl
-  icon: hover:text-primary dark:hover:text-primary
+  icon: hover:text-blue-800 dark:hover:text-blue-400
   # twitter, facebook, linkedin & instagram are props for links, so no visual effects can be added here
 srcAvatar: https://avatars.githubusercontent.com/u/3258579?v=4
 altAvatar: JPC
@@ -225,7 +225,7 @@ export default {
     role: "text-lg font-semibold text-black -mt-4 dark:text-gray-400",
     company: "text-lg text-gray-500 tracking-widest -mt-5 dark:text-gray-300",
     socials: "flex text-5xl -mx-1 -mt-4",
-    icon: "transition-transform transform hover:-translate-y-1 dark:primary/[0.3] duration-400",
+    icon: "transition-transform transform hover:-translate-y-1 duration-400 dark:text-primary/[0.6] hover:text-primary dark:hover:text-primary-400",
     // Default Tailwind CSS values
     default: {
     }

@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col w-full dark:bg-[#19191a] " :style="{ fontFamily: main.font.type }">
+  <div class="flex flex-col w-full bg-golden/[0.2] dark:bg-[#19191a]" :style="{ fontFamily: main.font.type }">
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
         <img :src="computedLogoSrc" alt="Logo" />
       </template>
     </AppHeader>
     <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
-      :class="route.path === '/' ? 'w-full h-screen' : 'w-full'">
+      :class="route.path === '/' ? 'w-full h-screen' : 'w-full'" class="pb-24 pt-5">
       <NuxtPage />
     </UContainer>
     <AppFooter v-if="route.path !== '/' && route" />
@@ -100,9 +100,7 @@ h7 {
   font-family: var(--h7-font-type);
 }
 
-.dark code,
-.dark a,
-.dark p,
+.dark div[data-content-id],/* Add dark mode to the content, but leave components out */
 .dark strong,
 .dark em,
 .dark ul,
@@ -115,6 +113,86 @@ h7 {
 .dark h4,
 .dark h5,
 .dark h6 {
-  color: #E7D6C2;
+  color: theme('colors.golden');
+}
+
+/* Links */
+a {
+  color: theme('colors.oma-blue.300');
+  text-decoration: none;
+}
+
+a:hover {
+  color: theme('colors.oma-blue.700');
+}
+
+.dark a {
+  color: theme('colors.oma-blue.200');
+  text-decoration: none;
+}
+
+.dark a:hover {
+  color: theme('colors.oma-blue.400');
+}
+
+/* Code block */
+code {
+  border: 3px solid #dcdcdc;
+  border-radius: 6px;
+  background-color: #dcdcdc;
+  padding: 2px 6px;
+  position: relative;
+}
+
+code::before,
+code::after {
+  content: '';
+  display: none;
+}
+
+.dark code {
+  border: 3px solid #414141;
+  border-radius: 6px;
+  background-color: #414141;
+  padding: 2px 6px;
+  color: #ffffff;
+}
+
+pre code {
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.dark pre code {
+  border: none;
+  background: none;
+  color: #ffffff; 
+}
+
+/* Blockquote */
+blockquote {
+  background-color: theme('colors.neutral.200');
+  border-left: 4px solid #858585;
+  color: #333;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;;
+}
+
+.dark blockquote {
+  background-color: theme('colors.neutral.700');
+  border-left: 4px solid #ccc;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.dark blockquote p {
+  margin: 0; /* Remove default margin from paragraphs */
+  color: white;
 }
 </style>
