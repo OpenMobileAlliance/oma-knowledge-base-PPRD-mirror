@@ -149,7 +149,7 @@ cols: 4
         icon: ic:baseline-diversity-3
         title: OMA Groups # Third Column
         subtitle: Working Groups
-        urlWrapper: /omaspecworks/working-groups
+        urlWrapper: /omaspecworks/collaborate/working-groups
         ---
         ::::  
         
