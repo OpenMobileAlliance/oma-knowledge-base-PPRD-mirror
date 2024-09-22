@@ -18,17 +18,8 @@ networks.
 
 ![](/images/omaspecworks/about/DALL_E_Idea_machine_landscape.png){ class="mx-auto hover:scale-105"}
 
-[Members](/omaspecworks/membership/members) of OMA SpecWorks collaborate in a
-transparent and egalitarian environment, where companies of all sizes can
-contribute equally to the advancement of wireless technology standards. The
-organization’s commitment to producing high-quality technical outputs has been
-demonstrated through the success of protocols like [LwM2M](/lwm2m/about/what-is){ target="_blank" },
-which is now widely adopted in sectors such as healthcare, automotive,
-utilities, and home automation.
-
 By merging with the IPSO Alliance in 2018, OMA SpecWorks further
 strengthened its mission to develop comprehensive technical documents—ranging
 from specifications to smart objects and white papers—supporting the ongoing
 evolution of the connected world and ensuring that protocols like LwM2M
 continue to lead the way in IoT device management.
-
