@@ -113,6 +113,18 @@ cols: 2
             urlWrapper: "/specifications/registries/enablers"
             ---
             ::::
+
+            ::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+                icon: w-1/4
+            icon: i-carbon:ibm-watson-knowledge-catalog
+            title: Supportig Data # Second Column
+            subtitle: Enablers
+            urlWrapper: "/specifications/registries/supporting-data"
+            ---
+            ::::            
         :::
 
         :::ShColumn 
