@@ -1,0 +1,270 @@
+[
+    {
+        "ObjectIDRange": "32769 - 32818", 
+        "CompanyName": "Nokia"
+    },
+    {
+        "ObjectIDRange": "32819 - 32868", 
+        "CompanyName": "VAISALA"
+    },
+    {
+        "ObjectIDRange": "32869 - 32918", 
+        "CompanyName": "Eaton"
+    },
+    {
+        "ObjectIDRange": "32919 - 32968", 
+        "CompanyName": "Eaton"
+    },
+    {
+        "ObjectIDRange": "32969 - 33009", 
+        "CompanyName": "HOP Ubiquitous"
+    },
+    {
+        "ObjectIDRange": "33010 - 33039", 
+        "CompanyName": "UnSeen Technologies"
+    },
+    {
+        "ObjectIDRange": "33040 - 33049", 
+        "CompanyName": "NetComm Wireless"
+    },
+    {
+        "ObjectIDRange": "33050 - 33089", 
+        "CompanyName": "U-Blox"
+    },
+    {
+        "ObjectIDRange": "33090 - 33139", 
+        "CompanyName": "Gemalto"
+    },
+    {
+        "ObjectIDRange": "33140 - 33189", 
+        "CompanyName": "Qualcomm"
+    },
+    {
+        "ObjectIDRange": "33190 - 33204", 
+        "CompanyName": "Geoforce"
+    },
+    {
+        "ObjectIDRange": "33205 - 33254", 
+        "CompanyName": "Telit"
+    },
+    {
+        "ObjectIDRange": "33255 - 33304", 
+        "CompanyName": "Altair Semiconductor"
+    },
+    {
+        "ObjectIDRange": "33305 - 33354", 
+        "CompanyName": "Xylem"
+    },
+    {
+        "ObjectIDRange": "33355 - 33404", 
+        "CompanyName": "Neopis co., ltd."
+    },
+    {
+        "ObjectIDRange": "33405 - 33454", 
+        "CompanyName": "Sierra Wireless"
+    },
+    {
+        "ObjectIDRange": "33455 - 33504", 
+        "CompanyName": "Pelion"
+    },
+    {
+        "ObjectIDRange": "33505 - 33554", 
+        "CompanyName": "Verizon"
+    },
+    {
+        "ObjectIDRange": "33555 - 33604", 
+        "CompanyName": "Treon"
+    },
+    {
+        "ObjectIDRange": "33605 - 33654", 
+        "CompanyName": "AVSystem sp. z o.o."
+    },
+    {
+        "ObjectIDRange": "33655 - 33704", 
+        "CompanyName": "U-Blox"
+    },
+    {
+        "ObjectIDRange": "33705 - 33754", 
+        "CompanyName": "Airbus"
+    },
+    {
+        "ObjectIDRange": "33755 - 33804", 
+        "CompanyName": "MikroTik"
+    },
+    {
+        "ObjectIDRange": "33805 - 33854", 
+        "CompanyName": "Cree Lighting"
+    },
+    {
+        "ObjectIDRange": "33855 - 33904", 
+        "CompanyName": "Endian Technologies AB"
+    },
+    {
+        "ObjectIDRange": "33905 - 33954", 
+        "CompanyName": "Elvaco AB"
+    },
+    {
+        "ObjectIDRange": "33955 - 33969", 
+        "CompanyName": "DGT SP. Z O.O"
+    },
+    {
+        "ObjectIDRange": "33970 - 34019", 
+        "CompanyName": "Storopack"
+    },
+    {
+        "ObjectIDRange": "34020 - 34069", 
+        "CompanyName": "Murata"
+    },
+    {
+        "ObjectIDRange": "34070 - 34119", 
+        "CompanyName": "LEHE Information Technology Co.,Ltd"
+    },
+    {
+        "ObjectIDRange": "34120 - 34129", 
+        "CompanyName": "VOI Technologies AB"
+    },
+    {
+        "ObjectIDRange": "34130 - 34179", 
+        "CompanyName": "Telecommunication Technology Association"
+    },
+    {
+        "ObjectIDRange": "34180 - 34229", 
+        "CompanyName": "Kerlink"
+    },
+    {
+        "ObjectIDRange": "34230 - 34279", 
+        "CompanyName": "NTT DOCOMO"
+    },
+    {
+        "ObjectIDRange": "34280 - 34329", 
+        "CompanyName": "Blackline Safety Corp"
+    },
+    {
+        "ObjectIDRange": "34330 - 34379", 
+        "CompanyName": "Itron"
+    },
+    {
+        "ObjectIDRange": "34380 - 34429", 
+        "CompanyName": "Arad Group"
+    },
+    {
+        "ObjectIDRange": "34430 - 34449", 
+        "CompanyName": "Comsel System Ltd"
+    },
+    {
+        "ObjectIDRange": "34450 - 34499", 
+        "CompanyName": "Adeunis"
+    },
+    {
+        "ObjectIDRange": "34500 - 34549", 
+        "CompanyName": "QRTECH AB"
+    },
+    {
+        "ObjectIDRange": "34550 - 34599", 
+        "CompanyName": "Friendly Technologies"
+    },
+    {
+        "ObjectIDRange": "34600 - 34649", 
+        "CompanyName": "Walt Technologies"
+    },
+    {
+        "ObjectIDRange": "34650 - 34699", 
+        "CompanyName": "WEPTECH elektronik GmbH"
+    },
+    {
+        "ObjectIDRange": "34700 - 34749", 
+        "CompanyName": "PSsystec"
+    },
+    {
+        "ObjectIDRange": "34750 - 34799", 
+        "CompanyName": "Deutsche Telekom"
+    },
+    {
+        "ObjectIDRange": "34800 - 34849", 
+        "CompanyName": "Visive Group Ltd."
+    },
+    {
+        "ObjectIDRange": "34850 - 34899", 
+        "CompanyName": "Landis+Gyr"
+    },
+    {
+        "ObjectIDRange": "34900 - 34949", 
+        "CompanyName": "Sinai RnD"
+    },
+    {
+        "ObjectIDRange": "34950 - 34999", 
+        "CompanyName": "Korea Electronics Technology Institute"
+    },
+    {
+        "ObjectIDRange": "35000 - 35049", 
+        "CompanyName": "M2M Solutions AB"
+    },
+    {
+        "ObjectIDRange": "35050 - 35099", 
+        "CompanyName": "PGE Dystrybucja SA"
+    },
+    {
+        "ObjectIDRange": "35100 - 35149", 
+        "CompanyName": "BH Technologies"
+    },
+    {
+        "ObjectIDRange": "35150 - 35199", 
+        "CompanyName": "Sensorbee AB"
+    },
+    {
+        "ObjectIDRange": "35200 - 35249", 
+        "CompanyName": "CaraTech AB"
+    },
+    {
+        "ObjectIDRange": "35250 - 35299", 
+        "CompanyName": "Ineo-Sense"
+    },
+    {
+        "ObjectIDRange": "35300 - 35349", 
+        "CompanyName": "vonRoll hydro"
+    },
+    {
+        "ObjectIDRange": "35350 - 35399", 
+        "CompanyName": "Sensile Technologies SA"
+    },
+    {
+        "ObjectIDRange": "35400 - 35449", 
+        "CompanyName": "Watts A/S"
+    },
+    {
+        "ObjectIDRange": "35450 - 35499", 
+        "CompanyName": "Grinn sp. z.o.o"
+    },
+    {
+        "ObjectIDRange": "35500 - 35549", 
+        "CompanyName": "Lactec"
+    },
+    {
+        "ObjectIDRange": "35550 - 35599", 
+        "CompanyName": "Tecsys do Brasil"
+    },
+    {
+        "ObjectIDRange": "35600 - 35649", 
+        "CompanyName": "Axioma Metering"
+    },
+    {
+        "ObjectIDRange": "35650 - 35699", 
+        "CompanyName": "T-Mobile"
+    },
+    {
+        "ObjectIDRange": "35700 - 35749", 
+        "CompanyName": "Moxa Inc."
+    },
+    {
+        "ObjectIDRange": "35750 - 35799", 
+        "CompanyName": "Atlas Copco"
+    },
+    {
+        "ObjectIDRange": "35800 - 35849", 
+        "CompanyName": "Autosen"
+    },
+    {
+        "ObjectIDRange": "35850 - 35899", 
+        "CompanyName": "Paradox Engineering SA"
+    }
+]
