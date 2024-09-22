@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: process.NODE_ENV === 'production' ? "/oma-knowledge-base/" : '/',
+    // baseURL: process.NODE_ENV === 'production' ? "/oma-knowledge-base/" : '/',
     head: {
       link: [
         { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
