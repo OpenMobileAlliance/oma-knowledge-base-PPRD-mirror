@@ -300,7 +300,19 @@ cols: 5
         subtitle: Working Groups
         urlWrapper: "/omaspecworks/collaborate/working-groups"
         ---
-        ::::        
+        ::::     
+
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: mt-5
+            icon: w-1/3
+        icon: fluent:news-24-regular
+        title: Newsletter # Fifth Column
+        subtitle: Apply
+        urlWrapper: "/lwm2m/get-involved/newsletter/"
+        ---
+        ::::
 
         ::::ShMicroCard
         ---
