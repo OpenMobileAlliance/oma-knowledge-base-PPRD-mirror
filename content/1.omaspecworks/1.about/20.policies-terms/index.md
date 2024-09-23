@@ -9,7 +9,6 @@ layout: doc
 IMPORTANT: PLEASE READ THIS USE AGREEMENT (‘AGREEMENT’) CAREFULLY. THE OPEN MOBILE ALLIANCE (‘OPEN MOBILE ALLIANCE’) PROVIDES ACCESS TO CERTAIN DOCUMENTS TO YOU, YOUR EMPLOYEES, AGENTS, AND CONTRACTORS, AND ANY OTHER ENTITY ON WHOSE BEHALF YOU ACCEPT THIS AGREEMENT (COLLECTIVELY ‘YOU’), SUBJECT TO THIS AGREEMENT. THIS AGREEMENT IS ENTERED INTO BY AND BETWEEN THE OPEN MOBILE ALLIANCE AND YOU. BY CLICKING BELOW AFTER THE FULL TEXT THE ‘AGREE’ BUTTON YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, CLICK THE ‘DO NOT AGREE’ BUTTON. IF YOU CLICK THE ‘DO NOT AGREE’ BUTTON, YOU WILL NOT BE PROVIDED ACCESS TO THE DOCUMENTS AND AGREE THAT YOU WILL HAVE NO RIGHT TO USE THE DOCUMENTS OR THE INFORMATION CONTAINED THEREIN.
 
 [View the Complete Use Agreement](/omaspecworks/about/policies-terms/use-agreement)
-
 ### Intellectual Property Rights
 All OMA members operate under the same IPR policy.
 In the course of specifications work, the Open Mobile Alliance receives contributions in various forms. To best facilitate the dissemination of these contributions, it is necessary to understand any intellectual property rights (‘IPR’) relating to the contributions.
@@ -20,7 +19,6 @@ In the course of specifications work, the Open Mobile Alliance receives contribu
 The ‘OMA’ logo, ‘Open Mobile Alliance™’, ‘WAP Forum™’, ‘W@P Certified™’, ‘W@P™’, ‘SyncML™’, ‘SyncML’ logo, ‘Wireless Village™’, ‘Wireless Village’ logo and all trademarks, service marks, and logos based on these designations (‘Trademarks’) are marks of Open Mobile Alliance (the ‘Open Mobile Alliance™’) and are the subject of registrations and pending applications throughout the world. There are 2 subsections.
 
 [View the Complete Trademark Policy](/omaspecworks/about/policies-terms/trademarks)
-
 ### Antitrust
 The following documents govern the antitrust guidelines and policies of the Open Mobile Alliance:
 

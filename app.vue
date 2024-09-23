@@ -2,7 +2,8 @@
   <div class="flex flex-col w-full bg-golden/[0.2] dark:bg-[#19191a]" :style="{ fontFamily: main.font.type }">
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
-        <img :src="computedLogoSrc" alt="Logo" />
+        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="Logo" />
+        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="Logo" />
       </template>
     </AppHeader>
     <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
@@ -23,7 +24,7 @@ const route = useRoute();
 const theme = useColorMode();
 
 const computedLogoSrc = computed(() => {
-  return theme.value === 'dark' ? '/logo-dark.png' : '/logo-light.png';
+  return theme.value === 'dark';
 });
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
@@ -100,7 +101,8 @@ h7 {
   font-family: var(--h7-font-type);
 }
 
-.dark div[data-content-id],/* Add dark mode to the content, but leave components out */
+.dark div[data-content-id],
+/* Add dark mode to the content, but leave components out */
 .dark strong,
 .dark em,
 .dark ul,
@@ -169,7 +171,7 @@ pre code {
 .dark pre code {
   border: none;
   background: none;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 /* Blockquote */
@@ -181,7 +183,8 @@ blockquote {
 }
 
 blockquote p {
-  margin: 0;;
+  margin: 0;
+  ;
 }
 
 .dark blockquote {
@@ -192,7 +195,8 @@ blockquote p {
 }
 
 .dark blockquote p {
-  margin: 0; /* Remove default margin from paragraphs */
+  margin: 0;
+  /* Remove default margin from paragraphs */
   color: white;
 }
 </style>
