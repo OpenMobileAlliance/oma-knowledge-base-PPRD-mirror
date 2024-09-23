@@ -3,13 +3,13 @@ export default {
   header: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   search: "pb-4",
-  filter: "",
+  filter:  "",
   table: 'min-w-full divide-y divide-gray-300 dark:divide-gray-700',
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
   tr: {
     base: '',
-    selected: 'bg-gray-50 dark:bg-gray-800/50',
-    active: 'hover:bg-gray-50 dark:hover:bg-gray-800/50 cursor-pointer'
+    selected: 'bg-gray-300 dark:bg-gray-500',
+    active: 'hover:bg-gray-200 dark:hover:bg-gray-300 cursor-pointer'
   },
   th: {
     base: 'text-left rtl:text-right',
