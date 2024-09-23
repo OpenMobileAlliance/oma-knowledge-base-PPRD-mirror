@@ -298,7 +298,7 @@ cols: 5
         icon: i-ic:baseline-groups-3
         title: LwM2M Groups # Fifth Column
         subtitle: Working Groups
-        urlWrapper: "/lwm2m/get-involved/working-groups"
+        urlWrapper: "/omaspecworks/collaborate/working-groups"
         ---
         ::::        
 
