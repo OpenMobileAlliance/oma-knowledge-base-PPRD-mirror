@@ -23,7 +23,7 @@
               </span>
               <span class="mr-2 text-base">
                 <!-- TODO: provide proper URL -->
-                <ULink to="/" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
+                <ULink to="/contact-us" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
               </span>
               <slot name="right">
                 <AppSocialLinks class="text-xl" />
