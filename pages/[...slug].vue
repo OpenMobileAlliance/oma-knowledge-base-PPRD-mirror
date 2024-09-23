@@ -16,7 +16,7 @@
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <PrevNextPage v-if="$route.path !== '/'" />
+            <!-- <PrevNextPage v-if="$route.path !== '/'" /> -->
           </section>
         </div>
       </template>

@@ -1,11 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode'],
+  
   colorMode: {
     preference: 'system'
   },
   content: {
-    documentDriven: true,
     highlight: {
       theme: {
         default: 'github-dark',
@@ -29,6 +30,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    // baseURL: process.NODE_ENV === 'production' ? "/oma-knowledge-base/" : '/',
     head: {
       link: [
         { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
@@ -38,4 +40,10 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   compatibilityDate: "2024-08-13",
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
+  }
 });
