@@ -19,7 +19,7 @@
         <ContentRenderer v-else :value="excerpt" excerpt />
       </div>
       <div v-if="page._path === '/news'">
-        <NuxtLink :to="article" target="_blank" class="hover:text-oma-blue-500 not-prose">
+        <NuxtLink :to="article" target="_blank" class="not-prose">
           Read more...
         </NuxtLink>
       </div>
