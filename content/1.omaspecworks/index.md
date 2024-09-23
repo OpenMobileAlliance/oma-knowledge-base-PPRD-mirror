@@ -211,10 +211,10 @@ cols: 4
         ui:
             wrapper: mt-5
             icon: w-1/3
-        icon: ic:outline-email
+        icon: fluent:news-24-regular
         title: Newsletter # Fourth Column
         subtitle: Join our Newsletter!
-        urlWrapper: /omaspecworks/get-involved/contact-us
+        urlWrapper: /omaspecworks/get-involved/newsletter
         ---
         ::::
 

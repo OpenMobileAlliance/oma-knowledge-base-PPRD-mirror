@@ -310,7 +310,7 @@ cols: 5
         icon: fluent:news-24-regular
         title: Newsletter # Fifth Column
         subtitle: Apply
-        urlWrapper: "/lwm2m/get-involved/newsletter/"
+        urlWrapper: "/omaspecworks/get-involved/newsletter"
         ---
         ::::
 
