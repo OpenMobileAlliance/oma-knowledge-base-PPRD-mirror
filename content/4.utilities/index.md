@@ -94,7 +94,7 @@ cols: 3
         icon: lucide:puzzle
         title: Use Cases # Third Column
         subtitle: Utitlities
-        urlWrapper: "/utilities/market-potential/#use-cases"
+        urlWrapper: "/utilities/market-potential/use-cases"
         ---
         ::::        
 
