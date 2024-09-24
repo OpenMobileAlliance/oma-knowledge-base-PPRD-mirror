@@ -1,5 +1,5 @@
 <template>
-    <div v-if="page?.body?.toc?.links?.length > 0" class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
+    <div v-if="page?.body?.toc?.links?.length > 0" class="">
         <nav>
             <button
                 class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
@@ -12,7 +12,7 @@
                     :class="[isActive(link.id) ? ui.active : ui.normal]">
                     <ULink :id="`toc-${link.id}`" :to="`${page._path}#${link.id}`"
                         :class="[ui.shadow, isActive(link.id) ? ui.link.active : ui.link.normal]"
-                        class="not-prose truncate pl-1 pr-1 text-black dark:text-golden">
+                        class="not-prose pl-1 pr-1 text-black dark:text-golden">
                         {{ link.text }}
                     </ULink>
                     <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
@@ -28,6 +28,7 @@
                 </li>
             </ul>
         </nav>
+        <hr class="w-1/2 mx-auto"/>
     </div>
 </template>
 
@@ -61,7 +62,7 @@ onMounted(() => {
                 activeSection.value = entry.target.id;
             }
         });
-    }, { rootMargin: '-10% 0px -80% 0px' });
+    }, { rootMargin: '-10%' });
 
     page.value.body.toc.links.forEach((link) => {
         const section = document.getElementById(link.id);

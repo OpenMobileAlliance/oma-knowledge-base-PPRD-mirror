@@ -1,12 +1,16 @@
 <template>
   <main class="">
-    <article class="prose w-full max-w-full mt-16">
+    <article class="prose w-fit max-w-fit mt-16">
+
       <template v-if="page?.layout === 'doc'">
-        <div class="flex">
+        <div class="">
           <AppSideMenu :items="displayNavigation"
             class="fixed top-56 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
-          <AppToc class="top-56" />
-          <section :class="contentClass" class="ml-64 pl-8 pr-8">
+          <div class="fixed right-8 w-64">
+            <AppToc class="top-56" />
+            <AppUsefulLinks class="" />
+          </div>
+          <section :class="contentClass" class="ml-64 mr-64 pl-8 pr-8">
             <h1 class="capitalize hover:uppercase">
               {{ page.title }}
             </h1>
@@ -18,9 +22,9 @@
             </ContentRenderer>
             <!-- <PrevNextPage v-if="$route.path !== '/'" /> -->
           </section>
-          <AppUsefulLinks />
         </div>
       </template>
+
       <template v-else-if="page?.layout === 'articles'">
         <div class="-mt-16 mx-64 ">
           <div class="container flex mx-auto">
@@ -51,6 +55,7 @@
           </div>
         </div>
       </template>
+
       <template v-else>
         <ContentRenderer :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-24">
           <template #not-found>
@@ -58,7 +63,7 @@
               icon="i-heroicons-exclamation-triangle" />
           </template>
         </ContentRenderer>
-        <PrevNextPage v-if="route.path !== '/'" />
+        <!--<PrevNextPage v-if="route.path !== '/'" />-->
       </template>
     </article>
   </main>

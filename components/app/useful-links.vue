@@ -1,6 +1,5 @@
 <template>
-    <div class="">
-        <hr />
+    <div class="w-full group">
         <p class="dark:text-golden">
             <b>Useful links</b>
         </p>
