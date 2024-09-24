@@ -248,13 +248,13 @@ const getQuickFilterClass = () => {
   }, 0)
 
   if (numFilterColumns < 2) {
-    return 'grid grid-cols-1 gap-4'
+    return 'grid grid-cols-1 gap-4 min-h-48'
   } else if (numFilterColumns < 3) {
-    return 'grid grid-cols-2 gap-2'
+    return 'grid grid-cols-2 gap-2 min-h-48'
   } else if (numFilterColumns < 4) {
-    return 'grid grid-cols-3 gap-1'
+    return 'grid grid-cols-3 gap-1 min-h-48'
   } else {
-    return 'grid grid-cols-4 gap-1'
+    return 'grid grid-cols-4 gap-1 min-h-48'
   }
 }
 
