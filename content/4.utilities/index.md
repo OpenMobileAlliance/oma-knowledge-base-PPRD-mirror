@@ -130,7 +130,7 @@ cols: 3
         icon: fluent:chat-bubbles-question-16-regular
         title: Q&A # Second Column
         subtitle: on Utilities & LwM2M
-        urlWrapper: "/utilities/market-potential/faq/"
+        urlWrapper: "/faq#utilities"
         ---
         ::::         
     :::  
