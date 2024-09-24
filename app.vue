@@ -175,14 +175,14 @@ pre code {
 }
 
 /* Blockquote */
-blockquote {
+.light blockquote {
   background-color: theme('colors.neutral.200');
   border-left: 4px solid #858585;
   color: #333;
   font-style: italic;
 }
 
-blockquote p {
+.light blockquote p {
   margin: 0;
   ;
 }
