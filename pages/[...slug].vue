@@ -2,10 +2,10 @@
   <main class="">
     <article class="prose w-full max-w-full mt-16">
       <template v-if="page?.layout === 'doc'">
-        <div class="">
+        <div class="flex">
           <AppSideMenu :items="displayNavigation"
             class="fixed top-56 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
-            <AppToc class="top-56" />
+          <AppToc class="top-56" />
           <section :class="contentClass" class="ml-64 pl-8 pr-8">
             <h1 class="capitalize hover:uppercase">
               {{ page.title }}
@@ -18,6 +18,7 @@
             </ContentRenderer>
             <!-- <PrevNextPage v-if="$route.path !== '/'" /> -->
           </section>
+          <AppUsefulLinks />
         </div>
       </template>
       <template v-else-if="page?.layout === 'articles'">
