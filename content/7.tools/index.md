@@ -81,9 +81,9 @@ cols: 3
         ui:
             wrapper: mb-2  bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900     
             icon: w-1/4   
-        urlWrapper: /tools/lwm2m-tool-kit
+        urlWrapper: ""
         title: Developer's Tool Kit
-        subtitle: LwM2M
+        subtitle: DECOMMISSIONED
         icon: i-devicon-plain:fastapi
         ---
         :::::
@@ -100,8 +100,9 @@ The Open Mobile Alliance (OMA) provides a comprehensive suite of tools designed 
 ### LwM2M Editor / Validator: 
 * A crucial tool for creating and validating LwM2M objects and resources, ensuring compliance with OMA standards while allowing seamless integration with the OMNA registry.
 
-### LwM2M Developer's Kit: 
-* A browser-based development tool designed to test and interact with LwM2M servers, enhancing developers' ability to work with machine-to-machine communication protocols directly from their browser.
+### ~LwM2M Developer's Kit:~
+* ~A browser-based development tool designed to test and interact with LwM2M servers, enhancing developers' ability to work with machine-to-machine communication protocols directly from their browser.~
+> Note: The LwM2M Developer ToolKit has been decommissioned.
 
 ### LwM2M Guidelines: 
 * Detailed documentation guiding users in defining and registering new LwM2M objects and resources, ensuring adherence to OMA standards.

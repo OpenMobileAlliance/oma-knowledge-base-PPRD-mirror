@@ -1,7 +1,7 @@
 <template>
   <div :class="[ui.wrapper, props.class]" v-bind="attrs">
     <div v-if="props.header" :class="ui.header">
-      <MDC :value="props.header" />
+      <MDC v-if="props.header" :value="props.header" />
     </div>
     <div :class="ui.base">
       <div :class="ui.search">
@@ -68,6 +68,7 @@
 
 <script setup lang="ts">
 import { dynamicTable as config } from "@/ui.config"
+const { $filterDDFObjects } = useNuxtApp();
 
 const PER_PAGE_LIST = config.perPage
 
@@ -95,6 +96,7 @@ const props = withDefaults(
     header?: String;
     footer?: String;
     perPage?: Number;
+    transformRawData?: any;
     class?: Any;
   }>(),
   {
@@ -105,6 +107,7 @@ const props = withDefaults(
     header: '',
     footer: '',
     perPage: config.default.perPage,
+    transformRawData: () => null,
     class: () => undefined
   });
 
@@ -116,12 +119,24 @@ const { ui, attrs } = useUI(
 )
 
 const fetchData = async () => {
-  const data = await $fetch(props.dataUrl)
+  try {
 
-  if (props.dataField) {
-    return data[props.dataField]
-  } else {
-    return data
+    let data = await $fetch(props.dataUrl)
+    if (props.transformRawData) {
+      if (props.transformRawData === "filterDDFObjects") {
+        data = $filterDDFObjects(data)
+
+      }
+    }
+
+    if (props.dataField) {
+      return data[props.dataField]
+    } else {
+      return data
+    }
+  } catch (error) {
+    console.log(error)
+    return []
   }
 }
 
@@ -208,7 +223,7 @@ const filterDataByQuickFilter = (data) => {
 
 const sortDisplayData = (data) => {
   if (Object.keys(sortColumn).length > 0) {
-    return data.sort ? data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
+    return (data && typeof data.sort === 'function') ? data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
   } else {
     return data
   }
@@ -266,7 +281,7 @@ const getStats = (data) => {
     }
   })
 
-  if (data.forEach) {
+  if (data && typeof data.forEach === 'function') {
     data.forEach(el => {
       props.columns.forEach(column => {
         if (Object.keys(el).includes(column.name) && Object.keys(stats).includes(column.name)) {
@@ -275,7 +290,6 @@ const getStats = (data) => {
         }
       })
     })
-
   }
 
   return stats
@@ -337,6 +351,7 @@ const onSort = (column) => {
   }
   updateDisplayData()
 }
+
 
 
 await updateData()
