@@ -2,16 +2,20 @@
   <div :class="ui.wrapper">
     <NuxtLink :to="urlWrapper" class="not-prose">
       <div class="relative group">
-        <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage"/>
+        <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage" />
         <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="ui.icon" />
         <div class="relative">
-          <MDC v-if="title" :class="[ui.title, 'transition-opacity duration-300', { 'group-hover:text-transparent': clipboard===true }]" :value="title" />
+          <MDC v-if="title"
+            :class="[ui.title, 'transition-opacity duration-300', { 'group-hover:text-transparent': clipboard === true }]"
+            :value="title" />
           <MDC v-if="subtitle" :class="[ui.subtitle, 'transition-opacity duration-300']" :value="subtitle" />
           <MDC v-if="text" :class="[ui.text, 'transition-opacity duration-300']" :value="text" />
         </div>
-        <div v-if="clipboard" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
+        <div v-if="clipboard"
+          class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
           <button @click="toast.add({ title: 'Copied! Click here to check clipboard!', click: onClick })">
-            <UIcon @click="copyToClipboard"  name="i-line-md:clipboard-arrow" alt="cliboard-icon" dynamic class="text-5xl text-black" />
+            <UIcon @click="copyToClipboard" name="i-line-md:clipboard-arrow" alt="cliboard-icon" dynamic
+              class="text-5xl text-black" />
           </button>
         </div>
       </div>
@@ -47,7 +51,7 @@ const props = withDefaults(
     title: "",
     subtitle: "",
     text: "",
-    clipboard: false, 
+    clipboard: false,
   });
 
 const { ui } = useUI(
@@ -63,7 +67,7 @@ const copyToClipboard = () => {
   navigator.clipboard.writeText(colorName.value);
 };
 
-function onClick () {
-  alert('Currently copied: '+colorName.value);
+function onClick() {
+  alert('Currently copied: ' + colorName.value);
 }
 </script>
