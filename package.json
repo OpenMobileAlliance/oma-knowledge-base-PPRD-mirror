@@ -20,7 +20,8 @@
     "@nuxt/ui": "^2.14.2",
     "nuxt": "^3.11.0",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
