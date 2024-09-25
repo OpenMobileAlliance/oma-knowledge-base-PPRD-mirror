@@ -17,7 +17,7 @@ size: S
   understand the world. There is no such thing as a dumb question. - Carl Sagen]
 ::
 
-## F.A.Q about OMA
+## OMA & OMASpecWorks
 This section is updated based on the questions received by the Working Groups.
 
 ::ShFaq
@@ -72,10 +72,11 @@ qas:
 ::
 
 ::ShAlert
-Download the these Q&As: <a href="https://member.openmobilealliance.org/FTP/Public_documents/OMASpecWorks/OMASpecWorks%20FAQ%20.pdf" target="_blank" rel="noopener noreferrer">OMA FAQs in PDF</a>
+Download the these Q&As: <a href="/faq/OMASpecWorks FAQ.pdf" target="_blank" rel="noopener noreferrer">OMA FAQs in PDF</a>
 ::
 
-### LwM2M
+## LwM2M
+Frequent asked questions about OMA LightweithM2M (LwM2M).
 
 ::ShFaq
 ---
@@ -105,9 +106,9 @@ qas:
 ---
 ::
 
-### TestFest
+## Test Events
 
-This section aims to provide an overview of what is an OMA TestFest Event, and what you can expect out of the Event.
+This section aims to provide an overview of what is an OMA Test Events, and what you can expect out of the Event.
 
 ::ShFaq
 ---
@@ -136,7 +137,7 @@ qas:
 ---
 ::
 
-### Utilities 
+## Utilities 
 
 ::ShAlert
 Download the these Q&As: <a href="https://www.openmobilealliance.org/documents/whitepapers/OMA-WP-LwM2M-for-Utilities/OMA-QA-Utilities-And-LwM2M-20231120-D.pdf" target="_blank" rel="noopener noreferrer">Utilities and LwM2M Frequent Asked Questions (FAQs)</a>
