@@ -7,7 +7,7 @@
       </template>
     </AppHeader>
     <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
-      :class="route.path === '/' ? 'w-full h-screen' : 'w-full'" class="pb-24 pt-5">
+      :class="route.path === '/' ? 'w-fit h-screen' : 'w-fit'" class="pb-24 pt-5">
       <NuxtPage />
     </UContainer>
     <AppFooter v-if="route.path !== '/' && route" />
@@ -175,14 +175,14 @@ pre code {
 }
 
 /* Blockquote */
-blockquote {
+.light blockquote {
   background-color: theme('colors.neutral.200');
   border-left: 4px solid #858585;
   color: #333;
   font-style: italic;
 }
 
-blockquote p {
+.light blockquote p {
   margin: 0;
   ;
 }
