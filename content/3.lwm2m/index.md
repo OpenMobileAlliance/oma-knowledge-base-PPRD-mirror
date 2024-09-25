@@ -336,7 +336,7 @@ cols: 5
         title: F.A.Q # Fifth Column
         subtitle: |
             **
-        urlWrapper: "/omaspecworks/get-involved/faq"
+        urlWrapper: "/faq#lwm2m"
         ---
         ::::
     :::     

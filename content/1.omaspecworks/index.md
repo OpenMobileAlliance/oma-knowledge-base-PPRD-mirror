@@ -226,7 +226,7 @@ cols: 4
         icon: ic:outline-live-help
         title: F.A.Q # Fourth Column
         subtitle: Questions & Answers
-        urlWrapper: /omaspecworks/get-involved/faq
+        urlWrapper: /faq
         ---
         ::::
     :::          
