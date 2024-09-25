@@ -310,7 +310,7 @@ cols: 5
         icon: fluent:news-24-regular
         title: Newsletter # Fifth Column
         subtitle: Apply
-        urlWrapper: "/omaspecworks/get-involved/newsletter"
+        urlWrapper: "/newsletter"
         ---
         ::::
 
@@ -336,7 +336,7 @@ cols: 5
         title: Contact us # Fifth Column
         subtitle: |
             **
-        urlWrapper: "/omaspecworks/get-involved/contact-us"
+        urlWrapper: "contact-us"
         ---
         ::::
         ::::ShMicroCard

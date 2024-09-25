@@ -202,7 +202,7 @@ cols: 4
         icon: ic:outline-email
         title: Contact us # Fourth Column
         subtitle: Talk to us
-        urlWrapper: /omaspecworks/get-involved/contact-us
+        urlWrapper: /contact-us
         ---
         ::::
 
@@ -214,7 +214,7 @@ cols: 4
         icon: fluent:news-24-regular
         title: Newsletter # Fourth Column
         subtitle: Join our Newsletter!
-        urlWrapper: /omaspecworks/get-involved/newsletter
+        urlWrapper: /newsletter
         ---
         ::::
 
