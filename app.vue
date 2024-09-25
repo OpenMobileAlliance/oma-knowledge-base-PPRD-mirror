@@ -63,7 +63,8 @@ onMounted(() => {
 const hasScrollbar = ref(false)
 
 const checkScrollbar = () => {
-  hasScrollbar.value = window.innerWidth > document.documentElement.clientWidth
+  const hasVerticalOverflow = document.documentElement.scrollHeight > document.documentElement.clientHeight
+  hasScrollbar.value = hasVerticalOverflow
 }
 
 const computedHeightClass = computed(() => (hasScrollbar.value ? 'h-full' : 'h-screen'))
@@ -73,7 +74,7 @@ let observer: MutationObserver | null = null
 onMounted(() => {
   checkScrollbar()
 
-  // Check for changes in the document that may affect scrollbar visibility
+  // Check for changes in the document that may affect scrollability
   observer = new MutationObserver(checkScrollbar)
   observer.observe(document.body, {
     childList: true,
@@ -88,6 +89,7 @@ onBeforeUnmount(() => {
   if (observer) observer.disconnect()
   window.removeEventListener('resize', checkScrollbar)
 })
+
 </script>
 
 <style>
