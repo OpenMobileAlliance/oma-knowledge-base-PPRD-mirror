@@ -86,7 +86,6 @@ const handleResize = () => {
   windowWidth.value = window.innerWidth;
 };
 
-// Ensure window.innerWidth is accessed only in the browser otherwise it will throw an error on refresh
 onMounted(() => {
   windowWidth.value = window.innerWidth;
   window.addEventListener('resize', handleResize);
@@ -113,16 +112,20 @@ const gridClass = computed(() => {
 const route = useRoute()
 const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 
-const cards = ref<any[]>([]); // Ref to store fetched card data
-const tags = ref<string[]>([]); // Ref to store all tags
-const selectedTags = ref<string[]>([]); // Ref to store selected tags
+const cards = ref<any[]>([]);
+const tags = ref<string[]>([]);
+const selectedTags = ref<string[]>([]);
 
+// Fetch cards and sort by cardID prop order
 const getCards = async () => {
   const result = await queryContent('news/articles')
     .where({ cardID: { $in: props.cardID } })
     .find();
 
-  return result;
+  // Sort cards based on the order of cardID prop
+  return result.sort((a, b) => {
+    return props.cardID.indexOf(a.cardID) - props.cardID.indexOf(b.cardID);
+  });
 }
 
 const tagStac = () => {
@@ -142,8 +145,8 @@ const tagStac = () => {
 }
 
 const updateData = async () => {
-  cards.value = await getCards()
-  tagStac()
+  cards.value = await getCards();
+  tagStac();
 }
 
 const filteredCards = computed(() => {
@@ -154,7 +157,7 @@ const filteredCards = computed(() => {
     let belongs = false;
     card.tags?.forEach(tag => {
       if (tag !== null && tag.length > 0 && selectedTags.value.includes(tag)) {
-        belongs = true
+        belongs = true;
       }
     });
     return belongs;
@@ -173,5 +176,5 @@ const clearTags = () => {
   selectedTags.value = [];
 };
 
-updateData()
+updateData();
 </script>

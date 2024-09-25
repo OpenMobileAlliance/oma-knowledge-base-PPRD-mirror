@@ -1,19 +1,18 @@
 <template>
-    <div v-if="page.body?.toc?.links?.length > 0" class="fixed top-64 right-8 w-64 h-[calc(100vh-20rem)] overflow-auto">
+    <div v-if="page?.body?.toc?.links?.length > 0" class="">
         <nav>
             <button
                 class="flex sticky top-0 backdrop-blur items-center gap-1.5 lg:cursor-text lg:select-text w-full group">
                 <span class="font-semibold text-sm/6 truncate dark:text-white/80">
-                    Table of Contents
-                    <hr class="dark:text-white/80 mt-0 mb-1" />
+                    <b class="dark:text-golden">Table of Contents</b>
                 </span>
             </button>
             <ul class="space-y-1 lg:block -ml-2">
                 <li v-for="(link, index) in page.body.toc.links" :key="index" class="space-y-1 lg:block"
-                    :class="[ isActive(link.id) ? ui.active : ui.normal]">
+                    :class="[isActive(link.id) ? ui.active : ui.normal]">
                     <ULink :id="`toc-${link.id}`" :to="`${page._path}#${link.id}`"
                         :class="[ui.shadow, isActive(link.id) ? ui.link.active : ui.link.normal]"
-                        class="not-prose truncate pl-1 pr-1 text-black dark:text-golden">
+                        class="not-prose pl-1 pr-1 text-black dark:text-golden">
                         {{ link.text }}
                     </ULink>
                     <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
@@ -29,14 +28,15 @@
                 </li>
             </ul>
         </nav>
+        <hr class="w-1/2 mx-auto"/>
     </div>
 </template>
 
 <script setup lang="ts">
 const config = {
-    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600', 
-    active: 'bg-primary-200 dark:bg-primary-600 p-2', 
-    normal: 'w-full p-2', 
+    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600',
+    active: 'bg-primary-200 dark:bg-primary-600 p-2',
+    normal: 'w-full p-2',
     link: {
         active: 'text-oma-blue-500 dark:text-oma-blue-400 font-bold',
         normal: 'w-full block text-black dark:text-golden hover:text-black dark:hover:text-golden'
@@ -62,7 +62,7 @@ onMounted(() => {
                 activeSection.value = entry.target.id;
             }
         });
-    }, { rootMargin: '-10% 0px -80% 0px' }); 
+    }, { rootMargin: '-10%' });
 
     page.value.body.toc.links.forEach((link) => {
         const section = document.getElementById(link.id);

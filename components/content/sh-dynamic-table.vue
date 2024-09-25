@@ -8,7 +8,7 @@
         <UInput v-model="q" type="text" @keyup="onSearch" placeholder="type a token to search for" />
       </div>
       <div :class="ui.filter">
-        <UAccordion :items="accordionItems" color="gray" class="not-prose">
+        <UAccordion :items="accordionItems" color="primary" variant="solid" size="sm" class="not-prose">
           <template #quick-filters>
             <div :class="getQuickFilterClass()">
               <template v-for="column in props.columns">
@@ -17,8 +17,8 @@
                   <ul class="max-h-36 overflow-auto">
                     <li v-for="label in Object.keys(stats[column.name])" :data-filter-key="column.name"
                       :data-filter-value="label" @click="onFilterChange"
-                      class="list-none flex justify-between p-2 hover:bg-gray-50 hover:dark:bg-gray-800/50 hover:cursor-pointer"
-                      :class="isSelectedFilter(column.name, label) ? ui.tr.selected : ''">
+                      class="list-none flex justify-between p-2 hover:cursor-pointer"
+                      :class="[isSelectedFilter(column.name, label) ? ui.tr.selected : '', ui.tr.active]">
                       <span>{{ label }}</span>
                       <UBadge>
                         {{ stats[column.name][label] }}
@@ -49,7 +49,7 @@
           <tr v-for="(row, index) in displayItems" :index="index" :calss="ui.tr.base">
             <template v-for="column in props.columns">
               <td :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
-                {{ getItemColumValue(row, column) }}
+                <MDC :value="getItemColumValue(row, column)" />
               </td>
             </template>
           </tr>
@@ -79,6 +79,11 @@ type itemsElement = {
   type?: String;
   typeData?: Array;
 }
+
+// type: url
+// name: link text 
+// typeData: ['url']  => [text](url)
+// typeData: ['name'] => [text](text)
 
 
 const props = withDefaults(
@@ -156,7 +161,8 @@ const accordionItems = toRef([
   {
     label: "Quick Filters",
     icon: "i-heroicons-eye-dropper",
-    slot: "quick-filters"
+    slot: "quick-filters",
+    defaultOpen: true
   }
 ])
 const sortColumn = toRef({})
@@ -218,7 +224,14 @@ const getColumTitle = (column) => {
 }
 
 const getItemColumValue = (item, column) => {
-  return item[column?.name] ? item[column.name] : " "
+  if (column.type === 'url') {
+    const linkTitle = item[column?.name] ? item[column.name] : " "
+    const linkHref = item[column?.typeData] ? item[column.typeData[0]] : " "
+    return `<a href="${linkHref}" target="_blank">${linkTitle}</a>`
+
+  } else {
+    return item[column?.name] ? item[column.name] : " "
+  }
 }
 
 const getSortIcon = (column) => {
@@ -235,13 +248,13 @@ const getQuickFilterClass = () => {
   }, 0)
 
   if (numFilterColumns < 2) {
-    return 'grid grid-cols-1 gap-4'
+    return 'grid grid-cols-1 gap-4 min-h-48'
   } else if (numFilterColumns < 3) {
-    return 'grid grid-cols-2 gap-2'
+    return 'grid grid-cols-2 gap-2 min-h-48'
   } else if (numFilterColumns < 4) {
-    return 'grid grid-cols-3 gap-1'
+    return 'grid grid-cols-3 gap-1 min-h-48'
   } else {
-    return 'grid grid-cols-4 gap-1'
+    return 'grid grid-cols-4 gap-1 min-h-48'
   }
 }
 
