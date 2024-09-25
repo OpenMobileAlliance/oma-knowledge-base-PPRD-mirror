@@ -48,8 +48,8 @@
         <tbody :calss="ui.tbody">
           <tr v-for="(row, index) in displayItems" :index="index" :calss="ui.tr.base">
             <template v-for="column in props.columns">
-              <td :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
-                <MDC :value="getItemColumValue(row, column)" />
+              <td v-html="getItemColumValue(row, column)"
+                :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
               </td>
             </template>
           </tr>
@@ -68,7 +68,7 @@
 
 <script setup lang="ts">
 import { dynamicTable as config } from "@/ui.config"
-const { $filterDDFObjects } = useNuxtApp();
+const { $filterDDFObjects, $filterCommonObjects } = useNuxtApp();
 
 const PER_PAGE_LIST = config.perPage
 
@@ -125,7 +125,8 @@ const fetchData = async () => {
     if (props.transformRawData) {
       if (props.transformRawData === "filterDDFObjects") {
         data = $filterDDFObjects(data)
-
+      } else if (props.transformRawData === "filterCommonObjects") {
+        data = $filterCommonObjects(data)
       }
     }
 
@@ -239,14 +240,16 @@ const getColumTitle = (column) => {
 }
 
 const getItemColumValue = (item, column) => {
+  let result = ""
   if (column.type === 'url') {
     const linkTitle = item[column?.name] ? item[column.name] : " "
     const linkHref = item[column?.typeData] ? item[column.typeData[0]] : " "
-    return `<a href="${linkHref}" target="_blank">${linkTitle}</a>`
+    result = `<a href="${linkHref}" target="_blank">${linkTitle}</a>`
 
   } else {
-    return item[column?.name] ? item[column.name] : " "
+    result = item[column?.name] ? item[column.name] : " "
   }
+  return result
 }
 
 const getSortIcon = (column) => {
