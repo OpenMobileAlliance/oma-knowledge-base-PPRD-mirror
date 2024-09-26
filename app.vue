@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col w-full bg-golden/[0.2] dark:bg-[#19191a]" :style="{ fontFamily: main.font.type }">
+  <div :class="computedHeightClass" class="flex flex-col w-full bg-golden/[0.2] dark:bg-[#19191a]"
+    :style="{ fontFamily: main.font.type }">
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
         <img v-if="computedLogoSrc" src="/logo-dark.png" alt="Logo" />
@@ -58,6 +59,37 @@ onMounted(() => {
   });
 
 });
+
+const hasScrollbar = ref(false)
+
+const checkScrollbar = () => {
+  const hasVerticalOverflow = document.documentElement.scrollHeight > document.documentElement.clientHeight
+  hasScrollbar.value = hasVerticalOverflow
+}
+
+const computedHeightClass = computed(() => (hasScrollbar.value ? 'h-full' : 'h-screen'))
+
+let observer: MutationObserver | null = null
+
+onMounted(() => {
+  checkScrollbar()
+
+  // Check for changes in the document that may affect scrollability
+  observer = new MutationObserver(checkScrollbar)
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    characterData: true,
+  })
+  window.addEventListener('resize', checkScrollbar)
+})
+
+onBeforeUnmount(() => {
+  if (observer) observer.disconnect()
+  window.removeEventListener('resize', checkScrollbar)
+})
+
 </script>
 
 <style>
