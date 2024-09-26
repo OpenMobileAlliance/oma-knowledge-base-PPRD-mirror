@@ -13,14 +13,8 @@ Stay connected and well-informed with the Open Mobile Alliance (OMA) by subscrib
 
 ### Join OMA Newsletter
 
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-<script>
-  hbspt.forms.create({
-    region: "na1",
-    portalId: "21247113",
-    formId: "56969656-646b-423d-98af-133ab4c4e2dd"
-  });
-</script>
+::ShFormNewsletter
+::
 
 
 > Note: By subscribing to our newsletter, you agree to receive communication from us and confirm that you have read and understood our [Policy & Terms](/omaspecworks/about/policies-terms). You can withdraw your consent or manage your preferences at any time by clicking the unsubscribe link in our newsletters. We respect your privacy and will not share your information with third parties without your explicit consent. For more information on how we protect and use your data, please contact at [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).
