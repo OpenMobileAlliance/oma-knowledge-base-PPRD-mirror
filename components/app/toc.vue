@@ -38,7 +38,7 @@ const config = {
     active: 'bg-primary-200 dark:bg-primary-600 p-2',
     normal: 'w-full p-2',
     link: {
-        active: 'text-oma-blue-500 dark:text-oma-blue-400 font-bold',
+        active: 'text-oma-blue-500 dark:text-oma-blue-200 font-bold',
         normal: 'w-full block text-black dark:text-golden hover:text-black dark:hover:text-golden'
     }
 };
