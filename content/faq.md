@@ -132,7 +132,7 @@ qas:
       TestFests are held in a confidential and secure testing environment where companies can bring their Client or Server implementation(s) based on an OMA Enabler to test in multiple multi-vendor combinations. These events are open to both OMA member and non-member companies.
   - q: "When is the next TestFest?"
     a: |
-      See section [Test Event](/events/test-events#next-test-event){ target="_blank"}.  
+      See section [Test Event](/oma-events/test-events#next-test-event){ target="_blank"}.  
       There are 1 to 2 TestFest events held per year. These events are hosted in a variety of locations and venues throughout North America, Europe, and Asia. Registration fees are per implementation (engineers are free to attend) and vary based on the expenses estimated to cover the event. If you are interested in hosting a TestFest at your company’s facility, please contact our [staff](https://omaspecworks.org/contact-us/){ target="_blank"}.
 ---
 ::

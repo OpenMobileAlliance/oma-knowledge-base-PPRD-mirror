@@ -196,7 +196,7 @@ cols: 3
         icon: mdi:crowd
         title: Webinar | Workshops # Forth Column
         subtitle: 
-        urlWrapper: "/events/webinar-workshops"
+        urlWrapper: "/oma-events/webinar-workshops"
         ---
         :::: 
 ::
