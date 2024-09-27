@@ -1,62 +1,30 @@
+::ShSegment
 ---
-title: Welcome to OMA Knowledge
-decription: The OMA Knowledge Base home page
+ui:
+    wrapper: text-center text-4xl text-neutral-600 dark:text-golden italic mb-3 xl:invisible 2xl:visible
 ---
+Dive Deeper
+::
 
 ::ShMultiColumn
 ---
-cols: 4
+ui:
+    wrapper: xl:invisible 2xl:visible w-fit mx-auto mb-32
+cols: 7
 ---
     :::ShColumn 
     --- 
     ui: # First Column
-       wrapper: m-1
+       wrapper: m-1 h-full w-full # Ensure full height and width for grid items
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col # Full height and width for the card
             icon: w-1/3
-        icon: i-eos-icons:rotating-gear
-        title: About # First Row
-        subtitle: "OMA SpecWorks"
-        urlWrapper: /omaspecworks/about/
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: heroicons-outline:academic-cap
-        title: OMA SpecWorks # First Column
-        subtitle: Introduction
-        urlWrapper: /omaspecworks/about/omaspecworks
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: 
-        icon: la:balance-scale
-        title: IPR # First Column
-        subtitle: Terms
-        urlWrapper: /omaspecworks/about/ipr
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5 mb-10
-            icon: w-1/4
-        icon: ic:baseline-assured-workload
-        title: Policies & Terms # First Column
-        subtitle: Terms
-        urlWrapper: /omaspecworks/about/policies-terms
+        icon: i-mdi-file-document-box-outline
+        title: OMA SpecWorks # First Row
+        urlWrapper: /omaspecworks/
         ---
         ::::
     :::
@@ -64,52 +32,16 @@ cols: 4
     :::ShColumn 
     --- 
     ui: # Second Column
-       wrapper:  m-1 
+       wrapper: m-1 h-full w-full
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1 
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
             icon: w-1/3
-        icon: el:adult
-        title: Membership # Second Row
-        subtitle: OMA SpecWorks
-        urlWrapper: /omaspecworks/membership/
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: carbon:partnership
-        title: Join # Second Column
-        subtitle: OMA SpecWorks
-        urlWrapper: ""
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: fa6-solid:handshake
-        title: Benefits # Second Column
-        subtitle: Membership
-        urlWrapper: ""
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: carbon:events
-        title: Members # Second Column
-        subtitle: OMA SpecWorks
-        urlWrapper: ""
+        icon: i-mdi-file-cog-outline
+        title: Specifications # Second Row
+        urlWrapper: /specifications/
         ---
         ::::
     :::
@@ -117,82 +49,152 @@ cols: 4
     :::ShColumn 
     --- 
     ui: # Third Column
-       wrapper: m-1 border-[#D2D9E0]
+       wrapper: m-1 h-full w-full
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
             icon: w-1/3
-        icon: carbon:collaborate
-        title: Collaborate # Third Column
-        subtitle: OMA SpecWorks
-        urlWrapper: ""
+        icon: i-mdi-cellphone-wireless
+        title: LwM2M # Third Column
+        urlWrapper: "/lwm2m/"
         ---
         ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: ic:baseline-diversity-3
-
-        title: Affiliates # Third Column
-        subtitle: OMA Predecesors
-        urlWrapper: ""
-        ---
-        ::::  
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-            icon: w-1/3
-        icon: carbon:concept
-        title: Liaisons # Third Column
-        subtitle: Standards Flora
-        urlWrapper: ""
-        ---
-        ::::        
     :::
 
     :::ShColumn 
     --- 
     ui: # Fourth Column
-       wrapper: m-1 border-[#D2D9E0]
+       wrapper: m-1 h-full w-full
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
             icon: w-1/3
-        icon: i-svg-spinners:blocks-shuffle-3
-        title: Get Involved # Fourth Column
-        subtitle: OMASpecWorks
-        urlWrapper: ""
+        icon: i-mdi-wrench-outline
+        title: Utilities # Fourth Column
+        urlWrapper: "/utilities/"
         ---
         ::::
+    :::
 
+    :::ShColumn 
+    --- 
+    ui: # Fifth Column
+       wrapper: m-1 h-full w-full
+    ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
             icon: w-1/3
-        icon: ic:outline-email
-        title: Contact us # Fourth Column
-        subtitle: Talk to us
-        urlWrapper: 
+        icon: i-mdi-newspaper-variant-outline
+        title: News # Fifth Column
+        urlWrapper: "/news/"
         ---
         ::::
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Sixth Column
+       wrapper: m-1 h-full w-full
+    ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: mt-5
-            icon: w-1/4
-        icon: ic:outline-live-help
-        title: F.A.Q # Fourth Column
-        subtitle: Questions & Answers
-        urlWrapper: ""
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            icon: w-1/3
+        icon: i-mdi-calendar-check-outline
+        title: Events # Sixth Column
+        urlWrapper: "/oma-events/"
         ---
         ::::
-    :::          
+    :::
+
+    :::ShColumn 
+    --- 
+    ui: # Seventh Column
+       wrapper: m-1 h-full w-full
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            icon: w-1/3
+        icon: i-mdi-tools
+        title: Tools # Seventh Column
+        urlWrapper: "/tools/"
+        ---
+        ::::
+    :::
+::
+
+::ShSegment
+---
+ui:
+    wrapper: w-screen space-y-9 mt-6 px-16
+---
+    ::ShTextImg
+    ---
+    ui:
+        title: text-5xl
+        subtitle: text-3xl text-neutral-600
+        text: text-xl
+    positionText: left
+    spanText: m
+    alignText: left
+    urlImage: /images/landing-hero/lh-1.jpeg
+    title: |
+        OMA SpecWorks: Balancing Industry Consensus and Innovation
+    subtitle: |
+        Specifications and Technical Documentation
+    text: |
+        OMA SpecWorks is an innovative kind of Standards Development Organization (SDO) where the needs for wireless industry consensus versus the quick and accurate creation of specifications and other technical documentation are balanced via a working group-driven, efficient and agile process.
+        As a non-profit organization with a long history in mobile and Internet of Things (IoT) technology development, OMA SpecWorks is a specifications factory where industry-leading companies bring their ideas and talent to build market-accelerating standards that allow products and services to interoperate seamlessly across fixed and mobile wireless data networks.
+    ---
+    ::
+
+    ::ShTextImg
+    ---
+    ui:
+        title: text-5xl
+        subtitle: text-3xl text-neutral-600
+        text: text-xl
+    positionText: right
+    spanText: m
+    alignText: left
+    urlImage: /images/landing-hero/lh-2.jpeg
+    title: |
+        Idea Machine: Valuing Collaboration and Innovation
+    subtitle: |
+        A Transparent, Collaborative Environment
+    text: |
+        Members come to OMA SpecWorks to work together in a transparent environment where companies of all shapes and sizes can contribute on an equal footing to the next generation of wireless technology standards.
+        At OMA SpecWorks, good ideas are valued, and high-quality technical outputs are completed, tested, and released to the market for use in a variety of market sectors such as healthcare, automotive, utilities, and home automation that make up today’s connected world.
+    ---
+    ::
+
+
+    ::ShTextImg
+    ---
+    ui:
+        title: text-5xl
+        subtitle: text-3xl text-neutral-600
+        text: text-xl
+    positionText: left
+    spanText: m
+    alignText: left
+    urlImage: /images/events/sve42.jpg
+    title: |
+        LightweightM2M and Wireless Innovation
+    subtitle: |
+        Bringing Ideas to Life for IoT and More
+    text: |
+        Home to the industry-leading LightweightM2M (LwM2M), OMA SpecWorks enables market-leading corporations and small start-up companies alike to come together to build the next generation of wireless.
+        Launched in 2018, OMA SpecWorks joins together the Open Mobile Alliance (OMA) and the IPSO Alliance with a new mission to build technical documents including specifications, smart objects, and white papers for a connected world, enabling interoperability across networks and growth in fixed and mobile wireless markets and the Internet of Things (IoT).
+    ---
+    ::
 ::
