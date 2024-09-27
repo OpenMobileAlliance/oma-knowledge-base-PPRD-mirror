@@ -9,11 +9,11 @@ Welcome to the **Community & Support** page of the Open Mobile Alliance, where m
 
 ## Key Offerings Include:
 
-- [**Test Events**](/events/test-events): Participate in **Specification Validation Events** *(aka TestFests)*, where members can validate their LwM2M implementations through interoperability tests with other industry participants.
+- [**Test Events**](/oma-events/test-events): Participate in **Specification Validation Events** *(aka TestFests)*, where members can validate their LwM2M implementations through interoperability tests with other industry participants.
 
-- **[**Webinars and Workshops**](/events/webinar-workshops)**: Learn from experts and stay updated on the latest developments through regular events focused on **Lightweight M2M (LwM2M)** technology.
+- **[**Webinars and Workshops**](/oma-events/webinar-workshops)**: Learn from experts and stay updated on the latest developments through regular events focused on **Lightweight M2M (LwM2M)** technology.
 
-- **[**Members Meetings**](/events/members-meetings)**: OMA Working Groups are having weekly virtual meetings and occasional face-to-face sessions to discuss the latest standards, share feedback, and network with peers.
+- **[**Members Meetings**](/oma-events/members-meetings)**: OMA Working Groups are having weekly virtual meetings and occasional face-to-face sessions to discuss the latest standards, share feedback, and network with peers.
 
 - **[**LwM2M Implementations**](/lwm2m/community/implementations)**: Access open-source code and other resources built by the community to facilitate your LwM2M deployments.
 

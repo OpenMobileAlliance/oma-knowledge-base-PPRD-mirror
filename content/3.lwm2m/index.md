@@ -216,7 +216,7 @@ cols: 5
         title: Test Events # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/events/test-events"
+        urlWrapper: "/oma-events/test-events"
         ---
         ::::
 
@@ -229,7 +229,7 @@ cols: 5
         title: Webinars & Workshops # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/events/webinar-workshops"
+        urlWrapper: "/oma-events/webinar-workshops"
         ---
         ::::
 
@@ -242,7 +242,7 @@ cols: 5
         title: Members Meetings # Fourth Column
         subtitle: |
             **
-        urlWrapper: "/events/members-meetings"
+        urlWrapper: "/oma-events/members-meetings"
         ---
         ::::
 
