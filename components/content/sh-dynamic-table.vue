@@ -68,7 +68,7 @@
 
 <script setup lang="ts">
 import { dynamicTable as config } from "@/ui.config"
-const { $filterDDFObjects, $filterCommonObjects } = useNuxtApp();
+const { $filterDDFObjects, $filterCommonObjects, $filterOmaEnablers } = useNuxtApp();
 
 const PER_PAGE_LIST = config.perPage
 
@@ -127,6 +127,8 @@ const fetchData = async () => {
         data = $filterDDFObjects(data)
       } else if (props.transformRawData === "filterCommonObjects") {
         data = $filterCommonObjects(data)
+      } else if (props.transformRawData === "filterOmaEnablers") {
+        data = $filterOmaEnablers(data)
       }
     }
 
