@@ -35,7 +35,7 @@
         <thead :calss="ui.thead">
           <tr :ui.tr.base>
             <template v-for="column in props.columns">
-              <th :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]">
+              <th v-if="!column.hide" :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]">
                 <UButton v-if="column.sortable" v-bind="{ ...(config.default.sortButton) }" :icon="getSortIcon(column)"
                   @click="onSort(column)">
                   <MDC :value="getColumTitle(column)" class="not-prose" />
@@ -48,7 +48,7 @@
         <tbody :calss="ui.tbody">
           <tr v-for="(row, index) in displayItems" :index="index" :calss="ui.tr.base">
             <template v-for="column in props.columns">
-              <td v-html="getItemColumValue(row, column)"
+              <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
                 :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
               </td>
             </template>
@@ -271,8 +271,10 @@ const getQuickFilterClass = () => {
     return 'grid grid-cols-2 gap-2 min-h-48'
   } else if (numFilterColumns < 4) {
     return 'grid grid-cols-3 gap-1 min-h-48'
-  } else {
+  } else if (numFilterColumns < 5) {
     return 'grid grid-cols-4 gap-1 min-h-48'
+  } else {
+    return 'grid grid-cols-5 gap-1 min-h-48'
   }
 }
 
