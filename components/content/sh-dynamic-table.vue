@@ -245,7 +245,8 @@ const getItemColumValue = (item, column) => {
     const linkTitle = item[column?.name] ? item[column.name] : " "
     const linkHref = item[column?.typeData] ? item[column.typeData[0]] : " "
     result = `<a href="${linkHref}" target="_blank">${linkTitle}</a>`
-
+  } else if (column.type === 'subs') {
+    result = item[column?.typeData] ? item[column.typeData] : " "
   } else {
     result = item[column?.name] ? item[column.name] : " "
   }
