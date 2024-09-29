@@ -5,7 +5,7 @@ layout: doc
 ---
 ## How to Contact Us
 If you have any questions or need additional information about OMA protocols, we encourage you to get in touch with us.
-**General Inquiries:** For questions related to OMA, its protocols, or initiatives, please use the [contact form](/#send-us-your-comments) below or email us directly at [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).
+**General Inquiries:** For questions related to OMA, its protocols, or initiatives, please use the [contact form](#send-us-your-comments) below or email us directly at [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).
 
 ### Technical Support
 
