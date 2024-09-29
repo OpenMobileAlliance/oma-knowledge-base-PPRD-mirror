@@ -35,24 +35,27 @@
         <thead :calss="ui.thead">
           <tr :ui.tr.base>
             <template v-for="column in props.columns">
-              <th v-if="!column.hide" :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]">
+              <th v-if="column.hide !== true" :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]">
                 <UButton v-if="column.sortable" v-bind="{ ...(config.default.sortButton) }" :icon="getSortIcon(column)"
                   @click="onSort(column)">
-                  <MDC :value="getColumTitle(column)" class="not-prose" />
+                  <span v-html="getColumTitle(column)" class="not-prose" />
                 </UButton>
-                <MDC v-else :value="getColumTitle(column)" class="not-prose" />
+                <span v-else v-html="getColumTitle(column)" class="not-prose" />
               </th>
             </template>
-          </tr>
+          </tr>useFetch
         </thead>
         <tbody :calss="ui.tbody">
-          <tr v-for="(row, index) in displayItems" :index="index" :calss="ui.tr.base">
-            <template v-for="column in props.columns">
-              <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
-                :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
-              </td>
-            </template>
-          </tr>
+          <template v-for="(row, index) in displayItems">
+            <tr :id="`${index}-${Date.now()}`" :calss="ui.tr.base">
+              <template v-for="(column, cIndex) in props.columns">
+                <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
+                  :id="`${column.name}-${index}-${Date.now()}`"
+                  :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
+                </td>
+              </template>
+            </tr>
+          </template>
         </tbody>
       </table>
       <div :class="ui.pagination">
@@ -77,6 +80,8 @@ type itemsElement = {
   title?: String;
   filter?: Boolean;
   order?: Boolean;
+  hide?: Boolean;
+  formatColumValue?: String;
   type?: String;
   typeData?: Array;
 }
@@ -120,6 +125,9 @@ const { ui, attrs } = useUI(
 
 const fetchData = async () => {
   try {
+    displayItems.value = []
+    items.value = []
+    nextTick()
 
     let data = await $fetch(props.dataUrl)
     if (props.transformRawData) {
@@ -131,11 +139,12 @@ const fetchData = async () => {
         data = $filterOmaEnablers(data)
       }
     }
+    nextTick()
 
     if (props.dataField) {
-      return data[props.dataField]
+      return reformatColumnValues(data[props.dataField])
     } else {
-      return data
+      return reformatColumnValues(data)
     }
   } catch (error) {
     console.log(error)
@@ -143,13 +152,32 @@ const fetchData = async () => {
   }
 }
 
+const reformatColumnValues = (data) => {
+  for (let i = 0; i < data.length; i++) {
+    props.columns?.forEach(column => {
+      if (column.name && column.formatColumValue) {
+        if (column.formatColumValue === 'DY' && data[i][column.name]) {
+          try {
+            let dateStr = new Date(data[i][column.name])
+            dateStr = dateStr.getFullYear().toString()
+            data[i][column.name] = dateStr
+
+          } catch (error) {
+            console.log(error)
+          }
+        }
+      }
+    })
+  }
+  return data
+}
+
 const updateData = async () => {
   items.value = await fetchData()
   updateDisplayData()
 }
 
-const updateDisplayData = async () => {
-  displayItems.value = []
+const updateDisplayData = () => {
 
   let filteredData = filterDataByQuery(items.value)
   filteredData = filterDataByQuickFilter(filteredData)
@@ -162,6 +190,7 @@ const updateDisplayData = async () => {
   let startIndex = page.value * perPage.value - perPage.value
   let endIndex = startIndex + perPage.value > numberOfItems.value ? numberOfItems.value : startIndex + perPage.value
 
+  displayItems.value = []
   for (let index = startIndex; index < endIndex; index++) {
     displayItems.value.push(filteredData[index])
   }
@@ -244,13 +273,14 @@ const getColumTitle = (column) => {
 const getItemColumValue = (item, column) => {
   let result = ""
   if (column.type === 'url') {
-    const linkTitle = item[column?.name] ? item[column.name] : " "
-    const linkHref = item[column?.typeData] ? item[column.typeData[0]] : " "
+    const linkTitle = item[column?.name] ? item[column.name] : ""
+    const linkHref = item[column?.typeData] ? item[column.typeData[0]] : ""
     result = `<a href="${linkHref}" target="_blank">${linkTitle}</a>`
   } else if (column.type === 'subs') {
-    result = item[column?.typeData] ? item[column.typeData] : " "
+    result = item[column?.typeData] ? item[column.typeData] : ""
   } else {
-    result = item[column?.name] ? item[column.name] : " "
+    const itemValue = item[column.name]
+    result = itemValue?.length > 0 ? itemValue.toString() : ""
   }
   return result
 }
@@ -360,7 +390,13 @@ const onSort = (column) => {
   updateDisplayData()
 }
 
-
+watch(items,
+  (newValue, oldValue) => {
+    updateDisplayData()
+    nextTick()
+  },
+  { immediate: true }
+)
 
 await updateData()
 </script>
