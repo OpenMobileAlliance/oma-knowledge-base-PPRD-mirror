@@ -4,12 +4,15 @@ description:
 layout: doc
 ---
 ## How to Contact Us
-If you have any questions or require further information about OMA protocols, please feel free to reach out to us. Our team of experts is available to provide guidance and answer any inquiries you may have.
-General Inquiries: For general questions about OMA, its protocols, or its initiatives, you can contact us via email at [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).  
+If you have any questions or need additional information about OMA protocols, we encourage you to get in touch with us.
+**General Inquiries:** For questions related to OMA, its protocols, or initiatives, please use the [contact form](/#send-us-your-comments) below or email us directly at [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).
 
 ### Technical Support
 
-If you require technical assistance with OMA standards or need clarification on specific protocol implementations, please reach out to our technical team at [helpdesk@omaorg.org](mailto:helpdesk@omaorg.org).
+If you've identified an issue with the OMA LwM2M protocol, please report it through the GitHub Issues page: [OMA LwM2M for Developers](https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues).
+
+
+To register an OMA LwM2M Object or Resource, visit the [OMA LwM2M-Registry](https://github.com/OpenMobileAlliance/lwm2m-registry/blob/prod/README.md){target="_blank"}. For registering profile data on existing OMA Enablers, use the [OMA Enablers Registries](/specifications/registries/enablers) page.
 
 ### Membership Inquiries
 Interested in becoming a member of OMA? Membership offers numerous benefits, including access to the latest OMA specifications, participation in working groups, and the ability to influence the future direction of mobile standards. To learn more about membership options and benefits, or to start the application process, contact us at [membership@omaorg.org](mailto:membership@omaorg.org).
