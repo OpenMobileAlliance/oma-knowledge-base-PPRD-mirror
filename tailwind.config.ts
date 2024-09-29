@@ -3,7 +3,8 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
   content: [
-    'ui.config/*.ts'
+    'ui.config/*.ts',
+    'plugins/*.ts'
   ],
   theme: {
     extend: {
