@@ -43,7 +43,7 @@
                 <span v-else v-html="getColumTitle(column)" class="not-prose" />
               </th>
             </template>
-          </tr>useFetch
+          </tr>
         </thead>
         <tbody :calss="ui.tbody">
           <template v-for="(row, index) in displayItems">

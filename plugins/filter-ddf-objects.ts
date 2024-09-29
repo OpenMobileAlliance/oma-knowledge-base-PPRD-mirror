@@ -73,7 +73,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       let sourceStr = ""
       if (Source?.length > 0) {
         if (Source === '0') {
-          sourceStr = "OMa Labels"
+          sourceStr = "OMA Labels"
         }
         if (Source === '1') {
           sourceStr = "Standards Organizations Labels"
