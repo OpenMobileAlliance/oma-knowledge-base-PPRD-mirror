@@ -150,16 +150,13 @@ h7 {
 }
 
 /* Links */
-a {
-  color: theme('colors.oma-blue.300');
-}
 
 .prose a {
   text-decoration: none !important;
 }
 
 a:hover {
-  color: theme('colors.oma-blue.700');
+  color: theme('colors.blue.700');
 }
 
 .dark a {
