@@ -150,6 +150,10 @@ h7 {
 }
 
 /* Links */
+a {
+  color: theme('colors.oma-blue.300');
+}
+
 .prose a {
   text-decoration: none !important;
 }
