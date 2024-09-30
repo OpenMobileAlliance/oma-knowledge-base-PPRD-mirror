@@ -16,7 +16,7 @@ OMA SpecWorks ensures the creation of market-accelerating standards that
 facilitate seamless interoperability across both fixed and mobile wireless
 networks.
 
-![](/images/omaspecworks/about/DALL_E_Idea_machine_landscape.png){ class="mx-auto hover:scale-105"}
+![](/images/omaspecworks/about/DALL_E_Idea_machine_landscape.png){ class="mx-auto"}
 
 By merging with the IPSO Alliance in 2018, OMA SpecWorks further
 strengthened its mission to develop comprehensive technical documents—ranging

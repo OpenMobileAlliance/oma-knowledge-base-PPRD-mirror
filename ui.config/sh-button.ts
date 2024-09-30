@@ -2,7 +2,7 @@ export default {
   wrapper: "align-middle m-1 hover:saturate-150",
   inner: "text-center not-prose mx-auto",
   styleButton: {
-    solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white dark:text-gray-900 no-underline',
+    solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white hover:text-white dark:hover:text-black dark:text-gray-900 no-underline',
     outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
     link: 'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'
   },
