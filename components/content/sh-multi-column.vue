@@ -1,25 +1,27 @@
 <template>
   <div :class="ui.wrapper">
-    <div :class="gridClass">
+    <div :class="['grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-' + props.cols , gridClass]">
       <ContentSlot :use="$slots.default" unwrap="" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {multiColumn as config, gridSizes } from "@/ui.config"
+import {multiColumn as config } from "@/ui.config"
+import { gridSizes } from "@/ui.config"
+
   
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
     description?: string;
-    cols: Number;
+    cols: number;
     gap?: String;
     class?: any;
   }>(),
   {
     ui: () => ({}),
-    cols: () => config.default.cols,
+    cols: () => config.default.size,
     gap: () => config.default.gap,
     class: () => undefined,
     description: "",
@@ -35,6 +37,6 @@ const { ui, attrs } = useUI(
 const gridClass = computed(() => {
   const cols = props.cols != undefined ? props.cols : config.default.cols
 
-  return ["grid", gridSizes.gridCols[cols], gridSizes.gridRows[1], props.gap].join(' ')
+  return [ gridSizes.gridRows[1], props.gap].join(' ')
 })
 </script>
