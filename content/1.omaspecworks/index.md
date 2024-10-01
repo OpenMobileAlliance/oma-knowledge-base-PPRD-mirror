@@ -9,7 +9,7 @@ Please click on one of the available OMASpecWorks resources available:
 ::ShTwoColumns
 ---
 size: XL
-ui: # First Column
+ui: # First Column in ShTwoColumns
   wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl shadow-2xl p-5"
 ---
 
@@ -19,14 +19,13 @@ cols: 4
 ---
     :::ShColumn 
     --- 
-    ui: # First Column
-       wrapper: m-1
+    # First column
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/3
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-eos-icons:rotating-gear
         title: About # First Row
         subtitle: "OMA SpecWorks"
@@ -38,7 +37,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: heroicons-outline:academic-cap
         title: OMA SpecWorks # First Column
         subtitle: Introduction
@@ -50,7 +48,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: 
         icon: la:balance-scale
         title: IPR # First Column
         subtitle: Terms
@@ -62,7 +59,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5 mb-10
-            icon: w-1/4
         icon: ic:baseline-assured-workload
         title: Policies & Terms # First Column
         subtitle: Terms
@@ -73,14 +69,13 @@ cols: 4
 
     :::ShColumn 
     --- 
-    ui: # Second Column
-       wrapper:  m-1 
+    # Second Column
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1 
-            icon: w-1/3
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
+            subtitle: dark:text-gray-300/[0.8]
         icon: el:adult
         title: Membership # Second Row
         subtitle: OMA SpecWorks
@@ -92,7 +87,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: carbon:partnership
         title: Join # Second Column
         subtitle: OMA SpecWorks
@@ -104,7 +98,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: fa6-solid:handshake
         title: Benefits # Second Column
         subtitle: Membership
@@ -115,7 +108,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: carbon:events
         title: Members # Second Column
         subtitle: OMA SpecWorks
@@ -126,14 +118,13 @@ cols: 4
 
     :::ShColumn 
     --- 
-    ui: # Third Column
-       wrapper: m-1 border-[#D2D9E0]
+    # Third Column
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/3
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+            subtitle: dark:text-gray-300/[0.8]
         icon: carbon:collaborate
         title: Collaborate # Third Column
         subtitle: OMA SpecWorks
@@ -145,7 +136,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: ic:baseline-diversity-3
         title: OMA Groups # Third Column
         subtitle: Working Groups
@@ -157,7 +147,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: ic:baseline-diversity-3
         title: Affiliates # Third Column
         subtitle: OMA Predecesors
@@ -168,7 +157,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: carbon:concept
         title: Liaisons # Third Column
         subtitle: Standards Flora
@@ -179,17 +167,16 @@ cols: 4
 
     :::ShColumn 
     --- 
-    ui: # Fourth Column
-       wrapper: m-1 border-[#D2D9E0]
+    # Fourth Column
     ---
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
-            icon: w-1/3
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-svg-spinners:blocks-shuffle-3
         title: Get Involved # Fourth Column
-        subtitle: OMASpecWorks
+        subtitle: OMA SpecWorks
         urlWrapper: /omaspecworks/get-involved
         ---
         ::::
@@ -198,7 +185,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: ic:outline-email
         title: Contact us # Fourth Column
         subtitle: Talk to us
@@ -210,7 +196,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/3
         icon: fluent:news-24-regular
         title: Newsletter # Fourth Column
         subtitle: Join our Newsletter!
@@ -222,7 +207,6 @@ cols: 4
         ---
         ui:
             wrapper: mt-5
-            icon: w-1/4
         icon: ic:outline-live-help
         title: F.A.Q # Fourth Column
         subtitle: Questions & Answers
@@ -233,8 +217,8 @@ cols: 4
 ::
 ::ShSegment
 ---
-ui:
-  wrapper: px-4 text-xl leading-7 # Comment
+ui: #Second Column in ShTwoColumns
+  wrapper: px-4 text-xl leading-7
 ---
 
 ![](/images/omaspecworks/about/DALL_E_Idea_machine.webp){ class="mx-auto rounded-lg"}
