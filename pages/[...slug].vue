@@ -5,8 +5,8 @@
       <template v-if="page?.layout === 'doc'">
         <div class="">
           <AppSideMenu :items="displayNavigation"
-            class="fixed top-56 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
-          <div class="fixed right-8 w-64">
+            class="fixed top-51 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
+          <div  class="fixed lg:right-0 xl:right-8 collapse lg:visible xl:w-64">
             <AppToc class="top-56" />
             <AppUsefulLinks class="" />
           </div>

@@ -7,10 +7,10 @@
         <img v-if="!computedLogoSrc" src="/logo-light.png" alt="Logo" />
       </template>
     </AppHeader>
-    <UContainer :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
-      :class="route.path === '/' ? 'size-full' : 'w-full pb-24 pt-5'">
+    <div :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
+      :class="route.path === '/' ? 'size-full' : 'w-full sm:max-lg:container pb-24 px-4 sm:px-6 lg:px-8'">
       <NuxtPage />
-    </UContainer>
+    </div>
     <AppFooter v-if="route.path !== '/' && route" />
   </div>
 </template>
