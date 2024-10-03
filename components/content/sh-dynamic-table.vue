@@ -31,7 +31,7 @@
           </template>
         </UAccordion>
       </div>
-      <table :class="ui.table">
+      <table :class="[ui.table, 'table-fixed']">
         <thead :calss="ui.thead">
           <tr :ui.tr.base>
             <template v-for="column in props.columns">
@@ -46,9 +46,9 @@
           </tr>
         </thead>
         <tbody :calss="ui.tbody">
-          <template v-for="(row, index) in displayItems">
+          <template v-for="(row, index) in displayItems" :key="`${index}-${Date.now()}`">
             <tr :id="`${index}-${Date.now()}`" :calss="ui.tr.base">
-              <template v-for="(column, cIndex) in props.columns">
+              <template v-for="(column, cIndex) in props.columns" :key="`${column.name}-${index}-${Date.now()}`">
                 <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
                   :id="`${column.name}-${index}-${Date.now()}`"
                   :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
@@ -123,6 +123,7 @@ const { ui, attrs } = useUI(
   toRef(props, "class")
 )
 
+
 const fetchData = async () => {
   try {
     displayItems.value = []
@@ -174,6 +175,7 @@ const reformatColumnValues = (data) => {
 
 const updateData = async () => {
   items.value = await fetchData()
+  nextTick()
   updateDisplayData()
 }
 
@@ -191,9 +193,13 @@ const updateDisplayData = () => {
   let endIndex = startIndex + perPage.value > numberOfItems.value ? numberOfItems.value : startIndex + perPage.value
 
   displayItems.value = []
+  nextTick()
+
   for (let index = startIndex; index < endIndex; index++) {
     displayItems.value.push(filteredData[index])
   }
+  nextTick()
+
 }
 
 const items = toRef([])
@@ -389,6 +395,10 @@ const onSort = (column) => {
   }
   updateDisplayData()
 }
+
+onMounted(() => {
+  updateData()
+})
 
 watch(items,
   (newValue, oldValue) => {
