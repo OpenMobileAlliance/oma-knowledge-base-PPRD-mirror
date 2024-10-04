@@ -70,10 +70,10 @@ The following name and number registries are currently maintained by OMNA.
       <td>WAP WSP</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#wsp-content-type-codes.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#wsp-header-code-page-names.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#wsp-header-parameters.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#wsp/wsp-extended-methods.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsp-content-type-codes" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsp-header-code-page-names" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsp-header-parameters" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsp/wsp-extended-methods" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -89,7 +89,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>WAP WTP</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#wtp_options_tpi_numbers.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wtp-option-TPI" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -102,10 +102,10 @@ The following name and number registries are currently maintained by OMNA.
       <td>WAP WAG</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#wbxml_public_document_ids.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#wmlscript_library_ids.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#push-application.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#external_functionality_interface_namespace.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wbxml-public-document-id" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wmlscript-library-id" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#push-application" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#efi-names" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -121,9 +121,9 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMNA Shared</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#urn_namespace_registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#schema_based_namespace_registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#registry_for_oma_private_avp_codes.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#OMNA-namespace-registry" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#omna-schema-based-namespace-registry" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#oma-private-avp-codes" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -138,8 +138,8 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Security</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#iso-object-identifiers.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#gba-protocol-identifiers.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#iso-object-identifiers" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#gba-protocol-identifiers" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -153,9 +153,9 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Device Management (DM)</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#dm_ac_registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#dm_mo_registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#dm_alert_types.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#dm_ac_registry" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#dm_mo_registry" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#dm_alert_types" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -170,10 +170,10 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Digital Rights Management (DRM)</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#drms_registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#drm_encryption_method_registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#mdcf_message_elements_registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#drm_sample_type_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#digital-rights-management-system" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#drm-encryption-method" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#mpeg-drm-control-format" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#mpeg-drm-control-format2" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -204,7 +204,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Location (LOC)</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#vendor-operator-id-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#loc" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -217,11 +217,11 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Mobile Broadcast (BCAST)</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#bcast-service-class-registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#bcast-indentification-authority-registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#bcast-client-manufacturer-code-registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#bcast-parental-rating-system-registry.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#bcast/smartcard-application-aid-codes.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast-service-class" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast-identification-authority" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast-client-manufacturer" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast-parental-rating" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast/smartcard-application-code" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -238,8 +238,8 @@ The following name and number registries are currently maintained by OMNA.
       <td>MA Mobile Codes (MC)</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#mobile-codes-registry-ids.html" target="_blank">Register</a></li>
-          <li><a href="/omna/registerpage.html#mobile-codes-routing-prefix.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#mc-registry" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#mc-routing" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -253,7 +253,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Presence</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#presence-service-description-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#presence" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -266,7 +266,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Presence and Availability (PAG)</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#xcap-auid-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#pag" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -279,7 +279,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA Push</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#omna-push-message-header-code-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#push" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -292,7 +292,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA RESTful Network APIs</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#service-and-policy-exception-codes-registry-for-oma-restful-network-APIs.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#resful-network-api" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -305,7 +305,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA XDM Document Management (XDM)</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#xdm-document-management.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#xdm" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -318,7 +318,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>OMA WSDL Packages</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#WSDL-packages.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsdl-packages" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -331,7 +331,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>External Registrations</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#external-registries.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#oma-external-registrations" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
@@ -344,7 +344,7 @@ The following name and number registries are currently maintained by OMNA.
       <td>CPM Registry for folder naming</td>
       <td>
         <ul>
-          <li><a href="/omna/registerpage.html#cpm-registry-for-folder-naming.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#cpm" target="_blank">Register</a></li>
         </ul>
       </td>
       <td>
