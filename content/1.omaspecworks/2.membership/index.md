@@ -8,4 +8,7 @@ OMA SpecWorks is a leading Standards Development Organization (SDO) that brings 
 
 Membership in OMA SpecWorks offers companies an unparalleled opportunity to contribute directly to ongoing working groups or to initiate new projects tailored to their strategic goals. With a streamlined process that effectively balances the need for industry consensus with the urgency of bringing products to market, OMA SpecWorks empowers members to complete work items efficiently. Whether your company is a large corporation or a start-up, OMA SpecWorks provides the tools and collaborative environment necessary to develop high-quality technical outputs, particularly in key areas like IoT device management through protocols such as LwM2M. 
 
-**Join OMA SpecWorks today and be part of the future of wireless communication**. Visit [Join OMA](/omaspecworks/membership/join) to learn more and start your membership journey.
+**Join OMA SpecWorks today and be part of the future of wireless communication**. 
+- Visit [Join OMA](/omaspecworks/membership/join) to learn more and start your membership journey.
+- To Get the latest updates Subscribe for Our [Newsletters](/newsletter)!
+
