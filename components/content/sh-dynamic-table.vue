@@ -31,7 +31,7 @@
           </template>
         </UAccordion>
       </div>
-      <table :class="[ui.table, 'table-fixed']">
+      <table :class="ui.table">
         <thead :calss="ui.thead">
           <tr :ui.tr.base>
             <template v-for="column in props.columns">
