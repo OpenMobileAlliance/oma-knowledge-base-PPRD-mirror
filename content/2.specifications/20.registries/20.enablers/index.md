@@ -18,19 +18,19 @@ In addition to the LwM2M Registry, OMNA manages several other active registries.
   <tbody>
     <tr>
       <td rowspan="4">WAP WSP</td>
-      <td><a href="/public/omna/wsp/wsp_content_type_codes.html" target="_blank">WSP Content Type Codes</a></td>
+      <td><a href="/omna/wsp/wsp_content_type_codes.html" target="_blank">WSP Content Type Codes</a></td>
+      <td><a href="/omna/registerpage.html#wsp-content-type-codes" target="_blank">Register</a></td>
+    </tr>
+    <tr>
+      <td><a href="/omna/wsp/wsp-header-code-page-names.html" target="_blank"> WSP Header Code Page Names</a></td>
       <td>Register</td>
     </tr>
     <tr>
-      <td>WSP Header Code Page Names</td>
+      <td><a href="/omna/wsp/wsp-header-parameters.html" target="_blank">WSP Header Parameters</a></td>
       <td>Register</td>
     </tr>
     <tr>
-      <td>WSP Header Parameters</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>WSP Extended Methods</td>
+      <td><a href="/omna/wsp/wsp-extended-methods.html" target="_blank">WSP Extended Methods</a></td>
       <td>Register</td>
     </tr>
     <tr>
