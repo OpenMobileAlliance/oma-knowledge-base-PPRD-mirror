@@ -10,6 +10,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     Description: string;
     Owner: string;
     Source: string;
+    SourceStr: string;
     Ver: string;
     DDF: string;
     Vorto: string;
@@ -19,6 +20,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     xmlEditor: string;
     lwm2mEditor: string;
     tsLink: string;
+    DocName: string;
   }
 
   const filterDDFObjects = (xmlString: string): ddfObject[] | null => {
@@ -28,37 +30,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       console.error("No valid XML first node found.");
       return null;
     }
-/*
- <Item>
-        <!-- Integer -->
-        <!-- ObjectID -->
-        <ObjectID>0</ObjectID>
-        <!-- URN of the object -->
-        <URN>urn:oma:lwm2m:oma:0</URN>
-        <!-- Name of the object -->
-        <Name>LWM2M Securitnpm install htmlparser2y</Name>
-        <!-- Description of the Object -->
-        <Description>This LwM2M Object provides the keying material of a LwM2M Client appropriate to access a specified LwM2M Server. One Object Instance SHOULD address a LwM2M Bootstrap-Server.
-These LwM2M Object Resources MUST only be changed by a LwM2M Bootstrap-Server or Bootstrap from Smartcard and MUST NOT be accessible by any other LwM2M Server.</Description>
-        <!-- Name of the organization that has registered the object -->
-        <Owner>Test WG</Owner>
-        <!-- Type of Object: 0 = defined by OMA, 1 = defined by external Standards Development Organizations, 2 = private or individual -->
-        <Source>0</Source>
-        <!-- Ver of the object, not visible, not used -->
-        <Ver>1.0</Ver>
-        <!-- URL to the xml file describing the object -->
-        <DDF>version_history/0-1_0.xml</DDF>
-        <!-- Link that opens the Object in the Vorto environment -->
-        <Vorto></Vorto>
-        <!-- 0 => if link to object should not be visible, 1 => if object should be visible (default) -->
-        <DDFLink>1</DDFLink>
-        <!-- URL to the TS of the object, not visible, not used -->
-        <TS>http://www.openmobilealliance.org/release/LightweightM2M/V1_0_2-20180209-A/OMA-TS-LightweightM2M-V1_0_2-20180209-A.pdf</TS>
-        <!-- 0 => if link to TS should not be visible, 1 => if link to TS should be visible (default) -->
-        <TSLink>1</TSLink>
-    </Item>
 
- */
     const result: ddfObject[] = [];
 
     const items = xmlDoc.DDFList?.Item
@@ -86,13 +58,29 @@ These LwM2M Object Resources MUST only be changed by a LwM2M Bootstrap-Server or
 
       let lwm2mEditor = ""
       if (ObjectID?.length > 0 && DDF?.length > 0 && DDFLink?.length > 0 && DDFLink ===  '1')  {
-        lwm2mEditor = `<a href="http://devtoolkit.openmobilealliance.org/OEditor/LWMOView?url=${DDF}" target="_blank">${ObjectID}</a>`
+        lwm2mEditor = decodeURI(`http://devtoolkit.openmobilealliance.org/OEditor/LWMOView?url=https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/${DDF}"`)
+        lwm2mEditor = `<a href="${lwm2mEditor}" target="_blank">${ObjectID}</a>`
       }
 
+      let docName = ""
       let tsLink = TS
       if (TS?.length > 0 && TSLink?.length > 0 && TSLink ===  '1')  {
-        let docName = TS.split('/')?.pop()
-        tsLink = `<a href="${TS}" target="_blank" title="${docName}"><Icon size="1.5rem" name="i-carbon:cloud-download" /></a>`
+        docName = TS.split('/')?.pop()
+        tsLink = `<a href="${TS}" target="_blank" title="${docName}" class="mx-auto"><span class="text-primary dark:from-primary/[0.25] text-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="m30 25l-1.414-1.414L26 26.172V18h-2v8.172l-2.586-2.586L20 25l5 5z"/><path fill="currentColor" d="M18 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6v3h2v-5a.91.91 0 0 0-.3-.7l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h10Zm0-23.6l5.6 5.6H18Z"/></svg></span></a>`
+
+      }
+
+      let sourceStr = ""
+      if (Source?.length > 0) {
+        if (Source === '0') {
+          sourceStr = "OMA Labels"
+        }
+        if (Source === '1') {
+          sourceStr = "Standards Organizations Labels"
+        }
+        if (Source === '2') {
+          sourceStr = "Companies or individuals"
+        }
       }
 
       const newItem: ddfObject = {
@@ -102,6 +90,7 @@ These LwM2M Object Resources MUST only be changed by a LwM2M Bootstrap-Server or
         Description: Description?.length > 0 ? Description : "",
         Owner: Owner?.length > 0 ? Owner : "",
         Source: Source?.length > 0 ? Source : "",
+        SourceStr: sourceStr,
         Ver: Ver?.length > 0 ? Ver : "",
         DDF: DDF?.length > 0 ? DDF : "",
         Vorto: Vorto?.length ? Vorto : "",
@@ -110,7 +99,8 @@ These LwM2M Object Resources MUST only be changed by a LwM2M Bootstrap-Server or
         TSLink: TSLink?.length > 0 ? TSLink : "",
         xmlEditor: xmlEditor,
         lwm2mEditor: lwm2mEditor,
-        tsLink: tsLink
+        tsLink: tsLink,
+        DocName: docName
       }
 
       result.push(newItem);

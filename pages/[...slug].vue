@@ -14,7 +14,7 @@
             <h1 class="capitalize hover:uppercase">
               {{ page.title }}
             </h1>
-            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-10">
+            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="par mt-8 pb-10"> <!--par is custom class for paragraph-->
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
                   icon="i-heroicons-exclamation-triangle" />
@@ -50,14 +50,14 @@
               </p>
             </div>
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
-              class="text-left dark:text-white" />
+              class="par text-left dark:text-white" />
             <br />
           </div>
         </div>
       </template>
 
       <template v-else>
-        <ContentRenderer :value="page" :style="{ fontSize: main.font.size }" class="mt-8 pb-24">
+        <ContentRenderer :value="page" :style="{ fontSize: main.font.size }" class="par mt-8 pb-24">
           <template #not-found>
             <UAlert title="File not found!" description="The requested resource cannot be found."
               icon="i-heroicons-exclamation-triangle" />

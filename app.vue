@@ -133,8 +133,7 @@ h7 {
   font-family: var(--h7-font-type);
 }
 
-.dark div[data-content-id],
-/* Add dark mode to the content, but leave components out */
+.dark .par, /*custom class for paragraph located in [...slug].vue*/
 .dark strong,
 .dark em,
 .dark ul,
@@ -151,13 +150,13 @@ h7 {
 }
 
 /* Links */
-a {
-  color: theme('colors.oma-blue.300');
-  text-decoration: none;
+
+.prose a {
+  text-decoration: none !important;
 }
 
 a:hover {
-  color: theme('colors.oma-blue.700');
+  color: theme('colors.blue.700');
 }
 
 .dark a {
