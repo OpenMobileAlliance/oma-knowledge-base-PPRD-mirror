@@ -9,227 +9,232 @@ Please click on one of the available OMASpecWorks resources available:
 ::ShTwoColumns
 ---
 size: XL
-ui: # First Column in ShTwoColumns
-  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl shadow-2xl p-5"
+ui: 
+  wrapper: bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-7
 ---
 
-::ShMultiColumn
----
-cols: 4
----
-    :::ShColumn 
-    --- 
-    # First column
+    :::ShMultiColumn
     ---
-        ::::ShMicroCard
+    cols: 4  # First column in ShTwoColumns
+    ---
+        ::::ShColumn 
+        --- 
+        # First column
         ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
-            subtitle: dark:text-gray-300/[0.8]
-        icon: i-eos-icons:rotating-gear
-        title: About # First Row
-        subtitle: "OMA SpecWorks"
-        urlWrapper: /omaspecworks/about
-        ---
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                subtitle: dark:text-gray-300/[0.8]
+            icon: i-eos-icons:rotating-gear
+            title: About
+            subtitle: "OMA SpecWorks"
+            urlWrapper: /omaspecworks/about
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: heroicons-outline:academic-cap
+            title: OMA SpecWorks
+            subtitle: Introduction
+            urlWrapper: /omaspecworks/about/omaspecworks
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: la:balance-scale
+            title: IPR
+            subtitle: Terms
+            urlWrapper: /omaspecworks/about/ipr
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5 mb-10
+            icon: ic:baseline-assured-workload
+            title: Policies & Terms
+            subtitle: Terms
+            urlWrapper: /omaspecworks/about/policies-terms
+            ---
+            ::::
+
         ::::
 
-        ::::ShMicroCard
+        ::::ShColumn 
+        --- 
+        # Second Column
         ---
-        ui:
-            wrapper: mt-5
-        icon: heroicons-outline:academic-cap
-        title: OMA SpecWorks # First Column
-        subtitle: Introduction
-        urlWrapper: /omaspecworks/about/omaspecworks
-        ---
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
+                subtitle: dark:text-gray-300/[0.8]
+            icon: el:adult
+            title: Membership
+            subtitle: OMA SpecWorks
+            urlWrapper: /omaspecworks/membership/
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: carbon:partnership
+            title: Join
+            subtitle: OMA SpecWorks
+            urlWrapper: /omaspecworks/membership/join
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: fa6-solid:handshake
+            title: Benefits
+            subtitle: Membership
+            urlWrapper: /omaspecworks/membership/benefits
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: carbon:events
+            title: Members 
+            subtitle: OMA SpecWorks
+            urlWrapper: /omaspecworks/membership/members
+            ---
+            :::::
+
         ::::
 
-        ::::ShMicroCard
+        ::::ShColumn 
+        --- 
+        # Third Column
         ---
-        ui:
-            wrapper: mt-5
-        icon: la:balance-scale
-        title: IPR # First Column
-        subtitle: Terms
-        urlWrapper: /omaspecworks/about/ipr
-        ---
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                subtitle: dark:text-gray-300/[0.8]
+            icon: carbon:collaborate
+            title: Collaborate
+            subtitle: OMA SpecWorks
+            urlWrapper: "/omaspecworks/collaborate"
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: ic:baseline-diversity-3
+            title: OMA Groups
+            subtitle: Working Groups
+            urlWrapper: /omaspecworks/collaborate/working-groups
+            ---
+            :::::  
+            
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: ic:baseline-diversity-3
+            title: Affiliates
+            subtitle: OMA Predecesors
+            urlWrapper: /omaspecworks/collaborate/affiliates
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: carbon:concept
+            title: Liaisons
+            subtitle: Standards Flora
+            urlWrapper: /omaspecworks/collaborate/liaison-agreements
+            ---
+            :::::
+
         ::::
 
-        ::::ShMicroCard
+        ::::ShColumn 
+        --- 
+        # Fourth Column
         ---
-        ui:
-            wrapper: mt-5 mb-10
-        icon: ic:baseline-assured-workload
-        title: Policies & Terms # First Column
-        subtitle: Terms
-        urlWrapper: /omaspecworks/about/policies-terms
-        ---
-        ::::
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                subtitle: dark:text-gray-300/[0.8]
+            icon: i-svg-spinners:blocks-shuffle-3
+            title: Get Involved
+            subtitle: OMA SpecWorks
+            urlWrapper: /omaspecworks/get-involved
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: ic:outline-email
+            title: Contact us
+            subtitle: Talk to us
+            urlWrapper: /contact-us
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: fluent:news-24-regular
+            title: Newsletter
+            subtitle: Join our Newsletter!
+            urlWrapper: /newsletter
+            ---
+            :::::
+
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: ic:outline-live-help
+            title: F.A.Q
+            subtitle: Questions & Answers
+            urlWrapper: /faq
+            ---
+            :::::
+        ::::          
     :::
 
-    :::ShColumn 
-    --- 
-    # Second Column
+    :::ShSegment
     ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
-            subtitle: dark:text-gray-300/[0.8]
-        icon: el:adult
-        title: Membership # Second Row
-        subtitle: OMA SpecWorks
-        urlWrapper: /omaspecworks/membership/
-        ---
-        ::::
+    ui: #Second column in ShTwoColumns
+        wrapper: px-4 text-xl
+    ---
 
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: carbon:partnership
-        title: Join # Second Column
-        subtitle: OMA SpecWorks
-        urlWrapper: /omaspecworks/membership/join
-        ---
-        ::::
+    ![](/images/omaspecworks/about/DALL_E_Idea_machine.webp){ class="mx-auto rounded-lg"}
 
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: fa6-solid:handshake
-        title: Benefits # Second Column
-        subtitle: Membership
-        urlWrapper: /omaspecworks/membership/benefits
-        ---
-        ::::
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: carbon:events
-        title: Members # Second Column
-        subtitle: OMA SpecWorks
-        urlWrapper: /omaspecworks/membership/members
-        ---
-        ::::
+    OMA SpecWorks is a Standards Development Organization (SDO) focused on creating consensus-driven technical specifications, particularly for mobile and IoT sectors.  
+
+    It has notably developed the OMA LightweightM2M (LwM2M) protocol, essential for IoT device management across diverse networks.  
+
+    The organization promotes standards that enhance interoperability and accelerate market growth.
     :::
-
-    :::ShColumn 
-    --- 
-    # Third Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
-            subtitle: dark:text-gray-300/[0.8]
-        icon: carbon:collaborate
-        title: Collaborate # Third Column
-        subtitle: OMA SpecWorks
-        urlWrapper: "/omaspecworks/collaborate"
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: ic:baseline-diversity-3
-        title: OMA Groups # Third Column
-        subtitle: Working Groups
-        urlWrapper: /omaspecworks/collaborate/working-groups
-        ---
-        ::::  
-        
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: ic:baseline-diversity-3
-        title: Affiliates # Third Column
-        subtitle: OMA Predecesors
-        urlWrapper: /omaspecworks/collaborate/affiliates
-        ---
-        ::::  
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: carbon:concept
-        title: Liaisons # Third Column
-        subtitle: Standards Flora
-        urlWrapper: /omaspecworks/collaborate/liaison-agreements
-        ---
-        ::::        
-    :::
-
-    :::ShColumn 
-    --- 
-    # Fourth Column
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
-            subtitle: dark:text-gray-300/[0.8]
-        icon: i-svg-spinners:blocks-shuffle-3
-        title: Get Involved # Fourth Column
-        subtitle: OMA SpecWorks
-        urlWrapper: /omaspecworks/get-involved
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: ic:outline-email
-        title: Contact us # Fourth Column
-        subtitle: Talk to us
-        urlWrapper: /contact-us
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: fluent:news-24-regular
-        title: Newsletter # Fourth Column
-        subtitle: Join our Newsletter!
-        urlWrapper: /newsletter
-        ---
-        ::::
-
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: mt-5
-        icon: ic:outline-live-help
-        title: F.A.Q # Fourth Column
-        subtitle: Questions & Answers
-        urlWrapper: /faq
-        ---
-        ::::
-    :::          
-::
-::ShSegment
----
-ui: #Second Column in ShTwoColumns
-  wrapper: px-4 text-xl leading-7
----
-
-![](/images/omaspecworks/about/DALL_E_Idea_machine.webp){ class="mx-auto rounded-lg"}
-
-OMA SpecWorks is a Standards Development Organization (SDO) focused on creating consensus-driven technical specifications, particularly for mobile and IoT sectors.  
-
-It has notably developed the OMA LightweightM2M (LwM2M) protocol, essential for IoT device management across diverse networks.  
-
-The organization promotes standards that enhance interoperability and accelerate market growth.
-
-::
 ::
 
 ::ShAlert
