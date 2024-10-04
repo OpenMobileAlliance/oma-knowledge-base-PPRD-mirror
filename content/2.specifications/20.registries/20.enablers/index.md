@@ -4,184 +4,354 @@ description:
 layout: doc
 ---
 
-### OMNA Enabler Registries
+## OMNA Enabler Registries
 In addition to the LwM2M Registry, OMNA manages several other active registries. These registries ensure consistent use of names and numbers across various OMA technologies, supporting interoperability and compatibility among different implementations.
 
-<table>
+### OMA Registries
+            
+Open Mobile Naming Authority (OMNA) is the operational naming authority established by WAP (as WAP Interim Naming Authority – WINA) and inherited by OMA.
+The goal of OMNA is to foster interoperability and compatibility between implementations utilizing OMA technology through the registration and mediation of assigned names and numbers.
+OMNA is specifically concerned with names and numbers not already administered by other bodies (e.g. <a href="http://www.iana.org/" target="_blank" title="click here for IANA" >IANA</a>).
+
+### OMNA Process
+
+The current OMNA process is based on the WINA process established by WAP. Until an OMA version is developed, the <a href="http://devwww.openmobilealliance.org/tech/OMNA/WINA20020204v01.pdf" target="_blank" title="click here">WAP WINA process document</a> should be used as a guide.  
+
+It describes the overall purpose of OMNA, how numbers and names are allocated, etc. Please read this document before submitting a request for an assigned name or number.
+
+### Requests for Assigned Names or Numbers
+
+Requests for OMNA assigned names or numbers should be submitted via the OMNA request form by selecting the appropriate Name Space.
+Requests will be reviewed by the OMNA Secretary and the Release Planning and Management Committee who will grant the OMNA assigned names or numbers when the requirements outlined in the Process document have been fulfilled’. The assignment of a name or number will be recorded in the OMNA database.  
+
+To get to a form to submit a request, there is a link available on the relevant pages listed below.
+
+### OMNA Administration
+
+OMNA is administered by the OMNA Secretary through the <a href="mailto:helpdesk@omaorg.org" target="_blank" title="click here">OMA Contacts page</a>.
+If you have comments on OMNA or the OMNA processes, please contact the OMNA Secretary.
+
+### OMNA Name and Number Database
+
+The following name and number registries are currently maintained by OMNA.
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        }
+    th:first-child {
+        padding-left: 1em;
+    }
+    td:first-child {
+        padding-left: 1em;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        font-size: 11px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<table class="">
   <thead>
     <tr>
-      <th>OMNA Registry Group</th>
-      <th>Registry Name</th>
+      <th>Open Mobile Alliance Naming Authority (OMNA) </th>
       <th>Click to Register</th>
+      <th>Click to View </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4">WAP WSP</td>
-      <td><a href="/omna/wsp/wsp_content_type_codes.html" target="_blank">WSP Content Type Codes</a></td>
-      <td><a href="/omna/registerpage.html#wsp-content-type-codes" target="_blank">Register</a></td>
-    </tr>
-    <tr>
-      <td><a href="/omna/wsp/wsp-header-code-page-names.html" target="_blank"> WSP Header Code Page Names</a></td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td><a href="/omna/wsp/wsp-header-parameters.html" target="_blank">WSP Header Parameters</a></td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td><a href="/omna/wsp/wsp-extended-methods.html" target="_blank">WSP Extended Methods</a></td>
-      <td>Register</td>
+      <td>WAP WSP</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#wsp-content-type-codes.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsp-header-code-page-names.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsp-header-parameters.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wsp/wsp-extended-methods.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/wsp/wsp_content_type_codes.html" target="_blank">WSP Content Type Codes</a></li>
+          <li><a href="/omna/wsp/wsp-header-code-page-names.html" target="_blank">WSP Header Code Page Names</a></li>
+          <li><a href="/omna/wsp/wsp-header-parameters.html" target="_blank">WSP Header Parameters</a></li>
+          <li><a href="/omna/wsp/wsp-extended-methods.html" target="_blank">WSP Extended Methods</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>WAP WTP</td>
-      <td>WTP Option TPI</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#wtp_options_tpi_numbers.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/wtp/wtp_options_tpi_numbers.html" target="_blank">WTP Option TPI</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td rowspan="4">WAP WAG</td>
-      <td>WBXML Public Document ID</td>
-      <td>Register</td>
+      <td>WAP WAG</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#wbxml_public_document_ids.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#wmlscript_library_ids.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#push-application.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#external_functionality_interface_namespace.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/wag/wbxml_public_document_ids.html" target="_blank">WBXML Public Document ID</a></li>
+          <li><a href="/omna/wag/wmlscript_library_ids.html" target="_blank">WMLScript Library ID</a></li>
+          <li><a href="/omna/wag/push_application_id.html" target="_blank">PUSH Application</a></li>
+          <li><a href="/omna/wag/external_functionality_interface_namespace.html" target="_blank">EFI Name Spaces</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td>WMLScript Library ID</td>
-      <td>Register</td>
+      <td>OMNA Shared</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#urn_namespace_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#schema_based_namespace_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#registry_for_oma_private_avp_codes.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/shared/urn_namespace_registry.html" target="_blank">OMA (URN) / Namespace Registry</a></li>
+          <li><a href="/omna/shared/schema_based_namespace_registry.html" target="_blank">OMA Schema-based Namespace Registry</a></li>
+          <li><a href="/omna/shared/registry_for_oma_private_avp_codes.html" target="_blank">OMA Private AVP Codes</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td>PUSH Application</td>
-      <td>Register</td>
+      <td>OMA Security</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#iso-object-identifiers.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#gba-protocol-identifiers.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/security/iso_object_identifiers.html" target="_blank">ISO Object Identifiers</a></li>
+          <li><a href="/omna/security/gba_protocol_identifiers.html" target="_blank">GBA Protocol Identifiers</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td>EFI Name Spaces</td>
-      <td>Register</td>
+      <td>OMA Device Management (DM)</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#dm_ac_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#dm_mo_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#dm_alert_types.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/dm/dm_ac_registry.html" target="_blank">DM Application Characteristics (AC) Registry</a></li>
+          <li><a href="/omna/dm/dm_mo_registry.html" target="_blank">DM Management Object (MO) Registry</a></li>
+          <li><a href="/omna/dm/dm_alert_types.html" target="_blank">OMA DM Alert Types </a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td rowspan="3">OMNA Shared</td>
-      <td>OMA (URN) / Namespace Registry</td>
-      <td>Register</td>
+      <td>OMA Digital Rights Management (DRM)</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#drms_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#drm_encryption_method_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#mdcf_message_elements_registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#drm_sample_type_registry.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/drm/drms_registry.html" target="_blank">OMA Digital Rights Management System (DRMS) Registry</a></li>
+          <li><a href="/omna/drm/drm_encryption_method_registry.html" target="_blank">DRM EncryptionMethod Registry</a></li>
+          <li><a href="/omna/drm/mdcf_message_elements_registry.html" target="_blank">MPEG-2 DRM Control Format (MDCF) Message Elements Registry</a></li>
+          <li><a href="/omna/drm/drm_sample_type_registry.html" target="_blank">DRM sample_type Registry</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td>OMA Schema-based Namespace Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>OMA Private AVP Codes</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td rowspan="2">OMA Security</td>
-      <td>ISO Object Identifiers</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>GBA Protocol Identifiers</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td rowspan="3">OMA Device Management (DM)</td>
-      <td>DM Application Characteristics (AC) Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>DM Management Object (MO) Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>OMA DM Alert Types</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td rowspan="4">OMA Digital Rights Management (DRM)</td>
-      <td>OMA Digital Rights Management System (DRMS) Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>DRM EncryptionMethod Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>MPEG-2 DRM Control Format (MDCF) Message Elements Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>DRM sample_type Registry</td>
-      <td>Register</td>
+      <td>OMA Lightweight M2M (LWM2M)<a href="/lwm2m/resources/registry" target="_blank"><img src="/images/OMA-129_Lightweight_M2M_Logo_RGB_full.png" style="width:200px;height:100px;position:relative;">
+      </td>
+      <td>
+        <ul>
+          <li><a href="http://devtoolkit.openmobilealliance.org/OEditor/Register" target="_blank">Register Objects</a> <br />
+            <a href="http://devtoolkit.openmobilealliance.org/OEditor/Default" target="_blank">Register Resources</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/lwm2m/resources/registry" target="_blank">OMA Lightweight M2M (LWM2M) Object &amp; Resource Registry</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>OMA Location (LOC)</td>
-      <td>OMNA Vendor/Operator ID Registry</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#vendor-operator-id-registry.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/location/vendor-operator-id-registry.html" target="_blank">/OMNA Vendor/Operator ID Registry</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td rowspan="5">OMA Mobile Broadcast (BCAST)</td>
-      <td>BCAST Service Class Registry</td>
-      <td>Register</td>
+      <td>OMA Mobile Broadcast (BCAST)</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#bcast-service-class-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast-indentification-authority-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast-client-manufacturer-code-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast-parental-rating-system-registry.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#bcast/smartcard-application-aid-codes.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/bcast/bcast-service-class-registry.html" target="_blank">BCAST Service Class Registry</a></li>
+          <li><a href="/omna/bcast/bcast-indentification-authority-registry.html" target="_blank">BCAST Identification Authority Registry</a></li>
+          <li><a href="/omna/bcast/bcast-client-manufacturer-code-registry.html" target="_blank">BCAST ClientManufacturerCode Registry</a></li>
+          <li><a href="/omna/bcast/bcast-parental-rating-system-registry.html" target="_blank">BCAST Parental Rating System Registry</a></li>
+          <li><a href="/omna/bcast/smartcard-application-aid-codes.html" target="_blank">OMA Smartcard Application (AID) Codes Registry</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td>BCAST Identification Authority Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>BCAST ClientManufacturerCode Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>BCAST Parental Rating System Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>OMA Smartcard Application (AID) Codes Registry</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td rowspan="2">OMA Mobile Codes (MC)</td>
-      <td>OMA Mobile Codes Registry ID</td>
-      <td>Register</td>
-    </tr>
-    <tr>
-      <td>OMA Mobile Codes Routing Prefix</td>
-      <td>Register</td>
+      <td>MA Mobile Codes (MC)</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#mobile-codes-registry-ids.html" target="_blank">Register</a></li>
+          <li><a href="/omna/registerpage.html#mobile-codes-routing-prefix.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/mobile-codes/mobile-codes-registry-ids.html" target="_blank">OMA Mobile Codes Registry ID</a></li>
+          <li><a href="/omna/mobile-codes/mobile-codes-routing-prefix.html" target="_blank">OMA Mobile Codes Routing Prefix</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>OMA Presence</td>
-      <td>Service Description Elements</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#presence-service-description-registry.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/presence/presence-service-description-registry.html" target="_blank">Service Description Elements</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>OMA Presence and Availability (PAG)</td>
-      <td>XCAP Application Unique ID (AUID) Registry</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#xcap-auid-registry.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/presence-and-availability/xcap-auid-registry.html" target="_blank">XCAP Application Unique ID (AUID) Registry</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>OMA Push</td>
-      <td>OMNA Push Message Header Code Registry</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#omna-push-message-header-code-registry.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/push/omna-push-message-header-code-registry.html" target="_blank">OMNA Push Message Header Code Registry</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>OMA RESTful Network APIs</td>
-      <td>Service and Policy Exceptions Registry</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#service-and-policy-exception-codes-registry-for-oma-restful-network-APIs.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/RESTful_Network_APIs/service-and-policy-exception-codes-registry-for-oma-restful-network-APIs.html" target="_blank">Service and Policy Exceptions Registry</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>OMA XDM Document Management (XDM)</td>
-      <td>URI List Usage Names</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#xdm-document-management.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/xdm-document-management/xdm-document-management.html" target="_blank">URI List Usage Names</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>OMA WSDL Packages</td>
-      <td>URNs for use in WSDL</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#WSDL-packages.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/WSDL-packages/WSDL-packages.html" target="_blank">URNs for use in WSDL</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>External Registrations</td>
-      <td>OMNA Assignments from External Registries</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#external-registries.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/external-registrations/external-registries.html" target="_blank">OMNA Assignments from External Registries</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>CPM Registry for folder naming</td>
-      <td>CPM Registry for folder naming</td>
-      <td>Register</td>
+      <td>
+        <ul>
+          <li><a href="/omna/registerpage.html#cpm-registry-for-folder-naming.html" target="_blank">Register</a></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li><a href="/omna/cpm-registry-for-folder-naming/cpm-registry-for-folder-naming.html" target="_blank">CPM Registry for folder naming</a></li>
+        </ul>
+      </td>
     </tr>
   </tbody>
 </table>
-
