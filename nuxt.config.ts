@@ -38,6 +38,11 @@ export default defineNuxtConfig({
   app: {
     // baseURL: process.NODE_ENV === 'production' ? "/oma-knowledge-base/" : '/',
     head: {
+      charset: "utf-8",
+      htmlAttrs: {
+        lang: 'en'
+      },
+      viewport: "width=device-width, initial-scale=1",
       link: [
         { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
       ],
