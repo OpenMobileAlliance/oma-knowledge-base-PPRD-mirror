@@ -3,23 +3,30 @@
     <article class="prose w-fit max-w-fit mt-16">
 
       <template v-if="page?.layout === 'doc'">
-        <div class="grid grid-cols-12">
-          <AppSideMenu :items="displayNavigation" class="col-start-1 col-span-2 hidden lg:block overflow-auto" />
-          <section :class="contentClass" class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-9 lg:ml-9 lg:mr-24 w-full lg:w-fit">
-            <h1 class="capitalize hover:uppercase">
+        <div class="grid grid-cols-12 relative">
+          <!-- Sidebar Menu -->
+          <div class="col-start-1 col-span-2 hidden lg:block overflow-auto h-screen sticky top-48">
+            <AppSideMenu :items="displayNavigation" class="overflow-auto" />
+          </div>
+
+          <!-- Main Content -->
+          <section :class="contentClass"
+            class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-9 lg:ml-9 lg:mr-24 w-full lg:w-fit overflow-auto">
+            <h1 class="">
               {{ page.title }}
             </h1>
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
-              class="par mt-8 pb-10"> <!--par is custom class for paragraph-->
+              class="par mt-8 pb-10">
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <!-- <PrevNextPage v-if="$route.path !== '/'" /> -->
           </section>
-          <div class="col-start-12 col-span-1 hidden lg:block sm:-ml-16">
-            <AppToc class="" />
+
+          <!-- Table of Contents and Useful Links -->
+          <div class="col-start-12 col-span-1 hidden lg:block sticky top-48 h-screen overflow-auto sm:-ml-16">
+            <AppToc class="mb-4" />
             <AppUsefulLinks class="" />
           </div>
         </div>
@@ -58,13 +65,14 @@
 
       <template v-else>
         <div class="grid grid-cols-12 ">
-        <ContentRenderer :value="page" :style="{ fontSize: main.font.size }" class="col-start-1 col-span-12 w-full lg:w-fit par mt-8 pb-24">
-          <template #not-found>
-            <UAlert title="File not found!" description="The requested resource cannot be found."
-              icon="i-heroicons-exclamation-triangle" />
-          </template>
-        </ContentRenderer>
-      </div>
+          <ContentRenderer :value="page" :style="{ fontSize: main.font.size }"
+            class="col-start-1 col-span-12 w-full lg:w-fit par mt-8 pb-24">
+            <template #not-found>
+              <UAlert title="File not found!" description="The requested resource cannot be found."
+                icon="i-heroicons-exclamation-triangle" />
+            </template>
+          </ContentRenderer>
+        </div>
         <!--<PrevNextPage v-if="route.path !== '/'" />-->
       </template>
     </article>
