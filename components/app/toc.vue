@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 const config = {
-    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600',
+    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 dark:hover:text-oma-blue-100',
     active: 'bg-primary-200 dark:bg-primary-600 p-2',
     normal: 'w-full p-2',
     link: {

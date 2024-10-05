@@ -1,32 +1,39 @@
 <template>
   <main class="">
-    <article class="prose w-fit max-w-fit mt-16">
+    <article class="prose w-fit max-w-full mt-16">
 
       <template v-if="page?.layout === 'doc'">
-        <div class="">
-          <AppSideMenu :items="displayNavigation"
-            class="fixed top-56 left-8 w-64 h-[calc(100vh-20rem)] overflow-auto " />
-          <div class="fixed right-8 w-64">
-            <AppToc class="top-56" />
-            <AppUsefulLinks class="" />
+        <div class="grid grid-cols-12 relative">
+          <!-- Sidebar Menu -->
+          <div class="col-start-1 col-span-2 hidden lg:block overflow-auto h-screen sticky top-48">
+            <AppSideMenu :items="displayNavigation" class="overflow-auto" />
           </div>
-          <section :class="contentClass" class="ml-64 mr-64 pl-8 pr-8">
-            <h1 class="capitalize hover:uppercase">
+
+          <!-- Main Content -->
+          <section :class="contentClass"
+            class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-9 lg:ml-9 lg:mr-24 w-full lg:w-fit overflow-auto">
+            <h1 class="">
               {{ page.title }}
             </h1>
-            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }" class="par mt-8 pb-10"> <!--par is custom class for paragraph-->
+            <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
+              class="par mt-8 pb-10"> <!--par is custom class for paragraph-->
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <!-- <PrevNextPage v-if="$route.path !== '/'" /> -->
           </section>
+
+          <!-- Table of Contents and Useful Links -->
+          <div class="col-start-12 col-span-1 hidden lg:block sticky top-48 h-screen overflow-auto sm:-ml-16">
+            <AppToc class="mb-4" />
+            <AppUsefulLinks class="" />
+          </div>
         </div>
       </template>
 
       <template v-else-if="page?.layout === 'articles'">
-        <div class="-mt-16 mx-64 ">
+        <div class="w-screen -mt-16 xl:mx-32 2xl:mx-64">
           <div class="container flex mx-auto">
             <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
           </div>
@@ -57,12 +64,15 @@
       </template>
 
       <template v-else>
-        <ContentRenderer :value="page" :style="{ fontSize: main.font.size }" class="par mt-8 pb-24">
-          <template #not-found>
-            <UAlert title="File not found!" description="The requested resource cannot be found."
-              icon="i-heroicons-exclamation-triangle" />
-          </template>
-        </ContentRenderer>
+        <div class="grid grid-cols-12 ">
+          <ContentRenderer :value="page" :style="{ fontSize: main.font.size }"
+            class="col-start-1 col-span-12 w-full lg:w-fit par mt-8 pb-24">
+            <template #not-found>
+              <UAlert title="File not found!" description="The requested resource cannot be found."
+                icon="i-heroicons-exclamation-triangle" />
+            </template>
+          </ContentRenderer>
+        </div>
         <!--<PrevNextPage v-if="route.path !== '/'" />-->
       </template>
     </article>
