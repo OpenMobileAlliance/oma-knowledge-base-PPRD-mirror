@@ -37,7 +37,7 @@ export default {
       square: true,
       color: 'gray' as const,
       variant: 'ghost' as const,
-      class: '-m-1.5'
+      class: '-m-1.5 font-semibold text-sm'
     },
   }
 }
