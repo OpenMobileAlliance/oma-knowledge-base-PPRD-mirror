@@ -16,7 +16,7 @@
             </select>
           </div>
           <div class="pl-4">
-            <button @click="downloadCSV" class="hover:stale-1" title="Download CSV file">
+            <button @click="downloadCSV" class="hover:scale-125" title="Download CSV file">
               <Icon name="i-carbon-download" />
             </button>
           </div>
