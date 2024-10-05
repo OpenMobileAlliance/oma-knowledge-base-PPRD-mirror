@@ -4,30 +4,21 @@ layout: doc
 ---
 Please click in one of the topics for further information:
 
-::ShMultiColumn
+::ShTwoColumns
 ---
-cols: 2 
+size: XL
+ui: 
+    wrapper: bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-7
 ---
-    ::ShSegment
+    :::ShMultiColumn
     ---
-    ui:
-        wrapper: rounded-lg
+    cols: 3  # First column in ShTwoColumns
     ---
-    <figure>
-    <img src="/images/specifications/oma-specs-resources.png" class="rounded-lg">
-    </figure>
-    ::
-    
-    
-    ::ShMultiColumn
-    ---
-    cols: 3 
-    ---
-        :::ShColumn 
+        ::::ShColumn 
         --- 
         ui: # First Column
         ---
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
@@ -37,9 +28,9 @@ cols: 2
             subtitle: OMA Documentation
             urlWrapper: "/specifications/search"
             ---
-            ::::
+            :::::
 
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: mt-5
@@ -49,9 +40,9 @@ cols: 2
             subtitle: OMA Baselines
             urlWrapper: "/specifications/search/specifications"
             ---
-            ::::
+            :::::
 
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: mt-5
@@ -61,9 +52,9 @@ cols: 2
             subtitle: OMA Enablers
             urlWrapper: "/specifications/search/enablers"
             ---
-            ::::
+            :::::
 
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: mt-5
@@ -73,14 +64,14 @@ cols: 2
             subtitle: OMA Public Documentation
             urlWrapper: "/specifications/search/public-docs"
             ---
-            ::::
-        :::
+            :::::
+        ::::
 
-        :::ShColumn 
+        ::::ShColumn 
         --- 
         ui: # Second Column
         ---
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
@@ -90,9 +81,9 @@ cols: 2
             subtitle: OMNA Registries
             urlWrapper: "/specifications/registries"
             ---
-            ::::
+            :::::
 
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: mt-5
@@ -102,9 +93,9 @@ cols: 2
             subtitle: OMNA Registry
             urlWrapper: "/lwm2m/resources/registry"
             ---
-            ::::
+            :::::
 
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: mt-5
@@ -114,9 +105,9 @@ cols: 2
             subtitle: Enablers
             urlWrapper: "/specifications/registries/enablers"
             ---
-            ::::
+            :::::
 
-            ::::ShMicroCard
+            :::::ShMicroCard
             ---
             ui:
                 wrapper: mt-5
@@ -126,10 +117,10 @@ cols: 2
             subtitle: Enablers
             urlWrapper: "/specifications/registries/supporting-data"
             ---
-            ::::            
-        :::
+            :::::            
+        ::::
 
-        :::ShColumn 
+        ::::ShColumn 
         --- 
         ui: # Third Column
         ---
@@ -168,8 +159,18 @@ cols: 2
             urlWrapper: "/specifications/api/#oma-api-inventory"
             ---
             ::::      
-        :::      
-    ::
+        ::::      
+    :::
     
+    :::ShSegment
+    ---
+    ui: # Second column in ShTwoColumns
+        wrapper: rounded-lg -mt-10 px-4 text-xl
+    ---
+    <figure>
+    <img src="/images/specifications/oma-specs-resources.png" class="mx-auto w-fit rounded-lg">
+    </figure>
+    :::
+
 ::
 

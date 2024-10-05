@@ -4,7 +4,7 @@
 
       <h3 :class="ui.tags.title">Tags</h3>
 
-      <div class="flex justify-center">
+      <div class="block xl:flex justify-center">
         <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)"
           :class="[ui.tags.list, { 'bg-primary-300 border-primary-400 text-neutral-600 dark:bg-primary-700 dark:border-primary-600 dark:hover:shadow-primary/[0.1]': selectedTags.includes(tag) }]">
           {{ tag }}

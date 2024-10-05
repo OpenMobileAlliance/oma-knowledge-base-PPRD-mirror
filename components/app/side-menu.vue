@@ -5,8 +5,8 @@
         <ul class="">
           <li v-for="(link, index) in sideMenuItems" :key="index">
             <div :class="[ui.shadow, isActive(link.to) ? ui.active : ui.normal]">
-              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal">
-                <span :class="[getIndent(link.depth), 'text-nowrap w-full']">{{ link.title }}</span>
+              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal" class="hover:text-black dark:hover:text-oma-blue-100">
+                <span :class="[getIndent(link.depth), 'text-nowrap w-full dark:hover:text-oma-blue-100']">{{ link.title }}</span>
               </NuxtLink>
             </div>
           </li>
@@ -26,7 +26,7 @@ const config = {
   normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px w-full',
   link: {
     active: 'text-oma-blue-500 dark:text-oma-blue-200 font-bold',
-    normal: 'w-full block text-black dark:text-golden hover:text-black dark:hover:text-golden'
+    normal: 'w-full block text-black dark:text-golden'
   }
 };
 

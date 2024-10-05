@@ -9,7 +9,7 @@ Dive Deeper
 ::ShMultiColumn
 ---
 ui:
-    wrapper: xl:invisible 2xl:visible w-fit mx-auto mb-32
+    wrapper: w-fit mx-auto mb-32
 cols: 7
 ---
     :::ShColumn 
