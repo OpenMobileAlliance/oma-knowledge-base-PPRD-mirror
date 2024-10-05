@@ -10,7 +10,7 @@
           World</p>
       </div>
       <ShButton class="p-4 rounded-2xl mt-12 hover:contrast-150 dark:text-white dark:hover:text-white hover:text-white"
-        color="primary" size="lg" urlButton="/omaspecworks/" target="_top">Get Started</ShButton>
+        color="primary" size="lg" urlButton="/omaspecworks/" target="_parent">Get Started</ShButton>
     </div>
   </div>
 

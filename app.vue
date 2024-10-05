@@ -1,5 +1,5 @@
 <template>
-  <div :class="computedHeightClass" class="flex flex-col w-full bg-golden/[0.2] dark:bg-[#19191a]"
+  <div :class="computedHeightClass" class="w-fit sm:w-full bg-golden/[0.2] dark:bg-[#19191a]"
     :style="{ fontFamily: main.font.type }">
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
@@ -7,8 +7,7 @@
         <img v-if="!computedLogoSrc" src="/logo-light.png" alt="Logo" />
       </template>
     </AppHeader>
-    <div :ui="{ constrained: '', padding: route.path === '/' ? '' : 'px-4 sm:px-6 lg:px-8' }"
-      :class="route.path === '/' ? 'size-full' : 'w-full sm:max-lg:container pb-24 px-4 sm:px-6 lg:px-8'">
+    <div :class="route.path === '/' ? 'size-full' : 'w-full pb-24 px-4 sm:px-6 lg:px-8'">
       <NuxtPage />
     </div>
     <AppFooter v-if="route.path !== '/' && route" />
