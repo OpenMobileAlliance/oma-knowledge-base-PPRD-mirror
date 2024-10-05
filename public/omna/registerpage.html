@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="shortcut icon" href="/favicon-1.png" type="image/x-icon">
-    <title>Open Mobile Alliance -OMNA BCAST Identification Authority Registry</title>
+  <title>Open Mobile Alliance - Form for OMNA Registries</title>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <!-- Font awesome for arrows -->
@@ -2744,52 +2744,883 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 }
     </style>
 </head>
-<body>
-    <!-- This gets populated with the header.html using Javascript -->
+  <body>
+      <style>
+      table {
+      width: 100%;
+      border-collapse: collapse;
+      }
+      th:first-child {
+      padding-left: 2em;
+      }
+      td:first-child {
+      padding-left: 2em;
+      }
+      th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      font-size: 14px;
+      text-align: left;
+      }
+      th {
+      background-color: #f2f2f2;
+      text-align: center;
+      }
+      </style>
     <div class="container">
-        <div class="fl size100of100 mid-cont-ttl mbm">OMNA BCAST Identification Authority Registry</div>
-        <div class="fl size100of100  justify mbl">
-            <p>OMNA maintains this registry for Identification Authority associated with BCAST services. </p>
-            <p>
-                The Identification Authority label follow a simple naming model that permits unambiguous usage. Each Identification Authority label is structured as a URN to assure uniqueness. The model follows the following grammar:
-            </p>
-            <p class="quote">{IdentAuthLabel} ::= urn:oma:bcast:iauth:{IAiD} </p>
-            </br>Where
-            <p class="quote">- {IAiD} is a string that is registered to a BCAST Identification Authority (see table below) </p>
-            </br>Notes:
-            <ul>
-                <li>1.<i> {IAiD}</i> patterns starting with 'x-' are for testing and need not be coordinated with OMNA as they will not be recorded </li>
-                <li>2. <em>{IAiD} </em>patterns starting with 'dns-' are an alternative to registration when the text following the 'dns-' is a legitimate domain name string. As an alternative to registration, such strings need not be requested by OMNA, nor will they be recorded. </li>
-            </ul>
-            <p>For more information, please review Appendix H of <a href="https://www.openmobilealliance.org/release/BCAST/V1_0-20090212-A/OMA-TS-BCAST_Service_Guide-V1_0-20090212-A.pdf" class="reg-txtUnderline textHoverBrwn">OMA-TS-BCAST_ServiceGuide-V1_0</a>.</p>
-            <div class="fl size99of100 mtl mid-hd-bg fb mbm">
-                OMA Broadcast Identification Authority Registry
-            </div>
-            <p>
-                The following list of Broadcast Identification Authority names have been registered and recorded by OMNA (request form available
-                <a href="?p=933" class="reg-txtUnderline textHoverBrwn">here</a>). For each item, a brief description and specification reference is provided.
-            </p>
-            <table style="width: 100%" id="table1">
-                <tbody>
-                    <tr>
-                        <th colspan="3" class="TableTitre1">OMA Identification Authority Information for Broadcast Services</th>
-                    </tr>
-                    <tr>
-                        <th width="231" class="TableTitre2">Identification Authority Name</th>
-                        <th class="TableTitre2">IdentAuthLabel</th>
-                        <th class="TableTitre2">Reference Information</th>
-                    </tr>
-                    <tr>
-                        <td width="231" class="TableP1big">-</td>
-                        <td class="TableP1little">-</td>
-                        <td class="TableP1big">
-                            <p align="center">-</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <div>
+        <h1>
+          Form for OMNA Registries
+        </h1>
+      </div>
+      <div>
+        <p></p>
+      </div>
+      <div>
+        <h2>WAP WSP</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="wsp-content-type-codes">
+              <td>
+                <p>WSP Content Type Codes</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>IANA Registered Content Type Name.</li>
+                  <li>Provide a short description of how this content type will be used.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20WSP%20Content%20Type%20Codes">Submit</a>
+              </td>
+            </tr>
+            <tr id="wsp-header-code-page-names">
+              <td>
+                <p>WSP Header Code Page Names</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Requested Header Code Page Name.</li>
+                  <li>Provide a short description of how this header page will be used.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20WSP%20Header%20Code%20Page%20Names">Submit</a>
+              </td>
+            </tr>
+            <tr id="wsp-header-parameters">
+              <td>
+                <p>WSP Header Parameters</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Requested Header Parameter Name.</li>
+                  <li>Provide a short description of how this header parameter will be used, what WSP Header this parameter is used with, and what the parameter means.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20WSP%20Header%20Parmeters">Submit</a>
+              </td>
+            </tr>
+            <tr id="wsp-extended-methods">
+              <td>
+                <p>WSP Extended Methods</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Requested Extended Method Name.</li>
+                  <li>Provide a short description of how this Extended Method will be used.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20WSP%20Extended%20Method">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>WAP WTP</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="wtp-option-TPI">
+              <td>
+                <p>WTP Option TPI</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Provide a short description of how this Option TPI will be used.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20WTP%20Options%20TPI%20Numbers">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>WAP WAG</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="wbxml-public-document-id">
+              <td>
+                <p>WBXML Public Document ID</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Provide a short description of how this WBXML Public Document ID will be used.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20WBXML%20Public%20Document%20ID">Submit</a>
+              </td>
+            </tr>
+            <tr id="wmlscript-library-id">
+              <td>
+                <p>WMLScript Library IDs</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>WMLScript Library Name.</li>
+                  <li>Provide a short description of how this Library will be used and the functionality that it provides.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20WMLScript%20Library%20ID">Submit</a>
+              </td>
+            </tr>
+            <tr id="push-application">
+              <td>
+                <p>PUSH Application</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Your email address MUST be for the person using the PUSH Application ID.</li>
+                  <li>Request PUSH Application ID's URN.</li>
+                  <li>Provide a short description of how this Application ID URN will be used and the functionality that it provides.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20PUSH%20Application%20ID">Submit</a>
+              </td>
+            </tr>
+            <tr id="efi-names">
+              <td>
+                <p>External Functionality Interface (EFI) Namespace</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Server Identifier.</li>
+                  <li>Descriptive Name.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20EFI%20Namespace">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMNA Shared</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="OMNA-namespace-registry">
+              <td>
+                <p>OMNA (URN) / Namespace Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                --
+              </td>
+            </tr>
+            <tr id="omna-schema-based-namespace-registry">
+              <td>
+                <p>OMNA Schema-based Namespace Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                --
+              </td>
+            </tr>
+            <tr id="oma-private-avp-codes">
+              <td>
+                <p>OMNA Private AVP Codes</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20OMA%20Private%20AVD%20Codes">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Security</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="iso-object-identifiers">
+              <td>
+                <p>OMNA ISO Object Identifiers</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Server Identifier.</li>
+                  <li>Request SEC OID label.</li>
+                  <li>Location of requested attach point for OID label.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20ISO%20Object%20Identifiers">Submit</a>
+              </td>
+            </tr>
+            <tr id="gba-protocol-identifiers">
+              <td>
+                <p>OMNA GBA Protocol Identifiers</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                --
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Device Management</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="dm_ac_registry">
+              <td>
+                <p>OMNA DM Application Characteristics (AC) Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Provide a copy of the AC file to OMNA.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20DM%20Application%20Characteristics">Submit</a>
+              </td>
+            </tr>
+            <tr id="dm_mo_registry">
+              <td>
+                <p>OMNA DM Management Object (MO) Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>MO DDF URL.</li>
+                  <li>MO Specification URL</li>
+                  <li>Request MO Identifier</li>
+                  <li>Provide a short description of the MO Identifier.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20DM%20Management%20Object">Submit</a>
+              </td>
+            </tr>
+            <tr id="dm_alert_types">
+              <td>
+                <p>OMNA DM Alert Types</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Provide a short description of the Alert Code Register.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20DM%20Alert%20Types">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Digital Rights Management (DRM)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="digital-rights-management-system">
+              <td>
+                <p>OMNA Digital Rights Management System (DRMS) Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Requested DRMS URN.</li>
+                  <li>Registrant Name.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20Digital%20Rights%20Management">Submit</a>
+              </td>
+            </tr>
+            <tr id="drm-encryption-method">
+              <td>
+                <p>OMNA DRM Encryption Method Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Provide a brief description.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20DRM%20Encryption%20Method">Submit</a>
+              </td>
+            </tr>
+            <tr id="mpeg-drm-control-format">
+              <td>
+                <p>OMNA MPEG-2 DRM Control Format (MDCF) Message Elements Registry</p>
+                <ul>
+                  <li>CA_descriptor_message_ID</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Name of Organisation.</li>
+                  <li>Name of the top folder.</li>
+                  <li>Specifications that define it.</li>
+                  <li>Description of the folder purpose.</li>
+                  <li>Contact name for the Organisation.</li>
+                  <li>Any other comment.</li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20MPEG%20DRM%20Control%20Format%20Message%20CA_descriptor_message_ID">Submit</a>
+              </td>
+            </tr>
+            <tr id="mpeg-drm-control-format2">
+              <td>
+                <p>OMNA MPEG-2 DRM Control Format (MDCF) Message Elements Registry</p>
+                <ul>
+                  <li>CID_message_ID</li>
+                  <li>rights_url_message_ID</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Provide a brief description.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20MPEG%20DRM%20Control%20Format%20Message">Submit</a>
+              </td>
+            </tr>
+            <tr id="drm-sample">
+              <td>
+                <p>OMNA DRM Sample Type Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Brief descriptive.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20DRM%20Sample%20Type">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Location (LOC)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="loc">
+              <td>
+                <p>OMNA Vendor/Operator ID Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Company name.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20Location%20Vendor%20Operator%20ID">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Mobile Broadcast (BCAST)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="bcast-service-class">
+              <td>
+                <p>OMNA BCAST Service Class Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                <p>--</p>
+              </td>
+            </tr>
+            <tr id="bcast-identification-authority">
+              <td>
+                <p>OMNA BCAST Identification Authority Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Name of the Organization.</li>
+                  <li>Requested value for {IAiD}.</li>
+                  <li>URL of registry page. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20BCAST%20Identification%20Authority">Submit</a>
+              </td>
+            </tr>
+            <tr id="bcast-client-manufacturer">
+              <td>
+                <p>OMNA BCAST Client Manufacturer Code Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Name of the Manufacturer.</li>
+                  <li>URL for Manufacturer Website.</li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20BCAST%20Client%20Manufacturer%20Code">Submit</a>
+              </td>
+            </tr>
+            <tr id="bcast-parental-rating">
+              <td>
+                <p>OMNA BCAST Parental Rating System Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Name of your Organization.</li>
+                  <li>Name of Rating Scheme.</li>
+                  <li>Reference of Rating Scheme.</li>
+                  <li>Your name.</li>
+                  <li>Any other comment. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20BCAST%20Parental%20Rating%20System">Submit</a>
+              </td>
+            </tr>
+            <tr id="smartcard-application-code">
+              <td>
+                <p>OMNA Smartcard Application (AID) Codes</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                <p>--</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Mobile Codes (MC)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="mc-registry">
+              <td>
+                <p>OMNA Mobile Codes Registry ID</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Your email address.</li>
+                  <li>Name of Applicant entity. </li>
+                  <li>Primary contact person's name. </li>
+                  <li>Secondary contact person's name. </li>
+                  <li>Physical mailing addreess of applicant entity. </li>
+                  <li>Email address of applicant entity. </li>
+                  <li>Please provide a justification explaining why the applicant entity should be assigned a registry-ID. </li>
+                  <li>Please add any other comments pertinent to this registration. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20Mobile%20Codes%20Registry%20ID">Submit</a>
+              </td>
+            </tr>
+            <tr id="mc-routing">
+              <td>
+                <p>OMNA Mobile Codes Routing Prefix</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Your email address.</li>
+                  <li>Name of Applicant entity. </li>
+                  <li>Primary contact person's name. </li>
+                  <li>Secondary contact person's name. </li>
+                  <li>Physical mailing addreess of applicant entity. </li>
+                  <li>Email address of applicant entity. </li>
+                  <li>Please provide a justification explaining why the applicant entity should be assigned a Routing Prefix. </li>
+                  <li>Please add any other comments pertinent to this registration. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20Mobile%20Codes%20Routing%20Prefix">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Presence (PRESENCE)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="presence">
+              <td>
+                <p>OMNA Presence (Service Description) Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                <p>--</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA Presence and Availability (PAG)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="pag">
+              <td>
+                <p>OMNA XCAP Applidcation Unique ID (AUID) Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                <p>--</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA PUSH (PUSH)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="push">
+              <td>
+                <p>OMNA PUSH Message Header Code Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Your email address.</li>
+                  <li>PUSH message extension header name.</li>
+                  <li>Specification Reference.</li>
+                  <li>Specification URL.</li>
+                  <li>Standard Development Organizations (SDO).</li>
+                  <li>Any other comment pertinent to this registration. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20PUSH%20Message%20Extension%20Header%20Code">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA RESTful Network APIs</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="resful-network-api">
+              <td>
+                <p>OMNA Service and Policy Exceptions Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20RESTful%20Network%20API">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA XDM Document Management (XDM)</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="xdm">
+              <td>
+                <p>OMNA URI-List Usage Name Registry</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                <p>--</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA WSDL Packages</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="wsdl-packages">
+              <td>
+                <p>OMNA URNs for use in WSDL</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                <p>--</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA External Registrations</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="oma-external-registrations">
+              <td>
+                <p>OMNA Assignments from External Registries</p>
+              </td>
+              <td>
+                <ul>
+                  <li>--</li>
+                </ul>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>OMA CPM Registry for Folder Naming</h2>
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Registry Type</th>
+              <th>Information Requested</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="cpm">
+              <td>
+                <p>OMNA CPM Registry for Folder Naming</p>
+              </td>
+              <td>
+                <ul>
+                  <li>Your name.</li>
+                  <li>Your email address.</li>
+                  <li>Name of the Organization.</li>
+                  <li>Name of the top folder.</li>
+                  <li>Specifications that define it.</li>
+                  <li>Description of the folder purpose.</li>
+                  <li>Contact name for the Organization. </li>
+                </ul>
+              </td>
+              <td>
+                <a href="mailto:helpdesk@omaorg.org?Subject=OMNA%20Registration%20CPM%20Registry">Submit</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-

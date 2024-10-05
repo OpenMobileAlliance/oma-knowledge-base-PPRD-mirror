@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <article class="prose w-fit max-w-fit mt-16">
+    <article class="prose w-fit max-w-full mt-16">
 
       <template v-if="page?.layout === 'doc'">
         <div class="grid grid-cols-12 relative">
@@ -16,7 +16,7 @@
               {{ page.title }}
             </h1>
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
-              class="par mt-8 pb-10">
+              class="par mt-8 pb-10"> <!--par is custom class for paragraph-->
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
                   icon="i-heroicons-exclamation-triangle" />
