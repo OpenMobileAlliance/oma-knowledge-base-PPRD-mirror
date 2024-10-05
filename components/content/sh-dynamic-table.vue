@@ -1,11 +1,29 @@
 <template>
-  <div :class="[ui.wrapper, props.class]" v-bind="attrs">
+  <div :class="[ui.wrapper, 'w-full p-4']" v-bind="attrs">
     <div v-if="props.header" :class="ui.header">
       <MDC v-if="props.header" :value="props.header" />
     </div>
     <div :class="ui.base">
       <div :class="ui.search">
-        <UInput v-model="q" type="text" @keyup="onSearch" placeholder="type a token to search for" />
+        <div class="flex flex-row gap-2">
+          <div class="text-base flex flex-row">
+            <span class="pr-2">Show: </span>
+            <select class="" @change="onPerPageChange">
+              <option v-for="item in PER_PAGE_LIST" :key="item" :value="item" :class="{ selected: perPage === item }">
+                {{ item }}
+              </option>
+              <option value="-1" key="-1" :class="{ selected: perPage === -1 }">All</option>
+            </select>
+          </div>
+          <div class="pl-4">
+            <button @click="downloadCSV" class="hover:scale-125" title="Download CSV file">
+              <Icon name="i-carbon-download" />
+            </button>
+          </div>
+          <div class="pl-8 grow">
+            <UInput v-model="q" type="text" @keyup="onSearch" placeholder="type a token to search for" />
+          </div>
+        </div>
       </div>
       <div :class="ui.filter">
         <UAccordion :items="accordionItems" color="primary" variant="solid" size="sm" class="not-prose">
@@ -31,36 +49,44 @@
           </template>
         </UAccordion>
       </div>
-      <table :class="ui.table">
-        <thead :calss="ui.thead">
-          <tr :ui.tr.base>
-            <template v-for="column in props.columns">
-              <th v-if="column.hide !== true" :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]">
-                <UButton v-if="column.sortable" v-bind="{ ...(config.default.sortButton) }" :icon="getSortIcon(column)"
-                  @click="onSort(column)">
-                  <span v-html="getColumTitle(column)" class="not-prose" />
-                </UButton>
-                <span v-else v-html="getColumTitle(column)" class="not-prose" />
-              </th>
-            </template>
-          </tr>
-        </thead>
-        <tbody :calss="ui.tbody">
-          <template v-for="(row, index) in displayItems" :key="`${index}-${Date.now()}`">
-            <tr :id="`${index}-${Date.now()}`" :calss="ui.tr.base">
-              <template v-for="(column, cIndex) in props.columns" :key="`${column.name}-${index}-${Date.now()}`">
-                <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
-                  :id="`${column.name}-${index}-${Date.now()}`"
-                  :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
-                </td>
+      <div class="w-full overflow-x-auto">
+        <table :class="[ui.table, 'min-w-full']">
+          <thead :calss="ui.thead">
+            <tr :ui.tr.base>
+              <template v-for="column in props.columns">
+                <th v-if="column.hide !== true"
+                  :class="[ui.th.base, ui.th.padding, ui.th.color, ui.th.font, ui.th.size]">
+                  <UButton v-if="column.sortable" v-bind="{ ...(config.default.sortButton) }"
+                    :icon="getSortIcon(column)" @click="onSort(column)">
+                    <span v-html="getColumTitle(column)" class="not-prose" />
+                  </UButton>
+                  <span v-else v-html="getColumTitle(column)" class="not-prose" />
+                </th>
               </template>
             </tr>
-          </template>
-        </tbody>
-      </table>
+          </thead>
+          <tbody :calss="ui.tbody">
+            <template v-for="(row, index) in displayItems" :key="`${index}-${Date.now()}`">
+              <tr :id="`${index}-${Date.now()}`" :calss="ui.tr.base">
+                <template v-for="(column, cIndex) in props.columns" :key="`${column.name}-${index}-${Date.now()}`">
+                  <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
+                    :id="`${column.name}-${index}-${Date.now()}`"
+                    :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
+                  </td>
+                </template>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
       <div :class="ui.pagination">
-        <UPagination v-model="page" :page-count="perPage" :total="numberOfItems" :max="10" @click="onPageChange"
-          show-last show-first />
+        <div class="flex flex-row justify-between">
+          <div class="text-xs">
+            {{ infoMessage }}
+          </div>
+          <UPagination v-model="page" :page-count="perPage" :total="numberOfItems" :max="10" @click="onPageChange"
+            show-last show-first />
+        </div>
       </div>
     </div>
     <div v-if="props.footer" :class="ui.footer">
@@ -179,6 +205,8 @@ const updateData = async () => {
   updateDisplayData()
 }
 
+const infoMessage = toRef("")
+
 const updateDisplayData = () => {
 
   let filteredData = filterDataByQuery(items.value)
@@ -189,17 +217,28 @@ const updateDisplayData = () => {
 
   numberOfItems.value = filteredData?.length > 0 ? filteredData.length : 0
 
-  let startIndex = page.value * perPage.value - perPage.value
-  let endIndex = startIndex + perPage.value > numberOfItems.value ? numberOfItems.value : startIndex + perPage.value
+  if (perPage.value === -1) {
+    for (let index = 0; index < numberOfItems.value; index++) {
+      displayItems.value.push(filteredData[index])
+    }
 
-  displayItems.value = []
-  nextTick()
+    infoMessage.value = `Showing ${numberOfItems.value} items`
 
-  for (let index = startIndex; index < endIndex; index++) {
-    displayItems.value.push(filteredData[index])
+  } else {
+    let startIndex = page.value * perPage.value - perPage.value
+    let endIndex = startIndex + perPage.value > numberOfItems.value ? numberOfItems.value : startIndex + perPage.value
+
+    infoMessage.value = ""
+    displayItems.value = []
+    nextTick()
+
+    for (let index = startIndex; index < endIndex; index++) {
+      displayItems.value.push(filteredData[index])
+    }
+
+    infoMessage.value = `Showing ${endIndex > 0 ? startIndex + 1 : 0} to ${endIndex} out of ${numberOfItems.value} items`
   }
   nextTick()
-
 }
 
 const items = toRef([])
@@ -340,6 +379,47 @@ const getStats = (data) => {
 
 }
 
+// Escape fields containing special characters by wrapping them in quotes
+const escapeCSVField = (field) => {
+  let result = ""
+  if (typeof field === 'string' && (field.includes(',') ||
+    field.includes('"') || field.includes('#') || field.includes('\n'))) {
+    result = field.replace(/"/g, '\"')
+    result = result.replace(/,/g, ' ')
+    result = result.replace(/\n/g, ' ')
+  } else if (!field) {
+    result = "NULL"
+  } else {
+    result = field.length > 0 ? field.toString() : " "
+  }
+  return `${result}`
+}
+
+const downloadCSV = () => {
+  let csvContent = "" // "data:text/csv;charset=utf-8," // CSV file headers
+  const headers = props.columns.map(column => `${escapeCSVField(column.title)}`)
+  csvContent += headers.join(",") + "\n"
+
+  displayItems.value.forEach((row, index) => {
+
+    const rowContent = props.columns.map(column => `${escapeCSVField(row[column.name])}`)
+    csvContent += rowContent.join(",") + "\n"
+  })
+
+  // Create a temporary anchor element to trigger the download
+  const encodedUri = "data:text/csv;charset=utf-8i," + encodeURIComponent(csvContent)
+  const link = document.createElement("a")
+  link.setAttribute("href", encodedUri)
+  link.setAttribute("download", "table_data.csv")
+  document.body.appendChild(link)
+
+  // Trigger the download
+  link.click()
+
+  // Clean up: remove the link after download
+  document.body.removeChild(link)
+}
+
 // Event handlers
 
 const onPageChange = (e) => {
@@ -394,6 +474,15 @@ const onSort = (column) => {
     sortColumn.value = { name: column.name, direction: 'asc' }
   }
   updateDisplayData()
+}
+
+const onPerPageChange = (e) => {
+  try {
+    perPage.value = Number(e.target.value)
+    updateDisplayData()
+  } catch (error) {
+    console.error(error)
+  }
 }
 
 onMounted(() => {
