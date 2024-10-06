@@ -29,11 +29,11 @@
         <UAccordion :items="accordionItems" color="primary" variant="solid" size="sm" class="not-prose">
           <template #quick-filters>
             <div :class="getQuickFilterClass()">
-              <template v-for="column in props.columns">
+              <template v-for="column in sortedFilters">
                 <div class="rounded-lg border" v-if="column.filter">
                   <UDivider :label="column.title" class="py-4" />
                   <ul class="max-h-36 overflow-auto">
-                    <li v-for="label in Object.keys(stats[column.name])" :data-filter-key="column.name"
+                    <li v-for="label in Object.keys(stats[column.name]).sort()" :data-filter-key="column.name"
                       :data-filter-value="label" @click="onFilterChange"
                       class="list-none flex justify-between p-2 hover:cursor-pointer"
                       :class="[isSelectedFilter(column.name, label) ? ui.tr.selected : '', ui.tr.active]">
@@ -105,6 +105,7 @@ type itemsElement = {
   name: String;
   title?: String;
   filter?: Boolean;
+  filterOrder?: Number;
   order?: Boolean;
   hide?: Boolean;
   formatColumValue?: String;
@@ -202,6 +203,7 @@ const reformatColumnValues = (data) => {
 const updateData = async () => {
   items.value = await fetchData()
   nextTick()
+  sortFilters()
   updateDisplayData()
 }
 
@@ -258,6 +260,29 @@ const accordionItems = toRef([
   }
 ])
 const sortColumn = toRef({})
+const sortedFilters = toRef([])
+
+const sortFilters = () => {
+  sortedFilters.value = []
+
+  if (props.columns) {
+    let columnsUsedForFilter = props.columns.reduce((acc, c) => {
+      if (c && c.filter) {
+        acc.push(c)
+      }
+      return acc
+    }, [])
+    columnsUsedForFilter = columnsUsedForFilter.sort((l, r) => {
+      if (!l.filterOrder && !r.filterOrder) {
+        return 0
+      } else if (!r.filterOrder) {
+        return -1
+      }
+      return l.filterOrder - r.filterOrder
+    })
+    sortedFilters.value = columnsUsedForFilter
+  }
+}
 
 const filterDataByQuery = (data) => {
   const fields2Search = props.columns.filter(item => item.query).map(item => item.name)
@@ -374,6 +399,8 @@ const getStats = (data) => {
       })
     })
   }
+
+  //Object.keys(stats).forEach(key => (stats[key]).sort((a, b) => a - r))
 
   return stats
 
