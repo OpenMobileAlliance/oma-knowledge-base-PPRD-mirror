@@ -16,20 +16,17 @@
           color="primary" size="lg" urlButton="/omaspecworks/" target="_parent">Get Started</ShButton>
       </div>
       <div class="flex flex-col lg:flex-row lg:h-1/6 items-end mt-16 lg:mt-96">
-        <ShMicroCard :class="ui.microCard"
-          title="Open SVE-42 Registration"
-          subtitle="Oct 28-31, 2024! Düsseldorf, Germany"
-          text=""
-          urlWrapper="oma-events/test-events#next-test-event"
-          urlImage="/images/events/sve42.jpg" :ui="{ image: '-mt-1 mb-5 rounded-lg' }">
-        </ShMicroCard>
-        <ShMicroCard :class="ui.microCard"
-          title="Open Members meeting registration"
-          subtitle="Oct 28-31,	2024! Düsseldorf, Germany"
-          text=""
-          urlWrapper="https://www.eventbrite.com/e/oma-test-event-sve-42-dusseldorf-germany-registration-1022160237787?aff=oddtdtcreato"
-          icon="i-emojione:handshake-medium-light-skin-tone" :ui="{ icon: 'text-4xl mb-4' }">
-        </ShMicroCard>
+        <ContentQuery>
+          <ShMicroCard :class="ui.microCard" title="Open SVE-42 Registration"
+            subtitle="Oct 28-31, 2024! Düsseldorf, Germany" urlWrapper="oma-events/test-events#next-test-event"
+            urlImage="/images/events/sve42.jpg" :ui="{ image: '-mt-1 mb-5 rounded-lg' }">
+          </ShMicroCard>
+          <ShMicroCard :class="ui.microCard" title="Open Members meeting registration"
+            subtitle="Oct 28-31,	2024! Düsseldorf, Germany" 
+            urlWrapper="https://www.eventbrite.com/e/oma-test-event-sve-42-dusseldorf-germany-registration-1022160237787?aff=oddtdtcreato"
+            icon="i-emojione:handshake-medium-light-skin-tone" :ui="{ icon: 'text-4xl mb-4' }">
+          </ShMicroCard>
+        </ContentQuery>
       </div>
     </div>
   </div>
