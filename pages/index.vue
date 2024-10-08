@@ -27,7 +27,7 @@
           title="Open Members meeting registration"
           subtitle="Oct 28-31,	2024! Düsseldorf, Germany"
           text=""
-          urlWrapper="/oma-events/members-meetings#oma-members-meetings"
+          urlWrapper="https://www.eventbrite.com/e/oma-test-event-sve-42-dusseldorf-germany-registration-1022160237787?aff=oddtdtcreato"
           icon="i-emojione:handshake-medium-light-skin-tone" :ui="{ icon: 'text-4xl mb-4' }">
         </ShMicroCard>
       </div>
