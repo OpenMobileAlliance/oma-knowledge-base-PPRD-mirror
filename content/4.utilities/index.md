@@ -34,7 +34,7 @@ size: XL
             ui:
                 wrapper: mt-5
                 icon: w-1/4
-            icon: carbon:process
+            icon: pajamas:overview
             title: Technical Overview
             subtitle: Utitlities
             urlWrapper: "/utilities/introduction/#technical-overview"
@@ -89,7 +89,7 @@ size: XL
             ui:
                 wrapper: mt-5
                 icon: w-1/4
-            icon: cil:layers
+            icon: mingcute:gesture-unlock-line
             title: Unlocking Benefits
             subtitle: Whitepaper
             urlWrapper: "/utilities/market-potential/whitepaper-lwm2m-utilities-benefits"
@@ -101,7 +101,7 @@ size: XL
             ui:
                 wrapper: mt-5
                 icon: w-1/4
-            icon: cil:layers
+            icon: game-icons:profit
             title: Unlocking Savings
             subtitle: Whitepaper
             urlWrapper: "/utilities/market-potential/whitepaper-lwm2m-metering-use-case"

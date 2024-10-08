@@ -8,8 +8,8 @@ export default {
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
   tr: {
     base: '',
-    selected: 'bg-gray-300 dark:bg-gray-500',
-    active: 'hover:bg-gray-200 dark:hover:bg-gray-300 cursor-pointer'
+    selected: 'bg-oma-blue-400 hover:bg-oma-blue-300 text-white dark:bg-oma-blue-600 dark:hover:bg-oma-blue-500 dark:text-golden',
+    active: 'hover:bg-neutral-200 dark:hover:bg-neutral-600 cursor-pointer'
   },
   th: {
     base: 'text-left rtl:text-right',
@@ -37,7 +37,7 @@ export default {
       square: true,
       color: 'gray' as const,
       variant: 'ghost' as const,
-      class: '-m-1.5'
+      class: '-m-1.5 font-semibold text-sm'
     },
   }
 }

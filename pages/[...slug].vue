@@ -11,7 +11,7 @@
 
           <!-- Main Content -->
           <section :class="contentClass"
-            class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-9 lg:ml-9 lg:mr-24 w-full lg:w-fit overflow-auto">
+            class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 lg:ml-9 lg:mr-24 w-full lg:w-full overflow-auto">
             <h1 class="">
               {{ page.title }}
             </h1>
