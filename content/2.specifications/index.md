@@ -7,8 +7,6 @@ Please click in one of the topics for further information:
 ::ShTwoColumns
 ---
 size: XL
-ui: 
-    wrapper: bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-7
 ---
     :::ShMultiColumn
     ---

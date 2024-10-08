@@ -8,6 +8,8 @@ Welcome to the **Lightweight M2M (LwM2M) Resource Center**. Here, you'll find co
 
 ::ShMultiColumn
 ---
+ui:
+    wrapper: bg-gradient-to-t from-golden/[0.5]
 cols: 5 
 ---
     :::ShColumn 
