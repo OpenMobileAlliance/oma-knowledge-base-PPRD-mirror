@@ -19,12 +19,12 @@
         <ContentQuery>
           <ShMicroCard :class="ui.microCard" title="Open SVE-42 Registration"
             subtitle="Oct 28-31, 2024! Düsseldorf, Germany" urlWrapper="oma-events/test-events#next-test-event"
-            urlImage="/images/events/sve42.jpg" :ui="{ image: '-mt-1 mb-5 rounded-lg' }">
+            urlImage="/images/events/sve42.jpg" :ui="{ image: '-mt-1 mb-5 rounded-lg', subtitle: 'text-gray-800' }">
           </ShMicroCard>
           <ShMicroCard :class="ui.microCard" title="Open Members meeting registration"
             subtitle="Oct 28-31,	2024! Düsseldorf, Germany" 
             urlWrapper="https://www.eventbrite.com/e/oma-test-event-sve-42-dusseldorf-germany-registration-1022160237787?aff=oddtdtcreato"
-            icon="i-emojione:handshake-medium-light-skin-tone" :ui="{ icon: 'text-4xl mb-4' }">
+            icon="i-emojione:handshake-medium-light-skin-tone" :ui="{ icon: 'text-4xl mb-4', subtitle: 'text-gray-800' }">
           </ShMicroCard>
         </ContentQuery>
       </div>
