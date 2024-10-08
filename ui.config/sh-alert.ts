@@ -1,5 +1,5 @@
 export default {
-  wrapper: "flex items-center space-x-1 mt-4 mb-4 shadow-2xl",
+  wrapper: "flex items-center space-x-1 mt-4 mb-4 shadow-md rounded-xl",
   base: "flex mx-2 p-1",
   alert: {
     success: 'bg-[#F0FFF4] dark:bg-[#22543D] text-[#2F855A] dark:text-[#9AE6B4] relative border-l-4 border-[#68D391] dark:border-[#2F855A]',
