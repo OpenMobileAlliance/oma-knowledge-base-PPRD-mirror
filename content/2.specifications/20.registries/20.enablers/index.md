@@ -49,7 +49,7 @@ The following name and number registries are currently maintained by OMNA.
     th, td {
         border: 1px solid #ddd;
         padding: 8px;
-        font-size: 11px;
+        font-size: 20px;
         text-align: left;
     }
     th {

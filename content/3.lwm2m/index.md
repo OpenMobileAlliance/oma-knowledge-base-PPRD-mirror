@@ -266,7 +266,7 @@ cols: 5
         ui:
             wrapper: mt-5
             icon: w-1/5
-        icon: pajamas:api
+        icon: fluent-mdl2:product-list
         title: Product Listing # Fourth Column
         subtitle: |
             LwM2M
