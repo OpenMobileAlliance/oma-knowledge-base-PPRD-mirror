@@ -12,7 +12,7 @@ The Open Mobile Alliance (OMA) offers a robust set of API specifications:
 ::ShButton
 ---
 urlButton: /tools/lwm2m-api-registry/ # this is a comment to the link to the button.
-colorButton: green
+colorButton: blue
 size: 2xl 
 ---
 
