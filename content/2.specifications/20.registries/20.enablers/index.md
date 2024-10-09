@@ -55,6 +55,9 @@ The following name and number registries are currently maintained by OMNA.
     th {
         background-color: #f2f2f2;
     }
+    .dark thead {
+      background-color: theme('colors.neutral.600')
+    }
 </style>
 
 <table class="">

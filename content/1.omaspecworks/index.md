@@ -222,7 +222,7 @@ size: XL
     :::ShSegment
     ---
     ui: #Second column in ShTwoColumns
-        wrapper: px-4 text-xl
+        wrapper: px-4 text-xl -mt-5
     ---
 
     ![](/images/omaspecworks/about/DALL_E_Idea_machine.webp){ class="mx-auto rounded-lg"}

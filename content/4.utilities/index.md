@@ -22,6 +22,7 @@ size: XL
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
                 icon: w-2/5
+                subtitle: dark:text-gray-300/[0.8]
             icon: carbon:process
             title: Introduction
             subtitle: Utilities
@@ -65,6 +66,7 @@ size: XL
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
                 icon: w-1/4
+                subtitle: dark:text-gray-300/[0.8]
             icon: eos-icons:project-outlined
             title: Market Potential
             subtitle: LwM2M in Utilities
@@ -131,6 +133,7 @@ size: XL
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 m-1
                 icon: w-1/5
+                subtitle: dark:text-gray-300/[0.8]
             icon: i-mingcute:horn-line
             title: Promoting LwM2M
             subtitle: for Utilities

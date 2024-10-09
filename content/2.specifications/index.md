@@ -21,6 +21,7 @@ size: XL
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
                 icon: w-1/4
+                subtitle: dark:text-gray-300/[0.8]
             icon: tabler:search
             title: Search # First Row
             subtitle: OMA Documentation
@@ -74,6 +75,7 @@ size: XL
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
                 icon: w-1/3
+                subtitle: dark:text-gray-300/[0.8]
             icon: i-eos-icons:installing
             title: Registries # Second Row
             subtitle: OMNA Registries
@@ -127,6 +129,7 @@ size: XL
             ui:
                 wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
                 icon: w-1/2
+                subtitle: dark:text-gray-300/[0.8]
             icon: i-eos-icons:atom-electron
             title: API's # Third Column
             subtitle: OMA API's
@@ -163,7 +166,7 @@ size: XL
     :::ShSegment
     ---
     ui: # Second column in ShTwoColumns
-        wrapper: rounded-lg -mt-10 px-4 text-xl
+        wrapper: rounded-lg px-4 text-xl -mt-5
     ---
     <figure>
     <img src="/images/specifications/oma-specs-resources.png" class="mx-auto w-fit rounded-lg">

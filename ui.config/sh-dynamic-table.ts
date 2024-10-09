@@ -12,7 +12,7 @@ export default {
     active: 'hover:bg-neutral-200 dark:hover:bg-neutral-600 cursor-pointer'
   },
   th: {
-    base: 'text-left rtl:text-right',
+    base: 'text-left rtl:text-right dark:bg-neutral-600',
     padding: 'px-4 py-3.5',
     color: 'text-gray-900 dark:text-white',
     font: 'font-semibold',
