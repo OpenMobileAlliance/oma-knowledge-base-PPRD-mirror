@@ -9,7 +9,7 @@ Welcome to the **Lightweight M2M (LwM2M) Resource Center**. Here, you'll find co
 ::ShMultiColumn
 ---
 ui:
-    wrapper: bg-golden/[0.2] dark:bg-gradient-to-t dark:from-neutral-800
+    wrapper: bg-golden/[0.2] dark:bg-neutral-800
 cols: 5 
 ---
     :::ShColumn 
