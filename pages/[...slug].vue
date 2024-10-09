@@ -33,15 +33,15 @@
       </template>
 
       <template v-else-if="page?.layout === 'articles'">
-        <div class="w-screen -mt-16 xl:mx-32 2xl:mx-64">
+        <div class="w-full -mt-16 xl:px-44 2xl:px-64">
           <div class="container flex mx-auto">
             <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
           </div>
           <div class="text-center">
             <h2 class="text-oma-300 text-start text-4xl text-primary dark:text-primary">{{ page.title }}</h2>
-            <h3 v-if="page.subtitle" class="text-start text-3xl text-primary-700 dark:text-primary-700">{{
+            <h3 v-if="page.subtitle" class="mb-20 text-start text-3xl text-primary-400 dark:text-primary-500">{{
               page.subtitle }}</h3>
-            <div class="text-center text-2xl" v-if="page.tags && page.tags.length">
+            <div class="text-center text-2xl dark:text-neutral-400" v-if="page.tags && page.tags.length">
               Tags:
               <span v-for="tag in page.tags" :key="tag"
                 class="border rounded-3xl p-2 mx-2 text-white bg-primary border-primary-600 dark:bg-primary dark:border-primary-400 text-xl">
@@ -49,7 +49,7 @@
               </span>
             </div>
             <div class="flex items-center justify-center">
-              <p v-if="page.rightLabel" class="mr-2 text-2xl ">{{ 'By:' }}</p>
+              <p v-if="page.rightLabel" class="mr-2 text-2xl dark:text-neutral-400">{{ 'By:' }}</p>
               <p v-if="page.rightLabel" class="text-end text-gray-500 dark:text-gray-400 text-2xl">{{ page.rightLabel }}
               </p>
               <p v-if="page.leftLabel" class="mx-2 text-2xl">{{ '|' }}</p>
