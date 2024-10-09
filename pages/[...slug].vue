@@ -33,7 +33,7 @@
       </template>
 
       <template v-else-if="page?.layout === 'articles'">
-        <div class="w-screen -mt-16 xl:mx-32 2xl:mx-64">
+        <div class="w-full -mt-16 xl:px-32 2xl:px-64">
           <div class="container flex mx-auto">
             <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
           </div>

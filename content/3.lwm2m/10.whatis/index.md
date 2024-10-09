@@ -11,6 +11,8 @@ The Open Mobile Alliance Lightweight M2M (OMA LwM2M) protocol is a communication
 
 ::ShTextImg
 ---
+ui:
+  title: dark:text-golden
 positionText: left
 spanText: l
 alignText: left

@@ -5,6 +5,53 @@ layout: doc
 ---
 
 ## LwM2M Resources
+
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 1em;
+}
+
+th,
+td {
+  /* Add horizontal borders only */
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  /* Light mode header background color */
+}
+
+/* Remove vertical borders */
+th,
+td {
+  border-left: none;
+  border-right: none;
+}
+
+/* Dark mode adjustments */
+.dark th {
+  background-color: #333;
+  /* Dark mode header background color */
+  color: #f2f2f2;
+  /* Light text in dark mode */
+}
+
+.dark tr {
+  background-color: theme('colors.neutral.600');
+  /* Custom dark mode row background */
+}
+</style>
+
 <table>
     <caption>LwM2M Resources</caption>
     <tr>

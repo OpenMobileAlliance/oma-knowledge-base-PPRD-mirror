@@ -1,5 +1,5 @@
 <template>
-  <div :class="ui.wrapper">
+  <div :class="[ui.wrapper]">
     <NuxtLink :to="urlWrapper" class="not-prose">
       <div class="relative group">
         <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage" />

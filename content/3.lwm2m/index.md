@@ -8,6 +8,8 @@ Welcome to the **Lightweight M2M (LwM2M) Resource Center**. Here, you'll find co
 
 ::ShMultiColumn
 ---
+ui:
+    wrapper: bg-golden/[0.2] dark:bg-neutral-800
 cols: 5 
 ---
     :::ShColumn 
@@ -20,6 +22,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             icon: w-1/3
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-eos-icons:rotating-gear
         title: What is LwM2M # First Column First Row
         subtitle: 
@@ -77,6 +80,7 @@ cols: 5
         ui:
             wrapper:  bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/4
+            subtitle: dark:text-gray-300/[0.8]
         icon: line-md:gauge-loop
         title: Applications & Use Cases # Second Row
         subtitle: LwM2M
@@ -121,6 +125,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/4
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-svg-spinners:wind-toy
         title: Technical Resources # Third Column
         subtitle: LwM2M
@@ -200,6 +205,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             icon:  w-1/3
+            subtitle: dark:text-gray-300/[0.8]
         icon: eos-icons:service-outlined
         title: Community & Support # Fourth Column
         subtitle: LwM2M
@@ -283,6 +289,7 @@ cols: 5
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 
             icon: w-1/3
+            subtitle: dark:text-gray-300/[0.8]
         icon: i-svg-spinners:blocks-shuffle-3
         title: Get Involved # Fifth Column
         subtitle: LwM2M

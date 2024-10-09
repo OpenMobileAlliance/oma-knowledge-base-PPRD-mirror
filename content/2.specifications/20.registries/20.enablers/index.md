@@ -36,25 +36,49 @@ If you have comments on OMNA or the OMNA processes, please contact the OMNA Secr
 The following name and number registries are currently maintained by OMNA.
 
 <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        }
-    th:first-child {
-        padding-left: 1em;
-    }
-    td:first-child {
-        padding-left: 1em;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        font-size: 20px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 1em;
+}
+
+th,
+td {
+  /* Add horizontal borders only */
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  /* Light mode header background color */
+}
+
+/* Remove vertical borders */
+th,
+td {
+  border-left: none;
+  border-right: none;
+}
+
+/* Dark mode adjustments */
+.dark th {
+  background-color: #333;
+  /* Dark mode header background color */
+  color: #f2f2f2;
+  /* Light text in dark mode */
+}
+
+.dark tr {
+  background-color: theme('colors.neutral.600');
+  /* Custom dark mode row background */
+}
 </style>
 
 <table class="">

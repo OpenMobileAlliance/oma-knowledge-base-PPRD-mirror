@@ -10,15 +10,15 @@
 import {twoColumns as config } from "@/ui.config"
 
 const VALID_SIZES = {
-  "2XS": "grid-cols-10 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-9",
-  "XS": "grid-cols-5 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-4",
-  "S": "grid-cols-4 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-3",
-  "M": "grid-cols-3 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-2",
-  "L": "grid-cols-2 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-1",
-  "XL": "grid-cols-3 [&>*:nth-child(odd)]:col-span-2 [&>*:nth-child(even)]:col-span-1",
-  "2XL": "grid-cols-4 [&>*:nth-child(odd)]:col-span-3 [&>*:nth-child(even)]:col-span-1",
-  "3XL": "grid-cols-5 [&>*:nth-child(odd)]:col-span-4 [&>*:nth-child(even)]:col-span-1",
-  "4XL": "grid-cols-10 [&>*:nth-child(odd)]:col-span-9 [&>*:nth-child(even)]:col-span-1",
+  "2XS": "md:grid-cols-10 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-9",
+  "XS": "md:grid-cols-5 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-4",
+  "S": "md:grid-cols-4 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-3",
+  "M": "md:grid-cols-3 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-2",
+  "L": "md:grid-cols-2 [&>*:nth-child(odd)]:col-span-1 [&>*:nth-child(even)]:col-span-1",
+  "XL": "md:grid-cols-3 [&>*:nth-child(odd)]:col-span-2 [&>*:nth-child(even)]:col-span-1",
+  "2XL": "md:grid-cols-4 [&>*:nth-child(odd)]:col-span-3 [&>*:nth-child(even)]:col-span-1",
+  "3XL": "md:grid-cols-5 [&>*:nth-child(odd)]:col-span-4 [&>*:nth-child(even)]:col-span-1",
+  "4XL": "md:grid-cols-10 [&>*:nth-child(odd)]:col-span-9 [&>*:nth-child(even)]:col-span-1",
 }
 
 const props = withDefaults(
@@ -46,6 +46,6 @@ const { ui, attrs } = useUI(
 
 const gridClass = computed(() => {
   const selectedSize = props.size != undefined ? props.size : config.default.size
-  return ["grid", VALID_SIZES[selectedSize], props.gap].join(' ')
+  return ["flex flex-col md:grid", VALID_SIZES[selectedSize], props.gap].join(' ')
 })
 </script>
