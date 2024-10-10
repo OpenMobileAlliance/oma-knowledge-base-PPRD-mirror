@@ -12,6 +12,9 @@ Also, here are custom components provided, with detailed instructions on how to 
 This section is constructed out of two sub-sections:
 - [Looks&Feel](/_8.guidelines/looks-feel/)
 - [Components](/_8.guidelines/components/)
+
+List of components:
+
   - [sh-action-card](/_8.guidelines/components/sh-action-card)
   - [sh-alert](/_8.guidelines/components/sh-alert)
   - [sh-avatar](/_8.guidelines/components/sh-avatar)

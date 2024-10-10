@@ -4,91 +4,95 @@ description:
 layout: doc
 ---
 
-::ShMultiColumn
+::ShTwoColumns
 ---
-cols: 2
+size: L
 ---
 
-:::ShSegment
----
-ui:
-  wrapper: rounded-xl border shadow-2xl p-4 # Comment
----
-<img src="/images/tools/lwm2m-tools-oma.png" alt="Open Mobile Alliance Tools" class="rounded-2xl">
-:::
-
-:::ShMultiColumn
----
-cols: 3
----
-    ::::ShColumn 
-    --- 
-    ui: # First Column
-        wrapper: 
+    :::ShSegment
     ---
-        :::::ShMicroCard
-        ---
-        ui:
-            wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
-            icon: w-1/2
-        urlWrapper: /tools/lwm2m-api-registry/
-        title: API Registry
-        subtitle: LwM2M
-        icon: tabler:network
-        ---
-        :::::
-
-        :::::ShMicroCard
-        ---
-        ui:
-            wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
-            icon: w-1/3
-        urlWrapper: /tools/lwm2m-guidelines
-        title: LwM2 Guidelines
-        subtitle: Documentation
-        icon: tabler:network
-        ---
-        :::::        
-
-
-    ::::
-
-    ::::ShColumn 
-    --- 
-    ui: # Second Column
-    wrapper: m-1 
+    ui: # First column of ShTwoColumns
+        wrapper: -mt-5
     ---
-        :::::ShMicroCard
-        ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900     
-            icon: w-1/4
-        urlWrapper: /tools/lwm2m-editor-validator
-        title: Editor | Validator
-        subtitle: LwM2M
-        icon: ph:hand-coins-fill
-        ---
-        :::::
+    <img src="/images/tools/lwm2m-tools-oma.png" alt="Open Mobile Alliance Tools" class="rounded-2xl">
+    :::
 
-    ::::
-    ::::ShColumn 
-    --- 
-    ui: # Third Column
-    wrapper: m-1 
+    :::ShMultiColumn
     ---
-        :::::ShMicroCard
+    cols: 2 # Second column of ShTwoColumns
+    ---
+        ::::ShColumn 
+        --- 
+        ui: # First Column
         ---
-        ui:
-            wrapper: mb-2  bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900     
-            icon: w-1/4   
-        urlWrapper: ""
-        title: Developer's Tool Kit
-        subtitle: DECOMMISSIONED
-        icon: i-devicon-plain:fastapi
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                icon: w-1/2
+                subtitle: dark:text-gray-300/[0.8]
+            urlWrapper: /tools/lwm2m-api-registry/
+            title: API Registry
+            subtitle: LwM2M
+            icon: tabler:network
+            ---
+            :::::
+        ::::
+
+        ::::ShColumn
         ---
-        :::::
-    ::::
-:::
+        ui: # Second Column
+        ---
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+                icon: w-1/3
+                subtitle: dark:text-gray-300/[0.8]
+            urlWrapper: /tools/lwm2m-guidelines
+            title: LwM2 Guidelines
+            subtitle: Documentation
+            icon: tabler:network
+            ---
+            :::::        
+        ::::
+
+        ::::ShColumn 
+        --- 
+        ui: # Third Column
+        ---
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900     
+                icon: w-1/4
+                subtitle: dark:text-gray-300/[0.8]
+            urlWrapper: /tools/lwm2m-editor-validator
+            title: Editor | Validator
+            subtitle: LwM2M
+            icon: ph:hand-coins-fill
+            ---
+            :::::
+        ::::
+
+        ::::ShColumn 
+        --- 
+        ui: # Fourth Column
+        ---
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 hover:scale-100 hover:shadow-none hover:cursor-no-drop dark:hover:border-neutral-600
+                icon: w-1/4
+                subtitle: text-oma-red-500 dark:text-oma-red-600
+            urlWrapper: ""
+            title: Developer's Tool Kit
+            subtitle: DECOMMISSIONED
+            icon: i-devicon-plain:fastapi
+            ---
+            :::::
+        ::::
+    :::
 ::
 
 ## Introduction to LwM2M Tools

@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <article class="prose w-fit max-w-full mt-16">
+    <article class="prose w-full max-w-full mt-16">
 
       <template v-if="page?.layout === 'doc'">
         <div class="grid grid-cols-12 relative">

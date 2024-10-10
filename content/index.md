@@ -20,7 +20,7 @@ cols: 7
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col # Full height and width for the card
+            wrapper: h-full w-full flex flex-col # Full height and width for the card
             icon: w-1/3
         icon: i-mdi-file-document-box-outline
         title: OMA SpecWorks # First Row
@@ -37,7 +37,7 @@ cols: 7
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            wrapper: h-full w-full flex flex-col
             icon: w-1/3
         icon: i-mdi-file-cog-outline
         title: Specifications # Second Row
@@ -54,7 +54,7 @@ cols: 7
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            wrapper: h-full w-full flex flex-col
             icon: w-1/3
         icon: i-mdi-cellphone-wireless
         title: LwM2M # Third Column
@@ -71,7 +71,7 @@ cols: 7
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            wrapper: h-full w-full flex flex-col
             icon: w-1/3
         icon: i-mdi-wrench-outline
         title: Utilities # Fourth Column
@@ -88,7 +88,7 @@ cols: 7
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            wrapper: h-full w-full flex flex-col
             icon: w-1/3
         icon: i-mdi-newspaper-variant-outline
         title: News # Fifth Column
@@ -105,7 +105,7 @@ cols: 7
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            wrapper: h-full w-full flex flex-col
             icon: w-1/3
         icon: i-mdi-calendar-check-outline
         title: Events # Sixth Column
@@ -122,7 +122,7 @@ cols: 7
         ::::ShMicroCard
         ---
         ui:
-            wrapper: bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 shadow-md h-full w-full flex flex-col
+            wrapper: h-full w-full flex flex-col
             icon: w-1/3
         icon: i-mdi-tools
         title: Tools # Seventh Column
