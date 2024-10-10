@@ -4,7 +4,7 @@ export default {
   image: "h-full w-screen rounded-b-xl overflow-hidden",
   lowerBase: "p-6 rounded-b-xl",
   title: "text-3xl font-extrabold text-primary",
-  subtitle: "text-xl font-semibold text-primary-700 -mt-8",
+  subtitle: "text-xl font-semibold text-primary-700 dark:text-neutral-500 -mt-8",
   text: "text-base text-gray-800 dark:text-gray-200 not-prose",
   leftLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
   centerLabel: "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
