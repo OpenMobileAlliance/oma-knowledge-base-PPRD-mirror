@@ -1,7 +1,7 @@
 export default {
   header: {
     wrapper: "mt-10",
-    title: "text-2xl font-bold",
+    title: "title text-2xl font-bold",
   },
   wrapper: "border rounded-xl",
   inner: "mx-3 cursor-pointer",
