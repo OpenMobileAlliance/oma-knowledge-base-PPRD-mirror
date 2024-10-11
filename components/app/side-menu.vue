@@ -5,8 +5,8 @@
         <ul class="">
           <li v-for="(link, index) in sideMenuItems" :key="index">
             <div :class="[ui.shadow, isActive(link.to) ? ui.active : ui.normal]">
-              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal" class="hover:text-black dark:hover:text-oma-blue-100">
-                <span :class="[getIndent(link.depth), 'text-nowrap w-full dark:hover:text-oma-blue-100']">{{ link.title }}</span>
+              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal" class="dark:hover:text-oma-blue-100">
+                <span :class="[getIndent(link.depth), 'text-nowrap w-full']">{{ link.title }}</span>
               </NuxtLink>
             </div>
           </li>
@@ -21,7 +21,7 @@ const route = useRoute()
 
 const config = {
   wrapper: '',
-  shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600',
+  shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 rounded-r-lg',
   active: 'block border-l-4 dark:border-oma-blue-200 border-oma-blue-400 bg-primary-200 dark:bg-primary-600/[0.7]',
   normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px w-full',
   link: {
@@ -82,7 +82,7 @@ const isActive = (path) => {
   return route.path === path
 }
 
-const CONST_INDENT = ['pl-2', 'pl-4', 'pl-8', 'pl-12']
+const CONST_INDENT = ['pl-2 font-semibold', 'pl-4', 'pl-8', 'pl-12']
 
 const getIndent = (depth) => {
   return CONST_INDENT[depth]
