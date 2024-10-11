@@ -132,6 +132,7 @@ h7 {
   font-family: var(--h7-font-type);
 }
 
+/* Dark HTML elements */
 .dark .par, /*custom class for paragraph located in [...slug].vue*/
 .dark strong,
 .dark em,
@@ -147,9 +148,9 @@ h7 {
 .dark h6 {
   color: theme('colors.golden');
 }
+/* End of Dark HTML elements */
 
 /* Links */
-
 .prose a {
   text-decoration: none !important;
 }
@@ -166,8 +167,9 @@ a:hover {
 .dark a:hover {
   color: theme('colors.oma-blue.400');
 }
+/* End of Links */
 
-/* Code block */
+/* CodeBlock */
 code {
   border: 3px solid #dcdcdc;
   border-radius: 6px;
@@ -203,10 +205,13 @@ pre code {
   background: none;
   color: #ffffff;
 }
+/* End of CodeBlock */
 
 /* Blockquote */
 .light blockquote {
   background-color: theme('colors.neutral.200');
+  border-radius: 10px;
+  padding: 1rem;
   border-left: 4px solid #858585;
   color: #333;
   font-style: italic;
@@ -219,6 +224,8 @@ pre code {
 
 .dark blockquote {
   background-color: theme('colors.neutral.700');
+  border-radius: 10px;
+  padding: 1rem;
   border-left: 4px solid #ccc;
   margin: 1.5rem 0;
   font-style: italic;
@@ -226,7 +233,50 @@ pre code {
 
 .dark blockquote p {
   margin: 0;
-  /* Remove default margin from paragraphs */
   color: white;
 }
+/* End of Blockquote */
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 1em;
+}
+
+th:first-child {
+    border-top-left-radius: 0.6rem;
+}
+
+th:last-child {
+    border-top-right-radius: 0.6rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+}
+
+th {
+  background-color: theme('colors.zinc.200');
+}
+
+th,
+td {
+  border-left: none;
+  border-right: none;
+}
+
+.dark th {
+  background-color: theme('colors.zinc.700');
+  color: #f2f2f2;
+}
+/* End of Table */
 </style>
