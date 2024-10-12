@@ -142,18 +142,7 @@ size: XL
             subtitle: Working Groups
             urlWrapper: /omaspecworks/collaborate/working-groups
             ---
-            :::::  
-            
-            :::::ShMicroCard
-            ---
-            ui:
-                wrapper: mt-5
-            icon: ic:baseline-diversity-3
-            title: Affiliates
-            subtitle: OMA Predecesors
-            urlWrapper: /omaspecworks/collaborate/affiliates
-            ---
-            :::::
+            ::::: 
 
             :::::ShMicroCard
             ---
@@ -163,6 +152,17 @@ size: XL
             title: Liaisons
             subtitle: Standards Flora
             urlWrapper: /omaspecworks/collaborate/liaison-agreements
+            ---
+            :::::             
+            
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: ic:baseline-diversity-3
+            title: Affiliates
+            subtitle: OMA Predecesors
+            urlWrapper: /omaspecworks/collaborate/affiliates
             ---
             :::::
 
