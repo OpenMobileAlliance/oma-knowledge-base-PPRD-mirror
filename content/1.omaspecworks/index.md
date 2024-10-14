@@ -3,7 +3,7 @@ title: Welcome to OMASPECWORKS
 description:
 layout: doc
 ---
-
+### Selection Table
 Please click on one of the available OMASpecWorks resources available:
 
 ::ShTwoColumns
@@ -142,18 +142,7 @@ size: XL
             subtitle: Working Groups
             urlWrapper: /omaspecworks/collaborate/working-groups
             ---
-            :::::  
-            
-            :::::ShMicroCard
-            ---
-            ui:
-                wrapper: mt-5
-            icon: ic:baseline-diversity-3
-            title: Affiliates
-            subtitle: OMA Predecesors
-            urlWrapper: /omaspecworks/collaborate/affiliates
-            ---
-            :::::
+            ::::: 
 
             :::::ShMicroCard
             ---
@@ -163,6 +152,17 @@ size: XL
             title: Liaisons
             subtitle: Standards Flora
             urlWrapper: /omaspecworks/collaborate/liaison-agreements
+            ---
+            :::::             
+            
+            :::::ShMicroCard
+            ---
+            ui:
+                wrapper: mt-5
+            icon: ic:baseline-diversity-3
+            title: Affiliates
+            subtitle: OMA Predecesors
+            urlWrapper: /omaspecworks/collaborate/affiliates
             ---
             :::::
 
@@ -235,17 +235,7 @@ size: XL
     :::
 ::
 
-::ShAlert
-OMA SpecWorks is an innovative kind of Standards Development Organization
-(SDO) where the needs for wireless industry consensus versus the quick and
-accurate creation of specifications and other technical documentation are
-balanced via a working group-driven, efficient and [agile process](https://omaspecworks.org/what-is-oma-specworks/agile-process-for-standardization-in-todays-market-landscape/).
-As a non-profit organization with a long history in mobile and Internet of
-Things (IoT) technology development, OMA SpecWorks is a specifications factory
-where industry-leading companies bring their ideas and talent to build
-market-accelerating standards that allow products and services to interoperate
-seamlessly across fixed and mobile wireless data networks.
-::
+
 
 
 
