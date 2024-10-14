@@ -72,7 +72,7 @@ qas:
 ::
 
 ::ShAlert
-Download the these Q&As: <a href="/faq/OMASpecWorks FAQ.pdf" target="_blank" rel="noopener noreferrer">OMA FAQs in PDF</a>
+Download these Q&As: <a href="/faq/OMASpecWorks FAQ.pdf" target="_blank" rel="noopener noreferrer">OMA FAQs in PDF</a>
 ::
 
 ## LwM2M
@@ -140,7 +140,10 @@ qas:
 ## Utilities 
 
 ::ShAlert
-Download the these Q&As: <a href="https://www.openmobilealliance.org/documents/whitepapers/OMA-WP-LwM2M-for-Utilities/OMA-QA-Utilities-And-LwM2M-20231120-D.pdf" target="_blank" rel="noopener noreferrer">Utilities and LwM2M Frequent Asked Questions (FAQs)</a>
+---
+typeAlert: info
+---
+Download these Q&As: <a href="https://www.openmobilealliance.org/documents/whitepapers/OMA-WP-LwM2M-for-Utilities/OMA-QA-Utilities-And-LwM2M-20231120-D.pdf" target="_blank" rel="noopener noreferrer">Utilities and LwM2M Frequent Asked Questions (FAQs)</a>
 ::
 
 Welcome to our Frequently Asked Questions (FAQs) on Utilities and LwM2M. In this informative Q&A series, we address key inquiries regarding LightweightM2M (LwM2M) and its vital role in utility management. 

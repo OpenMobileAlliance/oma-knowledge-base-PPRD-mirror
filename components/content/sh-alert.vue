@@ -3,7 +3,7 @@
         <div :class="ui.base">
             <i :class="['size-7', icon]"></i>
         </div>
-        <ContentSlot :use="$slots.default" unwrap="" />
+            <ContentSlot :use="$slots.default" unwrap="" />
     </div>
 </template>
 
