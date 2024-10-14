@@ -65,13 +65,13 @@
 
       <template v-else>
         <div class="grid grid-cols-12 ">
-          <ContentRenderer :value="page" :style="{ fontSize: main.font.size }"
+          <ContentRenderer v-if="page" :value="page" :style="{ fontSize: main.font.size }"
             class="col-start-1 col-span-12 w-full lg:w-fit par mt-8 pb-24">
-            <template #not-found>
-              <UAlert title="File not found!" description="The requested resource cannot be found."
-                icon="i-heroicons-exclamation-triangle" />
-            </template>
           </ContentRenderer>
+          <div v-else>
+            <UAlert title="File not found!" description="The requested resource cannot be found."
+              icon="i-heroicons-exclamation-triangle" />
+          </div>
         </div>
         <!--<PrevNextPage v-if="route.path !== '/'" />-->
       </template>

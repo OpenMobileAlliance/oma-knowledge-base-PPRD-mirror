@@ -54,6 +54,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
+      routes: ['/news', '/news/articles'],
       failOnError: false,
     },
   }
