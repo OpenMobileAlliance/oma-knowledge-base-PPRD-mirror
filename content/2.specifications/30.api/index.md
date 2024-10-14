@@ -4,13 +4,15 @@ description:
 layout: doc
 ---
 
-The Open Mobile Alliance (OMA) offers a robust set of API specifications:
+> The Open Mobile Alliance (OMA) offers a robust set of API specifications:
 
 ### OMA LwM2M Registry API
 * The **OMA LightweightM2M (LwM2M) Service API** being a standout for IoT developers. This API exposes information from the LwM2M registry to internet-connected appliances, enabling efficient management and interaction with constrained IoT devices, including provisioning, firmware updates, and remote monitoring. 
 
 ::ShButton
 ---
+ui:
+    wrapper: shadow-2xl
 urlButton: /tools/lwm2m-api-registry/ # this is a comment to the link to the button.
 colorButton: blue
 size: 2xl 

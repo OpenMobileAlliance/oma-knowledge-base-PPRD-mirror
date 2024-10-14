@@ -2,7 +2,7 @@
 title: SPECIFICATIONS
 layout: doc
 ---
-Please click in one of the topics for further information:
+> Please click in one of the topics for further information:
 
 ::ShTwoColumns
 ---

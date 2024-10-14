@@ -4,8 +4,9 @@ description:
 layout: doc
 ---
 
-## OMNA Enabler Registries
-In addition to the LwM2M Registry, OMNA manages several other active registries. These registries ensure consistent use of names and numbers across various OMA technologies, supporting interoperability and compatibility among different implementations.
+::ShAlert
+**OMNA Enabler Registries:** In addition to the LwM2M Registry, OMNA manages several other active registries. These registries ensure consistent use of names and numbers across various OMA technologies, supporting interoperability and compatibility among different implementations.
+::
 
 ### OMA Registries
             
@@ -15,7 +16,7 @@ OMNA is specifically concerned with names and numbers not already administered b
 
 ### OMNA Process
 
-The current OMNA process is based on the WINA process established by WAP. Until an OMA version is developed, the <a href="http://devwww.openmobilealliance.org/tech/OMNA/WINA20020204v01.pdf" target="_blank" title="click here">WAP WINA process document</a> should be used as a guide.  
+The current OMNA process is based on the WINA process established by WAP. Until an OMA version is developed, the <a href="https://www.openmobilealliance.org/tech/OMNA/WINA20020204v01.pdf" target="_blank" title="click here">WAP WINA process document</a> should be used as a guide.  
 
 It describes the overall purpose of OMNA, how numbers and names are allocated, etc. Please read this document before submitting a request for an assigned name or number.
 
@@ -28,7 +29,7 @@ To get to a form to submit a request, there is a link available on the relevant 
 
 ### OMNA Administration
 
-OMNA is administered by the OMNA Secretary through the <a href="mailto:helpdesk@omaorg.org" target="_blank" title="click here">OMA Contacts page</a>.
+OMNA is administered by the OMNA Secretary through the [OMA Contacts](/contact-us) page.
 If you have comments on OMNA or the OMNA processes, please contact the OMNA Secretary.
 
 ### OMNA Name and Number Database
