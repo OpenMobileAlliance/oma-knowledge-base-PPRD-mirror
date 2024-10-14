@@ -21,6 +21,9 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: false 
     },
+    api: {
+      baseURL: '/site-api/_content'
+    }
   },
 
   ui: {
