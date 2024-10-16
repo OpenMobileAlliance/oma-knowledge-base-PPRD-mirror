@@ -30,3 +30,8 @@ The following documents govern the antitrust guidelines and policies of the Open
 Maintaining an open organization is key to OMA’s vision for broad industry participation and adoption. Being able to see and comment on early versions of documents and contributions allows external organizations to be more involved in and aware of evolving service enablers. In support of this, OMA has established an Openness policy ensuring public availability of a vast majority of the documents produced within the OMA Technical Plenary. These documents are made available for members and non-members.
 
 [View the Complete Openness Policy](/omaspecworks/about/policies-terms/openness)
+
+### OMA Meeting Guest Policy
+This document defines the policy for the invitation and participation of guests to OMA meetings. This policy applies to all forms of meetings, i.e. physical or electronic meetings.
+
+[View the Complete OMA Meeting Guest Policy](/omaspecworks/about/policies-terms/guest-policy)
