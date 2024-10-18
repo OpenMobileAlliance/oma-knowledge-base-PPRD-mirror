@@ -25,6 +25,7 @@ List of components:
   - [sh-column](/_8.guidelines/components/sh-column)
   - [sh-dynamic-table](/_8.guidelines/components/sh-dynamic-table)
   - [sh-faq](/_8.guidelines/components/sh-faq)
+  - [sh-img-container](/_8.guidelines/components/sh-img-container)
   - [sh-list-cards](/_8.guidelines/components/sh-list-cards)
   - [sh-micro-card](/_8.guidelines/components/sh-micro-card)
   - [sh-multi-column](/_8.guidelines/components/sh-multi-column)

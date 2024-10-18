@@ -7,6 +7,20 @@ layout: doc
 
 ### Usage
 
+::ShAlert
+---
+typeAlert: warning
+---
+Don`t nest ShMultiColumn inside another ShMultiColumn as it will result in bad rendering and responsive design malfunctioning.
+::
+
+::ShAlert
+---
+typeAlert: success
+---
+Instead nesting many ShMultiColumns inside itself, do a combination with ShTwoColumns & ShColumn
+::
+
 #### Presentation 
 This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
 The following example shows a basic example of the <b>{{ $doc.constructorName }}</b> component. It is used  to organise the content in three columns with two rows.
