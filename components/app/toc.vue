@@ -34,9 +34,9 @@
 
 <script setup lang="ts">
 const config = {
-    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 dark:hover:text-oma-blue-100',
-    active: 'bg-primary-200 dark:bg-primary-600 p-2',
-    normal: 'w-full p-2',
+    shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 dark:hover:text-oma-blue-100 hover:rounded-lg pt-2 pb-2',
+    active: 'p-2',
+    normal: 'w-full ',
     link: {
         active: 'text-oma-blue-500 dark:text-oma-blue-200 font-bold',
         normal: 'w-full block text-black dark:text-golden hover:text-black dark:hover:text-golden'
@@ -54,28 +54,6 @@ const route = useRoute();
 const { data: page } = await useAsyncData(() => queryContent(route.path).findOne());
 
 const activeSection = ref<string | null>(null);
-
-onMounted(() => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                activeSection.value = entry.target.id;
-            }
-        });
-    }, { rootMargin: '-10%' });
-
-    page.value.body.toc.links.forEach((link) => {
-        const section = document.getElementById(link.id);
-        if (section) observer.observe(section);
-
-        if (link.children) {
-            link.children.forEach((subLink) => {
-                const subSection = document.getElementById(subLink.id);
-                if (subSection) observer.observe(subSection);
-            });
-        }
-    });
-});
 
 const isActive = (id: string) => {
     return activeSection.value === id;
