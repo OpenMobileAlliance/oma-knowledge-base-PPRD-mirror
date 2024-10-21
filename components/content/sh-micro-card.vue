@@ -1,6 +1,6 @@
 <template>
   <div :class="[ui.wrapper]">
-    <NuxtLink :to="urlWrapper" class="not-prose">
+    <NuxtLink :to="urlWrapper" class="not-prose" :target="target">
       <div class="relative group">
         <img v-if="urlImage" :src="urlImage" :class="ui.image" :alt="altImage" />
         <UIcon v-if="icon" :name="icon" :alt="altIcon" dynamic :class="ui.icon" />
@@ -30,6 +30,7 @@ const props = withDefaults(
   defineProps<{
     description?: string;
     urlWrapper?: string;
+    target?: string;
     urlImage?: string;
     altImage?: string;
     icon?: string;
@@ -44,6 +45,7 @@ const props = withDefaults(
     ui: () => ({}),
     description: "",
     urlWrapper: "",
+    target: "_self",
     urlImage: "",
     altImage: "",
     icon: "",
