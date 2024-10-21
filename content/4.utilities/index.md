@@ -200,7 +200,14 @@ size: XL
 
     ## LwM2M & Utilities
 
-    As the utility sector evolves with IoT technologies, the **LwM2M** protocol from the Open Mobile Alliance provides secure communication, remote updates, real-time monitoring, and efficient power use for streamlined device management. It boosts operational efficiency, cost savings, and secure remote management while ensuring interoperability across utilities like electricity, water, and gas. Its vendor-agnostic, multi-network design fosters innovation and competition. OMA’s workshops, pilots, and advocacy work to integrate **LwM2M**, driving greater efficiency, security, and innovation in the utility industry. **Click** next _... to know more_
+    As the utility sector evolves with IoT technologies, the LwM2M protocol from the Open Mobile Alliance provides secure communication, remote updates, real-time monitoring, and efficient power use for streamlined device management.
+
+    It boosts operational efficiency, cost savings, and secure remote management while ensuring interoperability across utilities like electricity, water, and gas. Its vendor-agnostic, multi-network design fosters innovation and competition.
+
+    OMA’s workshops, pilots, and advocacy work to integrate LwM2M, driving greater efficiency, security, and innovation in the utility industry. 
+    
+    **Click** any topic from the left to know more.
+    
     :::
 ::
 
