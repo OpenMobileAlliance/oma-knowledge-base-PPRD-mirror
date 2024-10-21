@@ -133,20 +133,32 @@ h7 {
 }
 
 /* Dark HTML elements */
-.dark .par, /*custom class for paragraph located in [...slug].vue*/
-.dark strong,
+.dark .par, /* custom class for paragraph located in /[...slug].vue */
 .dark em,
 .dark ul,
 .dark ol,
 .dark td,
-.dark th,
+.dark th {
+  color: theme('colors.golden');
+}
+
+.dark strong {
+  color: theme('colors.golden');
+  filter: saturate(3) brightness(0.75);
+}
+
 .dark h1,
 .dark h2,
-.dark h3,
+.dark h3 {
+  color: theme('colors.golden');
+  filter: saturate(3) brightness(0.8);
+}
+
 .dark h4,
 .dark h5,
 .dark h6 {
   color: theme('colors.golden');
+  filter: saturate(3) brightness(0.75);
 }
 /* End of Dark HTML elements */
 

@@ -6,7 +6,7 @@ export default {
     role: "text-lg font-semibold text-black -mt-4 dark:text-gray-400",
     company: "text-lg text-gray-500 tracking-widest -mt-5 dark:text-gray-300",
     socials: "flex text-5xl -mx-1 -mt-4",
-    icon: "transition-transform transform hover:-translate-y-1 duration-400 dark:text-primary/[0.6] hover:text-primary dark:hover:text-primary-400",
+    icon: "transition-transform transform hover:-translate-y-1 duration-400 text-neutral-600 dark:text-primary/[0.6] hover:text-primary dark:hover:text-primary-400",
     // Default Tailwind CSS values
     default: {
     }

@@ -6,11 +6,11 @@ export default {
   wrapper: "border rounded-xl",
   inner: "mx-3 cursor-pointer",
   question: "grid grid-cols-2 flex-row font-bold",
-  q: "w-full hover:scale-105 duration-300 hover:text-primary dark:text-white mx-4",
+  q: "w-full hover:scale-105 duration-300 text-black dark:text-golden mx-4",
   answer: "ml-1",
-  a: "mx-6 dark:text-white font-light",
+  a: "mx-6 font-light text-black dark:text-golden",
   divider: "border-b",
-  icon: "place-self-end self-center text-2xl i-icons8-chevron-right-round",
+  icon: "place-self-end self-center text-2xl text-black dark:text-golden i-icons8-chevron-right-round",
   // Default Tailwind CSS values
   default: {
   }
