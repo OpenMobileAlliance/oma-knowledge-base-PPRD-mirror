@@ -266,5 +266,13 @@
     {
         "ObjectIDRange": "35850 - 35899", 
         "CompanyName": "Paradox Engineering SA"
+    },
+    {
+        "ObjectIDRange": "35900 - 35949", 
+        "CompanyName": "Remoticom"
+    },
+    {
+        "ObjectIDRange": "35950 - 35999", 
+        "CompanyName": "Utonomy"
     }
 ]
