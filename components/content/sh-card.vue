@@ -18,7 +18,7 @@
         <MDC v-if="text" :value="text" />
         <ContentRenderer v-else >
           <MDC :value="excerpt" excerpt class="dark:text-golden"/>
-      </ContentRenderer>
+        </ContentRenderer>
       </div>
       <div v-if="page._path === '/news'">
         <NuxtLink :to="article" target="_blank" class="">

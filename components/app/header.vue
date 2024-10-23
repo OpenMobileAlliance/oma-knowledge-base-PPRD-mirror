@@ -32,10 +32,16 @@
           <ul class="hidden 2xl:flex gap-1.5">
             <li v-for="link in topLinks" :key="link.path" class="ml-4"
               :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
-              <ULink :to="link._path"
-                :class="[{ 'underline decoration-4 underline-offset-[14px] decoration-oma-blue-400 dark:underline dark:decoration-4 dark:underline-offset-[14px] dark:decoration-oma-blue-200 ': isLinkActive(link._path) }, ui.shadow, 'text-black dark:text-golden']">
+              <ULink :to="link._path" :class="[
+                {
+                  'relative after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[5px] after:bg-oma-blue-400 after:rounded-full dark:after:bg-oma-blue-200 after:mt-[14px]': isLinkActive(link._path)
+                },
+                ui.shadow,
+                'text-black dark:text-golden'
+              ]">
                 {{ link.title }}
               </ULink>
+
             </li>
           </ul>
           <!-- Dropdown for smaller screens -->

@@ -22,6 +22,7 @@
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
+            <!-- <PrevNextPage v-if="route.path !== '/'" /> -->
           </section>
 
           <!-- Table of Contents and Useful Links -->
@@ -38,8 +39,8 @@
             <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
           </div>
           <div class="text-center">
-            <h2 class="text-oma-300 text-start text-4xl text-primary dark:text-primary">{{ page.title }}</h2>
-            <h3 v-if="page.subtitle" class="mb-20 text-start text-3xl text-primary-400 dark:text-primary-500">{{
+            <h2 class="text-oma-300 text-start text-4xl text-primary">{{ page.title }}</h2>
+            <h3 v-if="page.subtitle" class="mb-20 text-start text-3xl text-primary-400">{{
               page.subtitle }}</h3>
             <div class="text-center text-2xl dark:text-neutral-400" v-if="page.tags && page.tags.length">
               Tags:
@@ -59,6 +60,7 @@
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
               class="par text-left dark:text-white" />
             <br />
+            <!-- <PrevNextPage v-if="route.path !== '/'" :showDescription=false /> -->
           </div>
         </div>
       </template>
@@ -73,7 +75,7 @@
               icon="i-heroicons-exclamation-triangle" />
           </div>
         </div>
-        <!--<PrevNextPage v-if="route.path !== '/'" />-->
+        <!-- <PrevNextPage v-if="route.path !== '/'" /> -->
       </template>
     </article>
   </main>
