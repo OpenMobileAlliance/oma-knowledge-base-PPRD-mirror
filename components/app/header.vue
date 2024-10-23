@@ -34,7 +34,7 @@
               :style="{ fontFamily: header.menu.font.type, fontSize: header.menu.font.size }">
               <ULink :to="link._path" :class="[
                 {
-                  'relative after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[5px] after:bg-oma-blue-400 after:rounded-full dark:after:bg-oma-blue-200 after:mt-[14px]': isLinkActive(link._path)
+                  'relative after:content-[\'\'] after:absolute after:bottom-[-7px] after:left-0 after:w-full after:h-[5px] after:bg-oma-blue-400 after:rounded-full dark:after:bg-oma-blue-200 after:mt-[14px]': isLinkActive(link._path)
                 },
                 ui.shadow,
                 'text-black dark:text-golden'
