@@ -3,7 +3,7 @@ title:  About LwM2M
 description: Main page of the LwM2M topic
 layout: doc
 ---
-Welcome to the **Lightweight M2M (LwM2M) Resource Center**. Here, you'll find comprehensive information on LwM2M, covering key features, industry applications, technical resources, and community support. Whether you're looking to understand the components of LwM2M, access documentation and case studies, or engage with community groups, this section provides everything you need to get started and involved with LwM2M technology. Explore the tools, registry, and implementation resources, and join the conversation through webinars, workshops, and member meetings.
+Welcome to the Lightweight M2M (LwM2M) Resource Center. Here, you'll find comprehensive information on LwM2M, covering key features, industry applications, technical resources, and community support. Whether you're looking to understand the components of LwM2M, access documentation and case studies, or engage with community groups, this section provides everything you need to get started and involved with LwM2M technology. Explore the tools, registry, and implementation resources, and join the conversation through webinars, workshops, and member meetings.
 
 
 ::ShMultiColumn
