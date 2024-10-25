@@ -1,1 +1,0 @@
-@keyframes float{0%{box-shadow:0 5px 15px #0009;transform:translatey(0)}50%{box-shadow:0 25px 15px #0003;transform:translatey(-20px)}to{box-shadow:0 5px 15px #0009;transform:translatey(0)}}.microCard{align-items:center;animation:float 6s ease-in-out infinite;box-shadow:0 5px 15px #0009;overflow:hidden;transform:translatey(0)}
