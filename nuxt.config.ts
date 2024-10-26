@@ -58,6 +58,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/news', '/news/articles'],
+      ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
   }
