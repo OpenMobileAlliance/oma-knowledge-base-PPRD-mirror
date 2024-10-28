@@ -1,12 +1,12 @@
 <template>
   <hr class="border-2 dark:border-golden rounded-r-xl rounded-l-xl" />
   <div class="grid grid-cols-2 mt-10 mx-auto max-w-max min-w-full not-prose">
-    <NuxtLink external v-if="prev" :to="prev._path" :class="['justify-start items-start lg:mr-20 sm:mr-5', ui.button]">
+    <NuxtLink v-if="prev" :to="prev._path" :class="['justify-start items-start lg:mr-20 sm:mr-5', ui.button]">
       <UIcon name="i-vaadin:chevron-circle-left-o" dynamic :class="ui.icon" />
       <div :class="ui.title">{{ prev.title }}</div>
       <div v-if="showDescription && prev.description" :class="[ 'text-left' ,ui.description]">{{ prev.description }}</div>
     </NuxtLink>
-    <NuxtLink external v-if="next" :to="next._path" :class="['justify-start items-end lg:ml-20 sm:ml-5', ui.button]">
+    <NuxtLink v-if="next" :to="next._path" :class="['justify-start items-end lg:ml-20 sm:ml-5', ui.button]">
       <UIcon name="i-vaadin:chevron-circle-right-o" dynamic :class="ui.icon" />
       <div :class="ui.title">{{ next.title }}</div>
       <div v-if="showDescription && next.description" :class="[ 'text-right' ,ui.description]">{{ next.description }}</div>
