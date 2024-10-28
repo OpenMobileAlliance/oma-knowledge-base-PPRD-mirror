@@ -22,7 +22,7 @@
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <!-- <PrevNextPage v-if="route.path !== '/'" /> -->
+            <PrevNextPage v-if="route.path !== '/'" />
           </section>
 
           <!-- Table of Contents and Useful Links -->
@@ -60,7 +60,7 @@
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
               class="par text-left dark:text-white" />
             <br />
-            <!-- <PrevNextPage v-if="route.path !== '/'" :showDescription=false /> -->
+            <PrevNextPage v-if="route.path !== '/'" />
           </div>
         </div>
       </template>
@@ -75,7 +75,7 @@
               icon="i-heroicons-exclamation-triangle" />
           </div>
         </div>
-        <!-- <PrevNextPage v-if="route.path !== '/'" /> -->
+        <PrevNextPage v-if="route.path !== '/'" />
       </template>
     </article>
   </main>
