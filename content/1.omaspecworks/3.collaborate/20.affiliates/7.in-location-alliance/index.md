@@ -1,7 +1,9 @@
 ---
 title: InLocation Alliance
+description:
 layout: doc
 ---
+
 The following documents produced by InLocation Alliance are being posted here as InLocation Alliance has ceased its operations and members in common with the former InLocation Alliance and OMA SpecWorks have requested the hosting of these documents. OMA SpecWorks has domain expertise relative to location technologies; however, these documents are solely the work product of the former InLocation Alliance. In no event shall OMA SpecWorks be liable in any manner regarding the InLocation Alliance documents.
 
 
