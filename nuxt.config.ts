@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "nuxt-testimonial",
     '@nuxtjs/color-mode',
+    '@zadigetvoltaire/nuxt-gtm',
   ],
 
   colorMode: {
@@ -30,6 +31,10 @@ export default defineNuxtConfig({
     icons: ["heroicons-solid", "fa6-brands", "devicon", "icons8"],
   },
 
+  gtm: {
+    id: 'GTM-T55F5MHQ', // Your GTM single container ID, array of container ids ['GTM-xxxxxx', 'GTM-yyyyyy'] or array of objects [{id: 'GTM-xxxxxx', queryParams: { gtm_auth: 'abc123', gtm_preview: 'env-4', gtm_cookies_win: 'x'}}, {id: 'GTM-yyyyyy', queryParams: {gtm_auth: 'abc234', gtm_preview: 'env-5', gtm_cookies_win: 'x'}}], // Your GTM single container ID or array of container ids ['GTM-xxxxxx', 'GTM-yyyyyy']
+    },
+  
   googleFonts: {
     families: {
       "Roboto": [300, 400, 600, 700],
