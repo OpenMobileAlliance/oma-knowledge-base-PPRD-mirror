@@ -14,11 +14,12 @@
             Connected
             World</p>
         </div>
-        <ShButton
-          class="p-4 rounded-2xl mt-4 sm:mt-12 hover:contrast-150 dark:text-white dark:hover:text-white hover:text-white"
-          color="primary" size="lg" urlButton="/omaspecworks" target="_parent">
-          Get Started
-        </ShButton>
+        <NuxtLink to="/omaspecworks">
+          <button
+            class="p-4 rounded-2xl border mt-4 sm:mt-12 hover:contrast-150 bg-neutral-400 border-neutral-400 dark:bg-neutral-600 dark:border-neutral-600 text-white dark:text-white dark:hover:text-white">
+            Get Started
+          </button>
+        </NuxtLink>
       </div>
       <div>
         <ContentQuery path="/landing-page-floaters" v-slot="{ data }">
