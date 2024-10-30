@@ -146,7 +146,7 @@ ui:
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/lh-1.jpeg
+    urlImage: /images/innovation1.jpeg
     title: |
         OMA SpecWorks: Balancing Industry Consensus and Innovation
     subtitle: |
@@ -166,7 +166,7 @@ ui:
     positionText: right
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/lh-2.jpeg
+    urlImage: /images/landing-hero/inovation-idea.jpeg
     title: |
         Idea Machine: Valuing Collaboration and Innovation
     subtitle: |
@@ -187,7 +187,7 @@ ui:
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/events/sve42.jpg
+    urlImage: /images/events/machine-learn.jpeg
     title: |
         LightweightM2M and Wireless Innovation
     subtitle: |
