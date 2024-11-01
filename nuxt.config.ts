@@ -8,7 +8,13 @@ export default defineNuxtConfig({
     "nuxt-testimonial",
     '@nuxtjs/color-mode',
     '@zadigetvoltaire/nuxt-gtm',
+    "@nuxtjs/sitemap"
   ],
+
+  site: {
+    url: 'https://openmobilealliance.org/', 
+    name: 'Website of OMA SpecWork as an innovative kind of Standards Development Organization' 
+  },
 
   colorMode: {
     preference: 'system'
