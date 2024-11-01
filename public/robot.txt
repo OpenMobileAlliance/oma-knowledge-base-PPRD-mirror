@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /site-api/
-Allow: /
-
-Sitemap: https://openmobilealliance.org/sitemap.xml
