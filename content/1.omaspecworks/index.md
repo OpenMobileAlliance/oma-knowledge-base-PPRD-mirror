@@ -225,7 +225,7 @@ size: XL
         wrapper: px-4 text-xl -mt-5
     ---
 
-    ![](/images/omaspecworks/about/DALL_E_Idea_machine.webp){ class="mx-auto rounded-lg"}
+    ![](/images/omaspecworks/standards.jpeg){ class="mx-auto rounded-lg"}
 
     OMA SpecWorks is a Standards Development Organization (SDO) focused on creating consensus-driven technical specifications, particularly for mobile and IoT sectors.  
 

@@ -1,140 +1,6 @@
 ::ShSegment
 ---
 ui:
-    wrapper: text-center text-4xl text-neutral-600 dark:text-golden italic mb-3 xl:invisible 2xl:visible
----
-Dive Deeper
-::
-
-::ShMultiColumn
----
-ui:
-    wrapper: w-fit mx-auto mb-32
-cols: 7
----
-    :::ShColumn 
-    --- 
-    ui: # First Column
-       wrapper: m-1 h-full w-full # Ensure full height and width for grid items
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: h-full w-full flex flex-col # Full height and width for the card
-            icon: w-1/3
-        icon: i-mdi-file-document-box-outline
-        title: OMA SpecWorks # First Row
-        urlWrapper: /omaspecworks/
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Second Column
-       wrapper: m-1 h-full w-full
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: h-full w-full flex flex-col
-            icon: w-1/3
-        icon: i-mdi-file-cog-outline
-        title: Specifications # Second Row
-        urlWrapper: /specifications/
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Third Column
-       wrapper: m-1 h-full w-full
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: h-full w-full flex flex-col
-            icon: w-1/3
-        icon: i-mdi-cellphone-wireless
-        title: LwM2M # Third Column
-        urlWrapper: "/lwm2m/"
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Fourth Column
-       wrapper: m-1 h-full w-full
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: h-full w-full flex flex-col
-            icon: w-1/3
-        icon: i-mdi-wrench-outline
-        title: Utilities # Fourth Column
-        urlWrapper: "/utilities/"
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Fifth Column
-       wrapper: m-1 h-full w-full
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: h-full w-full flex flex-col
-            icon: w-1/3
-        icon: i-mdi-newspaper-variant-outline
-        title: News # Fifth Column
-        urlWrapper: "/news/"
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Sixth Column
-       wrapper: m-1 h-full w-full
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: h-full w-full flex flex-col
-            icon: w-1/3
-        icon: i-mdi-calendar-check-outline
-        title: Events # Sixth Column
-        urlWrapper: "/oma-events/"
-        ---
-        ::::
-    :::
-
-    :::ShColumn 
-    --- 
-    ui: # Seventh Column
-       wrapper: m-1 h-full w-full
-    ---
-        ::::ShMicroCard
-        ---
-        ui:
-            wrapper: h-full w-full flex flex-col
-            icon: w-1/3
-        icon: i-mdi-tools
-        title: Tools # Seventh Column
-        urlWrapper: "/tools/"
-        ---
-        ::::
-    :::
-::
-
-::ShSegment
----
-ui:
     wrapper: w-screen space-y-9 mt-6 px-16
 ---
     ::ShTextImg
@@ -146,7 +12,7 @@ ui:
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/lh-1.jpeg
+    urlImage: /images//landing-hero/innovation1.jpeg
     title: |
         OMA SpecWorks: Balancing Industry Consensus and Innovation
     subtitle: |
@@ -166,7 +32,7 @@ ui:
     positionText: right
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/lh-2.jpeg
+    urlImage: /images/landing-hero/inovation-idea.jpeg
     title: |
         Idea Machine: Valuing Collaboration and Innovation
     subtitle: |
@@ -187,7 +53,7 @@ ui:
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/events/sve42.jpg
+    urlImage: /images/landing-hero/machine-learn.jpeg
     title: |
         LightweightM2M and Wireless Innovation
     subtitle: |

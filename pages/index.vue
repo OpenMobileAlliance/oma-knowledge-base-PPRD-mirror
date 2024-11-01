@@ -5,7 +5,7 @@
         <img src="/logo.png" alt="Logo" :class="ui.landingHero.logo"
           class="w-[70%] sm:w-[60%] lg:w-[28%] xl:w-[30%] mb-14" />
         <div class="rounded-xl">
-          <h1 class="font-extrabold text-golden sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl sm:truncate">Build the
+          <h1 class="font-extrabold text-golden sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl words-break">Build the
             next <br />
             generation of <br /> wireless</h1>
           <p
@@ -21,11 +21,16 @@
           </button>
         </NuxtLink>
       </div>
-      <div>
-        <ContentQuery path="/landing-page-floaters" v-slot="{ data }">
-          <ContentRenderer :value="item" v-for="item in data"
-            class="flex flex-col lg:flex-row h-[80%] sm:h-full lg:h-1/6 lg:pl-16 items-end p-3 sm:p-0 mt-12 sm:mt-14 lg:mt-96" />
+      <div class="col-start-2 col-span-1 pr-5 sm:mt-24 md:mt-56">
+        <ContentQuery path="/landing-page-menu" v-slot="{ data }" >
+          <h1 v-if="data[0].title !== 'Landing Page Menu'" :class="ui.landingPage.menu.title">{{ data[0].title }}</h1>
+          <h3 :class="ui.landingPage.menu.description">{{ data[0].description }}</h3>
+          <ContentRenderer :value="item" v-for="item in data" :class="ui.landingPage.menu.content"/>
         </ContentQuery>
+        <!-- <ContentQuery path="/landing-page-floaters" v-slot="{ data }">
+          <ContentRenderer :value="item" v-for="item in data"
+            class="flex flex-col lg:flex-row h-[80%] sm:h-full lg:h-1/6 lg:pl-16 items-end p-3 sm:p-0 mt-12 sm:mt-14 lg:mt-64" />
+        </ContentQuery> -->
       </div>
     </div>
   </div>
@@ -41,7 +46,14 @@ const config = {
     wrapper: '',
     logo: '',
   },
-  microCard: ''
+  microCard: '',
+  landingPage: {
+    menu: {
+      title: 'flex mx-auto justify-center',
+      description: 'flex mx-auto justify-center',
+      content: 'flex justify-center pl-3 sm:pl-0 mt-5',
+    },
+  },
 };
 
 const props = withDefaults(
@@ -59,6 +71,7 @@ const { ui, attrs } = useUI(
   config,
 );
 
-const theme = useColorMode();;
+const theme = useColorMode();
+const route = useRoute();
 
 </script>
