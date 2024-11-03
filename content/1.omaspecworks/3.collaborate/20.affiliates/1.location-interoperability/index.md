@@ -8,7 +8,7 @@ layout: doc
         
 The 'Location Interoperability Forum' (LIF), has consolidated into the Open Mobile Alliance (OMA), and no longer exists as an independent organization. The OMA Location Working Group (LOC) continues the work originated in the former Location Interoperability Forum (LIF) and Location Drafting Committee of the former WAP Forum. You will find below the archived documents from LIF.
 
-<a target="_blank" href="http://openmobilealliance.org/about-oma/policies-and-terms-of-use/use-agreement/">Click here to view Use Agreement</a>
+<a target="_blank" href="/omaspecworks/about/policies-terms/use-agreement">Click here to view Use Agreement</a>
 
 <div class="head">Location Interoperability Forum archived documents</div>
         <table>

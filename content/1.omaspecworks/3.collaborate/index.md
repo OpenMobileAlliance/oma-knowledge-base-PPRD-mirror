@@ -13,6 +13,6 @@ Liaison agreements with OMA SpecWorks operate in one of three ways:
 - **Cooperation Agreement (CA):** Where there is a formal, signed agreement in place between the external organization and OMA SpecWorks.
 - **Memorandum of Understanding (MoU):** It signal a simple formal agreement between the external organization and OMA SpecWorks.  
 
-For information on how to form a liaison with OMA SpecWorks, please contact Seth Newberry at [snewberry@omaorg.org](snewberry@omaorg.org).
+For information on how to form a liaison with OMA SpecWorks, please contact Seth Newberry at <snewberry@omaorg.org>.
 
 
