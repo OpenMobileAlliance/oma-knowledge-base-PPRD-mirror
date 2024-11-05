@@ -84,10 +84,10 @@ export default defineAppConfig({
       logo: "i-fa6-brands-square-github",
       url: "https://github.com/OpenMobileAlliance",
     },
-    rss: {
-      title: "RSS",
-      logo: "i-heroicons-solid-rss",
-      url: "http://openmobilealliance.org/rss/",
-    },
+    // rss: {
+    //   title: "RSS",
+    //   logo: "i-heroicons-solid-rss",
+    //   url: "http://openmobilealliance.org/rss/",
+    // },
   },
 });
