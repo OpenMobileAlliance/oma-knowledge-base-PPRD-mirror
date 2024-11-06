@@ -4,7 +4,7 @@ description:
 layout: doc
 ---
 
-> ### We Want to Hear From You!
+> We Want to Hear From You!
 
 Interested in learning more about OMA or have specific inquiries? Connect with us by filling out the contact form below, and we will respond promptly. Stay engaged by subscribing to our newsletter to receive the latest updates, or participate in our upcoming [events](/oma-events) to interact with industry experts and leaders.
 
