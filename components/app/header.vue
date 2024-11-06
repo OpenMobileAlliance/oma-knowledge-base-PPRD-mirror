@@ -13,7 +13,7 @@
           </slot>
         </div>
         <div :class="ui.center">
-          <div class="flex justify-between items-start mb-2">
+          <div class="flex justify-between items-center lg:items-start mb-2">
             <div :class="ui.right">
               <ColorMode />
               <span class="mr-2 text-base mt-1">
@@ -50,11 +50,10 @@
               ]">
                 {{ link.title }}
               </ULink>
-
             </li>
           </ul>
           <!-- Dropdown for smaller screens -->
-          <div class="2xl:hidden lg:mx-0">
+          <div class="2xl:hidden lg:mx-0 order-first">
             <UDropdown mode="click" :popper="{ placement: 'bottom-start' }">
               <button @click="toggleDropdownAndRotation"
                 class="bg-inherit hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 text-xl lg:text-2xl text-black dark:text-golden p-2 pl-2 pr-2 rounded-2xl">
@@ -64,7 +63,7 @@
               </button>
               <ul v-if="isDropdownVisible"
                 class="background absolute right-0 mt-11 flex flex-col gap-1.5 p-5 rounded-xl shadow-md z-10">
-                <li v-for="(link, index) in topLinks" :key="link.path" class="text-lg lg:text-xl"
+                <li v-for="(link, index) in topLinks" :key="link.path" class="text-sm lg:text-xl"
                   :style="{ fontFamily: header.menu.font.type }">
                   <div v-if="index !== 0" class="p-3 mb-2">
                     <hr />
@@ -89,7 +88,7 @@ const config = {
   wrapper: "flex flex-col -mb-px sticky top-0 z-50",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
   left: "lg:flex-1 flex items-center gap-1.5",
-  center: "flex flex-col grow",
+  center: "flex justify-around 2xl:flex-col grow",
   right: "flex items-center lg: lg:justify-end lg:flex-1 gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5",
   shadow: "text:black dark:text-golden hover:text-black dark:hover:text-golden hover:bg-golden dark:hover:bg-primary-600 rounded-xl p-2",

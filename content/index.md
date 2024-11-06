@@ -1,7 +1,7 @@
 ::ShSegment
 ---
 ui:
-    wrapper: w-screen space-y-9 mt-6 px-16
+    wrapper: w-screen space-y-9 mt-6 px-6 sm:px-16 mb-10
 ---
     ::ShTextImg
     ---

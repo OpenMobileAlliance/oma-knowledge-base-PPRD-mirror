@@ -11,9 +11,9 @@ ui:
     :::ShMicroCard
     ---
     ui:
-        wrapper: h-full w-full flex flex-col
-        icon: w-1/3
-        title: text-white
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col 
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-file-document-box-outline
     title: OMA SpecWorks
     urlWrapper: /omaspecworks/
@@ -23,9 +23,9 @@ ui:
     :::ShMicroCard
     ---
     ui:
-        wrapper: h-full w-full flex flex-col
-        icon: w-1/3
-        title: text-white
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-file-cog-outline
     title: Specifications
     urlWrapper: /specifications/
@@ -35,9 +35,9 @@ ui:
     :::ShMicroCard
     ---
     ui:
-        wrapper: h-full w-full flex flex-col
-        icon: w-1/3
-        title: text-white
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-cellphone-wireless
     title: LwM2M
     urlWrapper: "/lwm2m/"
@@ -47,9 +47,9 @@ ui:
     :::ShMicroCard
     ---
     ui:
-        wrapper: h-full w-full flex flex-col
-        icon: w-1/3
-        title: text-white
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-wrench-outline
     title: Utilities
     urlWrapper: "/utilities/"
@@ -59,9 +59,9 @@ ui:
     :::ShMicroCard
     ---
     ui:
-        wrapper: h-full w-full flex flex-col
-        icon: w-1/3
-        title: text-white
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-newspaper-variant-outline
     title: News
     urlWrapper: "/news/"
@@ -71,9 +71,9 @@ ui:
     :::ShMicroCard
     ---
     ui:
-        wrapper: h-full w-full flex flex-col
-        icon: w-1/3
-        title: text-white
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-calendar-check-outline
     title: Events
     urlWrapper: "/oma-events/"
@@ -83,9 +83,9 @@ ui:
     :::ShMicroCard
     ---
     ui:
-        wrapper: h-full w-full flex flex-col
-        icon: w-1/3
-        title: text-white
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-tools
     title: Tools
     urlWrapper: "/tools/"
