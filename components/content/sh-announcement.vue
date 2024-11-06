@@ -16,7 +16,7 @@
 <script setup lang="ts">
 
 const config = {
-    wrapper: 'bg-oma-red-600 dark:bg-oma-red-700 p-3 text-center',
+    wrapper: 'bg-oma-red-600 dark:bg-oma-red-700 p-1 sm:p-3 text-center',
     base: 'flex items-center justify-between',
     button: 'ml-4 hover:scale-125 duration-700',
     icon: 'text-3xl mr-4 text-white',
