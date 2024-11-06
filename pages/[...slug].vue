@@ -26,7 +26,7 @@
           </section>
 
           <!-- Table of Contents and Useful Links -->
-          <div class="col-start-12 col-span-1 hidden lg:block sticky top-48 h-screen overflow-auto sm:-ml-16">
+          <div class="col-start-12 col-span-1 hidden lg:block sticky top-48 h-screen overflow-auto lg:-ml-10 xl:-ml-14">
             <AppToc :page="page" class="mb-4" />
             <AppUsefulLinks class="" />
           </div>
