@@ -25,25 +25,25 @@ The 'Location Interoperability Forum' (LIF), has consolidated into the Open Mobi
                     <td>TS 101</td>
                     <td>Mobile Location Protocol Specification</td>
                     <td>3.0.0</td>
-                    <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/lif/LIF-TD-201-v3.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
+                    <td><a target="_blank" href="https://openmobilealliance.org/tech/affiliates/lif/LIF-TS-101-v3.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
                 </tr>
                 <tr>
                     <td>TD 201</td>
                     <td>The Challenge with Interoperability in Location Services</td>
                     <td>3.0.0</td>
-                    <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/lif/LIF-TD-201-v3.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
+                    <td><a target="_blank" href="https://openmobilealliance.org/tech/affiliates/lif/LIF-TD-201-v3.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
                 </tr>
                 <tr>
                     <td>TS 202</td>
                     <td>Location Services Interoperability Test Specification in GSM</td>
                     <td>3.0.0</td>
-                    <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/lif/LIF-TS-202-v3.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
+                    <td><a target="_blank" href="https://openmobilealliance.org/tech/affiliates/lif/LIF-TS-202-v3.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
                 </tr>
                 <tr>
                     <td>TR 101</td>
                     <td>Privacy Guidelines</td>
                     <td>2.0.0</td>
-                    <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/lif/lif-tr-101-v2.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
+                    <td><a target="_blank" href="https://openmobilealliance.org/tech/affiliates/lif/lif-tr-101-v2.0.0.zip" title="By Clicking here you accept the use agreement">Download</a></td>
                 </tr>
             </tbody>
         </table>
