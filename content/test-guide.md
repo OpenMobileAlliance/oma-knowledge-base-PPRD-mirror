@@ -11,7 +11,7 @@ Your expertise and a keen eye are essential in optimizing the OMA SpecWorks webs
 
 We encourage you to explore the entire website, browsing pages as a user would in real scenarios.  
 
-For further assistance, use the <a href="https://www.openmobilealliance.org/sitemap" target="_blank">sitemap.xml</a> to access a list of our website URLs for testing and help ensure each page's accuracy, responsiveness, and accessibility on all devices.
+To support your review, we have compiled a <a href="https://docs.google.com/spreadsheets/d/1l92rhrcTBA48DPQM5FmoWA-rz3MgUO4NHa5RBitaVkk/edit?usp=sharing" target="_blank">list of website URLs</a> for easy access. Use this document for efficient testing and help ensure each page's accuracy, responsiveness, and accessibility on all devices.
 
 If you identify any irregularities or areas for improvement, we encourage you to report them on the <a href="https://github.com/OpenMobileAlliance/oma-knowledge-base" target="_blank">oma-knowledge-base repository</a>.  
 
@@ -55,16 +55,10 @@ Ensure that all URLs on the OMA SpecWorks site function as expected across diffe
      - **Screenshots:** Take screenshots of the issue, if possible.
 
    - **Step 2:** Go to the <a href="https://github.com/OpenMobileAlliance/oma-knowledge-base/issues" target="_blank">oma-knowledge-base issues</a>.
-   - **Step 3:** Create a new issue with the following format:
-
-     ```
-     **URL:** [insert URL]
-     **Device Type:** [insert device and screen size]
-     **Issue Description:** [brief description]
-     **Steps to Reproduce:**
-       1. Open the URL on [device].
-       2. [List any specific actions needed to reproduce the issue]
-     **Screenshots:** [attach a screenshot if available]
-     ```
-
-Thank you for your attention to detail and commitment to ensuring a seamless user experience!
+   - **Step 3:** Create a new issue:
+     - Click the [**New Issue**](https://github.com/OpenMobileAlliance/oma-knowledge-base/issues/new/choose){ target="_blank"} to open the issue creation page.
+     - To use a pre-defined issue template, click [**Get started**](https://github.com/OpenMobileAlliance/oma-knowledge-base/issues/new?assignees=gocadimic&labels=New%2CP3&projects=&template=website-content-issue.yaml){ target="_blank"}
+     ![screenshot](/images/use_issue-template.png)
+     - Review and fill out the template with relevant details for your issue.
+     
+**Thank you** for your attention to detail and commitment to ensuring a seamless user experience!

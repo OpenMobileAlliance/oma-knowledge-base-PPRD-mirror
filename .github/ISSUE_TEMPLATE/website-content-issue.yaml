@@ -1,0 +1,98 @@
+name: Issue Report
+description: Website content Issue Report
+labels: ["New", "P3"]
+assignees: ["gocadimic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Issue Report
+        Please fill out the following details to document the website content issue scenario.
+  
+  - type: input
+    attributes:
+      label: URL
+      description: "Enter the website URL where the issue is found."
+      placeholder: "e.g., https://openmobilealliance.org/XXX"
+    validations:
+      required: true
+ 
+  - type: textarea
+    attributes:
+      label: Pre-Conditions
+      description: "List any pre-conditions or setup required before the issue is recorded."
+      placeholder: "Detail necessary pre-conditions or setup."
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: "Provide detailed steps to reproduce the issue."
+      placeholder: "Step 1: Navigate to the specific page..."
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: Expected Results
+      description: "Describe the expected behavior or outcome."
+      placeholder: "Detail the expected behavior..."
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: Actual Results
+      description: "Describe the actual behavior observed."
+      placeholder: "Detail the actual behavior observed..."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Attachments
+      description: "Attach any relevant screenshots or logs."
+      placeholder: "Upload or link to attachments."
+  
+  - type: textarea
+    attributes:
+      label: Notes
+      description: "Add any additional notes or observations."
+      placeholder: "Enter any additional details here."
+
+  - type: input
+    attributes:
+      label: Environment - Browser
+      description: "Specify the browser used during the test."
+      placeholder: "e.g., Chrome, Firefox, Safari"
+  
+  - type: input
+    attributes:
+      label: Environment - OS
+      description: "Specify the operating system used during the test."
+      placeholder: "e.g., Windows, macOS, Linux"
+  
+  - type: dropdown
+    attributes:
+      label: Severity
+      description: "Select the severity of the issue found."
+      options:
+        - 'Low (P3)'
+        - 'Medium (P2)'
+        - 'High (P1)'
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Status
+      description: "Select the current status of the test."
+      options:
+        - 'New'
+        - 'Triage'
+        - 'In Progress'
+        - 'Parking'
+        - 'Done'
+    validations:
+      required: true
