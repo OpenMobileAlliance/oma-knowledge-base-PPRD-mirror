@@ -17,14 +17,14 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
     <th width="12%"><a href="/omaspecworks/membership/benefits#_2-essential-membership"><strong>Essential</strong></a></th>
     <th width="12%"><a href="/omaspecworks/membership/benefits#_3-associate-membership"><strong>Associate</strong></a></th>
   </tr>
-  <tr><td class="bkg-blue color-white" colspan="5"><strong>Pricing</strong></td></tr>
+  <tr style="background-color: #f1f2f3"><td class="bkg-blue color-white" colspan="4"><strong>Pricing</strong></td></tr>
   <tr>
    <td>Price</td>
    <td>$12,500</td>
    <td>$7,500</td>
    <td>$4,500</td>
   </tr>
-  <tr><td class="bkg-blue color-white" colspan="5"><strong>Leadership</strong></td></tr>
+  <tr style="background-color: #f1f2f3"><td class="bkg-blue color-white" colspan="4"><strong>Leadership</strong></td></tr>
   <tr>
    <td>Appointment of a Delegate to the Board of Directors</td>
    <td>Automatic</td>
@@ -43,7 +43,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
    <td>Yes</td>
    <td>Yes</td>
   </tr>   
-  <tr><td class="bkg-blue color-white" colspan="5"><strong>Contribution</strong></td></tr>
+  <tr style="background-color: #f1f2f3"><td class="bkg-blue color-white" colspan="4"><strong>Contribution</strong></td></tr>
   <tr>
    <td>Propose and Vote on New Initiatives (work items)
 </td>
@@ -76,7 +76,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
    <td>No</td>
   </tr>
   </tr>        
-  <tr><td class="bkg-blue color-white" colspan="5"><strong>Voting (Excluding Board)</strong></td></tr>
+  <tr style="background-color: #f1f2f3"><td class="bkg-blue color-white" colspan="4"><strong>Voting (Excluding Board)</strong></td></tr>
   <tr>
    <td>Vote on a formal technical vote</td>
    <td>Yes</td>
@@ -89,7 +89,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
    <td>Yes</td>
    <td>Yes</td>
   </tr>  
-  <tr><td class="bkg-blue color-white" colspan="5"><strong>Access to Documents</strong></td></tr>
+  <tr style="background-color: #f1f2f3"><td class="bkg-blue color-white" colspan="4"><strong>Access to Documents</strong></td></tr>
   <tr>
    <td>Access to member Portal (documents, calendar, mailing lists, voting application)</td>
    <td>Yes</td>
@@ -108,7 +108,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
    <td>Yes</td>
    <td>Yes</td>
   </tr>      
-  <tr><td class="bkg-blue color-white" colspan="5"><strong>Access to Meetings (Excluding Board)</strong></td></tr>
+  <tr style="background-color: #f1f2f3"><td class="bkg-blue color-white" colspan="4"><strong>Access to Meetings (Excluding Board)</strong></td></tr>
   <tr>
    <td>Attend work group meetings (F2F, conference calls, interim, hybrid)</td>
    <td>Yes</td>
@@ -127,7 +127,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
    <td>Yes</td>
    <td>Yes</td>
   </tr> 
-  <tr><td class="bkg-blue color-white" colspan="5"><strong>Process Administration</strong></td></tr>
+  <tr style="background-color: #f1f2f3"><td class="bkg-blue color-white" colspan="4"><strong>Process Administration</strong></td></tr>
   <tr>
    <td>May appeal on technical issues</td>
    <td>Yes</td>
@@ -142,7 +142,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
   </tr>            
 </table>
 
-> A - If acting as Chair, an Associate level Vice-chair has the rights of appeal </br>
+> A - If acting as Chair, an Associate level Vice-chair has the rights of appeal. </br>
 > B - There is an open action to determine if quorum for a new WI shoudl be changed.
 
 **Join OMA SpecWorks today and be part of the future of wireless communication**. 
