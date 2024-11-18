@@ -3,11 +3,11 @@
     <UContainer :class="ui.container">
       <div class="flex justify-between sm:items-center sm:justify-around">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex items-center">
-          Copyright &copy; 2024. All Rights Reserved.
+          Copyright &copy; &nbsp; <div>{{ year }}</div>.
         </span>
         <ClientOnly>
           <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
-            variant="ghost" aria-label="Theme" @click="isDark = !isDark" class="sm:mr-36" />
+            variant="ghost" aria-label="Theme" @click="isDark = !isDark" class="" />
           <template #fallback>
             <div class="w-8 h-8" />
           </template>
@@ -20,6 +20,9 @@
 
 <script setup lang="ts">
 const colorMode = useColorMode()
+
+const date = new Date();
+const year = date.getFullYear();
 
 const config = {
   wrapper:
