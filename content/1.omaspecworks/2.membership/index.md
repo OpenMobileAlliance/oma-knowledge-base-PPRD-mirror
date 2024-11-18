@@ -143,7 +143,7 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
 </table>
 
 > A - If acting as Chair, an Associate level Vice-chair has the rights of appeal. </br>
-> B - There is an open action to determine if quorum for a new WI shoudl be changed.
+> B - There is an open action to determine if quorum for a new WI should be changed.
 
 **Join OMA SpecWorks today and be part of the future of wireless communication**. 
 - Visit [Join OMA](/omaspecworks/membership/join) to learn more and start your membership journey.
