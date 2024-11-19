@@ -1,4 +1,4 @@
----
+0---
 layout: articles
 urlImage: /images/news/Industrial_Autom_Underway.png
 imageBackground: ""
