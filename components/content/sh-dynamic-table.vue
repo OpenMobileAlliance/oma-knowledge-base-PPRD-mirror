@@ -31,7 +31,7 @@
             <div :class="getQuickFilterClass()">
               <template v-for="column in sortedFilters">
                 <div class="rounded-lg border" v-if="column.filter">
-                  <UDivider :label="column.title" class="py-4" />
+                  <UDivider :label="column.title" class="py-4 overflow-x-auto" />
                   <ul class="max-h-36 overflow-auto">
                     <li v-for="label in Object.keys(stats[column.name]).sort()" :data-filter-key="column.name"
                       :data-filter-value="label" @click="onFilterChange"
