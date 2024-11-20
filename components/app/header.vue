@@ -121,11 +121,11 @@ const items = [
   [{
     label: 'Login',
     icon: 'i-heroicons-user',
-    to: 'https://member.openmobilealliance.org/'
+    to: 'https://member.openmobilealliance.org/ftp'
   }], [{
     label: 'Create an account',
     icon: 'i-heroicons-user-plus',
-    to: 'http://member.openmobilealliance.org/AccountCreation/GetAccount.asp'
+    to: 'https://account.openmobilealliance.org/AccountCreation/GetAccount.asp'
   }]
 ]
 
