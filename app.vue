@@ -18,8 +18,6 @@
 
 <script setup lang="ts">
 
-import { useRoute } from 'vue-router';
-
 const main = useAppConfig().main;
 const route = useRoute();
 
@@ -105,6 +103,26 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize);
 });
+
+onMounted(() => {
+  // Add the "Copy to Clipboard" button to all code blocks
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.className = 'copy-btn';
+    button.innerText = 'Copy';
+    button.addEventListener('click', () => copyCode(pre));
+    pre.appendChild(button);
+  });
+});
+
+const copyCode = (pre: HTMLElement) => {
+  const code = pre.querySelector('code');
+  if (code) {
+    navigator.clipboard.writeText(code.textContent || '').then(() => {
+      alert('Copied to clipboard!');
+    });
+  }
+};
 </script>
 
 <style>
@@ -233,10 +251,35 @@ pre code {
 
 .dark pre code {
   border: none;
+  border-radius: 0;
   background: none;
+  padding: 0;
+  box-shadow: none;
   color: #ffffff;
 }
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
 
+.copy-btn:hover {
+  opacity: 1;
+}
+
+pre {
+  position: relative;
+  padding-top: 2.5rem; /* Extra space for the button */
+}
 /* End of CodeBlock */
 
 /* Blockquote */
