@@ -12,7 +12,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@iconify-json/devicon": "^1.1.36",
+    "@iconify-json/devicon": "^1.2.4",
     "@iconify-json/fa6-brands": "^1.1.18",
     "@iconify-json/heroicons-solid": "^1.1.11",
     "@iconify-json/icons8": "^1.1.8",
