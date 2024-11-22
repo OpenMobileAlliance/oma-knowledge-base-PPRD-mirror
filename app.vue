@@ -1,5 +1,5 @@
 <template>
-  <div :class="computedHeightClass" class="w-fit sm:w-screen bg-golden/[0.2] dark:bg-[#19191a]"
+  <div :class="computedHeightClass" class="w-fit sm:w-full bg-golden/[0.2] dark:bg-[#19191a]"
     :style="{ fontFamily: main.font.type }">
     <ShAnnouncement :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
