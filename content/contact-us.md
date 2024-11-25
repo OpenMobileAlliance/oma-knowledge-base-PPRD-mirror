@@ -26,11 +26,11 @@ Interested in becoming a member of OMA? Membership offers numerous benefits, inc
 
 | [Area]{.text-primary} | [Email Address]{ .text-primary} |
 | --- | --- |
-| Comments on Specifications | Technical Comments Form |
+| Comments on Specifications | [Comments on LwM2M](https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues) |
 | OMA Membership | <helpdesk@omaorg.org> |
 | IT Helpdesk | <helpdesk@omaorg.org> |
 | OMA OMNA Secretary | <helpdesk@omaorg.org> |
-| Liaison Statements to or from other groups Membership | <liaison@omaorg.org> |
+| Liaison Statements to or from other groups Membership | <helpdesk@omaorg.org> |
 
 ### Send Us Your Comments
 
