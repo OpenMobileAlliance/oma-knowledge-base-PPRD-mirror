@@ -6,7 +6,7 @@ title: An Application-Layer Approach to End-to-End Security for the Internet of 
 subtitle: ""
 leftLabel: 2019-July-30
 rightLabel: OMA SpecWorks
-cardID: 1
+cardID: 5
 tags: 
     - security
 ---

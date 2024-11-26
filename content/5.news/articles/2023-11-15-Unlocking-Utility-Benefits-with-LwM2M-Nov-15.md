@@ -6,7 +6,7 @@ title: A Tailored Solution for Utilities
 subtitle: Workshop, Nov 15, 08:30 am PST
 leftLabel: 2023-Nov-15
 rightLabel: OMA SpecWorks
-cardID: 24
+cardID: 65
 tags: 
     - workshop
 ---

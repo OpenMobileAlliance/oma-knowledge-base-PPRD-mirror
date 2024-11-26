@@ -6,7 +6,7 @@ title: Advanced LwM2M Firmware Update Object
 subtitle: OMA SpecWorks is developing a new, advanced LwM2M Firmware Object
 rightLabel: OMA SpecWorks
 leftLabel: 2022-May-30
-cardID: 12
+cardID: 40
 tags: 
     - microcontrollers
 ---

@@ -6,7 +6,7 @@ title: LwM2M v1.2 is now available!
 subtitle: Latest LwM2M Protocol version
 leftLabel: 2020-Dec-09
 rightLabel:  OMA SpecWorks
-cardID: 3
+cardID: 15
 tags:
     - v1.2
     - Release

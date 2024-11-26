@@ -6,7 +6,7 @@ title:  "Harnessing Intelligence in IoT Dashboard Analytics"
 subtitle: 
 leftLabel: 2024-Nov-08
 rightLabel: OMA
-cardID: 42
+cardID: 115
 tags: 
     - news
 ---

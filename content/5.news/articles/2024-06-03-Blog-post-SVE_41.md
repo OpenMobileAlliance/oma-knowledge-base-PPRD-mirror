@@ -6,7 +6,7 @@ title:  Harnessing the Power of Automation and IoT in the Utilities Industry
 subtitle: 
 leftLabel: 2024-June-3
 rightLabel: OMA
-cardID: 28
+cardID: 85
 tags: 
     - news
     - workshop

@@ -6,7 +6,7 @@ title: LwM2M, Bootstrapping in Cellular Networks
 subtitle: New Work Item
 rightLabel: OMA SpecWorks
 leftLabel: 2022-Jun-14
-cardID: 14
+cardID: 45
 tags:
     - bootstrap
     - cellular networks

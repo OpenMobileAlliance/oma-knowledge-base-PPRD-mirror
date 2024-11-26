@@ -6,7 +6,7 @@ title:  "Optimizing IoT Device Management: Top 3 Key Considerations"
 subtitle: 
 leftLabel: 2024-July-27
 rightLabel: OMA
-cardID: 34
+cardID: 95
 tags: 
     - news
     - workshop
