@@ -6,7 +6,7 @@ title:  "The Emergence of Intelligent Transportation, Riding Smart"
 subtitle: 
 leftLabel: 2024-July-29
 rightLabel: OMA
-cardID: 36
+cardID: 100
 tags: 
     - news
     - workshop

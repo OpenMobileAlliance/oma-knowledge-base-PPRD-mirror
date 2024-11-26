@@ -6,7 +6,7 @@ title: LwM2M Objects for nuSIM Integrated SIM
 subtitle: OMA SpecWorks defines new Objects for nuSIM
 leftLabel: 2022-Apr-12
 rightLabel:  OMASpecWorks
-cardID: 10
+cardID: 35
 tags:
 ---
 
