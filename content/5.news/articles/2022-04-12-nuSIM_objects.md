@@ -31,6 +31,6 @@ The developer of the LwM2M client can further enrich this basic function e.g. by
 
 OMA SpecWorks sees this latest addition to the object registry as an important enabler for interoperable LwM2M implementations to support remote profile provisioning and carrier switch for rather simple and cost-optimized IoT devices. By supporting the emerging nuSIM ecosystem, the LwM2M standard once more proves its versatile applicability for use cases across the entire IoT market.
 
-These objects can be found in the OMA SpecWorks LwM2M Registry, [website](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html), [Github](https://github.com/OpenMobileAlliance/lwm2m-registry).
+These objects can be found in the OMA SpecWorks LwM2M Registry, [website](/lwm2m/resources/registry), [Github](https://github.com/OpenMobileAlliance/lwm2m-registry).
 
 

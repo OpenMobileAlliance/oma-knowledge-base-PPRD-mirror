@@ -30,6 +30,6 @@ Finally, our LwM2M workshop serves as a platform for utility companies, technolo
 **Conclusion**:
 LwM2M offers a tailored, cost-effective approach to managing IoT devices specifically designed for the utility industry. Utilities can leverage the protocol by embracing industry standards to optimize their operations, improve efficiencies, and drive innovation. The white papers, resources, and workshops offered by the Open Mobile Alliance provide the tools and information utility companies need to make informed decisions and succeed in today's IoT landscape.
 
-See previous OMA Utility Workshops <a href="https://guidelines.openmobilealliance.org/workshop" target="_blank">here</a>
+See previous OMA Utility Workshops <a href="/oma-events/webinar-workshops" target="_blank">here</a>.
 
 

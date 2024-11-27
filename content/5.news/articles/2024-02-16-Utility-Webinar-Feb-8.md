@@ -37,6 +37,6 @@ Access the webinar recording and presentation <a href="https://21247113.hs-sites
 **About the Author**
 Olivier Carmona, Chair of Utilities Reach Out at OMA SpecWorks, brings a wealth of expertise in IoT solutions. Focused on advancing the utility sector through technology, Olivier's insights into the LwM2M ecosystem offer a forward-looking perspective on the future of digital transformation in utilities.
 
-See previous OMA Utility Workshops <a href="https://guidelines.openmobilealliance.org/workshop" target="_blank">here</a>
+See previous OMA Utility Workshops <a href="/oma-events/webinar-workshops" target="_blank">here</a>.
 
 

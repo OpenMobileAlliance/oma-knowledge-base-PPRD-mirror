@@ -44,5 +44,6 @@ To participate in Virtual-SVE-40 or access the detailed Enabler Test Specificati
 
 
  </br>
-      <button><a  href="" target="_blank">Closed</a></button>
+       <button><a  href="https://21247113.hs-sites.com/unlocking-utility-benefits-with-lwm2m-2" target="_blank">Closed</a>
+       </button>
  </br>

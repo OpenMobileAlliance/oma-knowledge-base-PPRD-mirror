@@ -66,4 +66,4 @@ Recommendations for Further Reading:
 
 [**The Evolving Landscape of Electric Vehicles, Autonomous Vehicles, and Vehicle Technology**](https://www.compassintelligence.com/blog/the-evolving-landscape-of-electric-vehicles-autonomous-vehicles-and-vehicle-technology)  
 
-[**Harnessing the Power of Automation and IoT in the Utilities Industry**](https://lwm2m.openmobilealliance.org/news/2024-05-22-Blog-post-SVE_41/)
+[**Harnessing the Power of Automation and IoT in the Utilities Industry**](/news/articles/2024-06-03-blog-post-sve_41)

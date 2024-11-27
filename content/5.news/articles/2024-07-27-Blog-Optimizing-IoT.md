@@ -58,7 +58,7 @@ As its name suggests, LwM2M is designed to be lightweight, making it suitable fo
 
 Optimizing IoT device management involves balancing security, scalability, lifecycle management, among other things like data integrity and interoperability. By focusing on these key considerations, organizations can ensure their IoT deployments are robust, secure, and capable of supporting a growing network of devices. This not only improves operational efficiency but also drives innovation and business growth in the ever-evolving IoT landscape. LwM2M, developed by OMA SpecWorks, is ready to meet these challenges. LwM2M is a comprehensive protocol that addresses many challenges in IoT device management, including efficient communication, security, and interoperability. Its lightweight nature and support for remote management make it an excellent choice for a wide range of IoT applications.  
 
-Learn More about LwM2M: [https://lwm2m.openmobilealliance.org/](https://lwm2m.openmobilealliance.org/)
+Learn [More about LwM2M](https://lwm2m.openmobilealliance.org/)! 
 
 
 
