@@ -11,7 +11,7 @@ tags:
     - microcontrollers
 ---
 
-Advanced Firmware Update Object – [OMASpecWorks](https://omaspecworks.org/) is developing a new, advanced Firmware Object using the [LwM2M](https://lwm2m.openmobilealliance.org/) protocol to support emerging microcontrollers with multiple instances of firmware.
+Advanced Firmware Update Object – [OMASpecWorks](https://www.openmobilealliance.org/) is developing a new, advanced Firmware Object using the [LwM2M](https://lwm2m.openmobilealliance.org/) protocol to support emerging microcontrollers with multiple instances of firmware.
 
 <!--more-->
 
@@ -26,5 +26,5 @@ Examples include:
 
 While these firmware images can be updated independently, they cannot be activated or deactivated, or installed independently without considering the dependencies.  Additionally, each may require a device restart to apply the upgrade.
 
-To maintain backwards compatibility with the single firmware image supported by the LwM2M Firmware Update Object, and to offer solutions for high-end IoT devices, the [DMSE Working Group](https://lwm2m.openmobilealliance.org/about/) aims to start work on an Advanced Firmware Update Object using the [LwM2M](https://lwm2m.openmobilealliance.org/) protocol.
+To maintain backwards compatibility with the single firmware image supported by the LwM2M Firmware Update Object, and to offer solutions for high-end IoT devices, the [DMSE Working Group](/omaspecworks/collaborate/working-groups) aims to start work on an Advanced Firmware Update Object using the [LwM2M](/lwm2m/whatis) protocol.
 

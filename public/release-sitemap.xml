@@ -1,0 +1,2513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.openmobilealliance.org/release/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/3DCAPI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AC_MO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AddressBookREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AOI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AudioCallREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Billing/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browser_Protocol_Stack/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CallNotificationREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBUS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging_Data/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Client_Side_CS_FW/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMR/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ConnMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CSEA/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DANE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Data_Object/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DeltaRec/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DevCapREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagVoLTE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM_SC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM_Scheduling/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DMClientAPIfw/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DNS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Download/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DPE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DRM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DWAPI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DWAPI_3DP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DynNav/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/EFI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/EmailNot/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ENCap/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/EVC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/EVVM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/FUMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GOTAPI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GPM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GS-CSI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GS_API/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GSSM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GuidelinesREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/GwMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/HTML_Deployment_Suite/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/IGA/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/IGC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/IM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ImageShareREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/IMF/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/IMPS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/IMPS_impl/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/IMS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ISC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/KPIinOMA/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LAO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LAW_MO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LER/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LFC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LightweightM2M/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ListMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LOCSIP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LPPe/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LwM2M_APPDATA/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LWM2M_CONNMGMT/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LWM2M_DevCapMgmt/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LwM2M_EventLog/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LwM2M_Gateway/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LWM2M_LOCKWIPE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LWM2M_PortfolioObj/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LWM2M_SWMGMT/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/LwM2M_VON/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/M2M_Device_Classification/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/M2Minterface/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MEM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MessagingREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MgmtPolicyMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MGPC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MIW/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MLP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MLS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MMMD/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MMS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MO_Design_Guidelines/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MobAd/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MobAR/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MobileCodes/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MobileDomainSMIL/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/MSrchFramework/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/NavSe/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/NGSI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/NGSI_S/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/NotifChanREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_5GNR_Conn/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_ACL/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_APN_Conn/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Bearer_Conn/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Cell_Conn/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Conn_Mon/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Conn_Stat/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_COSE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Device/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Firmware/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Gateway/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Location/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_MQTT_Server/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_OSCORE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Routing/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Security/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_Server/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ObjLwM2M_WLAN_Conn/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OBKG/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OCSP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OGSA/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OIG/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OMA-BOD-IOP-2004-0056R03-Test-Tool-RFI.pdf</loc>
+  <lastmod>2013-09-23T07:36:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OneAPIProfileREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OpenCMAPI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OSE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OSPE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OWSER/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/OWSER_NI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PAL/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ParlayREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PaymentREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PCPS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PDE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PEEM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PIOSE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PoC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PresenceREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PresenceSIMPLE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Privacy/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PSA/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Push/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PushRest/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/PXPROF/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/RCC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/RCS_Deployment_Suite/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_ACR/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_BotManagement/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_CAB/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_Chat/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_Common/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_CommPatt/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_CustomerProfile/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NETAPI_MsgBCast/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NETAPI_NMS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_QoS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_RCSeProfile/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_RCSProfile/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_RichComms/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NETAPI_Twinning/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_WebRTCSignaling/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/REST_NetAPI_ZonalPresence/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/RESTNetAPI_Cap_Disc/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/RESTNetAPIFileTransfer/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/RICD/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/RME/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/RoamAPI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SACMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SCAB/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SCE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SCIDM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SCOMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SCWS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SEC_CF/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ServUserProf/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ShortMessREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SIMPLE_IM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SIP_Push/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SmaC/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SNeW/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SOAP_NetAPI_Roaming/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SpamRep/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SRM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/STI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SUPL/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SUPLCS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SVG/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/SyncML_Primer/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/TAS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Temp_Org_MO_spec/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Template_NetAPI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/TerminalLocationREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/TerminalStatusREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/TFP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ThirdPartyCallREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/UAProf/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/UAProf_BPG/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/UCD/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/URI_Schemes/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/UVE/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/V1_0-20100615-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/VideoShareREST/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/VirMO/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/vObject/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/WCSS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/WPBR/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/WPKI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/WRAPI/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/XDM/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/XDM_PRS_IMPL/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/3DCAPI/README.txt</loc>
+  <lastmod>2021-02-23T16:07:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/3DCAPI/V1_0-20210210-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AC_MO/README.txt</loc>
+  <lastmod>2017-01-20T16:36:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AC_MO/V1_0-20080513-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AC_MO/V1_0-20081024-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AC_MO/V1_0_1-20090127-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AddressBookREST/README.txt</loc>
+  <lastmod>2017-01-20T16:36:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AddressBookREST/V1_0-20120207-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AddressBookREST/V1_0-20130212-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AddressBookREST/V1_0-20151023-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AOI/README.txt</loc>
+  <lastmod>2017-01-20T16:36:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AOI/V1_0-20150203-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AOI/V1_0-20170404-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AudioCallREST/README.txt</loc>
+  <lastmod>2017-01-20T16:36:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AudioCallREST/V1_0-20120327-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AudioCallREST/V1_0-20130212-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/AudioCallREST/V1_0-20200226-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/README.txt</loc>
+  <lastmod>2017-01-20T16:38:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/V1_0-20120327-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/V1_0-20130910-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/V1_0-20131120-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Autho4API/V1_0-20141209-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/README.txt</loc>
+  <lastmod>2017-01-20T16:38:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20050203-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20060411-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20070529-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20080226-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20080609-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20080807-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20081010-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20081209-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0-20090212-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_0_1-20130109-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_1-20090324-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_1-20091013-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_1-20100914-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_1-20131029-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_2-20140114-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_2-20170131-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_3-20140114-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BCAST/V1_3-20170131-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Billing/README.txt</loc>
+  <lastmod>2017-01-20T16:38:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Billing/V1-0-20021216-H/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Billing/V1_0-20021216-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BMO/README.txt</loc>
+  <lastmod>2017-01-20T16:39:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BMO/V1_0-20091124-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/BMO/V1_0-20100406-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browser_Protocol_Stack/README.txt</loc>
+  <lastmod>2017-01-20T16:39:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browser_Protocol_Stack/V2_1-20050204-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browser_Protocol_Stack/V2_1-20110315-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/README.txt</loc>
+  <lastmod>2017-01-20T16:40:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/TFP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V1_0-20060209-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_1-20021101-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_1-20031113-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_1-20040816-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_1-20050614-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_1-20061020-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_2-20040609-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_2-20040816-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_2-20050614-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_2-20061020-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_3-20050118-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_3-20050614-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_3-20070227-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_3-20070313-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_3-20080331-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_4-20080128-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_4-20080923-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_4-20110329-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Browsing/V2_5-20171015-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/README.txt</loc>
+  <lastmod>2017-01-20T16:40:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_0-20080826-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_0-20081217-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_0-20090907-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_0-20090922-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_0-20101019-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_0-20121113-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_1-20120904-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CAB/V1_1-20180621-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CallNotificationREST/README.txt</loc>
+  <lastmod>2017-01-20T16:40:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CallNotificationREST/V1_0-20120327-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CallNotificationREST/V1_0-20130212-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CallNotificationREST/V1_0-20200226-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/README.txt</loc>
+  <lastmod>2017-01-20T16:40:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/V1_0-20060711-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/V1_0-20071211-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/V1_0-20081014-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/V1_0-20090212-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/V1_0-20090710-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBCS/V1_0-20111206-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBUS/README.txt</loc>
+  <lastmod>2017-01-20T16:40:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBUS/V1_0-20090203-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBUS/V1_0-20090710-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBUS/V1_0-20090922-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBUS/V1_0-20110719-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CBUS/V1_0-20120228-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/README.txt</loc>
+  <lastmod>2017-01-20T16:40:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_0-20041118-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_0-20060926-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_0-20070208-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_0-20070904-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_1-20090213-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_1-20090728-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_1-20101001-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging/V1_1-20121009-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging_Data/README.txt</loc>
+  <lastmod>2017-01-20T16:40:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging_Data/V1_0-20090310-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging_Data/V1_0-20090714-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging_Data/V1_0-20100825-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Charging_Data/V1_0-20110201-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Client_Side_CS_FW/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Client_Side_CS_FW/README.txt</loc>
+  <lastmod>2017-01-20T16:41:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Client_Side_CS_FW/V1_0-20041118-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Client_Side_CS_FW/V1_0-20060209-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Client_Side_CS_FW/V1_0-20070614-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/README.txt</loc>
+  <lastmod>2017-01-20T16:41:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/V1_1-20021115-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/V1_1-20040324-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/V1_1-20040720-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/v1_1-20050428-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/V1_1-20080226-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/V1_1-20090421-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ClientProv/V1_1-20090728-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMI/README.txt</loc>
+  <lastmod>2017-01-20T16:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMI/V1_0-20090127-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMI/V1_0-20090922-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMI/V1_0-20091201-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMI/V1_0-20110705-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMR/README.txt</loc>
+  <lastmod>2017-01-20T16:41:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMR/V1_0-20081216-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMR/V1_0-20090602-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMR/V1_0-20091013-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMR/V1_0-20100706-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CMR/V1_0-20120320-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/README.txt</loc>
+  <lastmod>2017-01-20T16:41:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/V1_1_2-20030612-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/V1_1_2-20040711-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/V1_2-20040601-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/v1_2-20050509-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/V1_2-20070221-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/V1_2_1-20070813-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Common/V1_2_2-20090724-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ConnMO/V1_0-20051206-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ConnMO/V1_0-20051206-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ConnMO/V1_0-20080812-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/ConnMO/V1_0-20081107-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/README.txt</loc>
+  <lastmod>2017-01-20T16:41:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V1_0-20071106-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V1_0-20090310-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V1_0-20101012-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V1_0-20120612-H/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V2_0-20130611-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V2_0-20150113-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V2_0-20150113-H/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V2_1-20160209-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V2_2-20170926-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPM/V2_2-20200907-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/README.txt</loc>
+  <lastmod>2017-01-20T16:41:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_0-20091117-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_0-20100615-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_0-20110503-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_0-20120327-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_0-20121023-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_0_1-20131015-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_1-20120313-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_1-20120529-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_1-20130402-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CPNS/V1_1-20160209-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CSEA/README.txt</loc>
+  <lastmod>2017-01-20T16:41:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CSEA/V1_0-20100427-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/CSEA/V1_0-20101130-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DANE/README.txt</loc>
+  <lastmod>2017-01-20T16:41:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DANE/V1_0-20130507-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DANE/V1_0-20140318-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DANE/V1_0-20150113-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Data_Object/README.txt</loc>
+  <lastmod>2017-01-20T16:41:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Data_Object/V1_0-20080506-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/Data_Object/V1_0-20080916-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/README.txt</loc>
+  <lastmod>2017-01-20T16:41:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/V1_0-20060530-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/V1_0-20070716-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/V1_0-20081223-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/V1_0-20090612-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/V1_0-20091026-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/V1_0-20100303-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCD/V1_0-20110705-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/README.txt</loc>
+  <lastmod>2017-01-20T16:42:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20070529-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20070625-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20081024-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20090317-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20090904-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20101102-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20110531-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20110704-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DCMO/V1_0-20120410-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DeltaRec/README.txt</loc>
+  <lastmod>2017-01-20T16:42:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DeltaRec/V1_0-20110927-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DeltaRec/V1_0-20130410-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DeltaRec/V1_0-20130521-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DevCapREST/README.txt</loc>
+  <lastmod>2017-01-20T16:42:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DevCapREST/V1_0-20111220-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DevCapREST/V1_0-20130212-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DevCapREST/V1_0-20130924-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DevCapREST/V1_0_1-20151123-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/README.txt</loc>
+  <lastmod>2017-01-20T16:42:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_0-20070209-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_0-20090414-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_0-20090610-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_0-20100420-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_0-20101102-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_0-20110527-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_0-20120313-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_1-20100622-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_1-20101129-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_1-20111220-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_2-20121009-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_2-20121102-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_2-20121121-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagMon/V1_2-20131008-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagVoLTE/README.txt</loc>
+  <lastmod>2017-01-20T16:42:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagVoLTE/V1_0-20141125-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DiagVoLTE/V1_0-20150526-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/cp_V1_0-20130430-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/README.txt</loc>
+  <lastmod>2017-01-20T16:43:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_1_2-20040113-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20050607-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20050628-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20050729-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20050826-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20051216-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20060208-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20060309-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20060424-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20060602-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2-20070209-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20090602-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20090901-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20090922-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20100525-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20101207-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20120306-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20121009-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20121213-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20130422-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V1_3-20160524-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20100309-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20100720-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20111220-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20120306-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20120531-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20131210-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20150122-C/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM/V2_0-20160209-A/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM_SC/ETS/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM_SC/EVP/</loc>
+  <lastmod>2024-11-25T21:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/release/DM_SC/README.txt</loc>
+  <lastmod>2017-01-20T16:43:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

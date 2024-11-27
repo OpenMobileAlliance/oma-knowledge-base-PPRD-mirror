@@ -16,7 +16,7 @@ tags:
 
 <!--more-->
 
-Over the years, implementers have developed many client and server software implementations for the industry. With the rise in number and frequency of new implementations, OMA SpecWorks hosted 8 testfests to ensure implementations conform to specification. Concurrently with the evolution of the LwM2M protocol, organizations and companies have been adding to the range of objects and resources via a dedicated registry which can be seen here [LwM2M registry](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html)
+Over the years, implementers have developed many client and server software implementations for the industry. With the rise in number and frequency of new implementations, OMA SpecWorks hosted 8 testfests to ensure implementations conform to specification. Concurrently with the evolution of the LwM2M protocol, organizations and companies have been adding to the range of objects and resources via a dedicated registry which can be seen here [LwM2M registry](/lwm2m/resources/registry).
 
 Objects and resources allow developers to manage IoT devices in a convenient and interoperable way. Describing new sensors and actuators requires specific domain expertise. It is a testament to the popularity and usefulness of the standard when so many contributions are made by standards development and industry organizations as well as companies from different verticals and industries.
 
@@ -24,10 +24,10 @@ Work with the developer community has guided LwM2M v1.2 workgroups to onboard su
 
 Companies developing or improving commercial IoT products and services can explore a wide range of new possibilities with the release of v1.2. The added reach and flexibility of the new version will unquestionably increase the rate of adoption and breadth of use of LwM2M, further establishing its standing as a key standard for the IoT. We look forward to a successful introduction and to receiving your feedback about new and enhanced functionalities as well as defining the scope of the next version, further addressing opportunities with newer deployment scenarios including 5G.
 
-The specification can be found at [LwM2M v1.2](https://technical.openmobilealliance.org/Overviews/lightweightm2m_overview.html)
+The specification can be found at [LwM2M v1.2](https://www.openmobilealliance.org/release/LightweightM2M/)
 
  
 
 **About Open Mobile Alliance (OMA)**
 
-OMA is the leading industry forum for developing market-driven, interoperable mobile service enablers. OMA was formed by the world’s leading mobile operators, device and network suppliers, information technology companies, and content providers as the industry focal point for the development of mobile service enabler specifications. OMA is a non-profit organization that delivers open specifications supporting the billions of new and existing terminals operating across traditional cellular operator networks and emerging networks supporting machine-to-machine communications for the Internet of Things (IoT). New work in OMA is leading to the development of next-generation mobile services in areas such as Device Management, LBS, IoT, APIs and more. [See About OMA](https://omaspecworks.org/)
+OMA is the leading industry forum for developing market-driven, interoperable mobile service enablers. OMA was formed by the world’s leading mobile operators, device and network suppliers, information technology companies, and content providers as the industry focal point for the development of mobile service enabler specifications. OMA is a non-profit organization that delivers open specifications supporting the billions of new and existing terminals operating across traditional cellular operator networks and emerging networks supporting machine-to-machine communications for the Internet of Things (IoT). New work in OMA is leading to the development of next-generation mobile services in areas such as Device Management, LBS, IoT, APIs and more. [See About OMA](/omaspecworks/about)
