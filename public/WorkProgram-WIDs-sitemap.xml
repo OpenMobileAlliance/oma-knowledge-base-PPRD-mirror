@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/Complex_Data_Types_in_LwM2M/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_advanced_firmware_update/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Device_Bootstrapping_in_Cellular_Networks/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Time_Series_Data_Access/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/Complex_Data_Types_in_LwM2M/V1_0-20221005-A/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_advanced_firmware_update/V1_0-20220614-A/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Device_Bootstrapping_in_Cellular_Networks/V1_0-20220621-A/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Time_Series_Data_Access/V1_0-20221005-A/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/Complex_Data_Types_in_LwM2M/V1_0-20221005-A/HTML-Version/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/Complex_Data_Types_in_LwM2M/V1_0-20221005-A/OMA-WID-LwM2M_Complex_Data_Types-V1_0-20221005-A.pdf</loc>
+  <lastmod>2022-10-20T14:32:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_advanced_firmware_update/V1_0-20220614-A/HTML-Version/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_advanced_firmware_update/V1_0-20220614-A/OMA-WID-LwM2M_advanced_firmware_update-V1_0-20220614-A.pdf</loc>
+  <lastmod>2022-06-20T13:13:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Device_Bootstrapping_in_Cellular_Networks/V1_0-20220621-A/HTML-Version/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Device_Bootstrapping_in_Cellular_Networks/V1_0-20220621-A/OMA-WID-LwM2M_Device_Bootstrapping_in_Cellular_Networks-V1_0-20220621-A.pdf</loc>
+  <lastmod>2022-06-22T10:04:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Time_Series_Data_Access/V1_0-20221005-A/HTML-Version/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Time_Series_Data_Access/V1_0-20221005-A/OMA-WID-LwM2M_Time_Series_Data_Access-V1_0-20221005-A.pdf</loc>
+  <lastmod>2022-10-21T14:37:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/Complex_Data_Types_in_LwM2M/V1_0-20221005-A/HTML-Version/OMA-WID-LwM2M_Complex_Data_Types-V1_0-20221005-A.html</loc>
+  <lastmod>2022-10-20T14:32:10+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/Complex_Data_Types_in_LwM2M/V1_0-20221005-A/HTML-Version/OMA-WID-LwM2M_Complex_Data_Types-V1_0-20221005-A_files/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_advanced_firmware_update/V1_0-20220614-A/HTML-Version/OMA-WID-LwM2M_advanced_firmware_update-V1_0-20220614-A.html</loc>
+  <lastmod>2022-06-20T13:13:08+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_advanced_firmware_update/V1_0-20220614-A/HTML-Version/OMA-WID-LwM2M_advanced_firmware_update-V1_0-20220614-A_files/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Device_Bootstrapping_in_Cellular_Networks/V1_0-20220621-A/HTML-Version/OMA-WID-LwM2M_Device_Bootstrapping_in_Cellular_Networks-V1_0-20220621-A.html</loc>
+  <lastmod>2022-06-22T10:04:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Device_Bootstrapping_in_Cellular_Networks/V1_0-20220621-A/HTML-Version/OMA-WID-LwM2M_Device_Bootstrapping_in_Cellular_Networks-V1_0-20220621-A_files/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Time_Series_Data_Access/V1_0-20221005-A/HTML-Version/OMA-WID-LwM2M_Time_Series_Data_Access-V1_0-20221005-A.html</loc>
+  <lastmod>2022-10-21T14:37:37+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/WorkProgram/WIDs/LwM2M_Time_Series_Data_Access/V1_0-20221005-A/HTML-Version/OMA-WID-LwM2M_Time_Series_Data_Access-V1_0-20221005-A_files/</loc>
+  <lastmod>2024-11-28T21:26:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
