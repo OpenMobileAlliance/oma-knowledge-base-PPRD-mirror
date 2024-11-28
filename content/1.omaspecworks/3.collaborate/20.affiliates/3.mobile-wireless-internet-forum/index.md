@@ -20,37 +20,37 @@ layout: doc
         </thead>
         <tbody>
             <tr>
-                <td><a href="?p=194&amp;pg=249&amp;rp=146">MTR.001v2 - Executive Summary</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_001v2.pdf?p=194&amp;pg=249&amp;rp=146">MTR.001v2 - Executive Summary</a></td>
                 <td>Architecture Principles<br>May 2001</td>
                 <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_001v2.pdf" title="By Clicking here you accept the user agreement">Download (104K)</a></td>
-                <td><a target="_blank" href="http://devwww.openmobilealliance.org/tech/affiliates/mwif/mtr_001v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_001v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
             </tr>
             <tr>
-                <td><a href="?p=194&amp;pg=252&amp;rp=146">MTR.002v2 - Executive Summary</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_002v2.pdf?p=194&amp;pg=252&amp;rp=146">MTR.002v2 - Executive Summary</a></td>
                 <td>Architecture Requirements<br>May 2001</td>
                 <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_002v2.pdf" title="By Clicking here you accept the user agreement">Download (232K)</a></td>
-                <td><a target="_blank" href="http://devwww.openmobilealliance.org/tech/affiliates/mwif/mtr_002v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_002v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
             </tr>
             <tr>
-                <td><a href="?p=194&amp;pg=254&amp;rp=146">MTR.003 - Executive Summary</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_003.pdf?p=194&amp;pg=254&amp;rp=146">MTR.003 - Executive Summary</a></td>
                 <td>Layered Functional Architecture<br>October 2000</td>
                 <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_003.pdf" title="By Clicking here you accept the user agreement">Download (91K)</a></td>
-                <td><a target="_blank" href="http://devwww.openmobilealliance.org/tech/affiliates/mwif/mtr_003.doc" title="By Clicking here you accept the user agreement">Download</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_003.doc" title="By Clicking here you accept the user agreement">Download</a></td>
             </tr>
             <tr>
-                <td><a href="?p=194&amp;pg=256&amp;rp=146">MTR.004v2 - Executive Summary</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_004v2.pdf?p=194&amp;pg=256&amp;rp=146">MTR.004v2 - Executive Summary</a></td>
                 <td>Network Reference Architecture<br>May 2001</td>
                 <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_004v2.pdf" title="By Clicking here you accept the user agreement">Download (1.1MB)</a></td>
-                <td><a target="_blank" href="http://devwww.openmobilealliance.org/tech/affiliates/mwif/mtr_004v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_004v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
             </tr>
             <tr>
-                <td><a href="?p=194&amp;pg=258rp=146">MTR.006v2 - Executive Summary</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_006v2.pdf?p=194&amp;pg=258rp=146">MTR.006v2 - Executive Summary</a></td>
                 <td>IP as Transport in the RAN<br>April 2001</td>
                 <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_006v2.pdf" title="By Clicking here you accept the user agreement">Download (702K)</a></td>
-                <td><a target="_blank" href="http://devwww.openmobilealliance.org/tech/affiliates/mwif/mtr_006v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_006v2.doc" title="By Clicking here you accept the user agreement">Download</a></td>
             </tr>
             <tr>
-                <td><a href="?p=194&amp;pg=260&amp;rp=146">MTR.007 - Executive Summary</a></td>
+                <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_007.pdf?p=194&amp;pg=260&amp;rp=146">MTR.007 - Executive Summary</a></td>
                 <td>OpenRAN Architecture in 3rd Generation Mobile Systems<br>September 2001</td>
                 <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_007.pdf" title="By Clicking here you accept the user agreement">Download (830K)</a></td>
                 <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/mwif/mtr_007.doc" title="By Clicking here you accept the user agreement">Download</a></td>
