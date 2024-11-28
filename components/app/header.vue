@@ -143,8 +143,7 @@ const { data: navigation } = await useAsyncData("navigation", () =>
 
 const topLinks = computed(() =>
   navigation.value.reduce((previous, current) => {
-    // Exclude the /guidelines path
-    if (current.children && !current._path.includes('/guidelines')) {
+    if (current.children && !current._path.includes('/guidelines')) { //set this to be configurable in app.config.ts
       previous.push(current);
     }
     return previous;

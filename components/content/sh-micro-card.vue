@@ -12,7 +12,7 @@
           <MDC v-if="text" :class="[ui.text, 'transition-opacity duration-300']" :value="text" />
         </div>
         <div v-if="clipboard"
-          class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
+          class="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
           <button @click="toast.add({ title: 'Copied! Click here to check clipboard!', click: onClick })">
             <UIcon @click="copyToClipboard" name="i-line-md:clipboard-arrow" alt="cliboard-icon" dynamic
               class="text-5xl text-black" />

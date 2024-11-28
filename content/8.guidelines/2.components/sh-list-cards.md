@@ -24,7 +24,7 @@ subtitle: |
 text: |
     Here are some of the exciting projects we're working on.
 cols: 2
-cardID: [4, 2, 1]
+cardID: [55, 50]
 ---
 ::
 
@@ -43,7 +43,7 @@ subtitle: |
 text: |
     Here are some of the exciting projects we're working on.
 cols: 2
-cardID: [4, 2, 1]
+cardID: [55, 50]
 ---
 ::
 ```
@@ -149,7 +149,7 @@ subtitle: |
     Check out the looks and feels
 text: |
     Feel free to explore any styling option using Tailwind classes!
-cardID: [4, 2, 1]
+cardID: [55, 50, 45]
 ---
 ::
 
@@ -172,7 +172,7 @@ subtitle: |
     Check out the looks and feels
 text: |
     Feel free to explore any styling option using Tailwind classes!
-cardID: [4, 2, 1]
+cardID: [55, 50, 45]
 ---
 ::
 ```

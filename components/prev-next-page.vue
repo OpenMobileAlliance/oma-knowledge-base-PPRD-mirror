@@ -1,13 +1,13 @@
 <template>
   <hr class="border-2 dark:border-golden rounded-r-xl rounded-l-xl" />
   <div class="grid grid-cols-2 mt-10 mx-auto max-w-max min-w-full not-prose">
-    <NuxtLink v-if="prev && prev._path !=='/'" :to="prev._path" :class="['col-start-1 justify-start text-left items-start lg:mr-20 sm:mr-5', ui.button]">
+    <NuxtLink v-if="prev && prev._path !== '/'" :to="prev._path" :class="['col-start-1 justify-start text-left items-start lg:mr-20 sm:mr-5', ui.button]">
       <UIcon name="i-vaadin:chevron-circle-left-o" dynamic :class="ui.icon" />
       <div :class="ui.title">{{ prev.title }}</div>
       <div v-if="showDescription && prev.description" :class="['text-left', ui.description]">{{ prev.description }}
       </div>
     </NuxtLink>
-    <NuxtLink v-if="next && next._path !=='/'" :to="next._path" :class="['col-start-2 justify-end text-right items-end lg:ml-20 sm:ml-5', ui.button]">
+    <NuxtLink v-if="next && next._path !== '/'" :to="next._path" :class="['col-start-2 justify-end text-right items-end lg:ml-20 sm:ml-5', ui.button]">
       <UIcon name="i-vaadin:chevron-circle-right-o" dynamic :class="ui.icon" />
       <div :class="ui.title">{{ next.title }}</div>
       <div v-if="showDescription && next.description" :class="['text-right', ui.description]">{{ next.description }}
@@ -24,9 +24,16 @@ const excludedPaths = [
   "/landing-page-floaters",
   "/landing-page-menu",
   "/test-guide",
-  "/guidelines/index"
 ];
-const excludedDirectoryRegex = /^\/guidelines(\/|$)/;
+
+const guidelinesPaths = [
+  "/guidelines",
+  "/guidelines/looks-feel",
+  "/guidelines/components",
+  "/guidelines/components/sh",
+];
+
+const excludedDirectoryRegex = guidelinesPaths.some(path => route.path.includes(path)) ? '' : /^\/guidelines(\/|$)/;
 
 // Adjust the query to exclude specific paths
 const [prev, next] = await queryContent()
@@ -35,7 +42,7 @@ const [prev, next] = await queryContent()
     _partial: false,           // Exclude partial content (this could be used instead of the _dir exlusion above)
     $and: [
       { _path: { $not: { $in: excludedPaths } } }, // Exclude specific files
-      { _path: { $not: excludedDirectoryRegex } }, // Exclude specific diectorie; -> think about adding all of this to app.config.ts
+      { _path: { $not: excludedDirectoryRegex } }, // Exclude specific directory; -> think about adding all of this to app.config.ts
     ]
   })
   .findSurround(route.path);
