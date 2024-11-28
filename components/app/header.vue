@@ -141,12 +141,16 @@ const { data: navigation } = await useAsyncData("navigation", () =>
   fetchContentNavigation(),
 );
 
-const topLinks = navigation.value.reduce((previous, current) => {
-  if (current.children) {
-    previous.push(current);
-  }
-  return previous;
-}, []);
+const topLinks = computed(() =>
+  navigation.value.reduce((previous, current) => {
+    // Exclude the /guidelines path
+    if (current.children && !current._path.includes('/guidelines')) {
+      previous.push(current);
+    }
+    return previous;
+  }, [] as typeof navigation.value),
+);
+
 
 const header = useAppConfig().header;
 const route = useRoute();
