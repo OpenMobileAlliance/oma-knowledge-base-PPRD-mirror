@@ -1,0 +1,2513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IPSO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/LISTMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/LOC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/MarCom/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/MCC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/MCE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/MPG/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/MWG/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/MWS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/OIG/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/OMA_Process_Documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/OMASpecWorks/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/OPS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/PAG/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/POC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/PWA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/REL/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/REQ/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/SC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/SEC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/TP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2004/Member_IPRGuidelines_v53006.pdf</loc>
+  <lastmod>2023-12-04T15:13:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2014/Montreal_CCW_Aug14/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2018/Austin/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2018/BKKHI.Floorplans.pdf</loc>
+  <lastmod>2018-04-19T03:56:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/2019/Porto/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/%20Rest_Guidelines/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-Auth4API/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-CAB-APIs/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-CBCS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-CPM_Charging/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-DCD_Charging/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-GPM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-GSSM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-IM_Charging/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-KPIinOMA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-MCC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-MEM_Charging/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-NGSI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-OGSA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-OSE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-OSPE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-PEEM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-PIOSE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-PSA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-PXPROF/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-RC-APIs/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-REST/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-SCIDM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-SCT/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-SEC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-SEC_SCT/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-ServUserProf/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARC-SmaC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ARCH-KPIinOMA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ENCap-M2M/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/OFFICERS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/OGSA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/OneAPIProfileV4/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/RCS-Profile-V2_0/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/RCS-Profile3/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/RCSe-Profile/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST-ACR/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST-CapDis/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST-N-API/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST-NetAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST-QoS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST-Zonal_Presence/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_Aliasmgt/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_Bot_Mgt/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_ComPatt/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_EnhancedCallNotification/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_MsgBCast/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_NMS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_Roaming/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/REST_VVOIP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/RestGuidelines/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/RoamAPI_SOAP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/ServiceExposure/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/SEVILLE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/Template_NetAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/TemplateNETAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/ARCH/TWIN/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/BCASTv1_1/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BCAST/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD/BOD-oneM2M/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD/MRTF/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-API/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-CLOUD/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/BOD-M2M/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CC/Permanent_Documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/3DCAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/AOI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-CMI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-CSI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-GotAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-GS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-IGA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-MobAd/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-MSrchFramework/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CD-TAS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CMI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CMR/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CPNS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/CSCSF/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/DANE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/DCAP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/DCD/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/DLOTA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/DWAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/LFC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MAE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MCE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MISC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MobAd/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MobAR/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MobSocNet/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/MSrchFramework/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/OpenCMAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/PUSH/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/RCC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/STI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/TAS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/Temp/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/Temp1/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/temp10/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/temp14/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/temp2/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/temp3/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/temp6/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/UCD/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/UVE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/WDAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/CD/WRAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/CAB/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-CAB-M/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-CBUS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-CPM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-EVC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-EVVM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-ISC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-PCPS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-POC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-POCv1/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-POCv2/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-POCv2_1/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-PRS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-SpamRep/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/COM-XDM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/IM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/MEM/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/MMS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/MSwAPI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/COM/S-CAB/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DIG/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/AC_MO_WP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/ConnMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/CP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DCMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DiagMon/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DiagVoLTE/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DM-BMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DM-DeltaRecMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DM-DM13/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DM-GWMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DM-M2MInterface/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DM20/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DMClientAPIFw/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DMNG/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/DS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/FUMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/LAWMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/LightweightM2M/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/ListMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/LWM2M_DCMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/M2Mdevclass/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/MgmtPolicyMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/MODesign/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/objects/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/SACMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/SC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/Scheduling/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/SCOMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/Smartcard/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/VirMO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DM/WSI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DRM/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/Comm_1_2/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/DS_1_2/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/DS_2_0/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/DS_DO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/Mob_Email/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/DS/PrimerWP/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/GS-CSI/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/GS/GS-IGA/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IMPS/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2003/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2004/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2005/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2006/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2007/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2008/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2009/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2010/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2011/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2012/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2013/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2014/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2015/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2016/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/2020/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/charter/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/EET-OTF/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-BRO/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-Browsing/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-DMSYNC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-IMPS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-LOC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-MEC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-MMS/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-POC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-PRC/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/IOP-TTCN/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IOP/Permanent_documents/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IPSO/2017/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IPSO/2018/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://member.openmobilealliance.org/FTP/Public_documents/IPSO/2019/</loc>
+  <lastmod>2024-11-28T21:33:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

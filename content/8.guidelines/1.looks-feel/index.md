@@ -192,7 +192,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-50
+            wrapper: mt-3 min-h-24 bg-oma-red-50 dark:bg-oma-red-50
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-red-50
@@ -203,7 +203,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-100
+            wrapper: mt-3 min-h-24 bg-oma-red-100 dark:bg-oma-red-100
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-red-100
@@ -214,7 +214,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-200
+            wrapper: mt-3 min-h-24 bg-oma-red-200 dark:bg-oma-red-200
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-red-200
@@ -225,7 +225,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-300
+            wrapper: mt-3 min-h-24 bg-oma-red-300 dark:bg-oma-red-300
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-red-300
@@ -236,7 +236,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-400
+            wrapper: mt-3 min-h-24 bg-oma-red-400 dark:bg-oma-red-400
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-red-400
@@ -247,7 +247,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 bg-oma-red-500 min-h-24
+            wrapper: mt-3 min-h-24 bg-oma-red-500 dark:bg-oma-red-500 
             title: text-neutral-700 dark:text-neutral-700 font-mono
         title: |
             oma-red-500
@@ -258,7 +258,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-600
+            wrapper: mt-3 min-h-24 bg-oma-red-600 dark:bg-oma-red-600
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-red-600
@@ -269,7 +269,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-700
+            wrapper: mt-3 min-h-24 bg-oma-red-700 dark:bg-oma-red-700
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-red-700
@@ -280,7 +280,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-800
+            wrapper: mt-3 min-h-24 bg-oma-red-800 dark:bg-oma-red-800
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-red-800
@@ -291,7 +291,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-900
+            wrapper: mt-3 min-h-24 bg-oma-red-900 dark:bg-bg-oma-red-900
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-red-900
@@ -302,7 +302,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-red-950
+            wrapper: mt-3 min-h-24 bg-oma-red-950 dark:bg-oma-red-950
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-red-950
@@ -319,7 +319,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-50
+            wrapper: mt-3 min-h-24 bg-oma-purple-50 dark:bg-oma-purple-50
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-purple-50
@@ -330,7 +330,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-100
+            wrapper: mt-3 min-h-24 bg-oma-purple-100 dark:bg-oma-purple-100
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-purple-100
@@ -341,7 +341,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-200
+            wrapper: mt-3 min-h-24 bg-oma-purple-200 dark:bg-oma-purple-200
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-purple-200
@@ -352,7 +352,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-300
+            wrapper: mt-3 min-h-24 bg-oma-purple-300 dark:bg-oma-purple-300
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-purple-300
@@ -363,7 +363,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-400
+            wrapper: mt-3 min-h-24 bg-oma-purple-400 dark:bg-oma-purple-400
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-purple-400
@@ -374,7 +374,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 bg-oma-purple-500
+            wrapper: mt-3 min-h-24 bg-oma-purple-500 dark:bg-oma-purple-500
             title: text-neutral-700 dark:text-neutral-700 font-mono
         title: |
             oma-purple-500
@@ -385,7 +385,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-600
+            wrapper: mt-3 min-h-24 bg-oma-purple-600 dark:bg-oma-purple-600
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-purple-600
@@ -396,7 +396,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-700
+            wrapper: mt-3 min-h-24 bg-oma-purple-700 dark:bg-oma-purple-700
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-purple-700
@@ -407,7 +407,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-800
+            wrapper: mt-3 min-h-24 bg-oma-purple-800 dark:bg-oma-purple-800
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-purple-800
@@ -418,7 +418,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-900
+            wrapper: mt-3 min-h-24 bg-oma-purple-900 dark:bg-oma-purple-900
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-purple-900
@@ -429,7 +429,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-purple-950
+            wrapper: mt-3 min-h-24 bg-oma-purple-950 dark:bg-oma-purple-950
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-purple-950
@@ -445,7 +445,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-50
+            wrapper: mt-3 min-h-24 bg-oma-cyan-50 dark:bg-oma-cyan-50
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-cyan-50
@@ -456,7 +456,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-100
+            wrapper: mt-3 min-h-24 bg-oma-cyan-100 dark:bg-oma-cyan-100
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-cyan-100
@@ -467,7 +467,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-200
+            wrapper: mt-3 min-h-24 bg-oma-cyan-200 dark:bg-oma-cyan-200
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-cyan-200
@@ -478,7 +478,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-300
+            wrapper: mt-3 min-h-24 bg-oma-cyan-300 dark:bg-oma-cyan-300
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-cyan-300
@@ -489,7 +489,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-400
+            wrapper: mt-3 min-h-24 bg-oma-cyan-400 dark:bg-oma-cyan-400
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-cyan-400
@@ -500,7 +500,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-500
+            wrapper: mt-3 min-h-24 bg-oma-cyan-500 dark:bg-oma-cyan-500
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-cyan-500
@@ -511,7 +511,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-600
+            wrapper: mt-3 min-h-24 bg-oma-cyan-600 dark:bg-oma-cyan-600
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-cyan-600
@@ -522,7 +522,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-700
+            wrapper: mt-3 min-h-24 bg-oma-cyan-700 dark:bg-oma-cyan-700
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-cyan-700
@@ -533,7 +533,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-800
+            wrapper: mt-3 min-h-24 bg-oma-cyan-800 dark:bg-oma-cyan-800
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-cyan-800
@@ -544,7 +544,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-900
+            wrapper: mt-3 min-h-24 bg-oma-cyan-900 dark:bg-oma-cyan-900
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-cyan-900
@@ -555,7 +555,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-cyan-950
+            wrapper: mt-3 min-h-24 bg-oma-cyan-950 dark:bg-oma-cyan-950
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-cyan-950
@@ -571,7 +571,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-50
+            wrapper: mt-3 min-h-24 bg-oma-yellow-50 dark:bg-oma-yellow-50
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-yellow-50
@@ -582,7 +582,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-100
+            wrapper: mt-3 min-h-24 bg-oma-yellow-100 dark:bg-oma-yellow-100
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-yellow-100
@@ -593,7 +593,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-200
+            wrapper: mt-3 min-h-24 bg-oma-yellow-200 dark:bg-oma-yellow-200
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-yellow-200
@@ -604,7 +604,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-300
+            wrapper: mt-3 min-h-24 bg-oma-yellow-300 dark:bg-oma-yellow-300
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-yellow-300
@@ -615,7 +615,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-400
+            wrapper: mt-3 min-h-24 bg-oma-yellow-400 dark:bg-oma-yellow-400
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-yellow-400
@@ -626,7 +626,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 bg-oma-yellow-500
+            wrapper: mt-3 min-h-24 bg-oma-yellow-500 dark:bg-oma-yellow-500
             title: text-neutral-700 dark:text-neutral-700 font-mono
         title: |
             oma-yellow-500
@@ -637,7 +637,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-600
+            wrapper: mt-3 min-h-24 bg-oma-yellow-600 dark:bg-oma-yellow-600
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-yellow-600
@@ -648,7 +648,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-700
+            wrapper: mt-3 min-h-24 bg-oma-yellow-700 dark:bg-oma-yellow-700
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-yellow-700
@@ -659,7 +659,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-800
+            wrapper: mt-3 min-h-24 bg-oma-yellow-800 dark:bg-oma-yellow-800
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-yellow-800
@@ -670,7 +670,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-900
+            wrapper: mt-3 min-h-24 bg-oma-yellow-900 dark:bg-oma-yellow-900
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-yellow-900
@@ -681,7 +681,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-yellow-950
+            wrapper: mt-3 min-h-24 bg-oma-yellow-950 dark:bg-oma-yellow-950
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-yellow-950
@@ -697,7 +697,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-50
+            wrapper: mt-3 min-h-24 bg-oma-blue-50 dark:bg-oma-blue-50
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-blue-50
@@ -708,7 +708,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-100
+            wrapper: mt-3 min-h-24 bg-oma-blue-100 dark:bg-oma-blue-100
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-blue-100
@@ -719,7 +719,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-200
+            wrapper: mt-3 min-h-24 bg-oma-blue-200 dark:bg-oma-blue-200
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-blue-200
@@ -730,7 +730,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-300
+            wrapper: mt-3 min-h-24 bg-oma-blue-300 dark:bg-oma-blue-300
             title: text-neutral-600 dark:text-neutral-600 font-mono
         title: |
             oma-blue-300
@@ -741,8 +741,8 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-400
-            title: text-neutral-600 dark:text-neutral-600 font-mono
+            wrapper: mt-3 min-h-24 bg-oma-blue-400 dark:bg-oma-blue-400
+            title: text-neutral-500 dark:text-neutral-500 font-mono
         title: |
             oma-blue-400
         ---
@@ -752,8 +752,8 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: bg-oma-blue-500
-            title: text-neutral-700 dark:text-neutral-700 font-mono
+            wrapper: mt-3 min-h-24 bg-oma-blue-500 dark:bg-oma-blue-500
+            title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-blue-500
         ---
@@ -763,7 +763,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-600
+            wrapper: mt-3 min-h-24 bg-oma-blue-600 dark:bg-oma-blue-600
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-blue-600
@@ -774,7 +774,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-700
+            wrapper: mt-3 min-h-24 bg-oma-blue-700 dark:bg-oma-blue-700
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-blue-700
@@ -785,7 +785,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-800
+            wrapper: mt-3 min-h-24 bg-oma-blue-800 dark:bg-oma-blue-800
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-blue-800
@@ -796,7 +796,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-900
+            wrapper: mt-3 min-h-24 bg-oma-blue-900 dark:bg-oma-blue-900
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-blue-900
@@ -807,7 +807,7 @@ cols: 5
         ---
         clipboard: true
         ui:
-            wrapper: mt-3 min-h-24 bg-oma-blue-950
+            wrapper: mt-3 min-h-24 bg-oma-blue-950 dark:bg-oma-blue-950
             title: text-neutral-300 dark:text-neutral-300 font-mono
         title: |
             oma-blue-950
