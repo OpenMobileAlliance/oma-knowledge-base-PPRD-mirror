@@ -5,9 +5,9 @@
                 <img :src="urlImage" :alt="altImage" :class="ui.image">
             </figure>
         </div>
-        <figcaption :class="ui.figcaption">
+        <div :class="ui.figcaption">
             <MDC :value="figcaption" />
-        </figcaption>
+        </div>
     </div>
 </template>
 

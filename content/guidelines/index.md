@@ -13,7 +13,7 @@ This section is constructed out of two sub-sections:
 - [Looks&Feel](/_8.guidelines/looks-feel/)
 - [Components](/_8.guidelines/components/)
 
-List of components:
+<!-- List of components:
 
   - [sh-action-card](/_8.guidelines/components/sh-action-card)
   - [sh-alert](/_8.guidelines/components/sh-alert)
@@ -33,4 +33,4 @@ List of components:
   - [sh-social](/_8.guidelines/components/sh-social)
   - [sh-text-img](/_8.guidelines/components/sh-text-img)
   - [sh-two-columns](/_8.guidelines/components/sh-two-columns)
-  - [sh-video](/_8.guidelines/components/sh-video)
+  - [sh-video](/_8.guidelines/components/sh-video) -->
