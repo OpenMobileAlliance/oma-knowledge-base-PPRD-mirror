@@ -3,11 +3,11 @@ title: Introduction
 description: 'Markdown friendly UX'
 layout: doc
 ---
-All of the components, and how to use them are shown in [Components](/guidelines/components/){.text-oma-blue-300 .hover:text-oma-blue-700 .not-prose} section. Since look&feel plays crucial role in UX, here you will find guidelines to all the different styling options.
+All of the components, and how to use them are shown in [Components](/guidelines/components/) section. Since look&feel plays crucial role in UX, here you will find guidelines to all the different styling options.
 
 ### OMA Color Shades
 
-OMA consists of five primary colors (**[red]{.text-oma-red-500}**, **[purple]{.text-oma-purple-500}**, **[cyan]{.text-oma-cyan-500}**, **[yellow]{.text-oma-yellow-500}** & **[blue]{.text-oma-blue-500}**). Each of this colors have their value presented in hexadecimal. In order to use the potential of these colors, we have provided diffferent shades of it through [https://maketintsandshades.com/](https://maketintsandshades.com/){.text-oma-blue-300 .hover:text-oma-blue-700 .not-prose}.
+OMA consists of five primary colors (**[red]{.text-oma-red-500}**, **[purple]{.text-oma-purple-500}**, **[cyan]{.text-oma-cyan-500}**, **[yellow]{.text-oma-yellow-500}** & **[blue]{.text-oma-blue-500}**). Each of this colors have their value presented in hexadecimal. In order to use the potential of these colors, we have provided diffferent shades of them through [https://maketintsandshades.com/](https://maketintsandshades.com/).
 
 Process behind creating this palet was simple; take the hexadecimal value, insert it on site shown above and choose the values. Since the site gives you shades in percentage from your original hexadecimal value to lightest, as well as from original to darkest, we had to choose what percentages we want.
 
@@ -27,59 +27,59 @@ And here is the table that sorted out what percentages are used (every color tak
         </thead>
         <tbody>
             <tr>
-                <th>1.</th>
-                <th>50</th>
-                <th>80%</th>
+                <td>1.</td>
+                <td>50</td>
+                <td>80%</td>
             </tr>
             <tr>
-                <th>2.</th>
-                <th>100</th>
-                <th>60%</th>
+                <td>2.</td>
+                <td>100</td>
+                <td>60%</td>
             </tr>
             <tr>
-                <th>3.</th>
-                <th>200</th>
-                <th>40%</th>
+                <td>3.</td>
+                <td>200</td>
+                <td>40%</td>
             </tr>
             <tr>
-                <th>4.</th>
-                <th>300</th>
-                <th>20%</th>
+                <td>4.</td>
+                <td>300</td>
+                <td>20%</td>
             </tr>
             <tr>
-                <th>5.</th>
-                <th>400</th>
-                <th>10%</th>
+                <td>5.</td>
+                <td>400</td>
+                <td>10%</td>
             </tr>
             <tr>
-                <th>6.</th>
-                <th>500</th>
-                <th>0%</th>
+                <td>6.</td>
+                <td>500</td>
+                <td>0%</td>
             </tr>
             <tr>
-                <th>7.</th>
-                <th>600</th>
-                <th>10%</th>
+                <td>7.</td>
+                <td>600</td>
+                <td>10%</td>
             </tr>
             <tr>
-                <th>8.</th>
-                <th>700</th>
-                <th>20%</th>
+                <td>8.</td>
+                <td>700</td>
+                <td>20%</td>
             </tr>
             <tr>
-                <th>9.</th>
-                <th>800</th>
-                <th>30%</th>
+                <td>9.</td>
+                <td>800</td>
+                <td>30%</td>
             </tr>
             <tr>
-                <th>10.</th>
-                <th>900</th>
-                <th>40%</th>
+                <td>10.</td>
+                <td>900</td>
+                <td>40%</td>
             </tr>
             <tr>
-                <th>11.</th>
-                <th>950</th>
-                <th>50%</th>
+                <td>11.</td>
+                <td>950</td>
+                <td>50%</td>
             </tr>
         </tbody>
     </table>
@@ -817,4 +817,4 @@ cols: 5
 
 ::
 
-> Colors with values of **500** are official colors of OMA, so if you ever need their hexadecimal values, just look at this chart and compar it against the `tailwind.config.ts` file where all hexadecimal values live
+> Colors with values of **500** are official colors of OMA, so if you ever need their hexadecimal values, just look at this chart and compare it against the `tailwind.config.ts` file where all hexadecimal values live

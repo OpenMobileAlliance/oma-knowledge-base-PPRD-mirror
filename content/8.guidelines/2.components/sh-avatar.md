@@ -8,7 +8,7 @@ layout: doc
 ### Usage
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
  
 #### Example Basic
 
@@ -50,104 +50,124 @@ twitter: https://www.linkedin.com/in/jpradocueva/
 ::
 ```
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The constructor creates a display format showcasing an avatar that represents a project member, including links to their social media profiles. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
     <tr>
       <th>Property</th>
       <th>Class</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="9">ui</td>
+      <td rowspan="9"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShAvatar</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the avatar component. Each attribute within the <code>ui</code> property targets a specific part of the avatar display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the avatar. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <tr>
       <td><code>base</code></td>
+      <td><code>config.base</code></td>
       <td>A placeholder for additional base styles that can be applied to the avatar component.</td>
     </tr>
     <tr>
       <td><code>avatar</code></td>
+      <td><code>config.avatar</code></td>
       <td>Styles applied to the avatar image itself, including properties like grayscale effect, rounded shape, and size.</td>
     </tr>
     <tr>
       <td><code>socials</code></td>
+      <td><code>config.socials</code></td>
       <td>Contains the styles for the social media icons, including their alignment and spacing.</td>
     </tr>
     <tr>
       <td><code>icon</code></td>
+      <td><code>config.icon</code></td>
       <td>Defines the styling for individual social media icons, including hover effects and transition animations.</td>
     </tr>
     <tr>
       <td><code>name</code></td>
+      <td><code>config.name</code></td>
       <td>Styles applied to the text displaying the name of the person, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>role</code></td>
+      <td><code>config.role</code></td>
       <td>Styles applied to the text displaying the role or position of the person.</td>
     </tr>
     <tr>
       <td><code>company</code></td>
+      <td><code>config.company</code></td>
       <td>Styles applied to the text displaying the company name of the person.</td>
     </tr>
     <tr>
       <td><code>srcAvatar</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The source URL of the avatar image to be displayed.</td>
     </tr>
     <tr>
       <td><code>altAvatar</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>Alternative text for the avatar image, used for accessibility and in case the image fails to load.</td>
     </tr>
     <tr>
       <td><code>name</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The name of the person to be displayed.</td>
     </tr>
     <tr>
       <td><code>role</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>The role or position of the person within the company.</td>
     </tr>
     <tr>
       <td><code>company</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The name of the company the person is associated with.</td>
     </tr>
     <tr>
       <td><code>linkedin</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>URL link to the person's LinkedIn profile.</td>
     </tr>
     <tr>
       <td><code>facebook</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>URL link to the person's Facebook profile.</td>
     </tr>
     <tr>
       <td><code>instagram</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>URL link to the person's Instagram profile.</td>
     </tr>
     <tr>
       <td><code>twitter</code></td>
       <td>n/a</td>
+      <td>n/a</td>
       <td>URL link to the person's Twitter profile.</td>
     </tr>
     <tr>
       <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
     </tr>
@@ -155,7 +175,7 @@ The constructor creates a display format showcasing an avatar that represents a 
 </table>
 
 
-### Example Usage
+#### Example Usage
 #### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
@@ -213,7 +233,7 @@ twitter: https://www.linkedin.com/in/jpradocueva/
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-avatar.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 
 ```ts
@@ -233,7 +253,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: `"grid grid-cols-2 gap-4 p-4 mx-auto w-fit dark:bg-white rounded-md"`
@@ -271,7 +291,7 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
 
 ::ShFaq
 ---

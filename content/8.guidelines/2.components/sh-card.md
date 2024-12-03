@@ -8,7 +8,7 @@ layout: doc
 ### Usage
 
 #### Presentation
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
 
 ##### Example Basic
 
@@ -57,118 +57,143 @@ urlUpperBase: https://www.nasa.gov
 ```
 
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The {{ $doc.constructorName }} constructor represents a card divided in two halfs, with upper half containing image, and lower half containing text with additional options for inserting labels. Text & labels both fully support Markdown syntax. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in two halfs, with upper half containing image, and lower half containing text with additional options for inserting labels. Text & labels both fully support Markdown syntax. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
     <tr>
       <th>Property</th>
       <th>Attribute</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="11">ui</td>
+      <td rowspan="11"><code>ui</coode></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the component is a configuration object that allows customization of various styling aspects of the component. Each attribute within the <code>ui</code> property targets a specific part of the component display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the component.</td>
     </tr>
     <tr>
       <td><code>upperBase</code></td>
+      <td><code>config.upperBase</code></td>
       <td>Defines the styling for the upper section of the component, typically where the image is displayed.</td>
     </tr>
     <tr>
       <td><code>image</code></td>
+      <td><code>config.image</code></td>
       <td>Styles applied to the image element, including properties like size and border radius.</td>
     </tr>
     <tr>
       <td><code>lowerBase</code></td>
+      <td><code>config.lowerBase</code></td>
       <td>Defines the styling for the lower section of the component, typically where the text content is displayed.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
+      <td><code>config.title</code></td>
       <td>Styles applied to the title text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
+      <td><code>config.subtitle</code></td>
       <td>Styles applied to the subtitle text, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>text</code></td>
+      <td><code>config.text</code></td>
       <td>Styles applied to the text content, such as font size and color.</td>
     </tr>
     <tr>
       <td><code>leftLabel</code></td>
+      <td><code>config.leftLabel</code></td>
       <td>Defines the overall styling for the leftLabel that holds the text.</td>
     </tr>
     <tr>
       <td><code>centerLabel</code></td>
+      <td><code>config.centerLabel</code></td>
       <td>Defines the overall styling for the centerLabel that holds the text.</td>
     </tr>
     <tr>
       <td><code>rightLabel</code></td>
+      <td><code>config.rightLabel</code></td>
       <td>Defines the overall styling for the rightLabel that holds the text.</td>
     </tr>
     <tr>
-      <td>urlUpperBase</td>
+      <td><code>urlUpperBase</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The URL that wraps the upper section of the component, typically for navigation purposes.</td>
     </tr>
     <tr>
-      <td>urlImage</td>
+      <td><code>urlImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The source URL of the image to be displayed.</td>
     </tr>
     <tr>
-      <td>altImage</td>
+      <td><code>altImage</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Alternative text for the image, used for accessibility and in case the image fails to load.</td>
     </tr>
     <tr>
-      <td>title</td>
+      <td><code>title</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The title text to be displayed.</td>
     </tr>
     <tr>
-      <td>subtitle</td>
+      <td><code>subtitle</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The subtitle text to be displayed, if any.</td>
     </tr>
     <tr>
-      <td>text</td>
+      <td><code>text</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The main text content to be displayed.</td>
     </tr>
     <tr>
-      <td>leftLabel</td>
+      <td><code>leftLabel</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The text to be displayed in the left label.</td>
     </tr>
     <tr>
-      <td>centerLabel</td>
+      <td><code>centerLabel</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The text to be displayed in the center label.</td>
     </tr>
     <tr>
-      <td>rightLabel</td>
+      <td><code>rightLabel</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The text to be displayed in the right label.</td>
     </tr>
     <tr>
-      <td>imageBackground</td>
+      <td><code>imageBackground</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The background image for the component's image section.</td>
     </tr>
-    <td>description</td>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -182,7 +207,7 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-primary # Add text-color
+    text: text-primary dark:text-black # Add text-color
     leftLabel: text-primary  # Add text-color
     centerLabel: text-primary
     rightLabel: text-primary
@@ -216,7 +241,7 @@ ui:
     wrapper: shadow-xl bg-red-500 
     title: text-4xl text-pink-800
     subtitle: font-mono text-cyan-700
-    text: text-primary # Add text-color
+    text: text-primary dark:text-black # Add text-color
     leftLabel: text-primary  # Add text-color
     centerLabel: text-primary
     rightLabel: text-primary
@@ -243,7 +268,7 @@ urlUpperBase: https://www.nasa.gov
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-card.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
@@ -264,7 +289,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"flex flex-col justify-between border-2 rounded-xl mx-auto max-w-lg overflow-hidden"</code>
@@ -310,4 +335,4 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

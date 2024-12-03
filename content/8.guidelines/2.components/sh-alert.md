@@ -1,6 +1,6 @@
 ---
 title: Alert
-description:
+description: A component for expressing information of some importance
 constructorName: ShAlert
 layout: doc
 ---
@@ -90,42 +90,52 @@ Testing alert component related to danger
 ___
 
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 #### Properties and Attributes Description
-The {{ $doc.constructorName }} constructor creates a notification field with different background color to showcase the importance of notification. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor creates a notification field with different background color to showcase the importance of notification. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 <table>
   <thead>
     <tr>
       <th>Property</th>
       <th>Class</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4">ui</td>
+      <td rowspan="4"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShAlert</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the alert component. Each attribute within the <code>ui</code> property targets a specific part of the alert display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
       <tr>
         <td><code>wrapper</code></td>
+        <td><code>config.wrapper</code></td>
         <td>Defines the overall styling for the container that holds all the elements of the alert.</td>
       </tr>
       <tr>
         <td><code>base</code></td>
+        <td><code>config.base</code></td>
         <td>A placeholder for additional base styles that can be applied to the alert component. In this specific case, it will target the section around icon.</td>
       </tr>
     <tr>
       <td><code>icon</code></td>
+      <td><code>config.icon</code></td>
       <td>Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc.</td>
     </tr>
     <tr>
       <td><code>typeAlert</code></td>
-      <td><code>n/a</code></td>
-      <td>This represents type of alert. <b>Options</b>: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code> with <code>info</code> type being the default type.</td>
+      <td>n/a</td>
+      <td><code>info</code></td>
+      <td>
+        This represents the type of the alert.
+        </br><b>Options</b>: <code>info</code>, <code>success</code>, <code>warning</code> & <code>danger</code>
+      </td>
     </tr>
     <tr>
       <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
     </tr>
@@ -154,7 +164,7 @@ Testing alert component with shorten width
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-alert.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
