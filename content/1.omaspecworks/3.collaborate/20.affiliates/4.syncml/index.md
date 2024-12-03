@@ -5,7 +5,7 @@ layout: doc
 ---
 ## Material from Affiliates - SyncML
 
-The SyncML initiative recently consolidated into the Open Mobile Alliance (OMA), contributing their technical work to the OMA technical Working Groups: [Public Available Documents](http://openmobilealliance.github.io/public_documents.html).
+The SyncML initiative recently consolidated into the Open Mobile Alliance (OMA), contributing their technical work to the OMA technical Working Groups: [Public Available Documents](/specifications/search/public-docs).
 
 ### Archive Downloads
 
@@ -15,11 +15,11 @@ The SyncML initiative recently consolidated into the Open Mobile Alliance (OMA),
 - [SyncML Specifications, Version 1.1](#V11)
 - [Archived versions of SyncML Specifications, Superseded by Version 1.1](#ARCHV11)
 - [SyncML White Papers](#WP)
-- [SyncML Presentations](#PRE1)
+- [SyncML Presentations](#PR)
 
 The following Archive Downloads are the archived documents from the SyncML initiative.
 
-[Click here to view Use Agreement](http://openmobilealliance.org/about-oma/policies-and-terms-of-use/use-agreement/)
+[Click here to view Use Agreement](/omaspecworks/about/policies-terms/use-agreement)
 
 <table>
     <thead>
@@ -241,12 +241,12 @@ The following Archive Downloads are the archived documents from the SyncML initi
 <table>
     <thead>
         <tr>
-            <th id="ARCHV11" class="head">Archived versions of SyncML Specifications, Superseded by Version 1.1</th>
+            <th id="ARCHV11" class="head">Archived versions of SyncML Specifications, Superseded by Version 1.1 <a href="#material-from-affiliates-syncml">Back to top</a></th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>SyncML Specification; Version 1.0.1 <a href="#top">Back to top</a></td>
+            <td>SyncML Specification; Version 1.0.1</td>
         </tr>
         <tr>
             <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/syncml/spec1-0-1.zip" title="By Clicking here you accept the use agreement">SyncML Specification version 1.0.1 (zip)</a></td>
@@ -345,7 +345,7 @@ The following Archive Downloads are the archived documents from the SyncML initi
             <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/syncml/syncml_devman_business_cases_whppr.pdf" title="By Clicking here you accept the use agreement">The Business Case for Device Management - SyncML White Paper (pdf)</a></td>
         </tr>
         <tr>
-            <td><a href="?p=194&amp;pg=238" title="By Clicking here you accept the use agreement">SyncML White Paper (html)</a></td>
+            <td><a href="https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_whitepaper.html" title="By Clicking here you accept the use agreement">SyncML White Paper (html)</a></td>
         </tr>
         <tr>
             <td><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/syncml/whitepaper.pdf" title="By Clicking here you accept the use agreement">Download White Paper (pdf)</a></td>
@@ -353,7 +353,7 @@ The following Archive Downloads are the archived documents from the SyncML initi
     </tbody>
 </table>     
 
-<div class="head">SyncML Presentations (All PDF files)</div>
+<div class="head" id="PR">SyncML Presentations (All PDF files)</div>
 
 ''<a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/syncml/syncmldm_28jan02_james_jennings.pdf" title="By Clicking here you accept the use agreement">SyncML DM: A SyncML Protocol for Device Management</a>' - James Jennings, Ph.D., of IBM, and SyncML DM Chair - SyncML World Congress, January 28, 2002:'<a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/syncml/introducing_syncml_29jan02_douglas_heintzman.pdf" title="By Clicking here you accept the use agreement">Keynote Speech: Introducing SyncML and Data Synchronization</a>' - Douglas Heintzman, of IBM and Chairman of the SyncML Initiative, Ltd.'<a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/syncml/syncml_roadmap_30jan02_teemu_toroi.pdf" title="By Clicking here you accept the use agreement">
 
