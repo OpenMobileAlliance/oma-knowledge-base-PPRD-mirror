@@ -1,11 +1,13 @@
 export default {
   wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-5",
   header: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
+  base: "",
   footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   search: "pb-4",
   filter:  "",
   table: 'min-w-full divide-y divide-gray-300 dark:divide-gray-700',
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
+  thead: "",
   tr: {
     base: '',
     selected: 'bg-oma-blue-400 hover:bg-oma-blue-300 text-white dark:bg-oma-blue-600 dark:hover:bg-oma-blue-500 dark:text-golden',

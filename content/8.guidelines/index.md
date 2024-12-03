@@ -10,8 +10,8 @@ Here you can play with looks and feel of the website, how to color everything, w
 Also, here are custom components provided, with detailed instructions on how to use them, as well as some basic & advanced examples.
 
 This section is constructed out of two sub-sections:
-- [Looks&Feel](/_8.guidelines/looks-feel/)
-- [Components](/_8.guidelines/components/)
+- [Looks&Feel](/guidelines/looks-feel/)
+- [Components](/guidelines/components/)
 
 <!-- List of components:
 

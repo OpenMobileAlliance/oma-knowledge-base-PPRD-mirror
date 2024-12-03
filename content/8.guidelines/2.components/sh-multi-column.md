@@ -1,6 +1,6 @@
 ---
 title: Multi Column 
-description:
+description: Create a multicolumn element to populate it with anything from your content
 constructorName: ShMultiColumn
 layout: doc
 ---
@@ -18,11 +18,11 @@ Don`t nest ShMultiColumn inside another ShMultiColumn as it will result in bad r
 ---
 typeAlert: success
 ---
-Instead nesting many ShMultiColumns inside itself, do a combination with ShTwoColumns & ShColumn
+Instead nesting many ShMultiColumns inside itself, do a combination with ShTwoColumns & ShColumn inside of a ShMultiColumn
 ::
 
 #### Presentation 
-This is the display format for the {{ $doc.constructorName }} constructor, designed to showcase what are its capabilities.
+This is the display format for the <b>{{ $doc.constructorName }}</b> constructor, designed to showcase what are its capabilities.
 The following example shows a basic example of the <b>{{ $doc.constructorName }}</b> component. It is used  to organise the content in three columns with two rows.
 >Note: The `border` around the <b>{{ $doc.constructorName }}</b> is just to highlight the area covered by the component. It is not displayed in the written example below.
 
@@ -30,18 +30,14 @@ The following example shows a basic example of the <b>{{ $doc.constructorName }}
 ::ShMultiColumn
 ---
 ui:
-  wrapper: border #this border is to clearly state the area covered by the multicolumn
-cols: 3
+  wrapper: border text-center #this border is to clearly state the area covered by the multicolumn
+cols: 2
 ---
 First column
-
-Second column
 
 Last column
 
 First column 2nd row
-
-Second column 2nd row
 
 Last column 2nd row
 ::
@@ -51,24 +47,23 @@ This is how the above example is written in markdown:
 ```mdc
 ::ShMultiColumn
 ---
-cols: 3
+cols: 2
 ---
 First column
-
-Second column
 
 Last column
 
 First column 2nd row
 
-Second column 2nd row
-
 Last column 2nd row
 ::
+
+This is how the above example is written in markdown:
+
 ```
 
 ### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor
 
 #### Properties and Attributes Description
 The constructor <b>{{ $doc.constructorName }}</b> allows to organize content inside a multi-column layout. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor:
@@ -91,17 +86,17 @@ The constructor <b>{{ $doc.constructorName }}</b> allows to organize content ins
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td>n/a</td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the multi-column. The default value is an empty string, indicating no styles are applied by default.</td>
     </tr>
     <tr>
       <td><code>size</code></td>
-      <td>"L"</td>
+      <td><code>L</code></td>
       <td>This attribute specifies the default width of the left column. The value "L" indicates a large size.</td>
     </tr>
     <tr>
       <td><code>gap</code></td>
-      <td>"gap-4"</td>
+      <td class="truncate"><code>gap-4</code></td>
       <td>This attribute controls the gutters between columns. The value <code>"gap-4"</code> applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the <code>`gap`</code> property can be found in the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a>.</td>
     </tr>
     <tr>
@@ -113,7 +108,7 @@ The constructor <b>{{ $doc.constructorName }}</b> allows to organize content ins
     <tr>
       <td><code>gap</code></td>
       <td>n/a</td>
-      <td>"gap-4"</td>
+      <td><code>gap-4</code></td>
       <td>Optional. Controls the gutters between columns. The value <code>"gap-4"</code> applies a gap utility class from Tailwind CSS to add spacing between the columns.</td>
     </tr>
     <tr>
@@ -131,7 +126,7 @@ The constructor <b>{{ $doc.constructorName }}</b> allows to organize content ins
   </tbody>
 </table>
 
-### Advance Usage
+#### Advance Usage
 In the following example the <b>{{ $doc.constructorName }}</b> component is styled using the attribute `ui.wrapper` and `class` property. The [ShColumn](/guidelines/components/sh-column) component is usually used with the <b>{{ $doc.constructorName }}</b> component to present each column content. It is possible to use different width for each column.
 
 This <b>{{ $doc.constructorName }}</b> contains the following content:
@@ -230,7 +225,7 @@ Second column second row with double width
 
 ```
 
-### Advance Multicolumn
+#### Advance Multicolumn
 
 The <b>{{ $doc.constructorName }}</b> can have multiple *rows* and each row can organise its 
 columns with different column sizes. Columns can spread in multiple rows like in the following
@@ -244,91 +239,91 @@ ui:
 cols: 4 # Indicates that the width of the `MultiColumn` is divided in 4 spaces or columns
 ---
 
-:::ShColumn 
---- 
-size: 2 #First row will expand the column content to cover 2 out of the 4 column spaces.
-ui:
-  wrapper: "bg-stone-200 text-center" # Provides background color and text is centered
----
-This column has a span of two. 
-:::
+  :::ShColumn 
+  --- 
+  size: 2 #First row will expand the column content to cover 2 out of the 4 column spaces.
+  ui:
+    wrapper: "bg-stone-200 text-center dark:text-black" # Provides background color and text is centered
+  ---
+  This column has a span of two. 
+  :::
 
-:::ShColumn 
----
-ui: # First row, second column
-  wrapper: "bg-stone-300 text-center" # The background color is darked than previous column and text is set in the center
----
-This colum has default span of 1.
-:::
+  :::ShColumn 
+  ---
+  ui: # First row, second column
+    wrapper: "bg-stone-300 text-center dark:text-black" # The background color is darked than previous column and text is set in the center
+  ---
+  This colum has default span of 1.
+  :::
 
-:::ShColumn 
----
-ui: # First row, third column
-  wrapper: "bg-stone-300 text-center"
----
-This colum has default span of 1.
-:::
+  :::ShColumn 
+  ---
+  ui: # First row, third column
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum has default span of 1.
+  :::
 
-:::ShColumn 
----
-ui: # Second row, first column. It doesn't use `size` therefore the  the width is 1 out of the 4 column space.
-  wrapper: "bg-stone-200 text-center"
----
-This colum has default span.
-:::
+  :::ShColumn 
+  ---
+  ui: # Second row, first column. It doesn't use `size` therefore the  the width is 1 out of the 4 column space.
+    wrapper: "bg-stone-200 text-center dark:text-black"
+  ---
+  This colum has default span.
+  :::
 
-:::ShColumn 
----
-size: 3 # Second row, as `size` is used this column covers 3 out of the 4 column space.
-ui:
-  wrapper: "bg-stone-300 text-center"
----
-This colum now is 3 column wide.
-:::
+  :::ShColumn 
+  ---
+  size: 3 # Second row, as `size` is used this column covers 3 out of the 4 column space.
+  ui:
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum now is 3 column wide.
+  :::
 
-:::ShColumn 
----
-ui: # Third and fourth row as it is used the `row-span-2`
-  wrapper: "bg-stone-200 text-center row-span-2 flex flex-col justify-center items-center"
----
-This colum has default span and spread on 2 rows.
-:::
+  :::ShColumn 
+  ---
+  ui: # Third and fourth row as it is used the `row-span-2`
+    wrapper: "bg-stone-200 text-center row-span-2 flex flex-col justify-center items-center dark:text-black"
+  ---
+  This colum has default span and spread on 2 rows.
+  :::
 
-:::ShColumn 
----
-size: 2 # Third row, this column covers the space of 2 out of 4 `MultiColum` width.
-ui:
-  wrapper: "bg-stone-300 text-center"
----
-This colum now is 2 column wide.
-:::
+  :::ShColumn 
+  ---
+  size: 2 # Third row, this column covers the space of 2 out of 4 `MultiColum` width.
+  ui:
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum now is 2 column wide.
+  :::
 
-:::ShColumn 
----
-ui: # Third row, it covers the space of 1 out of 4 `Multicolumn` width.
-  wrapper: "border text-center" # It doesn't contain any background color
----
+  :::ShColumn 
+  ---
+  ui: # Third row, it covers the space of 1 out of 4 `Multicolumn` width.
+    wrapper: "border text-center" # It doesn't contain any background color
+  ---
 
-This colum has span of 1 as well.
-:::
+  This colum has span of 1 as well.
+  :::
 
-:::ShColumn 
----
-ui: # This is the fourth row. The space is 1 column out of 4 column width provided by the `MultiColumn` module or constractor. 
-  wrapper: "border text-center"
----
+  :::ShColumn 
+  ---
+  ui: # This is the fourth row. The space is 1 column out of 4 column width provided by the `MultiColumn` module or constractor. 
+    wrapper: "border text-center"
+  ---
 
-This colum has span of 1 as well.
-:::
+  This colum has span of 1 as well.
+  :::
 
-:::ShColumn 
----
-size: 2 # This is the fourth row. The space is 2 out of the 4 possible columns.
-ui:
-  wrapper: "bg-stone-300 text-center"
----
-This colum now is 2 column wide.
-:::
+  :::ShColumn 
+  ---
+  size: 2 # This is the fourth row. The space is 2 out of the 4 possible columns.
+  ui:
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum is now 2 column wide.
+  :::
 
 ::
 
@@ -337,104 +332,105 @@ The above example is generated with the following code:
 ```mdc
 ::ShMultiColumn
 ---
+ui:
 cols: 4 # Indicates that the width of the `MultiColumn` is divided in 4 spaces or columns
 ---
 
-:::ShColumn 
---- 
-size: 2 #First row will expand the column content to cover 2 out of the 4 column spaces.
-ui:
-  wrapper: "bg-stone-200 text-center" # Provides background color and text is centered
----
-This column has a span of two. 
-:::
+  :::ShColumn 
+  --- 
+  size: 2 #First row will expand the column content to cover 2 out of the 4 column spaces.
+  ui:
+    wrapper: "bg-stone-200 text-center dark:text-black" # Provides background color and text is centered
+  ---
+  This column has a span of two. 
+  :::
 
-:::ShColumn 
----
-ui: # First row, second column
-  wrapper: "bg-stone-300 text-center" # The background color is darked than previous column and text is set in the center
----
-This colum has default span of 1.
-:::
+  :::ShColumn 
+  ---
+  ui: # First row, second column
+    wrapper: "bg-stone-300 text-center dark:text-black" # The background color is darked than previous column and text is set in the center
+  ---
+  This colum has default span of 1.
+  :::
 
-:::ShColumn 
----
-ui: # First row, third column
-  wrapper: "bg-stone-300 text-center"
----
-This colum has default span of 1.
-:::
+  :::ShColumn 
+  ---
+  ui: # First row, third column
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum has default span of 1.
+  :::
 
-:::ShColumn 
----
-ui: # Second row, first column. It doesn't use `size` therefore the  the width is 1 out of the 4 column space.
-  wrapper: "bg-stone-200 text-center"
----
-This colum has default span.
-:::
+  :::ShColumn 
+  ---
+  ui: # Second row, first column. It doesn't use `size` therefore the  the width is 1 out of the 4 column space.
+    wrapper: "bg-stone-200 text-center dark:text-black"
+  ---
+  This colum has default span.
+  :::
 
-:::ShColumn 
----
-size: 3 # Second row, as `size` is used this column covers 3 out of the 4 column space.
-ui:
-  wrapper: "bg-stone-300 text-center"
----
-This colum now is 3 column wide.
-:::
+  :::ShColumn 
+  ---
+  size: 3 # Second row, as `size` is used this column covers 3 out of the 4 column space.
+  ui:
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum now is 3 column wide.
+  :::
 
-:::ShColumn 
----
-ui: # Third and fourth row as it is used the `row-span-2`
-  wrapper: "bg-stone-200 text-center row-span-2 flex flex-col justify-center items-center"
----
-This colum has default span and spread on 2 rows.
-:::
+  :::ShColumn 
+  ---
+  ui: # Third and fourth row as it is used the `row-span-2`
+    wrapper: "bg-stone-200 text-center row-span-2 flex flex-col justify-center items-center dark:text-black"
+  ---
+  This colum has default span and spread on 2 rows.
+  :::
 
-:::ShColumn 
----
-size: 2 # Third row, this column covers the space of 2 out of 4 `MultiColum` width.
-ui:
-  wrapper: "bg-stone-300 text-center"
----
-This colum now is 2 column wide.
-:::
+  :::ShColumn 
+  ---
+  size: 2 # Third row, this column covers the space of 2 out of 4 `MultiColum` width.
+  ui:
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum now is 2 column wide.
+  :::
 
-:::ShColumn 
----
-ui: # Third row, it covers the space of 1 out of 4 `Multicolumn` width.
-  wrapper: "border text-center" # It doesn't contain any background color
----
+  :::ShColumn 
+  ---
+  ui: # Third row, it covers the space of 1 out of 4 `Multicolumn` width.
+    wrapper: "border text-center" # It doesn't contain any background color
+  ---
 
-This colum has span of 1 as well.
-:::
+  This colum has span of 1 as well.
+  :::
 
-:::ShColumn 
----
-ui: # This is the fourth row. The space is 1 column out of 4 column width provided by the `MultiColumn` module or constractor. 
-  wrapper: "border text-center"
----
+  :::ShColumn 
+  ---
+  ui: # This is the fourth row. The space is 1 column out of 4 column width provided by the `MultiColumn` module or constractor. 
+    wrapper: "border text-center"
+  ---
 
-This colum has span of 1 as well.
-:::
+  This colum has span of 1 as well.
+  :::
 
-:::ShColumn 
----
-size: 2 # This is the fourth row. The space is 2 out of the 4 possible columns.
-ui:
-  wrapper: "bg-stone-300 text-center"
----
-This colum now is 2 column wide.
-:::
+  :::ShColumn 
+  ---
+  size: 2 # This is the fourth row. The space is 2 out of the 4 possible columns.
+  ui:
+    wrapper: "bg-stone-300 text-center dark:text-black"
+  ---
+  This colum is now 2 column wide.
+  :::
 
 ::
 ```
 
-### Config
-These style properties can be modified via `ui` and are stored in the `sh-multi-column.ts` file:
+## Config
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
-  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-300 dark:border-neutral-500 rounded-2xl shadow-2xl p-5",
+  wrapper: "rounded-2xl p-5",
   default: {
     size: 3,
     gap: "gap-4"
@@ -443,14 +439,12 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
-
-### Class Descriptions
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_:
 
-* **Value**: ""
-* **Description**: This defines the overall styling for the container. Currently, there are no styles applied to the wrapper.
+* **Value**: "rounded-2xl p-5"
+* **Description**: Adding radius to corners of 2xl value and adding padding all over constructor.
 
 _**default**_:
 

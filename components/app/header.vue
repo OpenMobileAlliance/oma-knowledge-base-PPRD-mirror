@@ -26,7 +26,7 @@
                       {{ item.label }}
                     </ULink>
                   </template>
-                  <UIcon name="stash:user-avatar" dynamic class="text-3xl" />
+                  <UIcon name="stash:user-avatar" dynamic class="text-3xl -mt-1" />
                 </UDropdown>
 
               </span>

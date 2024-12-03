@@ -1,5 +1,5 @@
 export default {
-  wrapper: "pl-4 pr-4 pb-10 shadow-xl bg-neutral-100 dark:bg-neutral-900/[0.6] rounded-2xl",
+  wrapper: "pl-4 pr-4 pb-10 shadow-md dark:shadow-none bg-neutral-100 dark:bg-neutral-900/[0.6] rounded-2xl",
   inner: "",
   tags: {
     title: "title flex flex-wrap justify-center",

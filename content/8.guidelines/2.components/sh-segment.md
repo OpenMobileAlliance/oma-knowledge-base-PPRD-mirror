@@ -15,7 +15,7 @@ This is and example of how a basic <b>{{ $doc.constructorName }}</b> component i
 ::ShSegment
 ---
 ui:
-  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 # Comment
+  wrapper: bg-cyan-300 dark:bg-cyan-800 rounded-xl border shadow-md p-4 # Comment
 ---
 
 This is a specific block of *Markdown* content that can be styled.
@@ -31,7 +31,7 @@ This is how the above <b>{{ $doc.constructorName }}</b> is written in markdown:
 ::ShSegment
 ---
 ui:
-  wrapper: bg-cyan-300 rounded-xl border shadow-md p-4 # Comment
+  wrapper: bg-cyan-300 dark:bg-cyan-800 rounded-xl border shadow-md p-4 # Comment
 ---
 
 This is a specific block of *Markdown* content that can be styled.
@@ -68,7 +68,7 @@ The {{ $doc.constructorName }} constructor represents a versatile component that
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td>n/a</td>
+      <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShSegment</code>. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
     <td><code>description</code></td>
@@ -78,7 +78,7 @@ The {{ $doc.constructorName }} constructor represents a versatile component that
   </tbody>
 </table>
 
-### Advanced Usage
+#### Advanced Usage
 This is how a complex example of the <b>{{ $doc.constructorName }}</b> is displayed. When hovering over the content is zoom in/out and contains different type of content:
 * Markdown content
 * HTML Table
@@ -166,7 +166,7 @@ This is a table written in HTML:
   </tr>
 </table>
 
-It can also include other components. For example another `ShSegment`.
+It can also include other components. For example another <b>{{ $doc.constructorName }}</b>.
 
 :::ShSegment
 ---
@@ -185,7 +185,7 @@ That is making this used to show this component flexibility.
 ```    
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-segment.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 {
@@ -193,7 +193,7 @@ These style properties can be modified via `ui` and are stored in the `sh-segmen
 }
 ```
 
-### Attributes Descriptions
+#### Attributes Descriptions
 This section indicates the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `wrapper` attributes.
 
 _**wrapper**_

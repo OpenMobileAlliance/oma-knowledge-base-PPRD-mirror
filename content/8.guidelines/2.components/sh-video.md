@@ -8,9 +8,10 @@ layout: doc
 ### Usage
 
 #### Presentation
-This section explains how the {{ $doc.constructorName }} constructor is displayed, enabling the embedding of videos with custom styles.
+This section explains how the <b>{{ $doc.constructorName }}</b> constructor is displayed, enabling the embedding of videos with custom styles.
 
 ##### Example Basic
+</br>
 
 ::ShVideo
 ---
@@ -20,7 +21,7 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 
 This is how it is constructed:
 
-```md
+```mdc
 ::ShVideo
 ---
 src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
@@ -29,10 +30,10 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 ```
 
 ### Props
-These are the properties and attributes associated with the {{ $doc.constructorName }} constructor:
+These are the properties and attributes associated with the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The {{ $doc.constructorName }} constructor creates a display format for embedding a video with customizable styles. Below is a detailed description of the properties and attributes used in the {{ $doc.constructorName }} constructor.
+The <b>{{ $doc.constructorName }}</b> constructor creates a display format for embedding a video with customizable styles. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
@@ -64,7 +65,7 @@ The {{ $doc.constructorName }} constructor creates a display format for embeddin
   </tbody>
 </table>
 
-### Example Usage
+#### Example Usage
 ##### Advanced Settings
 An example with customized `ui` attributes for enhanced display:
 
@@ -78,7 +79,7 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 
 This is an example with customized `ui` attributes for enhanced display:
 
-```md
+```mdc
 ::ShVideo
 ---
 ui:
@@ -89,7 +90,7 @@ src: "https://www.youtube.com/watch?v=8A5AMiskxvQ"
 ```
 
 ### Config
-These style properties can be modified via `ui` and are stored in the `sh-video.ts` file:
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
@@ -101,7 +102,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"mx-5 ring-4"</code>
@@ -111,4 +112,4 @@ _**default**_
 *  **Value**: <code>{}</code>
 *  **Description**: This object is intended to hold any default Tailwind CSS values that might be used as fallback or initial styles.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

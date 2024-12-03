@@ -1,9 +1,9 @@
 <template>
     <div id="alert" :class="[ui.wrapper, alert]">
         <div :class="ui.base">
-            <i :class="['size-7', icon]"></i>
+            <UIcon :class="['size-7']" :name="icon" dynamic></UIcon>
         </div>
-            <ContentSlot :use="$slots.default" unwrap="" />
+        <ContentSlot :use="$slots.default" unwrap="" />
     </div>
 </template>
 
@@ -40,7 +40,7 @@ const alert = computed(() => {
             break;
         case "danger":
             return config.alert.danger;
-            break; 
+            break;
         default: // info
             return config.alert.info;
             break;

@@ -12,7 +12,7 @@ multi-column layout. The column has `header`, that can render `title` and
 `subtitle` in the header accompanied with an image.
 Beside the main content the column also can have the `footer` content as well.
 
-### Basic Usage (no style)
+#### Basic Usage (no style)
 
 This is how a basic <b>{{ $doc.constructorName }}</b> without style is displayed:
 
@@ -42,7 +42,7 @@ This is `ShColumn` component design to show content of the first column.
 ::
 ```
 
-### Basic Usage (with style)
+#### Basic Usage (with style)
 
 This is how a basic <b>{{ $doc.constructorName }}</b> with style is displayed:
 
@@ -77,7 +77,7 @@ This is `ShColumn` component design to show content of the first column.
 ```
 
 
-### Advanced Usage
+#### Advanced Usage
 This is an advance example of a <b>{{ $doc.constructorName }}</b> constructor which contains:
 * Column Title and Subtitle is centered,
 * Markdown text,
@@ -179,33 +179,33 @@ The constructor allows you to organize content inside one column and then nest i
       <td>The <code>ui</code> property in the <code>ShColumn</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the column component. Each attribute within the <code>ui</code> property targets a specific part of the column display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
-      <td><code>wrapper</code></td>
-      <td>n/a</td>      
+      <td><code>wrapper</code></td>  
+      <td><code>config.wrapper</code></td>   
       <td>Defines the overall styling for the container that holds all the elements of the column. The attribute <code>border-8</code> is used to highlight the contur of the wrapper.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
-      <td>n/a</td>
+      <td><code>config.title</code></td>
       <td>This attribute is part of the <code>header</code> property. Styles applied to the text displaying the title of the column, such as font, size, color, etc.</td>
     </tr>
     <tr>
       <td><code>subtitle</code></td>
-      <td>n/a</td>
+      <td><code>config.subtitle</code></td>
       <td>This attribute is part of the <code>header</code> property. Styles applied to the text displaying the subtitle of the column, such as font, size, color, etc.</td>
     </tr>
     <tr>
       <td><code>footer</code></td>
-      <td>n/a</td>
+      <td><code>config.footer</code></td>
       <td>Styles applied to the text displaying the footer text of the column, such as font, size, color, etc.</td>
     </tr>
     <tr>
       <td><code>size</code></td>
-      <td>"1"</td>
-      <td>As the component <code>ShColumn</code> represents a single column its value is not exposed or modified; the default value is "1". Used to determine the size of a column in a grid system</td>
+      <td><code>1</code></td>
+      <td>As the component <code>ShColumn</code> represents a single column its value is not exposed or modified; the default value is <code>1</code>. Used to determine the size of a column in a grid system</td>
     </tr>
     <tr>
       <td><code>main</code></td>
-      <td>n/a</td>
+      <td><code>config.main</code></td>
       <td>Styles applied to the main content (text, image, list, etc.). This attribute only can be modified by modifying the logic on `sh-column.vue` file. It cannot be modified via the markdown document.</td>
     </tr>
     <tr>
@@ -234,9 +234,9 @@ The constructor allows you to organize content inside one column and then nest i
 </table>
 
 ## Config
-The style attributes can be modified via `ui` and are stored in the `sh-column.ts` and `sh-grid-sizes.ts` file:
+The style attributes can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> and `sh-grid-sizes.ts` file:
 
-`sh-column.ts`
+<code><b>{{ $doc.constructorName }}</b><b>.ts</b></code>
 
 ```ts
 export default {
@@ -323,7 +323,7 @@ export default {
 }
 ```
 
-### Attributes Description
+#### Attributes Description
 This section describes the attributes values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_

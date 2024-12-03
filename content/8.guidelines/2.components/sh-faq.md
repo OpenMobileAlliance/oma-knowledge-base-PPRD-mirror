@@ -32,8 +32,8 @@ qas:
 ::
 ```
 
-### Props
-These are the properties and attributes associated to the {{ $doc.constructorName }} constructor:
+## Props
+These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes
 These are the properties and attributes to define and style the <b>{{ $doc.constructorName }}</b> constructor:
@@ -50,45 +50,61 @@ These are the properties and attributes to define and style the <b>{{ $doc.const
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2"><code>ui</code></td>
+            <td rowspan="10"><code>ui</code></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>The <code>ui</code> property is a comprehensive configuration object that allows for the customization of various styling aspects of the FAQ component. Each attribute within the <code>ui</code> property targets a specific part of the component's appearance and layout, providing detailed control over its design.</td>
         </tr>
         <tr>
-            <td><code>header</code></td>
-            <td><code>config.header</code></td>
+            <td>
+              <code>header.wrapper</code></br>
+              <code>header.title</code></br>
+            </td>
+            <td>
+              <code>config.header.wrapper</code></br>
+              <code>config.header.title</code></br>
+            </td>
             <td>Defines the styling for the header, including the wrapper and title of the FAQ component.</td>
         </tr>
         <tr>
             <td><code>wrapper</code></td>
-            <td>n/a</td>
             <td><code>config.wrapper</code></td>
             <td>Defines the styling for the container of the FAQ items. This includes borders, padding, and layout.</td>
         </tr>
         <tr>
             <td><code>inner</code></td>
-            <td>n/a</td>
             <td><code>config.inner</code></td>
             <td>Specifies the styling for individual FAQ items, such as margin and padding.</td>
         </tr>
         <tr>
             <td><code>question</code></td>
-            <td>n/a</td>
             <td><code>config.question</code></td>
             <td>Defines the styling for the question part of the FAQ, including cursor and text color.</td>
         </tr>
         <tr>
+            <td><code>q</code></td>
+            <td><code>config.q</code></td>
+            <td>Defines the text styling for the question part of the FAQ.</td>
+        </tr>
+        <tr>
             <td><code>answer</code></td>
-            <td>n/a</td>
             <td><code>config.answer</code></td>
             <td>Defines the styling for the answer part of the FAQ, including text color.</td>
         </tr>
         <tr>
+            <td><code>a</code></td>
+            <td><code>config.a</code></td>
+            <td>Defines the text styling for the answer part of the FAQ.</td>
+        </tr>
+        <tr>
             <td><code>divider</code></td>
-            <td>n/a</td>
             <td><code>config.divider</code></td>
             <td>Defines the styling for the divider between FAQ items.</td>
+        </tr>
+        <tr>
+            <td><code>icon</code></td>
+            <td><code>config.icon</code></td>
+            <td>Defines the styling of the icon.</td>
         </tr>
         <tr>
             <td><code>qas</code></td>
@@ -149,23 +165,23 @@ qas:
 ::
 ```
 
-### Config
-These style properties can be modified via `ui` and are stored in the `sh-faq.ts` file:
+## Config
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> file:
 
 ```ts
 export default {
   header: {
     wrapper: "mt-10",
-    title: "text-2xl font-bold",
+    title: "title text-2xl font-bold",
   },
   wrapper: "border rounded-xl",
   inner: "mx-3 cursor-pointer",
   question: "grid grid-cols-2 flex-row font-bold",
-  q: "w-full hover:scale-105 duration-300 hover:text-primary dark:text-white mx-4",
+  q: "w-full hover:scale-105 duration-300 text-black dark:text-golden mx-4",
   answer: "ml-1",
-  a: "mx-6 dark:text-white font-light",
+  a: "mx-6 font-light text-black dark:text-golden",
   divider: "border-b",
-  icon: "place-self-end self-center text-2xl i-icons8-chevron-right-round",
+  icon: "place-self-end self-center text-2xl text-black dark:text-golden i-icons8-chevron-right-round",
   // Default Tailwind CSS values
   default: {
   }
@@ -173,7 +189,7 @@ export default {
 ```
 
 #### Class Descriptions
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**header.wrapper**_
 *  **Value**: `mt-10`
@@ -219,4 +235,4 @@ _**default**_
 *  **Value**: `{}`
 *  **Description**: Placeholder for default Tailwind CSS values, currently empty.
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.

@@ -343,7 +343,7 @@ ClickMe!!!
 *it will take you to desirable destination*
 ::
 
-### Combine Button with Other Constructors
+#### Combine Button with Other Constructors
 It is possible to insert other constructors inside of the <b>{{ $doc.constructorName }}</b> constructor. The other components are supported as well.
 
 ::ShButton
@@ -424,7 +424,7 @@ components. This notation supports `ShButton` :ShButton{urlButton ="/" labelButt
 styleButtons and all other parameters, colorButton for example.
 ```
 
-## Properties and Attributes
+## Props
 
 These are the properties and attributes to define and style <b>{{ $doc.constructorName }}</b> constructor
 
@@ -447,12 +447,12 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         </tr>
         <tr>
             <td><code>wrapper</code></td>
-            <td>`config.wrapper`</td>
+            <td><code>config.wrapper</code></td>
             <td>Defines the overall styling for the container that holds all the elements of the button. The <code>wrapper</code> attribute is used to ensure the button is aligned properly within its container, with appropriate margins, e.g., <code>align-middle m-1</code></td>
         </tr>
         <tr>
             <td><code>inner</code></td>
-            <td>`config.inner`</td>
+            <td><code>config.inner</code></td>
             <td>Specifies the styling for the inner content of the button, ensuring it is centered and does not inherit any prose-related styles, making it suitable for standalone button components, e.g., <code>text-center not-prose mx-auto</code></td>
         </tr>
         <tr>
@@ -470,7 +470,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>target</code></td>
             <td>n/a</td>
-            <td>`_blank`</td>
+            <td><code>_blank</code></td>
             <td>Specifies where to open the linked document. Common values include <code>_self</code> for the same frame, <code>_blank</code> for a new window or tab, <code>_parent</code> for the parent frame, and <code>_top</code> for the full body of the window.</td>
         </tr>
         <tr>
@@ -482,14 +482,14 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>rounded</code></td>
             <td>n/a</td>
-            <td>`config.rounded`</td>
+            <td><code>config.rounded</code></td>
             <td>Defines the border-radius of the button, making the edges rounded. The default class <code>rounded-md</code> provides medium-rounded corners.</td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
             <td>n/a</td>
-            <td>`false`</td>
-            <td>A boolean attribute (<code>true</code>, <code>false</code>) that indicates whether the button is disabled. When true, the button is not interactive and is usually styled to look inactive.</td>
+            <td><code>false</code></td>
+            <td>A boolean attribute (<code>true</code> or <code>false</code>) that indicates whether the button is disabled. When true, the button is not interactive and is usually styled to look inactive.</td>
         </tr>
         <tr>
             <td><code>styleButton</code></td>
@@ -500,7 +500,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>fullWidth</code></td>
             <td>n/a</td>
-            <td>`false`</td>
+            <td><code>false</code></td>
             <td>A boolean attribute (<code>true</code>, <code>false</code>) defines whether the button should be displayed as a fullWidth element, taking the full width of its container.</td>
         </tr>
         <tr>
@@ -512,7 +512,7 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
         <tr>
             <td><code>inline</code></td>
             <td>n/a</td>
-            <td>`config.inline`</td>
+            <td><code>config.inline</code></td>
             <td>Defines whether the button should be displayed inline with other elements. The class <code>inline-flex items-center</code> ensures the button aligns properly with the surrounding content. It is advised <b>NOT</b> to change these values.</td>
         </tr>
         <tr>
@@ -530,9 +530,8 @@ These are the properties and attributes to define and style <b>{{ $doc.construct
     </tbody>
 </table>
 
-
-
 ## Config
+These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code> and `status.ts` files:
 
 ```ts
 export default {
@@ -583,7 +582,7 @@ export default {
 
 #### Class Descriptions
 
-These represent the class values utilized in the {{ $doc.constructorName }} constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
+These represent the class values utilized in the <b>{{ $doc.constructorName }}</b> constructor. These values are customizable and can be strengthened or overridden through the `ui` properties' attributes.
 
 _**wrapper**_
 *  **Value**: <code>"align-middle m-1"</code>
@@ -658,4 +657,4 @@ _**default**_
   }</code>
 *  **Description**: Defines default settings. The value includes default text size (size: 'base'), default button style (styleButton: 'solid'), default button color (colorButton: 'primary'), and default link target (target: '_blank').
 
-These style properties ensure that the {{ $doc.constructorName }} component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
+These style properties ensure that the <b>{{ $doc.constructorName }}</b> component is visually appealing and flexible, allowing for a wide range of customization to meet specific design requirements.
