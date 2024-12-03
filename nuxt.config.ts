@@ -33,12 +33,9 @@ export default defineNuxtConfig({
     }
   },
 
-  // ui: {
-  //   icons: ["heroicons-solid", "fa6-brands", "devicon", "icons8"],
-  // },
-
   icon: {
-    serverBundle: 'remote',
+    provider: 'iconify',
+    serverBundle: false,
   },
 
   gtm: {
