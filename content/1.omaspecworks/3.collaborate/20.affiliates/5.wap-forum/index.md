@@ -9,27 +9,27 @@ layout: doc
 <div class="text-base">
 
   <div class="bg-[#00b7c1] mt-4 mb-2">WAP Forum Releases</div>
-  <div class=" justify">This page lists the latest WAP Forum conformance release, along with the specifications which are in an <span class=""><a class="link" href="#approved">Approved</a></span> state, but not yet included in a release. For more information about older releases,<span class=""><a class="link" href="#previous">see below</a></span>.</div>
+  <div class=" justify">This page lists the latest WAP Forum conformance release, along with the specifications which are in an <span class=""><a target="_blank" href="#approved">Approved</a></span> state, but not yet included in a release. For more information about older releases,<span class=""><a target="_blank" href="#previous">see below</a></span>.</div>
   <div class="">Archive Downloads</div>
   <div class="">
     <ul>
-      <li><a class="link" href="#wap20">WAP 2.0 conformance release</a></li>
-      <li class=""><a class="link" href="#recentchanges">Recent changes to the release</a></li>
-      <li class=""><a class="link" href="#dtds">DTDs associated with WAP 2.0</a></li>
-      <li class=""><a class="link" href="#xslt">XSLT transformation sheets associated with WAP 2.0</a></li>
-      <li class=""><a class="link" href="#wap20cert">WAP 2.0 Certification documents</a></li>
-      <li class=""><a class="link" href="#wina">Related WINA information</a></li>
-      <li class=""><a class="link" href="#general">General certification documents</a></li>
-      <li class=""><a class="link" href="#approved">Other Approved Specifications</a></li>
-      <li class=""><a class="link" href="#intnotes">Informal notes</a></li>
-      <li class=""><a class="link" href="#previous">Previous Specification Suite Releases</a></li>
+      <li><a target="_blank" href="#wap20">WAP 2.0 conformance release</a></li>
+      <li class=""><a target="_blank" href="#recentchanges">Recent changes to the release</a></li>
+      <li class=""><a target="_blank" href="#dtds">DTDs associated with WAP 2.0</a></li>
+      <li class=""><a target="_blank" href="#xslt">XSLT transformation sheets associated with WAP 2.0</a></li>
+      <li class=""><a target="_blank" href="#wap20cert">WAP 2.0 Certification documents</a></li>
+      <li class=""><a target="_blank" href="#wina">Related WINA information</a></li>
+      <li class=""><a target="_blank" href="#general">General certification documents</a></li>
+      <li class=""><a target="_blank" href="#approved">Other Approved Specifications</a></li>
+      <li class=""><a target="_blank" href="#intnotes">Informal notes</a></li>
+      <li class=""><a target="_blank" href="#previous">Previous Specification Suite Releases</a></li>
     </ul>
   </div>
   <div class=""><a target="_blank" href="https://omaspecworks.org/about/policies-and-terms-of-use/use-agreement/">Click here to view Use Agreement</a></div>
 
   <div class="bg-[#00b7c1] mt-4 mb-2" id="wap20">The WAP 2.0 conformance release</div>
   <div class="">
-    All specifications belonging to the WAP 2.0 release are listed below per functional area.An archive of all technical specifications is available here:<span class=""><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/technical_wap2_0-20021106.zip">Technical_WAP2_0_20021106</a></span>[8.8 MB]The WAP 2.0 release is best viewed using <span class=""><a class="link" href="http://www.adobe.com/" title="By Clicking here you accept the use agreement">Adobe Acrobat® Reader</a></span> version 4.05 or higher.
+    All specifications belonging to the WAP 2.0 release are listed below per functional area.An archive of all technical specifications is available here:<span class=""><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/technical_wap2_0-20021106.zip">Technical_WAP2_0_20021106</a></span>[8.8 MB]The WAP 2.0 release is best viewed using <span class=""><a target="_blank" href="http://www.adobe.com/" title="By Clicking here you accept the use agreement">Adobe Acrobat® Reader</a></span> version 4.05 or higher.
     Changes to this release will normally be in the form of Specification Information Notes (SINs). SIN represents an Approved change against a previously published approved WAP Specification. SINs are used to fix bugs or otherwise revise an existing Specification in the Approved status. A SIN applies to a specific version of a Specification.
   </div>
 
@@ -118,17 +118,14 @@ layout: doc
   <div class=" grid grid-cols-7 gap-2 ">
     <div class="col-span-2 row-span-4">
       <span class=""><b>Pictogram</b></span>
-      Please note that OMA have published a more recent version of Pictogram as part of the Browsing 2.2 Enabler which is available from the <a class="link" href="http://www.openmobilealliance.org/release_program/index.html" title="By Clicking here you accept the use agreement">OMA RELEASE PROGRAMME</a> pages</div>
+      Please note that OMA have published a more recent version of Pictogram as part of the Browsing 2.2 Enabler which is available from the <a target="_blank" href="http://www.openmobilealliance.org/release_program/index.html" title="By Clicking here you accept the use agreement">OMA RELEASE PROGRAMME</a> pages</div>
     <div class="col-span-3">WAP Pictogram Specification</div>
-    <div class="col-span-2">OMA-WAP- TS - Pictogram -V1_1- 20050608-D</div>
-    <div class="col-span-3">WAP Pictogram Specification</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-213-wapinterpic-20010406-a.pdf" title="By Clicking here you accept the use agreement">WAP-21s3-WAPInterPic-20010406-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-213-wapinterpic-20010406-a.pdf" title="By Clicking here you accept the use agreement">WAP-213-wapinterpic-20010406-a</a></div>
     <div class="col-span-3">WAP Pictogram SIN</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-213_101-wapinterpic-20011123-a.pdf" title="By Clicking here you accept the use agreement">WAP-213_101-WAPInterPic-20011123-a</a></div>
     <div class="col-span-3">WAP Pictogram SIN</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-213_102-wapinterpic-20011128-a.pdf" title="By Clicking here you accept the use agreement">WAP-213_102-WAPInterPic-20011128-a</a></div>
   </div>
-
   <div class=" grid grid-cols-7 gap-2 ">
     <div class="col-span-2 row-span-12">Push</div>
     <div class="col-span-3">Push Architectural Overview</div>
@@ -207,13 +204,13 @@ layout: doc
     <div class="col-span-3">WAP Caching Model Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-120-wapcachingmod-20010413-a.pdf" title="By Clicking here you accept the use agreement">WAP-120-WAPCachingMod-20000413-a</a></div>
     <div class="col-span-3">Wcript Language Specification</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-193-wcript-20001025-a.pdf" title="By Clicking here you accept the use agreement">WAP-193-Wcript-20001025-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-193-wmlscript-20001025-a.pdf" title="By Clicking here you accept the use agreement">WAP-193-Wcript-20001025-a</a></div>
     <div class="col-span-3">Wcript Language SIN</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-193_101-wcript-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-193_101-Wcript-20010928-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-193_101-wmlscript-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-193_101-Wcript-20010928-a</a></div>
     <div class="col-span-3">Wcript Standard Libraries Specification</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-194-wcriptlibraries-20000925-a.pdf" title="By Clicking here you accept the use agreement">WAP-194-WcriptLibraries-20000925-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-194-wmlscriptlibraries-20000925-a.pdf" title="By Clicking here you accept the use agreement">WAP-194-WcriptLibraries-20000925-a</a></div>
     <div class="col-span-3">Wcript Standard Libraries Specification</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-194_103-wcriptlibraries-20020318-a.pdf" title="By Clicking here you accept the use agreement">WAP-194_103-WcriptLibraries-20020318-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-194_103-wmlscriptlibraries-20020318-a.pdf" title="By Clicking here you accept the use agreement">WAP-194_103-WcriptLibraries-20020318-a</a></div>
     <div class="col-span-2 row-span-2"></div>
     <div class="col-span-3">HTTP State Management Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-223-httpsm-20001213-a.pdf" title="By Clicking here you accept the use agreement">WAP-223-HTTPSM-20001213-a</a></div>
@@ -234,7 +231,7 @@ layout: doc
     <div class="col-span-3">Wireless Datagram Protocol Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-259-wdp-20010614-a.pdf" title="By Clicking here you accept the use agreement">WAP-259-WDP-20010614-a</a></div>
     <div class="col-span-3">Wireless Control Message Protocol Specification</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-202-wcpm-20010624-a.pdf" title="By Clicking here you accept the use agreement">-202-WCMP-20010624-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-202-wcpm-20010624-a.pdf" title="By Clicking here you accept the use agreement">WAP-202-wcpm-20010624-a</a></div>
     <div class="col-span-3">WAP over GSM USSD Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-204-wapovergsmussd-20010730-a.pdf" title="By Clicking here you accept the use agreement">WAP-204-WAPOverGSMUSSD-20010730-a</a></div>
     <div class="col-span-3">WAP over GSM USSD Specification</div>
@@ -242,7 +239,7 @@ layout: doc
     <div class="col-span-3">Wireless Transaction Protocol Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-224-wtp-20010710-a.pdf" title="By Clicking here you accept the use agreement">WAP-224-WTP-20010710-a</a></div>
     <div class="col-span-3">Wireless Transaction Protocol Specification</div>
-    <div class="col-span-2"><a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-224_002-WTP-SIN-20020827-a.PDF" title="By Clicking here you accept the use agreement">WAP-224_002-WTP-20020827-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-224_002-WTP-SIN-20020827-a.PDF" title="By Clicking here you accept the use agreement">WAP-224_002-WTP-20020827-a</a></div>
     <div class="col-span-3">Wireless Session Protocol Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-230-wsp-20010705-a.pdf" title="By Clicking here you accept the use agreement">WAP-230-WSP-20010705-a</a></div>
     <div class="col-span-3">End-to-end Transport Layer Security Specification</div>
@@ -255,15 +252,15 @@ layout: doc
   <div class=" grid grid-cols-7 gap-2 ">
     <div class="col-span-2 row-span-9">Wireless Security</div>
     <div class="col-span-3">Wcript Crypto API Library Specification</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-161-wscriptcrypto-20010620-a.pdf" title="By Clicking here you accept the use agreement">WAP-161-WcriptCrypto-20010620-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-161-wmlsscriptcrypto-20010620-a.pdf" title="By Clicking here you accept the use agreement">WAP-161-WcriptCrypto-20010620-a</a></div>
     <div class="col-span-3">Wcript Crypto API SIN 101</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-161_101-wcriptcrypto-20010730-a.pdf" title="By Clicking here you accept the use agreement">WAP-161_101-WcriptCrypto-20010730-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-161_101-wmlscriptcrypto-20010730-a.pdf" title="By Clicking here you accept the use agreement">WAP-161_101-WcriptCrypto-20010730-a</a></div>
     <div class="col-span-3">Wireless Identity Module Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-260-wim-20010712-a.pdf" title="By Clicking here you accept the use agreement">WAP-260-WIM-20010712-a</a></div>
     <div class="col-span-3">Wireless Identity Module Specification</div>
-    <div class="col-span-2"><a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-260_100-WIM-SIN-20010725-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_100-WIM-20010725-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-260_100-WIM-SIN-20010725-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_100-WIM-20010725-a</a></div>
     <div class="col-span-3">Wireless Identity Module Specification</div>
-    <div class="col-span-2"><a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-260_101-WIM-SIN-20020107-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_101-WIM-20020107-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-260_101-WIM-SIN-20020107-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_101-WIM-20020107-a</a></div>
     <div class="col-span-3">Wireless Transport Layer Security Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-261-wtls-20010406-a.pdf" title="By Clicking here you accept the use agreement">WAP-261-WTLS-20010406-a</a></div>
     <div class="col-span-3">Wireless Transport Layer Security SIN 100</div>
@@ -278,13 +275,13 @@ layout: doc
     <div class="col-span-3">WAP Certificate profile SIN 104</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-211_104-wapcert-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-211_104-WAPCert-20010928-a</a></div>
     <div class="col-span-3">WAP Certificate profile SIN 105</div>
-    <div class="col-span-2"><a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-211_105-WAPCert-SIN-20020520-a.pdf" title="By Clicking here you accept the use agreement">WAP-211_105-WAPCert-20020520-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-211_105-WAPCert-SIN-20020520-a.pdf" title="By Clicking here you accept the use agreement">WAP-211_105-WAPCert-20020520-a</a></div>
     <div class="col-span-3">WAP Public Key Infrastructure Specification</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-217-wpki-20010424-a.pdf" title="By Clicking here you accept the use agreement">WAP-217-WPKI-20010424-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-217-wpki-20010424-a.pdf" title="By Clicking here you accept the use agreement">WAP-217-WPKI-20010424-a</a></div>
     <div class="col-span-3">WAP Public Key Infrastructure SIN 103</div>
-    <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-217_103-wpki-20011102-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_103-WPKI-20011102-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-217_103-wpki-20011102-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_103-WPKI-20011102-a</a></div>
     <div class="col-span-3">WAP Public Key Infrastructure SIN 105</div>
-    <div class="col-span-2"><a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-217_105-WPKI-SIN-20020816-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_105-WPKI-20020816-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-217_105-WPKI-SIN-20020816-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_105-WPKI-20020816-a</a></div>
     <div class="col-span-3">WAP TLS Profile and Tunneling Specification</div>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-219-tls-20010411-a.pdf" title="By Clicking here you accept the use agreement">WAP-219-TLS-20010411-a</a></div>
     <div class="col-span-3">WAP TLS Profile and Tunneling SIN 100</div>
@@ -316,16 +313,16 @@ layout: doc
   <div class=" grid grid-cols-7 gap-2 ">
     <div class="">2002-11-06</div>
     <div class="col-span-4">One SIN added to the release</div>
-    <div class="col-span-2"><a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-224_002-WTP-SIN-20020827-a.PDF" title="By Clicking here you accept the use agreement">WAP-224_002-WTP-20020827-a</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-224_002-WTP-SIN-20020827-a.PDF" title="By Clicking here you accept the use agreement">WAP-224_002-WTP-20020827-a</a></div>
   </div>
   <div class=" grid grid-cols-7 gap-2 ">
     <div class="">2002-10-29</div>
     <div class="col-span-4">New SINs have been added to the release</div>
-    <div class="col-span-2">
-      <a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-260_100-WIM-SIN-20010725-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_100-WIM-20010725-a</a>
-      <a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-260_101-WIM-SIN-20020107-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_101-WIM-20020107-a</a>
-      <a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-217_105-WPKI-SIN-20020816-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_105-WPKI-20020816-a</a>
-      <a class="link" href="http://www1.wapforum.org/tech/terms.asp?doc=OMA-WAP-211_105-WAPCert-SIN-20020520-a.pdf" title="By Clicking here you accept the use agreement">WAP-211_105-WAPCert-20020520-a</a>
+    <div class="">
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-260_100-WIM-SIN-20010725-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_100-WIM-20010725-a</a><br>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-260_101-WIM-SIN-20020107-a.pdf" title="By Clicking here you accept the use agreement">WAP-260_101-WIM-20020107-a</a><br>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-217_105-WPKI-SIN-20020816-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_105-WPKI-20020816-a</a><br>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-211_105-WAPCert-SIN-20020520-a.pdf" title="By Clicking here you accept the use agreement">WAP-211_105-WAPCert-20020520-a</a>
     </div>
   </div>
   <div class=" grid grid-cols-7 gap-2 ">
@@ -345,7 +342,7 @@ layout: doc
     <div class=""></div>
     <div class="col-span-4">The following SINs have been added to the release</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-191_105-wml-20020212-a.pdf" title="By Clicking here you accept the use agreement">WAP-191_105-WML-20020212-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-191_105-wml-20020212-a.pdf" title="By Clicking here you accept the use agreement">WAP-191_105-WML-20020212-a</a><br>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-235_101-pushota-20020612-a.pdf" title="By Clicking here you accept the use agreement">WAP-235_101-PushOTA-20020612-a</a>
     </div>
   </div>
@@ -363,8 +360,8 @@ layout: doc
     <div class="">2002-06-04</div>
     <div class="col-span-4">New SINs added to the release</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-183_005_provcont-20020411-a.pdf" title="By Clicking here you accept the use agreement">WAP-183_005-ProvCont-20020411-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-194_103-wcriptlibraries-20020318-a.pdf" title="By Clicking here you accept the use agreement">WAP-194_103-WcriptLibraries-20020318-a</a>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-183_005_provcont-20020411-a.pdf" title="By Clicking here you accept the use agreement">WAP-183_005-ProvCont-20020411-a</a><br>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-194_103-wmlscriptlibraries-20020318-a.pdf" title="By Clicking here you accept the use agreement">WAP-194_103-WcriptLibraries-20020318-a</a>
     </div>
     <div class=""></div>
     <div class="col-span-4">New baseline document created, incorporating SINs written against it</div>
@@ -374,7 +371,7 @@ layout: doc
     <div class="">2002-03-22</div>
     <div class="col-span-4">Two SINs added to the release</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-261_101-wtls-20011027-a.pdf" title="By Clicking here you accept the use agreement">WAP-261_101-WTLS-20011027-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-261_101-wtls-20011027-a.pdf" title="By Clicking here you accept the use agreement">WAP-261_101-WTLS-20011027-a</a><br>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-261_102-wtls-20011027-a.pdf" title="By Clicking here you accept the use agreement">WAP-261_102-WTLS-20011027-a</a>
     </div>
   </div>
@@ -387,7 +384,7 @@ layout: doc
     <div class="">2002-01-22</div>
     <div class="col-span-4">Two additional SINs added to the release</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-213_101-wapinterpic-20011123-a.pdf" title="By Clicking here you accept the use agreement">WAP-213_101-WAPInterPic-20011123-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-213_101-wapinterpic-20011123-a.pdf" title="By Clicking here you accept the use agreement">WAP-213_101-WAPInterPic-20011123-a</a><br>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-213_102-wapinterpic-20011128-a.pdf" title="By Clicking here you accept the use agreement">WAP-213_102-WAPInterPic-20011128-a</a>
     </div>
   </div>
@@ -402,23 +399,23 @@ layout: doc
     <div class="row-span-4">2002-01-18</div>
     <div class="col-span-4">The WAP 2.0 release has been completed (all specification have been approved). New versions available of the following specifications</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/WAP-236-WAESpec-20011109-a.pdf" title="By Clicking here you accept the use agreement">WAP-236-WAESpec-20011109-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-237-waemt-20010515-a.pdf" title="By Clicking here you accept the use agreement">WAP-237-WAEMT-20010515-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-238-wml-20010911-a.pdf" title="By Clicking here you accept the use agreement">WAP-238-WML-20010911-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-239-wcss-20011026-a.pdf" title="By Clicking here you accept the use agreement">WAP-239-WCSS-20011026-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-244-wmltr-20011106-a.pdf" title="By Clicking here you accept the use agreement">WAP-244-WMLTR-20011106-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-277-xhtp-20011029-a.pdf" title="By Clicking here you accept the use agreement">WAP-277-XHTP-20011029-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/WAP-236-WAESpec-20011109-a.pdf" title="By Clicking here you accept the use agreement">WAP-236-WAESpec-20011109-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-237-waemt-20010515-a.pdf" title="By Clicking here you accept the use agreement">WAP-237-WAEMT-20010515-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-238-wml-20010911-a.pdf" title="By Clicking here you accept the use agreement">WAP-238-WML-20010911-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-239-wcss-20011026-a.pdf" title="By Clicking here you accept the use agreement">WAP-239-WCSS-20011026-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-244-wmltr-20011106-a.pdf" title="By Clicking here you accept the use agreement">WAP-244-WMLTR-20011106-a</a><br>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-277-xhtmlmp-20011029-a.pdf" title="By Clicking here you accept the use agreement">WAP-277-XHTP-20011029-a</a>
     </div>
     <div class="col-span-4">The WML 1.3 specification has also been added along with the corresponding SINs</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-191-wml-20000219-a.pdf" title="By Clicking here you accept the use agreement">WAP-191-WML-20000219-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-191_102-wml-20001213-a.pdf" title="By Clicking here you accept the use agreement">WAP-191_102-WML-20001213-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-191-wml-20000219-a.pdf" title="By Clicking here you accept the use agreement">WAP-191-WML-20000219-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-191_102-wml-20001213-a.pdf" title="By Clicking here you accept the use agreement">WAP-191_102-WML-20001213-a</a><br>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-191_104-wml-20010718-a.pdf" title="By Clicking here you accept the use agreement">WAP-191_104-WML-20010718-a</a>
     </div>
     <div class="col-span-4">Also, the following specifications have been updated to incorporate all of the SINs written against them</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-209-mmsencapsulation-20020105-a.pdf" title="By Clicking here you accept the use agreement">WAP-209-MMSEncapsulation-20020105-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-227-pstor-20011220-a.pdf" title="By Clicking here you accept the use agreement">WAP-227-PSTOR-20011220-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-209-mmsencapsulation-20020105-a.pdf" title="By Clicking here you accept the use agreement">WAP-209-MMSEncapsulation-20020105-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-227-pstor-20011220-a.pdf" title="By Clicking here you accept the use agreement">WAP-227-PSTOR-20011220-a</a><br>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-231-efi-20011217-a.pdf" title="By Clicking here you accept the use agreement">WAP-231-EFI-20011217-a</a>
     </div>
   </div>
@@ -427,16 +424,16 @@ layout: doc
     <div class="row-span-2">2001-12-07</div>
     <div class="col-span-4">The following SINs have been added to the release</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-183_004-provcont-20011025-a.pdf" title="By Clicking here you accept the use agreement">WAP-183_004-ProvCont-20011025-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-187_101-transporte2esec-20011009-a.pdf" title="By Clicking here you accept the use agreement">WAP-187_101-TransportE2ESec-20011009-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-192_105-wbxml-20011015-a.pdf" title="By Clicking here you accept the use agreement">WAP-192_105-WBXML-20011015-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-206_101-mmsctr-20011009-a.pdf" title="By Clicking here you accept the use agreement">WAP-206_101-MMSCTR-20011009-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/WAP-209_102-MMSEncapsulation-20011011-a.pdf" title="By Clicking here you accept the use agreement">WAP-209_102-MMSEncapsulation-20011011-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-211_104-wapcert-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-211_104-WAPCert-20010928-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-217_103-wpki-20011102-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_103-WPKI-20011102-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-219_100-tls-20011029-a.pdf" title="By Clicking here you accept the use agreement"> WAP-219_100-TLS-20011029-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-229_001-http-20011031-a.pdf" title="By Clicking here you accept the use agreement"> WAP-229_001-HTTP-20011031-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/WAP-231_100-EFI-20011018-a.pdf" title="By Clicking here you accept the use agreement">WAP-231_100-EFI-20011018-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-183_004-provcont-20011025-a.pdf" title="By Clicking here you accept the use agreement">WAP-183_004-ProvCont-20011025-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-187_101-transporte2esec-20011009-a.pdf" title="By Clicking here you accept the use agreement">WAP-187_101-TransportE2ESec-20011009-a</a><br>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-192_105-wbxml-20011015-a.pdf" title="By Clicking here you accept the use agreement">WAP-192_105-WBXML-20011015-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-206_101-mmsctr-20011009-a.pdf" title="By Clicking here you accept the use agreement">WAP-206_101-MMSCTR-20011009-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/WAP-209_102-MMSEncapsulation-20011011-a.pdf" title="By Clicking here you accept the use agreement">WAP-209_102-MMSEncapsulation-20011011-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-211_104-wapcert-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-211_104-WAPCert-20010928-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-217_103-wpki-20011102-a.pdf" title="By Clicking here you accept the use agreement">WAP-217_103-WPKI-20011102-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-219_100-tls-20011029-a.pdf" title="By Clicking here you accept the use agreement"> WAP-219_100-TLS-20011029-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-229_001-http-20011031-a.pdf" title="By Clicking here you accept the use agreement"> WAP-229_001-HTTP-20011031-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/WAP-231_100-EFI-20011018-a.pdf" title="By Clicking here you accept the use agreement">WAP-231_100-EFI-20011018-a</a><b>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-261_100-wtls-20010926-a.pdf" title="By Clicking here you accept the use agreement">WAP-261_100-WTLS-20010926-a</a>
     </div>
     <div class="col-span-4">The UAProf specification has been approved as a part of WAP 2.0, including SINs 100, 101 and 102,</div>
@@ -446,14 +443,14 @@ layout: doc
     <div class="">2001-11-06</div>
     <div class="col-span-4">The following SINs have been added to the release</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-167_103-serviceind-20010926-a.pdf" title="By Clicking here you accept the use agreement">WAP-167_103-ServiceInd-20010926-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-168_103-serviceload-20010816-a.pdf" title="By Clicking here you accept the use agreement">WAP-168_103-ServiceLoad-20010816-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-175_102-cacheop-20010816-a.pdf" title="By Clicking here you accept the use agreement">WAP-175_102-CacheOp-20010816-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-184_001-provboot-20011010-a.pdf" title="By Clicking here you accept the use agreement">WAP-184_001-ProvBoot-20011010-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-193_101-wcript-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-193_101-Wcript-20010928-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-223_101-httpsm-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-223_101-HTTPSM-20010928-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-235_100-pushota-20011008-a.pdf" title="By Clicking here you accept the use agreement">WAP-235_100-PushOTA-20011008-a</a>
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-247_100-pap-20011010-a.pdf" title="By Clicking here you accept the use agreement">WAP-247_100-PAP-20011010-a</a>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-167_103-serviceind-20010926-a.pdf" title="By Clicking here you accept the use agreement">WAP-167_103-ServiceInd-20010926-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-168_103-serviceload-20010816-a.pdf" title="By Clicking here you accept the use agreement">WAP-168_103-ServiceLoad-20010816-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-175_102-cacheop-20010816-a.pdf" title="By Clicking here you accept the use agreement">WAP-175_102-CacheOp-20010816-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-184_001-provboot-20011010-a.pdf" title="By Clicking here you accept the use agreement">WAP-184_001-ProvBoot-20011010-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-193_101-wcript-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-193_101-Wcript-20010928-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-223_101-httpsm-20010928-a.pdf" title="By Clicking here you accept the use agreement">WAP-223_101-HTTPSM-20010928-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-235_100-pushota-20011008-a.pdf" title="By Clicking here you accept the use agreement">WAP-235_100-PushOTA-20011008-a</a><b>
+      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-247_100-pap-20011010-a.pdf" title="By Clicking here you accept the use agreement">WAP-247_100-PAP-20011010-a</a><b>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-249_102-ppgservice-20011009-a.pdf" title="By Clicking here you accept the use agreement">WAP-249_102-PPGService-20011009-a</a>
     </div>
   </div>
@@ -461,7 +458,7 @@ layout: doc
     <div class="">2001-10-10</div>
     <div class="col-span-4">The following SINs have been added to the release</div>
     <div class="col-span-2">
-      <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-161_101-wcriptcrypto-20010730-a.pdf" title="By Clicking here you accept the use agreement">WAP-161_101-WcriptCrypto-20010730-a</a>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/wap/wap-161_101-wmlscriptcrypto-20010730-a.pdf" title="By Clicking here you accept the use agreement">WAP-161_101-WcriptCrypto-20010730-a</a><b>
       <a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-183_003-provcont-20010912-a.pdf" title="By Clicking here you accept the use agreement">WAP-183_003-ProvCont-20010912-a</a>
     </div>
   </div>
@@ -478,11 +475,11 @@ layout: doc
   <div class=" grid grid-cols-7 gap-2 ">
     <div class="">2001-09-13</div>
     <div class="col-span-4">The DTD for client provisioning has been corrected,see</div>
-    <div class="col-span-2"><a class="link" href="http://www.wapforum.org/DTD/prov.dtd" title="By Clicking here you accept the use agreement">Provisioning DTD</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/prov.dtd" title="By Clicking here you accept the use agreement">Provisioning DTD</a></div>
   </div>
   <div class=" grid grid-cols-7 gap-2 ">
     <div class="col-span-1 row-span-2">2001-08-17</div>
-    <div class="col-span-4">The persistent storage specification has been approved as a WAP 2.0 specification and the approved version of the document has been made available at the site</div>
+    <div class="col-span-4">The persistent storage specification has been approved as a WAP 2.0 specification and the approved version of the document has been made available at the site</div><b>
     <div class="col-span-2"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/Wap-227-PSTOR-20010530-a.pdf" title="By Clicking here you accept the use agreement">WAP-227-PSTOR-20010530-a</a></div>
   </div>
 
@@ -495,54 +492,54 @@ layout: doc
   <div class="bg-[#00b7c1]  mt-4 mb-2">DTDs associated with WAP 2.0</div>
   <div class=" grid grid-cols-3 gap-2  shade-2">
     <div class=" prs tac">Channel 1.2 DTD</div>
-    <div class="col-span-2"><a class="link" href="http://www.wapforum.org/DTD/channel12.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/channel12.dtd</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/channel12.dtd" title="By Clicking here you accept the use agreement">DTD/channel12.dtd</a></div>
   </div>
   <div class=" grid grid-cols-3 gap-2  shade-2">
     <div class=" prs tac">XHTP 1.0 DTDs</div>
     <div class="col-span-2">
-      available as <a class="link" href="http://www.wapforum.org/DTD/xhtml-mobile10.zip"> a zip file </a> or :
-      <a class="link" href="http://www.wapforum.org/DTD/xhtml-mobile10.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/xhtml-mobile10.dtd</a>
-      <a class="link" href="http://www.wapforum.org/DTD/xhtml-mobile10-flat.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/xhtml-mobile10-flat.dtd</a>
-      <a class="link" href="http://www.wapforum.org/DTD/xhtml-mobile10-model-1.mod" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/xhtml-mobile10-model-1.mod</a>
+      available as <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/xhtml-mobile10.zip"> a zip file </a> or :
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/xhtml-mobile10.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/xhtml-mobile10.dtd</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/xhtml-mobile10-flat.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/xhtml-mobile10-flat.dtd</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/xhtml-mobile10-model-1.mod" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/xhtml-mobile10-model-1.mod</a>
     </div>
   </div>
   <div class=" grid grid-cols-3 gap-2  shade-2">
     <div class=" prs tac">WML 2.0 DTDs</div>
     <div class="col-span-2">
-      available as a <a class="link" href="http://www.wapforum.org/DTD/wml20.zip">zip file</a> or:
-      <a class="link" href="http://www.wapforum.org/DTD/wml20.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml20.dtd</a>
-      <a class="link" href="http://www.wapforum.org/DTD/wml20-flat.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml20-flat.dtd</a>
-      <a class="link" href="http://www.wapforum.org/DTD/wml-deprecated-1.mod" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml-deprecated-1.mod</a>
-      <a class="link" href="http://www.wapforum.org/DTD/wml-framework-1.mod" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml-framework-1.mod</a>
-      <a class="link" href="http://www.wapforum.org/DTD/wml-special-1.mod" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml-special-1.mod</a>
-      <a class="link" href="http://www.wapforum.org/DTD/wml-qname-1.mod" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml-qname-1.mod</a>
-      <a class="link" href="http://www.wapforum.org/DTD/wml20-model-1.mod" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml20-model-1.mod</a>
+      available as a <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml20.zip">zip file</a> or:
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml20.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml20.dtd</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml20-flat.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml20-flat.dtd</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml-deprecated-1.mod" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml-deprecated-1.mod</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml-framework-1.mod" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml-framework-1.mod</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml-special-1.mod" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml-special-1.mod</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml-qname-1.mod" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml-qname-1.mod</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml20-model-1.mod" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml20-model-1.mod</a>
     </div>
   </div>
   <div class=" grid grid-cols-3 gap-2  shade-2">
     <div class=" prs tac">WAP Push DTDs</div>
     <div class="col-span-2">
-      <a class="link" href="http://www.wapforum.org/DTD/pap_2.0.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/pap_2.0.dtd</a>
-      <a class="link" href="http://www.wapforum.org/DTD/si.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/si.dtd</a>
-      <a class="link" href="http://www.wapforum.org/DTD/sl.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/sl.dtd</a>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/pap_2.0.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/pap_2.0.dtd</a><b>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/si.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/si.dtd</a><br>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/sl.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/sl.dtd</a>
     </div>
   </div>
   <div class=" grid grid-cols-3 gap-2  shade-2">
     <div class="">WAP Client Provisioning DTD</div>
-    <div class="col-span-2"><a class="link" href="http://www.wapforum.org/DTD/prov.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/prov.dtd</a></div>
+    <div class="col-span-2"><a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/prov.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/prov.dtd</a></div>
   </div>
   <div class=" grid grid-cols-3 gap-2">
     <div class="">WTA DTD</div>
     <div class="col-span-2">
-      <a class="link" href="http://www.wapforum.org/DTD/wta-wml12.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wta-wml12.dtd</a>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wta-wml12.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wta-wml12.dtd</a>
       (it is recommended to use the WML2 DTD for WTA in this release)
     </div>
   </div>
 
 
   <div class="bg-[#00b7c1] mt-4 mb-2" id="xslt">XSLT transformation sheets associated with WAP 2.0</div>
-  <div class="">As a part of WAP 2.0, an XSLT transformation sheet has been defined to convert WML1.3 to WML2.0. Transformation is needed to support backwards compatibility in the case that an implementation of WAP 2.0 relies on a common WML2.0 use agent rather than a dual-browser with a WML1.3 use agent and an XHTML Basic Profile use agent. The following XSLT transformation sheet is associated with WAP 2.0 <span class=""><a class="link" href="http://www.wapforum.org/xslt/wap-244-wmltr.xsl" title="By Clicking here you accept the use agreement">http://www.wapforum.org/xslt/wap-244-wmltr.xsl</a></span></div>
-  <div class=""><a class="link" href="#top">Back to top</a></div>
+  <div class="">As a part of WAP 2.0, an XSLT transformation sheet has been defined to convert WML1.3 to WML2.0. Transformation is needed to support backwards compatibility in the case that an implementation of WAP 2.0 relies on a common WML2.0 use agent rather than a dual-browser with a WML1.3 use agent and an XHTML Basic Profile use agent. The following XSLT transformation sheet is associated with WAP 2.0 <span class=""><a target="_blank" href="http://www.wapforum.org/xslt/wap-244-wmltr.xsl" title="By Clicking here you accept the use agreement">http://www.wapforum.org/xslt/wap-244-wmltr.xsl</a></span></div>
+  <div class=""><a target="_blank" href="#top">Back to top</a></div>
 
 
   <div class="bg-[#00b7c1] mt-4 mb-2" id="wap20cert">WAP 2.0 Certification documents</div>
@@ -550,7 +547,7 @@ layout: doc
 
 
   <div class="bg-[#00b7c1] mt-4 mb-2" id="wina">Related WINA information</div>
-  <div class="">See <span class=""><a class="link" href="http://openmobilealliance.github.io/registries.html" title="By Clicking here you accept the use agreement">OMNA page</a></span>.</div>
+  <div class="">See <span class=""><a target="_blank" href="http://openmobilealliance.github.io/registries.html" title="By Clicking here you accept the use agreement">OMNA page</a></span>.</div>
 
 
   <div class="bg-[#00b7c1] mt-4 mb-2" id="general">General certification documents</div>
@@ -612,19 +609,19 @@ layout: doc
     <div class=" "><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/Technical_June2000-20021106%5B1%5D.zip">WAP 1.2.1 (June 2000)</a></div>
     <div class=" ">7.45 MB</div>
     <div class=" ">
-      <a class="link" href="http://www.wapforum.org/DTD/wml13.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml13.dtd</a>
-      <a class="link" href="http://www.wapforum.org/DTD/pap_1.0.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/pap_1.0.dtd</a>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml13.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml13.dtd</a>
+      <a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/pap_1.0.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/pap_1.0.dtd</a>
     </div>
   </div>
   <div class="grid grid-cols-3 gap-2">
     <div class=""><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/technical_1_2_20011112%5B1%5D.zip">WAP 1.2</a></div>
     <div class="">5.73 MB</div>
-    <div class=""><a class="link" href="http://www.wapforum.org/DTD/pap_1.0.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/pap_1.0.dtd</a></div>
+    <div class=""><a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/pap_1.0.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/pap_1.0.dtd</a></div>
   </div>
   <div class="grid grid-cols-3 gap-2">
     <div class=" prvs-2pbs prs  tac"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/technical_1_1_20010720%5B1%5D.zip">WAP 1.1</a></div>
     <div class="prvs-2 mrvs shade tac">2.79 MB</div>
-    <div class=" plspbs "><a class="link" href="http://www.wapforum.org/DTD/wml_1_1.dtd" title="By Clicking here you accept the use agreement">http://www.wapforum.org/DTD/wml_1_1.dtd</a></div>
+    <div class=" plspbs "><a target="_blank" href="https://www.openmobilealliance.org/tech/dtd/wml_1.1.dtd" title="By Clicking here you accept the use agreement">https://www.openmobilealliance.org/tech/dtd/wml_1.1.dtd</a></div>
   </div>
   <div class="grid grid-cols-3 gap-2">
     <div class=" prvs-2pbs prs  tac"><a target="_blank" href="http://www.openmobilealliance.org/tech/affiliates/wap/technical%5B1%5D.zip">WAP 1.0</a></div>
@@ -634,6 +631,6 @@ layout: doc
 
 
   <div class="bg-[#00b7c1] mt-4 mb-2" id="wina">Related WAP Forum Releases</div>
-  <div class="">See <span class=""><a class="link" href="http://www.wapforum.org/what/technical.htm" title="By Clicking here you accept the use agreement">WAP Forum Releases</a></span>.</div>
+  <div class="">See <span class=""><a target="_blank" href="http://www.wapforum.org/what/technical.htm" title="By Clicking here you accept the use agreement">WAP Forum Releases</a></span>.</div>
 
 </div>
