@@ -177,6 +177,11 @@ h7 {
   color: theme('colors.golden');
 }
 
+.dark b {
+  color: theme('colors.golden');
+  filter: saturate(2.8) brightness(0.75);
+}
+
 .dark strong {
   color: theme('colors.golden');
   filter: saturate(3) brightness(0.75);

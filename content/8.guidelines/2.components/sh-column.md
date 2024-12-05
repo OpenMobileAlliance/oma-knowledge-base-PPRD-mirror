@@ -173,7 +173,7 @@ The constructor allows you to organize content inside one column and then nest i
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7"><code>ui</code></td>
+      <td rowspan="8"><code>ui</code></td>
       <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShColumn</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the column component. Each attribute within the <code>ui</code> property targets a specific part of the column display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
@@ -184,13 +184,18 @@ The constructor allows you to organize content inside one column and then nest i
       <td>Defines the overall styling for the container that holds all the elements of the column. The attribute <code>border-8</code> is used to highlight the contur of the wrapper.</td>
     </tr>
     <tr>
-      <td><code>title</code></td>
-      <td><code>config.title</code></td>
+      <td><code>header.wrapper</code></td>
+      <td><code>config.header.wrapper</code></td>
+      <td>This attribute is part of the <code>header</code> property. Defines the overall styling for the container that holds <b>title</b>(<code>header.title</code>) and <b>subtitle</b>(<code>header.subtitle</code>)</td>
+    </tr>
+    <tr>
+      <td><code>header.title</code></td>
+      <td><code>config.header.title</code></td>
       <td>This attribute is part of the <code>header</code> property. Styles applied to the text displaying the title of the column, such as font, size, color, etc.</td>
     </tr>
     <tr>
-      <td><code>subtitle</code></td>
-      <td><code>config.subtitle</code></td>
+      <td><code>header.subtitle</code></td>
+      <td><code>config.header.subtitle</code></td>
       <td>This attribute is part of the <code>header</code> property. Styles applied to the text displaying the subtitle of the column, such as font, size, color, etc.</td>
     </tr>
     <tr>

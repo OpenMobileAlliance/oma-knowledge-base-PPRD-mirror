@@ -127,7 +127,8 @@ The constructor creates a display format for a list of cards, including a header
       <td><code>cols</code></td>
       <td>n/a</td>
       <td><code>gridClass</code></td>
-      <td>The number of columns in the grid layout for the cards. The <code>gridClass</code> inteligentlly calculates number of cols that can be visible depending of the width of the screen. For any screen larger that <code>1300px</code> this component will allow user to enter his desired number of columns. Any width lower than that, it will automatically set columns to either 3, 2 or 1.</td>
+      <td>The number of columns in the grid layout for the cards. The <code>gridClass</code> inteligentlly calculates number of cols that can be visible depending of the width of the screen. For any screen larger than <code>1300px</code> this component will allow user to enter his desired number of columns. Any width lower than that, it will automatically set columns to either 3, 2 or 1.</br>
+      User can always set a smaller number if screen is beyond <code>1300px</code>.</td>
     </tr>
     <tr>
       <td><code>cardID</code></td>
