@@ -15,8 +15,8 @@ layout: doc
 
 Full details of OMA’s IPR policy may be found in:
 
-* The Open Mobile Alliance<a href="/documentation/Membership/OMA-Reference-2019-0004-General_Application.pdf" target="_blank"> Application Form</a>
-* The <a href="/documentation/Membership/Member_IPRGuidelines.pdf" target="_blank">OMA IPR guidelines</a>
+* The Open Mobile Alliance<a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0001-General_Application.pdf" target="_blank"> Application Form</a>
+* The <a href="https://www.openmobilealliance.org/documents/Website/Membership/Member_IPRGuidelines.pdf" target="_blank">OMA IPR guidelines</a>
 
 OMA maintains the following lists of IPR declarations:
 
