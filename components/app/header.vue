@@ -30,6 +30,8 @@
                 </UDropdown>
 
               </span>
+              <AppLoginTest />
+              <AppAvatarTest />
               <!-- <span class="hidden sm:flex mr-2 text-base">
                 <ULink to="/contact-us" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
               </span> -->

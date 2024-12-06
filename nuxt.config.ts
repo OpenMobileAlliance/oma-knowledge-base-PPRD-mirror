@@ -1,19 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/content",
-    "@nuxt/ui",
-    "@nuxtjs/google-fonts",
-    "nuxt-testimonial",
-    '@nuxtjs/color-mode',
-    '@zadigetvoltaire/nuxt-gtm',
-    "@nuxtjs/sitemap"
-  ],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap", '@nuxtjs/supabase'],
 
   site: {
     url: 'https://www.openmobilealliance.org/', 
     name: 'Website of OMA SpecWork as an innovative kind of Standards Development Organization' 
+  },
+
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
+    redirect: false,
   },
 
   colorMode: {
