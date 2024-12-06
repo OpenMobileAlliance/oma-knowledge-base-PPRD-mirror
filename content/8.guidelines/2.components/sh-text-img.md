@@ -1,6 +1,6 @@
 ---
 title: Text&Image #title of the window browser
-description: With this constructor you can have text and image in the same row like shown in the following example. You can also declare the span of text thus changing the size of image, and changing the position of text.
+description: Have text and image in the same row. You can also declare the span of text thus changing the size of image, and changing the position of text.
 constructorName: ShTextImg
 layout: doc
 ---

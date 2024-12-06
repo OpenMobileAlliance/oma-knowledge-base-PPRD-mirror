@@ -1,6 +1,6 @@
 ---
 title: TwoColumns
-discription: 
+description: Create a two columns in an instant and populate them with your own content, whatever it may be
 constructorName: ShTwoColumns
 layout: doc
 ---
@@ -255,7 +255,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     2XS
     :::
@@ -263,7 +263,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     9/10
     :::
@@ -276,7 +276,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     XS
     :::
@@ -284,7 +284,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     4/5
     :::
@@ -297,7 +297,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     S
     :::
@@ -305,7 +305,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     3/4
     :::
@@ -318,7 +318,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     M
     :::
@@ -326,7 +326,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     2/3
     :::
@@ -339,7 +339,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     L
     :::
@@ -347,7 +347,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     1/2
     :::
@@ -360,7 +360,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     XL
     :::
@@ -368,7 +368,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     1/3
     :::
@@ -381,7 +381,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     2XL
     :::
@@ -389,7 +389,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     1/4
     :::
@@ -402,7 +402,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     3XL
     :::
@@ -410,7 +410,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     1/5
     :::
@@ -423,7 +423,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-200 text-center
+      wrapper: bg-slate-200 text-center dark:text-black
     ---
     4XL
     :::
@@ -431,7 +431,7 @@ ui:
     :::ShSegment
     ---
     ui:
-      wrapper: bg-slate-300 text-center
+      wrapper: bg-slate-300 text-center dark:text-black
     ---
     1/10
     :::

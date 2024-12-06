@@ -3,7 +3,7 @@
     <div class="mx-auto mt-4">
       <NuxtLink to="/" :class="ui.linkCrumb">HOME</NuxtLink>
       <span v-for="(crumb, index) in breadcrumbs" :key="index" class="text-primary/[0.6] dark:text-primary/[0.8]">
-        &nbsp; <b> > </b> &nbsp;
+        &nbsp; > &nbsp;
         <NuxtLink v-if="crumb.to != route.path" :to="crumb.to"
           :class="{ [ui.linkCrumb]: isBreadcrumbActive(crumb, index) }">
           {{ crumb.label.toUpperCase() }}

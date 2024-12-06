@@ -348,6 +348,8 @@ It is possible to insert other constructors inside of the <b>{{ $doc.constructor
 
 ::ShButton
 ---
+ui:
+  wrapper: w-fit
 urlButton: "https://opensource.org/"
 styleButton: outline
 colorButton: blue
@@ -542,7 +544,7 @@ export default {
     outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
     link: 'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'
   },
-  fullWidth: 'w-full flex justify-center items-center',
+  fullWidth: 'flex mx-auto justify-center items-center',
   inline: 'inline-flex items-center',
   rounded: 'rounded-md',
   size: {

@@ -1,6 +1,6 @@
 ---
 title: Video
-description:
+description: Embed video either from YouTube or from your local
 constructorName: ShVideo
 layout: doc
 ---
@@ -39,29 +39,36 @@ The <b>{{ $doc.constructorName }}</b> constructor creates a display format for e
   <thead>
     <tr>
       <th>Property</th>
-      <th>Class</th>
+      <th>Attribute</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">ui</td>
+      <td rowspan="2"><code>ui</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShVideo</code> constructor is a configuration object that allows for the customization of various styling aspects of the video component. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
     </tr>
     <tr>
       <td><code>wrapper</code></td>
-      <td>Defines the overall styling for the container that holds the video. The attribute <code>shadow-2xl</code> provides a shadow effect around the wrapper.</td>
+      <td><code>config.wrapper</code></td>
+      <td>Defines the overall styling for the container that holds the video.</td>
     </tr>
     <tr>
-      <td>src</td>
+      <td><code>src</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>The source URL of the video to be embedded. This property is mandatory.</td>
     </tr>
-    <td>description</td>
+    <tr>
+      <td><code>description</code></td>
+      <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.
     </td>
+    </tr>
   </tbody>
 </table>
 

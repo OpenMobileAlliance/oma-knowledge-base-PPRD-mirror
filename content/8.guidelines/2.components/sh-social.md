@@ -1,6 +1,6 @@
 ---
 title: Social
-description:
+description: Embed social media posts
 constructorName: ShSocial
 layout: doc
 ---
