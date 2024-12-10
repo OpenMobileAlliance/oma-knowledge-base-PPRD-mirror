@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.openmobilealliance.org/events/</loc>
+  <lastmod>2024-11-25T21:25:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Admin/</loc>
+  <lastmod>2024-11-25T21:25:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Utilities/</loc>
+  <lastmod>2024-11-25T21:25:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Admin/OMA-TestFest-NDA-2023.pdf</loc>
+  <lastmod>2023-10-11T03:08:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Utilities/Feb-2024/</loc>
+  <lastmod>2024-11-25T21:25:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Utilities/May-23/</loc>
+  <lastmod>2024-11-25T21:25:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Utilities/Nov-23/</loc>
+  <lastmod>2024-11-25T21:25:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Utilities/May-23/OMA%20SpecWorks%20Webinar%20For%20Presentation%20Final.pdf</loc>
+  <lastmod>2023-06-09T16:28:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/events/Utilities/Nov-23/OMA-SpecWorks-Workshop-II-Nov-2023.pdf</loc>
+  <lastmod>2023-11-22T10:08:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

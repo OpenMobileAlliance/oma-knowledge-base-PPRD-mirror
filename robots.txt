@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /site-api/
+Disallow: /Technical/
+Disallow: /release_program/
+
+Allow: /
+
+Sitemap: https://www.openmobilealliance.org/sitemap.xml
+
+Sitemap: https://www.openmobilealliance.org/events-sitemap.xml
+Sitemap: https://www.openmobilealliance.org/release-sitemap.xml
+Sitemap: https://www.openmobilealliance.org/tech-sitemap.xml
+Sitemap: https://www.openmobilealliance.org/test_events-sitemap.xml
+Sitemap: https://www.openmobilealliance.org/ftp-public-documents-sitemap.xml
+Sitemap: https://www.openmobilealliance.org/WorkProgram-WIDs-sitemap.xml

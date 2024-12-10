@@ -1,0 +1,2513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.openmobilealliance.org/tech/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/extref/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/OMASpecWorks/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/pre-reg/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/</loc>
+  <lastmod>2024-11-25T21:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/ila/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/LicenseAgreement.asp</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mgif/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/wap/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/wv/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/ac_ap0008_SIMPLE_IM-v1_0.txt</loc>
+  <lastmod>2015-03-24T08:51:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/dd.xsd</loc>
+  <lastmod>2003-11-17T10:51:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/dm_dm13_delegationprotocol-v1_0.xsd</loc>
+  <lastmod>2016-06-10T10:10:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/mms_mtd-v1_3.xsd</loc>
+  <lastmod>2008-09-25T13:41:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/readme_MLP_320_V1_0-20100831-C.txt</loc>
+  <lastmod>2010-11-19T14:17:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/readme_MLP_320_V1_0-20110719-A.txt</loc>
+  <lastmod>2011-07-26T15:00:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/readme_RLP_100-V1_0-20100831-C.txt</loc>
+  <lastmod>2010-11-19T14:17:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/dtd/readme_RLP_100-V1_0-20110719-A.txt</loc>
+  <lastmod>2011-07-26T15:00:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/extref/OMA-TS-REST_NetAPI_ACR-V1_0.pdf</loc>
+  <lastmod>2015-12-11T13:26:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/OMASpecWorks/OMA-TestFest-NDA-2017.pdf</loc>
+  <lastmod>2018-08-08T21:52:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/OMASpecWorks/OMASpecWorks%20FAQ%20.pdf</loc>
+  <lastmod>2018-06-01T15:18:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/ddf/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/dm-ac/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/dm-mo/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/dm_mo/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/evvm/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/prs-mo/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/prs_mo/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/test/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/WINA20020204v01.pdf</loc>
+  <lastmod>2013-10-11T05:18:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omna/xdm_mo/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/_notes/</loc>
+  <lastmod>2024-11-25T21:35:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_am-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_am-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_am-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_fd_associatedprocedure-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_fd_backend-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_fd_fdt-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_fd_receptionreport-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_fd_receptionreport-v1_0_1.xsd</loc>
+  <lastmod>2017-02-13T09:58:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_backend-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_backend-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_backend-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_backend-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_message-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_message-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_message-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_nt_message-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_pr_orderqueries-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_pr_orderqueries-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_pr_orderqueries-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_pr_orderqueries-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_pr_userpreference-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_backend-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:11:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_backend-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_backend-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_backend-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_frontend-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_frontend-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_frontend-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_roaming_frontend-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sd_associatedprocedure-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sd_backend-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sd_receptionreport-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_backend-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_backend-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_backend-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_backend-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_fragments-v1_0.xsd</loc>
+  <lastmod>2021-04-19T14:45:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_fragments-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_fragments-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_fragments-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_sgdd-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_sgdd-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_sgdd-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_sg_sgdd-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_si_interactivitymedia-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_si_interactivitymedia-v1_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_si_interactivitymedia-v1_2.xsd</loc>
+  <lastmod>2017-02-13T09:55:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_si_interactivitymedia-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_spcp_backend-v1_0.xsd</loc>
+  <lastmod>2013-11-26T15:40:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_spcp_backend-v1_0_1.xsd</loc>
+  <lastmod>2017-02-13T09:55:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/bcast_spcp_backend-v1_3.xsd</loc>
+  <lastmod>2017-02-13T09:58:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_ab-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_ab-v1_1.xsd</loc>
+  <lastmod>2018-08-06T10:00:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_feature_handler-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:11:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_feature_handler-v1_1.xsd</loc>
+  <lastmod>2018-08-08T08:26:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_pcc-v1_0.xsd</loc>
+  <lastmod>2017-08-30T08:46:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_pcc-v1_1.xsd</loc>
+  <lastmod>2018-08-06T10:02:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_search_external_directories-v1_0.xsd</loc>
+  <lastmod>2018-08-06T10:03:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_user_preferences-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cab_user_preferences-v1_1.xsd</loc>
+  <lastmod>2018-08-06T10:03:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cbcs_pem1InputTemplate-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cbcs_pem1OutputTemplate-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/cmi_package-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/CMR_messages-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dcd_xsd-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dd-V2_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dd.xsd</loc>
+  <lastmod>2013-10-03T09:09:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dd_midpjad-V2_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/DDF.XSD</loc>
+  <lastmod>2018-06-13T05:22:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/DDF1.XSD</loc>
+  <lastmod>2019-02-06T01:17:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/DDF2.XSD</loc>
+  <lastmod>2019-02-19T07:53:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dm-deltarec_deltarecord-v1_0.txt</loc>
+  <lastmod>2013-10-03T09:07:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dm-deltarec_deltarecord-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dm_diag12_nfc-v1_1.xsd</loc>
+  <lastmod>2013-10-22T16:04:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dm_diag12_trapeventlogging-v1_0.xsd</loc>
+  <lastmod>2013-10-22T16:04:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dm_dm13_delegationprotocol-v1_0.xsd</loc>
+  <lastmod>2016-06-10T10:12:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/dpe_xsd-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/DRM/</loc>
+  <lastmod>2024-11-25T21:36:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_dd_xbs-v2_0.xsd</loc>
+  <lastmod>2013-11-26T15:40:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_dd_xbs-v2_0_1.xsd</loc>
+  <lastmod>2017-02-13T09:58:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_lrm_v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_rel-v2_2.xsd</loc>
+  <lastmod>2013-10-03T09:06:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_rel_dd-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:08:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_rel_ex-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:10:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_rel_ex-v2_2.xsd</loc>
+  <lastmod>2013-10-03T09:07:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_rel_odd-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:10:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_rel_odd-v2_2.xsd</loc>
+  <lastmod>2013-10-03T09:06:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_risd-v1_0.xsd</loc>
+  <lastmod>2017-02-13T09:58:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_roap-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:07:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/DRM_ROAP-v2_0_1.xsd</loc>
+  <lastmod>2013-10-03T09:08:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_roap-v2_2.xsd</loc>
+  <lastmod>2013-10-03T09:08:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_roap_xbs-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_roap_xbs-v2_1.xsd</loc>
+  <lastmod>2013-11-26T15:40:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/drm_roap_xbs-v2_1_1.xsd</loc>
+  <lastmod>2017-02-13T09:58:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/DS_DevInf_Schema-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/DS_Syntax_Schema-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/EVC_EnrichedInfo-V1_0.xsd</loc>
+  <lastmod>2018-08-06T11:02:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/EVC_VisualIVRMapping-V1_0.xsd</loc>
+  <lastmod>2018-08-06T11:01:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/EVC_VisualIVRRequest-V1_0.xsd</loc>
+  <lastmod>2018-08-06T11:02:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/EVC_VisualIVRResponse-V1_0.xsd</loc>
+  <lastmod>2018-08-06T11:02:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-cp-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-deac-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-gsp-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-pref-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-ssp-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-sync-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-tran-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/evvm-up-v1_0.xsd</loc>
+  <lastmod>2015-09-28T14:35:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/GPM_PEM1InputTemplate-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/GPM_PEM1OutputTemplate-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/gssm_gssm1-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/gssm_gssm2-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/gssm_pem1InputTemplate-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/gssm_pem1OutputTemplate-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/gssm_queries-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/im_hist_def_metadata-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/im_hist_def_metadata-V1_1.xsd</loc>
+  <lastmod>2015-03-23T16:36:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/im_service_settings-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/im_service_settings-v1_1.xsd</loc>
+  <lastmod>2015-03-23T16:36:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/isc_contents_list-v1_0.xsd</loc>
+  <lastmod>2015-07-06T09:59:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/isc_group_ext-v1_0.xsd</loc>
+  <lastmod>2015-07-06T09:59:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/isc_user_preferences-v1_0.xsd</loc>
+  <lastmod>2015-07-06T09:59:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/JSD/</loc>
+  <lastmod>2024-11-25T21:37:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/KPIinOMA_messages-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:11:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/LFC_Package_Metadata_Schema-v1_0.txt</loc>
+  <lastmod>2013-10-03T09:09:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/LFC_Package_Metadata_Schema-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/locsip_filter-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/locsip_gbakeyid-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/locsip_geolocation_policy_v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/locsip_geolocation_policy_v1_0.xsd.txt</loc>
+  <lastmod>2013-10-03T09:08:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/locsip_gpmpem1outputext-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/locsip_qos-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/lwm2m/</loc>
+  <lastmod>2024-11-25T21:37:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/lwm2m-archive/</loc>
+  <lastmod>2024-11-25T21:37:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/LWM2M-v1_1.xsd</loc>
+  <lastmod>2018-08-07T08:35:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/LWM2M.xsd</loc>
+  <lastmod>2017-01-14T12:03:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/LWM2M_old.XSD</loc>
+  <lastmod>2017-01-20T08:36:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/LWM2M_senml_units.xsd</loc>
+  <lastmod>2020-01-16T18:45:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/mc_xs-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/MMS/</loc>
+  <lastmod>2024-11-25T21:37:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/mms_mtd-v1_3.xsd</loc>
+  <lastmod>2013-10-03T09:11:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/mobad_messages-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/MSrch_messages-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/MSrch_userinfo-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/Official-Registry/</loc>
+  <lastmod>2024-11-25T21:37:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/OMA-DD-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/OMA-SUP-AC_ap0002_presence-V1_0_1-20061128-A.txt</loc>
+  <lastmod>2013-10-03T09:07:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/OMA-SUP-XSD_DD-V2_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/OMA-SUP-XSD_rest_DynNav-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/OMA-SUP-XSD_SCE_DOM-V1_0-20110705-A.xsd</loc>
+  <lastmod>2013-10-03T09:08:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/OMA-SUP-XSD_SCE_DOM-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/OMA-SUP-XSD_SCE_GEN-20110705-A.xsd</loc>
+  <lastmod>2013-10-03T09:05:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pal_messagePayloads-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_detProgressRep-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_dispatchInd-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_FDCFO-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_finalReport-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_group_advertisement-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_limitedParticipantInfoReq-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_listService-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_optProgressRep-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_poc2_0_Rules-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_poc2_0Settings-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_poc2_0SharedGroupExt-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_poc2_1_ParticipantInfoInd-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_poc2_1_Settings-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_poc2_1_SharedGroupExt-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_poc_sessions-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_pocusage-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pcps_sessionInvocationDescriptor-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:09:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pde_palBasePolicy-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pde_pidf_ext-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:08:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pde_pidf_ext-v1_2.xsd</loc>
+  <lastmod>2016-01-19T01:12:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pde_pidf_ext.xsd</loc>
+  <lastmod>2013-10-03T09:08:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/peem_ruleset-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/PEM_1_GenericInputTemplateData-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/PEM_1_GenericOutputTemplateData-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/POC/</loc>
+  <lastmod>2024-11-25T21:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc2_1ParticipantInfoInd-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:10:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_detProgressRep-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_dispatchInd-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_FDCFO-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_finalReport-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_group_advertisement-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_group_advertisement-V1_0_1.xsd</loc>
+  <lastmod>2013-10-03T09:07:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_limitedParticipantInfoReq-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:06:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_listService-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_listService-V1_0_1.xsd</loc>
+  <lastmod>2013-10-03T09:10:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_optProgressRep-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_participantInfoInd-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_poc2_0Rules-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_poc2_0Settings-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_poc2_0SharedGroupExt-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_poc2_1Settings-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:09:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_poc2_1SharedGroupExt-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_poc_sessions-v2_1.xsd</loc>
+  <lastmod>2013-10-03T09:08:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_pocRules-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_pocusage-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_pocusage-V1_0_1.xsd</loc>
+  <lastmod>2013-10-03T09:10:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/poc_sessionInvocationDescriptor-v2_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/PresenceSimple/</loc>
+  <lastmod>2024-11-25T21:38:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/prs_pidf_omapres-v1_0.xsd</loc>
+  <lastmod>2016-01-19T01:12:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/prs_pidf_omapres-V1_0_1.xsd</loc>
+  <lastmod>2013-10-03T09:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/prs_presContent-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/prs_presrules-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/prs_pub_rules-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/prs_suppnotFilter-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/push-registration-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pxprof_common_types-v1_0.xsd</loc>
+  <lastmod>2016-12-08T13:59:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pxprof_mms_types-v1_0.xsd</loc>
+  <lastmod>2016-12-08T13:59:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pxprof_payment_types-v1_0.xsd</loc>
+  <lastmod>2016-12-08T13:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pxprof_sms_types-v1_0.xsd</loc>
+  <lastmod>2016-12-08T13:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/pxprof_terminallocation_types-v1_0.xsd</loc>
+  <lastmod>2016-12-08T13:59:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_addresslistmgt-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_audiocall-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_autho4api_url_prefixes_for_granted_resources-v1_0.xsd</loc>
+  <lastmod>2015-01-26T13:45:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_callnotification-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_common-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_common-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:07:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_devicecapabilities-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_dynnav-V1_0.xsd</loc>
+  <lastmod>2014-02-27T15:01:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_dynnav-V1_1.xsd</loc>
+  <lastmod>2015-08-10T08:43:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_messaging-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:09:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_messaging-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:09:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_navse-V1_0.xsd</loc>
+  <lastmod>2020-02-25T14:55:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_acrmanagement-v1_0.xsd</loc>
+  <lastmod>2015-12-09T12:43:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_addressbook-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_audiocall-v1_0.xsd</loc>
+  <lastmod>2020-03-24T13:15:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_botManagement-v1_0.xsd</loc>
+  <lastmod>2018-06-19T11:54:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_callnotification-v1_0.xsd</loc>
+  <lastmod>2020-03-24T13:15:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_capabilitydiscovery-v1_0.xsd</loc>
+  <lastmod>2018-06-19T11:54:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_chat-v1_0.xsd</loc>
+  <lastmod>2018-06-19T11:54:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_common-v1_0.xsd</loc>
+  <lastmod>2018-01-24T14:31:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_communicationpatterns-V1_0.xsd</loc>
+  <lastmod>2016-05-19T19:03:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_convergedaddressbook-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_customerprofile-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_devicecapabilities-v1_0.xsd</loc>
+  <lastmod>2015-12-11T14:51:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_devicecapabilities-v1_0_1.xsd</loc>
+  <lastmod>2015-12-11T14:53:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_filetransfer-v1_0.xsd</loc>
+  <lastmod>2015-12-09T13:19:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_imageshare-v1_0.xsd</loc>
+  <lastmod>2015-12-09T17:33:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_messagebroadcast-V1_0.xsd</loc>
+  <lastmod>2016-09-12T11:48:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_messaging-v1_0.xsd</loc>
+  <lastmod>2015-12-09T13:26:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_nms-v1_0.xsd</loc>
+  <lastmod>2019-06-25T08:40:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_notificationchannel-v1_0.xsd</loc>
+  <lastmod>2020-03-24T13:16:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_payment-v1_0.xsd</loc>
+  <lastmod>2013-10-22T16:04:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_presence-v1_0.xsd</loc>
+  <lastmod>2015-12-09T13:49:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_push-v1_0.xsd</loc>
+  <lastmod>2014-02-04T17:53:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_qos-v1_0.xsd</loc>
+  <lastmod>2014-12-08T10:57:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_roamingprovisioning-v1_0.xsd</loc>
+  <lastmod>2016-12-19T14:57:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_sms-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_terminallocation-v1_0.xsd</loc>
+  <lastmod>2013-10-22T16:04:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_terminallocation-v1_0_1.xsd</loc>
+  <lastmod>2015-11-16T11:44:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_terminalstatus-v1_0.xsd</loc>
+  <lastmod>2013-10-22T16:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_thirdpartycall-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_twinning-v1_0.xsd</loc>
+  <lastmod>2016-05-31T17:29:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_ucd-v1_0.xsd</loc>
+  <lastmod>2015-01-22T17:42:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_videoshare-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_webrtcsignaling-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_netapi_zonalpresence-v1_0.xsd</loc>
+  <lastmod>2018-08-06T11:07:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_payment-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:11:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_payment-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:10:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_presence-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_sms-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_sms-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:10:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_supm-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_terminallocation-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_terminallocation-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:08:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_terminalstatus-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/rest_thirdpartycall-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/reusable_resources_v1_0.xsd</loc>
+  <lastmod>2018-01-10T16:59:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/RULES/</loc>
+  <lastmod>2024-11-25T21:39:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/scab_comm_hist-v1_0.xsd</loc>
+  <lastmod>2017-08-30T08:46:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/scab_extensions-V1_0.xsd</loc>
+  <lastmod>2017-08-30T08:46:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/scab_user_preferences-v1_0.xsd</loc>
+  <lastmod>2017-08-30T08:46:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/SCE_LRM_V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:08:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/SCE_REL_DD-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/SCE_REL_EX-V1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/sce_rel_odd-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/SCE_ROAP-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/scidm_messages-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/seccf_gba-v1_1.xsd</loc>
+  <lastmod>2013-10-03T09:05:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/singlePhasePM.xsd</loc>
+  <lastmod>2016-03-22T09:19:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/spam_rep-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:07:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/STI/</loc>
+  <lastmod>2024-11-25T21:39:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/STI-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:11:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/supm_soap-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:06:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/UAPROF/</loc>
+  <lastmod>2024-11-25T21:39:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/UVE_messages-v1_0.xsd</loc>
+  <lastmod>2015-12-09T18:32:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/void-LWM2M_senml_units.xsd</loc>
+  <lastmod>2019-12-06T05:38:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/widl/</loc>
+  <lastmod>2024-11-25T21:39:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/XDM/</loc>
+  <lastmod>2024-11-25T21:39:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_2_1_extensions-V1_0.xsd</loc>
+  <lastmod>2017-02-13T10:12:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_2_2_extensions-V1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_access_permissions-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_access_permissions_list-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_alias_principals_list-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_commonPolicy-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_CommonPolicy-V1_0_1.xsd</loc>
+  <lastmod>2013-10-03T09:08:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_extensions-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_forwarding_notification_list-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_modification_history.xsd</loc>
+  <lastmod>2017-02-13T10:11:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_palProfile-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:05:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_request_history-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_rsrclst_appusage-V1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_rsrclst_uriusage-V1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_search-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_uppDirectory-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_userProfile-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_xcapDirectory-v1_0.xsd</loc>
+  <lastmod>2013-10-03T09:10:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_xcapDirectory-V1_0_1.xsd</loc>
+  <lastmod>2013-10-03T09:07:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_xcapDirectory-v1_0_3.xsd</loc>
+  <lastmod>2017-02-13T10:11:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_xcapError-V1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_xdcp-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/xdm_xdmPreferences-v1_0.xsd</loc>
+  <lastmod>2017-02-13T10:11:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/profiles/XML%20Schema%20for%20Mobile%20Augmented%20Reality.xsd</loc>
+  <lastmod>2016-02-22T12:12:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/PEM_1_faults-v1_0.wsdl</loc>
+  <lastmod>2013-10-07T09:19:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/PEM_1_faults_V1_0.wsdl</loc>
+  <lastmod>2013-10-07T09:19:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/PEM_1_REQ-v1_0.wsdl</loc>
+  <lastmod>2013-10-07T09:19:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/pem_1_REQ_V1_0.wsdl</loc>
+  <lastmod>2013-10-07T09:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/PEM_1_RSP-v1_0.wsdl</loc>
+  <lastmod>2013-10-07T09:19:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/pem_1_RSP_V1_0.wsdl</loc>
+  <lastmod>2013-10-07T09:19:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/wsdl/supm_soap-v1_0.wsdl</loc>
+  <lastmod>2013-10-07T09:19:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/ila/ILA_System_Architecture_Release%201.0.pdf</loc>
+  <lastmod>2018-05-18T10:03:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/ila/ILA_Use_Case_Retail.pdf</loc>
+  <lastmod>2018-05-18T10:03:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/ila/ILA_Use_Case_transportation.pdf</loc>
+  <lastmod>2018-05-18T10:03:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/boilerplate.pdf</loc>
+  <lastmod>2013-09-23T05:14:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/lif-statement.pdf</loc>
+  <lastmod>2013-09-23T05:14:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omaspecworks/collaborate/affiliates/location-interoperability/</loc>
+  <lastmod>2024-11-22T17:27:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_CTXT_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_EME_LIA_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:39+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_EME_LIR_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_EMEREP_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_FUNC_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_GEM_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_GSM_NET_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_HDR_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_ID_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_LOC_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_QOP_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_SHAPE_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_SLIA_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_SLIR_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_SLIREP_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_SLREP_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_SVC_INIT_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:48+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_SVC_RESULT_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_TLRA_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:48+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_TLREP_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_TLRR_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_TLRSA_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/lif/MLP_TLRSR_300_DTD.txt</loc>
+  <lastmod>2013-09-23T05:14:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mgif/MGIF_Platform_Specification_v1.0.pdf</loc>
+  <lastmod>2013-09-23T05:15:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mgif/MGIF_Whitepaper_v1.0.pdf</loc>
+  <lastmod>2013-09-23T05:15:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omaspecworks/collaborate/affiliates/mobile-games-interoperability/</loc>
+  <lastmod>2024-11-22T17:27:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/gap.ppt</loc>
+  <lastmod>2013-09-23T05:15:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_001v2.doc</loc>
+  <lastmod>2013-09-23T05:15:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_001v2.pdf</loc>
+  <lastmod>2013-09-23T05:15:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_002v2.doc</loc>
+  <lastmod>2013-09-23T05:15:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_002v2.pdf</loc>
+  <lastmod>2013-09-23T05:15:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_003.doc</loc>
+  <lastmod>2013-09-23T05:15:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_003.pdf</loc>
+  <lastmod>2013-09-23T05:15:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_004v2.doc</loc>
+  <lastmod>2013-09-23T05:15:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_004v2.pdf</loc>
+  <lastmod>2013-09-23T05:15:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_006v2.doc</loc>
+  <lastmod>2013-09-23T05:16:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_006v2.pdf</loc>
+  <lastmod>2013-09-23T05:15:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_007.doc</loc>
+  <lastmod>2013-09-23T05:15:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/mwif/mtr_007.pdf</loc>
+  <lastmod>2013-09-23T05:15:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/changes_for_syncml_devinf_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/changes_for_syncml_http_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/changes_for_syncml_metinf_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/changes_for_syncml_obex_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/changes_for_syncml_protocol_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/changes_for_syncml_represent_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/changes_for_syncml_wsp_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/dsdmfest2/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/Errata_to_SyncML_Device_Information_DTD_Specification.pdf</loc>
+  <lastmod>2013-09-23T05:16:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/Errata_to_SyncML_Meta_Information_DTD_specification.pdf</loc>
+  <lastmod>2013-09-23T05:16:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/Errata_to_SyncML_OBEX_Binding.pdf</loc>
+  <lastmod>2013-09-23T05:16:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/Errata_to_SyncML_Representation_Protocol.pdf</loc>
+  <lastmod>2013-09-23T05:16:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/Errata_to_SyncML_Synchronization_Protocol.pdf</loc>
+  <lastmod>2013-09-23T05:16:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/Errata_to_SyncML_wsp_Binding.pdf</loc>
+  <lastmod>2013-09-23T05:16:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/extended_sys_client_proforma.pdf</loc>
+  <lastmod>2013-09-23T05:16:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/infobank_proforma_server_client_syncfest3.pdf</loc>
+  <lastmod>2013-09-23T05:16:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/interop_process.pdf</loc>
+  <lastmod>2013-09-23T05:16:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/introducing_syncml_29jan02_douglas_heintzman.pdf</loc>
+  <lastmod>2013-09-23T05:16:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/proforma.pdf</loc>
+  <lastmod>2013-09-23T05:16:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/sept2001_registration.htm</loc>
+  <lastmod>2013-09-23T05:16:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/sics_datasync101_syncfest7_server_solvix_server_v09.pdf</loc>
+  <lastmod>2013-09-23T05:16:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest1/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest2/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest3/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest5/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest5_dcmtec_client_sics.pdf</loc>
+  <lastmod>2013-09-23T05:16:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest6/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest7/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest8/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest9/</loc>
+  <lastmod>2024-11-25T21:41:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncfest_nda.pdf</loc>
+  <lastmod>2013-09-23T05:16:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_compliant_products.html</loc>
+  <lastmod>2013-09-23T05:16:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_compliant_products_missing%20files.html</loc>
+  <lastmod>2013-09-23T05:16:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_devinf_v101_20010530.pdf</loc>
+  <lastmod>2013-09-23T05:16:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_devinf_v101_20010615.pdf</loc>
+  <lastmod>2013-09-23T05:16:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_devinf_v10_20001207.pdf</loc>
+  <lastmod>2013-09-23T05:16:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_devinf_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_devman_business_cases_whppr.pdf</loc>
+  <lastmod>2013-09-23T05:16:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_boot_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_conreqs_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:57+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_notification_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:16:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_protocol_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_represent_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_sec_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_std_obj_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_dm_tnd_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_http_v101_20010530.pdf</loc>
+  <lastmod>2013-09-23T05:17:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_http_v101_20010615.pdf</loc>
+  <lastmod>2013-09-23T05:17:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_http_v10_20001207.pdf</loc>
+  <lastmod>2013-09-23T05:17:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_http_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_ics_v10_20011102.doc</loc>
+  <lastmod>2013-09-23T05:17:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_ip_agreement.pdf</loc>
+  <lastmod>2013-09-23T05:17:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_ip_declarations.pdf</loc>
+  <lastmod>2013-09-23T05:17:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_ipr_claims.pdf</loc>
+  <lastmod>2013-09-23T05:17:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_ipr_declarations.pdf</loc>
+  <lastmod>2013-09-23T05:17:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_ipr_policy.pdf</loc>
+  <lastmod>2013-09-23T05:17:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_metinf_v101_20010530.pdf</loc>
+  <lastmod>2013-09-23T05:17:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_metinf_v101_20010615.pdf</loc>
+  <lastmod>2013-09-23T05:17:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_metinf_v10_20001207.pdf</loc>
+  <lastmod>2013-09-23T05:17:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_metinf_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_obex_v101_20010530.pdf</loc>
+  <lastmod>2013-09-23T05:17:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_obex_v101_20010615.pdf</loc>
+  <lastmod>2013-09-23T05:17:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_obex_v10_20001207.pdf</loc>
+  <lastmod>2013-09-23T05:17:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_obex_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_protocol_v101_20010530.pdf</loc>
+  <lastmod>2013-09-23T05:17:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_protocol_v101_20010615.pdf</loc>
+  <lastmod>2013-09-23T05:17:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_protocol_v10_20001207.pdf</loc>
+  <lastmod>2013-09-23T05:17:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_represent_v101_20010530.pdf</loc>
+  <lastmod>2013-09-23T05:18:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_represent_v101_20010615.pdf</loc>
+  <lastmod>2013-09-23T05:17:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_represent_v10_20001207.pdf</loc>
+  <lastmod>2013-09-23T05:17:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_represent_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:17:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_roadmap_30jan02_teemu_toroi.pdf</loc>
+  <lastmod>2013-09-23T05:18:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_scts_la.pdf</loc>
+  <lastmod>2013-09-23T05:18:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_summit_faxreg.pdf</loc>
+  <lastmod>2013-09-23T05:18:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_sync_protocol_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:18:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_sync_represent_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:18:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_test_cases_v10_20011102.doc</loc>
+  <lastmod>2013-09-23T05:18:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_whitepaper.html</loc>
+  <lastmod>2013-09-23T05:18:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_wsp_v101_20010530.pdf</loc>
+  <lastmod>2013-09-23T05:18:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_wsp_v101_20010615.pdf</loc>
+  <lastmod>2013-09-23T05:18:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_wsp_v10_20001207.pdf</loc>
+  <lastmod>2013-09-23T05:18:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncml_wsp_v11_20020215.pdf</loc>
+  <lastmod>2013-09-23T05:18:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/syncmldm_28jan02_james_jennings.pdf</loc>
+  <lastmod>2013-09-23T05:16:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/omaspecworks/collaborate/affiliates/syncml/</loc>
+  <lastmod>2024-11-22T17:27:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/test_cases.pdf</loc>
+  <lastmod>2013-09-23T05:18:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/test_suite.pdf</loc>
+  <lastmod>2013-09-23T05:18:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/testing_process.pdf</loc>
+  <lastmod>2013-09-23T05:18:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/v1-0-1release_notes.pdf</loc>
+  <lastmod>2013-09-23T05:18:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/syncml/whitepaper.pdf</loc>
+  <lastmod>2013-09-23T05:18:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-211_105-WAPCert-SIN-20020520-a.pdf</loc>
+  <lastmod>2013-09-23T05:18:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-217_105-WPKI-SIN-20020816-a.pdf</loc>
+  <lastmod>2013-09-23T05:18:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-224_002-WTP-SIN-20020827-a.PDF</loc>
+  <lastmod>2013-09-23T05:18:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.openmobilealliance.org/tech/affiliates/wap/OMA-WAP-260_100-WIM-SIN-20010725-a.pdf</loc>
+  <lastmod>2013-09-23T05:18:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
