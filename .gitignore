@@ -5,6 +5,7 @@
 .nitro
 .cache
 dist
+CNAME
 
 # Node dependencies
 node_modules
