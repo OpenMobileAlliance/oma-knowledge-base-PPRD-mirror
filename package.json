@@ -9,7 +9,6 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "deploy": "gh-pages --dotfiles -d .output/public",
-    "deploy_old": "gh-pages --dotfiles -d dist",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
