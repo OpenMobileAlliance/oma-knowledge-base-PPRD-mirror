@@ -274,5 +274,9 @@
     {
         "ObjectIDRange": "35950 - 35999", 
         "CompanyName": "Utonomy"
+    },
+    {
+        "ObjectIDRange": "36000 - 36049", 
+        "CompanyName": "IOX GmbH"
     }
 ]
