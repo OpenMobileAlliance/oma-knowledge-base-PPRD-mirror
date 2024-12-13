@@ -5,15 +5,15 @@
 </template>
 
 <script setup>
-const supabase = useSupabaseClient()
 
+const supabase = useSupabaseClient();
 const login = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'github',
-    });
-    if (error) {
-        console.error(error);
-    }
-}
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'github',
+  });
+  if (error) {
+    console.error(error);
+  }
+};
 
 </script>

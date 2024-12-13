@@ -31,6 +31,7 @@
 
               </span>
               <AppLoginTest />
+              <AppAvatarTest />
               <!-- <span class="hidden sm:flex mr-2 text-base">
                 <ULink to="/contact-us" class="text-black dark:text-golden hover:text-primary">Contact us</ULink>
               </span> -->
@@ -85,6 +86,7 @@
 </template>
 
 <script setup lang="ts">
+
 const config = {
   wrapper: "flex flex-col -mb-px sticky top-0 z-50",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
