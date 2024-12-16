@@ -271,11 +271,13 @@ table is stored in `users` field.
         <code>filter</code><br>
         <code>query</code><br>
         <code>sortable</code><br>
+        <code>hide</code><br>
         <code>type</code>
       </td>
       <td>
         n/a<br>
         n/a<br>
+        <code>true | false</code><br>
         <code>true | false</code><br>
         <code>true | false</code><br>
         <code>true | false</code><br>
