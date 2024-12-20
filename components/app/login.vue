@@ -44,7 +44,7 @@
     <div v-if="user" class="flex items-center">
         <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }"
             :ui="{ background: 'bg-gray-100 dark:bg-[#19191a]', item: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600' }">
-            <img class="rounded-full w-9 h-9 border-2 -mt-2 mr-2 border-green-600" :src="profile" />
+            <img class="rounded-full w-9 h-9 ring -mt-2 mr-2 ring-green-600" :src="profile" />
             <template v-slot:item="{ item, index }">
                 <div v-if="index === 0" class="text-black dark:text-golden flex items-center pl-3 pr-3 p-2">
                     <UIcon :name="item.icon" class="text-2xl mr-2" />
