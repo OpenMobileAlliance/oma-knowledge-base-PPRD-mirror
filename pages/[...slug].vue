@@ -83,6 +83,10 @@
 
 <script setup lang="ts">
 
+definePageMeta({
+  middleware: 'authorization', // Apply the middleware globally for dynamic routes
+});
+
 const config = {
   shadow: 'hover:bg-primary-500 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
 };

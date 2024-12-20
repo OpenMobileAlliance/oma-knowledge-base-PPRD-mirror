@@ -52,7 +52,13 @@
                 </div>
                 <button v-else @click="item.click"
                     class="text-black hover:text-black dark:text-golden hover:dark:text-golden flex items-center pl-3 pr-3 p-2">
-                    <UIcon :name="item.icon" class="text-2xl mr-2" />
+                    <div v-if="index === 0" class="text-black dark:text-golden flex items-center pl-3 pr-3 p-2">
+                        <NuxtLink :to="item.to">
+                            <UIcon :name="item.icon" class="text-2xl mr-2" />
+                            {{ item.label }}
+                        </NuxtLink>
+                    </div>
+                    <UIcon v-else :name="item.icon" class="text-2xl mr-2" />
                     {{ item.label }}
                 </button>
             </template>
@@ -116,12 +122,30 @@ const profile = computed(
     () => user.value?.user_metadata.avatar_url
 );
 
+const username = computed(
+    () => user.value?.user_metadata.preferred_username
+);
+const email = computed(
+    () => user.value?.user_metadata.email
+);
+
 const items = [
     [{
         label: name,
         icon: 'solar:user-hand-up-linear',
 
+    }, {
+        label: username,
+        icon: 'line-md:github-loop',
+    }, {
+        label: email,
+        icon: 'line-md:email',
     }], [{
+        label: 'Guidelines',
+        to: '/guidelines',
+        icon: 'line-md:document',
+    },
+    {
         label: 'Logout',
         icon: 'line-md:logout',
         click: logout,
