@@ -50,6 +50,12 @@
                     <UIcon :name="item.icon" class="text-2xl mr-2" />
                     {{ item.label }}
                 </div>
+                <div v-if="index === 1" class="text-black dark:text-golden flex items-center pl-3 pr-3 p-2">
+                    <NuxtLink :to="item.to" target="_blank">
+                        <UIcon :name="item.icon" class="text-2xl mr-2" />
+                        {{ item.label }}
+                    </NuxtLink>
+                </div>
                 <button v-else @click="item.click"
                     class="text-black hover:text-black dark:text-golden hover:dark:text-golden flex items-center pl-3 pr-3 p-2">
                     <div v-if="index === 0" class="text-black dark:text-golden flex items-center pl-3 pr-3 p-2">
@@ -137,6 +143,7 @@ const items = [
     }, {
         label: username,
         icon: 'line-md:github-loop',
+        to: 'https://github.com/' + user.value?.user_metadata.preferred_username,
     }, {
         label: email,
         icon: 'line-md:email',
