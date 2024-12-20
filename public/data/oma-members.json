@@ -8,5 +8,10 @@
         "name": "Jane Smith",
         "username": "janesmith",
         "email": "janesmith@example.com"
+    },
+    {
+        "name": "Joaquin Prado",
+        "username": "jpradocueva",
+        "email": "jprado@standardshub.io"
     }
 ]
