@@ -220,6 +220,72 @@
         "timestamp":"2018-03-05 16:48:04"
     },
     {
+        "company":"Ericsson",
+        "title":"APPARATUS AND METHOD FOR MANAGING CLIENT DEVICES",
+        "country_province":"USA",
+        "application":"PCT/EP2014/072669",
+        "patent":"US 10 623 504 B2",
+        "spec_ref":"Gateway Management Object Technical Specification",
+        "countries_applicable":"PCT",
+        "declaration_date":"2024-12-17",
+        "timestamp":"2024-12-27 11:03:12"
+    },
+    {
+        "company":"Ericsson",
+        "title":"MANAGING RESOURCE STATE NOTIFICATIONS",
+        "country_province":"USA",
+        "application":"PCT/EP2019/085177",
+        "patent":"US 11 924 309 B2",
+        "spec_ref":"LwM2M OMA Technical Specification",
+        "countries_applicable":"PCT",
+        "declaration_date":"2024-12-17",
+        "timestamp":"2024-12-27 11:03:12"
+    },
+    {
+        "company":"Ericsson",
+        "title":"LWM2M SERVER DEVICE, LWM2M CLIENT DEVICE, AND METHODS THEREOF",
+        "country_province":"USA",
+        "application":"PCT/EP2020/080662",
+        "patent":"-",
+        "spec_ref":"LwM2M Technical Specification Transport",
+        "countries_applicable":"PCT",
+        "declaration_date":"2024-12-17",
+        "timestamp":"2024-12-27 11:03:12"
+    },
+    {
+        "company":"Ericsson",
+        "title":"CONTROLLING TRANSMISSION OF DATA IN A NETWORK",
+        "country_province":"USA",
+        "application":"PCT/EP2020/086713",
+        "patent":"-",
+        "spec_ref":"LwM2M Technical Specification Transport",
+        "countries_applicable":"PCT",
+        "declaration_date":"2024-12-17",
+        "timestamp":"2024-12-27 11:03:12"
+    },
+    {
+        "company":"Ericsson",
+        "title":"COMPACT COMPOSITE RESOURCES",
+        "country_province":"USA",
+        "application":"PCT/SE2022/051257",
+        "patent":"-",
+        "spec_ref":"LwM2M Technical Specification",
+        "countries_applicable":"PCT",
+        "declaration_date":"2024-12-17",
+        "timestamp":"2024-12-27 11:03:12"
+    },
+    {
+        "company":"Ericsson",
+        "title":"DATA TRANSFER BETWEEN LWM2M CLIENT AND LWM2M SERVER",
+        "country_province":"USA",
+        "application":"PCT/CN2023/107403",
+        "patent":"-",
+        "spec_ref":"LwM2M Technical Specification Transport",
+        "countries_applicable":"PCT",
+        "declaration_date":"2024-12-17",
+        "timestamp":"2024-12-27 11:03:12"
+    },
+    {
         "company":"ETRI",
         "title":"METHOD OF PROVIDING APPLICATION AND APPARATUS FOR PERFORMING THE SAME",
         "country_province":"USA",
