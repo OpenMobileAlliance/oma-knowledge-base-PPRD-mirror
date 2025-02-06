@@ -1,6 +1,6 @@
 ---
 layout: articles
-urlImage: /images/news/utility2.jpeg
+urlImage: /images/news/utility2 2.jpeg
 imageBackground: ""
 title: Unlocking Utility Benefits with LwM2M
 subtitle: Workshop, Nov 15, 08:30 am PST.

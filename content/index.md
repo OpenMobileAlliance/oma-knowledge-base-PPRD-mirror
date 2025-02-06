@@ -12,7 +12,7 @@ ui:
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images//landing-hero/innovation1.jpeg
+    urlImage: /images//landing-hero/innovation1new.jpeg
     title: |
         OMA SpecWorks: Balancing Industry Consensus and Innovation
     subtitle: |
@@ -53,7 +53,7 @@ ui:
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/machine-learn.jpeg
+    urlImage: /images/landing-hero/machine-learn1.jpeg
     title: |
         LightweightM2M and Wireless Innovation
     subtitle: |

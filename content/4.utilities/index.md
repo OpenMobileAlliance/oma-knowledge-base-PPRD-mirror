@@ -197,7 +197,7 @@ size: XL
         wrapper: px-4 text-xl
     ---
 
-    ![](/images/lwm2m/utility-lwm2m.jpeg){ class="mx-auto rounded-2xl"}
+    ![](/images/lwm2m/lwm2m-utility.jpeg){ class="mx-auto rounded-2xl"}
 
     ### LwM2M & Utilities
     
