@@ -1,9 +1,9 @@
 ---
 title: "New Year, New Synergy: uCIFI Meets OMA!"
 description:
-layout: articles
+layout:
 ---
-![](/images/ucifi/smart-cities-background.jpeg)
+![](/images/ucifi/smart-cities-background.jpeg){.mx-auto}
 
 ::ShMultiColumn
 ---
@@ -18,9 +18,9 @@ ui:
         ::ShSegment
         ---
         ui:
-          wrapper: rounded-lg bg-white border p-2 flex flex-col items-center justify-center
+          wrapper: rounded-lg bg-golden/[0.75] border p-2 flex flex-col items-center justify-center
         ---
-        [![OMA logo](/images/ucifi/oma_logotag.jpg){.w-3/4}](https://www.openmobilealliance.org//)
+        [![OMA logo](/images/ucifi/OMA-new-logo-light.png){.ml-4 .object-fill}](https://www.openmobilealliance.org//)
         ::
     :::
     :::ShColumn 
@@ -31,7 +31,7 @@ ui:
         ::ShSegment
         ---
         ui:
-          wrapper: rounded-lg bg-white border p-2 text-lg
+          wrapper: rounded-lg bg-golden/[0.4] border p-2 text-lg
         ---
         The uCIFI® data model vision will continue with certification programs under OMA.
         
@@ -47,7 +47,7 @@ ui:
         ui:
           wrapper: rounded-lg bg-white border flex flex-col items-center justify-center
         ---
-        [![uCIFI logo](/images/ucifi/ucifi-logo.png){.w-1/2}](https://ucifi.org/)
+        [![uCIFI logo](/images/ucifi/ucifi-logo.png){.w-2/3 .ml-8}](https://ucifi.org/)
         ::
     :::
 ::
@@ -120,7 +120,7 @@ ui:
   wrapper: shadow-2xl
   rounded: rounded-md
 size: xl
-colorButton: blue
+colorButton: green
 ---
 
 Become OMA member!  
@@ -149,7 +149,7 @@ ui:
   wrapper: shadow-xl
   rounded: rounded-md
 size: xl
-colorButton: blue
+colorButton: green
 ---
 
 Sign Up NOW!  
