@@ -1,7 +1,7 @@
 ---
 title: "uCIFI Joins OMA!"
 description:
-layout: doc
+layout: articles
 ---
 ::ShSegment
 ---
@@ -91,35 +91,30 @@ size: L
 2. Outline the methods of participation in uCIFI for those who have previously engaged with the initiative.
 3. Conduct a question-and-answer session in an Ask Me Anything format, allowing attendees to pose queries.
 ::
-
-::ShButton
----
-urlButton: 'https://share.hsforms.com/1VMWEZ9wJS4aIJwfS-0xOfAcnedl'
-ui: 
-  wrapper: shadow-xl
-  rounded: rounded-md
-size: xl
-colorButton: blue
----
-
-Sign Up NOW!  
+### Register for AMA Webinar
+::ShForm
 ::
+
 
 ## Smart City Working Group
 
-We are thrilled to announce the creation of a dedicated **Smart Cities Working Group** within the **OMA work program**, marking a significant step forward in advancing smart city technologies and interoperability. 
+We’re excited to launch the **Smart City Working Group**, a major step toward advancing interoperability, innovation, and standardization in smart urban development. This new initiative within OMA is dedicated to shaping the future of connected cities by fostering seamless, efficient, and scalable solutions.
 
-This new Working Group will focus on driving **innovation, standardization, and collaboration** in urban development, ensuring that cities worldwide benefit from seamless, efficient, and future-ready solutions. Additionally, the **uCIFI® data model and trademark** will continue to be maintained and developed within this group, reinforcing its role as a key enabler of open, interoperable, and scalable smart city applications. 
+As part of its mission, the group will maintain and evolve the **uCIFI® data model** and trademark, reinforcing its role as a cornerstone for open, interoperable smart city applications.
 
-By bringing together industry leaders, municipalities, and technology providers, the **Smart Cities Working Group** will foster a collaborative ecosystem to shape the future of smart urban infrastructure. Stay tuned for more updates on how you can engage and contribute!
+Bringing together industry leaders, municipalities, and technology providers, the **Smart City Working Group** provides a collaborative platform to drive real-world urban transformation.
+
+Join us in shaping smarter cities for a better future!
 
 For any enquiries, please contact <community@omaorg.org>.
+
+</br>
 
 ::ShButton
 ---
 urlButton: 'https://www.openmobilealliance.org/omaspecworks/membership/join'
 ui: 
-  wrapper: shadow-2xl
+  wrapper: shadow-2xl flex w-fit mx-auto
   rounded: rounded-md
 size: xl
 colorButton: blue
