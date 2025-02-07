@@ -1,6 +1,6 @@
 ---
 layout: articles
-urlImage: /images/news/bootstrapping.jpeg
+urlImage: /images/news/bootstrapping1.jpeg
 imageBackground: ""
 title: LwM2M, Bootstrapping in Cellular Networks
 subtitle: New Work Item
