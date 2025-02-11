@@ -166,7 +166,7 @@ size: XL
     :::ShSegment
     ---
     ui: # Second column in ShTwoColumns
-        wrapper: rounded-lg px-4 text-xl -mt-5
+        wrapper: rounded-lg px-4 text-xl
     ---
     <figure>
     <img src="/images/specifications/oma-specs-resources.png" class="mx-auto w-fit rounded-lg">
