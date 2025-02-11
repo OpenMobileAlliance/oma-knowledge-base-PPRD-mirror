@@ -6,11 +6,11 @@ layout: articles
 ::ShSegment
 ---
 ui:
-  wrapper: flex justify-center
+  wrapper: flex justify-center  
 ---
 
 <figure>
-    <img src="/images/ucifi/smart-cities-background.jpeg" alt="uCIFI in OMA">
+    <img src="/images/ucifi/smart-cities-background.jpeg" alt="uCIFI in OMA" class="rounded-lg">
     <figcaption>uCIFI in OMA</figcaption>
 </figure>
 
@@ -36,9 +36,6 @@ cols: 3
     ---
         ::::ShMicroCard
         ---
-        ui:
-            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
-            subtitle: dark:text-gray-300/[0.8]
         icon: mdi:video-outline
         title: Join Our Webinar # Second Row
         subtitle: on February, 07:00 am PT, 19th, 2025
