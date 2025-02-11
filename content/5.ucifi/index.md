@@ -34,6 +34,7 @@ cols: 3
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             subtitle: dark:text-gray-300/[0.8]
+        icon: mdi:video-outline
         title: Join Our Webinar # Second Row
         subtitle: on February, 07:00 am PT, 19th, 2025
         urlWrapper: "#ask-me-anything-ama-webinar"
@@ -49,6 +50,7 @@ cols: 3
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             subtitle: dark:text-gray-300/[0.8]
+        icon: mdi:city-variant-outline
         title: Join Now! # Second Row
         subtitle: Smart City Working Group
         urlWrapper: "#smart-city-working-group"
@@ -64,13 +66,15 @@ cols: 3
         ui:
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             subtitle: dark:text-gray-300/[0.8]
-        title: Sing Up for OMA Newsletter # Second Row
+        icon: mdi:email-newsletter
+        title: Sign Up for OMA Newsletter # Second Row
         subtitle: Former uCIFI Members
         urlWrapper: "/newsletter"
         ---
         ::::
     :::
 ::
+
 
 ## Ask Me Anything (AMA) Webinar
 
