@@ -56,8 +56,8 @@ cols: 3
             wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
             subtitle: dark:text-gray-300/[0.8]
         icon: mdi:city-variant-outline
-        title: Join Now! # Second Row
-        subtitle: Smart City Working Group
+        title: Join Now SCWG! # Second Row
+        subtitle: Smart City Working Group (SCWG)
         urlWrapper: "#smart-city-working-group"
         ---
         ::::
@@ -103,9 +103,9 @@ size: L
 ![image](/images/landing-hero/inovation-idea.jpeg){.not-prose .rounded-lg}
 
 
-1. Provide an overview of the uCIFI initiative for individuals who may not be familiar with its objectives and activities.
-2. Outline the methods of participation in uCIFI for those who have previously engaged with the initiative.
-3. Conduct a question-and-answer session in an Ask Me Anything format, allowing attendees to pose queries.
+1. Provide an overview of the **uCIFI** initiative for individuals who may not be familiar with its objectives and activities.
+2. Outline the methods of participation in **uCIFI** for those who have previously engaged with the initiative.
+3. Conduct a question-and-answer session in an **Ask Me Anything** format, allowing attendees to pose queries.
 ::
 ### Register for AMA Webinar
 ::ShForm
