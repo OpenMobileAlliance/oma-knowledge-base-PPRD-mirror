@@ -1,7 +1,7 @@
 <template>
     <div id="alert" :class="[ui.wrapper, alert]">
         <div :class="ui.base">
-            <UIcon :class="['size-7']" :name="icon" dynamic></UIcon>
+            <UIcon :class="['size-7', iconColor]" :name="icon" dynamic></UIcon>
         </div>
         <ContentSlot :use="$slots.default" unwrap="" />
     </div>
@@ -59,6 +59,23 @@ const icon = computed(() => {
             break;
         default: // info
             return config.icon.info;
+            break;
+    }
+});
+
+const iconColor = computed(() => {
+    switch (props.typeAlert) {
+        case "success":
+            return config.icon.color.success;
+            break;
+        case "warning":
+            return config.icon.color.warning;
+            break;
+        case "danger":
+            return config.icon.color.danger;
+            break;
+        default: // info
+            return config.icon.color.info;
             break;
     }
 });
