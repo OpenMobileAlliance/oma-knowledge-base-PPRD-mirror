@@ -62,6 +62,18 @@ ui:
         wrapper: h-20 sm:h-full sm:w-full flex flex-col
         icon: w-1/3 text-blue-400
         title: text-white text-xs sm:text-lg
+    icon: mdi:city-variant-outline
+    title: uCIFI
+    urlWrapper: "/ucifi/"
+    ---
+    :::
+
+    :::ShMicroCard
+    ---
+    ui:
+        wrapper: h-20 sm:h-full sm:w-full flex flex-col
+        icon: w-1/3 text-blue-400
+        title: text-white text-xs sm:text-lg
     icon: i-mdi-newspaper-variant-outline
     title: News
     urlWrapper: "/news/"
