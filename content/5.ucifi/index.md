@@ -17,8 +17,13 @@ ui:
 ::
 
 
-   The uCIFI® data model vision will continue with certification programs under OMA. 
-   A new **“Smart City”** Working Group will be specifically created within the OMA work program and the uCIFI® data model and trademark will continue to be kept and developed by the **Smart City Working Group** (SCWG) at the OMA.
+## uCIFI and OMA: Advancing Open IoT Standards  
+
+uCIFI has joined **OMA SpecWorks** to strengthen **interoperability and standardization** for smart cities and utility IoT applications. This collaboration ensures **seamless device communication**, a **unified data model**, and enhanced cross-vendor compatibility.  
+
+Discover how **uCIFI within OMA** fosters **innovation, cross-industry synergy,** and the development of **scalable IoT solutions**. **Join us in shaping the future of open IoT standards!**  
+
+</br>
 
 
 ::ShMultiColumn
@@ -75,6 +80,13 @@ cols: 3
     :::
 ::
 
+</br>
+
+::ShAlert
+The uCIFI® data model vision will continue with certification programs under OMA. 
+A new **“Smart City”** Working Group will be specifically created within the OMA work program and the uCIFI® data model and trademark will continue to be kept and developed by the **Smart City Working Group** (SCWG) at the OMA.
+::
+</br>
 
 ## Ask Me Anything (AMA) Webinar
 
