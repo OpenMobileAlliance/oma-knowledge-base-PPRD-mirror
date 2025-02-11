@@ -12,7 +12,7 @@ size: L
     :::ShSegment
     ---
     ui: # First column of ShTwoColumns
-        wrapper: -mt-5
+        wrapper: -mt-2
     ---
     <img src="/images/tools/lwm2m-tools-oma.png" alt="Open Mobile Alliance Tools" class="rounded-2xl">
     :::
@@ -82,7 +82,7 @@ size: L
             :::::ShMicroCard
             ---
             ui:
-                wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 hover:scale-100 hover:shadow-none hover:cursor-no-drop dark:hover:border-neutral-600
+                wrapper: mb-2 bg-[#cddcec] bg-gradient-to-b from-primary/[0.4] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900 hover:shadow-none hover:cursor-not-allowed dark:hover:border-neutral-600
                 icon: w-1/4
                 subtitle: text-oma-red-500 dark:text-oma-red-600
             urlWrapper: ""
