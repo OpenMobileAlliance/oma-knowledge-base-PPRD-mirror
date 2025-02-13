@@ -120,6 +120,8 @@ As part of its mission, the group will maintain and evolve the **uCIFI® data mo
 
 Bringing together industry leaders, municipalities, and technology providers, the **Smart City Working Group** provides a collaborative platform to drive real-world urban transformation.
 
+As part of its mission, the group will maintain and evolve the **uCIFI® data model** and trademark, reinforcing its role as a cornerstone for open, interoperable smart city applications worldwide.
+
 Join us in shaping smarter cities for a better future!
 
 For any enquiries, please contact <community@omaorg.org>.
