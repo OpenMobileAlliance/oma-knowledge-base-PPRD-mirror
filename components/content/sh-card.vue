@@ -1,10 +1,19 @@
 <template>
   <div :class="ui.wrapper">
+    <img v-if="props.coverImage && !coverText && !coverIcon" :src="props.coverImage"
+      :class="[ui.coverImage, coverEffectClass]" />
+    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[ui.coverIconWrapper, coverEffectClass]">
+      <UIcon :name="props.coverIcon" :class="ui.coverIcon" dynamic />
+    </div>
+    <div v-if="coverText && !coverImage && !coverIcon" :class="[ui.coverText, coverEffectClass]">
+      <MDC :value="coverText" class="px-4" />
+    </div>
     <div :class="ui.upperBase" :style="backgroundClass">
-      <NuxtLink :to="urlUpperBase" target="_blank" class="not-prose">
-        <div class="h-80 w-full flex justify-center items-center">
+      <NuxtLink :to="urlUpperBase" :target="target" class="not-prose">
+        <div v-if="urlImage" class="h-80 w-full flex justify-center items-center">
           <img :src="urlImage" :class="ui.image" :alt="altImage" />
         </div>
+        <MDC v-else :value="upperBaseText" :class="ui.upperBaseText" />
       </NuxtLink>
     </div>
     <div :class="ui.lowerBase">
@@ -16,8 +25,8 @@
       </div>
       <div :class="ui.text">
         <MDC v-if="text" :value="text" />
-        <ContentRenderer v-else >
-          <MDC :value="excerpt" excerpt class="dark:text-golden"/>
+        <ContentRenderer v-else>
+          <MDC :value="excerpt" excerpt class="dark:text-golden" />
         </ContentRenderer>
       </div>
       <div v-if="page._path === '/news'">
@@ -42,6 +51,7 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
 import { card as config } from '@/ui.config' // Import the config file
 
@@ -50,8 +60,14 @@ const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryConte
 
 const props = withDefaults(
   defineProps<{
+    coverImage?: string;
+    coverIcon?: string;
+    coverText?: string;
+    opacity?: boolean;
     urlUpperBase?: string;
+    upperBaseText?: string;
     urlImage?: string;
+    target?: string;
     altImage?: string;
     title?: string;
     subtitle?: string;
@@ -68,8 +84,14 @@ const props = withDefaults(
   {
     ui: () => ({}),
     description: "",
+    coverImage: "",
+    coverIcon: "",
+    coverText: "",
+    opacity: false,
     urlUpperBase: "",
+    upperBaseText: "",
     urlImage: "",
+    target: "_blank",
     altImage: "",
     title: "",
     subtitle: "",
@@ -93,4 +115,12 @@ const backgroundClass = computed(() => {
   }
 });
 
+const coverEffectClass = computed(() => {
+  if (props.opacity === true) {
+    return "transition-opacity duration-700 group-hover:opacity-0";
+  }
+  else {
+    return "transition-transform duration-700 group-hover:-translate-y-full";
+  }
+});
 </script>
