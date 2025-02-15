@@ -1,53 +1,39 @@
+<template>
+  <div :id="targetId"></div>
+</template>
+
 <script setup lang="ts">
+import { onMounted, computed } from 'vue'
 
-const props = defineProps<{ formId : string }>()
+const props = withDefaults(
+  defineProps<{
+    formId?: string,
+    target?: string,
+    region?: string
+  }>(),
+  {
+    target: "hubspot-form",
+    region: "na1"
+  }
+);
 
-const formContainer = ref<HTMLElement | null>(null)
-
-const loadHubSpotScript = (): Promise<void> => {
-    return new Promise((resolve, reject) => {
-        if (document.querySelector('script[src="//js.hsforms.net/forms/embed/v2.js"]')) {
-            resolve()
-            return
-        }
-        const script = document.createElement('script')
-        script.src = "//js.hsforms.net/forms/embed/v2.js"
-        script.type = "text/javascript"
-        script.charset = "utf-8"
-        script.onload = () => resolve()
-        script.onerror = () => reject(new Error("Failed to load HubSpot script"))
-        document.body.appendChild(script)
-    })
-}
-
-const renderForm = async () => {
-    if (!props.url || !formContainer.value) return
-
-    formContainer.value.innerHTML = ''
-
-    try {
-        await loadHubSpotScript()
-        // Use the HubSpot API to create the form.
-        // Here, the `url` prop is used as the formId.
-        window.hbspt.forms.create({
-            portalId: "21247113",
-            formId: props.formId,
-            target: formContainer.value
-        })
-    } catch (error) {
-        console.error("Error embedding the form:", error)
-    }
-}
-
-watch(
-    () => props.url,
-    (newUrl) => {
-        if (newUrl) renderForm()
-    },
-    { immediate: true }
-)
+const targetId = computed(() => props.target || "hubspot-form");
 
 onMounted(() => {
-    if (props.url) renderForm()
+  const script = document.createElement('script')
+  script.src = "//js.hsforms.net/forms/embed/v2.js"
+  script.type = "text/javascript"
+  script.charset = "utf-8"
+
+  script.onload = () => {
+    window.hbspt.forms.create({
+      region: props.region,
+      portalId: "21247113",
+      formId: props.formId,
+      target: "#" + targetId.value,
+    })
+  }
+
+  document.body.appendChild(script)
 })
 </script>
