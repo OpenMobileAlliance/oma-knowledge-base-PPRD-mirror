@@ -79,10 +79,11 @@ const iconColor = computed(() => {
             break;
     }
 });
+//, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 </script>
 
 <style>
 #alert {
-    font-family: "DM Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "DM Sans"
 }
 </style>
