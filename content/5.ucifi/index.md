@@ -19,7 +19,7 @@ ui:
 
 ## uCIFI and OMA: Advancing Open IoT Standards  
 
-uCIFI has joined **OMA SpecWorks** to strengthen **interoperability and standardization** for smart cities and utility IoT applications. This collaboration ensures **seamless device communication**, a **unified data model**, and enhanced cross-vendor compatibility.  
+uCIFI has joined **Open Mobile Alliance (OMA)** to strengthen **interoperability and standardization** for smart cities and utility IoT applications. This collaboration ensures **seamless device communication**, a **unified data model**, and enhanced cross-vendor compatibility.  
 
 Discover how **uCIFI within OMA** fosters **innovation, cross-industry synergy,** and the development of **scalable IoT solutions**. **Join us in shaping the future of open IoT standards!**  
 
@@ -38,7 +38,7 @@ cols: 3
         ---
         icon: mdi:video-outline
         title: Join Our Webinar # Second Row
-        subtitle: on February, 07:00 am PT, 19th, 2025
+        subtitle: on March 6th, 07:00 am PST
         urlWrapper: "#ask-me-anything-ama-webinar"
         ---
         ::::
@@ -87,7 +87,7 @@ A new **“Smart City”** Working Group will be specifically created within the
 
 ## Ask Me Anything (AMA) Webinar
 
-[**SCWG AMA webinar - 19th Feb at 07:00 am PT / 15:00 GMT, the SCWG will host an AMA webinar, that will:**]{.text-2xl}
+[**SCWG AMA webinar - March 6th at 07:00 am PT / 15:00 GMT, the SCWG will host an AMA webinar, that will:**]{.text-2xl}
 
 
 
@@ -114,7 +114,7 @@ formId: a18e913c-75d4-43cb-979e-16c7d575aaa4
 
 ## Smart City Working Group
 
-We’re excited to launch the **Smart City Working Group**, a major step toward advancing interoperability, innovation, and standardization in smart urban development. This new initiative within OMA is dedicated to shaping the future of connected cities by fostering seamless, efficient, and scalable solutions.
+We’re excited to launch the **Smart City Working Group (SCWG)**, a major step toward advancing interoperability, innovation, and standardization in smart urban development. This new initiative within Open Mobile Alliance (OMA) is dedicated to shaping the future of connected cities by fostering seamless, efficient, and scalable solutions.
 
 As part of its mission, the group will maintain and evolve the **uCIFI® data model** and trademark, reinforcing its role as a cornerstone for open, interoperable smart city applications.
 
