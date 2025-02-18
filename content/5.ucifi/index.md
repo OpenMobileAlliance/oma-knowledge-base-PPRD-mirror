@@ -138,5 +138,5 @@ size: xl
 colorButton: blue
 ---
 
-Become OMA member!  
+Become an OMA member!  
 ::
