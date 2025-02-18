@@ -13,7 +13,8 @@ on:
   # - main
 jobs:
   build:
-    if: ${{ github.repository == 'OpenMobileAlliance/oma-knowledge-base' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
+    # if: ${{ github.repository == 'OpenMobileAlliance/oma-knowledge-base' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
+    if: github.repository == 'OpenMobileAlliance/oma-knowledge-base'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

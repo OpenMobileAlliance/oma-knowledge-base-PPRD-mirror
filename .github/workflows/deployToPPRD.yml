@@ -13,7 +13,8 @@ on:
   # - PPRD-deployment
 jobs:
   build:
-    if: ${{ github.repository == 'OpenMobileAlliance/oma-knowledge-base-PPRD-mirror' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
+    # if: ${{ github.repository == 'OpenMobileAlliance/oma-knowledge-base-PPRD-mirror' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
+    if: github.repository == 'OpenMobileAlliance/oma-knowledge-base-PPRD-mirror'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
