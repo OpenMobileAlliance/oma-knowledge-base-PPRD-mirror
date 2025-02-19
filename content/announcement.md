@@ -1,5 +1,5 @@
 ---
-visible: false # When set to true, makes Announcement banner visible
+visible: true # When set to true, makes Announcement banner visible
 ---
 
 ::ShSegment
