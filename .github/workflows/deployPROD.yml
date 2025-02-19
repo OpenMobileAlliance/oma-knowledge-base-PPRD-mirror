@@ -1,12 +1,20 @@
 # https://github.com/actions/deploy-pages#usage
-name: Deploy to GitHub Pages
+name: Deploy to PROD GitHub Pages
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+  # This isn't needed
+  # pull_request:
+  # types:
+  # - closed
+  # branches:
+  # - main
 jobs:
   build:
+    # if: ${{ github.repository == 'OpenMobileAlliance/oma-knowledge-base' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
+    if: github.repository == 'OpenMobileAlliance/oma-knowledge-base'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,8 +35,8 @@ jobs:
     needs: build
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
     # Deploy to the github_pages environment
     environment:
       name: github-pages
@@ -39,4 +47,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
