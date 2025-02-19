@@ -172,6 +172,7 @@ h7 {
 .dark em,
 .dark ul,
 .dark ol,
+.dark ::marker,
 .dark td,
 .dark th {
   color: theme('colors.golden');
