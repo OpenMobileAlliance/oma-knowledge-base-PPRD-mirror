@@ -88,6 +88,7 @@ description: # Optional
             icon: text-white
     layout: flat
     icon: mdi:video-outline
+    #urlImage: /public/images/ucifi/uCIFI-Logo-web.png
     title: uCIFI - OMA
     subtitle: |
         Register for Webinar
