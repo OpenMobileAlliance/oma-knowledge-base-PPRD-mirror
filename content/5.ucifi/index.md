@@ -28,7 +28,7 @@ Discover how **uCIFI within OMA** fosters **innovation, cross-industry synergy,*
 
 ::ShMultiColumn
 ---
-cols: 3
+cols: 4
 ---
     :::ShColumn 
     --- 
@@ -72,6 +72,24 @@ cols: 3
         title: Sign Up for OMA Newsletter # Second Row
         subtitle: Former uCIFI Members
         urlWrapper: "/newsletter"
+        ---
+        ::::
+    :::
+    :::ShColumn 
+    --- 
+    ui: # 4 Column
+    ---
+        ::::ShMicroCard
+        ---
+        ui:
+            wrapper: bg-[#cddcec] bg-gradient-to-b from-primary/[0.6] dark:bg-gradient-to-t dark:from-primary dark:bg-primary-900
+            subtitle: dark:text-gray-300/[0.8]
+        layout: flat
+        urlImage: /images/ucifi/uCIFI-Logo-web.png
+        icon: 
+        title: 
+        subtitle: 
+        urlWrapper: 
         ---
         ::::
     :::
