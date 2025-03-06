@@ -37,8 +37,8 @@ cols: 4
         ::::ShMicroCard
         ---
         icon: mdi:video-outline
-        title: Join Our Webinar # Second Row
-        subtitle: on March 6th, 07:00 am PST
+        title: Obtain Webinar # Second Row
+        subtitle: Recording & Presentation
         urlWrapper: "#ask-me-anything-ama-webinar"
         ---
         ::::
@@ -105,7 +105,7 @@ A new **“Smart City”** Working Group will be specifically created within the
 
 ## Ask Me Anything (AMA) Webinar
 
-[**SCWG AMA webinar - March 6th at 07:00 am PT / 15:00 GMT, the SCWG will host an AMA webinar, that will:**]{.text-2xl}
+[**The SCWG AMA Webinar was delivered on March 6th:**]{.text-2xl}
 
 
 
@@ -118,11 +118,11 @@ size: L
 ![image](/images/landing-hero/inovation-idea.jpeg){.not-prose .rounded-lg}
 
 
-1. Provide an overview of the **uCIFI** initiative for individuals who may not be familiar with its objectives and activities.
-2. Outline the methods of participation in **uCIFI** for those who have previously engaged with the initiative.
-3. Conduct a question-and-answer session in an **Ask Me Anything** format, allowing attendees to pose queries.
+1. Provided an overview of the **uCIFI** initiative for individuals who may not be familiar with its objectives and activities.
+2. Outlined the methods of participation in **uCIFI** for those who have previously engaged with the initiative.
+3. Answered participants questions about **uCIFI** Data Model, and what is next for **Smart City Working Group** and the LwM2M protocol.
 ::
-### Register for AMA Webinar
+### Register to Obtain AMA Webinar Recording & Presentation
 ::ShForm
 ---
 formId: a18e913c-75d4-43cb-979e-16c7d575aaa4
