@@ -27,7 +27,7 @@ The uCIFI® data model vision will continue with certification programs under OM
 
 “By joining forces and leveraging the Lightweight M2M (LwM2M) technology into the connected lighting and smart cities markets, we will be able to reach a wider audience and facilitate the adoption of smart city technologies on a global scale. The OMA Board, represented by Matthew Gillmore (Itron) and Scott Migaldi (TMUS) are delighted to welcome our new colleagues from uCIFI®, and we look forward to the innovative ideas and fresh perspectives they will bring as we embark on this exciting journey together.“
 
-Read the press release <a href="https://www.einpresswire.com/shareable-preview/bDaRtTUI5OK5YYG1pF1NZw)" target="_blank">HERE</a>
+Read the press release <a href="https://www.einpresswire.com/shareable-preview/bDaRtTUI5OK5YYG1pF1NZw" target="_blank">HERE</a>
 
 ### About OMA
 OMA SpecWorks brings together leading industry players to create multi-vendor interoperability for Internet of Things (IoT) devices through the development and promotion of voluntary, consensus-based technical standards and specifications. As a non-profit entity with deep roots in mobile and IoT innovation, OMA SpecWorks has been instrumental in the development of key protocols, most notably Lightweight M2M (LwM2M). This protocol has become a cornerstone for IoT device management, enabling efficient and secure communication between devices across diverse wireless networks.
