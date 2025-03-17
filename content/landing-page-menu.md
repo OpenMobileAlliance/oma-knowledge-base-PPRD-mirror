@@ -91,7 +91,7 @@ description: # Optional
     #urlImage: /public/images/ucifi/uCIFI-Logo-web.png
     title: uCIFI - OMA
     subtitle: |
-        Register for Webinar Recording & Presentation
+        Download AMA Webinar Recording & Presentation
     urlWrapper: "/ucifi/"
     ---
     :::

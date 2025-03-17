@@ -37,7 +37,7 @@ cols: 4
         ::::ShMicroCard
         ---
         icon: mdi:video-outline
-        title: Obtain Webinar # Second Row
+        title: Download Webinar # Second Row
         subtitle: Recording & Presentation
         urlWrapper: "#ask-me-anything-ama-webinar"
         ---
@@ -122,7 +122,7 @@ size: L
 2. Outlined the methods of participation in **uCIFI** for those who have previously engaged with the initiative.
 3. Answered participants questions about **uCIFI** Data Model, and what is next for **Smart City Working Group** and the LwM2M protocol.
 ::
-### Register to Obtain AMA Webinar Recording & Presentation
+### Download AMA Webinar Recording & Presentation
 ::ShForm
 ---
 formId: a18e913c-75d4-43cb-979e-16c7d575aaa4
