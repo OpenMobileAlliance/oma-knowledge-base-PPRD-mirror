@@ -13,7 +13,7 @@ export default defineAppConfig({
   main: {
     font: {
       type: 'Arial',
-      size: '23px',
+      size: '20px',
     },
     h1: {
       font: {
@@ -64,21 +64,21 @@ export default defineAppConfig({
       logo: "i-fa6-brands-linkedin",
       url: "http://www.linkedin.com/company/52819?trk=tyah",
     },
-    facebook: {
-      title: "Facebook",
-      logo: "i-fa6-brands-square-facebook",
-      url: "https://www.facebook.com/OMASpecWorks",
-    },
+    // facebook: {
+    //   title: "Facebook",
+    //   logo: "i-fa6-brands-square-facebook",
+    //   url: "https://www.facebook.com/OMASpecWorks",
+    // },
     youtube: {
       title: "YouTube",
       logo: "i-fa6-brands-square-youtube",
       url: "https://www.youtube.com/c/OMASpecWorks",
     },
-    x: {
-      title: "X",
-      logo: "i-fa6-brands-square-x-twitter",
-      url: "https://twitter.com/OMASpecWorks",
-    },
+    // x: {
+    //   title: "X",
+    //   logo: "i-fa6-brands-square-x-twitter",
+    //   url: "https://twitter.com/OMASpecWorks",
+    // },
     github: {
       title: "GitHub",
       logo: "i-fa6-brands-square-github",
