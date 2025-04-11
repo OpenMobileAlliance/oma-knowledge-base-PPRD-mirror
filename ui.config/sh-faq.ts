@@ -10,7 +10,7 @@ export default {
   answer: "ml-1",
   a: "mx-6 font-light text-black dark:text-golden",
   divider: "border-b",
-  icon: "place-self-end self-center text-2xl text-black dark:text-golden i-icons8-chevron-right-round",
+  icon: "place-self-end self-center text-4xl text-black dark:text-golden",
   // Default Tailwind CSS values
   default: {
   }

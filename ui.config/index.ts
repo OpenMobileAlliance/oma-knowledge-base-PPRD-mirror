@@ -22,6 +22,7 @@ export { default as twoColumns } from "@/ui.config/sh-two-columns"
 export { default as multiColumn } from "@/ui.config/sh-multi-column"
 export { default as column } from "@/ui.config/sh-column"
 export { default as faq } from "@/ui.config/sh-faq"
+export { default as helperComponent } from "@/ui.config/sh-helper-component"
 export { default as imgContainer } from "@/ui.config/sh-img-container"
 export { default as listCards } from "@/ui.config/sh-list-cards"
 

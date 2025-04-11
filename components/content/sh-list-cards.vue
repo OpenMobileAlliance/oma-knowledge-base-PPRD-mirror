@@ -2,39 +2,67 @@
   <div :class="ui.wrapper">
     <div :class="ui.inner">
 
-      <h3 :class="ui.tags.title">Tags</h3>
-
-      <div class="block xl:flex justify-center">
-        <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)"
-          :class="[ui.tags.list, { 'bg-primary-300 border-primary-400 text-neutral-600 dark:bg-primary-700 dark:border-primary-600 dark:hover:shadow-primary/[0.1]': selectedTags.includes(tag) }]">
-          {{ tag }}
-          <UIcon v-if="selectedTags.includes(tag)" name="i-line-md:close-circle" dynamic
-            class="hover:text-gray-500 duration-100" />
-        </span>
+      <!-- Header Section -->
+      <div :class="ui.header">
+        <div :class="ui.title">
+          <MDC :value="title" />
+          <hr :class="ui.underline">
+        </div>
+        <div :class="ui.subtitle">
+          <MDC :value="subtitle" />
+        </div>
+        <div :class="ui.text">
+          <MDC :value="text" />
+        </div>
       </div>
+      <!-- /Header Section -->
 
-      <div class="flex justify-center mt-5">
-        <button v-if="selectedTags.length" @click="clearTags" :class="ui.tags.clear">
-          Clear All
-          <UIcon name="i-line-md:filter-remove-twotone" dynamic class="animate-pulse"></UIcon>
-        </button>
+      <!-- Tag Section -->
+      <div title="Filter cards by tags" :class="ui.tagSection" @click="isOpen = true">
+        <div v-if="tags" :class="ui.tags.title">{{ 'Tags' }}
+          <div v-if="selectedTags.length > 0">{{ ':' }}</div>
+          <div v-if="selectedTags.length > 0" class="">{{ selectedTags.length }}</div>
+          <UIcon name="system-uicons:tags" class="ml-3 text-3xl" />
+        </div>
+        <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-golden/[0.2] backdrop-blur-sm' } }">
+          <UCard class="flex flex-col flex-1"
+            :ui="{ background: 'dark:bg-neutral-900', body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
+            <template #header>
+              <div class="flex h-8 justify-between items-center">
+                <div class="dark:text-golden text-xl">{{ 'Tags for ' + tagsInscription }}</div>
+                <div class="flex items-center">
+                  <UIcon name="material-symbols-light:right-panel-close" dynamic @click="isOpen = false"
+                    class="text-4xl mb-2 text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
+                </div>
+              </div>
+            </template>
+            <div class="h-full">
+              <div class="block flex-col space-y-3">
+                <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)" :class="[ui.tags.list,
+                {
+                  [ui.tags.selected]: selectedTags.includes(tag)
+                }
+                ]">
+                  <span>{{ tag }}</span>
+                  <UIcon v-if="selectedTags.includes(tag)" name="i-line-md:close-circle" dynamic
+                    class="hover:text-gray-500 duration-100 text-xl ml-auto" />
+                </span>
+              </div>
+              <div class="flex justify-center mt-5 mb-5">
+                <button v-if="selectedTags.length" @click="clearTags" :class="ui.tags.clear">
+                  Clear All
+                  <UIcon name="i-line-md:filter-remove-twotone" dynamic class="ml-1 animate-pulse"></UIcon>
+                </button>
+              </div>
+            </div>
+            <template #footer>
+              <div class="flex h-8 justify-center text-golden">{{ 'TAGS' }}</div>
+            </template>
+          </UCard>
+        </USlideover>
       </div>
-
     </div>
-
-    <!-- Header Section -->
-    <div :class="ui.header">
-      <div :class="ui.title">
-        <MDC :value="title" />
-      </div>
-      <div :class="ui.subtitle">
-        <MDC :value="subtitle" />
-      </div>
-      <div :class="ui.text">
-        <MDC :value="text" />
-
-      </div>
-    </div>
+    <!-- /Tag Section -->
 
     <!-- Cards Section -->
     <div :class="[ui.base, ui.gap, gridClass]">
@@ -44,6 +72,7 @@
           :centerLabel="card.centerLabel" />
       </template>
     </div>
+    <!-- /Cards Section -->
   </div>
 </template>
 
@@ -80,6 +109,8 @@ const { ui, attrs } = useUI(
   toRef(props, "class")
 );
 
+const isOpen = ref(false)
+
 const windowWidth = ref(0);
 
 const handleResize = () => {
@@ -109,7 +140,12 @@ const gridClass = computed(() => {
   }
 });
 
-const route = useRoute()
+const route = useRoute();
+const tagsInscription = computed(() => {
+  const segments = route.path.toUpperCase().split('/').filter(Boolean);
+  return segments.pop() || 'Unknown'; // Fallback in case the path is empty
+});
+
 const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 
 const cards = ref<any[]>([]);
@@ -118,7 +154,7 @@ const selectedTags = ref<string[]>([]);
 
 // Fetch cards and sort by cardID prop order
 const getCards = async () => {
-  const result = await queryContent('news/articles')
+  const result = await queryContent('media/articles')
     .where({ cardID: { $in: props.cardID } })
     .find();
 

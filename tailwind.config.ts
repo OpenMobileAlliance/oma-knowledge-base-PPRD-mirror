@@ -8,6 +8,9 @@ export default <Partial<Config>>{
   ],
   theme: {
     extend: {
+      fontFamily: {
+        expressa: ['"Expressa"', 'sans-serif'],
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {

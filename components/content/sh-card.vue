@@ -1,7 +1,6 @@
 <template>
   <div :class="ui.wrapper">
-    <img v-if="props.coverImage && !coverText && !coverIcon" :src="props.coverImage"
-      :class="[ui.coverImage, coverEffectClass]" />
+    <img v-if="props.coverImage && !coverText && !coverIcon" :src="props.coverImage" :class="[ui.coverImage, coverEffectClass]" />
     <div v-if="props.coverIcon && !coverText && !coverImage" :class="[ui.coverIconWrapper, coverEffectClass]">
       <UIcon :name="props.coverIcon" :class="ui.coverIcon" dynamic />
     </div>
@@ -29,8 +28,8 @@
           <MDC :value="excerpt" excerpt class="dark:text-golden" />
         </ContentRenderer>
       </div>
-      <div v-if="page._path === '/news'">
-        <NuxtLink :to="article" target="_blank" class="">
+      <div v-if="page._path === '/media/blog' || 'media/news' || 'media/press' || 'media/newsletter'" >
+        <NuxtLink :to="article" target="_self" class="">
           Read more...
         </NuxtLink>
       </div>
@@ -91,7 +90,7 @@ const props = withDefaults(
     urlUpperBase: "",
     upperBaseText: "",
     urlImage: "",
-    target: "_blank",
+    target: "_self",
     altImage: "",
     title: "",
     subtitle: "",
