@@ -1,10 +1,10 @@
 export default {
   wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-5",
-  header: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
+  header: "rounded-lg font-semibold text-center bg-slate-200 dark:bg-neutral-600 dark:text-golden",
   base: "",
-  footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
+  footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-golden",
   search: "pb-4",
-  filter:  "",
+  filter: "",
   table: 'min-w-full divide-y divide-gray-300 dark:divide-gray-700',
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
   thead: "",
@@ -23,7 +23,7 @@ export default {
   td: {
     base: 'whitespace-nowrap text-pretty ',
     padding: 'px-4 py-4',
-    color: 'text-gray-500 dark:text-gray-400',
+    color: 'text-gray-500 dark:text-golden dark:brightness-[85%]',
     font: '',
     size: 'text-sm'
   },

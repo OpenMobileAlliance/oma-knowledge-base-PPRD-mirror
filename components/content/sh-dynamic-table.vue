@@ -6,7 +6,7 @@
     <div :class="ui.base">
       <div :class="ui.search">
         <div class="flex flex-row gap-2">
-          <div class="text-base flex flex-row">
+          <div class="text-base flex flex-row items-center">
             <span class="pr-2">Show: </span>
             <select class="" @change="onPerPageChange">
               <option v-for="item in PER_PAGE_LIST" :key="item" :value="item" :class="{ selected: perPage === item }">
@@ -17,7 +17,7 @@
           </div>
           <div class="pl-4">
             <button @click="downloadCSV" class="hover:scale-125" title="Download CSV file">
-              <Icon name="i-carbon-download" />
+              <UIcon name="i-carbon-download" />
             </button>
           </div>
           <div class="pl-8 grow">

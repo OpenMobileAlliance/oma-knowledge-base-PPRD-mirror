@@ -4,15 +4,16 @@
     <ShAnnouncement :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
-        <img v-if="computedLogoSrc && windowWidth > 640" src="/logo-dark.png" alt="Logo" />
-        <img v-if="!computedLogoSrc && windowWidth > 640" src="/logo-light.png" alt="Logo" />
-        <img v-if="windowWidth < 640" src="/logo.png" alt="Logo" class="h-16" />
+        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="logo-dark" class="shrink-0 grow-0 h-16" />
+        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="logo-light" class="shrink-0 grow-0 h-16" />
+        <!-- <img v-if="windowWidth < 640" src="/logo.png" alt="Logo" class="h-16" /> -->
       </template>
     </AppHeader>
     <div :class="route.path === '/' ? 'size-full' : 'w-full pb-24 px-4 sm:px-6 lg:px-8'">
       <NuxtPage />
     </div>
     <AppFooter v-if="route.path !== '/' && route" />
+    <UNotifications />
   </div>
 </template>
 
@@ -179,13 +180,15 @@ h7 {
 }
 
 .dark b {
-  color: theme('colors.golden');
-  filter: saturate(2.8) brightness(0.75);
+  color: theme('colors.golden'); /* Lighter golden shade for better contrast */
+  font-weight: 600; /* Slightly reduce boldness */
+  filter: saturate(2.5) brightness(0.85);
 }
 
 .dark strong {
-  color: theme('colors.golden');
-  filter: saturate(3) brightness(0.75);
+  color: theme('colors.golden'); /* Slightly brighter shade */
+  font-weight: 600; /* Adjust boldness */
+  filter: saturate(2.8) brightness(0.85);
 }
 
 .dark h1,

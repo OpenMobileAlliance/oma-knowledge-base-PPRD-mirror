@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button
+    <button title="Toggle color mode"
       class="pl-3 pr-3 transition-colors"
       @click="cycleTheme">
       <UIcon :name="iconForTheme" class="hover:text-primary-600 dark:hover:text-primary-400 text-2xl" dynamic />
@@ -13,7 +13,7 @@ const colorMode = useColorMode()
 
 const themes = ['system', 'light', 'dark'] // Removed sepia
 const themeIcons = {
-  system: 'i-grommet-icons:system',
+  system: 'mdi:theme-light-dark',
   light: 'i-heroicons-sun-20-solid',
   dark: 'i-heroicons-moon-20-solid',
 }

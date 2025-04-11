@@ -1,15 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/content",
-    "@nuxt/ui",
-    "@nuxtjs/google-fonts",
-    "nuxt-testimonial",
-    '@nuxtjs/color-mode',
-    '@zadigetvoltaire/nuxt-gtm',
-    "@nuxtjs/sitemap"
-  ],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap"],
+
+  routeRules: {
+    '/': { redirect: '/home' },
+    '/groups/resources': { redirect: '/specifications/resources' },
+    '/join/join-newsletter': { redirect: '/about/newsletter' },
+    '/join/subscribe-news' : { redirect: '/about/subscription' },
+    '/media/subscription' : { redirect: '/about/subscription' },
+    '/about/join-news' : { redirect: '/about/subscription' },
+  },
 
   site: {
     url: 'https://www.openmobilealliance.org/', 
@@ -17,7 +18,7 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'system'
+    preference: 'dark'
   },
   content: {
     highlight: {
@@ -69,7 +70,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/news', '/news/articles', '/guidelines'],
+      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/subscription'],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
