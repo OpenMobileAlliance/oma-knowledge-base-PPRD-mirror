@@ -37,6 +37,6 @@ The smart cities of tomorrow will rely on standards that enable seamless communi
 
 For municipalities looking to modernize their infrastructure, for utilities seeking greater efficiency, and for companies wanting to shape the future of smart city technology—now is the time to engage with OMA and be part of a movement that is defining the future of urban innovation. 
 
-For more information, download the [video](https://community.openmobilealliance.org/ama-webinar-omaucifi-lwm2m-smartcity) of our recent Smart City Webinar, see our website at [www.openmobilealliance.org](https://www.openmobilealliance.org/) or contact us at <helpdesk@omaorg.org>.
+For more information, download the [video](https://www.openmobilealliance.org/ucifi) of our recent Smart City Webinar, see our website at [www.openmobilealliance.org](https://www.openmobilealliance.org/) or contact us at <helpdesk@omaorg.org>.
 
 
