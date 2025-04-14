@@ -30,7 +30,7 @@ text: |
 [5](/media/articles/2021-03-02-ucifi){.hidden}
 [6](/media/articles/2021-05-19-enisa-lw2m2-wp){.hidden}
 [7](/media/articles/2021-07-8-enisa){.hidden}
-[8](/media/articles/2022-04-12-nusim_objects.md){.hidden}
+[8](/media/articles/2022-04-12-nusim_objects){.hidden}
 [9](/media/articles/2022-05-30-advance-firmware-update-lwm2m-object){.hidden}
 [10](/media/articles/2022-06-14-bootstrapping-cellular-networks){.hidden}
 [11](/media/articles/2022-12-09-release-v1_2_1){.hidden}
@@ -50,3 +50,6 @@ text: |
 [25](/media/articles/2024-12-9-press-release-ucifi-joins-oma){.hidden}
 [26](/media/articles/2025-02-24-blog-ama-webinar){.hidden}
 [27](/media/articles/2025-03-04-blog-lwm2m-unlocking-smartcity-interop){.hidden}
+[28](){.hidden}
+[29](){.hidden}
+[30](){.hidden}
