@@ -70,7 +70,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/subscription', '/media/articles/'],
+      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/subscription', '/media/articles/', '/media/articles/2022-04-12-nusim_objects', '/media/articles/2024-09-27-sve_42-blog-mqtt-vs-lwm2m'],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
