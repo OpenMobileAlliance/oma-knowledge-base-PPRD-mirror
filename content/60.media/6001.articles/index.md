@@ -23,5 +23,5 @@ text: |
 ---
 ::
 
-[AMA Webinar](/media/articles/2025-03-17-blog-post-ama-webinar)
-[UCIFI Joins OMA](/media/articles/2024-12-9-press-release-ucifi-joins-oma)
+[AMA Webinar](/media/articles/2025-03-17-blog-post-ama-webinar){.hidden}
+[UCIFI Joins OMA](/media/articles/2024-12-9-press-release-ucifi-joins-oma){.hidden}
