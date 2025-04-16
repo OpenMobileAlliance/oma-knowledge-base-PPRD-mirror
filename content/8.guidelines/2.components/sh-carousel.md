@@ -176,6 +176,19 @@ timer: 4
   company: NASA
   ---
   :::
+  :::ShMicroCard
+  ---
+  urlWrapper: https://www.nasa.gov/
+  target: _blank
+  icon: lineicons:nasa
+  title: |
+    NASA 
+  subtitle: |
+    Explore the Universe
+  text: |
+    NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
+  ---
+  :::  
 ::
 
 ::ShSegment
