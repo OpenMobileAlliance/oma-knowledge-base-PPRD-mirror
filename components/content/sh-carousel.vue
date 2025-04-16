@@ -1,6 +1,12 @@
 <template>
-  <div class="relative w-full">
-    <div class="overflow-hidden">
+  <div :class="ui.wrapper">
+    <div v-if="title">
+      <MDC :class="ui.title" :value="title" />
+    </div>
+    <div v-if="subtitle">
+      <MDC :class="ui.subtitle" :value="subtitle" />
+    </div>
+    <div :class="ui.inner">
       <div class="flex transition-transform duration-500 ease-in-out" :style="carouselStyle"
         :class="`w-[${slides.length * 100}%]`">
         <div v-for="(group, index) in slides" :key="index" class="w-full flex shrink-0 justify-center gap-4 px-4">
@@ -15,26 +21,42 @@
     </div>
 
     <!-- Navigation dots -->
-    <div class="absolute left-1/2 transform -translate-x-1/2 flex gap-2 mt-2" style="bottom: -1.5rem;">
+    <div :class="ui.navigation.wrapper">
       <button v-for="(_, index) in totalSlides" :key="index" @click="goToSlide(index)" :class="[
-        'w-3 h-3 rounded-full',
-        currentSlide === index ? 'bg-golden saturate-[300%]' : 'bg-gray-500'
+        ui.navigation.inner,
+        currentSlide === index ? ui.navigation.active : ui.navigation.inactive
       ]" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  slides: {
-    type: Number,
-    default: 1
-  },
-  timer: {
-    type: Number,
-    default: 2
+import { carousel as config } from "@/ui.config" // Import the config file
+
+const props = withDefaults(
+  defineProps<{
+    slides?: number
+    timer?: number
+    title?: string
+    subtitle?: string
+    description?: string
+    ui?: Partial<typeof config>;
+  }>(),
+  {
+    ui: () => ({}),
+    slides: 1, // Number of slides to show at once
+    timer: 2, // in seconds
+    title: '',
+    subtitle: '',
+    description: ''
   }
-})
+)
+
+const { ui } = useUI(
+  "sh-carousel",
+  toRef(props, "ui"),
+  config
+);
 
 const slots = useSlots()
 const isTransitioning = ref(true)
