@@ -8,7 +8,7 @@
             <div>
                 <MDC :class="ui.role" :value="role" />
             </div>
-            <div>
+            <div v-if="company">
                 <MDC :class="ui.company" :value="'@' + company"/>
             </div>
             <div :class="ui.socials">
