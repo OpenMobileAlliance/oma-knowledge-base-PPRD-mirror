@@ -13,127 +13,223 @@ This is the display format for the <b>{{ $doc.constructorName }}</b> constructor
 ##### Example Basic
 
 ::ShCarousel
----
-title: This is Carousel component, testing title
-subtitle: This is subtitle
-items:
-  - component: ShMicroCard
-    props:
-      urlImage: "https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png"
-      urlWrapper: "https://www.axios.com/"
-      title: "Microsoft sets non-profit to cut software related carbon emissions."
-      subtitle: "Axios gets you smarter, faster on what matters."
-      text: "This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*."
-  - component: ShMicroCard
-    props:
-      urlImage: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1920px-Coca-Cola_logo.svg.png
-      urlWrapper: https://www.coca-colacompany.com/
-      title: Can't Beat The Real Thing
-      subtitle: Slogan used in USA, UK, Ireland & Canada
-      text: This slogan Coca-Cola used in 1990s until 1993 when it got changed to Always Coca-Cola
-  - component: ShMicroCard
-    props:
-      urlImage: https://logowik.com/content/uploads/images/apple-black8038.jpg
-      ui.image: h-40 w-55
-      urlWrapper: https://www.apple.com/
-      title: Think Different
-      subtitle: Apple
-      text: Shows the brand that built over the years using innovation to create its impact on the users.
-  - component: ShMicroCard
-    props:
-      urlImage: https://i.pinimg.com/originals/cb/41/b0/cb41b0abf391e4fd2a8a2f8f91236928.png
-      ui.image: h-40 w-55
-      urlWrapper: https://rog.asus.com/
-      title: Republic of Gamers
-      subtitle: For Those Who Dare
-      text: ROG makes the best hardware for PC gaming, eSports, and overclocking. Our innovations deliver top performance and premium experiences for everyone.
----
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: lineicons:nasa
+  urlWrapper: https://www.nasa.gov/
+  title: |
+    NASA
+  subtitle: |
+    Beyond the Frontier 
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: gis:earth-euro-africa-o
+  urlWrapper: https://science.nasa.gov/earth/facts/
+  title: |
+    Earth 
+  subtitle: |
+    The Blue Marble
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: streamline-emojis:new-moon
+  urlWrapper: https://science.nasa.gov/moon/
+  title: |
+    The Moon  
+  subtitle: |
+    Earth's Companion
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: game-icons:mars-curiosity
+  urlWrapper: https://science.nasa.gov/mars/
+  title: |
+    Mars  
+  subtitle: |
+    Meet the neighbour
+  ---
+  :::
 ::
 
 This is how it is constructed
 
 ```mdc
 ::ShCarousel
----
-title: This is Carousel component, testing title
-subtitle: This is subtitle
-items:
-  - component: ShMicroCard
-    props:
-      urlImage: "https://assets-global.website-files.com/5e19ea5aa7d3a217492e372b/624de949df5a11680ab170b9_Axios%20logo%20-%20RGB%20-%20minimum%20space.png"
-      urlWrapper: "https://www.axios.com/"
-      title: "Microsoft sets non-profit to cut software related carbon emissions."
-      subtitle: "Axios gets you smarter, faster on what matters."
-      text: "This is a representation of [additional](https://www.nasa.gov/) field for text, if it is needed. It also has a *full Markdown capability*."
-  - component: ShMicroCard
-    props:
-      urlImage: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1920px-Coca-Cola_logo.svg.png
-      urlWrapper: https://www.coca-colacompany.com/
-      title: Can't Beat The Real Thing
-      subtitle: Slogan used in USA, UK, Ireland & Canada
-      text: This slogan Coca-Cola used in 1990s until 1993 when it got changed to Always Coca-Cola
-  - component: ShMicroCard
-    props:
-      urlImage: https://logowik.com/content/uploads/images/apple-black8038.jpg
-      ui.image: h-40 w-55
-      urlWrapper: https://www.apple.com/
-      title: Think Different
-      subtitle: Apple
-      text: Shows the brand that built over the years using innovation to create its impact on the users.
-  - component: ShMicroCard
-    props:
-      urlImage: https://i.pinimg.com/originals/cb/41/b0/cb41b0abf391e4fd2a8a2f8f91236928.png
-      ui.image: h-40 w-55
-      urlWrapper: https://rog.asus.com/
-      title: Republic of Gamers
-      subtitle: For Those Who Dare
-      text: ROG makes the best hardware for PC gaming, eSports, and overclocking. Our innovations deliver top performance and premium experiences for everyone.
----
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: lineicons:nasa
+  urlWrapper: https://www.nasa.gov/
+  title: |
+    NASA
+  subtitle: |
+    Beyond the Frontier 
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: gis:earth-euro-africa-o
+  urlWrapper: https://science.nasa.gov/earth/facts/
+  title: |
+    Earth 
+  subtitle: |
+    The Blue Marble
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: streamline-emojis:new-moon
+  urlWrapper: https://science.nasa.gov/moon/
+  title: |
+    The Moon  
+  subtitle: |
+    Earth's Companion
+  ---
+  :::
+
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: game-icons:mars-curiosity
+  urlWrapper: https://science.nasa.gov/mars/
+  title: |
+    Mars  
+  subtitle: |
+    Meet the neighbour
+  ---
+  :::
 ::
 ```
 
-You can add images to itas well:
+You can combine components inside the <b>{{ $doc.constructorName}}</b>:
 
-::ShCarousel
+::ShAlert
 ---
-ui:
-  title: text-left
-  subtitle: text-left -mb-8
-title: NASA Images
-subtitle: NASA has always told its story through its images, a few of which have become icons of human history.
-items:
-  - urlImage: https://images-assets.nasa.gov/image/iss071e403651/iss071e403651~medium.jpg
-  - urlImage: https://images-assets.nasa.gov/image/iss071e378497/iss071e378497~medium.jpg
-  - urlImage: https://images-assets.nasa.gov/image/iss071e365062/iss071e365062~medium.jpg
-  - urlImage: https://images-assets.nasa.gov/image/iss071e378611/iss071e378611~medium.jpg
+typeAlert: warning
 ---
+This is not recommended because different components can have different styles and it can be difficult to manage the layout and appearance of the carousel. It is better to use a single type of component for consistency and ease of use.
 ::
 
-Here is shown how to add images:
+::ShSegment
+---
+ui: 
+  wrapper: border border-golden rounded-lg
+---
+::ShCarousel
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: game-icons:lunar-module
+  urlWrapper: https://www.nasa.gov/mission/apollo-11/
+  title: Apollo 11
+  subtitle: First Moon Landing- Crew
+  ---
+  :::
+
+  :::ShAvatar
+  ---
+  srcAvatar: https://endz.in/wp-content/uploads/2020/05/neil-armstrong-9188943-2-402-1024x1024.jpg
+  altAvatar: Neil Armstrong
+  name: Neil A. Armstrong
+  role: Mission Commander
+  company: NASA
+  ---
+  :::
+
+  :::ShAvatar
+  ---
+  srcAvatar: https://www.mathrubhumi.com/image/contentid/policy:1.5627767:1644480627/image.jpg?$p=0f6e831&f=4x3&w=1080&q=0.8
+  altAvatar: Michael Collins
+  name: Michael Collins
+  role: Command Module Pilot
+  company: NASA
+  ---
+  :::
+
+  :::ShAvatar
+  ---
+  srcAvatar: https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MjAyOTYxMzkwMjM0MTgyNzI0/buzz-aldrin-astronaut-and-innovator.jpg
+  altAvatar: Buzz Aldrin
+  name: Edwin E. Aldrin Jr.
+  role: Pilot of the Lunar Lander Eagle
+  company: NASA
+  ---
+  :::
+::
+
+::ShSegment
+---
+ui:
+  wrapper: border border-golden rounded-lg mt-12 -mb-7
+---
+::
 
 ```mdc
 ::ShCarousel
----
-ui:
-  title: text-left
-  subtitle: text-left -mb-8
-title: NASA Images
-subtitle: NASA has always told its story through its images, a few of which have become icons of human history.
-items:
-  - urlImage: https://images-assets.nasa.gov/image/iss071e403651/iss071e403651~medium.jpg
-  - urlImage: https://images-assets.nasa.gov/image/iss071e378497/iss071e378497~medium.jpg
-  - urlImage: https://images-assets.nasa.gov/image/iss071e365062/iss071e365062~medium.jpg
-  - urlImage: https://images-assets.nasa.gov/image/iss071e378611/iss071e378611~medium.jpg
----
+  :::ShMicroCard
+  ---
+  layout: flat
+  icon: game-icons:lunar-module
+  urlWrapper: https://www.nasa.gov/mission/apollo-11/
+  title: Apollo 11
+  subtitle: First Moon Landing- Crew
+  ---
+  :::
+
+  :::ShAvatar
+  ---
+  srcAvatar: https://endz.in/wp-content/uploads/2020/05/neil-armstrong-9188943-2-402-1024x1024.jpg
+  altAvatar: Neil Armstrong
+  name: Neil A. Armstrong
+  role: Mission Commander
+  company: NASA
+  ---
+  :::
+
+  :::ShAvatar
+  ---
+  srcAvatar: https://www.mathrubhumi.com/image/contentid/policy:1.5627767:1644480627/image.jpg?$p=0f6e831&f=4x3&w=1080&q=0.8
+  altAvatar: Michael Collins
+  name: Michael Collins
+  role: Command Module Pilot
+  company: NASA
+  ---
+  :::
+
+  :::ShAvatar
+  ---
+  srcAvatar: https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MjAyOTYxMzkwMjM0MTgyNzI0/buzz-aldrin-astronaut-and-innovator.jpg
+  altAvatar: Buzz Aldrin
+  name: Edwin E. Aldrin Jr.
+  role: Pilot of the Lunar Lander Eagle
+  company: NASA
+  ---
+  :::
 ::
 ```
+::
 
 ### Props
 
 These are the properties and attributes associated with the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The <b>{{ $doc.constructorName }}</b> constructor represents a carousel component that supports rotating slides, navigation controls, and automatic slide transitions. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
+The <b>{{ $doc.constructorName }}</b> constructor represents a carousel component that supports rotating slides, navigation control, and automatic slide transitions. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
