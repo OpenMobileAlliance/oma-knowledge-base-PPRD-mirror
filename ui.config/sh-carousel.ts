@@ -1,12 +1,15 @@
 export default {
-    wrapper: "relative flex items-center w-full mt-10 overflow-hidden bg-gray-50 rounded-2xl border-2 border-oma-gray-50 shadow-2xl",
-    title: "title text-3xl font-bold text-center dark:text-gray-100 text-[#1F2329]",
-    subtitle: "subtitle text-2xl text-center dark:text-gray-300 -mt-5",
-    inner: "flex transition-transform duration-500 ease-in-out",
-    image: "w-full h-auto max-h-500 object-cover",
-    indicators: "mt-6 w-full text-center",
-    icon: "hover:scale-125 duration-300 dark:text-gray-300 dark:hover:text-gray-100",
-    // Default Tailwind CSS values
-    default: {
-    }
+  wrapper: "relative w-full",
+  title: "title text-center text-[24px] font-extrabold dark:saturate-[300%] break-words",
+  subtitle: "subtitle text-center text-[20px] font-bold dark:saturate-[180%] -mt-5 break-words",
+  inner: "overflow-hidden",
+  navigation: {
+    wrapper: "absolute left-1/2 transform -translate-x-1/2 flex gap-2 mt-2 bottom-[-1.5rem]",
+    inner: "w-3 h-3 rounded-full",
+    active: "bg-golden saturate-[300%]",
+    inactive: "bg-gray-500",
+  },
+  // Default Tailwind CSS values
+  default: {
   }
+}
