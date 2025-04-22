@@ -17,7 +17,7 @@ In IoT, an endpoint itself isn’t always reachable except through a gateway, wh
 
 You can download the PDF [here](https://www.openmobilealliance.org/documents/whitepapers/OMA-WP-e2e_Sec_IoT-20191024-A.pdf).
 
-[Contact us](https://omaspecworks.org/contact-us/) for more information.
+[Contact us](/about/contact) for more information.
 
 Let's keep in touch, [sign up here](https://account.openmobilealliance.org/AccountCreation/GetAccount.asp).
 
