@@ -20,7 +20,7 @@ Under the proposed uCIFI Schedule Control Program framework, once a field device
 
 * __Enhanced Responsiveness:__ Devices can react in real-time to local conditions, leading to more immediate and effective responses. For example, a sensor detecting a sudden downpour could trigger a nearby drainage system to increase its flow instantly.
 * __Reduced Latency:__ By eliminating the need for constant communication with central servers for every action, the framework can significantly reduce latency, leading to faster and more efficient operations.
-* __**Increased Reliability:**__ In situations where network connectivity might be intermittent or unreliable, devices configured with the Schedule Framework can continue to operate based on their pre-programmed instructions, ensuring a more resilient smart city infrastructure.
+* __Increased Reliability:__ In situations where network connectivity might be intermittent or unreliable, devices configured with the Schedule Framework can continue to operate based on their pre-programmed instructions, ensuring a more resilient smart city infrastructure.
 * __Scalability and Efficiency:__ Offloading decision-making to the edge devices can reduce the processing burden on central servers and network infrastructure, potentially leading to more scalable and cost-effective smart city deployments.
 
 Being based on LwM2M Data Model, it offers some remarkable benefits:
