@@ -10,6 +10,7 @@ cardID: 130
 tags: 
     - news
     - blogs
+    - ucifi
 ---
 _**Closer collaboration between Open Mobile Alliance and uCIFI accelerates Smart City interoperability with LightWeight M2M and uCIFI Data Model**_
 Late last year [we announced](https://www.openmobilealliance.org/news/articles/2024-12-9-press-release-ucifi-joins-oma){:target="_blank"} that uCIFI is joining the Open Mobile Alliance (OMA). Our collaborations to accelerate smart city technical specific development is progressing and we are inviting members of these communities and the industry at large to a special AMA event where we will share more about this work and invite questions. The event takes place Thursday, March 6, 2025 and represents the first time anyone can access the subject matter expertise across these communities live and in one place.
