@@ -439,6 +439,37 @@ slides: 2 #Show 2 slides at once
 ```
 ::
 
+
+::ShCarousel
+---
+timer: 3
+---
+  :::ShVideo
+  ---
+  src: https://www.youtube.com/watch?v=zKYNITx17Mw
+  ---
+  :::
+
+  :::ShVideo
+  ---
+  src: https://www.youtube.com/watch?v=icPHcK_cCF4
+  ---
+  :::
+
+  :::ShVideo
+  ---
+  src: https://www.youtube.com/watch?v=KEUUKA3fuaQ
+  ---
+  :::
+
+  :::ShVideo
+  ---
+  src: https://www.youtube.com/watch?v=TLwhqmf4Td4
+  ---
+  :::
+::
+
+
 ### Config
 These style properties can be modified via `ui` and are stored in the <code><b>{{ $doc.constructorName }}</b><b>.ts</b></code>:
 

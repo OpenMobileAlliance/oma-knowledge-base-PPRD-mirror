@@ -1,54 +1,86 @@
 <template>
-    <div :class="ui.wrapper">
-        <video v-if="!isYouTubeVideo" controls>
-            <source :src="videoSource" :type="videoType" />
-            Your browser does not support the video tag.
-        </video>
-        <iframe v-else :src="videoSource" frameborder="0" allowfullscreen width="100%" height="700"></iframe>
+    <div class="w-full h-full aspect-video">
+        <video v-if="!isYouTube" ref="videoEl" class="w-full h-full object-cover" :src="src" :poster="poster"
+            playsinline muted @ended="onNativeEnded" />
+
+        <iframe v-else ref="iframeEl" class="w-full h-full" :src="youTubeEmbedUrl" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen />
     </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps, ref, computed } from "vue";
-import { video as config } from '@/ui.config' // Importing the config file
 
-const props = withDefaults(
-    defineProps < {
-        description?: string;
-        src: String;
-        ui?: Partial < typeof config >;
-    } > (),
-    {
-        ui: () => ({}),
-        src: "",
-        description: "",
-    });
+const props = defineProps<{
+    src: string
+    poster?: string
+    shouldPlay?: boolean
+}>()
 
-const { ui } = useUI(
-    "sh-video",
-    toRef(props, "ui"),
-    config
-);
+const emit = defineEmits(['video-ended'])
 
-const isYouTubeVideo = computed(() => isYouTubeVideoCheck(props.src));
-const videoType = ref("");
-const videoSource = computed(() => {
-    if (isYouTubeVideo.value) {
-        videoType.value = "text/html";
-        return `https://www.youtube.com/embed/${getYouTubeVideoId(props.src)}`;
-    } else {
-        videoType.value = "video/mp4"; // Update with appropriate MIME type
-        return props.src;
+
+const videoEl = ref<HTMLVideoElement | null>(null)
+const iframeEl = ref<HTMLIFrameElement | null>(null)
+
+const isYouTube = computed(() =>
+    props.src.includes("youtube") || props.src.includes("youtu.be")
+)
+
+const youTubeEmbedUrl = computed(() => {
+    if (!isYouTube.value) return ""
+    const id = props.src.includes("youtube.com")
+        ? new URL(props.src).searchParams.get("v")
+        : props.src.split("/").pop()
+    // no autoplay flag here—control via postMessage
+    return `https://www.youtube.com/embed/${id}?enablejsapi=1&mute=1`
+})
+
+// native video end
+function onNativeEnded() {
+    emit("video-ended")
+}
+
+// watch shouldPlay to play/pause
+watch(
+    () => props.shouldPlay,
+    (play) => {
+        if (!isYouTube.value && videoEl.value) {
+            play ? videoEl.value.play().catch(() => { }) : videoEl.value.pause()
+        }
+        if (isYouTube.value && iframeEl.value?.contentWindow) {
+            iframeEl.value.contentWindow.postMessage(
+                JSON.stringify({
+                    event: "command",
+                    func: play ? "playVideo" : "pauseVideo",
+                    args: [],
+                }),
+                "*"
+            )
+        }
     }
-});
+)
 
-const isYouTubeVideoCheck = (url) => {
-    return url.includes("youtube.com") || url.includes("youtu.be");
-};
+// listen for YT stateChange → ended
+function onMessage(event: MessageEvent) {
+    // YouTube posts plain strings with event/info
+    const data = typeof event.data === "string" ? event.data : JSON.stringify(event.data)
+    if (
+        data.includes('"event":"onStateChange"') &&
+        data.includes('"info":0')
+    ) {
+        emit("video-ended")
+    }
+}
 
-const getYouTubeVideoId = (url) => {
-    const youtubeRegex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
-    const match = url.match(youtubeRegex);
-    return match ? match[1] : null;
-};
+onMounted(() => {
+    if (isYouTube.value) {
+        window.addEventListener("message", onMessage)
+    }
+})
+
+onBeforeUnmount(() => {
+    if (isYouTube.value) {
+        window.removeEventListener("message", onMessage)
+    }
+})
 </script>

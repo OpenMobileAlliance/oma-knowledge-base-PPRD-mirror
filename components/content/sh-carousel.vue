@@ -6,32 +6,43 @@
     <div v-if="subtitle">
       <MDC :class="ui.subtitle" :value="subtitle" />
     </div>
-    <div :class="ui.inner">
-      <div class="flex transition-transform duration-500 ease-in-out" :style="carouselStyle"
-        :class="`w-[${slides.length * 100}%]`">
-        <div v-for="(group, index) in slides" :key="index" class="w-full flex shrink-0 justify-center gap-4 px-4">
-          <div v-for="(child, idx) in group" :key="idx" class="w-full" :class="{
-            'max-w-md': slidesPerView === 1,
-            'max-w-sm': slidesPerView > 1
-          }">
-            <component :is="child" />
-          </div>
+
+    <div class="relative overflow-hidden">
+      <div class="flex transition-transform duration-500 ease-in-out" :style="carouselStyle">
+        <div v-for="(group, slideIndex) in slides" :key="slideIndex"
+          class="flex-shrink-0 w-full flex justify-center gap-4 px-4">
+          <component v-for="(child, idx) in group" :key="idx" :is="child.type" v-bind="child.props"
+            :shouldPlay="isVideo(child) && slideIndex === currentSlide" @video-ended="handleVideoEnded" class="w-full"
+            :class="{
+              'max-w-md': slidesPerView === 1,
+              'max-w-sm': slidesPerView > 1
+            }" />
         </div>
       </div>
     </div>
 
-    <!-- Navigation dots -->
+    <!-- dots -->
     <div :class="ui.navigation.wrapper">
-      <button v-for="(_, index) in totalSlides" :key="index" @click="goToSlide(index)" :class="[
+      <button v-for="(_, idx) in totalSlides" :key="idx" @click="goToSlide(idx)" :class="[
         ui.navigation.inner,
-        currentSlide === index ? ui.navigation.active : ui.navigation.inactive
+        currentSlide === idx
+          ? ui.navigation.active
+          : ui.navigation.inactive
       ]" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { carousel as config } from "@/ui.config" // Import the config file
+import { carousel as config } from "@/ui.config"
+import {
+  ref,
+  computed,
+  toRef,
+  onMounted,
+  onBeforeUnmount,
+  useSlots,
+} from "vue"
 
 const props = withDefaults(
   defineProps<{
@@ -39,77 +50,68 @@ const props = withDefaults(
     timer?: number
     title?: string
     subtitle?: string
-    description?: string
-    ui?: Partial<typeof config>;
+    ui?: Partial<typeof config>
   }>(),
   {
     ui: () => ({}),
-    slides: 1, // Number of slides to show at once
-    timer: 2, // in seconds
-    title: '',
-    subtitle: '',
-    description: ''
+    slides: 1,
+    timer: 0,
+    title: "",
+    subtitle: "",
   }
 )
 
-const { ui } = useUI(
-  "sh-carousel",
-  toRef(props, "ui"),
-  config
-);
-
+const { ui } = useUI("sh-carousel", toRef(props, "ui"), config)
 const slots = useSlots()
-const isTransitioning = ref(true)
+
 const currentSlide = ref(0)
-let interval: NodeJS.Timeout | undefined
+let interval: NodeJS.Timeout | undefined = undefined
 
+// grab raw VNodes + props
 const allChildren = computed(() => slots.default?.() ?? [])
-const slidesPerView = computed(() => props.slides)
-const totalSlides = computed(() =>
-  slidesPerView.value > 0 ? Math.ceil(allChildren.value.length / slidesPerView.value) : 1
-)
-
-// Group the slides into chunks
+const slidesPerView = computed(() => props.slides!)
 const slides = computed(() => {
-  const chunked = []
+  const arr = []
   for (let i = 0; i < allChildren.value.length; i += slidesPerView.value) {
-    chunked.push(allChildren.value.slice(i, i + slidesPerView.value))
+    arr.push(allChildren.value.slice(i, i + slidesPerView.value))
   }
-  return chunked
+  return arr
 })
+const totalSlides = computed(() => slides.value.length)
 
-function goToSlide(index: number) {
-  isTransitioning.value = true
-  currentSlide.value = index
+// compute transform
+const carouselStyle = computed(() => ({
+  transform: `translateX(-${currentSlide.value * 100}%)`,
+  transition: "transform 0.5s ease-in-out",
+}))
+
+function isVideo(child: any) {
+  return (
+    child.type?.name === "ShVideo" ||
+    child.props?.src?.includes("youtube")
+  )
 }
 
-// Automatic slide transition: only create an interval if timer > 0
+function handleVideoEnded() {
+  // move to next, loop at end
+  const next = currentSlide.value + 1
+  currentSlide.value = next < totalSlides.value ? next : 0
+}
+
+function goToSlide(idx: number) {
+  currentSlide.value = idx
+}
+
+// optional timer fallback if no videos
 onMounted(() => {
-  if (props.timer > 0) {
+  const hasVideo = allChildren.value.some(isVideo)
+  if (props.timer! > 0 && !hasVideo) {
     interval = setInterval(() => {
-      if (currentSlide.value < totalSlides.value - 1) {
-        // Regular transition
-        isTransitioning.value = true
-        currentSlide.value++
-      } else {
-        // Smooth transition to the first slide after reaching the end
-        isTransitioning.value = true
-        currentSlide.value++
-        setTimeout(() => {
-          isTransitioning.value = false
-          currentSlide.value = 0 // Go back to the first slide
-        }, 500) // Match the transition duration
-      }
-    }, props.timer * 1000) // Multiply seconds by 1000 to convert to milliseconds
+      handleVideoEnded()
+    }, props.timer! * 1000)
   }
 })
-
 onBeforeUnmount(() => {
   if (interval) clearInterval(interval)
 })
-
-const carouselStyle = computed(() => ({
-  transform: `translateX(-${currentSlide.value * 100}%)`,
-  transition: isTransitioning.value ? 'transform 0.5s ease-in-out' : 'none'
-}))
 </script>
