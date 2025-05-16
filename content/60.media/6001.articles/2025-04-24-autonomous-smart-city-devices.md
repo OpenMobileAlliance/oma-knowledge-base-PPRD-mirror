@@ -38,7 +38,12 @@ While the specifics of the framework's architecture, implementation details, and
 
 The upcoming release of the *uCIFI Schedule Framework is a development worth watching closely for anyone involved in the smart city space. It represents a significant step towards building more autonomous, efficient, and resilient urban infrastructures that can adapt dynamically to the needs of their citizens. We eagerly await further details on how this framework will empower the next generation of smart city devices.
 
-<Call to Action>
+**Here's how you can get involved:**
+* **Learn More:** Dive deeper into uCIFI and its applications in smart cities. https://www.openmobilealliance.org/solutions/smart_cities
+* **Join the Open Mobile Alliance:** Become a member and collaborate directly on this and other vital initiatives. https://www.openmobilealliance.org/join
+* **Reach Out:** Have questions or want to discuss how you can contribute? Contact us today. https://www.openmobilealliance.org/about/contact
+
+The development of truly smart cities requires collaboration and a shared vision. Join us in building the future, one connection at a time. Your involvement will directly contribute to the realization of more sustainable, efficient, and livable urban environments powered by uCIFI. Don't wait – get involved today!
 
 
 <ShAlert>
