@@ -278,5 +278,9 @@
     {
         "ObjectIDRange": "36000 - 36049", 
         "CompanyName": "IOX GmbH"
+    },
+    {
+        "ObjectIDRange": "36050 - 36099", 
+        "CompanyName": "Orange"
     }
 ]
