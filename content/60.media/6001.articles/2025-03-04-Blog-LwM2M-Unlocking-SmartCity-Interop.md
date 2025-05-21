@@ -10,6 +10,7 @@ cardID: 135
 tags: 
     - news
     - blogs
+    - ucifi
 ---
 Join the _Open Mobile Alliance_ and _uCIFI_ **this Thursday** to learn how to benefit from and influence the direction of this critical open standard.
 
