@@ -10,6 +10,7 @@ cardID: 140
 tags: 
     - news
     - blogs
+    - ucifi
 ---
 In the rapidly evolving landscape of municipal and utility infrastructure, one challenge remains persistent—interoperability. Cities and utilities are investing in long-term infrastructure upgrades to manage resources efficiently, enhance public services, and future-proof their investments. The recent merger of uCIFI with the Open Mobile Alliance (OMA) is a massive step forward in this space, bringing together key stakeholders to establish open standards that foster a multi-vendor ecosystem.
 <!--more-->
