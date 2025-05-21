@@ -20,7 +20,7 @@ Under the proposed uCIFI Schedule Control Program framework, once a field device
 
 * __Enhanced Responsiveness:__ Devices can react in real-time to local conditions, leading to more immediate and effective responses. For example, a sensor detecting a sudden downpour could trigger a nearby drainage system to increase its flow instantly.
 * __Reduced Latency:__ By eliminating the need for constant communication with central servers for every action, the framework can significantly reduce latency, leading to faster and more efficient operations.
-* __**Increased Reliability:**__ In situations where network connectivity might be intermittent or unreliable, devices configured with the Schedule Framework can continue to operate based on their pre-programmed instructions, ensuring a more resilient smart city infrastructure.
+* __Increased Reliability:__ In situations where network connectivity might be intermittent or unreliable, devices configured with the Schedule Framework can continue to operate based on their pre-programmed instructions, ensuring a more resilient smart city infrastructure.
 * __Scalability and Efficiency:__ Offloading decision-making to the edge devices can reduce the processing burden on central servers and network infrastructure, potentially leading to more scalable and cost-effective smart city deployments.
 
 Being based on LwM2M Data Model, it offers some remarkable benefits:
@@ -38,7 +38,12 @@ While the specifics of the framework's architecture, implementation details, and
 
 The upcoming release of the *uCIFI Schedule Framework is a development worth watching closely for anyone involved in the smart city space. It represents a significant step towards building more autonomous, efficient, and resilient urban infrastructures that can adapt dynamically to the needs of their citizens. We eagerly await further details on how this framework will empower the next generation of smart city devices.
 
-<Call to Action>
+**Here's how you can get involved:**
+* **Learn More:** Dive deeper into uCIFI and its applications in [smart cities](/solutions/smart_cities).
+* **Join the Open Mobile Alliance:** Become a member and collaborate directly on this and other vital initiatives. See how to [join](/join).
+* **Reach Out:** Have questions or want to discuss how you can contribute? [Contact us](/about/contact) today.
+
+The development of truly smart cities requires collaboration and a shared vision. Join us in building the future, one connection at a time. Your involvement will directly contribute to the realization of more sustainable, efficient, and livable urban environments powered by uCIFI. Don't wait – get involved today!
 
 
 <ShAlert>
