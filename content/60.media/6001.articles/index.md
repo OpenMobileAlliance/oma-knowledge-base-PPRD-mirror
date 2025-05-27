@@ -50,6 +50,6 @@ text: |
 [25](/media/articles/2024-12-9-press-release-ucifi-joins-oma){.hidden}
 [26](/media/articles/2025-02-24-blog-ama-webinar){.hidden}
 [27](/media/articles/2025-03-04-blog-lwm2m-unlocking-smartcity-interop){.hidden}
-[28](/media/articles/2025-04-24-autonomous-smart-city-devices){.hidden}
+[28](/media/articles/2025-05-24-autonomous-smart-city-devices){.hidden}
 [29](){.hidden}
 [30](){.hidden}
