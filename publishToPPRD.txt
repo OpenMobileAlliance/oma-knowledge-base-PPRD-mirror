@@ -12,6 +12,7 @@ Make Your Changes
 ^^^^^^^^^^^^^^^^^
 
 In the original oma-knowledge-base folder where you have been working normally, make any changes that you want to make
+
 You can either Merge or recreate the PPRD-deployment Branch:
 
 Merge:
@@ -23,7 +24,6 @@ git push origin --delete PPRD-deployment
 git branch -D PPRD-deployment
 git checkout -b PPRD-deployment
 git push --set-upstream origin PPRD-deployment
-
 
 
 Publication
