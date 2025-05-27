@@ -4,7 +4,7 @@ urlImage: /images/news/smart-city-devices.png
 imageBackground: ""
 title:  "Ushering in an Era of Autonomous Smart City Devices: The uCIFI Schedule Framework"
 subtitle: 
-leftLabel: 2025-Apr-24
+leftLabel: 2025-May-24
 rightLabel: OMA
 cardID: 145
 tags: 
