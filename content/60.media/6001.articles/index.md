@@ -53,4 +53,3 @@ text: |
 [28](/media/articles/2025-05-24-autonomous-smart-city-devices){.hidden}
 [29](){.hidden}
 [30](){.hidden}
-
