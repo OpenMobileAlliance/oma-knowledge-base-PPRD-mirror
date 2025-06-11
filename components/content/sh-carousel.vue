@@ -9,10 +9,10 @@
 
     <div class="relative overflow-hidden">
       <div class="flex transition-transform duration-500 ease-in-out" :style="carouselStyle">
-        <div v-for="(group, slideIndex) in slides" :key="slideIndex"
+        <div v-for="(group, slideIndex) in slidesWithClone" :key="slideIndex"
           class="flex-shrink-0 w-full flex justify-center gap-4 px-4">
           <component v-for="(child, idx) in group" :key="idx" :is="child.type" v-bind="child.props"
-            :shouldPlay="isVideo(child) && slideIndex === currentSlide" @video-ended="handleVideoEnded" class="w-full"
+            class="w-full"
             :class="{
               'max-w-md': slidesPerView === 1,
               'max-w-sm': slidesPerView > 1
@@ -79,35 +79,50 @@ const slides = computed(() => {
 })
 const totalSlides = computed(() => slides.value.length)
 
-// compute transform
-const carouselStyle = computed(() => ({
-  transform: `translateX(-${currentSlide.value * 100}%)`,
-  transition: "transform 0.5s ease-in-out",
-}))
+// In template, clone the first slide at the end for seamless loop
+const slidesWithClone = computed(() => {
+  // Only clone the first group at the end for seamless loop
+  return [...slides.value, slides.value[0]]
+})
 
-function isVideo(child: any) {
-  return (
-    child.type?.name === "ShVideo" ||
-    child.props?.src?.includes("youtube")
-  )
-}
+const carouselStyle = computed(() => {
+  // Always use transition except for instant jump
+  let slide = currentSlide.value
+  let transition = transitioning.value ? "transform 0.5s ease-in-out" : "none"
+  return {
+    transform: `translateX(-${slide * 100}%)`,
+    transition,
+  }
+})
 
-function handleVideoEnded() {
-  // move to next, loop at end
-  const next = currentSlide.value + 1
-  currentSlide.value = next < totalSlides.value ? next : 0
+const transitioning = ref(true)
+
+function handleTimeout() {
+  // If at last real slide, animate to clone (last+1)
+  if (currentSlide.value === totalSlides.value - 1) {
+    transitioning.value = true
+    currentSlide.value++
+    // After transition, jump instantly (no transition) to real first slide
+    setTimeout(() => {
+      transitioning.value = false
+      currentSlide.value = 0
+    }, 500) // match transition duration
+  } else {
+    transitioning.value = true
+    currentSlide.value++
+  }
 }
 
 function goToSlide(idx: number) {
+  transitioning.value = true
   currentSlide.value = idx
 }
 
-// optional timer fallback if no videos
+// always use timer if set
 onMounted(() => {
-  const hasVideo = allChildren.value.some(isVideo)
-  if (props.timer! > 0 && !hasVideo) {
+  if (props.timer! > 0) {
     interval = setInterval(() => {
-      handleVideoEnded()
+      handleTimeout()
     }, props.timer! * 1000)
   }
 })
