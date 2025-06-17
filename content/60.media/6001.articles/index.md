@@ -51,7 +51,7 @@ text: |
 [26](/media/articles/2025-02-24-blog-ama-webinar){.hidden}
 [27](/media/articles/2025-03-04-blog-lwm2m-unlocking-smartcity-interop){.hidden}
 [28](/media/articles/2025-05-24-autonomous-smart-city-devices){.hidden}
-[29](/media/articles/2025-06-17-GE-Particiption-Program){.hidden}
+[29](/media/articles/2025-06-17-ge-particiption-program){.hidden}
 [30](){.hidden}
 [31](){.hidden}
 [32](){.hidden}
