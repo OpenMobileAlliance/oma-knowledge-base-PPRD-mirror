@@ -1,6 +1,6 @@
 ---
 layout: articles
-urlImage: /images/oma-specworks-logo.jpg
+urlImage: /images/news/ge-program-announce.jpg
 imageBackground: ""
 title:  "Announcement of the Government and Educational Participation Program"
 subtitle: 
