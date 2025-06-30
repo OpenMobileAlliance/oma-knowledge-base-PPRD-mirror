@@ -25,7 +25,9 @@ Setup
 On your local computer, open terminal and go to the folder where you want to manage the folder for this new mirrored repository. Then run the following commands:
 
 `git clone --mirror https://github.com/OpenMobileAlliance/oma-knowledge-base.git oma-knowledge-base-PPRD-mirror`
+
 `cd oma-knowledge-base-PPRD-mirror`
+
 `git remote set-url --push origin https://github.com/OpenMobileAlliance/oma-knowledge-base-PPRD-mirror.git`
 
 
