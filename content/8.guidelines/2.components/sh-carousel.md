@@ -442,6 +442,8 @@ slides: 2 #Show 2 slides at once
 
 ::ShCarousel
 ---
+ui:
+  wrapper: mt-32 mb-32
 timer: 3
 ---
   :::ShVideo
@@ -457,7 +459,7 @@ timer: 3
   :::
 
   :::ShVideo
-  ---
+  --- 
   src: https://www.youtube.com/watch?v=KEUUKA3fuaQ
   ---
   :::
