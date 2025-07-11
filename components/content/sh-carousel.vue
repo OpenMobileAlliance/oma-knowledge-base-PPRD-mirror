@@ -11,12 +11,14 @@
       <div class="flex transition-transform duration-500 ease-in-out" :style="carouselStyle">
         <div v-for="(group, slideIndex) in slidesWithClone" :key="slideIndex"
           class="flex-shrink-0 w-full flex justify-center gap-4 px-4">
-          <component v-for="(child, idx) in group" :key="idx" :is="child.type" v-bind="child.props"
-            class="w-full"
+          <component v-for="(child, idx) in group" :key="idx" :is="child.type" v-bind="child.props" class="w-full"
             :class="{
               'max-w-md': slidesPerView === 1,
               'max-w-sm': slidesPerView > 1
-            }" />
+            }"
+            @videoPlayed="handleVideoPlayed"
+            @videoEnded="handleVideoEnded"
+          />
         </div>
       </div>
     </div>
@@ -35,14 +37,6 @@
 
 <script setup lang="ts">
 import { carousel as config } from "@/ui.config"
-import {
-  ref,
-  computed,
-  toRef,
-  onMounted,
-  onBeforeUnmount,
-  useSlots,
-} from "vue"
 
 const props = withDefaults(
   defineProps<{
@@ -116,6 +110,28 @@ function handleTimeout() {
 function goToSlide(idx: number) {
   transitioning.value = true
   currentSlide.value = idx
+}
+
+const handleVideoInteraction = () => {
+  if (interval) {
+    clearInterval(interval)
+    interval = undefined
+  }
+}
+
+const handleVideoPlayed = () => {
+  if (interval) {
+    clearInterval(interval)
+    interval = undefined
+  }
+}
+
+const handleVideoEnded = () => {
+  if (!interval && props.timer! > 0) {
+    interval = setInterval(() => {
+      handleTimeout()
+    }, props.timer! * 1000)
+  }
 }
 
 // always use timer if set

@@ -1,22 +1,34 @@
 <template>
-    <div class="w-full h-full aspect-video">
-        <video v-if="!isYouTube" ref="videoEl" class="w-full h-full object-cover" :src="src" :poster="poster"
-            playsinline muted @ended="onNativeEnded" />
+    <div :class="ui.wrapper">
+        <div v-if="isYouTube" class="flex justify-center">
+            <iframe ref="iframeEl" class="rounded-lg" :src="youTubeEmbedUrl" width="560" height="315" frameborder="0"
+                allow="encrypted-media" allowfullscreen @load="setupYouTubeListener"></iframe>
+        </div>
 
-        <iframe v-else ref="iframeEl" class="w-full h-full" :src="youTubeEmbedUrl" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen />
+        <video v-else ref="videoEl" class="w-full h-auto object-cover rounded-lg" :src="src" :poster="poster"
+            playsinline muted @play="emitVideoPlayed" @click="playVideoOnClick" @ended="emitVideoEnded"></video>
     </div>
 </template>
 
 <script setup lang="ts">
+import { video as config } from "@/ui.config"
 
-const props = defineProps<{
-    src: string
-    poster?: string
-    shouldPlay?: boolean
-}>()
+const props = withDefaults(
+    defineProps<{
+        description?: string
+        src: string
+        poster?: string
+        ui?: Partial<typeof config>
+    }>(),
+    {
+        ui: () => ({}),
+        src: "",
+        poster: "",
+        description: "",
+    }
+)
 
-const emit = defineEmits(['video-ended'])
+const { ui } = useUI("sh-video", toRef(props, "ui"), config)
 
 
 const videoEl = ref<HTMLVideoElement | null>(null)
@@ -35,52 +47,51 @@ const youTubeEmbedUrl = computed(() => {
     return `https://www.youtube.com/embed/${id}?enablejsapi=1&mute=1`
 })
 
-// native video end
-function onNativeEnded() {
-    emit("video-ended")
+function emitVideoEnded() {
+    emit("videoEnded")
 }
 
-// watch shouldPlay to play/pause
-watch(
-    () => props.shouldPlay,
-    (play) => {
-        if (!isYouTube.value && videoEl.value) {
-            play ? videoEl.value.play().catch(() => { }) : videoEl.value.pause()
-        }
-        if (isYouTube.value && iframeEl.value?.contentWindow) {
-            iframeEl.value.contentWindow.postMessage(
-                JSON.stringify({
-                    event: "command",
-                    func: play ? "playVideo" : "pauseVideo",
-                    args: [],
-                }),
-                "*"
-            )
-        }
-    }
-)
+const emit = defineEmits(["videoPlayed", "videoEnded"])
 
-// listen for YT stateChange → ended
-function onMessage(event: MessageEvent) {
-    // YouTube posts plain strings with event/info
-    const data = typeof event.data === "string" ? event.data : JSON.stringify(event.data)
-    if (
-        data.includes('"event":"onStateChange"') &&
-        data.includes('"info":0')
-    ) {
-        emit("video-ended")
+function emitVideoPlayed() {
+    emit("videoPlayed")
+}
+
+function playVideoOnClick() {
+    if (videoEl.value && videoEl.value.paused) {
+        videoEl.value.play()
     }
+    emitVideoPlayed()
+}
+
+function setupYouTubeListener() {
+    if (!iframeEl.value) return
+    window.addEventListener("message", handleYouTubeMessage)
+}
+
+function handleYouTubeMessage(event: MessageEvent) {
+    if (!iframeEl.value) return
+    if (event.source !== iframeEl.value.contentWindow) return
+    try {
+        const data = typeof event.data === "string" ? JSON.parse(event.data) : event.data
+        if (data?.event === "onStateChange") {
+            if (data?.info === 1) { // 1 = playing
+                emitVideoPlayed()
+            } else if (data?.info === 0) { // 0 = ended
+                emitVideoEnded()
+            }
+        }
+    } catch (e) { }
 }
 
 onMounted(() => {
-    if (isYouTube.value) {
-        window.addEventListener("message", onMessage)
+    // If YouTube, inject API enablement
+    if (isYouTube.value && iframeEl.value) {
+        // Post message to enable API (should already be enabled by embed URL)
     }
 })
 
 onBeforeUnmount(() => {
-    if (isYouTube.value) {
-        window.removeEventListener("message", onMessage)
-    }
+    window.removeEventListener("message", handleYouTubeMessage)
 })
 </script>

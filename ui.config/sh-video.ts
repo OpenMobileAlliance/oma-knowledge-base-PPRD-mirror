@@ -1,6 +1,6 @@
 export default {
-    wrapper: "",
-    // Default Tailwind CSS values
-    default: {
-    }
+  wrapper: "w-full aspect-video",
+  // Default Tailwind CSS values
+  default: {
   }
+}

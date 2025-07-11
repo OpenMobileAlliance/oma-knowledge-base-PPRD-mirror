@@ -1,5 +1,5 @@
 export default {
-  wrapper: "relative w-full mt-6",
+  wrapper: "relative dark:bg-neutral-800/[0.5] rounded-lg w-full mt-6",
   title: "title text-center text-[24px] font-extrabold dark:saturate-[300%] break-words",
   subtitle: "subtitle text-center text-[20px] font-bold dark:saturate-[180%] -mt-5 break-words",
   inner: "overflow-hidden",
