@@ -52,6 +52,7 @@ text: |
 [27](/media/articles/2025-03-04-blog-lwm2m-unlocking-smartcity-interop){.hidden}
 [28](/media/articles/2025-05-24-autonomous-smart-city-devices){.hidden}
 [29](/media/articles/2025-06-17-ge-participation-program){.hidden}
-[30](){.hidden}
+[30](/media/articles/2025-07-15-blog-building-iiot-ecosystem){.hidden}
 [31](){.hidden}
 [32](){.hidden}
+[33](){.hidden}
