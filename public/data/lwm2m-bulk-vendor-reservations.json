@@ -290,5 +290,9 @@
     {
         "ObjectIDRange": "36150 - 36199", 
         "CompanyName": "Schreder"
+     },
+     {
+        "ObjectIDRange": "36200 - 36249", 
+        "CompanyName": "Vodafone"
      }
 ]
