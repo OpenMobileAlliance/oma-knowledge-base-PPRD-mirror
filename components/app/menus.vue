@@ -90,6 +90,8 @@
 </template>
 
 <script setup lang="ts">
+import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryCollectionNavigation';
+
 const config = {
     wrapper: 'w-fit flex items-end justify-center rounded-lg',
     rootMenuButton: 'w-full flex items-center justify-start px-3 py-2 text-left hover:bg-white dark:hover:bg-gray-800',
@@ -123,7 +125,8 @@ const { ui, attrs } = useUI(
 
 const router = useRouter()
 const route = useRoute()
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
+//const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
 
 // List of folder and file titles to filter out
 const excludedTitles = [
@@ -141,7 +144,7 @@ const excludedTitles = [
 const excludedPaths = ['/media/articles', '/oma-events/past-events', '/footer-content']
 
 const filterExcludedPaths = (navItem: any): boolean => {
-    if (excludedPaths.includes(navItem._path)) {
+    if (excludedPaths.includes(navItem.path)) {
         return false
     }
     if (navItem.children) {
@@ -166,44 +169,21 @@ const processNavigationItem = (navItem: any, isRoot = true): MenuItem => {
         const singleChild = navItem.children[0];
         return {
             label: navItem.title,
-            path: singleChild._path,
-            onClick: () => router.push(singleChild._path)
+            path: singleChild.path,
+            onClick: () => router.push(singleChild.path)
         };
     }
     return {
         label: navItem.title,
-        path: navItem._path, // Keep the index path for active-checking
+        path: navItem.path, // Keep the index path for active-checking
         children: navItem.children?.map((child: any) => processNavigationItem(child, false)) || null,
-        onClick: () => router.push(navItem._path) 
+        onClick: () => router.push(navItem.path) 
     };
 };
 
 const menuData = computed(() => ({
     items: filteredNavigation.value?.map((navItem: any) => processNavigationItem(navItem))
 }))
-
-const iconsMap = ref<Record<string, string>>({})
-
-watchEffect(async () => {
-    if (!menuData.value?.items) return
-
-    // Fetch all documents that have an "icon" in frontmatter
-    const allIcons = await queryContent().where({ icon: { $exists: true } }).find()
-
-    // Create a mapping: title -> icon
-    const iconsLookup = new Map(allIcons.map((content) => [content.title, content.icon]))
-
-    // Map icons to menu items based on label
-    menuData.value.items.forEach((item) => {
-        if (iconsLookup.has(item.label)) {
-            iconsMap.value[item.label] = iconsLookup.get(item.label)!
-        }
-    })
-
-    nextTick(() => {
-        // Debug: console.log("Icons Map after update:", iconsMap.value)
-    })
-})
 
 // Helper: Check if a menu item (or one of its children) is active
 const isActive = (item: MenuItem): boolean => {

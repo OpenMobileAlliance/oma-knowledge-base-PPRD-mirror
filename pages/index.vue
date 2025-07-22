@@ -44,8 +44,8 @@
 // Redirect to the first page in the navigation handled in nuxt.config.ts
 // const router = useRouter()
 // const data = await useAsyncData('data', () => fetchContentNavigation())
-// console.log(data.data._rawValue[1]._path)
-// router.replace(data.data._rawValue[1]._path)
+// console.log(data.data._rawValue[1].path)
+// router.replace(data.data._rawValue[1].path)
 
 /*
 

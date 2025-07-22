@@ -55,18 +55,21 @@
 </template>
 
 <script setup lang="ts">
+import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryCollectionNavigation';
 
 const isOpen = ref(false)
 
 const date = new Date();
 const year = date.getFullYear();
 
+const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
+
 // Fetch navigation data only once.
-const { data: navigation } = await useAsyncData(
-    'navigation',
-    () => fetchContentNavigation(),
-    { immediate: true, server: false }
-)
+// const { data: navigation } = await useAsyncData(
+//     'navigation',
+//     () => fetchContentNavigation(),
+//     { immediate: true, server: false }
+// )
 
 const router = useRouter()
 const route = useRoute()
@@ -113,7 +116,7 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
 
     return navItems
         .filter(item => {
-            return !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title)
+            return !excludedPaths.includes(item.path) && !excludedTitles.includes(item.title)
         })
         .map(item => {
             let children = item.children ? transformNavigation(item.children, true) : null
@@ -122,10 +125,10 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
             if (!isChild && children && children.length > 0) {
                 children.unshift({
                     label: item.title,
-                    path: item._path,
+                    path: item.path,
                     children: null,
                     onClick: () => {
-                        router.push(item._path)
+                        router.push(item.path)
                         isOpen.value = false
                     }
                 })
@@ -133,12 +136,12 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
 
             return {
                 label: item.title,
-                path: item._path,
+                path: item.path,
                 children,
                 onClick: () => {
                     // Only perform navigation on child items.
                     if (isChild) {
-                        router.push(item._path)
+                        router.push(item.path)
                         isOpen.value = false
                     }
                 }

@@ -286,9 +286,5 @@
      {
         "ObjectIDRange": "36100 - 36149", 
         "CompanyName": "Micro Connect"
-    },
-    {
-        "ObjectIDRange": "36150 - 36199", 
-        "CompanyName": "Schreder"
-     }
+    }
 ]

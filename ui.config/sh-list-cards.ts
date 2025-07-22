@@ -17,5 +17,6 @@ export default {
   gap: "gap-0",
   // Default Tailwind CSS values
   default: {
+    cols: 3,
   }
 }

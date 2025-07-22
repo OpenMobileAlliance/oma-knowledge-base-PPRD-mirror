@@ -1,6 +1,7 @@
 <template>
   <div :class="ui.wrapper">
-    <img v-if="props.coverImage && !coverText && !coverIcon" :src="props.coverImage" :class="[ui.coverImage, coverEffectClass]" />
+    <img v-if="props.coverImage && !coverText && !coverIcon" :src="props.coverImage"
+      :class="[ui.coverImage, coverEffectClass]" />
     <div v-if="props.coverIcon && !coverText && !coverImage" :class="[ui.coverIconWrapper, coverEffectClass]">
       <UIcon :name="props.coverIcon" :class="ui.coverIcon" dynamic />
     </div>
@@ -8,33 +9,44 @@
       <MDC :value="coverText" class="px-4" />
     </div>
     <div :class="ui.upperBase" :style="backgroundClass">
-      <NuxtLink :to="urlUpperBase" :target="target" class="not-prose">
+      <NuxtLink v-if="urlUpperBase" :to="urlUpperBase" :target="target" class="not-prose">
         <div v-if="urlImage" class="h-80 w-full flex justify-center items-center">
           <img :src="urlImage" :class="ui.image" :alt="altImage" />
         </div>
         <MDC v-else :value="upperBaseText" :class="ui.upperBaseText" />
       </NuxtLink>
+      <div v-else class="not-prose">
+        <div v-if="urlImage" class="h-80 w-full flex justify-center items-center">
+          <img :src="urlImage" :class="ui.image" :alt="altImage" />
+        </div>
+        <MDC v-else :value="upperBaseText" :class="ui.upperBaseText" />
+      </div>
     </div>
     <div :class="ui.lowerBase">
-      <div :class="ui.title">
-        <MDC :value="title" />
+      <div :class="ui.content">
+        <div :class="ui.title">
+          <MDC :value="title" />
+        </div>
+        <div :class="ui.subtitle">
+          <MDC :value="subtitle" />
+        </div>
+        <div :class="ui.text">
+          <MDC v-if="text" :value="text" />
+          <div v-else-if="excerpt" class="dark:text-golden">
+            <ContentRenderer :value="excerpt" />
+          </div>
+        </div>
       </div>
-      <div :class="ui.subtitle">
-        <MDC :value="subtitle" />
-      </div>
-      <div :class="ui.text">
-        <MDC v-if="text" :value="text" />
-        <ContentRenderer v-else>
-          <MDC :value="excerpt" excerpt class="dark:text-golden" />
-        </ContentRenderer>
-      </div>
-      <div v-if="page._path === '/media/blog' || 'media/news' || 'media/press' || 'media/newsletter'" >
-        <NuxtLink :to="article" target="_self" class="">
-          Read more...
+      <div v-if="route.path.includes('/media/blog') || route.path.includes('/media/news')" :class="ui.readMore">
+        <NuxtLink :to="articleURL" target="_self">
+          <div class="flex items-center">
+            Read More
+            <UIcon name="i-material-symbols:read-more-rounded" dynamic class="ml-1 text-2xl" />
+          </div>
         </NuxtLink>
       </div>
       <div class="border-t mt-16">
-        <div class="grid grid-cols-3">
+        <div :class="ui.labels">
           <div :class="ui.leftLabel">
             <MDC :value="leftLabel" />
           </div>
@@ -55,7 +67,6 @@
 import { card as config } from '@/ui.config' // Import the config file
 
 const route = useRoute()
-const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 
 const props = withDefaults(
   defineProps<{
@@ -71,12 +82,12 @@ const props = withDefaults(
     title?: string;
     subtitle?: string;
     text?: string;
-    excerpt?: string;
+    excerpt?: object;
     leftLabel?: string;
     centerLabel?: string;
     rightLabel?: string;
     imageBackground?: string;
-    article?: string;
+    articleURL?: string;
     description?: string;
     ui?: Partial<typeof config>;
   }>(),
@@ -95,7 +106,6 @@ const props = withDefaults(
     title: "",
     subtitle: "",
     text: "",
-    excerpt: "",
     leftLabel: "",
     centerLabel: "",
     rightLabel: "",

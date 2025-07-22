@@ -21,6 +21,9 @@ export default defineNuxtConfig({
     preference: 'dark'
   },
   content: {
+    renderer: {
+      anchorLinks: false
+    },
     highlight: {
       theme: {
         default: 'github-dark',

@@ -5,9 +5,10 @@ navigation: false
 ::ShMultiColumn
 ---
 ui:
-    wrapper: text-[14px] justify-items-center
+    wrapper: text-[14px] w-[70%] mx-auto
 cols: 4
-gap: md:gap-32
+gap: gap-4 md:gap-8 lg:gap-16 xl:gap-24
+class: justify-items-start
 ---
     :::ShColumn
     ### LEGAL & COMPLIANCE

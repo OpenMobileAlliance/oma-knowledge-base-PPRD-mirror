@@ -3,7 +3,7 @@
         <div :class="ui.base">
             <UIcon :class="['size-7', iconColor]" :name="icon" dynamic></UIcon>
         </div>
-        <ContentSlot :use="$slots.default" unwrap="" />
+        <slot />
     </div>
 </template>
 
