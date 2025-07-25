@@ -294,5 +294,10 @@
      {
         "ObjectIDRange": "36200 - 36249", 
         "CompanyName": "Vodafone"
+     },
+     {
+        "ObjectIDRange": "36250 - 36299", 
+        "CompanyName": "HK.Digital"
      }
+     
 ]
