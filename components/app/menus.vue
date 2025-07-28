@@ -12,7 +12,7 @@
                     <!-- <UIcon v-if="iconsMap[item.label]" :name="iconsMap[item.label]" dynamic :class="ui.contentIcon" /> -->
                     <span :class="[ui.rootMenuLabel,
                     isActive(item) ? ui.rootActive : '']">
-                        {{ item.label }}
+                        {{ item.label.toUpperCase() }}
                     </span>
                 </span>
                 <UIcon v-if="item.children" name="mdi:chevron-right" :class="ui.chevronIcon" />
@@ -27,7 +27,7 @@
                     ]">
                         <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
                         <span :class="ui.label">
-                            {{ child.label }}
+                            {{ child.label.toUpperCase() }}
                         </span>
                         <!-- <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" /> -->
                     </button>
