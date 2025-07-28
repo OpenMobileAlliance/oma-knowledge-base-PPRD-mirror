@@ -156,11 +156,15 @@ const { ui, attrs } = useUI(
 
 const route = useRoute()
 
+const articleID = computed(() => {
+  return route.path.split('/media/articles/').pop() || null;
+});
+
 //const { data: articles } = await useAsyncData('blog', () => queryCollection('content').all())
 //console.log('test:', articles.value)
 
 const { data: page } = useQueryCollection('content', route.path)
-const { data: articles } = await useAsyncData('articles', () => queryCollection('articles').path(route.path).first())
+const { data: articles } = await useAsyncData(`article-${articleID.value}`, () => queryCollection('articles').path(route.path).first())
 const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
 //const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 //const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())

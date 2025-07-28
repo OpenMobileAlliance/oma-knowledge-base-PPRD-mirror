@@ -9,12 +9,12 @@
       <MDC :value="coverText" class="px-4" />
     </div>
     <div :class="ui.upperBase" :style="backgroundClass">
-      <NuxtLink v-if="urlUpperBase" :to="urlUpperBase" :target="target" class="not-prose">
+      <a v-if="urlUpperBase" :href="urlUpperBase" :target="target" class="not-prose">
         <div v-if="urlImage" class="h-80 w-full flex justify-center items-center">
           <img :src="urlImage" :class="ui.image" :alt="altImage" />
         </div>
         <MDC v-else :value="upperBaseText" :class="ui.upperBaseText" />
-      </NuxtLink>
+      </a>
       <div v-else class="not-prose">
         <div v-if="urlImage" class="h-80 w-full flex justify-center items-center">
           <img :src="urlImage" :class="ui.image" :alt="altImage" />
