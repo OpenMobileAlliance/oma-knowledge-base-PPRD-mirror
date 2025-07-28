@@ -64,7 +64,7 @@
             <hr class="border-b-[1px] border-neutral-500 dark:border-golden rounded-xl w-3/5 mt-2 mb-20 mx-auto">
             <div
               class="content-container par text-left first-letter:text-7xl first-letter:mr-2 first-letter:float-left">
-              <ContentRenderer v-if="articles" :value="articles" :style="{ fontSize: main.font.size }" />
+              <ContentRenderer :value="articles" :style="{ fontSize: main.font.size }" />
             </div>
           </div>
         </div>
@@ -160,15 +160,10 @@ const route = useRoute()
 //console.log('test:', articles.value)
 
 const { data: page } = useQueryCollection('content', route.path)
-const { data: articles, refresh: refreshArticles } = await useAsyncData(`articles-${route.path}`, () => queryCollection('articles').path(route.path).first())
+const { data: articles } = await useAsyncData('articles', () => queryCollection('articles').path(route.path).first())
 const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
 //const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
 //const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
-
-// Watch for route changes and refresh articles data
-watch(() => route.path, async (newPath) => {
-  await refreshArticles()
-}, { immediate: false })
 
 const main = useAppConfig().main
 
