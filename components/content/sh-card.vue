@@ -38,10 +38,10 @@
         </div>
       </div>
       <div v-if="route.path.includes('/media/blog') || route.path.includes('/media/news')" :class="ui.readMore">
-        <a :href="articleURL" target="_self" class="flex items-center">
+        <NuxtLink :to="articleURL" target="_self" class="flex items-center">
             Read More
             <UIcon name="i-material-symbols:read-more-rounded" dynamic class="ml-1 text-2xl" />
-        </a>
+        </NuxtLink>
       </div>
       <div class="border-t mt-16">
         <div :class="ui.labels">
