@@ -127,8 +127,7 @@ const { ui, attrs } = useUI(
 
 const router = useRouter()
 const route = useRoute()
-const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
-//const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+const { data: navigation } = useQueryCollectionNavigation('content', `navigation-to-${route.path}`)
 
 // List of folder and file titles to filter out
 const excludedTitles = [
