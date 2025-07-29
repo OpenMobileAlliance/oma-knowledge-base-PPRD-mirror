@@ -26,7 +26,7 @@
         </div>
         <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-golden/[0.2] backdrop-blur-sm' } }">
           <UCard class="flex flex-col flex-1"
-            :ui="{ background: 'dark:bg-neutral-900', body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
+            :ui="{ background: 'dark:bg-neutral-900', body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-neutral-100 dark:divide-neutral-800' }">
             <template #header>
               <div class="flex h-8 justify-between items-center">
                 <div class="dark:text-golden text-xl">{{ 'Tags for ' + slideoverTitle }}</div>
@@ -37,7 +37,7 @@
               </div>
             </template>
             <div class="h-full">
-              <div class="block flex-col space-y-3">
+              <div class="block flex-col space-y-3 text-golden">
                 <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)" :class="[ui.tags.list,
                 {
                   [ui.tags.selected]: selectedTags.includes(tag)

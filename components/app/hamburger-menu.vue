@@ -2,9 +2,9 @@
     <div>
         <UIcon name="pajamas:hamburger" dynamic @click="isOpen = true" class="text-3xl hover:scale-105 duration-300" />
 
-        <USlideover v-model="isOpen">
-            <UCard class="flex flex-col flex-1"
-                :ui="{ body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
+        <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-golden/[0.2] backdrop-blur-sm' } }">
+            <UCard class="flex flex-col flex-1 dark:bg-neutral-900"
+                :ui="{ body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-neutral-100 dark:divide-neutral-800' }">
                 <template #header>
                     <div class="flex h-8 justify-between items-center">
                         <AppSocialLinks class="text-2xl space-x-1" />
@@ -76,13 +76,13 @@ const route = useRoute()
 
 const config = {
     rootMenuButton:
-        'w-full flex items-center justify-start px-3 py-2 text-left hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg',
+        'w-full flex items-center justify-start px-3 py-2 text-left hover:bg-gray-200 dark:hover:bg-oma-yellow-700 rounded-lg',
     rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
     rootActive:
         'relative after:content-[" "] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-oma-yellow-500 after:rounded-full',
     submenuActive: 'underline underline-offset-4 decoration-2 decoration-oma-yellow-500',
     button:
-        'w-full flex items-center px-4 py-2 text-left hover:bg-white dark:hover:bg-gray-800 transition duration-200 rounded-lg',
+        'w-full flex items-center px-4 py-2 text-left hover:bg-white dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg',
     label: 'font-small text-gray-900 dark:text-gray-100 truncate',
     chevronIcon: 'ml-auto',
 }

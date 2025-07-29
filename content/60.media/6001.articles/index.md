@@ -22,5 +22,3 @@ text: |
     **In the News**, **Press Releases**, or even sign up for the **Newsletter**.
 ---
 ::
-
-
