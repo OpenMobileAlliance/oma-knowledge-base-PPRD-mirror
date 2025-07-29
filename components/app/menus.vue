@@ -24,7 +24,8 @@
             <!-- Submenu -->
             <ul v-if="item.children" :class="[ui.submenuUl, 'hidden group-hover/item:flex']">
                 <li v-for="(child, childIndex) in item.children" :key="childIndex" class="group/sub relative">
-                    <NuxtLink :to="child.path" :class="['cursor-pointer',
+                    <NuxtLink :to="child.path"
+                        :external="child.path === '/media/news' || child.path === '/media/blog' ? true : false" :class="['cursor-pointer',
                         ui.button
                     ]">
                         <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
