@@ -22,7 +22,7 @@
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <PrevNextPage v-if="route.path !== '/'" />
+            <!-- <PrevNextPage v-if="route.path !== '/'" /> -->
           </section>
 
           <!-- Table of Contents and Useful Links -->
