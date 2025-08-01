@@ -33,16 +33,16 @@ const config = {
 const addMenuItems = (list, depth, prevEl, outList) => {
   if (list.length > 0 && depth < 4) {
     list.forEach(el => {
-      if (prevEl != el._path) {
+      if (prevEl != el.path) {
         outList.push({
-          to: el._path,
+          to: el.path,
           title: el.title,
           depth: depth,
           children: el.children?.length > 0
         })
       }
       if (el.children?.length > 0) {
-        addMenuItems(el.children, depth + 1, el._path, outList)
+        addMenuItems(el.children, depth + 1, el.path, outList)
       }
     });
   }
