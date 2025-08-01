@@ -2,7 +2,7 @@
   <main class="">
     <article class="prose w-full max-w-full mt-16">
 
-      <template v-if="page?.layout === 'doc'">
+      <template v-if="page?.meta.layout === 'doc'">
         <div class="grid grid-cols-12 relative">
           <!-- Sidebar Menu -->
           <div class="col-start-1 col-span-2 hidden lg:block overflow-auto h-screen sticky top-48">
@@ -22,7 +22,7 @@
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <PrevNextPage v-if="route.path !== '/'" />
+            <!-- <PrevNextPage v-if="route.path !== '/'" /> -->
           </section>
 
           <!-- Table of Contents and Useful Links -->
@@ -33,45 +33,46 @@
         </div>
       </template>
 
-      <template v-else-if="page?.layout === 'articles'">
+      <template v-else-if="page?.meta.layout === 'articles'">
         <div class="w-full -mt-16 xl:px-44 2xl:px-64">
           <div class="container flex mx-auto justify-center mt-6">
-            <img v-if="page.urlImage" :src="page.urlImage" alt="Image" class="sm:w-3/5 h-auto object-contain rounded-xl" />
+            <img v-if="articles?.urlImage" :src="articles.urlImage" alt="Image"
+              class="sm:w-3/5 h-auto object-contain rounded-xl" />
           </div>
           <div class="text-center">
-            <h2 :class="['text-center text-4xl text-primary', page.subtitle ? '' : 'mb-16']">{{ page.title }}</h2>
-            <h3 v-if="page.subtitle" class="mb-20 text-center text-3xl text-primary-400">
-              {{ page.subtitle }}
+            <h2 :class="['text-center text-4xl text-primary', articles?.subtitle ? '' : 'mb-16']">{{ articles?.title }}</h2>
+            <h3 v-if="articles?.subtitle" class="mb-20 text-center text-3xl text-primary-400">
+              {{ articles?.subtitle }}
             </h3>
-            <div class="text-center text-2xl par" v-if="page.tags && page.tags.length">
+            <div class="text-center text-2xl par" v-if="articles?.tags && articles?.tags.length">
               Tags:
-              <span v-for="tag in page.tags" :key="tag"
+              <span v-for="tag in articles?.tags" :key="tag"
                 class="border rounded-3xl p-2 mx-2 text-white bg-primary border-primary-600 dark:bg-zinc-600 dark:border-primary-400 text-xl">
                 {{ tag }}
               </span>
             </div>
             <div class="flex items-center justify-center">
-              <p v-if="page.rightLabel" class="mr-2 text-2xl par">By:</p>
-              <p v-if="page.rightLabel" class="text-end text-2xl dark:text-zinc-400">
-                {{ page.rightLabel }}
+              <p v-if="articles?.rightLabel" class="mr-2 text-2xl par">By:</p>
+              <p v-if="articles?.rightLabel" class="text-end text-2xl dark:text-zinc-400">
+                {{ articles?.rightLabel }}
               </p>
-              <p v-if="page.leftLabel" class="mx-2 text-2xl par">|</p>
-              <p v-if="page.leftLabel" class="text-start text-2xl dark:text-zinc-400">
-                {{ page.leftLabel }}
+              <p v-if="articles?.leftLabel" class="mx-2 text-2xl par">|</p>
+              <p v-if="articles?.leftLabel" class="text-start text-2xl dark:text-zinc-400">
+                {{ articles?.leftLabel }}
               </p>
             </div>
             <hr class="border-b-[1px] border-neutral-500 dark:border-golden rounded-xl w-3/5 mt-2 mb-20 mx-auto">
             <div
               class="content-container par text-left first-letter:text-7xl first-letter:mr-2 first-letter:float-left">
-              <ContentDoc :path="page._path" :style="{ fontSize: main.font.size }" />
+              <ContentRenderer :value="articles" :style="{ fontSize: main.font.size }" />
             </div>
           </div>
         </div>
       </template>
 
-      <template v-else-if="page?.layout === 'web'">
+      <template v-else-if="page?.meta.layout === 'web'">
         <div class="grid grid-cols-12 relative">
-
+          
           <!-- Main Content -->
           <section :class="contentClass"
             class="col-start-1 col-span-12 lg:col-start-1 lg:col-span-12 w-full lg:w-full overflow-auto">
@@ -130,7 +131,8 @@
 
 <script setup lang="ts">
 import type { _fontSize } from '#tailwind-config/theme';
-
+import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
+import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryCollectionNavigation';
 
 const config = {
   shadow: 'hover:bg-primary-500 focus:bg-primary-200/[0.6] hover:focus:bg-primary-100 dark:hover:bg-neutral-500 dark:focus:bg-primary-600[0.6] dark:hover:focus:bg-neutral-500 rounded-lg',
@@ -153,8 +155,14 @@ const { ui, attrs } = useUI(
 );
 
 const route = useRoute()
-const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+
+const articleID = computed(() => {
+  return route.path.split('/media/articles/').pop() || null;
+});
+
+const { data: page } = useQueryCollection('content', route.path)
+const { data: articles } = await useAsyncData(`article-${articleID.value}`, () => queryCollection('articles').path(route.path).first())
+const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
 
 const main = useAppConfig().main
 
@@ -189,7 +197,7 @@ const comparePathsForBranch = (path1: string, path2: string) => {
 const filterNavigation = (list: Array, path: string) => {
   if (list?.length > 0) {
     const branchList = list.reduce((prev, curr) => {
-      if (comparePathsForBranch(path, curr._path)) {
+      if (comparePathsForBranch(path, curr.path)) {
         prev.push(curr)
       }
       return prev
@@ -203,7 +211,7 @@ const filterNavigation = (list: Array, path: string) => {
 }
 
 const displayNavigation = computed(() => {
-  let res = filterNavigation(navigation.value, page.value._path)
+  let res = filterNavigation(navigation.value, page.value.path)
   if (minDepth > 0) {
     let depth = minDepth
 
@@ -211,9 +219,9 @@ const displayNavigation = computed(() => {
       let childResult = []
       depth -= 1
       if (res[0].children?.length > 0) {
-        childResult = filterNavigation(res[0].children, page.value._path)
+        childResult = filterNavigation(res[0].children, page.value.path)
         childResult = childResult.filter((item) => {
-          const itemDepth = item._path.split('/')
+          const itemDepth = item.path.split('/')
           return itemDepth.length >= routeDepth - 1
         })
         res = childResult.length > 0 ? childResult : res

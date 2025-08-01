@@ -2,9 +2,9 @@
     <div>
         <UIcon name="pajamas:hamburger" dynamic @click="isOpen = true" class="text-3xl hover:scale-105 duration-300" />
 
-        <USlideover v-model="isOpen">
-            <UCard class="flex flex-col flex-1"
-                :ui="{ body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
+        <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-golden/[0.2] backdrop-blur-sm' } }">
+            <UCard class="flex flex-col flex-1 dark:bg-neutral-900"
+                :ui="{ body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-neutral-100 dark:divide-neutral-800' }">
                 <template #header>
                     <div class="flex h-8 justify-between items-center">
                         <AppSocialLinks class="text-2xl space-x-1" />
@@ -55,31 +55,34 @@
 </template>
 
 <script setup lang="ts">
+import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryCollectionNavigation';
 
 const isOpen = ref(false)
 
 const date = new Date();
 const year = date.getFullYear();
 
+const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
+
 // Fetch navigation data only once.
-const { data: navigation } = await useAsyncData(
-    'navigation',
-    () => fetchContentNavigation(),
-    { immediate: true, server: false }
-)
+// const { data: navigation } = await useAsyncData(
+//     'navigation',
+//     () => fetchContentNavigation(),
+//     { immediate: true, server: false }
+// )
 
 const router = useRouter()
 const route = useRoute()
 
 const config = {
     rootMenuButton:
-        'w-full flex items-center justify-start px-3 py-2 text-left hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg',
+        'w-full flex items-center justify-start px-3 py-2 text-left hover:bg-gray-200 dark:hover:bg-oma-yellow-700 rounded-lg',
     rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
     rootActive:
         'relative after:content-[" "] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-oma-yellow-500 after:rounded-full',
     submenuActive: 'underline underline-offset-4 decoration-2 decoration-oma-yellow-500',
     button:
-        'w-full flex items-center px-4 py-2 text-left hover:bg-white dark:hover:bg-gray-800 transition duration-200 rounded-lg',
+        'w-full flex items-center px-4 py-2 text-left hover:bg-white dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg',
     label: 'font-small text-gray-900 dark:text-gray-100 truncate',
     chevronIcon: 'ml-auto',
 }
@@ -113,7 +116,7 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
 
     return navItems
         .filter(item => {
-            return !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title)
+            return !excludedPaths.includes(item.path) && !excludedTitles.includes(item.title)
         })
         .map(item => {
             let children = item.children ? transformNavigation(item.children, true) : null
@@ -122,10 +125,10 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
             if (!isChild && children && children.length > 0) {
                 children.unshift({
                     label: item.title,
-                    path: item._path,
+                    path: item.path,
                     children: null,
                     onClick: () => {
-                        router.push(item._path)
+                        router.push(item.path)
                         isOpen.value = false
                     }
                 })
@@ -133,12 +136,12 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
 
             return {
                 label: item.title,
-                path: item._path,
+                path: item.path,
                 children,
                 onClick: () => {
                     // Only perform navigation on child items.
                     if (isChild) {
-                        router.push(item._path)
+                        router.push(item.path)
                         isOpen.value = false
                     }
                 }
