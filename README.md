@@ -8,15 +8,58 @@ The development process for this process is described in more detail in
 ### Get Started
 1. Install `nvm` package. This allows you to install different versions of the Node.js
 2. Check which Node version you are running:
-    `nvm ls`
-3. Use at least version v20
-    `nvm use v20`
-4. Install npm
-    `npm install`
-5. Run it locally
-    `npm run dev`
 
-## Deployment in PRe Production Server
+    ```bash
+    nvm ls
+    ```
+
+3. Use at least version `v20`
+
+    ```bash
+    nvm use v20
+    ```
+
+4. Install `npm` (**ONLY** when new changes are introduced to `package.json`)
+
+    ```bash
+    npm install
+    ```
+
+5. Create a feature branch 
+
+    ```bash
+    git checkout -b my-feature-branch
+    ```
+
+6. Run it locally
+
+    ```bash
+    npm run dev
+    ```
+
+7. Make your changes and commit them
+
+    ```bash
+    git commit -m "[ADMIN | DEV | PM] My changes"
+    ```
+
+8. Push your changes to GitHub
+
+    ```bash
+    git push origin my-feature-branch
+    ```
+
+    >Not all changes are needed to be deployed to Pre Production. Consider if the change is **critical**.
+    >
+    >In case those changes are critical, proceed to [Deployment in Pre Production Server](https://github.com/OpenMobileAlliance/oma-knowledge-base?tab=readme-ov-file#deployment-in-pre-production-server)
+    >
+    >If you have done merge to the `PPRD-deployment`branch, **DO NOT** delete your feature branch. That branch will later serve as a reference to merge into `main`.
+    >
+    >**DO NOT merge `PPRD-branch` into `main`**. Always merge your feature branch if everything is valid in either local dev or PPRD environment.
+    >
+    >If the changes are not valid in Pre Production, you can delete `PPRD-deployment` branch and recreate it from `main` branch.
+
+## Deployment in Pre Production Server
 
 ### 1. Setup (you only need to do this once)
 
