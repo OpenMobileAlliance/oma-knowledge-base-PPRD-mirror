@@ -1,5 +1,7 @@
 ---
 navigation: false
+sitemap: false
+robots: false
 ---
 
 ::ShMultiColumn

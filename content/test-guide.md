@@ -2,6 +2,9 @@
 title: "OMA Test Lab"
 description:
 layout: doc
+navigation: false
+sitemap: false
+robots: false
 ---
 
 ## Boost Our Website: Join the OMA SpecWorks URL Test!
