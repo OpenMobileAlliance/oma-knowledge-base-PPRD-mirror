@@ -27,6 +27,18 @@ const theme = useColorMode();
 const computedLogoSrc = computed(() => {
   return theme.value === 'dark';
 });
+
+const baseUrl = 'https://www.openmobilealliance.org/';
+
+useHead(() => ({
+  link: [
+    {
+      rel: 'canonical',
+      href: baseUrl + route.path
+    }
+  ]
+}))
+
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
   for (let i = 1; i <= 7; i++) {
