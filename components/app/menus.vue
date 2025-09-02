@@ -24,7 +24,7 @@
             <!-- Submenu -->
             <ul v-if="item.children" :class="[ui.submenuUl, 'hidden group-hover/item:flex']">
                 <li v-for="(child, childIndex) in item.children" :key="childIndex" class="group/sub relative">
-                    <NuxtLink :to="child.path"
+                    <NuxtLink v-if="child.path !== submenuToLink" :to="child.path"
                         :external="child.path === '/media/news' || child.path === '/media/blog' ? true : false" :class="['cursor-pointer',
                         ui.button
                     ]">
@@ -34,6 +34,15 @@
                         </span>
                         <!-- <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" /> -->
                     </NuxtLink>
+                    <a v-else :href="page?.meta.link" target="_blank" rel="noopener noreferrer" :class="['cursor-pointer',
+                        ui.button
+                    ]">
+                        <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
+                        <span :class="[ui.label, isActive(child) ? ui.submenuActive : '']">
+                            {{ child.label.toUpperCase() }}
+                        </span>
+                        <!-- <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" /> -->
+                    </a>
 
                     <!-- Recursive Submenu -->
                     <!-- <ul v-if="child.children" :class="[ui.ul, 'hidden group-hover/sub:flex']">
@@ -130,6 +139,11 @@ const router = useRouter()
 const route = useRoute()
 const { data: navigation } = useQueryCollectionNavigation('content', `navigation-to-${route.path}`)
 
+const submenuToLink = toRef('/oma-events/smart-city-expo-world-congress')
+
+const { data: page } = useAsyncData('frontmatter-link', async() => {
+    return await queryCollection('content').path(submenuToLink.value).first()
+})
 // List of folder and file titles to filter out
 const excludedTitles = [
     'Guidelines',
