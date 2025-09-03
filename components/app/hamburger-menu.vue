@@ -26,7 +26,7 @@
                                 <button @click="item.onClick"
                                     :class="[ui.rootMenuButton, isActive(item) ? ui.rootActive : '']">
                                     <span class="flex items-center space-x-2">
-                                        <span :class="ui.rootMenuLabel">{{ item.label }}</span>
+                                        <span :class="ui.rootMenuLabel">{{ item.label.toUpperCase() }}</span>
                                     </span>
                                     <UIcon v-if="item.children" :name="open ? 'mdi:chevron-down' : 'mdi:chevron-right'"
                                         :class="ui.chevronIcon" />
@@ -35,10 +35,21 @@
                                 <!-- Submenu (Opens when root menu item is clicked) -->
                                 <UAccordion v-if="open && item.children" :items="item.children" multiple>
                                     <template #default="{ item: child }">
-                                        <button @click="child.onClick"
+                                        <button v-if="child.path !== submenuToLink" :to="child.path"
+                                            @click="child.onClick"
                                             :class="[ui.button, isActive(child) ? ui.submenuActive : '']">
-                                            <span :class="ui.label">{{ child.label }}</span>
+                                            <span :class="ui.label">{{ child.label.toUpperCase() }}</span>
                                         </button>
+                                        <a v-else :href="page?.meta.link" target="_blank" rel="noopener noreferrer"
+                                            :class="['cursor-pointer',
+                                                ui.button
+                                            ]">
+                                            <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
+                                            <span :class="[ui.label, isActive(child) ? ui.submenuActive : '']">
+                                                {{ child.label.toUpperCase() }}
+                                            </span>
+                                            <!-- <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" /> -->
+                                        </a>
                                     </template>
                                 </UAccordion>
                             </div>
@@ -63,6 +74,12 @@ const date = new Date();
 const year = date.getFullYear();
 
 const { data: navigation } = useQueryCollectionNavigation('content', 'navigation')
+
+const submenuToLink = toRef('/oma-events/smart-city-expo-world-congress')
+
+const { data: page } = useAsyncData('frontmatter-link', async () => {
+    return await queryCollection('content').path(submenuToLink.value).first()
+})
 
 // Fetch navigation data only once.
 // const { data: navigation } = await useAsyncData(
