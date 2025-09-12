@@ -11,6 +11,12 @@ tags:
     - news
 ---
 
+::ShVideo
+---
+src: "https://user.skcdn.io/renders/682efdb1958321708d2bc118/news-summary-oma-gandampe-program-launch-2025-06-25-08_24_31/news-summary-oma-gandampe-program-launch-2025-06-25-08_24_31.mp4"
+---
+::
+
 The Open Mobile Alliance (OMA), a leading standards development organization for interoperable mobile and IoT technologies, is pleased to announce the launch of its **Government & Education (G&E) Participation Program** — a new initiative that invites government agencies and academic institutions to engage in OMA’s technical work without the obligations of full membership.
 <!--more-->
 This program provides a structured and accessible pathway for public-sector and academic contributors to participate in developing critical standards such as **Lightweight M2M (LwM2M)** and smart city object models through the **uCIFI Smart City Work Program**. These standards help ensure global interoperability for connected infrastructure, public services, and municipal-scale IoT deployments.

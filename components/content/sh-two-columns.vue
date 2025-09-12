@@ -1,7 +1,7 @@
 <template>
   <div :class="ui.wrapper"  v-bind="attrs" >
     <div :class="gridClass">
-      <ContentSlot :use="$slots.default" unwrap="" />
+      <slot />
     </div>
   </div>
 </template>

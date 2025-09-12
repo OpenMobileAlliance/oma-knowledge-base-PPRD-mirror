@@ -6,7 +6,7 @@
     </div>
 
     <div :class="ui.main">
-      <ContentSlot :use="$slots.default" unwrap="" />
+      <slot />
     </div>
 
     <div v-if="footerText" :class="ui.footer">

@@ -4,7 +4,7 @@
     <div :class="ui.contentContainer">
       <div :class="ui.upperContainer">
         <div :class="ui.contentAboveHr">
-          <img src="/logo.png" alt="logo" title="Official OMA logo" :class="ui.logo" />
+          <img src="/logo-dark.png" alt="logo" title="Official OMA logo" :class="ui.logo" />
           <div id="slogan" title="Our Slogan" :class="ui.slogan">
             <b>For a Connected World</b>
           </div>
@@ -12,9 +12,9 @@
         </div>
         <hr :class="ui.hr">
       </div>
-      <ContentQuery path="/footer-content" v-slot="{ data }" class="flex mx-auto">
-        <ContentRenderer :value="item" v-for="item in data" :class="ui.megaFooterContent" />
-      </ContentQuery>
+      <div class="flex justify-center mx-auto">
+        <ContentRenderer class="w-full mx-auto md:ml-12" :value="data" />
+      </div>
     </div>
   </div>
 
@@ -33,6 +33,9 @@
 </template>
 
 <script setup lang="ts">
+import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
+
+const { data: data } = useQueryCollection('content', '/footer-content');
 
 const date = new Date();
 const year = date.getFullYear();
@@ -41,11 +44,11 @@ const config = {
   megaFooter: "relative p-6 dark:bg-neutral-950/[0.3] overflow-hidden bottom-0",
   contentContainer: "relative z-30",
   upperContainer: "container w-[70%] mx-auto",
-  contentAboveHr: "flex justify-between items-center",
+  contentAboveHr: "flex-row space-y-10 md:flex md:justify-between md:items-center",
   backgroundImg: "absolute bottom-0 left-0 w-full opacity-20 object-cover h-full xl:h-auto xl:object-fill object-center z-20",
-  logo: "size-[15%] md:size-[10%] lg:size-[7%] pr-3",
+  logo: "size-[50%] md:size-[13%] mx-auto md:mx-0 md:mt-10",
   slogan: "text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-thin text-golden text-center font-expressa",
-  socialLinks: "text-xl sm:text-2xl md:text-3xl space-x-2 pl-3",
+  socialLinks: "justify-center text-2xl md:text-3xl space-x-2 pl-3",
   hr: "mx-auto mb-10 mt-10 dark:border-neutral-600",
   megaFooterContent: "text-left z-40",
   footer: "py-1 sm:py-2 bottom-0 w-full bg-background/75 backdrop-blur border-t border-primary/[0.4] dark:border-primary/[0.4] z-50",
@@ -82,6 +85,7 @@ const { ui, attrs } = useUI(
   src: url('/fonts/expressa/Expressa Regular.ttf') format('truetype');
   font-style: normal;
 }
+
 #slogan {
   font-family: "Expressa";
 }

@@ -1,6 +1,6 @@
 <template>
   <div :class="ui.wrapper" :style="[backgroundUrl, backgroundClass]">
-    <ContentSlot :use="$slots.default" unwrap="" />
+    <slot :class="ui.inner"></slot>
   </div>
 </template>
 

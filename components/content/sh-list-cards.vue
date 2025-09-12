@@ -18,18 +18,18 @@
       <!-- /Header Section -->
 
       <!-- Tag Section -->
-      <div title="Filter cards by tags" :class="ui.tagSection" @click="isOpen = true">
+      <div :title="tooltip" :class="ui.tagSection" @click="isOpen = true">
         <div v-if="tags" :class="ui.tags.title">{{ 'Tags' }}
-          <div v-if="selectedTags.length > 0">{{ ':' }}</div>
+          <div v-if="selectedTags.length > 0" class="mr-2">{{ ':' }}</div>
           <div v-if="selectedTags.length > 0" class="">{{ selectedTags.length }}</div>
           <UIcon name="system-uicons:tags" class="ml-3 text-3xl" />
         </div>
         <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-golden/[0.2] backdrop-blur-sm' } }">
           <UCard class="flex flex-col flex-1"
-            :ui="{ background: 'dark:bg-neutral-900', body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
+            :ui="{ background: 'dark:bg-neutral-900', body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-neutral-100 dark:divide-neutral-800' }">
             <template #header>
               <div class="flex h-8 justify-between items-center">
-                <div class="dark:text-golden text-xl">{{ 'Tags for ' + tagsInscription }}</div>
+                <div class="dark:text-golden text-xl">{{ 'Tags for ' + slideoverTitle }}</div>
                 <div class="flex items-center">
                   <UIcon name="material-symbols-light:right-panel-close" dynamic @click="isOpen = false"
                     class="text-4xl mb-2 text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
@@ -37,7 +37,7 @@
               </div>
             </template>
             <div class="h-full">
-              <div class="block flex-col space-y-3">
+              <div class="block flex-col space-y-3 text-golden">
                 <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)" :class="[ui.tags.list,
                 {
                   [ui.tags.selected]: selectedTags.includes(tag)
@@ -56,7 +56,7 @@
               </div>
             </div>
             <template #footer>
-              <div class="flex h-8 justify-center text-golden">{{ 'TAGS' }}</div>
+              <div class="flex h-8 justify-center text-golden italic">{{ 'Number of selected tags: ' + selectedTags.length }}</div>
             </template>
           </UCard>
         </USlideover>
@@ -65,11 +65,11 @@
     <!-- /Tag Section -->
 
     <!-- Cards Section -->
-    <div :class="[ui.base, ui.gap, gridClass]">
+    <div :class="[ui.base, ui.gap]">
       <template v-for="(card, index) in filteredCards" :key="index">
-        <ShCard :title="card.title" :subtitle="card.subtitle" :excerpt="card" :urlImage="card.urlImage"
-          :urlUpperBase="card._path" :article="card._path" :leftLabel="card.leftLabel" :rightLabel="card.rightLabel"
-          :centerLabel="card.centerLabel" />
+        <ShCard :title="card.title" :subtitle="card.subtitle" :excerpt="card.excerpt" :urlImage="card.urlImage"
+          :urlUpperBase="card.path" :articleURL="card.path" :leftLabel="card.leftLabel" :rightLabel="card.rightLabel"
+          :centerLabel="card.centerLabel" :resultData="result" />
       </template>
     </div>
     <!-- /Cards Section -->
@@ -77,7 +77,8 @@
 </template>
 
 <script setup lang="ts">
-import { listCards as config, gridSizes } from "@/ui.config";
+import { listCards as config } from "@/ui.config";
+import { useQueryCollection } from "~/composables/nuxt/query/useQueryCollection";
 
 const props = withDefaults(
   defineProps<{
@@ -111,106 +112,87 @@ const { ui, attrs } = useUI(
 
 const isOpen = ref(false)
 
-const windowWidth = ref(0);
-
-const handleResize = () => {
-  windowWidth.value = window.innerWidth;
-};
-
-onMounted(() => {
-  windowWidth.value = window.innerWidth;
-  window.addEventListener('resize', handleResize);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', handleResize);
-});
-
-const gridClass = computed(() => {
-  const cols = props.cols ?? config.default.cols;
-
-  if (windowWidth.value >= 1300) {
-    return ["grid", gridSizes.gridCols[cols]].join(' ');
-  } else if (windowWidth.value < 640) {
-    return ["grid", "grid-cols-1"].join(' ');
-  } else if (windowWidth.value > 640 && windowWidth.value < 980) {
-    return ["grid", "grid-cols-2"].join(' ');
-  } else {
-    return ["grid", "grid-cols-3"].join(' ');
-  }
-});
-
 const route = useRoute();
-const tagsInscription = computed(() => {
+
+const slideoverTitle = computed(() => {
   const segments = route.path.toUpperCase().split('/').filter(Boolean);
   return segments.pop() || 'Unknown'; // Fallback in case the path is empty
 });
 
-const { data: page } = await useAsyncData(`docs-${route.path}`, () => queryContent(route.path).findOne());
-
-const cards = ref<any[]>([]);
 const tags = ref<string[]>([]);
 const selectedTags = ref<string[]>([]);
 
+const media = computed(() => {
+  return route.path.split('/media/').pop() || null;
+});
+console.log('Media:', media.value);
 // Fetch cards and sort by cardID prop order
-const getCards = async () => {
-  const result = await queryContent('media/articles')
-    .where({ cardID: { $in: props.cardID } })
-    .find();
+const { data: result } = await useAsyncData(`fetch-articles-by-cardID-in-${media.value}`, () =>
+  queryCollection('articles')
+    .where('cardID', 'IN' , props.cardID)
+    .order('cardID', 'DESC')
+    .all()
+);
 
-  // Sort cards based on the order of cardID prop
-  return result.sort((a, b) => {
-    return props.cardID.indexOf(a.cardID) - props.cardID.indexOf(b.cardID);
-  });
-}
-
-const tagStac = () => {
-  if (cards.value.length > 0) {
-    const uniqueTags = new Set<string>();
-    cards.value.forEach(el => {
-      el.tags?.forEach(tag => {
-        if (tag !== null && tag.length > 0) {
-          uniqueTags.add(tag)
-        }
-      });
-    })
-    tags.value = Array.from(uniqueTags)
-  } else {
-    tags.value = []
-  }
-}
-
-const updateData = async () => {
-  cards.value = await getCards();
-  tagStac();
-}
-
-const filteredCards = computed(() => {
-  if (selectedTags.value.length === 0) {
-    return cards.value;
-  }
-  return cards.value.filter(card => {
-    let belongs = false;
-    card.tags?.forEach(tag => {
-      if (tag !== null && tag.length > 0 && selectedTags.value.includes(tag)) {
-        belongs = true;
+//Tag & Tag Manipulation
+// Process each card in the result and collect all tags
+const allCardTags: string[] = [];
+result.value?.forEach((card, index) => {
+  
+  // Extract tags from each card and add to allCardTags array
+  if (card.tags && Array.isArray(card.tags)) {
+    card.tags.forEach((tag: string) => {
+      if (!allCardTags.includes(tag)) {
+        allCardTags.push(tag);
       }
     });
-    return belongs;
-  });
+  }
 });
 
+// Update the tags ref with all collected tags
+tags.value = allCardTags;
+
+// Toggle tag selection
 const toggleTag = (tag: string) => {
-  if (selectedTags.value.includes(tag)) {
-    selectedTags.value = selectedTags.value.filter(t => t !== tag);
-  } else {
+  const index = selectedTags.value.indexOf(tag);
+  if (index === -1) {
+    // Tag not selected, add it
     selectedTags.value.push(tag);
+  } else {
+    // Tag already selected, remove it
+    selectedTags.value.splice(index, 1);
   }
 };
 
+// Clear all selected tags
 const clearTags = () => {
   selectedTags.value = [];
 };
 
-updateData();
+// Computed property to filter cards based on selected tags
+const filteredCards = computed(() => {
+  if (!result.value || selectedTags.value.length === 0) {
+    return result.value; // Return all cards if no tags selected
+  }
+  
+  return result.value.filter(card => {
+    if (!card.tags || !Array.isArray(card.tags)) {
+      return false; // Exclude cards without tags
+    }
+    
+    // Check if the card has at least one of the selected tags
+    return selectedTags.value.some(selectedTag => 
+      card.tags.includes(selectedTag)
+    );
+  });
+});
+
+const tooltip = computed(() => {
+  if( selectedTags.value.length > 0) {
+    return `Selected Tags: ${selectedTags.value.join(', ') }`;
+  }
+  else {
+    return "Click to select tags";
+  }
+});
 </script>

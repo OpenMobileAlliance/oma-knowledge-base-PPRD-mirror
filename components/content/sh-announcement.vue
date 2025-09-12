@@ -1,11 +1,11 @@
 <template>
     <div v-if="visible" :class="mergedConfig.wrapper">
         <div :class="mergedConfig.base">
-            <ContentQuery path="/announcement" v-slot="{ data }">
+            <div>
                 <div class="flex-1">
                     <ContentRenderer :value="item" v-for="item in data" :key="item._id" />
                 </div>
-            </ContentQuery>
+            </div>
             <button @click="hideAnnouncement" :class="mergedConfig.button">
                 <UIcon name="i-line-md:close-small" dynamic :class="mergedConfig.icon" />
             </button>
@@ -14,6 +14,7 @@
 </template>
 
 <script setup lang="ts">
+import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const config = {
     wrapper: 'bg-oma-red-600 dark:bg-oma-red-700 p-1 sm:p-3 text-center text-white',
@@ -41,12 +42,11 @@ const mergedConfig = computed(() => ({
 
 const visible = ref(false);
 
-const { data, pending } = await useAsyncData('page-data', () =>
-    queryContent('/announcement').findOne()
-);
+const { data: data } = useQueryCollection('content', '/announcement');
+
 
 watchEffect(() => {
-    if (!pending.value && data.value) {
+    if (data.value) {
         visible.value = data.value.visible === true;
     }
 });
