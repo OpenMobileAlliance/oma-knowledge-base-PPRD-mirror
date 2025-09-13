@@ -2,7 +2,7 @@
   <ULink :class="buttonClass" type="button" :disabled="props.disabled" :to="props.urlButton" :target="props.target" v-bind="{...attrs}">
   <div :class="ui.inner">
     <span v-if="labelButton"><MDC :value="labelButton" /></span>
-    <ContentSlot v-else :use="$slots.default" unwrap="" />
+    <slot v-else />
   </div>
   </ULink>
 </template>

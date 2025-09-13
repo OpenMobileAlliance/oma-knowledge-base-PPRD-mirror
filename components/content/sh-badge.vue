@@ -1,6 +1,6 @@
 <template>
   <div :class="[ui.wrapper, 'w-fit rounded-3xl px-2 py-1']">
-    <ContentSlot :use="$slots.default" unwrap="" />
+    <slot />
   </div>
 </template>
 

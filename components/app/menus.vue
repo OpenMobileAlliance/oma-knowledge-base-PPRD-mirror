@@ -1,36 +1,48 @@
 <template>
     <ul :class="ui.wrapper">
         <li v-for="(item, index) in menuData.items" :key="index" class="group/item relative ">
-            <!-- Root Menu Button -->
-            <button @click="item.onClick" :class="[
+            <!-- Root Menu Link -->
+            <NuxtLink :to="item.path" :class="[
                 item.label === 'HOME'
-                    ? 'hover:rounded-lg cursor-pointer'
-                    : 'hover:rounded-t-lg cursor-pointer',
+                    ? 'hover:rounded-lg cursor-pointer group-hover/item:rounded-lg'
+                    : 'hover:rounded-t-lg cursor-pointer group-hover/item:rounded-t-lg',
                 ui.rootMenuButton
             ]">
                 <span class="flex items-center space-x-2">
                     <!-- <UIcon v-if="iconsMap[item.label]" :name="iconsMap[item.label]" dynamic :class="ui.contentIcon" /> -->
                     <span :class="[ui.rootMenuLabel,
                     isActive(item) ? ui.rootActive : '']">
-                        {{ item.label }}
+                        {{ item.label.toUpperCase() }}
                     </span>
                 </span>
-                <UIcon v-if="item.children" name="mdi:chevron-right" :class="ui.chevronIcon" />
-            </button>
+                <UIcon v-if="item.children" name="mdi:chevron-right" :class="[
+                    ui.chevronIcon,
+                    isActive(item) ? 'group-hover/rootMenuButton:dark:text-oma-yellow-400 group-hover/item:dark:text-oma-yellow-400' : ''
+                ]" />
+            </NuxtLink>
 
             <!-- Submenu -->
             <ul v-if="item.children" :class="[ui.submenuUl, 'hidden group-hover/item:flex']">
                 <li v-for="(child, childIndex) in item.children" :key="childIndex" class="group/sub relative">
-                    <button @click="child.onClick" :class="['cursor-pointer',
-                        ui.button,
-                        isActive(child) ? ui.submenuActive : ''
+                    <NuxtLink v-if="child.path !== submenuToLink" :to="child.path"
+                        :external="child.path === '/media/news' || child.path === '/media/blog' ? true : false" :class="['cursor-pointer',
+                        ui.button
                     ]">
                         <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
-                        <span :class="ui.label">
-                            {{ child.label }}
+                        <span :class="[ui.label, isActive(child) ? ui.submenuActive : '']">
+                            {{ child.label.toUpperCase() }}
                         </span>
                         <!-- <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" /> -->
-                    </button>
+                    </NuxtLink>
+                    <a v-else :href="page?.meta.link" target="_blank" rel="noopener noreferrer" :class="['cursor-pointer',
+                        ui.button
+                    ]">
+                        <!-- <UIcon v-if="frontmatter[0].icon" :name="frontmatter[0].icon" dynamic :class="ui.contentIcon" /> -->
+                        <span :class="[ui.label, isActive(child) ? ui.submenuActive : '']">
+                            {{ child.label.toUpperCase() }}
+                        </span>
+                        <!-- <UIcon v-if="child.children" name="mdi:chevron-right" :class="ui.chevronIcon" /> -->
+                    </a>
 
                     <!-- Recursive Submenu -->
                     <!-- <ul v-if="child.children" :class="[ui.ul, 'hidden group-hover/sub:flex']">
@@ -90,18 +102,20 @@
 </template>
 
 <script setup lang="ts">
+import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryCollectionNavigation';
+
 const config = {
     wrapper: 'w-fit flex items-end justify-center rounded-lg',
-    rootMenuButton: 'w-full flex items-center justify-start px-3 py-2 text-left hover:bg-white dark:hover:bg-gray-800',
+    rootMenuButton: 'group/rootMenuButton w-full flex items-center justify-start px-3 py-2 text-left hover:bg-white dark:hover:bg-neutral-800 group-hover/item:bg-white dark:group-hover/item:bg-neutral-800',
     rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
     rootActive: 'relative after:content-[\'\'] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[5px] after:bg-oma-yellow-500 after:dark:bg-oma-yellow-500 after:rounded-full',
-    submenuActive: 'underline underline-offset-4 decoration-4 decoration-oma-yellow-500',
-    submenuUl: 'absolute top-10 left-0 flex-col shadow-lg mt-0 z-10 bg-white dark:bg-gray-800 rounded-tl-none rounded-b-lg rounded-tr-lg hover:rounded-tl-lg',
+    submenuActive: 'relative after:content-[\'\'] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[8px] after:bg-oma-yellow-500 after:dark:bg-oma-yellow-500 after:rounded-sm',
+    submenuUl: 'absolute top-10 left-0 flex-col shadow-lg mt-0 z-10 bg-white dark:bg-neutral-800 rounded-tl-none rounded-b-lg rounded-tr-lg hover:rounded-tl-lg',
     ul: 'absolute left-full top-0 flex-col shadow-lg rounded-lg mt-0 z-10 bg-white dark:bg-gray-800',
-    button: 'w-full flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200',
+    button: 'w-full flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-gray-200 dark:hover:bg-oma-yellow-700 transition duration-200',
     label: 'font-small text-gray-900 dark:text-gray-100 truncate',
     contentIcon: '',
-    chevronIcon: 'ml-auto',
+    chevronIcon: 'ml-auto text-white group-hover/rootMenuButton:rotate-90 group-hover/rootMenuButton:scale-125 group-hover/item:rotate-90 group-hover/item:scale-125 group-hover/label:rotate-90 transition-transform duration-200',
 }
 
 const props = withDefaults(
@@ -123,8 +137,13 @@ const { ui, attrs } = useUI(
 
 const router = useRouter()
 const route = useRoute()
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+const { data: navigation } = useQueryCollectionNavigation('content', `navigation-to-${route.path}`)
 
+const submenuToLink = toRef('/oma-events/smart-city-expo-world-congress')
+
+const { data: page } = useAsyncData('frontmatter-link', async() => {
+    return await queryCollection('content').path(submenuToLink.value).first()
+})
 // List of folder and file titles to filter out
 const excludedTitles = [
     'Guidelines',
@@ -141,7 +160,7 @@ const excludedTitles = [
 const excludedPaths = ['/media/articles', '/oma-events/past-events', '/footer-content']
 
 const filterExcludedPaths = (navItem: any): boolean => {
-    if (excludedPaths.includes(navItem._path)) {
+    if (excludedPaths.includes(navItem.path)) {
         return false
     }
     if (navItem.children) {
@@ -157,7 +176,6 @@ const filteredNavigation = computed(() =>
 interface MenuItem {
     label: string
     path?: string
-    onClick?: () => void
     children?: MenuItem[] | null
 }
 
@@ -166,15 +184,13 @@ const processNavigationItem = (navItem: any, isRoot = true): MenuItem => {
         const singleChild = navItem.children[0];
         return {
             label: navItem.title,
-            path: singleChild._path,
-            onClick: () => router.push(singleChild._path)
+            path: singleChild.path
         };
     }
     return {
         label: navItem.title,
-        path: navItem._path, // Keep the index path for active-checking
-        children: navItem.children?.map((child: any) => processNavigationItem(child, false)) || null,
-        onClick: () => router.push(navItem._path) 
+        path: navItem.path, // Keep the index path for active-checking
+        children: navItem.children?.map((child: any) => processNavigationItem(child, false)) || null
     };
 };
 
@@ -182,35 +198,12 @@ const menuData = computed(() => ({
     items: filteredNavigation.value?.map((navItem: any) => processNavigationItem(navItem))
 }))
 
-const iconsMap = ref<Record<string, string>>({})
-
-watchEffect(async () => {
-    if (!menuData.value?.items) return
-
-    // Fetch all documents that have an "icon" in frontmatter
-    const allIcons = await queryContent().where({ icon: { $exists: true } }).find()
-
-    // Create a mapping: title -> icon
-    const iconsLookup = new Map(allIcons.map((content) => [content.title, content.icon]))
-
-    // Map icons to menu items based on label
-    menuData.value.items.forEach((item) => {
-        if (iconsLookup.has(item.label)) {
-            iconsMap.value[item.label] = iconsLookup.get(item.label)!
-        }
-    })
-
-    nextTick(() => {
-        // Debug: console.log("Icons Map after update:", iconsMap.value)
-    })
-})
-
 // Helper: Check if a menu item (or one of its children) is active
 const isActive = (item: MenuItem): boolean => {
     if (item.path && item.path === route.path) {
         return true
     }
-    if (item.children) {
+    if (item.children && item.children.length > 0) {
         return item.children.some(isActive)
     }
     return false

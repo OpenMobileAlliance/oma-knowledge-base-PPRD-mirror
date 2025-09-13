@@ -286,5 +286,18 @@
      {
         "ObjectIDRange": "36100 - 36149", 
         "CompanyName": "Micro Connect"
-    }
+    },
+    {
+        "ObjectIDRange": "36150 - 36199", 
+        "CompanyName": "Schreder"
+     },
+     {
+        "ObjectIDRange": "36200 - 36249", 
+        "CompanyName": "Vodafone"
+     },
+     {
+        "ObjectIDRange": "36250 - 36299", 
+        "CompanyName": "HK.Digital"
+     }
+     
 ]

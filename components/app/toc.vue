@@ -9,7 +9,7 @@
       <ul class="space-y-1 lg:block -ml-2">
         <li v-for="(link, index) in page.body.toc.links" :key="index" class="space-y-1 lg:block"
           :class="[isActive(link.id) ? ui.active : ui.normal]">
-          <ULink :id="`toc-${link.id}`" :to="`${page._path}#${link.id}`"
+          <ULink :id="`toc-${link.id}`" :to="`${page.path}#${link.id}`"
             :class="[ui.shadow, isActive(link.id) ? ui.link.active : ui.link.normal]"
             class="not-prose pl-1 pr-1 text-black dark:text-golden">
             {{ link.text }}
@@ -17,7 +17,7 @@
           <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
             <li v-for="(subLink, subIndex) in link.children" :key="subIndex" class="space-y-1 lg:block"
               :class="[isActive(subLink.id) ? ui.active : ui.normal]">
-              <ULink :id="`toc-${subLink.id}`" :to="`${page._path}#${subLink.id}`"
+              <ULink :id="`toc-${subLink.id}`" :to="`${page.path}#${subLink.id}`"
                 :class="[ui.shadow, isActive(subLink.id) ? ui.link.active : ui.link.normal]"
                 class="not-prose pl-1 pr-1 text-black dark:text-golden">
                 {{ subLink.text }}
