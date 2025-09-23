@@ -42,8 +42,6 @@ const visible = ref(false);
 
 const { data: announcement } = useQueryCollection('content', '/announcement');
 
-console.log(announcement.value?.meta.visible);
-
 if (announcement.value?.meta?.visible === true) {
     visible.value = true;
 } else {
