@@ -298,6 +298,9 @@
      {
         "ObjectIDRange": "36250 - 36299", 
         "CompanyName": "HK.Digital"
+     },
+     {
+        "ObjectIDRange": "36300 - 36399", 
+        "CompanyName": "HID"
      }
-     
 ]
