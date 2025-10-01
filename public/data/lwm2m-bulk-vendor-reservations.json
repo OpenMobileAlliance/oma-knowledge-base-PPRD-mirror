@@ -80,8 +80,12 @@
         "CompanyName": "AVSystem sp. z o.o."
     },
     {
-        "ObjectIDRange": "33655 - 33704", 
-        "CompanyName": "U-Blox"
+        "ObjectIDRange": "33655 - 33679", 
+        "CompanyName": "Trasna"
+    },
+    {
+        "ObjectIDRange": "33680 - 33704", 
+        "CompanyName": "Trident"
     },
     {
         "ObjectIDRange": "33705 - 33754", 
