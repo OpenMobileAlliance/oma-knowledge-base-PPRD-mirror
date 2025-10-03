@@ -21,7 +21,7 @@
     </div>
 
     <!-- Navigation dots -->
-    <div :class="ui.navigation.wrapper">
+    <div v-if="props.navigationVisible===true" :class="ui.navigation.wrapper">
       <button v-for="(_, index) in totalSlides" :key="index" @click="goToSlide(index)" :class="[
         ui.navigation.inner,
         currentSlide === index ? ui.navigation.active : ui.navigation.inactive
@@ -39,6 +39,7 @@ const props = withDefaults(
     timer?: number
     title?: string
     subtitle?: string
+    navigationVisible?: boolean
     description?: string
     ui?: Partial<typeof config>;
   }>(),
@@ -48,6 +49,7 @@ const props = withDefaults(
     timer: 2, // in seconds
     title: '',
     subtitle: '',
+    navigationVisible: true,
     description: ''
   }
 )
