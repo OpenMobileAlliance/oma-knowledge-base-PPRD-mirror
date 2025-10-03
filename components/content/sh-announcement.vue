@@ -19,7 +19,7 @@ const config = {
     base: 'flex items-start justify-between',
     content: 'content flex-1 !text-white [&_*]:!text-white text-center text-xl tracking-wide motion-safe:animate-pulse hover:animate-none font-bold',
     linkIcon: 'inline-block',
-    button: 'ml-4 hover:scale-125 duration-700',
+    button: 'absolute hover:bg-inherit hover:rounded-lg right-0 hover:scale-125 duration-700 z-50',
     icon: 'text-3xl mr-4 text-white',
 };
 
