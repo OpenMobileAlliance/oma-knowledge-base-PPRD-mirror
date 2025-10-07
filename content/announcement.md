@@ -20,7 +20,7 @@ robots: false
 ::ShCarousel
 ---
 navigationVisible: false
-timer: 4
+timer: 6
 ---
   :::ShSegment
   <div class="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-196924987975 w-full sm:max-w-6xl mx-auto px-2 sm:px-6 lg:px-8 mb-6 banner-xl"
