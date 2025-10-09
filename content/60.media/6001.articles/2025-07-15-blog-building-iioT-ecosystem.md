@@ -3,7 +3,7 @@ layout: articles
 urlImage: /images/media/iiot-ecosystem.jpeg
 imageBackground: ""
 title:  "Building a Future-Proof IIoT Ecosystem with Open Standards: The Role of OMA Lightweight M2M (LwM2M)"
-subtitle: 
+subtitle: ""
 leftLabel: 2025-July-15
 rightLabel: OMA
 cardID: 155
@@ -12,7 +12,7 @@ tags:
     - blogs
 ---
 
-The utilities industry is undergoing rapid digital transformation, with Industrial IoT (IIoT) deployments at the heart of modern infrastructure. To ensure scalability, security, and long-term interoperability, open standards like the Open Mobile Alliance’s Lightweight M2M (LwM2M) protocol are increasingly essential.
+The utilities industry is undergoing rapid digital transformation, with Industrial IoT (IIoT) deployments at the heart of modern infrastructure. To ensure scalabil, security, and long-term interoperability, open standards like the Open Mobile Alliance’s Lightweight M2M (LwM2M) protocol are increasingly essential.
 <!--more-->
 
 ### Why LwM2M?
