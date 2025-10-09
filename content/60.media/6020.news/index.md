@@ -17,6 +17,6 @@ text: |
     See how **Open Mobile Alliance** is making headlines with **media coverage, interviews,** and **industry mentions**.  
 
 cols: 3
-cardID: [150, 145, 120, 110, 80, 75, 70, 60, 55, 50, 45, 30, 25, 20, 15]
+cardID: [200, 150, 145, 120, 110, 80, 75, 70, 60, 55, 50, 45, 30, 25, 20, 15]
 ---
 ::
