@@ -17,6 +17,6 @@ text: |
     Explore **expert insights, industry trends,** and deep dives into the latest developments in **open standards and IoT**.   
 
 cols: 3
-cardID: [200, 155, 140, 135, 130, 115, 105, 100, 95, 90, 85, 65, 40, 35, 10, 5]
+cardID: [155, 140, 135, 130, 115, 105, 100, 95, 90, 85, 65, 40, 35, 10, 5]
 ---
 ::
