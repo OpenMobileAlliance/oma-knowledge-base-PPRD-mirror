@@ -6,7 +6,7 @@ title:  "A Conversation with Sean van der Walt"
 subtitle: 
 leftLabel: 2025-October-10
 rightLabel: OMA
-cardID: 210
+cardID: 205
 tags: 
     - news
     - blogs
