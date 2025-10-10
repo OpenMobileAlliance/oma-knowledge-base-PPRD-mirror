@@ -8,10 +8,10 @@ jobs:
   block-pprd:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if PR source is PPRD-Deployment
+      - name: Check if PR source is PPRD-deployment
         run: |
-          if [[ "${{ github.head_ref }}" == "PPRD-Deployment" ]]; then
-            echo "❌ Merging from 'PPRD-Deployment' branch is forbidden."
+          if [[ "${{ github.head_ref }}" == "PPRD-deployment" ]]; then
+            echo "❌ Merging from 'PPRD-deployment' branch is forbidden."
             exit 1
           else
             echo "✅ Branch '${{ github.head_ref }}' is allowed."
