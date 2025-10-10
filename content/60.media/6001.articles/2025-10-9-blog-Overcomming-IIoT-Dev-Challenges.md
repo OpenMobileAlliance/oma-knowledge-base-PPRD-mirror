@@ -6,7 +6,7 @@ title:  "Overcoming IIoT Device Management Challenges in Utilities with Lightwei
 subtitle: ""
 leftLabel: 2025-October-9
 rightLabel: OMA
-cardID: 205
+cardID: 200
 tags: 
     - news
     - blogs
