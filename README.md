@@ -83,6 +83,8 @@ git remote set-url --push origin https://github.com/OpenMobileAlliance/oma-knowl
 
 In the original [oma-knowledge-base](https://github.com/OpenMobileAlliance/oma-knowledge-base) folder where you have been working normally, make any changes that you want to make
 
+>NOTE: Merging `PPRD-deployment` branch into `main` or any other branch is **NOT** allowed. Always merge your feature branch into `main`.
+
 You can either Merge or recreate the PPRD-deployment Branch:
 
 - Merge:

@@ -1,13 +1,11 @@
 <template>
-    <div v-if="visible" :class="mergedConfig.wrapper">
-        <div :class="mergedConfig.base">
-            <div>
-                <div class="flex-1">
-                    <ContentRenderer :value="item" v-for="item in data" :key="item._id" />
-                </div>
+    <div v-if="visible === true" :class="ui.wrapper">
+        <div :class="ui.base">
+            <div :class="ui.content">
+                <ContentRenderer :value="announcement ?? {}" />
             </div>
-            <button @click="hideAnnouncement" :class="mergedConfig.button">
-                <UIcon name="i-line-md:close-small" dynamic :class="mergedConfig.icon" />
+            <button @click="hideAnnouncement" :class="ui.button">
+                <UIcon name="i-line-md:close-small" dynamic :class="ui.icon" />
             </button>
         </div>
     </div>
@@ -17,9 +15,11 @@
 import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const config = {
-    wrapper: 'bg-oma-red-600 dark:bg-oma-red-700 p-1 sm:p-3 text-center text-white',
-    base: 'flex items-center justify-between',
-    button: 'ml-4 hover:scale-125 duration-700',
+    wrapper: 'bg-golden dark:bg-oma-yellow-500 p-1 sm:p-3 z-50',
+    base: 'flex items-start justify-between',
+    content: 'content flex-1 !text-white [&_*]:!text-white text-center text-xl tracking-wide motion-safe:animate-pulse hover:animate-none font-bold',
+    linkIcon: 'inline-block',
+    button: 'absolute hover:bg-inherit hover:rounded-lg right-0 hover:scale-125 duration-700 z-50',
     icon: 'text-3xl mr-4 text-white',
 };
 
@@ -32,24 +32,21 @@ const props = withDefaults(
     },
 );
 
-// Merge user-provided UI config with defaults
-const mergedConfig = computed(() => ({
-    wrapper: props.ui?.wrapper || config.wrapper,
-    base: props.ui?.base || config.base,
-    button: props.ui?.button || config.button,
-    icon: props.ui?.icon || config.icon,
-}));
+const { ui, attrs } = useUI(
+    "announcement",
+    toRef(props, "ui"),
+    config,
+);
 
 const visible = ref(false);
 
-const { data: data } = useQueryCollection('content', '/announcement');
+const { data: announcement } = useQueryCollection('content', '/announcement');
 
-
-watchEffect(() => {
-    if (data.value) {
-        visible.value = data.value.visible === true;
-    }
-});
+if (announcement.value?.meta?.visible === true) {
+    visible.value = true;
+} else {
+    visible.value = false;
+}
 
 const hideAnnouncement = () => {
     visible.value = false;
