@@ -85,6 +85,7 @@ OMA currently holds liaison agreements with the following organizations:
 * GSMA
 * ISO/IEC/JTC1/SC29/WG11
 * ITU-T
+* LF CAMARA FUND (Linux Foundation CAMARA Fund)
 * NFC Forum
 * NGMN
 * NPSTC National Public Safety Telecommunications Council
