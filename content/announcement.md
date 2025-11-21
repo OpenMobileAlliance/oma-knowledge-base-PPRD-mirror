@@ -1,5 +1,5 @@
 ---
-visible: true
+visible: false
 sitemap: false
 robots: false
 ---
