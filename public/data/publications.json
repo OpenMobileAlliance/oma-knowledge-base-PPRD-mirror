@@ -14152,6 +14152,19 @@
   },
   {
     "organization": "https://technical.openmobilealliance.org/organization-info.json",
+    "enablerName": "uCIFI Schedule Framework",
+    "enablerAbbreviation": "OMA-TS-uCIFI-Schedule-Framework",
+    "status": "Approved",
+    "version": "V1.0",
+    "releaseDate": "2025-05-30",
+    "fileName": "OMA-TS-uCIFI-Schedule-Framework-V1_0-20250530-A.pdf",
+    "docType": "Technical Specification",
+    "url": "https://www.openmobilealliance.org/release/uCIFI/V1_0-20250530-A/OMA-TS-uCIFI-Schedule-Framework-V1_0-20250530-A.pdf",
+    "description": "This document describes the uCIFI Schedule Framework and can be considered a comprehensive guide to the published data model. Its purpose is to provide OMA members with a more in-depth explanation of the details related to such functionality, show real examples, and simplify the following integration steps.",
+    "contentMediaType": "application/pdf"
+  },
+  {
+    "organization": "https://technical.openmobilealliance.org/organization-info.json",
     "enablerName": "OMA LWM2M Object Device Capability Management",
     "enablerAbbreviation": "LWM2M_DevCapMgmt",
     "status": "Approved",
