@@ -15,9 +15,9 @@
 import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const config = {
-    wrapper: 'bg-golden dark:bg-oma-yellow-500 p-1 sm:p-3 z-50',
+    wrapper: 'p-1 sm:p-3 z-50', //bg-golden dark:bg-oma-yellow-500
     base: 'flex items-start justify-between',
-    content: 'content flex-1 !text-white [&_*]:!text-white text-center text-xl tracking-wide motion-safe:animate-pulse hover:animate-none font-bold',
+    content: 'content flex-1 text-center text-xl',
     linkIcon: 'inline-block',
     button: 'absolute hover:bg-inherit hover:rounded-lg right-0 hover:scale-125 duration-700 z-50',
     icon: 'text-3xl mr-4 text-white',
