@@ -30,7 +30,8 @@ direction: vertical
   <div class="flex items-center gap-8 pr-5 pl-5">
     <img src="/logo.png" width="40" height="40" />
 
-    🛠️ OMA Test Events • [Registration is open](/oma-events/test-events){ .hover:cursor-pointer } • Validate your LwM2M implementations against other vendors in a neutral, multi-vendor interoperability session •
+      🏙️ OMA Conformance Tool • [Now Available](/specifications/resources/conformance-tool){ .hover:cursor-pointer } • Validate your Smart City implementation against official OMA conformance test cases •
+
   </div>
   :::
 ::
