@@ -27,7 +27,7 @@ icon: line-md:home-twotone
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/innovation1.jpeg
+    urlImage: /images/landing-hero/OMA-Global-Interoperability-for -IoT.png
     title: |
         Open Mobile Alliance (OMA)
     subtitle: |
@@ -42,7 +42,7 @@ icon: line-md:home-twotone
     positionText: right
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/inovation-idea.jpeg
+    urlImage: /images/landing-hero/oma-ipso-usifi-icons.png
     title: |
         OMA, IPSO Alliance, and uCIFI
     subtitle: |
@@ -58,7 +58,7 @@ icon: line-md:home-twotone
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/machine-learn.jpeg
+    urlImage: /images/landing-hero/LwM2M-Connected-Smart-City-at-Sunset.png
     title: |
         LightweightM2M and Wireless Innovation
     subtitle: |
