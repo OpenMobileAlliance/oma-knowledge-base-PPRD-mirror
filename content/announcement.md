@@ -30,8 +30,7 @@ direction: vertical
   <div class="flex items-center gap-8 pr-5 pl-5">
     <img src="/logo.png" width="40" height="40" />
 
-      🏙️ OMA Conformance Tool • [Now Available](/specifications/resources/conformance-tool){ .hover:cursor-pointer } • Validate your Smart City implementation against official OMA conformance test cases •
-
+    🏙️ OMA Conformance Tool • [Apply for Early Access](/specifications/resources/lwm2m-client-conformance-tool){ .hover:cursor-pointer } • Validate your Smart City implementation against official OMA conformance test cases •
   </div>
   :::
 ::

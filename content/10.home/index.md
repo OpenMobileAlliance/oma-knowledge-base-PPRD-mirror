@@ -8,6 +8,22 @@ icon: line-md:home-twotone
 ::ShSegment
     :::ShTextImg
     ---
+    positionText: right
+    spanText: m
+    alignText: left
+    urlImage: /images/landing-hero/oma-conformance-smart-city.png
+    title: |
+        Validate Your Smart City Implementation
+    subtitle: |
+        Early Access to the OMA Conformance Tool
+    text: |
+        The **OMA Conformance Tool** is now available for organizations that want to validate their **Smart City devices, software, gateways, and connector solutions** against official OMA conformance test cases. [Apply for early access](/specifications/resources/lwm2m-client-conformance-tool) and help strengthen standards-based interoperability before deployment.
+    ---
+    :::
+
+
+    :::ShTextImg
+    ---
     positionText: left
     spanText: m
     alignText: left
