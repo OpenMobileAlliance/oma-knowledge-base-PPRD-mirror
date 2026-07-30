@@ -7,13 +7,11 @@
       <MDC :class="ui.subtitle" :value="subtitle" />
     </div>
     <div :class="ui.inner">
-      <div class="flex transition-transform duration-500 ease-in-out" :style="carouselStyle"
-        :class="`w-[${slides.length * 100}%]`">
-        <div v-for="(group, index) in slides" :key="index" class="w-full flex shrink-0 justify-center gap-4 px-4">
-          <div v-for="(child, idx) in group" :key="idx" class="w-full" :class="{
-            'max-w-md': slidesPerView === 1,
-            'max-w-sm': slidesPerView > 1
-          }">
+      <div :class="ui.track">
+        <div v-for="(group, index) in slides" :key="index" :class="[ui.group, layout.group]"
+          :style="slideStyle(index)">
+          <div v-for="(child, idx) in group" :key="idx"
+            :class="[ui.item.wrapper, slidesPerView === 1 ? layout.item.single : layout.item.multiple]">
             <component :is="child" />
           </div>
         </div>
@@ -21,9 +19,10 @@
     </div>
 
     <!-- Navigation dots -->
-    <div v-if="props.navigationVisible===true" :class="ui.navigation.wrapper">
+    <div v-if="props.navigationVisible===true" :class="[ui.navigation.wrapper, layout.navigation.wrapper]">
       <button v-for="(_, index) in totalSlides" :key="index" @click="goToSlide(index)" :class="[
         ui.navigation.inner,
+        layout.navigation.inner,
         currentSlide === index ? ui.navigation.active : ui.navigation.inactive
       ]" />
     </div>
@@ -40,6 +39,7 @@ const props = withDefaults(
     title?: string
     subtitle?: string
     navigationVisible?: boolean
+    direction?: 'horizontal' | 'vertical'
     description?: string
     ui?: Partial<typeof config>;
   }>(),
@@ -50,6 +50,7 @@ const props = withDefaults(
     title: '',
     subtitle: '',
     navigationVisible: true,
+    direction: 'horizontal', // Axis the slides travel along
     description: ''
   }
 )
@@ -59,6 +60,11 @@ const { ui } = useUI(
   toRef(props, "ui"),
   config
 );
+
+// The half of the config that depends on which way the slides travel. Picking
+// it here keeps the axis out of the pages using the carousel: they set
+// `direction` and get the matching layout, navigation included.
+const layout = computed(() => props.direction === 'vertical' ? ui.value.vertical : ui.value.horizontal)
 
 const slots = useSlots()
 const isTransitioning = ref(true)
@@ -110,8 +116,13 @@ onBeforeUnmount(() => {
   if (interval) clearInterval(interval)
 })
 
-const carouselStyle = computed(() => ({
-  transform: `translateX(-${currentSlide.value * 100}%)`,
-  transition: isTransitioning.value ? 'transform 0.5s ease-in-out' : 'none'
-}))
+function slideStyle(index: number) {
+  const offset = (index - currentSlide.value) * 100
+  return {
+    transform: props.direction === 'vertical'
+      ? `translateY(${offset}%)`
+      : `translateX(${offset}%)`,
+    transition: isTransitioning.value ? 'transform 0.5s ease-in-out' : 'none'
+  }
+}
 </script>
