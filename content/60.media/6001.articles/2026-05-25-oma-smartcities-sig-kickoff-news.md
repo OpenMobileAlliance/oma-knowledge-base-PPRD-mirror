@@ -22,6 +22,8 @@ The **Smart Cities SIG** is not intended to develop a new standard. Instead, its
 
 The initiative aims to create a bridge between real operational city requirements and interoperable digital frameworks, enabling municipalities and technology providers to align implementations while reducing fragmentation across ecosystems.
 
+More details on the initiative's scope, methodology, and governance are available at the [Smart Cities SIG](https://smartcities-sig-web.vercel.app/) website.
+
 One of the project’s key objectives is to develop a catalog of [Smart Data Models](https://smartdatamodels.org/) , with semantics shared with selected [IPSO/OMA data objects](https://github.com/OpenMobileAlliance/lwm2m-registry), to address the specific use cases identified by the cities and the companies collaborating with them. In this way, the convergence of raw device data with the context required by the digital twin will make it easier to enable interoperability across domains—promoting greater portability and semantic consistency—and give manufacturers advance notice of what will be needed: historical data series that are comparable over time and across services and cities, to support data-driven management.
 
 Initial activities will focus on real municipal use cases contributed by participating cities and organizations, including public infrastructure and smart city operational scenarios.

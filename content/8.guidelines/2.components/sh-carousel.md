@@ -264,7 +264,7 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a carousel componen
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5"><code>ui</code></td>
+      <td rowspan="9"><code>ui</code></td>
       <td><code>wrapper</code></td>
       <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the carousel container.</td>
@@ -273,6 +273,16 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a carousel componen
       <td><code>inner</code></td>
       <td><code>config.inner</code></td>
       <td>Defines the styling for the inner sliding container.</td>
+    </tr>
+    <tr>
+      <td><code>track</code></td>
+      <td><code>config.track</code></td>
+      <td>Styles for the grid that stacks every slide in the same cell, so the carousel is as tall as its tallest slide.</td>
+    </tr>
+    <tr>
+      <td><code>group</code></td>
+      <td><code>config.group</code></td>
+      <td>Styles applied to each slide group (the set of components shown together in one view).</td>
     </tr>
     <tr>
       <td><code>title</code></td>
@@ -285,9 +295,19 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a carousel componen
       <td>Styles applied to the subtitle text (e.g. font size, color).</td>
     </tr>
     <tr>
+      <td><code>item</code></td>
+      <td><code>config.item.wrapper</code></td>
+      <td>Styles applied to each individual slide.</td>
+    </tr>
+    <tr>
       <td><code>navigation</code></td>
       <td><code>config.navigation.wrapper</code><br/><code>config.navigation.inner</code><br/><code>config.navigation.active</code><br/><code>config.navigation.inactive<br/></code></td>
-      <td>Styles for the navigation dots (pagination dots).</td>
+      <td>Styles for the navigation dots (pagination dots). They sit inside the carousel wrapper rather than below it.</td>
+    </tr>
+    <tr>
+      <td><code>horizontal</code><br/><code>vertical</code></td>
+      <td><code>config.[direction].group</code><br/><code>config.[direction].item.single</code><br/><code>config.[direction].item.multiple</code><br/><code>config.[direction].navigation.wrapper</code><br/><code>config.[direction].navigation.inner</code></td>
+      <td>Everything that depends on the axis the slides travel along. The carousel applies whichever of the two blocks matches its <code>direction</code>, on top of the shared values above, so a page normally only sets <code>direction</code> and leaves the styling alone. <code>item.single</code> is used when <code>slides</code> is <code>1</code>, <code>item.multiple</code> when it is greater than <code>1</code>.</td>
     </tr>
     <tr>
       <td><code>slides</code></td>
@@ -300,6 +320,12 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a carousel componen
       <td>n/a</td>
       <td><code>2</code></td>
       <td>Interval in seconds for automatic slide transitions. Set to <code>0</code> to disable auto-transition.</td>
+    </tr>
+    <tr>
+      <td><code>direction</code></td>
+      <td>n/a</td>
+      <td><code>horizontal</code></td>
+      <td>Axis the slides travel along. Use <code>horizontal</code> to slide sideways, or <code>vertical</code> to slide upwards.</td>
     </tr>
     <tr>
       <td><code>title</code></td>
@@ -448,11 +474,38 @@ export default {
   title: "title text-center text-[24px] font-extrabold dark:saturate-[300%] break-words",
   subtitle: "subtitle text-center text-[20px] font-bold dark:saturate-[180%] -mt-5 break-words",
   inner: "overflow-hidden",
+  track: "grid grid-cols-1",
+  group: "col-start-1 row-start-1 flex justify-center gap-4",
+  item: {
+    wrapper: "w-full",
+  },
   navigation: {
-    wrapper: "absolute left-1/2 transform -translate-x-1/2 flex gap-2 mt-2 bottom-[-1.5rem]",
-    inner: "w-3 h-3 rounded-full",
+    wrapper: "absolute z-10 flex gap-2",
+    inner: "rounded-full",
     active: "bg-golden saturate-[300%]",
     inactive: "bg-gray-500",
+  },
+  horizontal: {
+    group: "px-4",
+    item: {
+      single: "max-w-md",
+      multiple: "max-w-sm",
+    },
+    navigation: {
+      wrapper: "left-1/2 transform -translate-x-1/2 bottom-2",
+      inner: "w-3 h-3",
+    },
+  },
+  vertical: {
+    group: "items-center px-12",
+    item: {
+      single: "max-w-full",
+      multiple: "max-w-sm",
+    },
+    navigation: {
+      wrapper: "left-4 top-1/2 transform -translate-y-1/2 flex-col",
+      inner: "w-2 h-2",
+    },
   },
   // Default Tailwind CSS values
   default: {
@@ -495,22 +548,37 @@ _**inner**_
 *  **Description**:  
    - `overflow-hidden`: Clips any overflowing child elements, useful for sliders or carousels.  
 
-_**navigation.wrapper**_  
-*  **Value**: `"absolute left-1/2 transform -translate-x-1/2 flex gap-2 mt-2 bottom-[-1.5rem]"`  
+_**track**_  
+*  **Value**: `"grid grid-cols-1"`  
 *  **Description**:  
-   - `absolute`: Positions the element absolutely within the relative parent.  
-   - `left-1/2`: Moves the element to the center horizontally.  
-   - `transform -translate-x-1/2`: Shifts the element back by 50% of its width to perfectly center it.  
+   - `grid`: Lays the slides out on a grid so they can all share a single cell.  
+   - `grid-cols-1`: Pins the grid to one column the width of the carousel, so a wide slide cannot stretch the track.  
+
+_**group**_  
+*  **Value**: `"col-start-1 row-start-1 flex justify-center gap-4"`  
+*  **Description**:  
+   - `col-start-1 row-start-1`: Places every slide in the same grid cell, stacked on top of each other. Each slide is then moved into or out of view with its own transform, which keeps the carousel as tall as its tallest slide instead of needing a fixed height.  
+   - `flex`: Lays the components of a single slide out in a row.  
+   - `justify-center`: Centers those components horizontally.  
+   - `gap-4`: Adds space between them.  
+
+_**item.wrapper**_  
+*  **Value**: `"w-full"`  
+*  **Description**:  
+   - `w-full`: Makes each slide take the full width available inside its slide group.  
+
+_**navigation.wrapper**_  
+*  **Value**: `"absolute z-10 flex gap-2"`  
+*  **Description**:  
+   - `absolute`: Positions the element absolutely within the relative parent, which is the carousel wrapper itself.  
+   - `z-10`: Keeps the dots above the slides, since they sit over the carousel instead of below it.  
    - `flex`: Uses flexbox layout.  
    - `gap-2`: Adds space between child items.  
-   - `mt-2`: Adds a top margin.  
-   - `bottom-[-1.5rem]`: Custom negative bottom offset to position the navigation below content.  
 
 _**navigation.inner**_  
-*  **Value**: `"w-3 h-3 rounded-full"`  
+*  **Value**: `"rounded-full"`  
 *  **Description**:  
-   - `w-3 h-3`: Width and height set to `0.75rem` (12px), creating a small dot.  
-   - `rounded-full`: Makes the dot perfectly circular.  
+   - `rounded-full`: Makes the dot perfectly circular. Its size comes from the direction block, since a vertical carousel is usually a thinner strip.  
 
 _**navigation.active**_  
 *  **Value**: `"bg-golden saturate-[300%]"`  
@@ -522,6 +590,14 @@ _**navigation.inactive**_
 *  **Value**: `"bg-gray-500"`  
 *  **Description**:  
    - `bg-gray-500`: Applies a medium gray background color.  
+
+_**horizontal**_ and _**vertical**_  
+*  **Description**: The carousel applies whichever of these two blocks matches its `direction`, on top of the shared values above. None of these classes are repeated in the shared values, so the two never set the same property and a page can pick an axis without restyling anything.  
+   - `group`: `"px-4"` when horizontal. When vertical it becomes `"items-center px-12"`, which centers a short slide against a taller one and leaves a gutter for the dots.  
+   - `item.single`: `"max-w-md"` when horizontal, which suits a card. When vertical it becomes `"max-w-full"`, since a vertical carousel is normally a full-width strip such as a banner.  
+   - `item.multiple`: `"max-w-sm"` either way, so several slides fit alongside each other.  
+   - `navigation.wrapper`: `"left-1/2 transform -translate-x-1/2 bottom-2"` when horizontal, centering the dots along the bottom edge. When vertical it becomes `"left-4 top-1/2 transform -translate-y-1/2 flex-col"`, stacking them down the left-hand side so they follow the axis the slides travel along and stay clear of any close or action button on the right.  
+   - `navigation.inner`: `"w-3 h-3"` when horizontal, `"w-2 h-2"` when vertical, where the strip is thinner.  
 
 _**default**_  
 *  **Value**: `{}`  

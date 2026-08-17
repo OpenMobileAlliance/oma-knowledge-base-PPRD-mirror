@@ -63,7 +63,7 @@
             </div>
             <hr class="border-b-[1px] border-neutral-500 dark:border-golden rounded-xl w-3/5 mt-2 mb-20 mx-auto">
             <div
-              class="content-container par text-left first-letter:text-7xl first-letter:mr-2 first-letter:float-left">
+              class="content-container par text-left first-letter:text-7xl">
               <ContentRenderer :value="articles" :style="{ fontSize: main.font.size }" />
             </div>
           </div>

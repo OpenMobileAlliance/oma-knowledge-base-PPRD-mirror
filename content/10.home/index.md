@@ -8,10 +8,26 @@ icon: line-md:home-twotone
 ::ShSegment
     :::ShTextImg
     ---
+    positionText: right
+    spanText: m
+    alignText: left
+    urlImage: /images/landing-hero/oma-conformance-smart-city.png
+    title: |
+        Validate Your Smart City Implementation
+    subtitle: |
+        Early Access to the OMA Conformance Tool
+    text: |
+        The **OMA Conformance Tool** is now available for organizations that want to validate their **Smart City devices, software, gateways, and connector solutions** against official OMA conformance test cases. [Apply for early access](/specifications/resources/lwm2m-client-conformance-tool) and help strengthen standards-based interoperability before deployment.
+    ---
+    :::
+
+
+    :::ShTextImg
+    ---
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/innovation1.jpeg
+    urlImage: /images/landing-hero/OMA-Global-Interoperability-for -IoT.png
     title: |
         Open Mobile Alliance (OMA)
     subtitle: |
@@ -26,7 +42,7 @@ icon: line-md:home-twotone
     positionText: right
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/inovation-idea.jpeg
+    urlImage: /images/landing-hero/oma-ipso-usifi-icons.png
     title: |
         OMA, IPSO Alliance, and uCIFI
     subtitle: |
@@ -42,7 +58,7 @@ icon: line-md:home-twotone
     positionText: left
     spanText: m
     alignText: left
-    urlImage: /images/landing-hero/machine-learn.jpeg
+    urlImage: /images/landing-hero/LwM2M-Connected-Smart-City-at-Sunset.png
     title: |
         LightweightM2M and Wireless Innovation
     subtitle: |

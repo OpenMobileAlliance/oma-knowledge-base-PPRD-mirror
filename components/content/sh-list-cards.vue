@@ -125,7 +125,6 @@ const selectedTags = ref<string[]>([]);
 const media = computed(() => {
   return route.path.split('/media/').pop() || null;
 });
-console.log('Media:', media.value);
 // Fetch cards and sort by cardID prop order
 const { data: result } = await useAsyncData(`fetch-articles-by-cardID-in-${media.value}`, () =>
   queryCollection('articles')

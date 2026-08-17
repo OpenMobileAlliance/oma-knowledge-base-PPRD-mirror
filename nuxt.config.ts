@@ -66,6 +66,16 @@ export default defineNuxtConfig({
       link: [
         { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
       ],
+      script: [
+        {
+          id: "hs-script-loader",
+          type: "text/javascript",
+          src: "https://js.hs-scripts.com/21247113.js",
+          async: true,
+          defer: true,
+          tagPosition: "bodyClose",
+        },
+      ],
     },
   },
 

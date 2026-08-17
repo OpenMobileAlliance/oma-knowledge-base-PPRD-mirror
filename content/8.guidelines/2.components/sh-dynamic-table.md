@@ -301,7 +301,7 @@ table is stored in `users` field.
       <td><code>perPage</code></td>
       <td>n/a</td>
       <td><code>10</code></td>
-      <td>Defines the number of rows per page. Acceptable values: 10, 25, 50, 100.</td>
+      <td>Defines the number of rows shown per page when the table loads, and preselects that value in the "Show" dropdown. Acceptable values: 10, 25, 50, 100, or <code>-1</code> to show all rows on a single page.</td>
     </tr>
   </tbody>
 </table>
