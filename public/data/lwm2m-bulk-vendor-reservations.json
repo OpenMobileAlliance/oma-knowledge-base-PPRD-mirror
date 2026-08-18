@@ -322,5 +322,9 @@
      {
         "ObjectIDRange": "36550 - 36599", 
         "CompanyName": "UniMetric"
+     },
+      {
+        "ObjectIDRange": "36600 - 36649", 
+        "CompanyName": "Aetheros"
      }
 ]
