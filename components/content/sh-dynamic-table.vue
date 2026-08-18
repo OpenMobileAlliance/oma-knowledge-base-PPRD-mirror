@@ -1,5 +1,5 @@
 <template>
-  <div :class="[ui.wrapper, 'w-full p-4']" v-bind="attrs">
+  <div ref="tableRoot" :class="[ui.wrapper, 'w-full p-4']" v-bind="attrs">
     <div v-if="props.header" :class="ui.header">
       <MDC v-if="props.header" :value="props.header" />
     </div>
@@ -21,7 +21,8 @@
             </button>
           </div>
           <div class="pl-8 grow">
-            <UInput v-model="q" type="text" @keyup="onSearch" placeholder="type a token to search for" />
+            <UInput ref="searchInput" v-model="q" type="text" @keyup="onSearch"
+              placeholder="type a token to search for" />
           </div>
         </div>
       </div>
@@ -49,7 +50,7 @@
           </template>
         </UAccordion>
       </div>
-      <div class="w-full overflow-x-auto">
+      <div ref="tableContainer" :class="ui.tableContainer">
         <table :class="[ui.table, 'min-w-full']">
           <thead :calss="ui.thead">
             <tr :ui.tr.base>
@@ -66,11 +67,10 @@
             </tr>
           </thead>
           <tbody :calss="ui.tbody">
-            <template v-for="(row, index) in displayItems" :key="`${index}-${Date.now()}`">
-              <tr :id="`${index}-${Date.now()}`" :calss="ui.tr.base">
-                <template v-for="(column, cIndex) in props.columns" :key="`${column.name}-${index}-${Date.now()}`">
+            <template v-for="(row, index) in displayItems" :key="index">
+              <tr :calss="ui.tr.base">
+                <template v-for="(column, cIndex) in props.columns" :key="column.name">
                   <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
-                    :id="`${column.name}-${index}-${Date.now()}`"
                     :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
                   </td>
                 </template>
@@ -129,6 +129,7 @@ const props = withDefaults(
     footer?: String;
     perPage?: number;
     transformRawData?: any;
+    autofocusSearch?: Boolean;
     class?: Any;
   }>(),
   {
@@ -140,6 +141,7 @@ const props = withDefaults(
     footer: '',
     perPage: config.default.perPage,
     transformRawData: () => null,
+    autofocusSearch: false,
     class: () => undefined
   });
 
@@ -208,6 +210,33 @@ const updateData = async () => {
 }
 
 const infoMessage = toRef("")
+const tableContainer = toRef(null)
+const tableRoot = toRef(null)
+const searchInput = toRef(null)
+
+const goToSearch = () => {
+  nextTick(() => {
+    if (!window.location.hash) {
+      const header = document.querySelector('header')
+      const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16
+      const headerBottom = header ? header.getBoundingClientRect().height : 0
+      const top = window.scrollY + tableRoot.value.getBoundingClientRect().top - headerBottom - rem
+
+      window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' })
+    }
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      searchInput.value?.input?.focus({ preventScroll: true })
+    }
+  })
+}
+
+const scrollTableToTop = () => {
+  nextTick(() => {
+    if (tableContainer.value) {
+      tableContainer.value.scrollTop = 0
+    }
+  })
+}
 
 const updateDisplayData = () => {
 
@@ -241,6 +270,7 @@ const updateDisplayData = () => {
     infoMessage.value = `Showing ${endIndex > 0 ? startIndex + 1 : 0} to ${endIndex} out of ${numberOfItems.value} items`
   }
   nextTick()
+  scrollTableToTop()
 }
 
 const items = toRef([])
@@ -338,8 +368,10 @@ const filterDataByQuickFilter = (data) => {
 }
 
 const sortDisplayData = (data) => {
-  if (Object.keys(sortColumn).length > 0) {
-    return (data && typeof data.sort === 'function') ? data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
+  if (Object.keys(sortColumn.value).length > 0) {
+    // Sort a copy: with no query and no quick filter active the filters return
+    // the source array itself, and sort() would reorder it in place.
+    return (data && typeof data.sort === 'function') ? [...data].sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
   } else {
     return data
   }
@@ -526,8 +558,12 @@ const onPerPageChange = (e) => {
   }
 }
 
-onMounted(() => {
-  updateData()
+onMounted(async () => {
+  await updateData()
+
+  if (props.autofocusSearch) {
+    goToSearch()
+  }
 })
 
 watch(items,

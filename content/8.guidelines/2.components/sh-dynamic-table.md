@@ -303,6 +303,12 @@ table is stored in `users` field.
       <td><code>10</code></td>
       <td>Defines the number of rows shown per page when the table loads, and preselects that value in the "Show" dropdown. Acceptable values: 10, 25, 50, 100, or <code>-1</code> to show all rows on a single page.</td>
     </tr>
+    <tr>
+      <td><code>autofocusSearch</code></td>
+      <td>n/a</td>
+      <td><code>false</code></td>
+      <td>When <code>true</code>, the page scrolls to the table once its data has loaded and puts the cursor in the search box, so a visitor can start typing straight away. Intended for pages whose main purpose is looking something up in the table. The scroll is skipped when the URL carries an anchor, and the focus is skipped below the <code>lg</code> breakpoint so the on-screen keyboard does not cover the table on touch devices.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -317,7 +323,8 @@ export default {
   footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-slate-200",
   search: "pb-4",
   filter:  "",
-  table: 'min-w-full divide-y divide-gray-300 dark:divide-gray-700',
+  tableContainer: 'w-full my-8 max-h-[38rem] overflow-x-auto overflow-y-auto',
+  table: 'min-w-full my-0 divide-y divide-gray-300 dark:divide-gray-700',
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
   thead: "",
   tr: {
@@ -326,7 +333,7 @@ export default {
     active: 'hover:bg-neutral-200 dark:hover:bg-neutral-600 cursor-pointer'
   },
   th: {
-    base: 'text-left rtl:text-right dark:bg-neutral-600',
+    base: 'sticky top-0 z-10 text-left rtl:text-right bg-gray-50 dark:bg-neutral-600 shadow-[inset_0_-1px_0_theme(colors.gray.300)] dark:shadow-[inset_0_-1px_0_theme(colors.gray.700)]',
     padding: 'px-4 py-3.5',
     color: 'text-gray-900 dark:text-white',
     font: 'font-semibold',
@@ -385,9 +392,13 @@ _**filter**_
 * **Value**: `""`
 * **Description**: Provides a base for filter-specific styles, currently left empty for customization.
 
+_**tableContainer**_
+* **Value**: `"w-full my-8 max-h-[38rem] overflow-x-auto overflow-y-auto"`
+* **Description**: Styles the scrollable box the table sits in. The value spans the full width (w-full), spaces it from the surrounding content (my-8), caps the height at a header plus ten single-line rows (max-h-[38rem]) and scrolls both ways inside that box (overflow-x-auto, overflow-y-auto), so page sizes above 10 rows scroll within the component instead of stretching the page past the viewport. Tables whose rows wrap onto several lines fit proportionally fewer rows in the same box. Raise or lower `max-h-[38rem]` through the `ui` property to show more or fewer rows before scrolling.
+
 _**table**_
-* **Value**: `"min-w-full divide-y divide-gray-300 dark:divide-gray-700"`
-* **Description**: Styles the table container. The value "min-w-full divide-y divide-gray-300 dark:divide-gray-700" ensures the table spans the full width (min-w-full), adds horizontal dividers (divide-y), and adjusts divider color for dark mode (dark:divide-gray-700).
+* **Value**: `"min-w-full my-0 divide-y divide-gray-300 dark:divide-gray-700"`
+* **Description**: Styles the table itself. The value "min-w-full my-0 divide-y divide-gray-300 dark:divide-gray-700" ensures the table spans the full width (min-w-full), drops the prose margin so it does not take up room inside the scrolling container (my-0, the spacing lives on `tableContainer` instead), adds horizontal dividers (divide-y), and adjusts divider color for dark mode (dark:divide-gray-700).
 
 _**tbody**_
 * **Value**: `"divide-y divide-gray-300 dark:divide-gray-700"`
@@ -410,8 +421,8 @@ _**tr**_
 
 _**th**_
 * **Base**:
-  * **Value**: `"text-left rtl:text-right dark:bg-neutral-600"`
-  * **Description**: Sets text alignment (text-left, rtl:text-right) and applies a background for dark mode (dark:bg-neutral-600).
+  * **Value**: `"sticky top-0 z-10 text-left rtl:text-right bg-gray-50 dark:bg-neutral-600 shadow-[inset_0_-1px_0_theme(colors.gray.300)] dark:shadow-[inset_0_-1px_0_theme(colors.gray.700)]"`
+  * **Description**: Pins the column titles to the top of the scrolling table container (sticky, top-0, z-10), sets text alignment (text-left, rtl:text-right), applies an opaque background so rows do not show through while scrolling (bg-gray-50, dark:bg-neutral-600), and draws the divider under the header with an inset box shadow (the border of a sticky header is dropped by the table's collapsed borders).
 * **Padding**:
   * **Value**: `"px-4 py-3.5"`
   * **Description**: Adds padding of 4 units horizontally (px-4) and 3.5 units vertically (py-3.5).
