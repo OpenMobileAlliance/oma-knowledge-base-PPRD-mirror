@@ -303,6 +303,12 @@ table is stored in `users` field.
       <td><code>10</code></td>
       <td>Defines the number of rows shown per page when the table loads, and preselects that value in the "Show" dropdown. Acceptable values: 10, 25, 50, 100, or <code>-1</code> to show all rows on a single page.</td>
     </tr>
+    <tr>
+      <td><code>autofocusSearch</code></td>
+      <td>n/a</td>
+      <td><code>false</code></td>
+      <td>When <code>true</code>, the page scrolls to the table once its data has loaded and puts the cursor in the search box, so a visitor can start typing straight away. Intended for pages whose main purpose is looking something up in the table. The scroll is skipped when the URL carries an anchor, and the focus is skipped below the <code>lg</code> breakpoint so the on-screen keyboard does not cover the table on touch devices.</td>
+    </tr>
   </tbody>
 </table>
 

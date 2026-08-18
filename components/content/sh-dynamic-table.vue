@@ -1,5 +1,5 @@
 <template>
-  <div :class="[ui.wrapper, 'w-full p-4']" v-bind="attrs">
+  <div ref="tableRoot" :class="[ui.wrapper, 'w-full p-4']" v-bind="attrs">
     <div v-if="props.header" :class="ui.header">
       <MDC v-if="props.header" :value="props.header" />
     </div>
@@ -21,7 +21,8 @@
             </button>
           </div>
           <div class="pl-8 grow">
-            <UInput v-model="q" type="text" @keyup="onSearch" placeholder="type a token to search for" />
+            <UInput ref="searchInput" v-model="q" type="text" @keyup="onSearch"
+              placeholder="type a token to search for" />
           </div>
         </div>
       </div>
@@ -128,6 +129,7 @@ const props = withDefaults(
     footer?: String;
     perPage?: number;
     transformRawData?: any;
+    autofocusSearch?: Boolean;
     class?: Any;
   }>(),
   {
@@ -139,6 +141,7 @@ const props = withDefaults(
     footer: '',
     perPage: config.default.perPage,
     transformRawData: () => null,
+    autofocusSearch: false,
     class: () => undefined
   });
 
@@ -208,9 +211,25 @@ const updateData = async () => {
 
 const infoMessage = toRef("")
 const tableContainer = toRef(null)
+const tableRoot = toRef(null)
+const searchInput = toRef(null)
 
-// The table body scrolls inside its own container, so send it back to the top
-// whenever the rendered rows change (page, page size, search, filter, sort).
+const goToSearch = () => {
+  nextTick(() => {
+    if (!window.location.hash) {
+      const header = document.querySelector('header')
+      const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16
+      const headerBottom = header ? header.getBoundingClientRect().height : 0
+      const top = window.scrollY + tableRoot.value.getBoundingClientRect().top - headerBottom - rem
+
+      window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' })
+    }
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      searchInput.value?.input?.focus({ preventScroll: true })
+    }
+  })
+}
+
 const scrollTableToTop = () => {
   nextTick(() => {
     if (tableContainer.value) {
@@ -539,8 +558,12 @@ const onPerPageChange = (e) => {
   }
 }
 
-onMounted(() => {
-  updateData()
+onMounted(async () => {
+  await updateData()
+
+  if (props.autofocusSearch) {
+    goToSearch()
+  }
 })
 
 watch(items,
