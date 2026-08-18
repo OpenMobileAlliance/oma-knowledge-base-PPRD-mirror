@@ -5,7 +5,13 @@ export default {
   footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-golden",
   search: "pb-4",
   filter: "",
-  table: 'min-w-full divide-y divide-gray-300 dark:divide-gray-700',
+  // Scroll container for the table. The max height holds a header plus ten
+  // single-line rows, so larger page sizes ("Show: 25/50/100/All") scroll
+  // inside the component instead of stretching the page past the viewport.
+  // The prose margin that used to sit on the table lives here instead, so it
+  // stays outside the scrolling area.
+  tableContainer: 'w-full my-8 max-h-[38rem] overflow-x-auto overflow-y-auto',
+  table: 'min-w-full my-0 divide-y divide-gray-300 dark:divide-gray-700',
   tbody: 'divide-y divide-gray-300 dark:divide-gray-700',
   thead: "",
   tr: {
@@ -14,7 +20,7 @@ export default {
     active: 'hover:bg-neutral-200 dark:hover:bg-neutral-600 cursor-pointer'
   },
   th: {
-    base: 'text-left rtl:text-right dark:bg-neutral-600',
+    base: 'sticky top-0 z-10 text-left rtl:text-right bg-gray-50 dark:bg-neutral-600 shadow-[inset_0_-1px_0_theme(colors.gray.300)] dark:shadow-[inset_0_-1px_0_theme(colors.gray.700)]',
     padding: 'px-4 py-3.5',
     color: 'text-gray-900 dark:text-white',
     font: 'font-semibold',

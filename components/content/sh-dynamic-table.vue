@@ -49,7 +49,7 @@
           </template>
         </UAccordion>
       </div>
-      <div class="w-full overflow-x-auto">
+      <div ref="tableContainer" :class="ui.tableContainer">
         <table :class="[ui.table, 'min-w-full']">
           <thead :calss="ui.thead">
             <tr :ui.tr.base>
@@ -66,11 +66,10 @@
             </tr>
           </thead>
           <tbody :calss="ui.tbody">
-            <template v-for="(row, index) in displayItems" :key="`${index}-${Date.now()}`">
-              <tr :id="`${index}-${Date.now()}`" :calss="ui.tr.base">
-                <template v-for="(column, cIndex) in props.columns" :key="`${column.name}-${index}-${Date.now()}`">
+            <template v-for="(row, index) in displayItems" :key="index">
+              <tr :calss="ui.tr.base">
+                <template v-for="(column, cIndex) in props.columns" :key="column.name">
                   <td v-if="!column.hide" v-html="getItemColumValue(row, column)"
-                    :id="`${column.name}-${index}-${Date.now()}`"
                     :class="[ui.td.base, ui.td.padding, ui.td.color, ui.td.font, ui.td.size]" class="not-prose">
                   </td>
                 </template>
@@ -208,6 +207,17 @@ const updateData = async () => {
 }
 
 const infoMessage = toRef("")
+const tableContainer = toRef(null)
+
+// The table body scrolls inside its own container, so send it back to the top
+// whenever the rendered rows change (page, page size, search, filter, sort).
+const scrollTableToTop = () => {
+  nextTick(() => {
+    if (tableContainer.value) {
+      tableContainer.value.scrollTop = 0
+    }
+  })
+}
 
 const updateDisplayData = () => {
 
@@ -241,6 +251,7 @@ const updateDisplayData = () => {
     infoMessage.value = `Showing ${endIndex > 0 ? startIndex + 1 : 0} to ${endIndex} out of ${numberOfItems.value} items`
   }
   nextTick()
+  scrollTableToTop()
 }
 
 const items = toRef([])
@@ -338,8 +349,10 @@ const filterDataByQuickFilter = (data) => {
 }
 
 const sortDisplayData = (data) => {
-  if (Object.keys(sortColumn).length > 0) {
-    return (data && typeof data.sort === 'function') ? data.sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
+  if (Object.keys(sortColumn.value).length > 0) {
+    // Sort a copy: with no query and no quick filter active the filters return
+    // the source array itself, and sort() would reorder it in place.
+    return (data && typeof data.sort === 'function') ? [...data].sort((a, b) => defaultSort(a[sortColumn.value.name], b[sortColumn.value.name], sortColumn.value.direction)) : data
   } else {
     return data
   }
