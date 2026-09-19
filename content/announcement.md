@@ -18,7 +18,7 @@ direction: vertical
   <div class="flex items-center gap-8 pr-5 pl-5">
     <img src="/logo.png" width="40" height="40" />
 
-    💧 OMA Utilities WG • [Water 2.0 has launched](/solutions/utilities/water-2_0){ .hover:cursor-pointer } • Vendor-neutral interoperability framework for smart water metering, built on LwM2M 1.2.2 •
+    💧 OMA Utilities WG • [Water 2.0 has launched](/solutions/utilities/water-2_0){ .hover:cursor-pointer } • Vendor-neutral interoperability framework for smart water metering • [Utility Membership](/join/utility){ .hover:cursor-pointer } •
   </div>
   :::
 
