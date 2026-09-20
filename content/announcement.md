@@ -33,4 +33,16 @@ direction: vertical
     🏙️ OMA Conformance Tool • [Apply for Early Access](/specifications/resources/lwm2m-client-conformance-tool){ .hover:cursor-pointer } • Validate your Smart City implementation against official OMA conformance test cases •
   </div>
   :::
+
+  :::ShSegment
+  ---
+  ui:
+    wrapper: w-fit mx-auto px-6 py-3 font-mono font-medium rounded-full text-sm sm:text-lg
+  ---
+  <div class="flex items-center gap-8 pr-5 pl-5">
+    <img src="/logo.png" width="40" height="40" />
+
+    🗓️ OMA Workshop • [Water Interoperability Readiness Workshop](/oma-events/webinar-workshops){ .hover:cursor-pointer } • 13 Oct 2026 • Online & free •
+  </div>
+  :::
 ::
