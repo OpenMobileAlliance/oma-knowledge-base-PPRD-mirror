@@ -69,11 +69,11 @@ export default defineAppConfig({
     //   logo: "i-fa6-brands-square-facebook",
     //   url: "https://www.facebook.com/OMASpecWorks",
     // },
-    youtube: {
-      title: "YouTube",
-      logo: "i-fa6-brands-square-youtube",
-      url: "https://www.youtube.com/c/OMASpecWorks",
-    },
+    // youtube: {
+    //   title: "YouTube",
+    //   logo: "i-fa6-brands-square-youtube",
+    //   url: "https://www.youtube.com/c/OMASpecWorks",
+    // },
     // x: {
     //   title: "X",
     //   logo: "i-fa6-brands-square-x-twitter",
