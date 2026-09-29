@@ -1,6 +1,6 @@
 ---
 title: Segment
-discription: 
+description: A flexible wrapper that groups and styles any block of Markdown or HTML content, including nested components.
 constructorName: ShSegment
 layout: doc
 ---
