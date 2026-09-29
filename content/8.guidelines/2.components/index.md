@@ -76,3 +76,13 @@ In this example, we can notice few things:
 
 > Note: Components can be nested, as you will see in guidelines itslef.
 
+
+### Internal Components
+
+The following components exist in the codebase but are **not meant to be used by content authors**. They have no guideline page, so do not use them in content:
+
+| Component | Purpose | Where it is used |
+| --- | --- | --- |
+| `ShFormContactUs` | Contact form (HubSpot embed) | Contact page only |
+| `ShFormNewsletter` | Newsletter sign-up form (HubSpot embed) | Subscription page only |
+| `ShAnnouncement` | Site-wide announcement banner | Rendered by `app.vue` |
