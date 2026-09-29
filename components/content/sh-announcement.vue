@@ -1,3 +1,4 @@
+<!-- INTERNAL: site-wide banner rendered by app.vue. Not intended for use in content; no guideline. -->
 <template>
     <div v-if="visible" :class="ui.wrapper">
         <div :class="ui.base">
