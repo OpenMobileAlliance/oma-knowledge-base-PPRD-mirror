@@ -1,6 +1,6 @@
 ---
 title: Action Card
-description: This constructor allows clients to input their emails for newsletter and subscriptions
+description: A call-to-action card with an image or icon, short text and a button that links readers to a sign-up, registration or other destination page.
 constructorName: ShActionCard
 layout: doc
 ---
@@ -48,7 +48,7 @@ text: |
 These are the properties and attributes associated to the <b>{{ $doc.constructorName }}</b> constructor:
 
 #### Properties and Attributes Description
-The <b>{{ $doc.constructorName }}</b> constructor allows for clients and customers to subscribe to a newsletter or any other subscription-type format. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
+The <b>{{ $doc.constructorName }}</b> constructor displays a call-to-action card with an image or icon, a title, subtitle and text, and a button that sends readers to another page, such as a newsletter or membership sign-up page. Below is a detailed description of the properties and attributes used in the <b>{{ $doc.constructorName }}</b> constructor.
 
 <table>
   <thead>
