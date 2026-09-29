@@ -98,10 +98,24 @@ The <b>{{ $doc.constructorName }}</b> constructor creates a display format showc
       <td>n/a</td>
       <td>The source URL of the Social Media post; Facebook, LinkedIn, X (formally Twitter) to be displayed.</td>
     </tr>
-    <td><code>description</code></td>
+    <tr>
+      <td><code>width</code></td>
+      <td>n/a</td>
+      <td><code>500</code></td>
+      <td>The width of the embedded Facebook or LinkedIn iframe.</td>
+    </tr>
+    <tr>
+      <td><code>height</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>The height of the embedded post. Note the Facebook and LinkedIn iframes use fixed heights (410 and 650) regardless of this value.</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
       <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 

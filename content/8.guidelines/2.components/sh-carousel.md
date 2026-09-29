@@ -328,6 +328,12 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a carousel componen
       <td>Axis the slides travel along. Use <code>horizontal</code> to slide sideways, or <code>vertical</code> to slide upwards.</td>
     </tr>
     <tr>
+      <td><code>navigationVisible</code></td>
+      <td>n/a</td>
+      <td><code>true</code></td>
+      <td>Controls whether the navigation dots (pagination dots) are displayed below/inside the carousel.</td>
+    </tr>
+    <tr>
       <td><code>title</code></td>
       <td>n/a</td>
       <td>n/a</td>

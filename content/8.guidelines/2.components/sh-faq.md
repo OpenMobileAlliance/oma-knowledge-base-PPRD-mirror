@@ -112,10 +112,18 @@ These are the properties and attributes to define and style the <b>{{ $doc.const
             <td>n/a</td>
             <td>Represents the list of question-answer pairs to be displayed in the FAQ component.</td>
         </tr>
-        <td><code>description</code></td>
+        <tr>
+            <td><code>title</code></td>
+            <td>n/a</td>
+            <td><code>FAQs</code></td>
+            <td>The heading text displayed above the list of questions and answers.</td>
+        </tr>
+        <tr>
+            <td><code>description</code></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+        </tr>
     </tbody>
 </table>
 

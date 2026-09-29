@@ -137,6 +137,12 @@ The constructor creates a display format for a list of cards, including a header
       <td>This prop allows this constructor to list cards in order that is inputed</td>
     </tr>
     <tr>
+      <td><code>allTags</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Optional list of all available tag names that can be associated with the listed cards.</td>
+    </tr>
+    <tr>
       <td><code>description</code></td>
       <td>n/a</td>
       <td>n/a</td>

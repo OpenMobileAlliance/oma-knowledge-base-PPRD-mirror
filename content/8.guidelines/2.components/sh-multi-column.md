@@ -79,7 +79,7 @@ The constructor <b>{{ $doc.constructorName }}</b> allows to organize content ins
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4"><code>ui</code></td>
+      <td rowspan="2"><code>ui</code></td>
       <td>n/a</td>
       <td>n/a</td>
       <td>The <code>ui</code> property in the <code>ShMultiColumn</code> constructor is a comprehensive configuration object that allows for the customization of various styling aspects of the multi-column component. Each attribute within the <code>ui</code> property targets a specific part of the multi-column display, providing detailed control over its appearance and layout. Below is a detailed description of each attribute within the <code>ui</code> property:</td>
@@ -88,16 +88,6 @@ The constructor <b>{{ $doc.constructorName }}</b> allows to organize content ins
       <td><code>wrapper</code></td>
       <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements of the multi-column. The default value is an empty string, indicating no styles are applied by default.</td>
-    </tr>
-    <tr>
-      <td><code>size</code></td>
-      <td><code>L</code></td>
-      <td>This attribute specifies the default width of the left column. The value "L" indicates a large size.</td>
-    </tr>
-    <tr>
-      <td><code>gap</code></td>
-      <td class="truncate"><code>gap-4</code></td>
-      <td>This attribute controls the gutters between columns. The value <code>"gap-4"</code> applies a gap utility class from Tailwind CSS to add spacing between the columns. Detailed information about the <code>`gap`</code> property can be found in the <a href="https://tailwindcss.com/docs/gap" target="_blank">Tailwind CSS documentation</a>.</td>
     </tr>
     <tr>
       <td><code>cols</code></td>

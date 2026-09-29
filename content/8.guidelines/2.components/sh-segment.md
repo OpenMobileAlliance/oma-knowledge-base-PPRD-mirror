@@ -1,6 +1,6 @@
 ---
 title: Segment
-discription: 
+description: A flexible wrapper that groups and styles any block of Markdown or HTML content, including nested components.
 constructorName: ShSegment
 layout: doc
 ---
@@ -45,7 +45,7 @@ The content can be markdown or HTML text of any length. All elements are support
 the *normal* text.
 
 ### Props
-The <b>{{ $doc.constructorName }}</b> consturctor supports only one property: `ui`.
+The <b>{{ $doc.constructorName }}</b> consturctor supports the following properties: `ui`, `imageBackground` & `imageBackgroundClass`.
 
 #### Attributes Description
 The {{ $doc.constructorName }} constructor represents a versatile component that can take any value and represent it.
@@ -71,10 +71,24 @@ The {{ $doc.constructorName }} constructor represents a versatile component that
       <td><code>config.wrapper</code></td>
       <td>Defines the overall styling for the container that holds all the elements inside of the <code>ShSegment</code>. The attribute <code>shadow-xl</code> is used to provide a shadow effect around the wrapper.</td>
     </tr>
-    <td><code>description</code></td>
+    <tr>
+      <td><code>imageBackground</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Sets a background image on the segment via inline CSS <code>background</code>.</td>
+    </tr>
+    <tr>
+      <td><code>imageBackgroundClass</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Optional. Additional inline style applied alongside <code>imageBackground</code>, e.g. to control background size or position.</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
       <td>n/a</td>
       <td>n/a</td>
       <td>Intented to be used as a help to content writter. Doesn`t render on website.</td>
+    </tr>
   </tbody>
 </table>
 
