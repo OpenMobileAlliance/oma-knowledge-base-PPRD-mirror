@@ -18,6 +18,7 @@ onMounted(() => {
   // Once the script is loaded, initialize the form
   script.onload = () => {
     // Ensure hbspt exists after script is loaded
+    // HubSpot form name: Generic Contact Form (January 10, 2022 11:39:05 AM) 
     if (window.hbspt) {
       window.hbspt.forms.create({
         region: 'na1',
