@@ -1,6 +1,6 @@
 ---
 title: 
-description: Welcome to OMASpecWorks Home Page
+description: Welcome to OMA Home Page
 layout: web
 icon: line-md:home-twotone
 ---

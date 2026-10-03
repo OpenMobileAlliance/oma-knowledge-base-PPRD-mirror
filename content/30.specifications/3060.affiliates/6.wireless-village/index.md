@@ -8,7 +8,7 @@ layout: web
 
 Wireless Village has recently consolidated into the Open Mobile Alliance (OMA) and no longer exists as an independent organization. Following are the archived documents from the Wireless Village Initiative (PDF files).
 
-<a target="_blank" href="/omaspecworks/about/policies-terms/use-agreement">Click here to view Use Agreement</a>
+<a target="_blank" href="/about/policies/use-agreement">Click here to view Use Agreement</a>
 
 <table>
     <thead>

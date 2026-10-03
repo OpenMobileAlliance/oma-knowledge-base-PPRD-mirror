@@ -5,7 +5,7 @@ imageBackground: ""
 title: An Application-Layer Approach to End-to-End Security for the Internet of Things
 subtitle: ""
 leftLabel: 2019-July-30
-rightLabel: OMA SpecWorks
+rightLabel: OMA
 cardID: 5
 tags: 
     - security

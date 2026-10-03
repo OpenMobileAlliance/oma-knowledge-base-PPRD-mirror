@@ -25,7 +25,7 @@ layout: web
       <li class=""><a target="_blank" href="#previous">Previous Specification Suite Releases</a></li>
     </ul>
   </div>
-  <div class=""><a target="_blank" href="https://omaspecworks.org/about/policies-and-terms-of-use/use-agreement/">Click here to view Use Agreement</a></div>
+  <div class=""><a target="_blank" href="/about/policies/use-agreement">Click here to view Use Agreement</a></div>
 
   <div class="bg-[#00b7c1] mt-4 mb-2" id="wap20">The WAP 2.0 conformance release</div>
   <div class="">

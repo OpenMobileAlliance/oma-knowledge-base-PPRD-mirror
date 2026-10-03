@@ -7,10 +7,10 @@ sitemap: false
 robots: false
 ---
 
-## Boost Our Website: Join the OMA SpecWorks URL Test!
+## Boost Our Website: Join the OMA URL Test!
 
 
-Your expertise and a keen eye are essential in optimizing the OMA SpecWorks website. By taking a few moments to test and review each page, you provide a seamless and reliable experience for every user relying on this resource.  
+Your expertise and a keen eye are essential in optimizing the OMA website. By taking a few moments to test and review each page, you provide a seamless and reliable experience for every user relying on this resource.  
 
 We encourage you to explore the entire website, browsing pages as a user would in real scenarios.  
 
@@ -21,7 +21,7 @@ If you identify any irregularities or areas for improvement, we encourage you to
 
 ## URL Testing Guidelines
 
-Ensure that all URLs on the OMA SpecWorks site function as expected across different devices. If you encounter any irregularities, please report them to our GitHub repository.
+Ensure that all URLs on the OMA site function as expected across different devices. If you encounter any irregularities, please report them to our GitHub repository.
 
 ### 1. Preparation
 

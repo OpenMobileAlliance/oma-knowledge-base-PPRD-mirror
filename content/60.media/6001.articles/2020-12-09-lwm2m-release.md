@@ -1,11 +1,11 @@
 ---
 layout: articles
-urlImage: "/images/oma-specworks-logo.jpg"
+urlImage: /logo.png
 imageBackground: ""
 title: LwM2M v1.2 is now available!
 subtitle: Latest LwM2M Protocol version
 leftLabel: 2020-Dec-09
-rightLabel:  OMA SpecWorks
+rightLabel: OMA
 cardID: 15
 tags:
     - v1.2
@@ -30,4 +30,4 @@ The specification can be found at [LwM2M v1.2](https://www.openmobilealliance.or
 
 **About Open Mobile Alliance (OMA)**
 
-OMA is the leading industry forum for developing market-driven, interoperable mobile service enablers. OMA was formed by the world’s leading mobile operators, device and network suppliers, information technology companies, and content providers as the industry focal point for the development of mobile service enabler specifications. OMA is a non-profit organization that delivers open specifications supporting the billions of new and existing terminals operating across traditional cellular operator networks and emerging networks supporting machine-to-machine communications for the Internet of Things (IoT). New work in OMA is leading to the development of next-generation mobile services in areas such as Device Management, LBS, IoT, APIs and more. [See About OMA](/omaspecworks/about)
+OMA is the leading industry forum for developing market-driven, interoperable mobile service enablers. OMA was formed by the world’s leading mobile operators, device and network suppliers, information technology companies, and content providers as the industry focal point for the development of mobile service enabler specifications. OMA is a non-profit organization that delivers open specifications supporting the billions of new and existing terminals operating across traditional cellular operator networks and emerging networks supporting machine-to-machine communications for the Internet of Things (IoT). New work in OMA is leading to the development of next-generation mobile services in areas such as Device Management, LBS, IoT, APIs and more. [See About OMA](/about)
