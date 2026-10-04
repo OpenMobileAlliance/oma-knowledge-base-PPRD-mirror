@@ -5,7 +5,7 @@ imageBackground: ""
 title: IoT and LwM2M for Utilities
 subtitle: Post-Workshop Updates
 leftLabel: 2023-Jun-09
-rightLabel: OMA SpecWorks
+rightLabel: OMA
 cardID: 55
 tags: 
     - collaboration

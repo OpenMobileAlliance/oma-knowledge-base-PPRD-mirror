@@ -9,7 +9,7 @@ layout: web
 The Mobile Games Interoperability forum recently consolidated into the Open Mobile Alliance (OMA), contributing their technical work to the OMA technical Working Groups: <a target="_blank" href="https://www.openmobilealliance.org/tech/affiliates/mgif/">Mobile Games Services</a>.  
 Following are the archived documents from MGIF.
 
-<a target="_blank" href="/omaspecworks/about/policies-terms/use-agreement">Click here to view Use Agreement</a>
+<a target="_blank" href="/about/policies/use-agreement">Click here to view Use Agreement</a>
 
 <table>
     <tbody>
