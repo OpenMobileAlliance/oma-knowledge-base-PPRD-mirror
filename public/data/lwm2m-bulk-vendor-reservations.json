@@ -326,5 +326,9 @@
       {
         "ObjectIDRange": "36600 - 36649", 
         "CompanyName": "Aetheros"
+     },
+      {
+        "ObjectIDRange": "36650 - 36599", 
+        "CompanyName": "NCXX Inc"
      }
 ]

@@ -304,6 +304,12 @@ table is stored in `users` field.
       <td>Defines the number of rows shown per page when the table loads, and preselects that value in the "Show" dropdown. Acceptable values: 10, 25, 50, 100, or <code>-1</code> to show all rows on a single page.</td>
     </tr>
     <tr>
+      <td><code>transformRawData</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Optional. Name of a built-in transform applied to the fetched data before it is rendered. Accepts <code>filterDDFObjects</code>, <code>filterCommonObjects</code>, or <code>filterOmaEnablers</code>.</td>
+    </tr>
+    <tr>
       <td><code>autofocusSearch</code></td>
       <td>n/a</td>
       <td><code>false</code></td>

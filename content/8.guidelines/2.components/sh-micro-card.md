@@ -429,6 +429,12 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td>The URL that wraps the component, typically for navigation purposes.</td>
     </tr>
     <tr>
+      <td><code>urlButton</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>The URL the button navigates to when <code>layout</code> is set to <code>cta</code>. Used instead of <code>urlWrapper</code> for that layout.</td>
+    </tr>
+    <tr>
       <td><code>target</code></td>
       <td>n/a</td>
       <td><code>_self</code></td>
@@ -469,6 +475,12 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a micro card that c
       <td>n/a</td>
       <td>n/a</td>
       <td>Any valid icon from <a href="https://icon-sets.iconify.design/" target="_blank">Iconify</a></td>
+    </tr>
+    <tr>
+      <td><code>altIcon</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Alternative text for the icon, used for accessibility.</td>
     </tr>
     <tr>
       <td><code>title</code></td>

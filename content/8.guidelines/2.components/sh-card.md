@@ -191,6 +191,12 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
       <td>The source URL of the image to be displayed.</td>
     </tr>
     <tr>
+      <td><code>target</code></td>
+      <td>n/a</td>
+      <td><code>_self</code></td>
+      <td>Specifies where to open the linked document referenced by <code>urlUpperBase</code>.</td>
+    </tr>
+    <tr>
       <td><code>altImage</code></td>
       <td>n/a</td>
       <td>n/a</td>
@@ -215,6 +221,12 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
       <td>The main text content to be displayed.</td>
     </tr>
     <tr>
+      <td><code>excerpt</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>An object used as a fallback for <code>text</code>; rendered with <code>ContentRenderer</code> when <code>text</code> is not provided.</td>
+    </tr>
+    <tr>
       <td><code>leftLabel</code></td>
       <td>n/a</td>
       <td>n/a</td>
@@ -237,6 +249,12 @@ The <b>{{ $doc.constructorName }}</b> constructor represents a card divided in t
       <td>n/a</td>
       <td>n/a</td>
       <td>The background image for the component's image section.</td>
+    </tr>
+    <tr>
+      <td><code>articleURL</code></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>The URL used for the "Read More" link shown on blog/news pages.</td>
     </tr>
     <tr>
       <td><code>description</code></td>

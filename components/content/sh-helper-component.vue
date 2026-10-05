@@ -7,7 +7,7 @@
       </div>
       <div :class="ui.secondLogo">
         <img v-if="computedLogoSrc && secondLogoDark" :src="secondLogoDark" :class="ui.secondLogoDark" />
-        <img v-if="!computedLogoSrc && secondLogoDark" :src="secondLogoLight" :class="ui.secondLogoLight" />
+        <img v-if="!computedLogoSrc && secondLogoLight" :src="secondLogoLight" :class="ui.secondLogoLight" />
       </div>
     </div>
   </div>

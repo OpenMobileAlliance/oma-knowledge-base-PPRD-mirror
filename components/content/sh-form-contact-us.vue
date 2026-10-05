@@ -1,3 +1,4 @@
+<!-- INTERNAL: single-page component, used only on the contact page. Not intended for general content authoring; no guideline. -->
 <template>
   <div>
     <div id="hubspot-form"></div>
