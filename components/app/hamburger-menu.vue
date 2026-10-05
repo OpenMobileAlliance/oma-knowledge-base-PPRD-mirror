@@ -151,6 +151,19 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
                 })
             }
 
+            // A `link` in the folder's .navigation.yml overrides the generated path (e.g. an anchor on another page)
+            if (isChild && item.link) {
+                return {
+                    label: item.title,
+                    path: item.link,
+                    children: null,
+                    onClick: () => {
+                        router.push(item.link)
+                        isOpen.value = false
+                    }
+                }
+            }
+
             return {
                 label: item.title,
                 path: item.path,
