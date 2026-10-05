@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://www.openmobilealliance.org/', 
-    name: 'Website of OMA SpecWork as an innovative kind of Standards Development Organization' 
+    name: 'Website of OMA as an innovative kind of Standards Development Organization' 
   },
 
   colorMode: {

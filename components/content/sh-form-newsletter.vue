@@ -12,6 +12,7 @@
 <script setup lang="ts">
 const { consentStatus, openSettings } = useCookieConsent()
 
+// HubSpot form name: Join OMA Newsletter - 24-Sep-24
 const loadHubSpotForm = () => {
   if (window.hbspt) {
     window.hbspt.forms.create({

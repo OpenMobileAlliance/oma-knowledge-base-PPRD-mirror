@@ -5,7 +5,7 @@ imageBackground: ""
 title: Unlocking Utility Benefits with LwM2M
 subtitle: Workshop, Nov 15, 08:30 am PST.
 leftLabel: 2023-Oct-03
-rightLabel: OMA SpecWorks
+rightLabel: OMA
 cardID: 60
 tags: 
     - workshop

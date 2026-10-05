@@ -65,7 +65,7 @@ cols: 3
 
 ::
 
-For information on how to form a liaison with OMA SpecWorks, please contact Seth Newberry at <snewberry@omaorg.org>.
+For information on how to form a liaison with OMA, please contact Seth Newberry at <snewberry@omaorg.org>.
 
 ## OMA LIAISONS WITH OTHER ORGANIZATIONS
 OMA currently holds liaison agreements with the following organizations:

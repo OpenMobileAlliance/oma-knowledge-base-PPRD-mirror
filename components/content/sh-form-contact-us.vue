@@ -12,6 +12,7 @@
 <script setup lang="ts">
 const { consentStatus, openSettings } = useCookieConsent()
 
+// HubSpot form name: Generic Contact Form (January 10, 2022 11:39:05 AM)
 const loadHubSpotForm = () => {
   if (window.hbspt) {
     window.hbspt.forms.create({
