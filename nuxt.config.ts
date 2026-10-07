@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
     '/join/subscribe-news' : { redirect: '/about/subscription' },
-    '/media/subscription' : { redirect: '/about/subscription' },
     '/about/join-news' : { redirect: '/about/subscription' },
   },
 
