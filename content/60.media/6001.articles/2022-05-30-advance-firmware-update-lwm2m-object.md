@@ -4,7 +4,7 @@ urlImage: /images/news/micro-controllers.png
 imageBackground: ""
 title: Advanced LwM2M Firmware Update Object
 subtitle: OMA SpecWorks is developing a new, advanced LwM2M Firmware Object
-rightLabel: OMA SpecWorks
+rightLabel: OMA
 leftLabel: 2022-May-30
 cardID: 40
 tags: 
@@ -26,5 +26,5 @@ Examples include:
 
 While these firmware images can be updated independently, they cannot be activated or deactivated, or installed independently without considering the dependencies.  Additionally, each may require a device restart to apply the upgrade.
 
-To maintain backwards compatibility with the single firmware image supported by the LwM2M Firmware Update Object, and to offer solutions for high-end IoT devices, the [DMSE Working Group](/omaspecworks/collaborate/working-groups) aims to start work on an Advanced Firmware Update Object using the [LwM2M](/lwm2m/whatis) protocol.
+To maintain backwards compatibility with the single firmware image supported by the LwM2M Firmware Update Object, and to offer solutions for high-end IoT devices, the [DMSE Working Group](/groups/wg) aims to start work on an Advanced Firmware Update Object using the [LwM2M](/lwm2m/whatis) protocol.
 

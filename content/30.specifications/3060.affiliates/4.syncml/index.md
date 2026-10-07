@@ -20,7 +20,7 @@ The SyncML initiative recently consolidated into the Open Mobile Alliance (OMA),
 
 The following Archive Downloads are the archived documents from the SyncML initiative.
 
-[Click here to view Use Agreement](/omaspecworks/about/policies-terms/use-agreement)
+[Click here to view Use Agreement](/about/policies/use-agreement)
 
 <table>
     <thead>

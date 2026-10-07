@@ -9,7 +9,7 @@ layout: web
 
 <div>
     <p>The Mobile Wireless Internet Forum has consolidated into the Open Mobile Alliance and no longer exists as a separate entity. Following are the archived documents from MWIF.</p>
-    <p><a target="_blank" href="/omaspecworks/about/policies-terms/use-agreement">Click here to view Use Agreement</a></p>
+    <p><a target="_blank" href="/about/policies/use-agreement">Click here to view Use Agreement</a></p>
     <div class="head">MWIF Archived Documents</div>
     <table>
         <thead>

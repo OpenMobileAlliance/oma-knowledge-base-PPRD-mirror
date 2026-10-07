@@ -14,6 +14,7 @@
     script.charset = "utf-8"
     
     script.onload = () => {
+      // HubSpotform name: Join OMA Newsletter - 24-Sep-24
       window.hbspt.forms.create({
         region: "na1",
         portalId: "21247113",
