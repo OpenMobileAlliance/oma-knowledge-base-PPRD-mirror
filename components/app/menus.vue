@@ -176,10 +176,18 @@ const filteredNavigation = computed(() =>
 interface MenuItem {
     label: string
     path?: string
+    link?: string
     children?: MenuItem[] | null
 }
 
 const processNavigationItem = (navItem: any, isRoot = true): MenuItem => {
+    // A `link` in the folder's .navigation.yml overrides the generated path (e.g. an anchor on another page)
+    if (navItem.link) {
+        return {
+            label: navItem.title,
+            path: navItem.link
+        };
+    }
     if (navItem.children?.length === 1) {
         const singleChild = navItem.children[0];
         return {
@@ -200,7 +208,7 @@ const menuData = computed(() => ({
 
 // Helper: Check if a menu item (or one of its children) is active
 const isActive = (item: MenuItem): boolean => {
-    if (item.path && item.path === route.path) {
+    if (item.path && item.path.split('#')[0] === route.path && (!item.path.includes('#') || item.path === route.fullPath)) {
         return true
     }
     if (item.children && item.children.length > 0) {
