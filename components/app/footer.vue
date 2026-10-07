@@ -36,6 +36,7 @@
 import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const { data: data } = useQueryCollection('content', '/footer-content');
+const { openSettings } = useCookieConsent();
 
 const date = new Date();
 const year = date.getFullYear();

@@ -1,24 +1,36 @@
 <!-- INTERNAL: single-page component, used only on the contact page. Not intended for general content authoring; no guideline. -->
 <template>
-  <div id="hubspot-form"></div>
+  <div>
+    <div id="hubspot-form"></div>
+    <p v-if="consentStatus !== 'accepted'" class="text-sm text-gray-500 dark:text-gray-400 py-4">
+      To use this form, please
+      <button class="text-primary underline" @click="openSettings">accept cookies</button>.
+    </p>
+  </div>
 </template>
 
 <script setup lang="ts">
+const { consentStatus, openSettings } = useCookieConsent()
 
-onMounted(() => {
-  // Add HubSpot embed script
+// HubSpot form name: Generic Contact Form (January 10, 2022 11:39:05 AM)
+const loadHubSpotForm = () => {
+  if (window.hbspt) {
+    window.hbspt.forms.create({
+      region: 'na1',
+      portalId: '21247113',
+      formId: 'c9bf8828-7520-4e8c-987b-70fe763e77eb',
+      target: '#hubspot-form',
+    });
+    return;
+  }
+
   const script = document.createElement('script');
   script.src = '//js.hsforms.net/forms/embed/v2.js';
   script.charset = 'utf-8';
   script.type = 'text/javascript';
-
-  // Append the script to the document head
   document.head.appendChild(script);
 
-  // Once the script is loaded, initialize the form
   script.onload = () => {
-    // Ensure hbspt exists after script is loaded
-    // HubSpot form name: Generic Contact Form (January 10, 2022 11:39:05 AM) 
     if (window.hbspt) {
       window.hbspt.forms.create({
         region: 'na1',
@@ -28,5 +40,17 @@ onMounted(() => {
       });
     }
   };
-});
+}
+
+onMounted(() => {
+  if (consentStatus.value === 'accepted') {
+    loadHubSpotForm();
+  }
+})
+
+watch(consentStatus, (status) => {
+  if (status === 'accepted') {
+    nextTick(() => loadHubSpotForm());
+  }
+})
 </script>

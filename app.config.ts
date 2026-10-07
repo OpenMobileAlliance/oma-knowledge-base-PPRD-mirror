@@ -1,6 +1,9 @@
 export default defineAppConfig({
   ui: {
     primary: "neutral",
+    notification: {
+      background: 'bg-white dark:bg-black',
+    },
   },
   header: {
     menu: {

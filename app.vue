@@ -1,7 +1,8 @@
 <template>
   <div :class="computedHeightClass" class="w-fit sm:w-full bg-golden/[0.2] dark:bg-[#19191a]"
     :style="{ fontFamily: main.font.type }">
-    <ShAnnouncement :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
+    <!-- Hidden on the homepage: its first section is the top header there (#946) -->
+    <ShAnnouncement v-if="route.path.replace(/\/$/, '') !== '/home'" :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
         <img v-if="computedLogoSrc" src="/logo-dark.png" alt="logo-dark" class="shrink-0 grow-0 h-16" />
@@ -13,7 +14,12 @@
       <NuxtPage />
     </div>
     <AppFooter v-if="route.path !== '/' && route" />
-    <UNotifications />
+    <AppCookieConsent />
+    <UNotifications>
+      <template #description="{ description }">
+        <span v-html="description" />
+      </template>
+    </UNotifications>
   </div>
 </template>
 
@@ -21,6 +27,8 @@
 
 const main = useAppConfig().main;
 const route = useRoute();
+const toast = useToast();
+const { init: initCookieConsent } = useCookieConsent();
 
 const theme = useColorMode();
 
@@ -41,6 +49,9 @@ useHead(() => ({
 
 // Use onMounted to ensure the code runs only on the client side
 onMounted(() => {
+  // Initialize cookie consent — GTM stays disabled until user explicitly accepts
+  initCookieConsent();
+
   for (let i = 1; i <= 7; i++) {
     document.documentElement.style.setProperty(`--h${i}-font-type`, main[`h${i}`].font.type);
     document.documentElement.style.setProperty(`--h${i}-font-size`, main[`h${i}`].font.size);
