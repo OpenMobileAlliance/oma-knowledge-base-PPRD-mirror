@@ -1,8 +1,7 @@
 <template>
   <div :class="computedHeightClass" class="w-fit sm:w-full bg-golden/[0.2] dark:bg-[#19191a]"
     :style="{ fontFamily: main.font.type }">
-    <!-- Hidden on the homepage: its first section is the top header there (#946) -->
-    <ShAnnouncement v-if="route.path.replace(/\/$/, '') !== '/home'" :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
+    <ShAnnouncement :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
         <img v-if="computedLogoSrc" src="/logo-dark.png" alt="logo-dark" class="shrink-0 grow-0 h-16" />
