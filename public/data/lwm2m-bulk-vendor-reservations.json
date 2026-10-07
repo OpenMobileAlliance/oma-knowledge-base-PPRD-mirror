@@ -328,7 +328,11 @@
         "CompanyName": "Aetheros"
      },
       {
-        "ObjectIDRange": "36650 - 36599", 
+        "ObjectIDRange": "36650 - 36699", 
         "CompanyName": "NCXX Inc"
+     },
+     {
+        "ObjectIDRange": "36700 - 36749", 
+        "CompanyName": "Decentlab GmbH"
      }
 ]
