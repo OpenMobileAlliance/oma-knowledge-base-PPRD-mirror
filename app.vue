@@ -290,15 +290,18 @@ a:hover {
   position: relative;
 }
 
+/* Heading anchor hover: heading slides right, a hash fades in where it used to be */
 :is(h1, h2, h3, h4, h5, h6) > a {
+  position: relative;
   display: inline-block;
   transition: transform 0.3s ease;
 }
 
-:is(h1, h2, h3, h4, h5, h6):has(> a)::before {
+/* The hash lives inside the link so clicking it follows the anchor */
+:is(h1, h2, h3, h4, h5, h6) > a::before {
   content: '#';
   position: absolute;
-  left: 0;
+  left: -1em;
   opacity: 0;
   transform: translateX(-0.4em);
   color: inherit;
@@ -306,18 +309,19 @@ a:hover {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-:is(h1, h2, h3, h4, h5, h6):has(> a):hover > a {
+:is(h1, h2, h3, h4, h5, h6):hover > a {
   transform: translateX(1em);
 }
 
-:is(h1, h2, h3, h4, h5, h6):has(> a):hover::before {
+:is(h1, h2, h3, h4, h5, h6):hover > a::before {
   opacity: 1;
   transform: translateX(0);
+  pointer-events: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
   :is(h1, h2, h3, h4, h5, h6) > a,
-  :is(h1, h2, h3, h4, h5, h6):has(> a)::before {
+  :is(h1, h2, h3, h4, h5, h6) > a::before {
     transition: none;
   }
 }
