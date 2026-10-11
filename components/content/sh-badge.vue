@@ -1,5 +1,5 @@
 <template>
-  <div :class="[ui.wrapper, 'w-fit rounded-3xl px-2 py-1']">
+  <div :class="[ui.wrapper, 'w-fit rounded px-2 py-1']">
     <slot />
   </div>
 </template>

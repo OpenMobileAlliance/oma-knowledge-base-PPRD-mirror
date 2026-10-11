@@ -16,7 +16,7 @@
             </select>
           </div>
           <div class="pl-4">
-            <button @click="downloadCSV" class="hover:scale-125" title="Download CSV file">
+            <button @click="downloadCSV" class="hover:text-neutral-900 dark:hover:text-golden" title="Download CSV file">
               <UIcon name="i-carbon-download" />
             </button>
           </div>
@@ -31,7 +31,7 @@
           <template #quick-filters>
             <div :class="getQuickFilterClass()">
               <template v-for="column in sortedFilters">
-                <div class="rounded-lg border" v-if="column.filter">
+                <div class="rounded border border-neutral-300 dark:border-neutral-700" v-if="column.filter">
                   <UDivider :label="column.title" class="py-4 overflow-x-auto" />
                   <ul class="max-h-36 overflow-auto">
                     <li v-for="label in Object.keys(stats[column.name]).sort()" :data-filter-key="column.name"

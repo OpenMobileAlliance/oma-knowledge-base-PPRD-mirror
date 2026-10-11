@@ -1,14 +1,26 @@
 export default {
-  wrapper: "align-middle m-1 hover:saturate-150",
+  wrapper: "align-middle m-1 font-medium transition-colors duration-200",
   inner: "text-center not-prose mx-auto",
   styleButton: {
-    solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white hover:text-white dark:hover:text-black dark:text-gray-900 no-underline',
-    outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
+    solid: 'bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white hover:bg-{colorButton}-700 dark:hover:bg-{colorButton}-300 hover:text-white dark:text-white dark:hover:text-white no-underline',
+    outline: 'text-{colorButton}-500 dark:text-{colorButton}-400 hover:bg-{colorButton}-50 dark:hover:bg-{colorButton}-950 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline',
     link: 'text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400'
+  },
+  colorButton: {
+    'oma-blue': {
+      solid: 'bg-oma-blue-300 hover:bg-oma-blue-400 dark:bg-oma-blue-500 dark:hover:bg-oma-blue-400 text-white hover:text-white dark:text-white dark:hover:text-white no-underline',
+      outline: 'text-oma-blue-400 dark:text-oma-blue-300 ring-1 ring-inset ring-oma-blue-300 dark:ring-oma-blue-400 hover:bg-oma-blue-50 dark:hover:bg-oma-blue-950 no-underline',
+      link: 'text-oma-blue-500 dark:text-oma-blue-300 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-oma-blue-500',
+    },
+    golden: {
+      solid: 'bg-golden hover:bg-golden/80 text-neutral-900 hover:text-neutral-900 dark:text-neutral-900 dark:hover:text-neutral-900 no-underline',
+      outline: 'text-neutral-900 dark:text-golden ring-1 ring-inset ring-golden hover:bg-golden/30 dark:hover:bg-golden/10 no-underline',
+      link: 'text-neutral-900 dark:text-golden underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-golden',
+    },
   },
   fullWidth: 'flex mx-auto justify-center items-center',
   inline: 'inline-flex items-center',
-  rounded: 'rounded-md',
+  rounded: 'rounded',
   size: {
     '2xs': 'text-xs',
     xs: 'text-xs',
@@ -38,7 +50,7 @@ export default {
   default: {
     size: 'base',
     styleButton: 'solid',
-    colorButton: 'primary',
+    colorButton: 'oma-blue',
     target: '_blank',
   }
 }
