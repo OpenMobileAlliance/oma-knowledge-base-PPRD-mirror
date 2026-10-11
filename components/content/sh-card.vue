@@ -32,7 +32,7 @@
         </div>
         <div :class="ui.text">
           <MDC v-if="text" :value="text" />
-          <div v-else-if="excerpt" class="dark:text-golden">
+          <div v-else-if="excerpt" class="dark:text-neutral-300">
             <ContentRenderer :value="excerpt" />
           </div>
         </div>

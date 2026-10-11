@@ -16,11 +16,11 @@
 import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const config = {
-    wrapper: 'p-1 sm:p-3 z-50 bg-neutral-400/70 dark:bg-black border dark:border-neutral-500 rounded-3xl shadow-xl', //bg-golden dark:bg-oma-yellow-500
+    wrapper: 'p-1 sm:p-3 z-50 bg-golden/60 dark:bg-neutral-900 border border-golden dark:border-golden/60 rounded-md shadow-sm',
     base: 'flex items-center justify-between',
     content: 'content flex-1 text-center text-xl',
     linkIcon: 'inline-block',
-    button: 'absolute hover:bg-inherit hover:rounded-lg right-0 hover:scale-125 duration-700 z-50',
+    button: 'absolute hover:bg-inherit hover:rounded right-0 duration-200 z-50',
     icon: 'text-3xl mr-4 dark:text-white',
 };
 
