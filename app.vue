@@ -4,8 +4,8 @@
     <ShAnnouncement :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
-        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="logo-dark" class="shrink-0 grow-0 h-16" />
-        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="logo-light" class="shrink-0 grow-0 h-16" />
+        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="logo-dark" class="shrink-0 grow-0 h-16 w-[265px] object-contain object-left" />
+        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="logo-light" class="shrink-0 grow-0 h-16 w-[265px] object-contain object-left" />
         <!-- <img v-if="windowWidth < 640" src="/logo.png" alt="Logo" class="h-16" /> -->
       </template>
     </AppHeader>
