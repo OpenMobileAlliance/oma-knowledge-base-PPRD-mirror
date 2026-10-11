@@ -1,7 +1,7 @@
 export default {
   wrapper: "relative w-full",
-  title: "title text-center text-[24px] font-extrabold dark:saturate-[300%] break-words",
-  subtitle: "subtitle text-center text-[20px] font-bold dark:saturate-[180%] -mt-5 break-words",
+  title: "title text-center text-[24px] font-semibold break-words",
+  subtitle: "subtitle text-center text-[20px] font-semibold text-neutral-600 dark:text-neutral-300 -mt-5 break-words",
   inner: "overflow-hidden",
   track: "grid grid-cols-1",
   group: "col-start-1 row-start-1 flex justify-center gap-4",
@@ -11,8 +11,8 @@ export default {
   navigation: {
     wrapper: "absolute z-10 flex gap-2",
     inner: "rounded-full",
-    active: "bg-golden saturate-[300%]",
-    inactive: "bg-gray-500",
+    active: "bg-golden",
+    inactive: "bg-neutral-300 dark:bg-neutral-600",
   },
   horizontal: {
     group: "px-4",

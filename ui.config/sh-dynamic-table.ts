@@ -1,8 +1,8 @@
 export default {
-  wrapper: "bg-gray-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-5",
-  header: "rounded-lg font-semibold text-center bg-slate-200 dark:bg-neutral-600 dark:text-golden",
+  wrapper: "bg-white dark:bg-inherit border border-neutral-300 dark:border-neutral-700 rounded-md p-5",
+  header: "font-semibold text-center bg-neutral-100 dark:bg-neutral-800 dark:text-golden",
   base: "",
-  footer: "font-semibold text-center bg-slate-200 dark:bg-slate-700 dark:text-golden",
+  footer: "font-semibold text-center bg-neutral-100 dark:bg-neutral-800 dark:text-golden",
   search: "pb-4",
   filter: "",
   // Scroll container for the table. The max height holds a header plus ten
@@ -17,19 +17,19 @@ export default {
   tr: {
     base: '',
     selected: 'bg-oma-blue-400 hover:bg-oma-blue-300 text-white dark:bg-oma-blue-600 dark:hover:bg-oma-blue-500 dark:text-golden',
-    active: 'hover:bg-neutral-200 dark:hover:bg-neutral-600 cursor-pointer'
+    active: 'hover:bg-neutral-100 dark:hover:bg-neutral-800 cursor-pointer'
   },
   th: {
-    base: 'sticky top-0 z-10 text-left rtl:text-right bg-gray-50 dark:bg-neutral-600 shadow-[inset_0_-1px_0_theme(colors.gray.300)] dark:shadow-[inset_0_-1px_0_theme(colors.gray.700)]',
+    base: 'sticky top-0 z-10 text-left rtl:text-right bg-neutral-100 dark:bg-neutral-800 shadow-[inset_0_-1px_0_theme(colors.gray.300)] dark:shadow-[inset_0_-1px_0_theme(colors.gray.700)]',
     padding: 'px-4 py-3.5',
-    color: 'text-gray-900 dark:text-white',
+    color: 'text-neutral-900 dark:text-neutral-100',
     font: 'font-semibold',
     size: 'text-sm'
   },
   td: {
     base: 'whitespace-nowrap text-pretty ',
     padding: 'px-4 py-4',
-    color: 'text-gray-500 dark:text-golden dark:brightness-[85%]',
+    color: 'text-neutral-600 dark:text-golden dark:brightness-[85%]',
     font: '',
     size: 'text-sm'
   },
