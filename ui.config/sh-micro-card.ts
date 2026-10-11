@@ -25,7 +25,7 @@ export default {
   },
   teaser: {
     wrapper: "container overflow-hidden relative group flex flex-col rounded-md p-4 mx-auto max-w-md w-full h-full justify-items-center hover:shadow-md duration-300 border bg-golden/[0.25] border-golden hover:border-neutral-400 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-golden",
-    coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-45 group-hover:opacity-[25%] transition-opacity duration-500 z-0",
+    coverImage: "absolute inset-0 w-full h-full object-cover opacity-[0.3] dark:opacity-45 group-hover:opacity-[0.12] dark:group-hover:opacity-[25%] transition-opacity duration-500 z-0",
     coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 group-hover:opacity-[10%] transition-opacity duration-500 z-0",
     coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-center z-0",
     coverIcon: "absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-30 duration-500 group-hover:opacity-[5%] transition-opacity duration-500 z-0",
