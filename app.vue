@@ -77,7 +77,7 @@ onMounted(() => {
   });
 
   // Track all sections that have an `id` applied
-  document.querySelectorAll('h2, h3').forEach((section) => {
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach((section) => {
     observer.observe(section);
   });
 
@@ -128,6 +128,32 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize);
 });
 
+// Keep scroll-padding-top equal to the sticky header's real height (it includes the
+// breadcrumbs when they are visible, and changes across breakpoints), plus a small gap
+let headerObserver: ResizeObserver | null = null
+
+const updateScrollOffset = () => {
+  const header = document.querySelector('header')
+  const offset = header ? header.getBoundingClientRect().height : 0
+  document.documentElement.style.setProperty('--scroll-offset', `${Math.ceil(offset)}px`)
+}
+
+const observeHeader = () => {
+  headerObserver?.disconnect()
+  const header = document.querySelector('header')
+  if (header) headerObserver?.observe(header)
+  updateScrollOffset()
+}
+
+onMounted(() => {
+  headerObserver = new ResizeObserver(updateScrollOffset)
+  observeHeader()
+})
+
+watch(() => route.path, () => nextTick(observeHeader))
+
+onBeforeUnmount(() => headerObserver?.disconnect())
+
 onMounted(() => {
   // Add the "Copy to Clipboard" button to all code blocks
   document.querySelectorAll('pre').forEach(pre => {
@@ -152,7 +178,7 @@ const copyCode = (pre: HTMLElement) => {
 <style>
 html {
   scroll-behavior: smooth !important;
-  scroll-padding-top: 16rem;
+  scroll-padding-top: calc(var(--scroll-offset, 8rem) + 1rem);
 }
 
 h1 {
@@ -251,6 +277,51 @@ a:hover {
 
 .dark a:hover {
   color: theme('colors.oma-blue.400');
+}
+
+/* Heading anchor links keep the heading color instead of the link color */
+:is(h1, h2, h3, h4, h5, h6) > a,
+:is(h1, h2, h3, h4, h5, h6) > a:hover,
+.dark :is(h1, h2, h3, h4, h5, h6) > a,
+.dark :is(h1, h2, h3, h4, h5, h6) > a:hover {
+  color: inherit;
+}
+
+/* Heading anchor hover: heading slides right, a hash fades in where it used to be */
+:is(h1, h2, h3, h4, h5, h6):has(> a) {
+  position: relative;
+}
+
+:is(h1, h2, h3, h4, h5, h6) > a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+:is(h1, h2, h3, h4, h5, h6):has(> a)::before {
+  content: '#';
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-0.4em);
+  color: inherit;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+:is(h1, h2, h3, h4, h5, h6):has(> a):hover > a {
+  transform: translateX(1em);
+}
+
+:is(h1, h2, h3, h4, h5, h6):has(> a):hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(h1, h2, h3, h4, h5, h6) > a,
+  :is(h1, h2, h3, h4, h5, h6):has(> a)::before {
+    transition: none;
+  }
 }
 
 /* End of Links */

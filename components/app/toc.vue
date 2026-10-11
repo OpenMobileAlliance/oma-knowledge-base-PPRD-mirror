@@ -7,23 +7,14 @@
         </span>
       </button>
       <ul class="space-y-1 lg:block -ml-2">
-        <li v-for="(link, index) in page.body.toc.links" :key="index" class="space-y-1 lg:block"
-          :class="[isActive(link.id) ? ui.active : ui.normal]">
+        <li v-for="link in flatLinks" :key="link.id" class="space-y-1 lg:block"
+          :class="[isActive(link.id) ? ui.active : ui.normal, link.depth > 0 ? 'hidden lg:block' : '']"
+          :style="{ paddingLeft: `${link.depth * 0.75}rem` }">
           <ULink :id="`toc-${link.id}`" :to="`${page.path}#${link.id}`"
             :class="[ui.shadow, isActive(link.id) ? ui.link.active : ui.link.normal]"
             class="not-prose pl-1 pr-1 text-black dark:text-golden">
             {{ link.text }}
           </ULink>
-          <ul v-if="link.children?.length > 0" class="space-y-1 hidden lg:block">
-            <li v-for="(subLink, subIndex) in link.children" :key="subIndex" class="space-y-1 lg:block"
-              :class="[isActive(subLink.id) ? ui.active : ui.normal]">
-              <ULink :id="`toc-${subLink.id}`" :to="`${page.path}#${subLink.id}`"
-                :class="[ui.shadow, isActive(subLink.id) ? ui.link.active : ui.link.normal]"
-                class="not-prose pl-1 pr-1 text-black dark:text-golden">
-                {{ subLink.text }}
-              </ULink>
-            </li>
-          </ul>
         </li>
       </ul>
     </nav>
@@ -53,6 +44,19 @@ const props = withDefaults(defineProps<{
   });
 
 const { ui } = useUI("toc", toRef(props, "ui"), config);
+
+// Flatten the nested toc (h1-h6) into a list, keeping each link's nesting depth for indentation
+const flatLinks = computed(() => {
+  const result: { id: string, text: string, depth: number }[] = [];
+  const walk = (links: any[] = [], depth = 0) => {
+    for (const link of links) {
+      result.push({ id: link.id, text: link.text, depth });
+      walk(link.children, depth + 1);
+    }
+  };
+  walk(props.page?.body?.toc?.links);
+  return result;
+});
 
 const activeSection = ref<string | null>(null);
 
