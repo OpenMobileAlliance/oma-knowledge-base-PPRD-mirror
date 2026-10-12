@@ -1,7 +1,8 @@
 <template>
   <div :class="[ui.wrapper, Status]">
     <div v-if="urlImage" class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:grid-flow-col lg:gap-10">
-      <img :src="urlImage" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image]" />
+      <img :src="urlImage" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image, urlImageDark ? 'dark:hidden' : '']" />
+      <img v-if="urlImageDark" :src="urlImageDark" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image, 'hidden dark:block']" />
       <div :class="[positionTextClass, spanTextClass, alignTextClass, 'content-center']">
         <MDC v-if="title" :class="ui.title" :value="title" />
         <hr v-if="title" :class="ui.underline" />
@@ -61,6 +62,8 @@ const props = withDefaults(
     text?: string;
     /** The source URL of the image to be displayed. */
     urlImage?: string;
+    /** Optional image shown instead of `urlImage` in dark mode. */
+    urlImageDark?: string;
     /** Alternative text for the image, used for accessibility and in case the image fails to load. */
     altImage?: string;
     /** Styles for the container background depending on the status value. Options: `a`, `b`, `c`, `d` & `default` */
@@ -77,6 +80,7 @@ const props = withDefaults(
     subtitle: "",
     text: "",
     urlImage: "",
+    urlImageDark: "",
     altImage: "",
     status: "",
   }
