@@ -1,23 +1,25 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
-import { asSitemapCollection } from '@nuxtjs/sitemap/content'
+import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
 
 export default defineContentConfig({
     collections: {
-        content: defineCollection(
-            asSitemapCollection({
+        content: defineCollection({
             source: {
                 include: '**',
                 // exclude: ['media/articles/**']
             },
             type: 'page',
-        })),
-        articles: defineCollection(
-            asSitemapCollection({
+            schema: z.object({
+                sitemap: defineSitemapSchema(),
+            }),
+        }),
+        articles: defineCollection({
             source: {
                 include: '60.media/6001.articles/**',
             },
             type: 'page',
             schema: z.object({
+                sitemap: defineSitemapSchema(),
                 urlImage: z.string(),
                 imageBackground: z.string(),
                 title: z.string(),
@@ -33,6 +35,6 @@ export default defineContentConfig({
                     value: z.any(),
                 }).optional(),
             })
-        }))
+        })
     }
 })

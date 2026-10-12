@@ -1,0 +1,2952 @@
+{
+  "sh-action-card": {
+    "name": "sh-action-card",
+    "constructorName": "ShActionCard",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "default": "\"\"",
+        "description": "The title text to be displayed."
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The subtitle text to be displayed, if any."
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The main text content to be displayed."
+      },
+      {
+        "name": "urlImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The source URL of the image to be displayed."
+      },
+      {
+        "name": "altImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Alternative text for the image, used for accessibility and in case the image fails to load."
+      },
+      {
+        "name": "urlButton",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The URL link the button will navigate to when clicked."
+      },
+      {
+        "name": "labelButton",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The label text displayed on the button."
+      },
+      {
+        "name": "colorButton",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The color of the button."
+      },
+      {
+        "name": "styleButton",
+        "type": "'solid' | 'outline' | 'soft' | 'subtle' | 'ghost' | 'link'",
+        "required": false,
+        "default": "\"solid\"",
+        "description": "The style of the button (can be: `outline`, `soft`, `solid`, `link`, `ghost`)."
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The name of the icon to be displayed."
+      },
+      {
+        "name": "altIcon",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Alternative text for the icon, used for accessibility."
+      },
+      {
+        "name": "imageBackground",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Sets a background image on the card via inline CSS background-image."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "mt-6 dark:bg-inherit border border-neutral-300 dark:border-neutral-700 mx-auto p-4 rounded-md shadow-xs bg-no-repeat bg-cover size-full max-w-4xl max-h-3xl",
+        "description": "Defines the overall styling for the container that holds all the elements of the component."
+      },
+      {
+        "path": "image",
+        "value": "my-[2em] col-start-1 col-span-1 size-4/6 self-center place-self-center row-span-2 w-fit h-fit",
+        "description": "Styles applied to the image element, including properties like size and border radius."
+      },
+      {
+        "path": "title",
+        "value": "title text-2xl text-neutral-900 dark:text-neutral-100 text-center font-semibold",
+        "description": "Styles applied to the title text, such as font size and color."
+      },
+      {
+        "path": "subtitle",
+        "value": "subtitle text-lg text-center font-semibold text-neutral-500 dark:text-neutral-400 -mt-8",
+        "description": "Styles applied to the subtitle text, such as font size and color."
+      },
+      {
+        "path": "text",
+        "value": "text text-md text-center font-normal not-prose",
+        "description": "Styles applied to the text content, such as font size and color."
+      },
+      {
+        "path": "button",
+        "value": "col-start-3 col-span-1 mx-auto mb-4 not-prose",
+        "description": "Defines the styling for the button element, including hover effects and transition animations."
+      },
+      {
+        "path": "icon",
+        "value": "self-center place-self-center row-start-1 row-span-2 col-start-5 col-span-1",
+        "description": "Styles applied to the icon element, including properties like size and color."
+      }
+    ],
+    "types": {}
+  },
+  "sh-alert": {
+    "name": "sh-alert",
+    "constructorName": "ShAlert",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "typeAlert",
+        "type": "string",
+        "required": false,
+        "default": "\"info\"",
+        "description": "This represents the type of the alert. Options: `info`, `success`, `warning` & `danger`"
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default"
+      }
+    ],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "flex items-start gap-4 px-5 py-5 mt-4 mb-4 rounded-lg text-base leading-7 [&_p]:text-inherit [&_p]:my-0",
+        "description": "Defines the overall styling for the container that holds all the elements of the alert."
+      },
+      {
+        "path": "content",
+        "value": "min-w-0 flex-1 [&_p]:leading-[inherit] [&_p+p]:mt-1 [&_br+br]:hidden",
+        "description": "Container of the alert message text."
+      },
+      {
+        "path": "base",
+        "value": "flex items-center self-start shrink-0 h-[1lh]",
+        "description": "A placeholder for additional base styles that can be applied to the alert component. In this specific case, it will target the section around icon."
+      },
+      {
+        "path": "alert.success",
+        "value": "bg-green-100 dark:bg-green-500/15 text-green-950 dark:text-green-100 relative border border-green-300 dark:border-green-400/30 border-l-4 border-l-green-600 dark:border-l-green-400",
+        "description": "Colors and borders of the alert for each `typeAlert` (`success`, `warning`, `danger`, `info`)."
+      },
+      {
+        "path": "alert.warning",
+        "value": "bg-amber-100 dark:bg-amber-500/20 text-amber-950 dark:text-amber-100 relative border border-amber-300 dark:border-amber-400/40 border-l-4 border-l-amber-500 dark:border-l-amber-400",
+        "description": "Colors and borders of the alert for each `typeAlert` (`success`, `warning`, `danger`, `info`)."
+      },
+      {
+        "path": "alert.danger",
+        "value": "bg-red-100 dark:bg-red-500/15 text-red-950 dark:text-red-100 relative border border-red-300 dark:border-red-400/30 border-l-4 border-l-red-600 dark:border-l-red-400",
+        "description": "Colors and borders of the alert for each `typeAlert` (`success`, `warning`, `danger`, `info`)."
+      },
+      {
+        "path": "alert.info",
+        "value": "bg-golden/50 dark:bg-golden/10 text-neutral-900 dark:text-golden relative border border-golden dark:border-golden/30 border-l-4 border-l-oma-yellow-500 dark:border-l-golden",
+        "description": "Colors and borders of the alert for each `typeAlert` (`success`, `warning`, `danger`, `info`)."
+      },
+      {
+        "path": "icon.success",
+        "value": "i-heroicons-check-circle",
+        "description": "Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc."
+      },
+      {
+        "path": "icon.warning",
+        "value": "i-heroicons-exclamation-circle",
+        "description": "Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc."
+      },
+      {
+        "path": "icon.danger",
+        "value": "i-heroicons-x-circle",
+        "description": "Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc."
+      },
+      {
+        "path": "icon.info",
+        "value": "i-heroicons-information-circle",
+        "description": "Icon computes which type of alert is chosen, and with that information it shows accordingly the icon of alert type. This could also be used to change the icon, make it different color, etc."
+      },
+      {
+        "path": "icon.color.success",
+        "value": "text-green-600 dark:text-green-400",
+        "description": "Color of the icon for each `typeAlert`."
+      },
+      {
+        "path": "icon.color.warning",
+        "value": "text-amber-600 dark:text-amber-400",
+        "description": "Color of the icon for each `typeAlert`."
+      },
+      {
+        "path": "icon.color.danger",
+        "value": "text-red-600 dark:text-red-400",
+        "description": "Color of the icon for each `typeAlert`."
+      },
+      {
+        "path": "icon.color.info",
+        "value": "text-neutral-600 dark:text-golden",
+        "description": "Color of the icon for each `typeAlert`."
+      }
+    ],
+    "types": {}
+  },
+  "sh-announcement": {
+    "name": "sh-announcement",
+    "constructorName": "ShAnnouncement",
+    "props": [],
+    "slots": [],
+    "ui": [],
+    "types": {}
+  },
+  "sh-avatar": {
+    "name": "sh-avatar",
+    "constructorName": "ShAvatar",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "srcAvatar",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The source URL of the avatar image to be displayed."
+      },
+      {
+        "name": "altAvatar",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Alternative text for the avatar image, used for accessibility and in case the image fails to load."
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The name of the person to be displayed."
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The role or position of the person within the company."
+      },
+      {
+        "name": "company",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The name of the company the person is associated with."
+      },
+      {
+        "name": "twitter",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "URL link to the person's Twitter profile."
+      },
+      {
+        "name": "linkedin",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "URL link to the person's LinkedIn profile."
+      },
+      {
+        "name": "facebook",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "URL link to the person's Facebook profile."
+      },
+      {
+        "name": "instagram",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "URL link to the person's Instagram profile."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "grid grid-cols-2 gap-4 p-4 mx-auto w-fit dark:bg-inherit rounded-md",
+        "description": "Defines the overall styling for the container that holds all the elements of the avatar. The attribute `shadow-xl` is used to provide a shadow effect around the wrapper."
+      },
+      {
+        "path": "avatar",
+        "value": "my-[2em] grayscale justify-self-end tracking-widest rounded-full size-48 border border-neutral-300 dark:border-neutral-700",
+        "description": "Styles applied to the avatar image itself, including properties like grayscale effect, rounded shape, and size."
+      },
+      {
+        "path": "base",
+        "value": "",
+        "description": "A placeholder for additional base styles that can be applied to the avatar component."
+      },
+      {
+        "path": "name",
+        "value": "text-3xl font-semibold grow text-neutral-900 dark:text-neutral-100 bottom-0",
+        "description": "Styles applied to the text displaying the name of the person, such as font size and color."
+      },
+      {
+        "path": "role",
+        "value": "text-lg font-semibold text-neutral-700 -mt-4 dark:text-gray-400",
+        "description": "Styles applied to the text displaying the role or position of the person."
+      },
+      {
+        "path": "company",
+        "value": "text-lg text-neutral-500 tracking-wide -mt-5 dark:text-neutral-400",
+        "description": "Styles applied to the text displaying the company name of the person."
+      },
+      {
+        "path": "socials",
+        "value": "flex text-5xl -mx-1 -mt-4",
+        "description": "Contains the styles for the social media icons, including their alignment and spacing."
+      },
+      {
+        "path": "icon",
+        "value": "transition-colors duration-200 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-golden",
+        "description": "Defines the styling for individual social media icons, including hover effects and transition animations."
+      }
+    ],
+    "types": {}
+  },
+  "sh-badge": {
+    "name": "sh-badge",
+    "constructorName": "ShBadge",
+    "props": [
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default"
+      }
+    ],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "bg-neutral-100 border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 text-neutral-700",
+        "description": "Container of the badge: background, border, text color and their dark-mode variants."
+      }
+    ],
+    "types": {}
+  },
+  "sh-button": {
+    "name": "sh-button",
+    "constructorName": "ShButton",
+    "props": [
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "urlButton",
+        "type": "string",
+        "required": true,
+        "default": "\"\"",
+        "description": "Represents the URL to which the button will navigate when clicked. It can be used to define external or internal links for the button's action."
+      },
+      {
+        "name": "target",
+        "type": "string",
+        "required": false,
+        "default": "\"_blank\"",
+        "description": "Specifies where to open the linked document. Common values include `_self` for the same frame, `_blank` for a new window or tab, `_parent` for the parent frame, and `_top` for the full body of the window."
+      },
+      {
+        "name": "colorButton",
+        "type": "string",
+        "required": false,
+        "default": "\"oma-blue\"",
+        "description": "Determines the primary color scheme for the button. The value `primary` sets a default color, which can be customized by replacing `{colorButton}` in the styleButton styles with the desired color name."
+      },
+      {
+        "name": "size",
+        "type": "string",
+        "required": false,
+        "default": "\"base\"",
+        "description": "Sets the size of the button, ranging from `2xs`, `xs`, `sm`, `md`, `base`, `lg`, `xl`, `2xl`, `3xl`, `4xl`, to `5xl`. Each size corresponds to predefined text and padding sizes, ensuring consistency across different button sizes."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "required": false,
+        "default": "false",
+        "description": "A boolean attribute (`true` or `false`) that indicates whether the button is disabled. When true, the button is not interactive and is usually styled to look inactive."
+      },
+      {
+        "name": "styleButton",
+        "type": "string",
+        "required": false,
+        "default": "\"solid\"",
+        "description": "Specifies the style styleButton of the button, which can be `solid`, `outline`, or `link`. Each styleButton applies different styling rules, such as background colors, border styles, and text decorations."
+      },
+      {
+        "name": "fullWidth",
+        "type": "boolean",
+        "required": false,
+        "default": "false",
+        "description": "A boolean attribute (`true`, `false`) defines whether the button should be displayed as a fullWidth element, taking the full width of its container."
+      },
+      {
+        "name": "labelButton",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Defines the text label displayed on the button. This attribute ensures the button conveys its intended action clearly to the user."
+      },
+      {
+        "name": "class",
+        "type": "any",
+        "required": false,
+        "default": "\"\"",
+        "description": "Additional classes applied to the root element of the component."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default"
+      }
+    ],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "align-middle m-1 font-medium transition-colors duration-200",
+        "description": "Defines the overall styling for the container that holds all the elements of the button. The `wrapper` attribute is used to ensure the button is aligned properly within its container, with appropriate margins, e.g., `align-middle m-1`"
+      },
+      {
+        "path": "inner",
+        "value": "text-center not-prose mx-auto",
+        "description": "Specifies the styling for the inner content of the button, ensuring it is centered and does not inherit any prose-related styles, making it suitable for standalone button components, e.g., `text-center not-prose mx-auto`"
+      },
+      {
+        "path": "styleButton.solid",
+        "value": "bg-{colorButton}-500 dark:bg-{colorButton}-400 text-white hover:bg-{colorButton}-700 dark:hover:bg-{colorButton}-300 hover:text-white dark:text-white dark:hover:text-white no-underline",
+        "description": "`{colorButton}` is replaced with the `colorButton` prop; the class names this produces are kept in the Tailwind safelist in assets/css/main.css"
+      },
+      {
+        "path": "styleButton.outline",
+        "value": "text-{colorButton}-500 dark:text-{colorButton}-400 hover:bg-{colorButton}-50 dark:hover:bg-{colorButton}-950 ring-1 ring-inset ring-{colorButton}-500 dark:ring-{colorButton}-400 no-underline",
+        "description": "`{colorButton}` is replaced with the `colorButton` prop; the class names this produces are kept in the Tailwind safelist in assets/css/main.css"
+      },
+      {
+        "path": "styleButton.link",
+        "value": "text-{colorButton}-500 hover:text-{colorButton}-600 disabled:text-{colorButton}-500 dark:text-{colorButton}-400 dark:hover:text-{colorButton}-500 dark:disabled:text-{colorButton}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-{colorButton}-500 dark:focus-visible:ring-{colorButton}-400",
+        "description": "`{colorButton}` is replaced with the `colorButton` prop; the class names this produces are kept in the Tailwind safelist in assets/css/main.css"
+      },
+      {
+        "path": "colorButton.oma-blue.solid",
+        "value": "bg-oma-blue-300 hover:bg-oma-blue-400 dark:bg-oma-blue-500 dark:hover:bg-oma-blue-400 text-white hover:text-white dark:text-white dark:hover:text-white no-underline",
+        "description": "Custom color schemes that bring their own classes for each `styleButton`, instead of the `{colorButton}` template."
+      },
+      {
+        "path": "colorButton.oma-blue.outline",
+        "value": "text-oma-blue-400 dark:text-oma-blue-300 ring-1 ring-inset ring-oma-blue-300 dark:ring-oma-blue-400 hover:bg-oma-blue-50 dark:hover:bg-oma-blue-950 no-underline",
+        "description": "Custom color schemes that bring their own classes for each `styleButton`, instead of the `{colorButton}` template."
+      },
+      {
+        "path": "colorButton.oma-blue.link",
+        "value": "text-oma-blue-500 dark:text-oma-blue-300 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-oma-blue-500",
+        "description": "Custom color schemes that bring their own classes for each `styleButton`, instead of the `{colorButton}` template."
+      },
+      {
+        "path": "colorButton.golden.solid",
+        "value": "bg-golden hover:bg-golden/80 text-neutral-900 hover:text-neutral-900 dark:text-neutral-900 dark:hover:text-neutral-900 no-underline",
+        "description": "Custom color schemes that bring their own classes for each `styleButton`, instead of the `{colorButton}` template."
+      },
+      {
+        "path": "colorButton.golden.outline",
+        "value": "text-neutral-900 dark:text-golden ring-1 ring-inset ring-golden hover:bg-golden/30 dark:hover:bg-golden/10 no-underline",
+        "description": "Custom color schemes that bring their own classes for each `styleButton`, instead of the `{colorButton}` template."
+      },
+      {
+        "path": "colorButton.golden.link",
+        "value": "text-neutral-900 dark:text-golden underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-golden",
+        "description": "Custom color schemes that bring their own classes for each `styleButton`, instead of the `{colorButton}` template."
+      },
+      {
+        "path": "fullWidth",
+        "value": "flex mx-auto justify-center items-center",
+        "description": "Classes applied when `fullWidth` is true, so the button spans the whole container."
+      },
+      {
+        "path": "inline",
+        "value": "inline-flex items-center",
+        "description": "Classes applied when `fullWidth` is false, so the button only takes the width of its content."
+      },
+      {
+        "path": "rounded",
+        "value": "rounded-xl",
+        "description": "Corner rounding of the button."
+      },
+      {
+        "path": "size.2xs",
+        "value": "text-xs",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.xs",
+        "value": "text-xs",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.sm",
+        "value": "text-sm",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.md",
+        "value": "text-md",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.base",
+        "value": "text-base",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.lg",
+        "value": "text-lg",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.xl",
+        "value": "text-xl",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.2xl",
+        "value": "text-2xl",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.3xl",
+        "value": "text-3xl",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.4xl",
+        "value": "text-4xl",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "size.5xl",
+        "value": "text-5xl",
+        "description": "Text size for each `size` value."
+      },
+      {
+        "path": "padding.2xs",
+        "value": "px-1 py-1",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.xs",
+        "value": "px-1.5 py-1.5",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.sm",
+        "value": "px-2 py-2",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.md",
+        "value": "px-2.5 py-2.5",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.base",
+        "value": "px-3 py-3",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.lg",
+        "value": "px-7 py-6",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.xl",
+        "value": "px-8 py-7",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.2xl",
+        "value": "px-9 py-8",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.3xl",
+        "value": "px-10 py-9",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.4xl",
+        "value": "px-11 py-10",
+        "description": "Padding for each `size` value."
+      },
+      {
+        "path": "padding.5xl",
+        "value": "px-12 py-11",
+        "description": "Padding for each `size` value."
+      }
+    ],
+    "types": {}
+  },
+  "sh-card": {
+    "name": "sh-card",
+    "constructorName": "ShCard",
+    "props": [
+      {
+        "name": "coverImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Link to external or internal image that will be presented as a cover across the whole constructor"
+      },
+      {
+        "name": "coverIcon",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Any valid icon from Iconify"
+      },
+      {
+        "name": "coverText",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Inscription that will be presented as a cover across the whole constructor (full Markdown support)"
+      },
+      {
+        "name": "opacity",
+        "type": "boolean",
+        "required": false,
+        "default": "false",
+        "description": "Setting this to true will trigger fadeaway effect on `coverImage` or `coverText`. Default state triggers the transition effect"
+      },
+      {
+        "name": "urlUpperBase",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The URL that wraps the upper section of the component, typically for navigation purposes."
+      },
+      {
+        "name": "upperBaseText",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Allows you to have text in upper section of this constructor, instead of an image"
+      },
+      {
+        "name": "urlImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The source URL of the image to be displayed."
+      },
+      {
+        "name": "target",
+        "type": "string",
+        "required": false,
+        "default": "\"_self\"",
+        "description": "Specifies where to open the linked document referenced by `urlUpperBase`."
+      },
+      {
+        "name": "altImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Alternative text for the image, used for accessibility and in case the image fails to load."
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The title text to be displayed."
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The subtitle text to be displayed, if any."
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The main text content to be displayed."
+      },
+      {
+        "name": "excerpt",
+        "type": "object",
+        "required": false,
+        "default": null,
+        "description": "An object used as a fallback for `text`; rendered with `ContentRenderer` when `text` is not provided."
+      },
+      {
+        "name": "leftLabel",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The text to be displayed in the left label."
+      },
+      {
+        "name": "centerLabel",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The text to be displayed in the center label."
+      },
+      {
+        "name": "rightLabel",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The text to be displayed in the right label."
+      },
+      {
+        "name": "imageBackground",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The background image for the component's image section."
+      },
+      {
+        "name": "articleURL",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "The URL used for the \"Read More\" link shown on blog/news pages."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "flex flex-col max-h-fit relative group justify-between border border-golden dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-golden rounded-md mx-auto max-w-lg overflow-hidden bg-inherit shadow-xs hover:shadow-md transition-shadow duration-200",
+        "description": "Defines the overall styling for the container that holds all the elements of the component."
+      },
+      {
+        "path": "coverImage",
+        "value": "absolute mb-0 bottom-0 w-full h-screen object-cover opacity-100 ease-in-out",
+        "description": "Defines the styling for the cover image that spans across the whole constructor"
+      },
+      {
+        "path": "coverIconWrapper",
+        "value": "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+        "description": "Defines the styling for the icon used for covering the constructor"
+      },
+      {
+        "path": "coverText",
+        "value": "absolute bottom-0 w-full h-full flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100",
+        "description": "Defines the styling for the cover text (including the color of the background) that spans across the whole constructor"
+      },
+      {
+        "path": "upperBase",
+        "value": "flex items-center justify-center rounded-t-md",
+        "description": "Defines the styling for the upper section of the component, typically where the image is displayed."
+      },
+      {
+        "path": "upperBaseText",
+        "value": "",
+        "description": "Defines the styling for the text in the upper section of the component, instead of where the image is displayed."
+      },
+      {
+        "path": "image",
+        "value": "h-full w-screen rounded-b-md overflow-hidden",
+        "description": "Styles applied to the image element, including properties like size and border radius."
+      },
+      {
+        "path": "lowerBase",
+        "value": "p-6 rounded-b-md",
+        "description": "Defines the styling for the lower section of the component, typically where the text content is displayed."
+      },
+      {
+        "path": "content",
+        "value": "",
+        "description": "Container of the text content in the lower half."
+      },
+      {
+        "path": "title",
+        "value": "title text-3xl font-semibold text-neutral-900 dark:text-golden",
+        "description": "Styles applied to the title text, such as font size and color."
+      },
+      {
+        "path": "subtitle",
+        "value": "subtitle text-xl font-semibold text-neutral-600 dark:text-golden/80 -mt-8",
+        "description": "Styles applied to the subtitle text, such as font size and color."
+      },
+      {
+        "path": "text",
+        "value": "text text-base text-gray-800 dark:text-gray-200 not-prose",
+        "description": "Styles applied to the text content, such as font size and color."
+      },
+      {
+        "path": "readMore",
+        "value": "mt-8",
+        "description": "The \"Read More\" link, shown only on blog and news pages."
+      },
+      {
+        "path": "labels",
+        "value": "flex justify-between items-center",
+        "description": "Row that holds the left, center and right labels."
+      },
+      {
+        "path": "leftLabel",
+        "value": "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+        "description": "Defines the overall styling for the leftLabel that holds the text."
+      },
+      {
+        "path": "centerLabel",
+        "value": "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+        "description": "Defines the overall styling for the centerLabel that holds the text."
+      },
+      {
+        "path": "rightLabel",
+        "value": "mt-3 text-lg text-gray-600 dark:text-gray-400 not-prose",
+        "description": "Defines the overall styling for the rightLabel that holds the text."
+      }
+    ],
+    "types": {}
+  },
+  "sh-carousel": {
+    "name": "sh-carousel",
+    "constructorName": "ShCarousel",
+    "props": [
+      {
+        "name": "slides",
+        "type": "number",
+        "required": false,
+        "default": "1",
+        "description": "Number of slides to show at once; determines how many components are displayed in one view."
+      },
+      {
+        "name": "timer",
+        "type": "number",
+        "required": false,
+        "default": "2",
+        "description": "Interval in seconds for automatic slide transitions. Set to `0` to disable auto-transition."
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "default": "''",
+        "description": "Optional title text displayed above the carousel. Styled via `ui.title`."
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "default": "''",
+        "description": "Optional subtitle text shown below the title. Styled via `ui.subtitle`."
+      },
+      {
+        "name": "navigationVisible",
+        "type": "boolean",
+        "required": false,
+        "default": "true",
+        "description": "Controls whether the navigation dots (pagination dots) are displayed below/inside the carousel."
+      },
+      {
+        "name": "direction",
+        "type": "'horizontal' | 'vertical'",
+        "required": false,
+        "default": "'horizontal'",
+        "description": "Axis the slides travel along. Use `horizontal` to slide sideways, or `vertical` to slide upwards."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "''",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "relative w-full",
+        "description": "Outermost container of the carousel."
+      },
+      {
+        "path": "title",
+        "value": "title text-center text-[24px] font-semibold break-words",
+        "description": "Styles applied to the title text (e.g. font size, color)."
+      },
+      {
+        "path": "subtitle",
+        "value": "subtitle text-center text-[20px] font-semibold text-neutral-600 dark:text-neutral-300 -mt-5 break-words",
+        "description": "Styles applied to the subtitle text (e.g. font size, color)."
+      },
+      {
+        "path": "inner",
+        "value": "overflow-hidden",
+        "description": "Defines the styling for the inner sliding container."
+      },
+      {
+        "path": "track",
+        "value": "grid grid-cols-1",
+        "description": "Styles for the grid that stacks every slide in the same cell, so the carousel is as tall as its tallest slide."
+      },
+      {
+        "path": "group",
+        "value": "col-start-1 row-start-1 flex justify-center gap-4",
+        "description": "Styles applied to each slide group (the set of components shown together in one view)."
+      },
+      {
+        "path": "item.wrapper",
+        "value": "w-full",
+        "description": "Styles applied to each individual slide."
+      },
+      {
+        "path": "navigation.wrapper",
+        "value": "absolute z-10 flex gap-2",
+        "description": "Container of the navigation dots."
+      },
+      {
+        "path": "navigation.inner",
+        "value": "rounded-full",
+        "description": "A single navigation dot."
+      },
+      {
+        "path": "navigation.active",
+        "value": "bg-golden",
+        "description": "The dot of the slide currently shown."
+      },
+      {
+        "path": "navigation.inactive",
+        "value": "bg-neutral-300 dark:bg-neutral-600",
+        "description": "The dots of the other slides."
+      },
+      {
+        "path": "horizontal.group",
+        "value": "px-4",
+        "description": "Slide group in a horizontal carousel."
+      },
+      {
+        "path": "horizontal.item.single",
+        "value": "max-w-md",
+        "description": "Slide width in a horizontal carousel: `single` when one slide is shown at a time, `multiple` when several are."
+      },
+      {
+        "path": "horizontal.item.multiple",
+        "value": "max-w-sm",
+        "description": "Slide width in a horizontal carousel: `single` when one slide is shown at a time, `multiple` when several are."
+      },
+      {
+        "path": "horizontal.navigation.wrapper",
+        "value": "left-1/2 transform -translate-x-1/2 bottom-2",
+        "description": "Navigation dots of a horizontal carousel, placed at the bottom center."
+      },
+      {
+        "path": "horizontal.navigation.inner",
+        "value": "w-3 h-3",
+        "description": "Navigation dots of a horizontal carousel, placed at the bottom center."
+      },
+      {
+        "path": "vertical.group",
+        "value": "items-center px-12",
+        "description": "Slide group in a vertical carousel."
+      },
+      {
+        "path": "vertical.item.single",
+        "value": "max-w-full",
+        "description": "Slide width in a vertical carousel: `single` when one slide is shown at a time, `multiple` when several are."
+      },
+      {
+        "path": "vertical.item.multiple",
+        "value": "max-w-sm",
+        "description": "Slide width in a vertical carousel: `single` when one slide is shown at a time, `multiple` when several are."
+      },
+      {
+        "path": "vertical.navigation.wrapper",
+        "value": "left-4 top-1/2 transform -translate-y-1/2 flex-col",
+        "description": "Navigation dots of a vertical carousel, placed at the left side."
+      },
+      {
+        "path": "vertical.navigation.inner",
+        "value": "w-2 h-2",
+        "description": "Navigation dots of a vertical carousel, placed at the left side."
+      }
+    ],
+    "types": {}
+  },
+  "sh-column": {
+    "name": "sh-column",
+    "constructorName": "ShColumn",
+    "props": [
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Title of the column"
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Subtitle of the column"
+      },
+      {
+        "name": "footerText",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Text at the footer of the column"
+      },
+      {
+        "name": "size",
+        "type": "number",
+        "required": false,
+        "default": "DEFAULT_SIZE",
+        "description": "Width of the column in a grid of 12, from 1 to 12."
+      },
+      {
+        "name": "class",
+        "type": "any",
+        "required": false,
+        "default": null,
+        "description": "Additional classes applied to the root element of the component."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default"
+      }
+    ],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "",
+        "description": "Defines the overall styling for the container that holds all the elements of the column. The attribute `border-8` is used to highlight the contur of the wrapper."
+      },
+      {
+        "path": "header.wrapper",
+        "value": "",
+        "description": "Container of the header."
+      },
+      {
+        "path": "header.title",
+        "value": "title text-[28px] font-bold text-center not-prose",
+        "description": "Title text of the header."
+      },
+      {
+        "path": "header.subtitle",
+        "value": "subtitle text-neutral-500 py-0 not-prose",
+        "description": "Subtitle text of the header."
+      },
+      {
+        "path": "main",
+        "value": "",
+        "description": "Styles applied to the main content (text, image, list, etc.). This attribute only can be modified by modifying the logic on `sh-column.vue` file. It cannot be modified via the markdown document."
+      },
+      {
+        "path": "footer",
+        "value": "text-neutral-400 py-0 not-prose",
+        "description": "Styles applied to the text displaying the footer text of the column, such as font, size, color, etc."
+      }
+    ],
+    "types": {}
+  },
+  "sh-dynamic-table": {
+    "name": "sh-dynamic-table",
+    "constructorName": "ShDynamicTable",
+    "props": [
+      {
+        "name": "dataUrl",
+        "type": "String",
+        "required": true,
+        "default": "''",
+        "description": "URL from which the table fetches its data dynamically."
+      },
+      {
+        "name": "dataField",
+        "type": "String",
+        "required": false,
+        "default": "() => undefined",
+        "description": "Specifies the key or field within the fetched data to be displayed."
+      },
+      {
+        "name": "columns",
+        "type": "itemsElement[]",
+        "required": true,
+        "default": "() => ([])",
+        "description": "Column definitions: `name` (key in the data) plus optional `title`, `filter`, `order`, `hide`, `type`, `pill`, `wrap` and more. See the Columns section of the guideline."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "header",
+        "type": "String",
+        "required": false,
+        "default": "''",
+        "description": "Content for the table header, typically displayed above the column titles."
+      },
+      {
+        "name": "footer",
+        "type": "String",
+        "required": false,
+        "default": "''",
+        "description": "Content for the footer section, often used for totals or additional information."
+      },
+      {
+        "name": "perPage",
+        "type": "number",
+        "required": false,
+        "default": "DEFAULT_PER_PAGE",
+        "description": "Defines the number of rows shown per page when the table loads, and preselects that value in the \"Show\" dropdown. Acceptable values: 10, 25, 50, 100, or `-1` to show all rows on a single page."
+      },
+      {
+        "name": "transformRawData",
+        "type": "any",
+        "required": false,
+        "default": "() => null",
+        "description": "Optional. Name of a built-in transform applied to the fetched data before it is rendered. Accepts `filterDDFObjects`, `filterCommonObjects`, or `filterOmaEnablers`."
+      },
+      {
+        "name": "autofocusSearch",
+        "type": "Boolean",
+        "required": false,
+        "default": "false",
+        "description": "When `true`, the page scrolls to the table once its data has loaded and puts the cursor in the search box, so a visitor can start typing straight away. Intended for pages whose main purpose is looking something up in the table. The scroll is skipped when the URL carries an anchor, and the focus is skipped below the `lg` breakpoint so the on-screen keyboard does not cover the table on touch devices."
+      },
+      {
+        "name": "class",
+        "type": "any",
+        "required": false,
+        "default": "() => undefined",
+        "description": "Additional classes applied to the root element of the component."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "w-full bg-neutral-50 dark:bg-inherit border-2 border-neutral-200 dark:border-neutral-500 rounded-2xl p-5",
+        "description": "Customizes the overall container's styling, such as padding, margin, and background."
+      },
+      {
+        "path": "header",
+        "value": "rounded-xl border-2 border-neutral-300 dark:border-neutral-600 bg-neutral-100 dark:bg-neutral-800 px-6 py-4 mb-6 text-center text-lg md:text-xl font-bold uppercase tracking-[0.18em] text-black dark:text-white not-prose",
+        "description": "Styles for the table's header, including background, text alignment, and font."
+      },
+      {
+        "path": "base",
+        "value": "w-full",
+        "description": "Applies default styles to the main table structure, including borders and layout."
+      },
+      {
+        "path": "footer",
+        "value": "font-semibold text-center text-black dark:text-white border-t border-neutral-200 dark:border-neutral-700 pt-3 mt-5",
+        "description": "Customizes the footer section, often used for summaries or additional actions."
+      },
+      {
+        "path": "search",
+        "value": "w-full pb-4",
+        "description": "Defines styling for the search input or controls, enhancing usability and design."
+      },
+      {
+        "path": "toolbar",
+        "value": "flex flex-wrap items-center gap-2",
+        "description": "Row that holds the search, filters and result count."
+      },
+      {
+        "path": "count",
+        "value": "ms-auto text-sm text-neutral-600 dark:text-neutral-300 whitespace-nowrap",
+        "description": "Text showing the number of results."
+      },
+      {
+        "path": "control",
+        "value": "control",
+        "description": "Style of the toolbar controls (inputs, selects and buttons)."
+      },
+      {
+        "path": "badge",
+        "value": "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-200 ring-1 ring-inset ring-neutral-200 dark:ring-neutral-700",
+        "description": "Counter badge shown on the filter button."
+      },
+      {
+        "path": "chips",
+        "value": "flex flex-wrap items-center gap-2 pt-3",
+        "description": "Container of the active filter chips."
+      },
+      {
+        "path": "chip",
+        "value": "inline-flex items-center gap-1.5 rounded-full border border-oma-blue-100 dark:border-oma-blue-700 bg-oma-blue-50 hover:bg-oma-blue-100 dark:bg-oma-blue-900 dark:hover:bg-oma-blue-800 text-black dark:text-white text-xs font-semibold ps-2.5 pe-2 py-0.5 cursor-pointer",
+        "description": "A single active filter chip."
+      },
+      {
+        "path": "chipKey",
+        "value": "font-normal opacity-70",
+        "description": "Column name inside a filter chip."
+      },
+      {
+        "path": "filter",
+        "value": "",
+        "description": "Applies styles to filtering options for better UI clarity and interaction."
+      },
+      {
+        "path": "facetGrid",
+        "value": "flex flex-wrap gap-1 justify-center gap-y-4",
+        "description": "Grid that lays out the filter panels."
+      },
+      {
+        "path": "facet.wrapper",
+        "value": "rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex-[0_0_calc(14.28%-0.25rem)] min-w-[180px] max-w-[250px] overflow-hidden",
+        "description": "Container of a filter panel."
+      },
+      {
+        "path": "facet.header",
+        "value": "flex items-center gap-1.5 px-2.5 py-1.5 bg-neutral-100 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-700 text-xs font-semibold uppercase tracking-wide text-black dark:text-white",
+        "description": "Header of a filter panel."
+      },
+      {
+        "path": "facet.count",
+        "value": "ms-auto text-[11px] font-normal normal-case tracking-normal text-neutral-500 dark:text-neutral-400",
+        "description": "Number of selected values in a filter panel."
+      },
+      {
+        "path": "facet.search",
+        "value": "px-2 pt-2 pb-1",
+        "description": "Search field inside a filter panel."
+      },
+      {
+        "path": "facet.list",
+        "value": "max-h-64 overflow-auto pt-1 text-sm",
+        "description": "Scrollable list of values in a filter panel."
+      },
+      {
+        "path": "facet.option",
+        "value": "list-none flex items-center p-2 hover:cursor-pointer gap-2",
+        "description": "A single value row in a filter panel."
+      },
+      {
+        "path": "facet.checkbox",
+        "value": "flex-shrink-0 grid place-items-center w-3.5 h-3.5 rounded border",
+        "description": "Base of the checkbox of a value."
+      },
+      {
+        "path": "facet.checkboxOn",
+        "value": "bg-oma-blue-500 border-oma-blue-500 text-white dark:bg-oma-blue-300 dark:border-oma-blue-300 dark:text-neutral-900",
+        "description": "Checkbox of a selected value."
+      },
+      {
+        "path": "facet.checkboxOff",
+        "value": "border-neutral-300 dark:border-neutral-600",
+        "description": "Checkbox of an unselected value."
+      },
+      {
+        "path": "facet.empty",
+        "value": "px-2.5 py-2 text-xs italic text-neutral-500 dark:text-neutral-400",
+        "description": "Message shown when a filter panel has no values."
+      },
+      {
+        "path": "tableContainer",
+        "value": "w-full mt-6 max-h-[38rem] overflow-auto",
+        "description": "Scroll container for the table. The max height holds a header plus ten single-line rows, so larger page sizes (\"Show: 25/50/100/All\") scroll inside the component instead of stretching the page past the viewport. The margin sits here instead of on the table, so it stays outside the scrolling area."
+      },
+      {
+        "path": "table",
+        "value": "w-full min-w-full table-auto border-collapse my-0",
+        "description": "Styling applied to the table element, such as borders, spacing, and layout."
+      },
+      {
+        "path": "tbody",
+        "value": "divide-y divide-neutral-300 dark:divide-neutral-700",
+        "description": "Table body, including the divider between rows."
+      },
+      {
+        "path": "thead",
+        "value": "",
+        "description": "Customizes the table header section, including fonts, colors, and spacing."
+      },
+      {
+        "path": "tr.base",
+        "value": "group hover:bg-neutral-100 dark:hover:bg-neutral-800",
+        "description": "Every row."
+      },
+      {
+        "path": "tr.headRow",
+        "value": "",
+        "description": "Header row."
+      },
+      {
+        "path": "tr.selected",
+        "value": "bg-oma-blue-50 hover:bg-oma-blue-100 text-black dark:bg-oma-blue-900/40 dark:hover:bg-oma-blue-900/60 dark:text-white",
+        "description": "Selected row."
+      },
+      {
+        "path": "tr.active",
+        "value": "hover:bg-neutral-100 dark:hover:bg-neutral-800 cursor-pointer",
+        "description": "Row that can be clicked."
+      },
+      {
+        "path": "th.base",
+        "value": "sticky top-0 z-20 text-left rtl:text-right backdrop-blur-sm bg-neutral-100/95 dark:bg-neutral-800/95 shadow-[inset_0_-2px_0_0_#d4d4d4] dark:shadow-[inset_0_-2px_0_0_#525252]",
+        "description": "Base of every header cell, including the sticky position."
+      },
+      {
+        "path": "th.padding",
+        "value": "px-4 py-3.5",
+        "description": "Padding of header cells."
+      },
+      {
+        "path": "th.color",
+        "value": "text-black dark:text-white",
+        "description": "Text color of header cells."
+      },
+      {
+        "path": "th.font",
+        "value": "font-semibold",
+        "description": "Font weight of header cells."
+      },
+      {
+        "path": "th.size",
+        "value": "text-sm",
+        "description": "Text size of header cells."
+      },
+      {
+        "path": "th.sorted",
+        "value": "bg-oma-blue-50 dark:bg-oma-blue-900/60 [&_svg]:text-oma-blue-700 dark:[&_svg]:text-oma-blue-100",
+        "description": "Header cell of the column the table is sorted by."
+      },
+      {
+        "path": "td.base",
+        "value": "text-pretty [&_svg]:w-5 [&_svg]:h-5 [&_svg]:opacity-80 group-hover:[&_svg]:opacity-100",
+        "description": "Base of every body cell."
+      },
+      {
+        "path": "td.padding",
+        "value": "px-4 py-4",
+        "description": "Padding of body cells."
+      },
+      {
+        "path": "td.color",
+        "value": "text-black dark:text-white",
+        "description": "Text color of body cells."
+      },
+      {
+        "path": "td.font",
+        "value": "",
+        "description": "Font of body cells."
+      },
+      {
+        "path": "td.size",
+        "value": "text-sm",
+        "description": "Text size of body cells."
+      },
+      {
+        "path": "td.truncate",
+        "value": "whitespace-nowrap truncate max-w-[24rem]",
+        "description": "Cells whose text is cut off on a single line."
+      },
+      {
+        "path": "td.wrap",
+        "value": "whitespace-normal break-words align-top max-w-[24rem]",
+        "description": "Cells whose text wraps onto several lines."
+      },
+      {
+        "path": "td.number",
+        "value": "text-right tabular-nums",
+        "description": "Cells with numeric values."
+      },
+      {
+        "path": "td.pill",
+        "value": "inline-block rounded-full border border-neutral-300 dark:border-neutral-600 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 text-xs font-medium text-black dark:text-white",
+        "description": "Cells displayed as a pill."
+      },
+      {
+        "path": "td.clamp",
+        "value": "line-clamp-2",
+        "description": "Cells whose text is limited to two lines."
+      },
+      {
+        "path": "skeleton",
+        "value": "h-3 rounded bg-neutral-200 dark:bg-neutral-700 animate-pulse",
+        "description": "Placeholder bars shown while data is loading."
+      },
+      {
+        "path": "empty.wrapper",
+        "value": "flex flex-col items-center gap-2 py-12 text-center",
+        "description": "Container of the empty message."
+      },
+      {
+        "path": "empty.icon",
+        "value": "w-8 h-8 text-neutral-400 dark:text-neutral-500",
+        "description": "Icon of the empty message."
+      },
+      {
+        "path": "empty.title",
+        "value": "font-semibold text-black dark:text-white",
+        "description": "Title of the empty message."
+      },
+      {
+        "path": "empty.text",
+        "value": "text-sm text-neutral-500 dark:text-neutral-400 max-w-md",
+        "description": "Text of the empty message."
+      },
+      {
+        "path": "pagination",
+        "value": "pt-5",
+        "description": "Styles pagination controls, including buttons, spacing, and hover effects."
+      }
+    ],
+    "types": {
+      "itemsElement": [
+        {
+          "name": "name",
+          "type": "String",
+          "required": true,
+          "default": null,
+          "description": "Key of the field in the data that this column displays."
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "required": false,
+          "default": null,
+          "description": "Header text of the column. Defaults to `name`."
+        },
+        {
+          "name": "filter",
+          "type": "Boolean",
+          "required": false,
+          "default": null,
+          "description": "Adds a filter panel with the distinct values of the column."
+        },
+        {
+          "name": "sortable",
+          "type": "Boolean",
+          "required": false,
+          "default": null,
+          "description": "Adds a sort button to the column header."
+        },
+        {
+          "name": "hide",
+          "type": "Boolean",
+          "required": false,
+          "default": null,
+          "description": "Hides the column, while still allowing it to be searched."
+        },
+        {
+          "name": "formatColumValue",
+          "type": "String",
+          "required": false,
+          "default": null,
+          "description": "Reformats the value before display. `DY` shows only the year of a date."
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "required": false,
+          "default": null,
+          "description": "How the value is rendered: `url` (link), `list` (several values) or `subs` (a field of the value)."
+        },
+        {
+          "name": "typeData",
+          "type": "Array",
+          "required": false,
+          "default": null,
+          "description": "Extra fields used by `type`. For `url`, the field that holds the link address."
+        },
+        {
+          "name": "pill",
+          "type": "Boolean",
+          "required": false,
+          "default": null,
+          "description": "Render the value as a pill - meant for short status vocabularies."
+        },
+        {
+          "name": "wrap",
+          "type": "Boolean",
+          "required": false,
+          "default": null,
+          "description": "Let the cell wrap over several lines instead of truncating to one."
+        }
+      ]
+    }
+  },
+  "sh-faq": {
+    "name": "sh-faq",
+    "constructorName": "ShFaq",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "qas",
+        "type": "Faq[]",
+        "required": true,
+        "default": null,
+        "description": "Represents the list of question-answer pairs to be displayed in the FAQ component."
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "default": "\"FAQs\"",
+        "description": "The heading text displayed above the list of questions and answers."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "header.wrapper",
+        "value": "mt-10 mb-[1.25em]",
+        "description": "Container of the header."
+      },
+      {
+        "path": "header.title",
+        "value": "title text-2xl font-bold",
+        "description": "Title of the header."
+      },
+      {
+        "path": "wrapper",
+        "value": "border border-neutral-300 dark:border-neutral-700 rounded-md",
+        "description": "Defines the styling for the container of the FAQ items. This includes borders, padding, and layout."
+      },
+      {
+        "path": "inner",
+        "value": "mx-3 cursor-pointer",
+        "description": "Specifies the styling for individual FAQ items, such as margin and padding."
+      },
+      {
+        "path": "question",
+        "value": "my-[1.25em] grid grid-cols-2 flex-row font-semibold",
+        "description": "Defines the styling for the question part of the FAQ, including cursor and text color."
+      },
+      {
+        "path": "q",
+        "value": "w-full hover:text-neutral-500 dark:hover:text-neutral-100 duration-200 text-neutral-900 dark:text-golden mx-4",
+        "description": "Defines the text styling for the question part of the FAQ."
+      },
+      {
+        "path": "answer",
+        "value": "my-[1.25em] ml-1",
+        "description": "Defines the styling for the answer part of the FAQ, including text color."
+      },
+      {
+        "path": "a",
+        "value": "mx-6 font-normal text-neutral-700 dark:text-golden/85",
+        "description": "Defines the text styling for the answer part of the FAQ."
+      },
+      {
+        "path": "divider",
+        "value": "border-b border-neutral-300 dark:border-neutral-700",
+        "description": "Defines the styling for the divider between FAQ items."
+      },
+      {
+        "path": "icon",
+        "value": "place-self-end self-center text-3xl text-neutral-900 dark:text-golden",
+        "description": "Defines the styling of the icon."
+      }
+    ],
+    "types": {
+      "Faq": [
+        {
+          "name": "q",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": ""
+        },
+        {
+          "name": "a",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": ""
+        }
+      ]
+    }
+  },
+  "sh-form-contact-us": {
+    "name": "sh-form-contact-us",
+    "constructorName": "ShFormContactUs",
+    "props": [],
+    "slots": [],
+    "ui": [],
+    "types": {}
+  },
+  "sh-form-newsletter": {
+    "name": "sh-form-newsletter",
+    "constructorName": "ShFormNewsletter",
+    "props": [],
+    "slots": [],
+    "ui": [],
+    "types": {}
+  },
+  "sh-helper-component": {
+    "name": "sh-helper-component",
+    "constructorName": "ShHelperComponent",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "firstLogoDark",
+        "type": "string",
+        "required": false,
+        "default": "\"/logo-dark.png\"",
+        "description": "Path of the first logo shown in dark mode."
+      },
+      {
+        "name": "firstLogoLight",
+        "type": "string",
+        "required": false,
+        "default": "\"/logo-light.png\"",
+        "description": "Path of the first logo shown in light mode."
+      },
+      {
+        "name": "secondLogoDark",
+        "type": "string",
+        "required": false,
+        "default": "\"/images/oma2.png\"",
+        "description": "Path of the second logo shown in dark mode."
+      },
+      {
+        "name": "secondLogoLight",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Path of the second logo shown in light mode. Nothing is rendered in light mode when empty."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "",
+        "description": "Styling for the outermost container."
+      },
+      {
+        "path": "inner",
+        "value": "flex-col -mt-3",
+        "description": "Styling for the container holding both logos."
+      },
+      {
+        "path": "firstLogo",
+        "value": "",
+        "description": "Styling for the container of the first logo."
+      },
+      {
+        "path": "firstLogoDark",
+        "value": "m-0 max-w-full max-h-full object-contain",
+        "description": "First logo in dark mode."
+      },
+      {
+        "path": "firstLogoLight",
+        "value": "m-0 max-w-full max-h-full object-contain",
+        "description": "First logo in light mode."
+      },
+      {
+        "path": "secondLogo",
+        "value": "mt-10",
+        "description": "Styling for the container of the second logo."
+      },
+      {
+        "path": "secondLogoDark",
+        "value": "m-0 max-w-full max-h-full object-contain",
+        "description": "Second logo in dark mode."
+      },
+      {
+        "path": "secondLogoLight",
+        "value": "m-0 max-w-full max-h-full object-contain",
+        "description": "Second logo in light mode."
+      }
+    ],
+    "types": {}
+  },
+  "sh-img-container": {
+    "name": "sh-img-container",
+    "constructorName": "ShImgContainer",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "urlImage",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "The source URL of the image to be displayed."
+      },
+      {
+        "name": "altImage",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Alternative text for the image, used for accessibility and in case the image fails to load."
+      },
+      {
+        "name": "figcaption",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Optional caption text displayed below the image. This includes font size, color, and alignment settings."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "flex-row",
+        "description": "Defines the overall styling for the container that holds both the image and its caption."
+      },
+      {
+        "path": "inner",
+        "value": "bg-white dark:bg-black pt-3 pb-3 mx-32 rounded-md",
+        "description": "Styles applied to the inner section that holds the image."
+      },
+      {
+        "path": "base",
+        "value": "dark:invert flex flex-col justify-center items-center m-4",
+        "description": "A placeholder for additional base styles that can be applied to the image component."
+      },
+      {
+        "path": "image",
+        "value": "",
+        "description": "Styles applied to the image itself, including size, alignment, and additional effects like borders or shadows."
+      },
+      {
+        "path": "figcaption",
+        "value": "flex justify-center italic text-neutral-600 dark:text-neutral-400",
+        "description": "Image caption."
+      }
+    ],
+    "types": {}
+  },
+  "sh-list-cards": {
+    "name": "sh-list-cards",
+    "constructorName": "ShListCards",
+    "props": [
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The title of the list of cards, displayed prominently at the top of the header section."
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The subtitle, which provides additional context or description for the list of cards."
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Additional descriptive text or instructions displayed below the subtitle."
+      },
+      {
+        "name": "cols",
+        "type": "number",
+        "required": false,
+        "default": "DEFAULT_COLS",
+        "description": "The number of columns in the grid layout for the cards. The `gridClass` inteligentlly calculates number of cols that can be visible depending of the width of the screen. For any screen larger than `1300px` this component will allow user to enter his desired number of columns. Any width lower than that, it will automatically set columns to either 3, 2 or 1. User can always set a smaller number if screen is beyond `1300px`."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "cardID",
+        "type": "number[]",
+        "required": false,
+        "default": null,
+        "description": "This prop allows this constructor to list cards in order that is inputed"
+      },
+      {
+        "name": "allTags",
+        "type": "string[]",
+        "required": false,
+        "default": null,
+        "description": "Optional list of all available tag names that can be associated with the listed cards."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "",
+        "description": "Defines the overall styling for the container that holds the entire list of cards. This typically includes padding, margins, and general layout settings."
+      },
+      {
+        "path": "inner",
+        "value": "flex justify-between",
+        "description": "Container that holds the header and the tag filter side by side."
+      },
+      {
+        "path": "tagSection",
+        "value": "border border-golden dark:border-golden/[0.6] duration-200 rounded-md block w-fit h-fit pl-3 pr-3 hover:cursor-pointer dark:text-golden hover:border-golden dark:hover:border-golden",
+        "description": "Box that holds the tag filter."
+      },
+      {
+        "path": "tags.title",
+        "value": "title flex justify-center items-center",
+        "description": "Title of the tag filter."
+      },
+      {
+        "path": "tags.clear",
+        "value": "flex items-center border border-neutral-300 dark:border-neutral-600 text-neutral-700 dark:text-neutral-300 px-3 py-1 rounded-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-all duration-200",
+        "description": "Button that clears the selected tags."
+      },
+      {
+        "path": "tags.list",
+        "value": "flex items-center px-3 py-1 m-1 border border-neutral-300 dark:border-neutral-600 rounded-sm transition-all duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-neutral-700 cursor-pointer",
+        "description": "A single tag."
+      },
+      {
+        "path": "tags.selected",
+        "value": "bg-golden border-golden text-neutral-900 dark:bg-golden dark:border-golden transition-all duration-300",
+        "description": "A tag that is currently selected."
+      },
+      {
+        "path": "header",
+        "value": "",
+        "description": "Styles applied to the header section, including the title, subtitle, and description. This can include font size, color, and alignment settings."
+      },
+      {
+        "path": "title",
+        "value": "title -mt-9 text-3xl font-semibold text-left dark:text-golden",
+        "description": "Define the style of title fonts, displayed prominently at the top of the header section."
+      },
+      {
+        "path": "underline",
+        "value": "border-b-[3px] border-golden w-32 -mt-2 mb-[3em]",
+        "description": "Decorative line under the title."
+      },
+      {
+        "path": "subtitle",
+        "value": "subtitle text-xl font-semibold text-neutral-600 dark:text-neutral-300 text-left -mt-14",
+        "description": "Define the style of subtitle fonts, which provides additional context or description for the list of cards."
+      },
+      {
+        "path": "text",
+        "value": "text text-left font-normal dark:text-neutral-300",
+        "description": "Define the style of text fonts"
+      },
+      {
+        "path": "base",
+        "value": "justify-between flex flex-wrap",
+        "description": "Styles applied to the grid layout of the cards. This typically includes grid columns and gap settings."
+      },
+      {
+        "path": "gap",
+        "value": "gap-0",
+        "description": "The gap size between the cards in the grid layout."
+      }
+    ],
+    "types": {}
+  },
+  "sh-micro-card": {
+    "name": "sh-micro-card",
+    "constructorName": "ShMicroCard",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "layout",
+        "type": "string",
+        "required": false,
+        "default": "\"default\"",
+        "description": "This property allows us to change layout of a constructor which in effect has that our styling is changing and we get different look and effect out of the same component. Options: `default`, `flat`, `teaser`, `snap`, `translate`, `opacity`, `cta` & `logo`"
+      },
+      {
+        "name": "coverImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Link to external or internal image that will be presented as a cover across the whole constructor"
+      },
+      {
+        "name": "coverIcon",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Any valid icon from Iconify"
+      },
+      {
+        "name": "coverText",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Inscription that will be presented as a cover across the whole constructor (full Markdown support)"
+      },
+      {
+        "name": "urlWrapper",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The URL that wraps the component, typically for navigation purposes."
+      },
+      {
+        "name": "urlButton",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The URL the button navigates to when `layout` is set to `cta`. Used instead of `urlWrapper` for that layout."
+      },
+      {
+        "name": "target",
+        "type": "string",
+        "required": false,
+        "default": "\"_self\"",
+        "description": "Specifies where to open the linked document."
+      },
+      {
+        "name": "urlImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The source URL of the image to be displayed."
+      },
+      {
+        "name": "altImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Alternative text for the image, used for accessibility and in case the image fails to load."
+      },
+      {
+        "name": "icon",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Any valid icon from Iconify"
+      },
+      {
+        "name": "altIcon",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Alternative text for the icon, used for accessibility."
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The title text to be displayed."
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The subtitle text to be displayed, if any."
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The main text content to be displayed."
+      },
+      {
+        "name": "clipboard",
+        "type": "boolean",
+        "required": false,
+        "default": "false",
+        "description": "To show or not the copy button on hover over. It can either be `true` or `false`"
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Add clipboard prop"
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "swatch.wrapper",
+        "value": "relative group block w-full h-16 overflow-hidden rounded-md border border-black/15 dark:border-white/20 not-prose",
+        "description": "Fixed-size tile. Set the color with a `bg-*` class."
+      },
+      {
+        "path": "swatch.clipboard",
+        "value": "absolute inset-0 flex flex-col items-center justify-center cursor-pointer",
+        "description": "Covers the tile and centers the icon and the name."
+      },
+      {
+        "path": "swatch.icon",
+        "value": "text-3xl opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:text-xl",
+        "description": "Copy icon. Hidden until hover, then it shrinks to make room for the name."
+      },
+      {
+        "path": "swatch.title",
+        "value": "max-h-0 opacity-0 whitespace-nowrap text-xs font-mono leading-none transition-all duration-200 group-hover:max-h-4 group-hover:opacity-100 group-hover:mt-1",
+        "description": "Color name. Hidden until hover, never wraps."
+      },
+      {
+        "path": "default.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md pl-4 pr-4 pb-4 pt-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-md duration-300 border bg-golden/[0.25] border-golden hover:border-neutral-400 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-golden",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "default.coverImage",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-60 group-hover:opacity-[25%] transition-opacity duration-500 z-0",
+        "description": "Background cover image of the card."
+      },
+      {
+        "path": "default.coverText",
+        "value": "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 group-hover:opacity-[10%] transition-opacity duration-500 z-0",
+        "description": "Overlay with the cover text, shown over the cover image."
+      },
+      {
+        "path": "default.coverIconWrapper",
+        "value": "absolute inset-0 w-full h-full flex items-center justify-center z-0",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "default.coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-30 duration-500 group-hover:opacity-[5%] transition-opacity duration-500 z-0",
+        "description": "Large background cover icon of the card."
+      },
+      {
+        "path": "default.image",
+        "value": "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+        "description": "Image of the card."
+      },
+      {
+        "path": "default.icon",
+        "value": "relative sm:mt-4 flex shrink-0 mx-auto text-[96px] mb-8 z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "default.title",
+        "value": "title text-[24px] font-semibold break-words z-20",
+        "description": "Title text."
+      },
+      {
+        "path": "default.subtitle",
+        "value": "subtitle text-[20px] font-bold mt-3 break-words z-20",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "default.text",
+        "value": "text font-light text-[18px] mt-7 break-words z-20",
+        "description": "Body text."
+      },
+      {
+        "path": "flat.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md p-4 mx-auto max-w-md w-full h-full justify-items-center text-center bg-transparent dark:bg-transparent",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "flat.image",
+        "value": "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+        "description": "coverImage: \"absolute mb-0 bottom-0 left-0 w-full h-full object-fill opacity-100 ease-in-out z-40\", coverText: \"absolute inset-0 flex items-center justify-center text-center ease-in-out dark:bg-neutral-800 bg-white opacity-100 z-40\", coverIconWrapper: \"bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover z-40\", coverIcon: \"absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40\","
+      },
+      {
+        "path": "flat.icon",
+        "value": "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "flat.title",
+        "value": "title text-[24px] font-semibold break-words z-20",
+        "description": "Title text."
+      },
+      {
+        "path": "flat.subtitle",
+        "value": "subtitle text-[20px] font-bold mt-1 break-words z-20",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "flat.text",
+        "value": "text font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out text-[18px] mt-9 break-words z-20",
+        "description": "Body text."
+      },
+      {
+        "path": "teaser.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md p-4 mx-auto max-w-md w-full h-full justify-items-center hover:shadow-md duration-300 border bg-golden/[0.25] border-golden hover:border-neutral-400 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-golden",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "teaser.coverImage",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-[0.3] dark:opacity-45 group-hover:opacity-[0.12] dark:group-hover:opacity-[25%] transition-opacity duration-500 z-0",
+        "description": "Background cover image of the card."
+      },
+      {
+        "path": "teaser.coverText",
+        "value": "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 group-hover:opacity-[10%] transition-opacity duration-500 z-0",
+        "description": "Overlay with the cover text, shown over the cover image."
+      },
+      {
+        "path": "teaser.coverIconWrapper",
+        "value": "absolute inset-0 w-full h-full flex items-center justify-center z-0",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "teaser.coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-30 duration-500 group-hover:opacity-[5%] transition-opacity duration-500 z-0",
+        "description": "Large background cover icon of the card."
+      },
+      {
+        "path": "teaser.image",
+        "value": "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+        "description": "Image of the card."
+      },
+      {
+        "path": "teaser.icon",
+        "value": "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "teaser.title",
+        "value": "title mt-16 text-center text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+        "description": "Title text."
+      },
+      {
+        "path": "teaser.subtitle",
+        "value": "subtitle text-center font-bold text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "teaser.text",
+        "value": "text text-center text-[18px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out font-medium mt-2 mb-5 break-words z-20",
+        "description": "Body text."
+      },
+      {
+        "path": "snap.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md p-4 mx-auto max-w-md w-full h-full justify-items-center hover:shadow-md duration-300 border bg-golden/[0.25] border-golden hover:border-neutral-400 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-golden",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "snap.coverImage",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
+        "description": "Background cover image of the card."
+      },
+      {
+        "path": "snap.coverText",
+        "value": "absolute inset-0 flex items-center justify-center text-center text-2xl font-semibold opacity-30 scale-100 transition-all duration-700 ease-in-out group-hover:translate-y-[45%] group-hover:scale-[0.8] group-hover:opacity-100 z-10",
+        "description": "Overlay with the cover text, shown over the cover image."
+      },
+      {
+        "path": "snap.coverIconWrapper",
+        "value": "absolute inset-0 w-full h-full flex items-center justify-between z-0 overflow-hidden",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "snap.coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-30 scale-100 transition-all duration-700 ease-in-out group-hover:-translate-y-[6rem] group-hover:scale-[0.2] group-hover:opacity-100 group-hover:-mt-9 z-0",
+        "description": "Large background cover icon of the card."
+      },
+      {
+        "path": "snap.icon",
+        "value": "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[3rem] transition-transform duration-500 ease-in-out group-hover:opacity-0 group-hover:transition-opacity group-hover:duration-500 transform z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "snap.title",
+        "value": "title mt-32 text-center text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+        "description": "Title text."
+      },
+      {
+        "path": "snap.subtitle",
+        "value": "subtitle text-center font-bold text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "snap.text",
+        "value": "text text-center text-[18px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 ease-in-out font-medium mt-2 mb-5 break-words z-20",
+        "description": "Body text."
+      },
+      {
+        "path": "translate.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center border border-golden hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-golden",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "translate.coverImage",
+        "value": "absolute mb-0 bottom-0 left-0 w-full h-full object-cover transition-transform duration-700 group-hover:-translate-y-full z-40",
+        "description": "Background cover image of the card."
+      },
+      {
+        "path": "translate.coverText",
+        "value": "absolute inset-0 flex items-center justify-center text-center dark:bg-neutral-800 bg-white transition-transform duration-700 group-hover:-translate-y-full z-40",
+        "description": "Overlay with the cover text, shown over the cover image."
+      },
+      {
+        "path": "translate.coverIconWrapper",
+        "value": "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:-translate-y-full z-40",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "translate.coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+        "description": "Large background cover icon of the card."
+      },
+      {
+        "path": "translate.image",
+        "value": "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+        "description": "Image of the card."
+      },
+      {
+        "path": "translate.icon",
+        "value": "relative sm:mt-4 mb-8 text-[4rem] flex shrink-0 mx-auto z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "translate.title",
+        "value": "title text-xl font-semibold break-words z-20",
+        "description": "Title text."
+      },
+      {
+        "path": "translate.subtitle",
+        "value": "subtitle text-base font-bold mt-3 break-words z-20",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "translate.text",
+        "value": "text font-light text-[1.1rem] mt-7 break-words z-20",
+        "description": "Body text."
+      },
+      {
+        "path": "opacity.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md pl-3 pr-3 pt-5 pb-7 mx-auto max-w-md w-full h-full justify-items-center text-center border border-golden hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-golden",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "opacity.coverImage",
+        "value": "absolute mb-0 bottom-0 left-0 w-full h-full object-cover opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
+        "description": "Background cover image of the card."
+      },
+      {
+        "path": "opacity.coverText",
+        "value": "absolute inset-0 flex items-center justify-center text-center dark:bg-neutral-800 bg-white opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
+        "description": "Overlay with the cover text, shown over the cover image."
+      },
+      {
+        "path": "opacity.coverIconWrapper",
+        "value": "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out transition-opacity duration-700 group-hover:opacity-0 z-40",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "opacity.coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+        "description": "Large background cover icon of the card."
+      },
+      {
+        "path": "opacity.image",
+        "value": "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+        "description": "Image of the card."
+      },
+      {
+        "path": "opacity.icon",
+        "value": "relative sm:mt-4 mb-8 text-[96px] flex shrink-0 mx-auto z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "opacity.title",
+        "value": "title text-[24px] font-semibold break-words z-20",
+        "description": "Title text."
+      },
+      {
+        "path": "opacity.subtitle",
+        "value": "subtitle text-[20px] font-bold mt-3 break-words z-20",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "opacity.text",
+        "value": "text font-light text-[18px] mt-7 break-words z-20",
+        "description": "Body text."
+      },
+      {
+        "path": "cta.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md p-4 mx-auto max-w-md w-full h-full justify-items-center text-center border bg-golden/[0.25] border-golden dark:bg-neutral-800 dark:border-neutral-700",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "cta.coverImage",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-60 z-0",
+        "description": "Background cover image of the card."
+      },
+      {
+        "path": "cta.coverText",
+        "value": "absolute inset-0 flex items-center justify-center text-center opacity-60 z-0",
+        "description": "Overlay with the cover text, shown over the cover image."
+      },
+      {
+        "path": "cta.coverIconWrapper",
+        "value": "absolute inset-0 w-full h-full flex items-center justify-center z-0",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "cta.coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
+        "description": "Large background cover icon of the card."
+      },
+      {
+        "path": "cta.image",
+        "value": "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+        "description": "Image of the card."
+      },
+      {
+        "path": "cta.icon",
+        "value": "relative text-start sm:mt-4 mb-8 flex shrink-0 text-[3rem] z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "cta.title",
+        "value": "title text-4xl text-start font-semibold text-neutral-900 dark:text-golden break-words z-20",
+        "description": "Title text."
+      },
+      {
+        "path": "cta.subtitle",
+        "value": "subtitle text-2xl text-start font-bold text-neutral-900 dark:text-golden mt-1 break-words z-20",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "cta.underline",
+        "value": "underline underline-offset-[1.5rem] decoration-2 dark:decoration-golden/[0.4]",
+        "description": "Decorative line under the title."
+      },
+      {
+        "path": "cta.text",
+        "value": "text mt-8 font-light text-[1.1rem] text-start text-neutral-700 dark:text-golden/[0.85] break-words z-20",
+        "description": "Body text."
+      },
+      {
+        "path": "cta.button",
+        "value": "mt-24 mb-4 text-6xl duration-300 text-neutral-900 dark:text-neutral-100",
+        "description": "Call-to-action button of the card."
+      },
+      {
+        "path": "logo.wrapper",
+        "value": "container overflow-hidden relative group flex flex-col rounded-md pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center border border-golden hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-golden",
+        "description": "Container of the card for this variant."
+      },
+      {
+        "path": "logo.coverImage",
+        "value": "absolute mb-0 bottom-0 left-0 w-full h-full object-contain bg-white transition-transform duration-700 group-hover:-translate-y-full z-40",
+        "description": "Background cover image of the card."
+      },
+      {
+        "path": "logo.coverText",
+        "value": "absolute inset-0 flex items-center justify-center text-center dark:bg-neutral-800 bg-white transition-transform duration-700 group-hover:-translate-y-full z-40",
+        "description": "Overlay with the cover text, shown over the cover image."
+      },
+      {
+        "path": "logo.coverIconWrapper",
+        "value": "bg-white dark:bg-neutral-800 absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:-translate-y-full z-40",
+        "description": "Container of the cover icon."
+      },
+      {
+        "path": "logo.coverIcon",
+        "value": "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
+        "description": "Large background cover icon of the card."
+      },
+      {
+        "path": "logo.image",
+        "value": "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
+        "description": "Image of the card."
+      },
+      {
+        "path": "logo.icon",
+        "value": "relative sm:mt-4 mb-8 text-[8rem] flex shrink-0 mx-auto z-20",
+        "description": "Icon of the card."
+      },
+      {
+        "path": "logo.title",
+        "value": "title text-xl font-semibold break-words z-20",
+        "description": "Title text."
+      },
+      {
+        "path": "logo.subtitle",
+        "value": "subtitle text-base font-bold mt-3 break-words z-20",
+        "description": "Subtitle text."
+      },
+      {
+        "path": "logo.text",
+        "value": "text font-light text-[1.1rem] mt-7 break-words z-20",
+        "description": "Body text."
+      }
+    ],
+    "types": {}
+  },
+  "sh-multi-column": {
+    "name": "sh-multi-column",
+    "constructorName": "ShMultiColumn",
+    "props": [
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "cols",
+        "type": "number",
+        "required": false,
+        "default": "DEFAULT_COLS",
+        "description": "The number of columns to display. If not provided, it defaults to the value specified in the configuration. If a value is provided, e.g., 4, the width of the space ocupied by the multi-column is divided by 4."
+      },
+      {
+        "name": "gap",
+        "type": "string",
+        "required": false,
+        "default": "\"gap-4\"",
+        "description": "Optional. Controls the gutters between columns. The value `\"gap-4\"` applies a gap utility class from Tailwind CSS to add spacing between the columns."
+      },
+      {
+        "name": "class",
+        "type": "any",
+        "required": false,
+        "default": null,
+        "description": "Optional. Additional CSS classes to apply to the multi-column container."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default"
+      }
+    ],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "rounded-md p-5",
+        "description": "Defines the overall styling for the container that holds all the elements of the multi-column. The default value is an empty string, indicating no styles are applied by default."
+      }
+    ],
+    "types": {}
+  },
+  "sh-segment": {
+    "name": "sh-segment",
+    "constructorName": "ShSegment",
+    "props": [
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "imageBackground",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Sets a background image on the segment via inline CSS `background`."
+      },
+      {
+        "name": "imageBackgroundClass",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Optional. Additional inline style applied alongside `imageBackground`, e.g. to control background size or position."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default"
+      }
+    ],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "",
+        "description": "Defines the overall styling for the container that holds all the elements inside of the `ShSegment`. The attribute `shadow-xl` is used to provide a shadow effect around the wrapper."
+      },
+      {
+        "path": "inner",
+        "value": "",
+        "description": "Inner container that holds the segment content."
+      }
+    ],
+    "types": {}
+  },
+  "sh-social": {
+    "name": "sh-social",
+    "constructorName": "ShSocial",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "src",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The source URL of the Social Media post; Facebook, LinkedIn, X (formally Twitter) to be displayed."
+      },
+      {
+        "name": "width",
+        "type": "string",
+        "required": false,
+        "default": "\"500\"",
+        "description": "The width of the embedded Facebook or LinkedIn iframe."
+      },
+      {
+        "name": "height",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The height of the embedded post. Note the Facebook and LinkedIn iframes use fixed heights (410 and 650) regardless of this value."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "flex p-4 justify-center",
+        "description": "Defines the overall styling for the container that holds all the elements of the Social Media post. The attribute `shadow-xl` is used to provide a shadow effect around the wrapper."
+      },
+      {
+        "path": "facebook",
+        "value": "bg-white dark:bg-white rounded-md border border-neutral-300",
+        "description": "Additional styling for Facebook posts."
+      },
+      {
+        "path": "linkedin",
+        "value": "",
+        "description": "Additional styling for LinkedIn posts."
+      },
+      {
+        "path": "twitter",
+        "value": "rounded-md",
+        "description": "Additional styling for X (Twitter) posts."
+      }
+    ],
+    "types": {}
+  },
+  "sh-text-img": {
+    "name": "sh-text-img",
+    "constructorName": "ShTextImg",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "positionText",
+        "type": "string",
+        "required": false,
+        "default": "\"right\"",
+        "description": "Defines position of text in regard of image. Options: `left`, `right`"
+      },
+      {
+        "name": "spanText",
+        "type": "string",
+        "required": false,
+        "default": "\"m\"",
+        "description": "Defines amount of space that will text occupy. Options: `s`, `m`, `l`"
+      },
+      {
+        "name": "alignText",
+        "type": "string",
+        "required": false,
+        "default": "\"center\"",
+        "description": "Defines alignement of the text. Options: `left`, `center` & `right`"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The title text to be displayed."
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The subtitle text to be displayed, if any."
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The main text content to be displayed."
+      },
+      {
+        "name": "urlImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "The source URL of the image to be displayed."
+      },
+      {
+        "name": "altImage",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Alternative text for the image, used for accessibility and in case the image fails to load."
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Styles for the container background depending on the status value. Options: `a`, `b`, `c`, `d` & `default`"
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "bg-inherit dark:bg-inherit border-neutral-200 dark:border-neutral-500 rounded-md p-3 sm:p-5 mb-12",
+        "description": "Defines the overall styling for the container that holds all the elements of the component."
+      },
+      {
+        "path": "title",
+        "value": "title font-semibold text-xl leading-7 sm:text-[32px] md:text-[32px] lg:text-[32px]",
+        "description": "Styles applied to the title text, such as font size and color."
+      },
+      {
+        "path": "underline",
+        "value": "border-b-[3px] border-oma-yellow-500 w-32 -mt-2 mb-[3em]",
+        "description": "Decorative line under the title."
+      },
+      {
+        "path": "subtitle",
+        "value": "subtitle font-medium text-neutral-600 dark:text-neutral-300 text-lg leading-7 sm:text-[24px] md:text-[24px] lg:text-[24px] break-words -mt-8",
+        "description": "Styles applied to the subtitle text, such as font size and color."
+      },
+      {
+        "path": "text",
+        "value": "not-prose text-lg sm:text-md md:text-lg lg:text-xl leading-7 break-words mt-16",
+        "description": "Styles applied to the text content, such as font size and color."
+      },
+      {
+        "path": "image",
+        "value": "mx-auto rounded-md my-[2em]",
+        "description": "raw <img>/<hr>/<p> carry the margins the old site got from its typography plugin"
+      }
+    ],
+    "types": {}
+  },
+  "sh-two-columns": {
+    "name": "sh-two-columns",
+    "constructorName": "ShTwoColumns",
+    "props": [
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "size",
+        "type": "keyof typeof VALID_SIZES",
+        "required": false,
+        "default": "DEFAULT_SIZE",
+        "description": "Optional. Specifies the width of the left column. Options: `2XS`, `XS`, `S`, `M`, `L`, `XL`, `2XL`, `3XL` & `4XL`"
+      },
+      {
+        "name": "gap",
+        "type": "string",
+        "required": false,
+        "default": "\"gap-4\"",
+        "description": "Gutter between the columns, as a Tailwind CSS `gap-*` class (see tailwindcss.com/docs/gap)."
+      },
+      {
+        "name": "class",
+        "type": "any",
+        "required": false,
+        "default": null,
+        "description": "Additional classes applied to the root element of the component."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default"
+      }
+    ],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "",
+        "description": "Container of the two columns. Use it to add a border or background."
+      }
+    ],
+    "types": {}
+  },
+  "sh-video": {
+    "name": "sh-video",
+    "constructorName": "ShVideo",
+    "props": [
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Note for content writers. It is not rendered on the website."
+      },
+      {
+        "name": "src",
+        "type": "string",
+        "required": true,
+        "default": "\"\"",
+        "description": "The source URL of the video to be embedded. This property is mandatory."
+      },
+      {
+        "name": "ui",
+        "type": "Record<string, any>",
+        "required": false,
+        "default": null,
+        "description": "Overrides the default classes of the UI config below. Values are merged with the defaults using tailwind-merge."
+      }
+    ],
+    "slots": [],
+    "ui": [
+      {
+        "path": "wrapper",
+        "value": "mx-5 ring-1 ring-neutral-300 dark:ring-neutral-700",
+        "description": "Defines the overall styling for the container that holds the video."
+      }
+    ],
+    "types": {}
+  }
+}

@@ -1,0 +1,56 @@
+<template>
+  <div>
+    <div :class="ui.megaFooter">
+      <img src="/images/landing-hero/lh-3.jpeg" alt="footer_background" :class="ui.backgroundImg" />
+      <div :class="ui.contentContainer">
+        <div :class="ui.upperContainer">
+          <div :class="ui.contentAboveHr">
+            <img src="/logo-dark.png" alt="logo" title="Official OMA logo" :class="ui.logo" />
+            <div id="slogan" title="Our Slogan" :class="ui.slogan">
+              <span>For a Connected World</span>
+            </div>
+            <AppSocialLinks :class="ui.socialLinks" />
+          </div>
+          <hr :class="ui.hr">
+        </div>
+        <div class="flex justify-center mx-auto">
+          <ContentRenderer v-if="data" class="not-prose w-full mx-auto md:ml-12" :value="data" />
+        </div>
+      </div>
+    </div>
+
+    <footer :class="ui.footer">
+      <UContainer :class="ui.container">
+        <div :class="ui.copyrightContainer">
+          <span :class="ui.copyright">
+            Copyright &copy; &nbsp; 2002-<div>{{ year }}</div>
+          </span>
+        </div>
+      </UContainer>
+    </footer>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection'
+
+const { data } = useQueryCollection('content', '/footer-content')
+
+const year = new Date().getFullYear()
+
+const ui = {
+  megaFooter: 'relative p-6 dark:bg-neutral-950/30 overflow-hidden bottom-0',
+  contentContainer: 'relative z-30',
+  upperContainer: 'container w-[70%] mx-auto',
+  contentAboveHr: 'flex-row space-y-10 md:flex md:justify-between md:items-center',
+  backgroundImg: 'absolute bottom-0 left-0 w-full opacity-20 object-cover h-full xl:h-auto xl:object-fill object-center z-20',
+  logo: 'size-[50%] md:size-[13%] mx-auto md:mx-0 md:mt-10',
+  slogan: 'text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-bold text-gray-700 dark:text-golden text-center font-expressa',
+  socialLinks: 'justify-center text-2xl md:text-3xl space-x-2 pl-3',
+  hr: 'mx-auto mb-10 mt-10 dark:border-neutral-600',
+  footer: 'py-1 sm:py-2 bottom-0 w-full bg-default/75 backdrop-blur-sm border-t border-primary/40 z-50',
+  container: '',
+  copyrightContainer: 'flex justify-center sm:items-center sm:justify-around',
+  copyright: 'text-sm text-gray-500 sm:text-center dark:text-gray-400 flex items-center',
+}
+</script>
