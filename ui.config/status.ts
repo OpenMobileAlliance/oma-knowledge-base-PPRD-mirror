@@ -1,9 +1,9 @@
 const status: { [key: string]: string } = {
-  a: 'bg-[#FFFFFF] border-[#E3E3E3] text-[#FF0000]',
-  b: 'bg-[#000000] border-[#000000] text-[#00FF00]',
-  c: 'bg-[#FFFF00] border-[#FFFF00] text-[#000000]',
-  d: 'bg-[#ADD8E6] border-[#ADD8E6] text-[#0000FF]',
-  default: 'bg-neutral-200 border-neutral-200 dark:border-gray-700 dark:bg-slate-800 dark:text-gray-300 text-gray-700',
+  a: 'bg-white border-neutral-300 text-red-700',
+  b: 'bg-neutral-900 border-neutral-900 text-green-300',
+  c: 'bg-amber-100 border-amber-200 text-amber-900',
+  d: 'bg-oma-blue-50 border-oma-blue-100 text-oma-blue-700',
+  default: 'bg-neutral-100 border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 text-neutral-700',
 };
 
 export default status;

@@ -21,15 +21,23 @@ export default defineNuxtConfig({
   },
   content: {
     renderer: {
-      anchorLinks: false
+      // Make every heading (h1-h6) a clickable #anchor link
+      anchorLinks: { h1: true, h2: true, h3: true, h4: true, h5: true, h6: true }
     },
     highlight: {
       theme: {
-        default: 'github-dark',
+        default: 'github-light',
+        dark: 'github-dark',
       },
     },
-    markdown: {
-      anchorLinks: false 
+    build: {
+      markdown: {
+        // Table of contents lists h2 only (1 = h2, 2 = h2-h3, up to 5 = h2-h6)
+        toc: {
+          depth: 1,
+          searchDepth: 6,
+        },
+      },
     },
     api: {
       baseURL: '/site-api/_content'

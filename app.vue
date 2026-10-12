@@ -5,8 +5,8 @@
     <ShAnnouncement v-if="route.path.replace(/\/$/, '') !== '/home'" :class="['z-50', route.path !== '/' ? '' : 'sticky w-full top-0']" />
     <AppHeader v-if="route.path !== '/'" class="flex py-4" title="OMA">
       <template v-slot:logo>
-        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="logo-dark" class="shrink-0 grow-0 h-16" />
-        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="logo-light" class="shrink-0 grow-0 h-16" />
+        <img v-if="computedLogoSrc" src="/logo-dark.png" alt="logo-dark" class="shrink-0 grow-0 h-16 w-[265px] object-contain object-left" />
+        <img v-if="!computedLogoSrc" src="/logo-light.png" alt="logo-light" class="shrink-0 grow-0 h-16 w-[265px] object-contain object-left" />
         <!-- <img v-if="windowWidth < 640" src="/logo.png" alt="Logo" class="h-16" /> -->
       </template>
     </AppHeader>
@@ -77,7 +77,7 @@ onMounted(() => {
   });
 
   // Track all sections that have an `id` applied
-  document.querySelectorAll('h2, h3').forEach((section) => {
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach((section) => {
     observer.observe(section);
   });
 
@@ -128,6 +128,32 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize);
 });
 
+// Keep scroll-padding-top equal to the sticky header's real height (it includes the
+// breadcrumbs when they are visible, and changes across breakpoints), plus a small gap
+let headerObserver: ResizeObserver | null = null
+
+const updateScrollOffset = () => {
+  const header = document.querySelector('header')
+  const offset = header ? header.getBoundingClientRect().height : 0
+  document.documentElement.style.setProperty('--scroll-offset', `${Math.ceil(offset)}px`)
+}
+
+const observeHeader = () => {
+  headerObserver?.disconnect()
+  const header = document.querySelector('header')
+  if (header) headerObserver?.observe(header)
+  updateScrollOffset()
+}
+
+onMounted(() => {
+  headerObserver = new ResizeObserver(updateScrollOffset)
+  observeHeader()
+})
+
+watch(() => route.path, () => nextTick(observeHeader))
+
+onBeforeUnmount(() => headerObserver?.disconnect())
+
 onMounted(() => {
   // Add the "Copy to Clipboard" button to all code blocks
   document.querySelectorAll('pre').forEach(pre => {
@@ -152,7 +178,7 @@ const copyCode = (pre: HTMLElement) => {
 <style>
 html {
   scroll-behavior: smooth !important;
-  scroll-padding-top: 16rem;
+  scroll-padding-top: calc(var(--scroll-offset, 8rem) + 1rem);
 }
 
 h1 {
@@ -253,13 +279,72 @@ a:hover {
   color: theme('colors.oma-blue.400');
 }
 
+/* Heading anchor links keep the heading color instead of the link color */
+:is(h1, h2, h3, h4, h5, h6) > a,
+:is(h1, h2, h3, h4, h5, h6) > a:hover,
+.prose :is(h1, h2, h3, h4, h5, h6) > a,
+.prose :is(h1, h2, h3, h4, h5, h6) > a:hover,
+.dark :is(h1, h2, h3, h4, h5, h6) > a,
+.dark :is(h1, h2, h3, h4, h5, h6) > a:hover,
+.dark .prose :is(h1, h2, h3, h4, h5, h6) > a,
+.dark .prose :is(h1, h2, h3, h4, h5, h6) > a:hover {
+  color: inherit;
+}
+
+/* Light mode headings use the regular dark text color (dark mode keeps golden, see above) */
+:root:not(.dark) .prose :is(h1, h2, h3, h4, h5, h6) {
+  color: theme('colors.neutral.900');
+}
+
+/* Heading anchor hover: heading slides right, a hash fades in where it used to be */
+:is(h1, h2, h3, h4, h5, h6):has(> a) {
+  position: relative;
+}
+
+/* Heading anchor hover: heading slides right, a hash fades in where it used to be */
+:is(h1, h2, h3, h4, h5, h6) > a {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* The hash lives inside the link so clicking it follows the anchor */
+:is(h1, h2, h3, h4, h5, h6) > a::before {
+  content: '#';
+  position: absolute;
+  left: -1em;
+  opacity: 0;
+  transform: translateX(-0.4em);
+  color: inherit;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+:is(h1, h2, h3, h4, h5, h6):hover > a {
+  transform: translateX(1em);
+}
+
+:is(h1, h2, h3, h4, h5, h6):hover > a::before {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(h1, h2, h3, h4, h5, h6) > a,
+  :is(h1, h2, h3, h4, h5, h6) > a::before {
+    transition: none;
+  }
+}
+
 /* End of Links */
 
 /* CodeBlock */
+/* Inline code */
 code {
-  border: 3px solid #dcdcdc;
-  border-radius: 6px;
-  background-color: #dcdcdc;
+  border-radius: 4px;
+  background-color: theme('colors.golden / 45%');
+  color: theme('colors.neutral.900');
   padding: 2px 6px;
   position: relative;
 }
@@ -271,61 +356,74 @@ code::after {
 }
 
 .dark code {
-  border: 3px solid #414141;
-  border-radius: 6px;
-  background-color: #414141;
-  padding: 2px 6px;
-  color: #ffffff;
+  background-color: theme('colors.neutral.800');
+  color: theme('colors.golden');
 }
 
-pre code {
-  border: none;
-  border-radius: 0;
-  background: none;
-  padding: 0;
+pre {
+  position: relative;
+}
+
+/* Fenced code blocks: tinted golden surface in light mode, dark neutral surface in dark mode.
+   Token colors come from the github-light / github-dark Shiki themes (see nuxt.config.ts). */
+.prose pre {
+  position: relative;
+  padding: 2.5rem 1.25rem 1rem;
+  border: 1px solid theme('colors.golden');
+  border-radius: 6px;
+  background-color: theme('colors.golden / 20%');
+  color: theme('colors.neutral.800');
   box-shadow: none;
 }
 
+.dark .prose pre {
+  border-color: theme('colors.neutral.700');
+  background-color: theme('colors.neutral.900');
+  color: theme('colors.neutral.100');
+}
+
+pre code,
 .dark pre code {
   border: none;
   border-radius: 0;
   background: none;
   padding: 0;
   box-shadow: none;
-  color: #ffffff;
+  color: inherit;
 }
+
 .copy-btn {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
+  background-color: theme('colors.golden');
+  color: theme('colors.neutral.900');
+  border: 1px solid theme('colors.golden');
+  padding: 0.25rem 0.75rem;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   cursor: pointer;
-  opacity: 0.8;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0.85;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dark .copy-btn {
+  background-color: transparent;
+  color: theme('colors.golden');
 }
 
 .copy-btn:hover {
   opacity: 1;
 }
-
-pre {
-  position: relative;
-  padding-top: 2.5rem; /* Extra space for the button */
-}
 /* End of CodeBlock */
 
 /* Blockquote */
 .light blockquote {
-  background-color: theme('colors.neutral.200');
-  border-radius: 10px;
+  background-color: theme('colors.golden / 30%');
+  border-radius: 6px;
   padding: 1rem;
-  border-left: 4px solid #858585;
-  color: #333;
+  border-left: 4px solid theme('colors.oma-yellow.500');
+  color: theme('colors.neutral.800');
   font-style: italic;
 }
 
@@ -334,17 +432,17 @@ pre {
 }
 
 .dark blockquote {
-  background-color: theme('colors.neutral.700');
-  border-radius: 10px;
+  background-color: theme('colors.neutral.800');
+  border-radius: 6px;
   padding: 1rem;
-  border-left: 4px solid #ccc;
+  border-left: 4px solid theme('colors.golden');
   margin: 1.5rem 0;
   font-style: italic;
 }
 
 .dark blockquote p {
   margin: 0;
-  color: white;
+  color: theme('colors.golden');
 }
 
 /* End of Blockquote */

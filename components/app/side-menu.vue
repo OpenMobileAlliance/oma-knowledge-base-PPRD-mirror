@@ -5,7 +5,7 @@
         <ul class="">
           <li v-for="(link, index) in sideMenuItems" :key="index">
             <div :class="[ui.shadow, isActive(link.to) ? ui.active : ui.normal]">
-              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal" class="dark:hover:text-oma-blue-100">
+              <NuxtLink :to="link.to" :class="isActive(link.to) ? ui.link.active : ui.link.normal" class="dark:hover:text-golden">
                 <span :class="[getIndent(link.depth), 'text-nowrap w-full']">{{ link.title }}</span>
               </NuxtLink>
             </div>
@@ -21,12 +21,12 @@ const route = useRoute()
 
 const config = {
   wrapper: '',
-  shadow: 'hover:bg-primary-200/[0.7] dark:hover:bg-primary-600 rounded-r-lg hover:rounded-lg p-1',
-  active: 'block border-l-4 rounded-e-sm rounded-s-sm dark:border-oma-blue-200 border-oma-blue-400 bg-primary-200 dark:bg-primary-600/[0.7]',
-  normal: 'block border-l-2 dark:border-neutral-700 border-gray-100-ml-px w-full',
+  shadow: 'hover:bg-golden/[0.3] dark:hover:bg-golden/[0.1] rounded-r-md hover:rounded-md p-1 transition-colors duration-200',
+  active: 'block border-l-4 rounded-e-sm rounded-s-sm border-oma-yellow-500 dark:border-golden bg-golden/[0.45] dark:bg-golden/[0.15]',
+  normal: 'block border-l-2 border-golden/[0.6] dark:border-neutral-700 w-full',
   link: {
-    active: 'text-oma-blue-500 dark:text-oma-blue-200 font-bold',
-    normal: 'w-full block text-black dark:text-golden'
+    active: 'text-neutral-900 dark:text-golden font-bold',
+    normal: 'w-full block text-neutral-800 dark:text-golden/[0.85]'
   }
 };
 
