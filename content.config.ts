@@ -11,6 +11,7 @@ export default defineContentConfig({
             type: 'page',
             schema: z.object({
                 sitemap: defineSitemapSchema(),
+                icon: z.string().optional(),
             }),
         }),
         articles: defineCollection({

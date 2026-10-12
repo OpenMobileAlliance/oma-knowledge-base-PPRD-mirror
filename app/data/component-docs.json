@@ -2803,6 +2803,13 @@
         "description": "The source URL of the image to be displayed."
       },
       {
+        "name": "urlImageDark",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Optional image shown instead of `urlImage` in dark mode."
+      },
+      {
         "name": "altImage",
         "type": "string",
         "required": false,

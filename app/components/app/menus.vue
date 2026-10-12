@@ -8,16 +8,12 @@
                     : 'hover:rounded-t-lg cursor-pointer group-hover/item:rounded-t-lg',
                 ui.rootMenuButton
             ]">
-                <span class="flex items-center space-x-2">
-                    <span :class="[ui.rootMenuLabel,
-                    isActive(item) ? ui.rootActive : '']">
+                <span class="flex items-center gap-2">
+                    <UIcon v-if="item.icon" :name="item.icon" :class="[ui.rootIcon, isActive(item) ? ui.rootIconActive : '']" />
+                    <span :class="[ui.rootMenuLabel, isActive(item) ? ui.rootActive : '']">
                         {{ item.label.toUpperCase() }}
                     </span>
                 </span>
-                <UIcon v-if="item.children" name="mdi:chevron-right" :class="[
-                    ui.chevronIcon,
-                    isActive(item) ? 'group-hover/rootMenuButton:dark:text-oma-yellow-400 group-hover/item:dark:text-oma-yellow-400' : ''
-                ]" />
             </NuxtLink>
 
             <!-- Submenu -->
@@ -25,16 +21,22 @@
                 <li v-for="(child, childIndex) in item.children" :key="childIndex" class="group/sub relative">
                     <NuxtLink v-if="child.path !== submenuToLink" :to="child.path"
                         :external="child.path === '/media/news' || child.path === '/media/blog' ? true : false" :class="['cursor-pointer',
-                        ui.button
+                        ui.button, isActive(child) ? ui.submenuActive : ''
                     ]">
-                        <span :class="[ui.label, isActive(child) ? ui.submenuActive : '']">
+                        <span v-if="child.icon" :class="ui.iconTile">
+                            <UIcon :name="child.icon" :class="ui.icon" />
+                        </span>
+                        <span :class="[ui.label, isActive(child) ? 'font-semibold !text-yellow-700 dark:!text-yellow-400' : '']">
                             {{ child.label.toUpperCase() }}
                         </span>
                     </NuxtLink>
                     <a v-else :href="page?.meta.link" target="_blank" rel="noopener noreferrer" :class="['cursor-pointer',
-                        ui.button
+                        ui.button, isActive(child) ? ui.submenuActive : ''
                     ]">
-                        <span :class="[ui.label, isActive(child) ? ui.submenuActive : '']">
+                        <span v-if="child.icon" :class="ui.iconTile">
+                            <UIcon :name="child.icon" :class="ui.icon" />
+                        </span>
+                        <span :class="[ui.label, isActive(child) ? 'font-semibold !text-yellow-700 dark:!text-yellow-400' : '']">
                             {{ child.label.toUpperCase() }}
                         </span>
                     </a>
@@ -53,12 +55,15 @@ const ui = {
     wrapper: 'w-fit flex items-end justify-center rounded-lg',
     rootMenuButton: 'group/rootMenuButton w-full flex items-center justify-start px-3 py-2 text-left hover:bg-white dark:hover:bg-neutral-800 group-hover/item:bg-white dark:group-hover/item:bg-neutral-800',
     rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
-    rootActive: 'relative after:content-[\'\'] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[5px] after:bg-oma-yellow-500 after:rounded-full',
-    submenuActive: 'relative after:content-[\'\'] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[8px] after:bg-oma-yellow-500 after:rounded-xs',
+    rootActive: 'text-yellow-700 dark:text-yellow-400 [text-shadow:0_0_0.6px_currentColor]',
+    rootIconActive: 'text-yellow-700 dark:text-yellow-400 group-hover/item:text-yellow-700 dark:group-hover/item:text-yellow-400',
+    submenuActive: 'relative before:content-[""] before:absolute before:size-1.5 before:rounded-full before:bg-oma-yellow-500 before:top-1/2 before:-translate-y-1/2 before:right-3',
     submenuUl: 'absolute top-10 left-0 flex-col shadow-lg mt-0 z-10 bg-white dark:bg-neutral-800 rounded-lg overflow-hidden',
     button: 'w-full flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-golden/45 dark:hover:bg-golden/20 transition-colors duration-200',
     label: 'text-gray-900 dark:text-gray-100 truncate',
-    chevronIcon: 'ml-auto text-gray-900 dark:text-gray-100 group-hover/rootMenuButton:rotate-90 group-hover/rootMenuButton:scale-125 group-hover/item:rotate-90 group-hover/item:scale-125 transition-transform duration-200',
+    rootIcon: 'shrink-0 text-lg text-gray-500 dark:text-gray-400 group-hover/item:text-gray-900 dark:group-hover/item:text-gray-100 transition-colors duration-200',
+    iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-500 dark:text-gray-400 group-hover/sub:text-gray-900 dark:group-hover/sub:text-gray-100 transition-colors duration-200',
+    icon: 'text-base',
 }
 
 const route = useRoute()
@@ -98,6 +103,7 @@ const filteredNavigation = computed(() =>
 
 interface MenuItem {
     label: string
+    icon?: string
     path?: string
     link?: string
     children?: MenuItem[] | null
@@ -108,6 +114,7 @@ const processNavigationItem = (navItem: any, isRoot = true): MenuItem => {
     if (navItem.link) {
         return {
             label: navItem.title,
+            icon: navItem.icon,
             path: navItem.link
         };
     }
@@ -115,11 +122,13 @@ const processNavigationItem = (navItem: any, isRoot = true): MenuItem => {
         const singleChild = navItem.children[0];
         return {
             label: navItem.title,
+            icon: navItem.icon ?? singleChild.icon,
             path: singleChild.path
         };
     }
     return {
         label: navItem.title,
+        icon: navItem.icon,
         path: navItem.path, // Keep the index path for active-checking
         children: navItem.children?.map((child: any) => processNavigationItem(child, false)) || null
     };

@@ -26,35 +26,45 @@
 
                     <div class="h-full overscroll-contain overflow-y-auto max-h-[calc(100vh-8rem)]">
                         <UAccordion :items="accordionItems" type="multiple"
-                            :ui="{ item: 'border-b-0', trigger: 'py-0 px-0 gap-0', body: 'pb-0 text-base', label: 'w-full', trailingIcon: 'hidden' }">
+                            :ui="{ item: 'border-b-0', trigger: 'py-0 px-0 gap-0', body: 'pb-0 text-base', label: 'w-full', leadingIcon: 'hidden', trailingIcon: 'hidden' }">
                             <template #default="{ item }">
                                 <NuxtLink v-if="!item.children" :to="item.path" :class="ui.rootMenuButton"
                                     @click="isOpen = false">
+                                    <UIcon v-if="item.icon" :name="item.icon" :class="[ui.rootIcon, isActive(item) ? ui.rootIconActive : '']" />
                                     <span :class="[ui.rootMenuLabel, isActive(item) ? ui.rootActive : '']">
                                         {{ item.label.toUpperCase() }}
                                     </span>
                                 </NuxtLink>
                                 <span v-else :class="ui.rootMenuButton">
+                                    <UIcon v-if="item.icon" :name="item.icon" :class="[ui.rootIcon, isActive(item) ? ui.rootIconActive : '']" />
                                     <span :class="[ui.rootMenuLabel, isActive(item) ? ui.rootActive : '']">
                                         {{ item.label.toUpperCase() }}
                                     </span>
-                                    <UIcon name="mdi:chevron-right" :class="[ui.chevronIcon, 'group-data-[state=open]:rotate-90']" />
+                                    <UIcon name="i-lucide-chevron-down"
+                                        class="ml-auto shrink-0 text-lg text-gray-500 dark:text-gray-400 transition-transform duration-200 group-data-[state=open]:rotate-180" />
                                 </span>
                             </template>
 
                             <template #body="{ item }">
+                                <div class="ml-6 pl-4 border-l-2 border-golden/50">
                                 <template v-for="child in item.children" :key="child.path">
                                     <button v-if="child.path !== submenuToLink" type="button" @click="child.onClick"
                                         :class="[ui.button, isActive(child) ? ui.submenuActive : '']">
-                                        <span :class="ui.label">{{ child.label.toUpperCase() }}</span>
-                                    </button>
+                                        <span v-if="child.icon" :class="ui.iconTile">
+                                            <UIcon :name="child.icon" :class="ui.icon" />
+                                        </span>
+                                        <span :class="[ui.label, isActive(child) ? 'font-semibold !text-oma-yellow-700 dark:!text-oma-yellow-400' : '']">{{ child.label.toUpperCase() }}</span>                                    </button>
                                     <a v-else :href="page?.meta.link" target="_blank" rel="noopener noreferrer"
-                                        :class="['cursor-pointer', ui.button]">
-                                        <span :class="[ui.label, isActive(child) ? ui.submenuActive : '']">
+                                        :class="['cursor-pointer', ui.button, isActive(child) ? ui.submenuActive : '']">
+                                        <span v-if="child.icon" :class="ui.iconTile">
+                                            <UIcon :name="child.icon" :class="ui.icon" />
+                                        </span>
+                                        <span :class="[ui.label, isActive(child) ? 'font-semibold !text-oma-yellow-700 dark:!text-oma-yellow-400' : '']">
                                             {{ child.label.toUpperCase() }}
                                         </span>
                                     </a>
                                 </template>
+                                </div>
                             </template>
                         </UAccordion>
                     </div>
@@ -74,15 +84,17 @@ import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryC
 
 const ui = {
     rootMenuButton:
-        'group w-full flex items-center justify-start px-3 py-2 text-left hover:bg-gray-200 dark:hover:bg-oma-yellow-700 rounded-lg cursor-pointer',
+        'group w-full flex items-center justify-start px-3 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-700 rounded-lg cursor-pointer',
     rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
-    rootActive:
-        'relative after:content-[" "] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-oma-yellow-500 after:rounded-full',
-    submenuActive: 'underline underline-offset-4 decoration-2 decoration-oma-yellow-500',
+    rootActive: 'text-oma-yellow-700 dark:text-oma-yellow-400 [text-shadow:0_0_0.6px_currentColor]',
+    rootIconActive: 'text-oma-yellow-700 dark:text-oma-yellow-400 group-hover/item:text-oma-yellow-700 dark:group-hover/item:text-oma-yellow-400',
+    submenuActive: 'relative before:content-[""] before:absolute before:size-1.5 before:rounded-full before:bg-oma-yellow-500 before:top-1/2 before:-translate-y-1/2 before:right-3',
     button:
-        'w-full flex items-center px-4 py-2 text-left hover:bg-white dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg cursor-pointer',
+        'w-full flex items-center px-4 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg cursor-pointer',
     label: 'text-gray-900 dark:text-gray-100 truncate',
-    chevronIcon: 'ml-auto transition-transform duration-200',
+    rootIcon: 'shrink-0 mr-2.5 text-lg text-gray-500 dark:text-gray-400',
+    iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-500 dark:text-gray-400',
+    icon: 'text-base',
 }
 
 const isOpen = ref(false)
@@ -100,6 +112,7 @@ const route = useRoute()
 
 interface MenuItem {
     label: string
+    icon?: string
     path: string
     children: MenuItem[] | null
     onClick: () => void
@@ -136,6 +149,7 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
             if (!isChild && children && children.length > 0) {
                 children.unshift({
                     label: item.title,
+                    icon: item.icon,
                     path: item.path,
                     children: null,
                     onClick: go(item.path)
@@ -146,6 +160,7 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
             if (isChild && item.link) {
                 return {
                     label: item.title,
+                    icon: item.icon,
                     path: item.link,
                     children: null,
                     onClick: go(item.link)
@@ -154,6 +169,7 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
 
             return {
                 label: item.title,
+                icon: item.icon,
                 path: item.path,
                 children,
                 onClick: go(item.path)
