@@ -24,7 +24,7 @@
           <div v-if="selectedTags.length > 0" class="">{{ selectedTags.length }}</div>
           <UIcon name="system-uicons:tags" class="ml-3 text-3xl" />
         </div>
-        <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-golden/[0.2] backdrop-blur-sm' } }">
+        <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-black/50 backdrop-blur-sm' } }">
           <UCard class="flex flex-col flex-1"
             :ui="{ background: 'dark:bg-neutral-900', body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-neutral-100 dark:divide-neutral-800' }">
             <template #header>
@@ -32,12 +32,12 @@
                 <div class="dark:text-golden text-xl">{{ 'Tags for ' + slideoverTitle }}</div>
                 <div class="flex items-center">
                   <UIcon name="material-symbols-light:right-panel-close" dynamic @click="isOpen = false"
-                    class="text-4xl mb-2 text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
+                    class="text-4xl mb-2 text-slate-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-golden cursor-pointer" />
                 </div>
               </div>
             </template>
             <div class="h-full">
-              <div class="block flex-col space-y-3 text-golden">
+              <div class="block flex-col space-y-3 text-neutral-700 dark:text-neutral-300">
                 <span v-for="tag in tags" :key="tag" @click="toggleTag(tag)" :class="[ui.tags.list,
                 {
                   [ui.tags.selected]: selectedTags.includes(tag)
@@ -56,7 +56,7 @@
               </div>
             </div>
             <template #footer>
-              <div class="flex h-8 justify-center text-golden italic">{{ 'Number of selected tags: ' + selectedTags.length }}</div>
+              <div class="flex h-8 justify-center text-neutral-700 dark:text-golden italic">{{ 'Number of selected tags: ' + selectedTags.length }}</div>
             </template>
           </UCard>
         </USlideover>
