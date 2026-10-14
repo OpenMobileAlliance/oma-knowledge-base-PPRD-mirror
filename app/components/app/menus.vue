@@ -67,6 +67,7 @@ const ui = {
 }
 
 const route = useRoute()
+const currentPath = computed(() => (route.path.length > 1 ? route.path.replace(/\/+$/, '') : route.path))
 const { data: navigation } = useQueryCollectionNavigation('content', `navigation-to-${route.path}`)
 
 const submenuToLink = '/oma-events/smart-city-expo-world-congress'
@@ -140,7 +141,7 @@ const menuData = computed(() => ({
 
 // Helper: Check if a menu item (or one of its children) is active
 const isActive = (item: MenuItem): boolean => {
-    if (item.path && item.path.split('#')[0] === route.path && (!item.path.includes('#') || item.path === route.fullPath)) {
+    if (item.path && item.path.split('#')[0] === currentPath.value && (!item.path.includes('#') || item.path === route.fullPath)) {
         return true
     }
     if (item.children && item.children.length > 0) {
