@@ -90,7 +90,7 @@ const ui = {
     rootIconActive: 'text-oma-yellow-700 dark:text-oma-yellow-400 group-hover/item:text-oma-yellow-700 dark:group-hover/item:text-oma-yellow-400',
     submenuActive: 'relative before:content-[""] before:absolute before:size-1.5 before:rounded-full before:bg-oma-yellow-500 before:top-1/2 before:-translate-y-1/2 before:right-3',
     button:
-        'w-full flex items-center px-4 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg cursor-pointer',
+        'w-full flex items-center pl-4 pr-9 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg cursor-pointer',
     label: 'text-gray-900 dark:text-gray-100 truncate',
     rootIcon: 'shrink-0 mr-2.5 text-lg text-gray-500 dark:text-gray-400',
     iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-500 dark:text-gray-400',

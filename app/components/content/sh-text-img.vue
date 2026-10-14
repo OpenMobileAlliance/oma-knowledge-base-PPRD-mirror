@@ -1,8 +1,8 @@
 <template>
   <div :class="[ui.wrapper, Status]">
-    <div v-if="urlImage" class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:grid-flow-col lg:gap-10">
-      <img :src="urlImage" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image, urlImageDark ? 'dark:hidden' : '']" />
-      <img v-if="urlImageDark" :src="urlImageDark" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image, 'hidden dark:block']" />
+    <div v-if="lightSrc" class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:grid-flow-col lg:gap-10">
+      <img :src="lightSrc" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image, darkSrc ? 'dark:hidden' : '']" />
+      <img v-if="darkSrc" :src="darkSrc" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image, 'hidden dark:block']" />
       <div :class="[positionTextClass, spanTextClass, alignTextClass, 'content-center']">
         <MDC v-if="title" :class="ui.title" :value="title" />
         <hr v-if="title" :class="ui.underline" />
@@ -34,7 +34,8 @@ const config = {
   /** Styles applied to the text content, such as font size and color. */
   text: "not-prose text-lg sm:text-md md:text-lg lg:text-xl leading-7 break-words mt-16",
   // raw <img>/<hr>/<p> carry the margins the old site got from its typography plugin
-  image: "mx-auto rounded-md my-[2em]",
+  // object-contain + self-center keep the aspect ratio even when a `ui.image` size sets both width and height
+  image: "mx-auto self-center max-w-full object-contain rounded-md my-[2em]",
 }
 
 // Container look per `status` (a-d), anything else keeps the plain look
@@ -62,6 +63,8 @@ const props = withDefaults(
     text?: string;
     /** The source URL of the image to be displayed. */
     urlImage?: string;
+    /** Optional image shown in light mode. When set, `urlImage` is used for dark mode (unless `urlImageDark` is given). */
+    urlImageLight?: string;
     /** Optional image shown instead of `urlImage` in dark mode. */
     urlImageDark?: string;
     /** Alternative text for the image, used for accessibility and in case the image fails to load. */
@@ -80,11 +83,15 @@ const props = withDefaults(
     subtitle: "",
     text: "",
     urlImage: "",
+    urlImageLight: "",
     urlImageDark: "",
     altImage: "",
     status: "",
   }
 );
+
+const lightSrc = computed(() => props.urlImageLight || props.urlImage)
+const darkSrc = computed(() => props.urlImageDark || (props.urlImageLight ? props.urlImage : ''))
 
 const ui = computed(() => mergeUi(config, props.ui));
 
