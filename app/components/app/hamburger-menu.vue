@@ -187,5 +187,5 @@ const accordionItems = computed(() =>
 )
 
 const isActive = (item: MenuItem): boolean =>
-    route.path === item.path || (item.children ? item.children.some(child => isActive(child)) : false)
+    route.path.replace(/(.)\/+$/, '$1') === item.path || (item.children ? item.children.some(child => isActive(child)) : false)
 </script>

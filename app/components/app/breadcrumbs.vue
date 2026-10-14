@@ -1,22 +1,21 @@
 <template>
   <nav aria-label="Breadcrumb" :class="ui.wrapper">
     <ol :class="ui.list">
-      <li v-if="route.path !== '/home'" :class="[ui.item, { 'hidden lg:flex': breadcrumbs.length > 2 }]">
-        <NuxtLink to="/" :class="ui.link">
+      <li v-if="!isHome" :class="ui.item">
+        <NuxtLink to="/home" :class="ui.link">
           <UIcon :name="iconHome" :class="ui.icon" />
           <span :class="ui.label">Home</span>
         </NuxtLink>
       </li>
       <li v-for="(crumb, index) in breadcrumbs" :key="crumb.to"
-        :class="[ui.item, { 'hidden lg:flex': index === 0 && breadcrumbs.length > 2 }]">
-        <UIcon v-if="route.path !== '/home'" :name="iconNext"
-          :class="[ui.separator, { 'hidden lg:block': index === 0 && breadcrumbs.length > 2 }]" />
-        <NuxtLink v-if="crumb.to !== route.path" :to="crumb.to" :class="ui.link">
-          <UIcon :name="route.path === '/home' ? iconHome : (crumb.icon || iconCrumb)" :class="ui.icon" />
+        :class="ui.item">
+        <UIcon v-if="!isHome" :name="iconNext" :class="ui.separator" />
+        <NuxtLink v-if="crumb.to !== currentPath" :to="crumb.to" :class="ui.link">
+          <UIcon :name="isHome ? iconHome : (crumb.icon || iconCrumb)" :class="ui.icon" />
           <span :class="ui.label">{{ formatLabel(crumb.label) }}</span>
         </NuxtLink>
         <span v-else :class="ui.active" aria-current="page">
-          <UIcon :name="route.path === '/home' ? iconHome : (crumb.icon || iconCrumb)" :class="ui.icon" />
+          <UIcon :name="isHome ? iconHome : (crumb.icon || iconCrumb)" :class="ui.icon" />
           <span :class="ui.label">{{ formatLabel(crumb.label) }}</span>
         </span>
       </li>
@@ -46,6 +45,10 @@ const iconHome = 'line-md:home-twotone'
 
 const route = useRoute()
 
+// Paths can arrive with a trailing slash (/home/), so always compare the normalized form
+const currentPath = computed(() => (route.path.length > 1 ? route.path.replace(/\/+$/, '') : route.path))
+const isHome = computed(() => currentPath.value === '/home' || currentPath.value === '/')
+
 // Only the first letter of each crumb is uppercase, everything else lowercase.
 const formatLabel = (label: string) => {
   const text = label.replace(/[-_]+/g, ' ').trim().toLowerCase()
@@ -57,9 +60,9 @@ const { data: navigation } = useQueryCollectionNavigation('content', 'navigation
 // Official Nuxt Content breadcrumb helper: walks the navigation tree to the current path.
 // Icon and title come from frontmatter / .navigation.yml; segments missing from the tree fall back to the URL.
 const breadcrumbs = computed(() => {
-  const pathSegments = route.path.split('/').filter(segment => segment !== '')
+  const pathSegments = currentPath.value.split('/').filter(segment => segment !== '')
   const found = mapContentNavigation(
-    findPageBreadcrumb(navigation.value ?? [], route.path, { current: true }),
+    findPageBreadcrumb(navigation.value ?? [], currentPath.value, { current: true }),
   )
   const byPath = new Map(found.map(item => [item.to, item]))
   return pathSegments.map((segment, index) => {
