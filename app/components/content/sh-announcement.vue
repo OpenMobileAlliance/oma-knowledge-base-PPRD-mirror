@@ -20,7 +20,7 @@ const ui = {
     base: 'flex items-center justify-between',
     content: 'content flex-1 text-center text-xl not-prose',
     button: 'absolute hover:bg-inherit hover:rounded-sm right-0 duration-200 z-50',
-    icon: 'text-3xl mr-4 dark:text-white',
+    icon: 'text-2xl md:text-3xl mr-1 md:mr-4 dark:text-white',
 };
 
 const { data: announcement } = useQueryCollection('content', '/announcement');

@@ -116,7 +116,7 @@
       },
       {
         "path": "title",
-        "value": "title text-2xl text-neutral-900 dark:text-neutral-100 text-center font-semibold",
+        "value": "title text-xl md:text-2xl text-neutral-900 dark:text-neutral-100 text-center font-semibold",
         "description": "Styles applied to the title text, such as font size and color."
       },
       {
@@ -361,7 +361,7 @@
       },
       {
         "path": "name",
-        "value": "text-3xl font-semibold grow text-neutral-900 dark:text-neutral-100 bottom-0",
+        "value": "text-2xl md:text-3xl font-semibold grow text-neutral-900 dark:text-neutral-100 bottom-0",
         "description": "Styles applied to the text displaying the name of the person, such as font size and color."
       },
       {
@@ -890,7 +890,7 @@
       },
       {
         "path": "title",
-        "value": "title text-3xl font-semibold text-neutral-900 dark:text-golden",
+        "value": "title text-2xl md:text-3xl font-semibold text-neutral-900 dark:text-golden",
         "description": "Styles applied to the title text, such as font size and color."
       },
       {
@@ -1001,12 +1001,12 @@
       },
       {
         "path": "title",
-        "value": "title text-center text-[24px] font-semibold break-words",
+        "value": "title text-center text-xl md:text-[24px] font-semibold break-words",
         "description": "Styles applied to the title text (e.g. font size, color)."
       },
       {
         "path": "subtitle",
-        "value": "subtitle text-center text-[20px] font-semibold text-neutral-600 dark:text-neutral-300 -mt-5 break-words",
+        "value": "subtitle text-center text-lg md:text-[20px] font-semibold text-neutral-600 dark:text-neutral-300 -mt-5 break-words",
         "description": "Styles applied to the subtitle text (e.g. font size, color)."
       },
       {
@@ -1076,7 +1076,7 @@
       },
       {
         "path": "vertical.group",
-        "value": "items-center px-12",
+        "value": "items-center px-6 md:px-12",
         "description": "Slide group in a vertical carousel."
       },
       {
@@ -1174,7 +1174,7 @@
       },
       {
         "path": "header.title",
-        "value": "title text-[28px] font-bold text-center not-prose",
+        "value": "title text-2xl md:text-[28px] font-bold text-center not-prose",
         "description": "Title text of the header."
       },
       {
@@ -1660,7 +1660,7 @@
       },
       {
         "path": "header.title",
-        "value": "title text-2xl font-bold",
+        "value": "title text-xl md:text-2xl font-bold",
         "description": "Title of the header."
       },
       {
@@ -1880,7 +1880,7 @@
       },
       {
         "path": "inner",
-        "value": "bg-white dark:bg-black pt-3 pb-3 mx-32 rounded-md",
+        "value": "bg-white dark:bg-black pt-3 pb-3 mx-4 md:mx-32 rounded-md",
         "description": "Styles applied to the inner section that holds the image."
       },
       {
@@ -2006,7 +2006,7 @@
       },
       {
         "path": "title",
-        "value": "title -mt-9 text-3xl font-semibold text-left dark:text-golden",
+        "value": "title -mt-9 text-2xl md:text-3xl font-semibold text-left dark:text-golden",
         "description": "Define the style of title fonts, displayed prominently at the top of the header section."
       },
       {
@@ -2215,17 +2215,17 @@
       },
       {
         "path": "default.icon",
-        "value": "relative sm:mt-4 flex shrink-0 mx-auto text-[96px] mb-8 z-20",
+        "value": "relative sm:mt-4 flex shrink-0 mx-auto text-[64px] md:text-[96px] mb-8 z-20",
         "description": "Icon of the card."
       },
       {
         "path": "default.title",
-        "value": "title text-[24px] font-semibold break-words z-20",
+        "value": "title text-xl md:text-[24px] font-semibold break-words z-20",
         "description": "Title text."
       },
       {
         "path": "default.subtitle",
-        "value": "subtitle text-[20px] font-bold mt-3 break-words z-20",
+        "value": "subtitle text-lg md:text-[20px] font-bold mt-3 break-words z-20",
         "description": "Subtitle text."
       },
       {
@@ -2245,17 +2245,17 @@
       },
       {
         "path": "flat.icon",
-        "value": "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] z-20",
+        "value": "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[64px] md:text-[96px] z-20",
         "description": "Icon of the card."
       },
       {
         "path": "flat.title",
-        "value": "title text-[24px] font-semibold break-words z-20",
+        "value": "title text-xl md:text-[24px] font-semibold break-words z-20",
         "description": "Title text."
       },
       {
         "path": "flat.subtitle",
-        "value": "subtitle text-[20px] font-bold mt-1 break-words z-20",
+        "value": "subtitle text-lg md:text-[20px] font-bold mt-1 break-words z-20",
         "description": "Subtitle text."
       },
       {
@@ -2295,17 +2295,17 @@
       },
       {
         "path": "teaser.icon",
-        "value": "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
+        "value": "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[64px] md:text-[96px] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
         "description": "Icon of the card."
       },
       {
         "path": "teaser.title",
-        "value": "title mt-16 text-center text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+        "value": "title mt-16 text-center text-xl md:text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
         "description": "Title text."
       },
       {
         "path": "teaser.subtitle",
-        "value": "subtitle text-center font-bold text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
+        "value": "subtitle text-center font-bold text-lg md:text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
         "description": "Subtitle text."
       },
       {
@@ -2345,12 +2345,12 @@
       },
       {
         "path": "snap.title",
-        "value": "title mt-32 text-center text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+        "value": "title mt-32 text-center text-xl md:text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
         "description": "Title text."
       },
       {
         "path": "snap.subtitle",
-        "value": "subtitle text-center font-bold text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
+        "value": "subtitle text-center font-bold text-lg md:text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
         "description": "Subtitle text."
       },
       {
@@ -2440,17 +2440,17 @@
       },
       {
         "path": "opacity.icon",
-        "value": "relative sm:mt-4 mb-8 text-[96px] flex shrink-0 mx-auto z-20",
+        "value": "relative sm:mt-4 mb-8 text-[64px] md:text-[96px] flex shrink-0 mx-auto z-20",
         "description": "Icon of the card."
       },
       {
         "path": "opacity.title",
-        "value": "title text-[24px] font-semibold break-words z-20",
+        "value": "title text-xl md:text-[24px] font-semibold break-words z-20",
         "description": "Title text."
       },
       {
         "path": "opacity.subtitle",
-        "value": "subtitle text-[20px] font-bold mt-3 break-words z-20",
+        "value": "subtitle text-lg md:text-[20px] font-bold mt-3 break-words z-20",
         "description": "Subtitle text."
       },
       {
@@ -2619,7 +2619,7 @@
     "ui": [
       {
         "path": "wrapper",
-        "value": "rounded-md p-5",
+        "value": "rounded-md px-0 py-5 md:p-5",
         "description": "Defines the overall styling for the container that holds all the elements of the multi-column. The default value is an empty string, indicating no styles are applied by default."
       }
     ],
@@ -2803,6 +2803,13 @@
         "description": "The source URL of the image to be displayed."
       },
       {
+        "name": "urlImageLight",
+        "type": "string",
+        "required": false,
+        "default": "\"\"",
+        "description": "Optional image shown in light mode. When set, `urlImage` is used for dark mode (unless `urlImageDark` is given)."
+      },
+      {
         "name": "urlImageDark",
         "type": "string",
         "required": false,
@@ -2840,7 +2847,7 @@
       },
       {
         "path": "title",
-        "value": "title font-semibold text-xl leading-7 sm:text-[32px] md:text-[32px] lg:text-[32px]",
+        "value": "title font-semibold text-xl leading-7 sm:text-2xl md:text-[32px]",
         "description": "Styles applied to the title text, such as font size and color."
       },
       {
@@ -2850,7 +2857,7 @@
       },
       {
         "path": "subtitle",
-        "value": "subtitle font-medium text-neutral-600 dark:text-neutral-300 text-lg leading-7 sm:text-[24px] md:text-[24px] lg:text-[24px] break-words -mt-8",
+        "value": "subtitle font-medium text-neutral-600 dark:text-neutral-300 text-base leading-6 sm:text-xl md:text-[24px] break-words -mt-8",
         "description": "Styles applied to the subtitle text, such as font size and color."
       },
       {
@@ -2860,8 +2867,8 @@
       },
       {
         "path": "image",
-        "value": "mx-auto rounded-md my-[2em]",
-        "description": "raw <img>/<hr>/<p> carry the margins the old site got from its typography plugin"
+        "value": "mx-auto self-center max-w-full object-contain rounded-md my-[2em]",
+        "description": "raw <img>/<hr>/<p> carry the margins the old site got from its typography plugin object-contain + self-center keep the aspect ratio even when a `ui.image` size sets both width and height"
       }
     ],
     "types": {}

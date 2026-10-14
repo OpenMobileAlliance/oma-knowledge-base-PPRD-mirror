@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <button type="button" aria-label="Open navigation menu" class="cursor-pointer" @click="isOpen = true">
-            <UIcon name="pajamas:hamburger" class="text-3xl hover:scale-105 duration-300" />
+    <div class="flex items-center">
+        <button type="button" aria-label="Open navigation menu" class="flex items-center cursor-pointer" @click="isOpen = true">
+            <UIcon name="pajamas:hamburger" class="text-2xl md:text-3xl hover:scale-105 duration-300" />
         </button>
 
         <USlideover v-model:open="isOpen" title="Navigation menu" description="Browse all sections of the website"
@@ -11,12 +11,12 @@
                     :ui="{ root: 'ring-0 divide-y divide-neutral-100 dark:divide-neutral-800', body: 'flex-1 min-h-0' }">
                     <template #header>
                         <div class="flex h-8 justify-between items-center">
-                            <AppSocialLinks class="text-2xl space-x-1" />
+                            <AppSocialLinks class="text-xl md:text-2xl space-x-1 !mt-0" />
                             <div class="flex items-center">
-                                <ColorMode class="mb-1" />
-                                <button type="button" aria-label="Close navigation menu" @click="isOpen = false">
+                                <ColorMode />
+                                <button type="button" aria-label="Close navigation menu" class="flex items-center" @click="isOpen = false">
                                     <UIcon name="material-symbols-light:right-panel-close"
-                                        class="text-4xl mb-2 text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
+                                        class="text-3xl md:text-4xl text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
                                 </button>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ const ui = {
     rootIconActive: 'text-oma-yellow-700 dark:text-oma-yellow-400 group-hover/item:text-oma-yellow-700 dark:group-hover/item:text-oma-yellow-400',
     submenuActive: 'relative before:content-[""] before:absolute before:size-1.5 before:rounded-full before:bg-oma-yellow-500 before:top-1/2 before:-translate-y-1/2 before:right-3',
     button:
-        'w-full flex items-center px-4 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg cursor-pointer',
+        'w-full flex items-center pl-4 pr-9 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg cursor-pointer',
     label: 'text-gray-900 dark:text-gray-100 truncate',
     rootIcon: 'shrink-0 mr-2.5 text-lg text-gray-500 dark:text-gray-400',
     iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-500 dark:text-gray-400',

@@ -34,9 +34,9 @@ const config = {
   /** Outermost container of the carousel. */
   wrapper: "relative w-full",
   /** Styles applied to the title text (e.g. font size, color). */
-  title: "title text-center text-[24px] font-semibold break-words",
+  title: "title text-center text-xl md:text-[24px] font-semibold break-words",
   /** Styles applied to the subtitle text (e.g. font size, color). */
-  subtitle: "subtitle text-center text-[20px] font-semibold text-neutral-600 dark:text-neutral-300 -mt-5 break-words",
+  subtitle: "subtitle text-center text-lg md:text-[20px] font-semibold text-neutral-600 dark:text-neutral-300 -mt-5 break-words",
   /** Defines the styling for the inner sliding container. */
   inner: "overflow-hidden",
   /** Styles for the grid that stacks every slide in the same cell, so the carousel is as tall as its tallest slide. */
@@ -76,7 +76,7 @@ const config = {
   /** Classes applied when the carousel direction is `vertical`. */
   vertical: {
     /** Slide group in a vertical carousel. */
-    group: "items-center px-12",
+    group: "items-center px-6 md:px-12",
     /** Slide width in a vertical carousel: `single` when one slide is shown at a time, `multiple` when several are. */
     item: {
       single: "max-w-full",

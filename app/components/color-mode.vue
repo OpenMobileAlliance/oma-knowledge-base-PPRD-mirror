@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex items-center">
     <button type="button" title="Toggle color mode" aria-label="Toggle color mode"
-      class="pl-3 pr-3 transition-colors cursor-pointer"
+      class="flex items-center pl-3 pr-3 transition-colors cursor-pointer"
       @click="cycleTheme">
       <UIcon :name="iconForTheme" class="hover:text-primary-600 dark:hover:text-primary-400 text-2xl" />
     </button>

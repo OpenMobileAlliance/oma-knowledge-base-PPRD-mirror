@@ -59,7 +59,7 @@ const ui = {
     rootIconActive: 'text-yellow-700 dark:text-yellow-400 group-hover/item:text-yellow-700 dark:group-hover/item:text-yellow-400',
     submenuActive: 'relative before:content-[""] before:absolute before:size-1.5 before:rounded-full before:bg-oma-yellow-500 before:top-1/2 before:-translate-y-1/2 before:right-3',
     submenuUl: 'absolute top-10 left-0 flex-col shadow-lg mt-0 z-10 bg-white dark:bg-neutral-800 rounded-lg overflow-hidden',
-    button: 'w-full flex items-center px-4 py-2 text-left hover:rounded-lg hover:bg-golden/45 dark:hover:bg-golden/20 transition-colors duration-200',
+    button: 'w-full flex items-center pl-4 pr-9 py-2 text-left hover:rounded-lg hover:bg-golden/45 dark:hover:bg-golden/20 transition-colors duration-200',
     label: 'text-gray-900 dark:text-gray-100 truncate',
     rootIcon: 'shrink-0 text-lg text-gray-500 dark:text-gray-400 group-hover/item:text-gray-900 dark:group-hover/item:text-gray-100 transition-colors duration-200',
     iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-500 dark:text-gray-400 group-hover/sub:text-gray-900 dark:group-hover/sub:text-gray-100 transition-colors duration-200',

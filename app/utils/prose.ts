@@ -24,4 +24,4 @@ export const headingLeading =
 export const headingLeadingIcon = 'size-4 shrink-0'
 
 /** Base font size of rendered markdown (the old site rendered content at 20px). */
-export const contentTextClass = 'text-xl leading-[1.75]'
+export const contentTextClass = 'text-base leading-[1.65] md:text-xl md:leading-[1.75]'

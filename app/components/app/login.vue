@@ -1,8 +1,8 @@
 <template>
     <UDropdownMenu :items="items" :content="{ align: 'start', side: 'bottom' }"
         :ui="{ content: 'bg-golden contrast-90 dark:bg-neutral-600', item: 'data-highlighted:before:bg-golden data-highlighted:before:saturate-150 dark:data-highlighted:before:bg-golden/20' }">
-        <button type="button" aria-label="Member account menu" class="cursor-pointer">
-            <UIcon name="stash:user-avatar" class="text-3xl -mt-1" />
+        <button type="button" aria-label="Member account menu" class="flex items-center cursor-pointer">
+            <UIcon name="stash:user-avatar" class="text-2xl md:text-3xl" />
         </button>
         <template #item="{ item }">
             <ULink :to="item.to" target="_blank" raw

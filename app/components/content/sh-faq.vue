@@ -25,7 +25,7 @@ const config = {
     /** Container of the header. */
     wrapper: "mt-10 mb-[1.25em]",
     /** Title of the header. */
-    title: "title text-2xl font-bold",
+    title: "title text-xl md:text-2xl font-bold",
   },
   /** Defines the styling for the container of the FAQ items. This includes borders, padding, and layout. */
   wrapper: "border border-neutral-300 dark:border-neutral-700 rounded-md",
