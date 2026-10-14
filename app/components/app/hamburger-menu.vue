@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <button type="button" aria-label="Open navigation menu" class="cursor-pointer" @click="isOpen = true">
-            <UIcon name="pajamas:hamburger" class="text-3xl hover:scale-105 duration-300" />
+    <div class="flex items-center">
+        <button type="button" aria-label="Open navigation menu" class="flex items-center cursor-pointer" @click="isOpen = true">
+            <UIcon name="pajamas:hamburger" class="text-2xl md:text-3xl hover:scale-105 duration-300" />
         </button>
 
         <USlideover v-model:open="isOpen" title="Navigation menu" description="Browse all sections of the website"
@@ -11,12 +11,12 @@
                     :ui="{ root: 'ring-0 divide-y divide-neutral-100 dark:divide-neutral-800', body: 'flex-1 min-h-0' }">
                     <template #header>
                         <div class="flex h-8 justify-between items-center">
-                            <AppSocialLinks class="text-2xl space-x-1" />
+                            <AppSocialLinks class="text-xl md:text-2xl space-x-1 !mt-0" />
                             <div class="flex items-center">
-                                <ColorMode class="mb-1" />
-                                <button type="button" aria-label="Close navigation menu" @click="isOpen = false">
+                                <ColorMode />
+                                <button type="button" aria-label="Close navigation menu" class="flex items-center" @click="isOpen = false">
                                     <UIcon name="material-symbols-light:right-panel-close"
-                                        class="text-4xl mb-2 text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
+                                        class="text-3xl md:text-4xl text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
                                 </button>
                             </div>
                         </div>

@@ -105,7 +105,7 @@ const config = {
   /** Styles applied to the header section, including the title, subtitle, and description. This can include font size, color, and alignment settings. */
   header: "",
   /** Define the style of title fonts, displayed prominently at the top of the header section. */
-  title: "title -mt-9 text-3xl font-semibold text-left dark:text-golden",
+  title: "title -mt-9 text-2xl md:text-3xl font-semibold text-left dark:text-golden",
   /** Decorative line under the title. */
   underline: "border-b-[3px] border-golden w-32 -mt-2 mb-[3em]",
   /** Define the style of subtitle fonts, which provides additional context or description for the list of cards. */

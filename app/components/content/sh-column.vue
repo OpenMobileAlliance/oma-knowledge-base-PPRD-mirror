@@ -26,7 +26,7 @@ const config = {
     /** Container of the header. */
     wrapper: "",
     /** Title text of the header. */
-    title: "title text-[28px] font-bold text-center not-prose",
+    title: "title text-2xl md:text-[28px] font-bold text-center not-prose",
     /** Subtitle text of the header. */
     subtitle: "subtitle text-neutral-500 py-0 not-prose"
   },

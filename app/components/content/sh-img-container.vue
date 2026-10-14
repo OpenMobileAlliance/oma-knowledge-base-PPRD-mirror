@@ -16,7 +16,7 @@ const config = {
     /** Defines the overall styling for the container that holds both the image and its caption. */
     wrapper: 'flex-row',
     /** Styles applied to the inner section that holds the image. */
-    inner: 'bg-white dark:bg-black pt-3 pb-3 mx-32 rounded-md',
+    inner: 'bg-white dark:bg-black pt-3 pb-3 mx-4 md:mx-32 rounded-md',
     /** A placeholder for additional base styles that can be applied to the image component. */
     base: 'dark:invert flex flex-col justify-center items-center m-4',
     /** Styles applied to the image itself, including size, alignment, and additional effects like borders or shadows. */

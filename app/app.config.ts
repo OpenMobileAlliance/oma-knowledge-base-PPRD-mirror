@@ -15,20 +15,20 @@ export default defineAppConfig({
     prose: {
       h1: {
         slots: {
-          base: [headingColor, 'group text-[2.25em] leading-[1.1111] font-normal mt-0 mb-[0.8889em] scroll-mt-0 lg:scroll-mt-0'],
+          base: [headingColor, 'group text-[1.75em] leading-[1.2] md:text-[2.25em] md:leading-[1.1111] font-normal mt-0 mb-[0.6em] md:mb-[0.8889em] scroll-mt-0 lg:scroll-mt-0'],
           link: headingLink,
         },
       },
       h2: {
         slots: {
-          base: [headingColor, 'group text-[1.5em] leading-[1.3333] font-normal mt-[2em] mb-[1em] scroll-mt-0 lg:scroll-mt-0'],
+          base: [headingColor, 'group text-[1.4em] leading-[1.3] md:text-[1.5em] md:leading-[1.3333] font-normal mt-[1.75em] mb-[0.75em] md:mt-[2em] md:mb-[1em] scroll-mt-0 lg:scroll-mt-0'],
           link: headingLink,
           leading: headingLeading,
         },
       },
       h3: {
         slots: {
-          base: [headingColor, 'group text-[1.25em] leading-[1.6] font-normal mt-[1.6em] mb-[0.6em] scroll-mt-0 lg:scroll-mt-0'],
+          base: [headingColor, 'group text-[1.2em] leading-[1.45] md:text-[1.25em] md:leading-[1.6] font-normal mt-[1.6em] mb-[0.6em] scroll-mt-0 lg:scroll-mt-0'],
           link: headingLink,
           leading: headingLeading,
         },
@@ -53,7 +53,7 @@ export default defineAppConfig({
       pre: {
         slots: {
           root: 'my-[1.7142857em]',
-          base: 'border-golden bg-golden/20 text-neutral-800 rounded-md px-5 py-4 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100',
+          base: 'border-golden bg-golden/20 text-neutral-800 rounded-md px-3 py-3 md:px-5 md:py-4 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100',
         },
       },
       blockquote: {
@@ -75,13 +75,13 @@ export default defineAppConfig({
         base: 'my-[0.5em] ps-[0.375em] leading-[inherit] [&>ul]:my-[0.75em] [&>ol]:my-[0.75em]',
       },
       hr: {
-        base: 'my-[3em]',
+        base: 'my-[2em] md:my-[3em]',
       },
       // Matches the API tables on the component doc pages (doc-api.vue): a rounded
       // bordered frame, a tinted header row and hairline row dividers.
       table: {
         slots: {
-          root: 'my-[2em] overflow-x-auto rounded-md border border-neutral-200 dark:border-neutral-700',
+          root: 'my-[1.5em] md:my-[2em] overflow-x-auto rounded-md border border-neutral-200 dark:border-neutral-700',
           base: 'w-full border-collapse text-left text-sm',
         },
       },
@@ -110,11 +110,11 @@ export default defineAppConfig({
     //   logo: "i-fa6-brands-square-facebook",
     //   url: "https://www.facebook.com/OMASpecWorks",
     // },
-    // youtube: {
-    //   title: "YouTube",
-    //   logo: "i-fa6-brands-square-youtube",
-    //   url: "https://www.youtube.com/c/OMASpecWorks",
-    // },
+    youtube: {
+      title: "YouTube",
+      logo: "i-fa6-brands-square-youtube",
+      url: "https://www.youtube.com/c/OMASpecWorks",
+    },
     // x: {
     //   title: "X",
     //   logo: "i-fa6-brands-square-x-twitter",

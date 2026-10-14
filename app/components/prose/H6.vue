@@ -16,7 +16,7 @@ const generate = computed(() =>
 <template>
   <h6
     :id="props.id"
-    :class="[headingColor, 'relative group text-[0.67em] leading-normal font-normal mt-[1.5em] mb-[0.5em] dark:brightness-75']"
+    :class="[headingColor, 'relative group text-[0.85em] md:text-[0.67em] leading-normal font-normal mt-[1.5em] mb-[0.5em] dark:brightness-75']"
   >
     <a v-if="props.id && generate" :href="`#${props.id}`" :class="headingLink">
       <span :class="headingLeading">

@@ -41,7 +41,7 @@ const year = new Date().getFullYear()
 const ui = {
   megaFooter: 'relative p-6 dark:bg-neutral-950/30 overflow-hidden bottom-0',
   contentContainer: 'relative z-30',
-  upperContainer: 'container w-[70%] mx-auto',
+  upperContainer: 'container w-full md:w-[70%] mx-auto',
   contentAboveHr: 'flex-row space-y-10 md:flex md:justify-between md:items-center',
   backgroundImg: 'absolute bottom-0 left-0 w-full opacity-20 object-cover h-full xl:h-auto xl:object-fill object-center z-20',
   logo: 'size-[50%] md:size-[13%] mx-auto md:mx-0 md:mt-10',

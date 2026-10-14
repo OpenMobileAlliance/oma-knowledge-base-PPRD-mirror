@@ -23,7 +23,7 @@ const config = {
     /** Styles applied to the image element, including properties like size and border radius. */
     image: "my-[2em] col-start-1 col-span-1 size-4/6 self-center place-self-center row-span-2 w-fit h-fit",
     /** Styles applied to the title text, such as font size and color. */
-    title: "title text-2xl text-neutral-900 dark:text-neutral-100 text-center font-semibold",
+    title: "title text-xl md:text-2xl text-neutral-900 dark:text-neutral-100 text-center font-semibold",
     /** Styles applied to the subtitle text, such as font size and color. */
     subtitle: "subtitle text-lg text-center font-semibold text-neutral-500 dark:text-neutral-400 -mt-8",
     /** Styles applied to the text content, such as font size and color. */

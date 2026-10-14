@@ -11,7 +11,7 @@ import { twMerge } from "tailwind-merge"
 
 const config = {
   /** Defines the overall styling for the container that holds all the elements of the multi-column. The default value is an empty string, indicating no styles are applied by default. */
-  wrapper: "rounded-md p-5",
+  wrapper: "rounded-md px-0 py-5 md:p-5",
 }
 
 const DEFAULT_COLS = 3

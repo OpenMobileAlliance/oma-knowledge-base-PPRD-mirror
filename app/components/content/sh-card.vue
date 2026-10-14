@@ -83,7 +83,7 @@ const config = {
   /** Container of the text content in the lower half. */
   content: "",
   /** Styles applied to the title text, such as font size and color. */
-  title: "title text-3xl font-semibold text-neutral-900 dark:text-golden",
+  title: "title text-2xl md:text-3xl font-semibold text-neutral-900 dark:text-golden",
   /** Styles applied to the subtitle text, such as font size and color. */
   subtitle: "subtitle text-xl font-semibold text-neutral-600 dark:text-golden/80 -mt-8",
   /** Styles applied to the text content, such as font size and color. */

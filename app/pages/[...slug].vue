@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <article class="w-full max-w-full mt-16">
+    <article class="w-full max-w-full mt-6 md:mt-16">
 
       <template v-if="page?.meta.layout === 'doc'">
         <div class="grid grid-cols-12 relative">
@@ -34,36 +34,36 @@
       </template>
 
       <template v-else-if="page?.meta.layout === 'articles'">
-        <div class="w-full -mt-16 xl:px-44 2xl:px-64">
+        <div class="w-full -mt-6 md:-mt-16 xl:px-44 2xl:px-64">
           <div class="container flex mx-auto justify-center mt-6">
             <img v-if="articles?.urlImage" :src="articles.urlImage" alt="Image"
-              class="sm:w-3/5 h-auto object-contain rounded-xl" />
+              class="w-full sm:w-3/5 h-auto object-contain rounded-xl" />
           </div>
           <div class="text-center">
-            <h2 :class="['text-center text-4xl text-primary', articles?.subtitle ? '' : 'mb-16']">{{ articles?.title }}</h2>
-            <h3 v-if="articles?.subtitle" class="mb-20 text-center text-3xl text-primary-400">
+            <h2 :class="['text-center text-3xl md:text-4xl text-primary', articles?.subtitle ? '' : 'mb-8 md:mb-16']">{{ articles?.title }}</h2>
+            <h3 v-if="articles?.subtitle" class="mb-10 md:mb-20 text-center text-xl md:text-3xl text-primary-400">
               {{ articles?.subtitle }}
             </h3>
-            <div class="text-center text-2xl " v-if="articles?.tags && articles?.tags.length">
+            <div class="text-center text-lg md:text-2xl " v-if="articles?.tags && articles?.tags.length">
               Tags:
               <span v-for="tag in articles?.tags" :key="tag"
-                class="border rounded-3xl p-2 mx-2 text-white bg-primary border-primary-600 dark:bg-zinc-600 dark:border-primary-400 text-xl">
+                class="border rounded-3xl px-2 py-1 md:p-2 mx-1 md:mx-2 inline-block my-1 text-white bg-primary border-primary-600 dark:bg-zinc-600 dark:border-primary-400 text-base md:text-xl">
                 {{ tag }}
               </span>
             </div>
             <div class="flex items-center justify-center">
-              <p v-if="articles?.rightLabel" class="mr-2 text-2xl">By:</p>
-              <p v-if="articles?.rightLabel" class="text-end text-2xl dark:text-zinc-400">
+              <p v-if="articles?.rightLabel" class="mr-2 text-lg md:text-2xl">By:</p>
+              <p v-if="articles?.rightLabel" class="text-end text-lg md:text-2xl dark:text-zinc-400">
                 {{ articles?.rightLabel }}
               </p>
-              <p v-if="articles?.leftLabel" class="mx-2 text-2xl">|</p>
-              <p v-if="articles?.leftLabel" class="text-start text-2xl dark:text-zinc-400">
+              <p v-if="articles?.leftLabel" class="mx-2 text-lg md:text-2xl">|</p>
+              <p v-if="articles?.leftLabel" class="text-start text-lg md:text-2xl dark:text-zinc-400">
                 {{ articles?.leftLabel }}
               </p>
             </div>
-            <hr class="border-b-[1px] border-neutral-500 dark:border-golden rounded-xl w-3/5 mt-2 mb-20 mx-auto">
+            <hr class="border-b-[1px] border-neutral-500 dark:border-golden rounded-xl w-3/5 mt-2 mb-10 md:mb-20 mx-auto">
             <div
-              class="content-container text-left first-letter:text-7xl">
+              class="content-container text-left md:first-letter:text-7xl">
               <ContentRenderer :value="articles" :class="contentTextClass" />
             </div>
             <PrevNextPage v-if="route.path !== '/'" />
@@ -81,13 +81,13 @@
               {{ page.title }}
             </h1> -->
             <ContentRenderer v-if="page.body" :value="page" 
-              :class="[contentTextClass, 'pb-10 pl-4 pr-4 sm:pl-8 sm:pr-8 2xl:pl-36 2xl:pr-36']">
+              :class="[contentTextClass, 'pb-10 sm:pl-8 sm:pr-8 2xl:pl-36 2xl:pr-36']">
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
                   icon="i-heroicons-exclamation-triangle" />
               </template>
             </ContentRenderer>
-            <PrevNextPage v-if="route.path !== '/'" class="px-4 sm:px-8 2xl:px-36" />
+            <PrevNextPage v-if="route.path !== '/'" class="sm:px-8 2xl:px-36" />
           </section>
 
         </div>
@@ -96,7 +96,7 @@
       <template v-else>
         <div class="grid grid-cols-12 ">
           <ContentRenderer v-if="page" :value="page" 
-            :class="[contentTextClass, 'col-start-1 col-span-12 w-full lg:w-fit mt-8 pb-24']">
+            :class="[contentTextClass, 'col-start-1 col-span-12 w-full lg:w-fit mt-4 md:mt-8 pb-16 md:pb-24']">
             <template #not-found>
               <UAlert title="File not found!" description="The requested resource cannot be found."
                 icon="i-heroicons-exclamation-triangle" />
@@ -141,7 +141,7 @@ const minDepth = routeDepth - 4 > 0 ? routeDepth - 4 : 0
 
 const contentClass = computed(() => {
   if (page.value?.layout === 'doc') {
-    return page.value.body?.toc?.links?.length > 0 ? 'mr-64' : ''
+    return page.value.body?.toc?.links?.length > 0 ? 'lg:mr-64' : ''
   } else {
     return ''
   }

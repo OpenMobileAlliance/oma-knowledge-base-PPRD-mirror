@@ -38,7 +38,7 @@ const config = {
     /** A placeholder for additional base styles that can be applied to the avatar component. */
     base: "",
     /** Styles applied to the text displaying the name of the person, such as font size and color. */
-    name: "text-3xl font-semibold grow text-neutral-900 dark:text-neutral-100 bottom-0",
+    name: "text-2xl md:text-3xl font-semibold grow text-neutral-900 dark:text-neutral-100 bottom-0",
     /** Styles applied to the text displaying the role or position of the person. */
     role: "text-lg font-semibold text-neutral-700 -mt-4 dark:text-gray-400",
     /** Styles applied to the text displaying the company name of the person. */

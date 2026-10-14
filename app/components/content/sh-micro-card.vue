@@ -76,11 +76,11 @@ const config = {
     /** Image of the card. */
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     /** Icon of the card. */
-    icon: "relative sm:mt-4 flex shrink-0 mx-auto text-[96px] mb-8 z-20",
+    icon: "relative sm:mt-4 flex shrink-0 mx-auto text-[64px] md:text-[96px] mb-8 z-20",
     /** Title text. */
-    title: "title text-[24px] font-semibold break-words z-20",
+    title: "title text-xl md:text-[24px] font-semibold break-words z-20",
     /** Subtitle text. */
-    subtitle: "subtitle text-[20px] font-bold mt-3 break-words z-20",
+    subtitle: "subtitle text-lg md:text-[20px] font-bold mt-3 break-words z-20",
     /** Body text. */
     text: "text font-light text-[18px] mt-7 break-words z-20",
   },
@@ -94,11 +94,11 @@ const config = {
     //coverIcon: "absolute inset-0 w-full h-full object-cover opacity-100 ease-in-out z-40",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     /** Icon of the card. */
-    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] z-20",
+    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[64px] md:text-[96px] z-20",
     /** Title text. */
-    title: "title text-[24px] font-semibold break-words z-20",
+    title: "title text-xl md:text-[24px] font-semibold break-words z-20",
     /** Subtitle text. */
-    subtitle: "subtitle text-[20px] font-bold mt-1 break-words z-20",
+    subtitle: "subtitle text-lg md:text-[20px] font-bold mt-1 break-words z-20",
     /** Body text. */
     text: "text font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out text-[18px] mt-9 break-words z-20"
   },
@@ -117,11 +117,11 @@ const config = {
     /** Image of the card. */
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     /** Icon of the card. */
-    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
+    icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[64px] md:text-[96px] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
     /** Title text. */
-    title: "title mt-16 text-center text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+    title: "title mt-16 text-center text-xl md:text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
     /** Subtitle text. */
-    subtitle: "subtitle text-center font-bold text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
+    subtitle: "subtitle text-center font-bold text-lg md:text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
     /** Body text. */
     text: "text text-center text-[18px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out font-medium mt-2 mb-5 break-words z-20",
   },
@@ -140,9 +140,9 @@ const config = {
     /** Icon of the card. */
     icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[3rem] transition-transform duration-500 ease-in-out group-hover:opacity-0 group-hover:transition-opacity group-hover:duration-500 transform z-20",
     /** Title text. */
-    title: "title mt-32 text-center text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
+    title: "title mt-32 text-center text-xl md:text-[24px] font-semibold break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
     /** Subtitle text. */
-    subtitle: "subtitle text-center font-bold text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
+    subtitle: "subtitle text-center font-bold text-lg md:text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300 ease-in-out mt-1 break-words z-20 transition-transform group-hover:translate-y-[-1.1rem] transform",
     /** Body text. */
     text: "text text-center text-[18px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 ease-in-out font-medium mt-2 mb-5 break-words z-20",
   },
@@ -184,11 +184,11 @@ const config = {
     /** Image of the card. */
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     /** Icon of the card. */
-    icon: "relative sm:mt-4 mb-8 text-[96px] flex shrink-0 mx-auto z-20",
+    icon: "relative sm:mt-4 mb-8 text-[64px] md:text-[96px] flex shrink-0 mx-auto z-20",
     /** Title text. */
-    title: "title text-[24px] font-semibold break-words z-20",
+    title: "title text-xl md:text-[24px] font-semibold break-words z-20",
     /** Subtitle text. */
-    subtitle: "subtitle text-[20px] font-bold mt-3 break-words z-20",
+    subtitle: "subtitle text-lg md:text-[20px] font-bold mt-3 break-words z-20",
     /** Body text. */
     text: "text font-light text-[18px] mt-7 break-words z-20",
   },
