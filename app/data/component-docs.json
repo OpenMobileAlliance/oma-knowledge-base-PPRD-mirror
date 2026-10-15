@@ -2707,7 +2707,7 @@
         "type": "string",
         "required": false,
         "default": "\"\"",
-        "description": "The height of the embedded post. Note the Facebook and LinkedIn iframes use fixed heights (410 and 650) regardless of this value."
+        "description": "The height of the embedded post. Initial height for X posts, which then auto-resize to fit the post. Facebook and LinkedIn iframes use fixed heights (410 and 650) regardless of this value."
       },
       {
         "name": "ui",
@@ -2731,12 +2731,17 @@
       },
       {
         "path": "linkedin",
-        "value": "",
+        "value": "max-w-none",
         "description": "Additional styling for LinkedIn posts."
       },
       {
+        "path": "linkedinWrapper",
+        "value": "overflow-hidden rounded-[14px] bg-white",
+        "description": "Clips the LinkedIn iframe to rounded corners and hides its scrollbar."
+      },
+      {
         "path": "twitter",
-        "value": "rounded-md",
+        "value": "rounded-[14px]",
         "description": "Additional styling for X (Twitter) posts."
       }
     ],

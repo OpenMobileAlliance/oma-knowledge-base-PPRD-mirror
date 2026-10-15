@@ -6,7 +6,7 @@
                 <MDC :class="ui.title" :value="title" />
                 <MDC v-if="subtitle" :class="ui.subtitle" :value="subtitle" />
                 <MDC v-if="text" :class="ui.text" :value="text" />
-                <UFormField class="pb-4" error size="xl">
+                <UFormField class="pb-4 w-fit mx-auto" error size="xl">
                     <UInput placeholder="you@example.com" icon="i-heroicons-envelope" class="dark:invert" />
                 </UFormField>
             </div>

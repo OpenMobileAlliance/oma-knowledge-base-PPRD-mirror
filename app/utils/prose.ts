@@ -6,7 +6,7 @@
  * (see `contentTextClass`), headings scale relative to it.
  */
 export const headingColor =
-  'font-heading text-highlighted dark:saturate-300 dark:brightness-80'
+  'font-heading text-highlighted dark:saturate-300 dark:brightness-80 w-fit max-w-full'
 
 /**
  * Anchor behaviour: the heading text slides to the right on hover, making room

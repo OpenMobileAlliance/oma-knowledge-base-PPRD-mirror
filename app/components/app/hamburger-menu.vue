@@ -53,14 +53,15 @@
                                         <span v-if="child.icon" :class="ui.iconTile">
                                             <UIcon :name="child.icon" :class="ui.icon" />
                                         </span>
-                                        <span :class="[ui.label, isActive(child) ? 'font-semibold !text-oma-yellow-700 dark:!text-oma-yellow-400' : '']">{{ child.label.toUpperCase() }}</span>                                    </button>
+                                        <span :class="[ui.label, isActive(child) ? 'font-semibold !text-oma-yellow-700 dark:!text-oma-yellow-400' : '']">{{ child.label }}</span>
+                                    </button>
                                     <a v-else :href="page?.meta.link" target="_blank" rel="noopener noreferrer"
                                         :class="['cursor-pointer', ui.button, isActive(child) ? ui.submenuActive : '']">
                                         <span v-if="child.icon" :class="ui.iconTile">
                                             <UIcon :name="child.icon" :class="ui.icon" />
                                         </span>
                                         <span :class="[ui.label, isActive(child) ? 'font-semibold !text-oma-yellow-700 dark:!text-oma-yellow-400' : '']">
-                                            {{ child.label.toUpperCase() }}
+                                            {{ child.label }}
                                         </span>
                                     </a>
                                 </template>
@@ -85,14 +86,14 @@ import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryC
 const ui = {
     rootMenuButton:
         'group w-full flex items-center justify-start px-3 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-700 rounded-lg cursor-pointer',
-    rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
+    rootMenuLabel: 'font-heading font-semibold text-base tracking-wider text-gray-900 dark:text-gray-100',
     rootActive: 'text-oma-yellow-700 dark:text-oma-yellow-400 [text-shadow:0_0_0.6px_currentColor]',
     rootIconActive: 'text-oma-yellow-700 dark:text-oma-yellow-400 group-hover/item:text-oma-yellow-700 dark:group-hover/item:text-oma-yellow-400',
     submenuActive: 'relative before:content-[""] before:absolute before:size-1.5 before:rounded-full before:bg-oma-yellow-500 before:top-1/2 before:-translate-y-1/2 before:right-3',
     button:
         'w-full flex items-center pl-4 pr-9 py-2 text-left hover:bg-golden/30 dark:hover:bg-oma-yellow-900 transition duration-200 rounded-lg cursor-pointer',
-    label: 'text-gray-900 dark:text-gray-100 truncate',
-    rootIcon: 'shrink-0 mr-2.5 text-lg text-gray-500 dark:text-gray-400',
+    label: 'font-heading text-[15px] font-normal capitalize tracking-normal text-gray-800 dark:text-gray-200 truncate',
+    rootIcon: 'shrink-0 mr-3 text-xl text-gray-500 dark:text-gray-400',
     iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-500 dark:text-gray-400',
     icon: 'text-base',
 }
@@ -143,7 +144,10 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
     return navItems
         .filter(item => !excludedPaths.includes(item.path) && !excludedTitles.includes(item.title))
         .map(item => {
-            const children = item.children ? transformNavigation(item.children, true) : null
+            let children = item.children ? transformNavigation(item.children, true) : null
+
+            // A root item with nothing to expand (e.g. Home) is a plain link, not an accordion.
+            if (children && children.every(child => child.path === item.path)) children = null
 
             // For each root folder that has children, add an index file at the start of its submenu.
             if (!isChild && children && children.length > 0) {

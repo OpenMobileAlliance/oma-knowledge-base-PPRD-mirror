@@ -16,7 +16,7 @@
 import { useQueryCollection } from '~/composables/nuxt/query/useQueryCollection';
 
 const ui = {
-    wrapper: 'p-1 sm:p-3 z-50 bg-golden/60 dark:bg-neutral-900 border border-golden dark:border-golden/60 rounded-md shadow-xs',
+    wrapper: 'p-1 sm:p-3 z-50 bg-golden/25 dark:bg-neutral-900 border border-[color-mix(in_oklab,var(--color-golden)_65%,#8a6a3a)] dark:border-golden/60 rounded-md',
     base: 'flex items-center justify-between',
     content: 'content flex-1 text-center text-xl not-prose',
     button: 'absolute hover:bg-inherit hover:rounded-sm right-0 duration-200 z-50',

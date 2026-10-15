@@ -41,7 +41,7 @@ const ui = {
 
 const iconNext = 'material-symbols:arrow-right-rounded'
 const iconCrumb = 'solar:folder-path-connect-linear'
-const iconHome = 'line-md:home-twotone'
+const iconHome = 'lucide:house'
 
 const route = useRoute()
 

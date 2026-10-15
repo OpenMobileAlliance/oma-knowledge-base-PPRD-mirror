@@ -27,11 +27,6 @@
             :class="[uiLayout.subtitle, layout === 'cta' && subtitle ? uiLayout.underline : '', 'transition-opacity duration-300']"
             :value="subtitle" />
           <MDC v-if="text" :class="[uiLayout.text, 'transition-opacity duration-300']" :value="text" />
-          <div v-if="layout === 'cta'" class="flex justify-start">
-            <NuxtLink :to="urlButton" :target="target" class="inline-block">
-              <UIcon name="line-md:chevron-right-circle" :class="uiLayout.button" />
-            </NuxtLink>
-          </div>
         </div>
         <div v-if="clipboard"
           class="absolute inset-0 flex items-start justify-center opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
@@ -41,6 +36,12 @@
           </button>
         </div>
       </div>
+    </div>
+    <!-- Sits after the cover image: the image is `order-last` too and comes first in the DOM -->
+    <div v-if="layout === 'cta'" class="order-last flex justify-start z-20">
+      <NuxtLink :to="urlButton" :target="target" class="inline-block">
+        <UIcon name="line-md:chevron-right-circle" :class="uiLayout.button" />
+      </NuxtLink>
     </div>
   </component>
 </template>
