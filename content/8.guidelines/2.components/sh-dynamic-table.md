@@ -17,7 +17,7 @@ The simplest usage of `ShDynamicTable` can be shown in the following example:
 code: |
   ::ShDynamicTable
   ---
-  dataUrl: "http://dummyjson.com/users"
+  dataUrl: "https://dummyjson.com/users"
   dataField: "users"
   columns:
     - name: "firstName"
@@ -92,7 +92,7 @@ Numeric columns (other than identifiers whose name ends in `id`) are right-align
 Beside the above the `dataField` parameter can be used if the data fetched
 holds the table items under a specific property.
 This is typical in [REST API](https://aws.amazon.com/what-is/restful-api/){target="_blank"} results.
-You can review the one used in [above example](http://dummyjson.com/users){target="_blank"}
+You can review the one used in [above example](https://dummyjson.com/users){target="_blank"}
 where the items that we would like to show in the
 table is stored in `users` field.
 
