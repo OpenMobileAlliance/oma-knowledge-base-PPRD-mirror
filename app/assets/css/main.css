@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+/*
+ * Tailwind v4 only applies `hover:` / `group-hover:` where the device can hover,
+ * so on touch screens the hover effects (cards, heading anchors, ...) never
+ * showed. Plain `:hover` is sticky on touch: a tap reveals the effect, a tap
+ * elsewhere hides it. `group-hover:` and `peer-hover:` are built on this variant.
+ */
+@custom-variant hover (&:hover);
+
 /* Self-hosted slogan font (see AppFooter) */
 @font-face {
   font-family: 'Expressa';

@@ -2,12 +2,7 @@
     <ul :class="ui.wrapper">
         <li v-for="(item, index) in menuData.items" :key="index" class="group/item relative ">
             <!-- Root Menu Link -->
-            <NuxtLink :to="item.path" :class="[
-                item.label === 'HOME'
-                    ? 'hover:rounded-lg cursor-pointer group-hover/item:rounded-lg'
-                    : 'hover:rounded-t-lg cursor-pointer group-hover/item:rounded-t-lg',
-                ui.rootMenuButton
-            ]">
+            <NuxtLink :to="item.path" :class="ui.rootMenuButton">
                 <span class="flex items-center gap-2">
                     <UIcon v-if="item.icon" :name="item.icon" :class="[ui.rootIcon, isActive(item) ? ui.rootIconActive : '']" />
                     <span :class="[ui.rootMenuLabel, isActive(item) ? ui.rootActive : '']">
@@ -15,6 +10,9 @@
                     </span>
                 </span>
             </NuxtLink>
+
+            <!-- Arrow pointing from the dropdown to its root item -->
+            <span v-if="item.children" :class="[ui.submenuArrow, 'hidden group-hover/item:block']" aria-hidden="true" />
 
             <!-- Submenu -->
             <ul v-if="item.children" :class="[ui.submenuUl, 'hidden group-hover/item:flex']">
@@ -27,7 +25,7 @@
                             <UIcon :name="child.icon" :class="ui.icon" />
                         </span>
                         <span :class="[ui.label, isActive(child) ? 'font-semibold !text-yellow-700 dark:!text-yellow-400' : '']">
-                            {{ child.label.toUpperCase() }}
+                            {{ child.label }}
                         </span>
                     </NuxtLink>
                     <a v-else :href="page?.meta.link" target="_blank" rel="noopener noreferrer" :class="['cursor-pointer',
@@ -37,7 +35,7 @@
                             <UIcon :name="child.icon" :class="ui.icon" />
                         </span>
                         <span :class="[ui.label, isActive(child) ? 'font-semibold !text-yellow-700 dark:!text-yellow-400' : '']">
-                            {{ child.label.toUpperCase() }}
+                            {{ child.label }}
                         </span>
                     </a>
 
@@ -53,16 +51,17 @@ import { useQueryCollectionNavigation } from '~/composables/nuxt/query/useQueryC
 
 const ui = {
     wrapper: 'w-fit flex items-end justify-center rounded-lg',
-    rootMenuButton: 'group/rootMenuButton w-full flex items-center justify-start px-3 py-2 text-left hover:bg-white dark:hover:bg-neutral-800 group-hover/item:bg-white dark:group-hover/item:bg-neutral-800',
-    rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
-    rootActive: 'text-yellow-700 dark:text-yellow-400 [text-shadow:0_0_0.6px_currentColor]',
+    rootMenuButton: 'group/rootMenuButton w-full flex items-center justify-start px-3 py-2 text-left cursor-pointer',
+    rootMenuLabel: 'font-medium text-xl text-gray-700 dark:text-gray-300 group-hover/item:text-black dark:group-hover/item:text-white transition-colors duration-200',
+    rootActive: 'text-yellow-700 dark:text-yellow-400 group-hover/item:!text-yellow-700 dark:group-hover/item:!text-yellow-400 [text-shadow:0_0_0.6px_currentColor]',
     rootIconActive: 'text-yellow-700 dark:text-yellow-400 group-hover/item:text-yellow-700 dark:group-hover/item:text-yellow-400',
     submenuActive: 'relative before:content-[""] before:absolute before:size-1.5 before:rounded-full before:bg-oma-yellow-500 before:top-1/2 before:-translate-y-1/2 before:right-3',
-    submenuUl: 'absolute top-10 left-0 flex-col shadow-lg mt-0 z-10 bg-white dark:bg-neutral-800 rounded-lg overflow-hidden',
+    submenuArrow: 'absolute top-[40px] left-6 z-20 size-2.5 rotate-45 [clip-path:polygon(0_0,100%_0,0_100%)] bg-white dark:bg-neutral-800 border-t border-l border-gray-200 dark:border-neutral-700',
+    submenuUl: 'absolute top-11 left-0 flex-col shadow-md mt-0 z-10 bg-white dark:bg-neutral-800 rounded-lg overflow-hidden border border-gray-200 dark:border-neutral-700',
     button: 'w-full flex items-center pl-4 pr-9 py-2 text-left hover:rounded-lg hover:bg-golden/45 dark:hover:bg-golden/20 transition-colors duration-200',
-    label: 'text-gray-900 dark:text-gray-100 truncate',
-    rootIcon: 'shrink-0 text-lg text-gray-500 dark:text-gray-400 group-hover/item:text-gray-900 dark:group-hover/item:text-gray-100 transition-colors duration-200',
-    iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-500 dark:text-gray-400 group-hover/sub:text-gray-900 dark:group-hover/sub:text-gray-100 transition-colors duration-200',
+    label: 'font-heading text-[15px] font-medium capitalize tracking-normal text-gray-800 dark:text-gray-100 group-hover/sub:text-black dark:group-hover/sub:text-white truncate transition-colors duration-200',
+    rootIcon: 'shrink-0 text-lg text-gray-700 dark:text-gray-400 group-hover/item:text-black dark:group-hover/item:text-white transition-colors duration-200',
+    iconTile: 'shrink-0 mr-2.5 flex items-center text-gray-600 dark:text-gray-400 group-hover/sub:text-black dark:group-hover/sub:text-white transition-colors duration-200',
     icon: 'text-base',
 }
 
