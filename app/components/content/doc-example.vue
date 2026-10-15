@@ -1,10 +1,12 @@
 <template>
   <div class="my-6 rounded-md border border-neutral-200 dark:border-neutral-700 overflow-hidden">
     <div class="p-6" :class="ui">
-      <!-- MDC alone cannot resolve the local sh-* components; ContentRenderer can. -->
+      <!-- MDC alone cannot resolve the local sh-* components; ContentRenderer can, given an explicit map
+           (Content only registers components whose tags it finds in content files, so tags that appear
+           only inside this `code` string would be unresolved in production builds). -->
       <MDC :value="code">
         <template #default="{ body }">
-          <ContentRenderer v-if="body" :value="{ body }" />
+          <ContentRenderer v-if="body" :value="{ body }" :components="contentComponents" />
         </template>
       </MDC>
     </div>
@@ -38,6 +40,14 @@ const props = withDefaults(
     ui?: string;
   }>(),
   { ui: '' }
+)
+
+/** Every component in components/content, keyed by PascalCase tag name (ShCard, ShActionCard, ...). */
+const contentComponents = Object.fromEntries(
+  Object.entries(import.meta.glob('./*.vue', { eager: true, import: 'default' })).map(([path, component]) => [
+    path.replace(/^\.\/|\.vue$/g, '').split('-').map(w => w[0]!.toUpperCase() + w.slice(1)).join(''),
+    component,
+  ])
 )
 
 /** Code taller than this many lines (about 16rem) is collapsed behind an "Expand code" button. */
