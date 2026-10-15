@@ -38,13 +38,18 @@
             </tr>
           </thead>
           <tbody class="divide-y divide-neutral-200 dark:divide-neutral-700">
-            <tr v-for="u in rows" :key="u.path" class="align-top">
+            <tr v-for="u in visibleUi" :key="u.path" class="align-top">
               <td :class="td"><code :class="code">{{ u.path }}</code></td>
               <td :class="td"><code :class="[code, 'break-words']">{{ u.value || '""' }}</code></td>
               <td :class="td">{{ u.description }}</td>
             </tr>
           </tbody>
         </table>
+        <div v-if="uiCollapsible" class="flex justify-center border-t border-neutral-200 py-2 dark:border-neutral-700">
+          <UButton :label="uiExpanded ? 'Collapse' : `Show all ${rows.length} keys`"
+            :icon="uiExpanded ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'" color="neutral" variant="ghost" size="xs"
+            class="rounded-full" @click="uiExpanded = !uiExpanded" />
+        </div>
       </div>
     </template>
   </div>
@@ -76,6 +81,12 @@ const doc = computed(() => (docs as Record<string, any>)[name.value])
 const rows = computed<any[]>(() =>
   props.section === 'type' ? doc.value?.types?.[props.type] ?? [] : doc.value?.[props.section] ?? []
 )
+
+/** The `ui` table shows only this many rows until expanded; longer tables get a toggle. */
+const uiMaxRows = 6
+const uiExpanded = ref(false)
+const uiCollapsible = computed(() => props.section === 'ui' && rows.value.length > uiMaxRows)
+const visibleUi = computed(() => (uiCollapsible.value && !uiExpanded.value ? rows.value.slice(0, uiMaxRows) : rows.value))
 
 const th = 'px-3 py-2 font-semibold text-neutral-700 dark:text-neutral-200'
 const td = 'px-3 py-2 text-neutral-800 dark:text-neutral-300'
