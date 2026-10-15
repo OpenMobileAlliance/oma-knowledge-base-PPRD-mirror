@@ -6,6 +6,7 @@ navigation: false
 sitemap: false
 robots: false
 ---
+# {{$doc.title}}
 
 ## Boost Our Website: Join the OMA URL Test!
 

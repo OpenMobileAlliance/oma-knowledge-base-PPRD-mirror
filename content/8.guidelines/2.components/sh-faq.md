@@ -4,6 +4,7 @@ description: Component to render a list of frequently asked questions and answer
 constructorName: ShFaq
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

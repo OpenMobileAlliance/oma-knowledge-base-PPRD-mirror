@@ -4,6 +4,7 @@ description: Embed video either from YouTube or from your local
 constructorName: ShVideo
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

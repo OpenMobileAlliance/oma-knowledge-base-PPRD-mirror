@@ -12,11 +12,8 @@
           <!-- Main Content -->
           <section :class="contentClass"
             class="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8 lg:ml-9 lg:mr-24 w-full lg:w-full overflow-auto">
-            <ProseH1>
-              {{ page.title }}
-            </ProseH1>
             <ContentRenderer v-if="page.body" :value="page" 
-              :class="[contentTextClass, 'mt-8 pb-10']">
+              :class="[contentTextClass, 'pb-10']">
               <template #not-found>
                 <UAlert title="File not found!" description="The requested resource cannot be found."
                   icon="i-heroicons-exclamation-triangle" />

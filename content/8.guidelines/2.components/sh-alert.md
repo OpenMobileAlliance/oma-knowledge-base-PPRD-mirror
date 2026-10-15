@@ -4,6 +4,7 @@ description: A component for expressing information of some importance
 constructorName: ShAlert
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

@@ -4,6 +4,7 @@ description: Table component with dynamic capabiities
 constructorName: ShDynamicTable
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

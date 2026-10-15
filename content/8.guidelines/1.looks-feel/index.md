@@ -3,6 +3,8 @@ title: Introduction
 description: 'Markdown friendly UX'
 layout: doc
 ---
+# {{$doc.title}}
+
 All of the components, and how to use them are shown in [Components](/guidelines/components/) section. Since look&feel plays crucial role in UX, here you will find guidelines to all the different styling options.
 
 ### OMA Color Shades

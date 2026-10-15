@@ -4,6 +4,7 @@ description: This constructor is designed to showcase an Avatar representing a p
 constructorName: ShAvatar
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

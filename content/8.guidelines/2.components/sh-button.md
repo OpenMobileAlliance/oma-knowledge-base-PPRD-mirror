@@ -4,6 +4,7 @@ description: Component do render a button in the document
 constructorName: ShButton
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

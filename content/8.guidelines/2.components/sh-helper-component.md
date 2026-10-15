@@ -4,6 +4,7 @@ description: Display two logos, each with a separate dark and light version.
 constructorName: ShHelperComponent
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

@@ -4,6 +4,7 @@ description: A call-to-action card with an image or icon, short text and a butto
 constructorName: ShActionCard
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 
