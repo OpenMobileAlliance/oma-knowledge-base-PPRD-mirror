@@ -4,6 +4,7 @@ description: Create a two columns in an instant and populate them with your own 
 constructorName: ShTwoColumns
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

@@ -4,6 +4,7 @@ description: A flexible wrapper that groups and styles any block of Markdown or 
 constructorName: ShSegment
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

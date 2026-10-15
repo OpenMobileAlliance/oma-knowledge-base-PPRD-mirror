@@ -4,6 +4,7 @@ description: Create a multicolumn element to populate it with anything from your
 constructorName: ShMultiColumn
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

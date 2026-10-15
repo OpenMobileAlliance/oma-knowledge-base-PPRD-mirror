@@ -4,6 +4,7 @@ description: Quick show of information in compact form.
 constructorName: ShMicroCard
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

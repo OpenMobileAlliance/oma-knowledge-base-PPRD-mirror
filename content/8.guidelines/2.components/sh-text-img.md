@@ -4,6 +4,7 @@ description: Have text and image in the same row. You can also declare the span 
 constructorName: ShTextImg
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

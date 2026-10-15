@@ -4,6 +4,7 @@ description: Component representing the column with header and footer
 constructorName: ShColumn
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

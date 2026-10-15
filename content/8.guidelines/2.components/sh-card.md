@@ -4,6 +4,7 @@ description: This constructor allows you to have image on one half of the card, 
 constructorName: ShCard
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

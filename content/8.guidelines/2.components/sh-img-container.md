@@ -4,6 +4,7 @@ description: This constructor is designed to showcase an image with an optional 
 constructorName: ShImgContainer
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

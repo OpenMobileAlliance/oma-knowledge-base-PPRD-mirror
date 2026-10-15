@@ -4,6 +4,7 @@ description: Embed social media posts
 constructorName: ShSocial
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

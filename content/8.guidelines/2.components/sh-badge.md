@@ -4,6 +4,7 @@ description: Display a short text to represent a status or a category.
 constructorName: ShBadge
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

@@ -4,6 +4,7 @@ description: Renders content in ShCard components, displays a grid of cards by o
 constructorName: ShListCards
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 

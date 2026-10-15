@@ -3,6 +3,8 @@ title: Guidelines
 description: This page present the information about the available components that can be used to visually enrich Markdown text 
 layout: doc
 ---
+# {{$doc.title}}
+
 Here are the guidelines for everything content creator (or anyone with a little bit of knowledge in web programming) might want to use. 
 
 Here you can play with looks and feel of the website, how to color everything, which font to use, etc.

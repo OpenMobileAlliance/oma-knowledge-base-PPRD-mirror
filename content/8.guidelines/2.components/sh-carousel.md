@@ -4,6 +4,7 @@ description: A component for displaying rotating slides with navigation controls
 constructorName: ShCarousel
 layout: doc
 ---
+# {{$doc.title}}
 
 ## Usage
 
