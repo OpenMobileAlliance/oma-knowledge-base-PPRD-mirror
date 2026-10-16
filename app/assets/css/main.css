@@ -1,0 +1,199 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/*
+ * Tailwind v4 only applies `hover:` / `group-hover:` where the device can hover,
+ * so on touch screens the hover effects (cards, heading anchors, ...) never
+ * showed. Plain `:hover` is sticky on touch: a tap reveals the effect, a tap
+ * elsewhere hides it. `group-hover:` and `peer-hover:` are built on this variant.
+ */
+@custom-variant hover (&:hover);
+
+/* Self-hosted slogan font (see AppFooter) */
+@font-face {
+  font-family: 'Expressa';
+  src: url('/fonts/expressa/Expressa%20Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme static {
+  /* Body text is Arial, headings DM Sans (loaded by @nuxt/fonts, see nuxt.config.ts) */
+  --font-sans: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-expressa: 'Expressa', sans-serif;
+
+  /*
+   * Tailwind v3 line-heights were fixed rem values; v4 made them ratios, which
+   * grow when the size is overridden (`text-lg sm:text-[24px]`). The content
+   * relies on the v3 behaviour.
+   */
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl--line-height: 1;
+  --text-6xl--line-height: 1;
+  --text-7xl--line-height: 1;
+  --text-8xl--line-height: 1;
+  --text-9xl--line-height: 1;
+
+  --color-golden: #e7d6c2;
+
+  --color-oma-red-50: #f2d8d7;
+  --color-oma-red-100: #e4b1af;
+  --color-oma-red-200: #d78a88;
+  --color-oma-red-300: #c96360;
+  --color-oma-red-400: #c3504c;
+  --color-oma-red-500: #bc3c38;
+  --color-oma-red-600: #a93632;
+  --color-oma-red-700: #96302d;
+  --color-oma-red-800: #842a27;
+  --color-oma-red-900: #712422;
+  --color-oma-red-950: #5e1e1c;
+
+  --color-oma-purple-50: #e6dcec;
+  --color-oma-purple-100: #cdbad9;
+  --color-oma-purple-200: #b497c6;
+  --color-oma-purple-300: #9b75b3;
+  --color-oma-purple-400: #8f63aa;
+  --color-oma-purple-500: #8252a0;
+  --color-oma-purple-600: #754a90;
+  --color-oma-purple-700: #684280;
+  --color-oma-purple-800: #5b3970;
+  --color-oma-purple-900: #4e3160;
+  --color-oma-purple-950: #412950;
+
+  --color-oma-yellow-50: #f8eedc;
+  --color-oma-yellow-100: #f1ddba;
+  --color-oma-yellow-200: #ebcb97;
+  --color-oma-yellow-300: #e4ba75;
+  --color-oma-yellow-400: #e0b263;
+  --color-oma-yellow-500: #dda952;
+  --color-oma-yellow-600: #c7984a;
+  --color-oma-yellow-700: #b18742;
+  --color-oma-yellow-800: #9b7639;
+  --color-oma-yellow-900: #856531;
+  --color-oma-yellow-950: #6f5529;
+
+  --color-oma-cyan-50: #e9f6f3;
+  --color-oma-cyan-100: #d2ede7;
+  --color-oma-cyan-200: #bce4dc;
+  --color-oma-cyan-300: #a5dbd0;
+  --color-oma-cyan-400: #9ad7ca;
+  --color-oma-cyan-500: #8fd2c4;
+  --color-oma-cyan-600: #81bdb0;
+  --color-oma-cyan-700: #72a89d;
+  --color-oma-cyan-800: #649389;
+  --color-oma-cyan-900: #567e76;
+  --color-oma-cyan-950: #486962;
+
+  --color-oma-blue-50: #cddcec;
+  --color-oma-blue-100: #9ab8da;
+  --color-oma-blue-200: #6895c7;
+  --color-oma-blue-300: #3571b5;
+  --color-oma-blue-400: #1c60ab;
+  --color-oma-blue-500: #034ea2;
+  --color-oma-blue-600: #034692;
+  --color-oma-blue-700: #023e82;
+  --color-oma-blue-800: #023771;
+  --color-oma-blue-900: #022f61;
+  --color-oma-blue-950: #022751;
+}
+
+/* Tailwind classes are written in the markdown content too (ui: overrides, raw HTML) */
+@source "../../../content";
+
+/*
+ * Safelist for class names that are assembled at runtime (ShButton builds
+ * `bg-{colorButton}-500` etc. from the `colorButton` prop, ShList/ShMultiColumn
+ * build `gap-*`). Tailwind v4 replacement for the old `safelist` option.
+ */
+@source inline("{text,bg,border}-{red,orange,amber,yellow,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose,gray,slate,zinc,neutral,stone,oma-red,oma-purple,oma-yellow,oma-cyan,oma-blue}-{50,100,200,300,400,500,600,700,800,900,950}");
+@source inline("{,hover:,dark:,dark:hover:}{bg,ring}-{blue,cyan,green,red,oma-cyan,primary}-{50,300,400,500,700,950}");
+@source inline("{,hover:,dark:,dark:hover:}text-{blue,cyan,green,red,oma-cyan,primary}-{400,500,600}");
+@source inline("gap-{0,1,2,3,4,5,6,8,10,12,16,20,24}");
+
+/* Light mode: the old page was a 20% golden wash over white. Dark mode: near-black with golden text. */
+:root {
+  --ui-bg: color-mix(in oklab, var(--color-golden) 20%, white);
+  /* The old Nuxt UI v2 text colors were the cool gray scale (neutral-* classes stay pure neutral) */
+  --ui-text-dimmed: var(--color-gray-400);
+  --ui-text-muted: var(--color-gray-500);
+  --ui-text-toned: var(--color-gray-600);
+  --ui-text: var(--color-gray-700);
+  --ui-text-highlighted: var(--color-gray-900);
+}
+
+.dark {
+  --ui-bg: #19191a;
+  --ui-text: var(--color-golden);
+  --ui-text-highlighted: var(--color-golden);
+  --ui-text-toned: color-mix(in oklab, var(--color-golden) 85%, transparent);
+  --ui-text-muted: color-mix(in oklab, var(--color-golden) 70%, transparent);
+  --ui-text-dimmed: color-mix(in oklab, var(--color-golden) 45%, transparent);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* --scroll-offset is kept in sync with the sticky header height (see useScrollOffset) */
+    scroll-padding-top: calc(var(--scroll-offset, 8rem) + 1rem);
+  }
+
+  /* Tailwind v4 borders default to currentColor; restore the neutral v3 behaviour */
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--ui-border);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+
+  /* Plain links outside of the Prose components (cards, menus without their own colors, ...) */
+  a {
+    color: var(--color-oma-blue-300);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-blue-700);
+  }
+
+  .dark a {
+    color: var(--color-oma-blue-200);
+  }
+
+  .dark a:hover {
+    color: var(--color-oma-blue-400);
+  }
+}
+
+/*
+ * Components wrapped in `.not-prose` opt out of the Prose typography
+ * (margins, bullets, indentation) - it is unlayered on purpose so that it
+ * wins over the utility classes the Prose components carry.
+ */
+.not-prose :is(p, ul, ol, li, h1, h2, h3, h4, h5, h6, blockquote, pre, hr, img, table) {
+  margin: 0;
+}
+
+.not-prose :is(ul, ol) {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

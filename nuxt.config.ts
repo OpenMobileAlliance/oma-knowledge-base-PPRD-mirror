@@ -1,34 +1,34 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/sitemap", "@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm'],
+  modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/image', '@nuxtjs/sitemap'],
+
+  css: ['~/assets/css/main.css'],
+
+  compatibilityDate: '2025-07-15',
+  devtools: { enabled: true },
 
   routeRules: {
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
-    '/join/subscribe-news' : { redirect: '/about/subscription' },
-    '/about/join-news' : { redirect: '/about/subscription' },
+    '/join/subscribe-news': { redirect: '/about/subscription' },
+    // '/media/subscription': { redirect: '/about/subscription' },
+    '/about/join-news': { redirect: '/about/subscription' },
   },
 
   site: {
-    url: 'https://www.openmobilealliance.org/', 
-    name: 'Website of OMA as an innovative kind of Standards Development Organization' 
+    url: 'https://www.openmobilealliance.org/',
+    name: 'Website of OMA as an innovative kind of Standards Development Organization',
   },
 
   colorMode: {
-    preference: 'dark'
+    preference: 'dark',
   },
+
   content: {
     renderer: {
       // Make every heading (h1-h6) a clickable #anchor link
-      anchorLinks: { h1: true, h2: true, h3: true, h4: true, h5: true, h6: true }
-    },
-    highlight: {
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark',
-      },
+      anchorLinks: { h1: true, h2: true, h3: true, h4: true, h5: true, h6: true },
     },
     build: {
       markdown: {
@@ -37,11 +37,14 @@ export default defineNuxtConfig({
           depth: 1,
           searchDepth: 6,
         },
+        highlight: {
+          theme: {
+            default: 'github-light',
+            dark: 'github-dark',
+          },
+        },
       },
     },
-    api: {
-      baseURL: '/site-api/_content'
-    }
   },
 
   icon: {
@@ -49,62 +52,64 @@ export default defineNuxtConfig({
     serverBundle: false,
   },
 
-  gtm: {
-    id: 'GTM-T55F5MHQ',
-    enabled: false, // Disabled by default — enabled only after user consents (GDPR/ePrivacy)
-    },
-  
-  googleFonts: {
-    families: {
-      "Roboto": [300, 400, 600, 700],
-      "DM Sans": [400, 500, 600, 700],
-      "DM Mono": [400, 500],
-    },
+  fonts: {
+    families: [
+      { name: 'DM Sans', weights: [400, 500, 600, 700] },
+    ],
   },
 
   app: {
-    // baseURL: process.NODE_ENV === 'production' ? "/oma-knowledge-base/" : '/',
     head: {
-      charset: "utf-8",
+      charset: 'utf-8',
       htmlAttrs: {
-        lang: 'en'
+        lang: 'en',
       },
-      viewport: "width=device-width, initial-scale=1",
+      viewport: 'width=device-width, initial-scale=1',
       link: [
-        { rel: "shortcut icon", href: "/favicon-1.png", type: "image/x-icon" },
+        { rel: 'shortcut icon', href: '/favicon-1.png', type: 'image/x-icon' },
       ],
       script: [
+        // Google Tag Manager (container GTM-T55F5MHQ)
         {
-          id: "hs-script-loader",
-          type: "text/javascript",
-          src: "https://js.hs-scripts.com/21247113.js",
+          key: 'gtm',
+          innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T55F5MHQ');`,
+        },
+        {
+          id: 'hs-script-loader',
+          type: 'text/javascript',
+          src: 'https://js.hs-scripts.com/21247113.js',
           async: true,
           defer: true,
-          tagPosition: "bodyClose",
+          tagPosition: 'bodyClose',
+        },
+      ],
+      noscript: [
+        {
+          key: 'gtm-noscript',
+          innerHTML: '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T55F5MHQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
+          tagPosition: 'bodyOpen',
         },
       ],
     },
   },
 
-  devtools: { enabled: true },
-  compatibilityDate: "2024-08-13",
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: [
-        '/guidelines', 
-        '/groups', 
-        '/media', 
-        '/oma-events', 
-        '/oma-events/sve44-overall-agenda', //remove once the agenda is over
-        '/oma-events/sve44-plenary-agenda', //remove once the agenda is over
-        '/about/faq/', 
-        '/oma-events/past-events', 
-        '/about/subscription', 
+        '/guidelines',
+        '/groups',
+        '/media',
+        '/oma-events',
+        '/oma-events/sve44-overall-agenda', // remove once the agenda is over
+        '/oma-events/sve44-plenary-agenda', // remove once the agenda is over
+        '/about/faq/',
+        '/oma-events/past-events',
+        '/about/subscription',
         '/media/articles/',
       ],
-      ignore: ['/www.ericsson.com'], 
+      ignore: ['/www.ericsson.com'],
       failOnError: false,
     },
-  }
-});
+  },
+})

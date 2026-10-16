@@ -3,6 +3,8 @@ title: Components
 description: Custom made, home-brewed components for many use cases
 layout: doc
 ---
+# {{$doc.title}}
+
 {{$doc.description}}
 
 ## Prelude to Components
