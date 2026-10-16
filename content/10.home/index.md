@@ -2,7 +2,7 @@
 title: 
 description: Welcome to OMA Home Page
 layout: web
-icon: line-md:home-twotone
+icon: lucide:house
 ---
 
 ::ShSegment

@@ -24,7 +24,7 @@ gap: gap-8
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-stone-800 rounded-xl p-2"
+    wrapper: "bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-white rounded-xl p-2"
   ---
 
   - <a href="#lwm2m-testfest-april-2023" target="_blank">[Track 1]{.font-bold}</a>: LwM2M TestFest <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
@@ -34,7 +34,7 @@ gap: gap-8
   :::ShSegment
   ---
   ui:
-    wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-stone-500 rounded-xl p-2"
+    wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-white rounded-xl p-2"
   ---
 
   - <a href="#working-groups-strategy-sessions-april-2023" target="_blank">[Track 2]{.font-bold}</a>: Working Groups & Strategy <br>[**April 20–23, 2026**]{ .text-sm .text-center .w-full}
@@ -45,7 +45,7 @@ gap: gap-8
 ::ShBadge
 ---
 ui:
-  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 mt-24 max-h-10 not-prose mx-10 ml-2
+  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 mt-24 max-h-10 not-prose mx-0 md:mx-10 md:ml-2
 ---
 Track 1
 ::
@@ -57,7 +57,7 @@ A structured, hands-on testing environment running continuously across all four 
 :::ShSegment
 ---
 ui:
-  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-stone-500 rounded-xl p-2
+  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-white rounded-xl p-2
 ---
   ### TestFest Focus
   - End‑to‑end interoperability testing between independent LwM2M implementations
@@ -68,7 +68,7 @@ ui:
 :::ShSegment
 ---
 ui:
-  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-stone-500 rounded-xl p-2 mt-10
+  wrapper: bg-oma-cyan-400 dark:bg-oma-cyan-900 dark:text-white rounded-xl p-2 mt-10
 ---
   ### TestFest Schedule
 
@@ -134,7 +134,7 @@ Direction for future TestFest events <br>and conformance activities.
 ::ShBadge
 ---
 ui:
-  wrapper: min-w-sm not-prose mx-10 ml-2 mt-24 bg-oma-yellow-400 dark:bg-oma-yellow-800 text-primary
+  wrapper: min-w-sm not-prose mx-0 md:mx-10 md:ml-2 mt-24 bg-oma-yellow-400 dark:bg-oma-yellow-800 text-primary
 ---
 Track 2
 ::
@@ -146,7 +146,7 @@ In parallel, working group and strategy meetings focus on specifications, roadma
 ::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-stone-500 rounded-xl p-2"
+  wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-white rounded-xl p-2"
 ---
   ### Working Group Focus
 - Technical working groups: DMSO, Northbound API, and Smart City — specification evolution, feature planning, and tooling
@@ -157,7 +157,7 @@ ui:
 ::ShSegment
 ---
 ui:
-  wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-stone-500 rounded-xl p-2 mt-6"
+  wrapper: "bg-oma-yellow-400 dark:bg-oma-yellow-800 dark:text-white rounded-xl p-2 mt-6"
 ---
   ### Working Group Schedule
 
@@ -222,7 +222,7 @@ cols: 3
 ::ShBadge
 ---
 ui:
-  wrapper: "not-prose mx-10 ml-2 mt-10 mb-10 bg-oma-blue-100 dark:bg-oma-blue-700 text-white"
+  wrapper: "not-prose mx-0 md:mx-10 md:ml-2 mt-10 mb-10 bg-oma-blue-100 dark:bg-oma-blue-700 text-white"
 ---
 <a href="/oma-events/sve44-plenary-agenda" target="_blank">Plenary</a>
 ::
@@ -247,7 +247,7 @@ The hybrid OMA Plenary session brings together highlights from both tracks, shar
 ::ShBadge
 ---
 ui:
-  wrapper: "not-prose mx-10 ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
+  wrapper: "not-prose mx-0 md:mx-10 md:ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
 ---
 Monday, April 20
 ::
@@ -270,7 +270,7 @@ ui:
 ::ShBadge
 ---
 ui:
-  wrapper: "not-prose mx-10 ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
+  wrapper: "not-prose mx-0 md:mx-10 md:ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
 ---
 Tuesday, April 21
 ::
@@ -327,7 +327,7 @@ ui:
 ::ShBadge
 ---
 ui:
-  wrapper: "not-prose mx-10 ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
+  wrapper: "not-prose mx-0 md:mx-10 md:ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
 ---
 Wednesday, April 22
 ::
@@ -382,7 +382,7 @@ ui:
 ::ShBadge
 ---
 ui:
-  wrapper: "not-prose mx-10 ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
+  wrapper: "not-prose mx-0 md:mx-10 md:ml-2 mt-6 mb-4 bg-stone-400 dark:bg-stone-600 text-white"
 ---
 Thursday, April 23
 ::
