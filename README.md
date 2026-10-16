@@ -13,10 +13,10 @@ The development process for this process is described in more detail in
     nvm ls
     ```
 
-3. Use at least version `v22`
+3. Use at least version `v26`
 
     ```bash
-    nvm use v22
+    nvm use v26
     ```
 
 4. Install `npm` (**ONLY** when new changes are introduced to `package.json`)
